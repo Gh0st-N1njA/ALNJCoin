@@ -396,23 +396,24 @@ public:
         consensus.strSporkPubKeyOld = "";
         consensus.nTime_EnforceNewSporkKey = 0;
         consensus.nTime_RejectOldSporkKey = 0;
-
-        // height based activations
+      
+      // height based activations
         consensus.height_last_PoW = 250;
-        consensus.height_last_ZC_AccumCheckpoint = -1;
+        consensus.height_last_ZC_AccumCheckpoint = 310;     // no checkpoints on regtest
         consensus.height_last_ZC_WrappedSerials = -1;
-        consensus.height_start_BIP65 = -1;             
+        consensus.height_start_BIP65 = 851019;              // Not defined for regtest. Inherit TestNet value.
         consensus.height_start_InvalidUTXOsCheck = 999999999;
-        consensus.height_start_MessSignaturesV2 = -1;  
-        consensus.height_start_StakeModifierNewSelection = -1;
-        consensus.height_start_StakeModifierV2 = -1;   
-        consensus.height_start_TimeProtoV2 = -1;       
-        consensus.height_start_ZC = -1;                 
+        consensus.height_start_MessSignaturesV2 = 1;
+        consensus.height_start_StakeModifierNewSelection = 0;
+        consensus.height_start_StakeModifierV2 = 251;       // start with modifier V2 on regtest
+        consensus.height_start_TimeProtoV2 = 999999999;
+        consensus.height_start_ZC = 300;
         consensus.height_start_ZC_InvalidSerials = 999999999;
-        consensus.height_start_ZC_PublicSpends = -1;
-        consensus.height_start_ZC_SerialRangeCheck = -1;
-        consensus.height_start_ZC_SerialsV2 = -1;
+        consensus.height_start_ZC_PublicSpends = 400;
+        consensus.height_start_ZC_SerialRangeCheck = 300;
+        consensus.height_start_ZC_SerialsV2 = 300;
         consensus.height_ZC_RecalcAccumulators = 999999999;
+        
         // Zerocoin-related params
         consensus.ZC_Modulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
                 "4069182906412495150821892985591491761845028084891200728449926873928072877767359714183472702618963750149718246911"
