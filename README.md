@@ -52,6 +52,5 @@ More information at [algoninja.site/alnj](http://www.algoninja.site/alnj) Visit 
 <tr><td>Phase 6</td><td>518400-561599</td><td>20 ALNJ</td><td>90% (18 ALNJ)</td><td>10% (2 ALNJ)</td></tr>
 <tr><td>Phase 7</td><td>561600-604799</td><td>15 ALNJ</td><td>90% (13.5 ALNJ)</td><td>10% (1.5 ALNJ)</td></tr>
 <tr><td>Phase 8</td><td>604800-647999</td><td>10 ALNJ</td><td>90% (9 ALNJ)</td><td>10% (1 ALNJ)</td></tr>
-<tr><td>Phase 9</td><td>648000-1154203</td><td>5 ALNJ</td><td>90% (4.5 ALNJ)</td><td>10% (0.5 ALNJ)</td></tr>
-<tr><td>Phase X</td><td>1154203-∞</td><td>6 ALNJ</td><td>84% (5 ALNJ/zALNJ)</td><td>16% (1 ALNJ)</td></tr>
+<tr><td>Phase X</td><td>648000-∞</td><td>6 ALNJ</td><td>84% (5 ALNJ/zALNJ)</td><td>16% (1 ALNJ)</td></tr>
 </table>
