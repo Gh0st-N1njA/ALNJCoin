@@ -15,7 +15,7 @@ NSEEDS=512
 
 MAX_SEEDS_PER_ASN=4
 
-MIN_BLOCKS = 1530000
+MIN_BLOCKS = 1
 
 # These are hosts that have been observed to be behaving strangely (e.g.
 # aggressively connecting to every node).
@@ -28,8 +28,7 @@ PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")
 PATTERN_ONION = re.compile(r"^([abcdefghijklmnopqrstuvwxyz234567]{16}\.onion):(\d+)$")
 PATTERN_AGENT = re.compile(
     r"^/ALNJCore:("
-    r"4.0.(0|1|2|99|99.1|99.2)|"
-    r"4.1.(0|99)"
+    r"0.1.(0|1|2|99|99.1|99.2)"
     r")")
 
 def parseline(line):
