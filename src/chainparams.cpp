@@ -143,7 +143,7 @@ public:
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMasternodeCountDrift = 20;       // num of MN we allow the see-saw payments to be off by
-        consensus.nMaxMoneyOut = 21000000 * COIN;
+        consensus.nMaxMoneyOut = 53999437 * COIN;
         consensus.nPoolMaxTransactions = 3;
         consensus.nProposalEstablishmentTime = 60 * 60 * 24;    // must be at least a day old to make it into a budget
         consensus.nStakeMinAge = 60 * 60;
@@ -161,14 +161,14 @@ public:
 
         // height-based activations
         consensus.height_last_PoW = 259200;
-        consensus.height_last_ZC_AccumCheckpoint = 0;
-        consensus.height_last_ZC_WrappedSerials = 0;
+        consensus.height_last_ZC_AccumCheckpoint = 1;
+        consensus.height_last_ZC_WrappedSerials = 1;
         consensus.height_start_BIP65 = 1;             
         consensus.height_start_InvalidUTXOsCheck = 1;
         consensus.height_start_MessSignaturesV2 = 1;  
         consensus.height_start_StakeModifierNewSelection = 1;
         consensus.height_start_StakeModifierV2 = 1;   
-        consensus.height_start_TimeProtoV2 = 1;      
+        consensus.height_start_TimeProtoV2 = 1;       
         consensus.height_start_ZC = 1;                 
         consensus.height_start_ZC_InvalidSerials = 1;
         consensus.height_start_ZC_PublicSpends = 1;
@@ -193,7 +193,7 @@ public:
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
         consensus.ZC_TimeStart = 1588814625;        // May 06, 2020 1:23:45 AM
-        consensus.ZC_WrappedSerialsSupply = 41315630 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
+        consensus.ZC_WrappedSerialsSupply = 10799888 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -261,7 +261,7 @@ public:
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMasternodeCountDrift = 4;        // num of MN we allow the see-saw payments to be off by
-        consensus.nMaxMoneyOut = 43199500 * COIN;
+        consensus.nMaxMoneyOut = 53999437 * COIN;
         consensus.nPoolMaxTransactions = 2;
         consensus.nProposalEstablishmentTime = 60 * 5;  // at least 5 min old to make it into a budget
         consensus.nStakeMinAge = 60 * 60;
@@ -278,22 +278,22 @@ public:
         consensus.nTime_RejectOldSporkKey = 0;     
 
         // height based activations
-        consensus.height_last_PoW = 250;
-        consensus.height_last_ZC_AccumCheckpoint = 310;     // no checkpoints on testnet
+        consensus.height_last_PoW = 200;
+        consensus.height_last_ZC_AccumCheckpoint = 1106090;
         consensus.height_last_ZC_WrappedSerials = -1;
-        consensus.height_start_BIP65 = 1;              // Not defined for regtest. Inherit TestNet value.
+        consensus.height_start_BIP65 = 1;                  
         consensus.height_start_InvalidUTXOsCheck = 999999999;
-        consensus.height_start_MessSignaturesV2 = 1;
-        consensus.height_start_StakeModifierNewSelection = 0;
-        consensus.height_start_StakeModifierV2 = 1;       // start with modifier V2 on testnet
-        consensus.height_start_TimeProtoV2 = 999999999;
-        consensus.height_start_ZC = 1;
+        consensus.height_start_MessSignaturesV2 = 1;      
+        consensus.height_start_StakeModifierNewSelection = 1;
+        consensus.height_start_StakeModifierV2 = 1;       
+        consensus.height_start_TimeProtoV2 = 1;           
+        consensus.height_start_ZC = 1;                     
         consensus.height_start_ZC_InvalidSerials = 999999999;
         consensus.height_start_ZC_PublicSpends = 1;
         consensus.height_start_ZC_SerialRangeCheck = 1;
         consensus.height_start_ZC_SerialsV2 = 1;
         consensus.height_ZC_RecalcAccumulators = 999999999;
-
+        
         // validation by-pass
         consensus.nAlnjBadBlockTime = 1489001494; // Skip nBit validation of Block 201 per PR #915
         consensus.nAlnjBadBlockBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
@@ -379,7 +379,7 @@ public:
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMasternodeCountDrift = 4;        // num of MN we allow the see-saw payments to be off by
-        consensus.nMaxMoneyOut = 4319950 * COIN;
+        consensus.nMaxMoneyOut = 53999437 * COIN;
         consensus.nPoolMaxTransactions = 2;
         consensus.nProposalEstablishmentTime = 60 * 5;  // at least 5 min old to make it into a budget
         consensus.nStakeMinAge = 0;
