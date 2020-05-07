@@ -4160,7 +4160,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            zALNJ is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
                            "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4169,7 +4169,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            zALNJ is een optionele privacy-gerichte methode om munten te mengen op de
                            ALNJ blockchain. In principe kunnen al uw transacties niet worden gevolgd
                            op enige block explorer. U kunt meer lezen over de technische gegevens in de
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
                            "ALNJ Zerocoin (zALNJ) Technische Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4219,7 +4219,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zALNJ in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zALNJ, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4236,7 +4236,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            en je portemonnee herstarten om automuntering uit te schakelen.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Je kan meer lezen over zALNJ in de
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt; "ALNJ Zerocoin (zALNJ) Technische Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technische Paper"&lt;/a&gt;.
                            Als u uw zALNJ wilt behouden en staken, lees dan de "Hoe stake ik"
                            sectie in onderstaande FAQ.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;

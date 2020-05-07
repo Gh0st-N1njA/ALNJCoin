@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zpivcontroldialog.h"
-#include "ui_zpivcontroldialog.h"
+#include "zalnjcontroldialog.h"
+#include "ui_zalnjcontroldialog.h"
 
 #include "main.h"
 #include "walletmodel.h"

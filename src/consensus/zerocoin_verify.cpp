@@ -249,7 +249,7 @@ bool RecalculateALNJSupply(int nHeightStart, bool fSkipZpiv)
         // Rewrite money supply
         nMoneySupply += (nValueOut - nValueIn);
 
-        // Rewrite zpiv supply too
+        // Rewrite zalnj supply too
         if (!fSkipZpiv && pindex->nHeight >= consensus.height_start_ZC) {
             UpdateZALNJSupplyConnect(block, pindex, true);
         }

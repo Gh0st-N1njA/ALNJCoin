@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zpivwallet.h"
+#include "zalnjwallet.h"
 #include "main.h"
 #include "txdb.h"
 #include "wallet/walletdb.h"
 #include "init.h"
 #include "wallet/wallet.h"
 #include "deterministicmint.h"
-#include "zpivchain.h"
+#include "zalnjchain.h"
 
 
 CzALNJWallet::CzALNJWallet(CWallet* parent)
@@ -21,7 +21,7 @@ CzALNJWallet::CzALNJWallet(CWallet* parent)
     uint256 hashSeed;
     bool fFirstRun = !walletdb.ReadCurrentSeedHash(hashSeed);
 
-    //Check for old db version of storing zpiv seed
+    //Check for old db version of storing zalnj seed
     if (fFirstRun) {
         uint256 seed;
         if (walletdb.ReadZALNJSeed_deprecated(seed)) {
@@ -33,7 +33,7 @@ CzALNJWallet::CzALNJWallet(CWallet* parent)
                     LogPrintf("%s: Updated zALNJ seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
-                    LogPrintf("%s: failed to remove old zpiv seed\n", __func__);
+                    LogPrintf("%s: failed to remove old zalnj seed\n", __func__);
                 }
             }
         }
@@ -55,7 +55,7 @@ CzALNJWallet::CzALNJWallet(CWallet* parent)
         key.MakeNewKey(true);
         seed = key.GetPrivKey_256();
         seedMaster = seed;
-        LogPrintf("%s: first run of zpiv wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
+        LogPrintf("%s: first run of zalnj wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
     } else if (!parent->GetDeterministicSeed(hashSeed, seed)) {
         LogPrintf("%s: failed to get deterministic seed for hashseed %s\n", __func__, hashSeed.GetHex());
         return;
@@ -203,7 +203,7 @@ void CzALNJWallet::SyncWithChain(bool fGenerateMintPool)
             if (ShutdownRequested())
                 return;
 
-            if (wallet->zpivTracker->HasPubcoinHash(pMint.first)) {
+            if (wallet->zalnjTracker->HasPubcoinHash(pMint.first)) {
                 mintPool.Remove(pMint.first);
                 continue;
             }
@@ -327,8 +327,8 @@ bool CzALNJWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const
         wallet->AddToWallet(wtx, false, &walletdb);
     }
 
-    // Add to zpivTracker which also adds to database
-    wallet->zpivTracker->Add(dMint, true);
+    // Add to zalnjTracker which also adds to database
+    wallet->zalnjTracker->Add(dMint, true);
 
     //Update the count if it is less than the mint's count
     if (nCountLastUsed < pMint.second) {

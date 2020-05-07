@@ -20,7 +20,7 @@
 #include "pairresult.h"
 #include "primitives/block.h"
 #include "primitives/transaction.h"
-#include "zpiv/zerocoin.h"
+#include "zalnj/zerocoin.h"
 #include "guiinterface.h"
 #include "util.h"
 #include "util/memory.h"
@@ -28,9 +28,9 @@
 #include "wallet/wallet_ismine.h"
 #include "wallet/scriptpubkeyman.h"
 #include "wallet/walletdb.h"
-#include "zpiv/zpivmodule.h"
-#include "zpiv/zpivwallet.h"
-#include "zpiv/zpivtracker.h"
+#include "zalnj/zalnjmodule.h"
+#include "zalnj/zalnjwallet.h"
+#include "zalnj/zalnjtracker.h"
 
 #include <algorithm>
 #include <map>
@@ -610,7 +610,7 @@ public:
 
     // zALNJ wallet
     CzALNJWallet* zwalletMain{nullptr};
-    std::unique_ptr<CzALNJTracker> zpivTracker{nullptr};
+    std::unique_ptr<CzALNJTracker> zalnjTracker{nullptr};
     void setZWallet(CzALNJWallet* zwallet);
     CzALNJWallet* getZWallet();
     bool IsMyZerocoinSpend(const CBigNum& bnSerial) const;

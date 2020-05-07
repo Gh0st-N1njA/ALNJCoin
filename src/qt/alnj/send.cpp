@@ -16,9 +16,9 @@
 #include "addresstablemodel.h"
 #include "coincontrol.h"
 #include "script/standard.h"
-#include "zpiv/deterministicmint.h"
+#include "zalnj/deterministicmint.h"
 #include "openuridialog.h"
-#include "zpivcontroldialog.h"
+#include "zalnjcontroldialog.h"
 
 SendWidget::SendWidget(ALNJGUI* parent) :
     PWidget(parent),
@@ -697,7 +697,7 @@ void SendWidget::onCheckBoxChanged()
 void SendWidget::onALNJSelected(bool _isALNJ)
 {
     isALNJ = _isALNJ;
-    setCssProperty(coinIcon, _isALNJ ? "coin-icon-piv" : "coin-icon-zpiv");
+    setCssProperty(coinIcon, _isALNJ ? "coin-icon-piv" : "coin-icon-zalnj");
     refreshView();
     updateStyle(coinIcon);
 }

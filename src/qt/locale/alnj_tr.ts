@@ -3715,7 +3715,7 @@ bu sayede ALNJ sahipleri blok ödülü kazanımına katılabilmektedir
                            zALNJ is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
                            "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -3725,7 +3725,7 @@ bu sayede ALNJ sahipleri blok ödülü kazanımına katılabilmektedir
 gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
  hiçbir tarayıcı tarafından takip edilemez. Teknik detayları
  hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
                            "ALNJ Zerocoin (zALNJ) Teknik Makalesi"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3775,7 +3775,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zALNJ in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zALNJ, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3785,7 +3785,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                            ALNJ cüzdanınız ağa destek olmak için varsayılan olarak tüm ALNJ bakiyenizin 10% 'unu zALNJ'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zALNJ stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zALNJ Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. ALNJQT veya GUI kullanmıyorsanız, alnj.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt; "ALNJ Zerocoin (zALNJ) Teknik Makalesi"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Teknik Makalesi"&lt;/a&gt;.
                            zALNJ'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
 kısmını okuyunuz.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;

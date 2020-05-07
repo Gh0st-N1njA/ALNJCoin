@@ -4159,7 +4159,7 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
                            zALNJ is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
                            "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4167,7 +4167,7 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 zALNJ je opcionalna metoda miješanja novčića usmjerena na privatnost
 na ALNJ blockchainu. Sve transakcije ne mogu biti praćene na bilo kojem block exploreru. Više o tehničkim detaljima možete pročitati na
-&lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+&lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
 "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4217,7 +4217,7 @@ da bi se mogli potrošiti.
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zALNJ in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zALNJ, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4232,7 +4232,7 @@ vašu alnj.conf datoteku i dodati &lt;i&gt;enablezeromint=0&lt;/i&gt; bez navodn
 i ponovno pokrenuti novčanik da biste onemogućili automatsko stvaranje.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Više o zALNJ-u možete pročitati u
-&lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;"ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+&lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;"ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
 Ako želite zadržati i stake-ati vaš zALNJ, molimo pročitajte "Kako mogu stake-ati"
 odjeljak u najčešće postavljenim pitanjima ispod.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>

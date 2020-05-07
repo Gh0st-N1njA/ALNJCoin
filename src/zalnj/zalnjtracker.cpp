@@ -2,15 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <zpiv/deterministicmint.h>
-#include "zpivtracker.h"
+#include <zalnj/deterministicmint.h>
+#include "zalnjtracker.h"
 #include "util.h"
 #include "sync.h"
 #include "main.h"
 #include "txdb.h"
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
-#include "zpiv/zpivwallet.h"
+#include "zalnj/zalnjwallet.h"
 
 
 CzALNJTracker::CzALNJTracker(CWallet* parent)
@@ -451,7 +451,7 @@ std::set<CMintMeta> CzALNJTracker::ListMints(bool fUnusedOnly, bool fMatureOnly,
                 continue;
             Add(dMint, false, false, wallet->zwalletMain);
         }
-        LogPrint(BCLog::LEGACYZC, "%s: added %d dzpiv from DB\n", __func__, listDeterministicDB.size());
+        LogPrint(BCLog::LEGACYZC, "%s: added %d dzalnj from DB\n", __func__, listDeterministicDB.size());
     }
 
     std::vector<CMintMeta> vOverWrite;

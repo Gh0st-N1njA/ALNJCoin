@@ -4160,7 +4160,7 @@ ALNJ使用了一个股权证明(PoS)一致系统算法，
                            zALNJ is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
                            "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4168,7 +4168,7 @@ ALNJ使用了一个股权证明(PoS)一致系统算法，
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 zALNJ是一种可选的以隐私为中心的隐私币
 它是ALNJ区块链的一员，基本上在任何块资源管理器
-所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
 
 你可以阅读更多关于技术方面的文章&lt;/a&gt;
 

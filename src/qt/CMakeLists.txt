@@ -102,7 +102,7 @@ SET(QT_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/addresstablemodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/askpassphrasedialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/coincontroldialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/zpivcontroldialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zalnjcontroldialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/coincontroltreewidget.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/editaddressdialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/openuridialog.cpp
@@ -115,7 +115,7 @@ SET(QT_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/transactiontablemodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodeltransaction.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/zpivcontroldialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zalnjcontroldialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/alnj/alnjgui.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/alnj/loadingdialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/alnj/pwidget.cpp

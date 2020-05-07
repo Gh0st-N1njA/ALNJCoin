@@ -51,13 +51,13 @@ class ReorgStakeTest(AlnjTestFramework):
         wi = self.nodes[nodeid].getwalletinfo()
         return wi['balance'] + wi['immature_balance']
 
-    def check_money_supply(self, expected_piv, expected_zpiv):
+    def check_money_supply(self, expected_piv, expected_zalnj):
         g_info = [self.nodes[i].getinfo() for i in range(self.num_nodes)]
         # verify that nodes have the expected ALNJ and zALNJ supply
         for node in g_info:
             assert_equal(node['moneysupply'], DecimalAmt(expected_piv))
             for denom in node['zALNJsupply']:
-                assert_equal(node['zALNJsupply'][denom], DecimalAmt(expected_zpiv[denom]))
+                assert_equal(node['zALNJsupply'][denom], DecimalAmt(expected_zalnj[denom]))
 
 
     def run_test(self):
@@ -71,7 +71,7 @@ class ReorgStakeTest(AlnjTestFramework):
         # Check ALNJ and zALNJ supply at the beginning
         # ------------------------------------------
         # zALNJ supply: 2 coins for each denomination
-        expected_zpiv_supply = {
+        expected_zalnj_supply = {
             "1": 2,
             "5": 10,
             "10": 20,
@@ -84,7 +84,7 @@ class ReorgStakeTest(AlnjTestFramework):
         }
         # ALNJ supply: block rewards minus burned fees for minting
         expected_money_supply = 250.0 * 330 - 16 * 0.01
-        self.check_money_supply(expected_money_supply, expected_zpiv_supply)
+        self.check_money_supply(expected_money_supply, expected_zalnj_supply)
 
         # Stake with node 0 and node 1 up to public spend activation (400)
         # 70 blocks: 5 blocks each (x7)
@@ -168,9 +168,9 @@ class ReorgStakeTest(AlnjTestFramework):
         self.log.info("Balance for node 2 checks out.")
 
         # Double spending txes not possible
-        assert_raises_rpc_error(-26, "bad-txns-invalid-zpiv",
+        assert_raises_rpc_error(-26, "bad-txns-invalid-zalnj",
                                 self.nodes[0].sendrawtransaction, tx_B0)
-        assert_raises_rpc_error(-26, "bad-txns-invalid-zpiv",
+        assert_raises_rpc_error(-26, "bad-txns-invalid-zalnj",
                                 self.nodes[0].sendrawtransaction, tx_B1)
 
         # verify that the stakeinput can't be spent
@@ -235,10 +235,10 @@ class ReorgStakeTest(AlnjTestFramework):
         expected_money_supply += 250.0 * (self.nodes[1].getblockcount() - 330)
         spent_coin_0 = mints[0]["denomination"]
         spent_coin_1 = mints[1]["denomination"]
-        expected_zpiv_supply[str(spent_coin_0)] -= spent_coin_0
-        expected_zpiv_supply[str(spent_coin_1)] -= spent_coin_1
-        expected_zpiv_supply["total"] -= (spent_coin_0 + spent_coin_1)
-        self.check_money_supply(expected_money_supply, expected_zpiv_supply)
+        expected_zalnj_supply[str(spent_coin_0)] -= spent_coin_0
+        expected_zalnj_supply[str(spent_coin_1)] -= spent_coin_1
+        expected_zalnj_supply["total"] -= (spent_coin_0 + spent_coin_1)
+        self.check_money_supply(expected_money_supply, expected_zalnj_supply)
         self.log.info("Supply checks out.")
 
 

@@ -31,7 +31,7 @@
 #include "blocksignature.h"
 #include "spork.h"
 #include "invalid.h"
-#include "zpivchain.h"
+#include "zalnjchain.h"
 
 
 #include <boost/thread.hpp>

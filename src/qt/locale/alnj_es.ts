@@ -3845,14 +3845,14 @@ Tu cartera ALNJ también necesita estar completamente sincronizada para que pued
                            zALNJ is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
                            "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; 
 zALNJ es un método opcional centrado en la privacidad de monedas en la Blockchain ALNJ. Básicamente, todas sus transacciones no pueden ser rastreadas en ningún explorador de bloques. Puedes leer más sobre los aspectos técnicos en el
- &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
+ &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
 "Documentación Técnica de ALNJ Zerocoin (zALNJ) ". &lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -3897,7 +3897,7 @@ zALNJ es un método opcional centrado en la privacidad de monedas en la Blockcha
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zALNJ in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zALNJ, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3914,7 +3914,7 @@ tu archivo alnj.conf y agregar &lt;i&gt; enablezeromint=0&lt;/i&gt; Sin las comi
 luego reinicia tu billetera para deshabilitar la impresión automática.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Puedes leer más sobre zALNJ en el
-&lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt; "Documentación Técnica de ALNJ Zerocoin (zALNJ)" &lt;/a&gt;.
+&lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "Documentación Técnica de ALNJ Zerocoin (zALNJ)" &lt;/a&gt;.
 Si deseas conservar y hacer stake tu zALNJ, lee la sección "¿Cómo puedo hacer stake?"de las preguntas frecuentes a continuación.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>

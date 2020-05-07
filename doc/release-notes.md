@@ -66,9 +66,9 @@ An extended description of this large work can be found in the PR [here](https:/
 ### Functional Changes
 
 Automatic zALNJ backup has been disabled. Thus, the following configuration options have been removed  (either as entries in the alnj.conf file or as startup flags):
-- `autozpivbackup`
-- `backupzpiv`
-- `zpivbackuppath`
+- `autozalnjbackup`
+- `backupzalnj`
+- `zalnjbackuppath`
 
 ### Stake-Split threshold
 The stake split threshold is no longer required to be integer. It can be a fractional amount. A threshold value of 0 disables the stake-split functionality.
@@ -90,7 +90,7 @@ RPC Changes
 - "obfcompat" JSON field in `getmasternodecount` output is removed as it is/was redundant with the `enabled` field.
 
 
-- "moneysupply" and "zpivSupply" attributes in `getblock` output are removed.
+- "moneysupply" and "zalnjSupply" attributes in `getblock` output are removed.
 
 
 - "isPublicSpend" boolean (optional) input parameter is removed from the following commands:

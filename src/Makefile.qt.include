@@ -19,7 +19,7 @@ QT_FORMS_UI = \
   qt/forms/optionsdialog.ui \
   qt/forms/rpcconsole.ui \
   qt/alnj/forms/loadingdialog.ui \
-  qt/forms/zpivcontroldialog.ui \
+  qt/forms/zalnjcontroldialog.ui \
   qt/alnj/forms/snackbar.ui \
   qt/alnj/forms/navmenuwidget.ui \
   qt/alnj/forms/lockunlock.ui \
@@ -105,7 +105,7 @@ QT_MOC_CPP = \
   qt/moc_utilitydialog.cpp \
   qt/moc_walletmodel.cpp \
   qt/alnj/moc_loadingdialog.cpp \
-  qt/moc_zpivcontroldialog.cpp \
+  qt/moc_zalnjcontroldialog.cpp \
   qt/alnj/moc_pwidget.cpp \
   qt/alnj/moc_snackbar.cpp \
   qt/alnj/moc_navmenuwidget.cpp \
@@ -226,7 +226,7 @@ BITCOIN_QT_H = \
   qt/alnj/pfborderimage.h \
   qt/alnj/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zpivcontroldialog.h \
+  qt/zalnjcontroldialog.h \
   qt/alnj/pwidget.h \
   qt/alnj/guitransactionsutils.h \
   qt/alnj/snackbar.h \
@@ -459,11 +459,11 @@ RES_ICONS = \
   qt/alnj/res/img/ic-receive-off.svg \
   qt/alnj/res/img/img-empty-staking-on.svg \
   qt/alnj/res/img/ic-arrow-drop-up-white.svg \
-  qt/alnj/res/img/ic-coin-zpiv.png \
+  qt/alnj/res/img/ic-coin-zalnj.png \
   qt/alnj/res/img/ic-receive-on.svg \
   qt/alnj/res/img/img-empty-transactions.svg \
   qt/alnj/res/img/ic-arrow-drop-up.svg \
-  qt/alnj/res/img/ic-coin-zpiv.svg \
+  qt/alnj/res/img/ic-coin-zalnj.svg \
   qt/alnj/res/img/ic-received.svg \
   qt/alnj/res/img/img-logo-alnj.png \
   qt/alnj/res/img/ic-arrow-drop-white-down.svg \
@@ -609,7 +609,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/alnj/loadingdialog.cpp \
-  qt/zpivcontroldialog.cpp \
+  qt/zalnjcontroldialog.cpp \
   qt/alnj/pwidget.cpp \
   qt/alnj/guitransactionsutils.cpp \
   qt/alnj/snackbar.cpp \

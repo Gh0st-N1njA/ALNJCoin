@@ -14,7 +14,7 @@
 #include "qt/alnj/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
-#include "zpivcontroldialog.h"
+#include "zalnjcontroldialog.h"
 #include "qt/alnj/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;

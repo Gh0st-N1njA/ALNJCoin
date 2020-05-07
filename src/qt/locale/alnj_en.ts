@@ -5230,7 +5230,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            zALNJ is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://ALNJ.org/zpiv/&apos;&gt;
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://ALNJ.org/zalnj/&apos;&gt;
                            &quot;ALNJ Zerocoin (zALNJ) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5281,7 +5281,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            You can read more about zALNJ in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://ALNJ.org/zpiv/&apos;&gt; &quot;ALNJ Zerocoin (zALNJ) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://ALNJ.org/zalnj/&apos;&gt; &quot;ALNJ Zerocoin (zALNJ) Technical Paper&quot;&lt;/a&gt;.
                            If you would like to keep and stake your zALNJ, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -7479,7 +7479,7 @@ ALNJ Core Wallet</source>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <location filename="../forms/zpivcontroldialog.ui" line="+20"/>
+        <location filename="../forms/zalnjcontroldialog.ui" line="+20"/>
         <source>Select zALNJ to Spend</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7524,7 +7524,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../zpivcontroldialog.cpp" line="+38"/>
+        <location filename="../zalnjcontroldialog.cpp" line="+38"/>
         <source>Select zALNJ Denominations to Spend</source>
         <translation type="unfinished"></translation>
     </message>
