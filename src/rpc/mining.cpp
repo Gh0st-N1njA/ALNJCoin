@@ -133,8 +133,9 @@ UniValue generate(const UniValue& params, bool fHelp)
             + HelpExampleCli("generate", "11")
         );
 
-    if (!Params().IsRegTestNet())
-        throw JSONRPCError(RPC_METHOD_NOT_FOUND, "This method can only be used on regtest");
+    // TODO: NEED TO DISABLE THIS EVENTUALLY
+   // if (!Params().IsRegTestNet())
+   //     throw JSONRPCError(RPC_METHOD_NOT_FOUND, "This method can only be used on regtest");
 
     const int nGenerate = params[0].get_int();
     int nHeightEnd = 0;
