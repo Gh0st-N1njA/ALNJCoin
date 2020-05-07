@@ -4,10 +4,10 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test RPC commands for signing and verifying messages."""
 
-from test_framework.test_framework import PivxTestFramework
+from test_framework.test_framework import AlnjTestFramework
 from test_framework.util import assert_equal
 
-class SignMessagesTest(PivxTestFramework):
+class SignMessagesTest(AlnjTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

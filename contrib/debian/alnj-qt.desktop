@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=ALNJ Core
+Comment=ALNJ P2P Cryptocurrency
+Comment[fr]=ALNJ, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=ALNJ, eşten eşe kriptografik sanal para birimi
+Exec=alnj-qt %u
+Terminal=false
+Type=Application
+Icon=alnj128
+MimeType=x-scheme-handler/alnj;
+Categories=Office;Finance;
+StartupWMClass=Alnj-qt

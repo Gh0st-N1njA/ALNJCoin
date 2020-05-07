@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="de">locale/alnj_de.qm</file>
+        <file alias="en">locale/alnj_en.qm</file>
+        <file alias="en_US">locale/alnj_en_US.qm</file>
+        <file alias="es">locale/alnj_es.qm</file>
+        <file alias="fr_FR">locale/alnj_fr_FR.qm</file>
+        <file alias="hr_HR">locale/alnj_hr_HR.qm</file>
+        <file alias="it">locale/alnj_it.qm</file>
+        <file alias="ko_KR">locale/alnj_ko_KR.qm</file>
+        <file alias="nl">locale/alnj_nl.qm</file>
+        <file alias="pl">locale/alnj_pl.qm</file>
+        <file alias="ru">locale/alnj_ru.qm</file>
+        <file alias="tr">locale/alnj_tr.qm</file>
+        <file alias="zh_CN">locale/alnj_zh_CN.qm</file>
+    </qresource>
+</RCC>
