@@ -12,7 +12,7 @@ sudo apt-get install -y libqt5gui5 libqt5core5a libqt5dbus5 libqt5svg5-dev libqt
 
 
 ./autogen.sh;
-./configure --with-incompatible-bdb;
+./configure;
 
 make -j$NUM_PROCS
 make install
