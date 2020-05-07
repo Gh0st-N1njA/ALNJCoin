@@ -29,15 +29,15 @@ More information at [algoninja.site/alnj](http://www.algoninja.site/alnj) Visit 
 <table>
 <th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>60,000 ALNJ</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/ALNJ/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
+<tr><td>1</td><td>100,000 ALNJ</td><td>Initial Pre-mine</td></tr>
 </table>
 
 ### PoW Rewards Breakdown
 
 <table>
 <th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
-<tr><td>2-43200</td><td>20% (50 ALNJ)</td><td>80% (200 ALNJ)</td><td>N/A</td></tr>
-<tr><td>43201-151200</td><td>20% (50 ALNJ)</td><td>70% (200 ALNJ)</td><td>10% (25 ALNJ)</td></tr>
+<tr><td>2-86400</td><td>20% (50 ALNJ)</td><td>80% (200 ALNJ)</td><td>N/A</td></tr>
+<tr><td>86401-151200</td><td>20% (50 ALNJ)</td><td>70% (200 ALNJ)</td><td>10% (25 ALNJ)</td></tr>
 <tr><td>151201-259200</td><td>45% (22.5 ALNJ)</td><td>45% (22.5 ALNJ)</td><td>10% (5 ALNJ)</td></tr>
 </table>
 
