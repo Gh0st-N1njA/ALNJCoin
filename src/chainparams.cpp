@@ -161,20 +161,20 @@ public:
 
         // height-based activations
         consensus.height_last_PoW = 259200;
-        consensus.height_last_ZC_AccumCheckpoint = 1;
-        consensus.height_last_ZC_WrappedSerials = 1;
-        consensus.height_start_BIP65 = 1;             
-        consensus.height_start_InvalidUTXOsCheck = 1;
-        consensus.height_start_MessSignaturesV2 = 1;  
-        consensus.height_start_StakeModifierNewSelection = 1;
-        consensus.height_start_StakeModifierV2 = 1;   
-        consensus.height_start_TimeProtoV2 = 1;       
-        consensus.height_start_ZC = 1;                 
-        consensus.height_start_ZC_InvalidSerials = 1;
-        consensus.height_start_ZC_PublicSpends = 1;
-        consensus.height_start_ZC_SerialRangeCheck = 1;
-        consensus.height_start_ZC_SerialsV2 = 1;
-        consensus.height_ZC_RecalcAccumulators = 1;
+        consensus.height_last_ZC_AccumCheckpoint = 0;
+        consensus.height_last_ZC_WrappedSerials = 0;
+        consensus.height_start_BIP65 = 0;             
+        consensus.height_start_InvalidUTXOsCheck = 0;
+        consensus.height_start_MessSignaturesV2 = 0;  
+        consensus.height_start_StakeModifierNewSelection = 0;
+        consensus.height_start_StakeModifierV2 = 0;   
+        consensus.height_start_TimeProtoV2 = 0;       
+        consensus.height_start_ZC = 0;                 
+        consensus.height_start_ZC_InvalidSerials = 0;
+        consensus.height_start_ZC_PublicSpends = 0;
+        consensus.height_start_ZC_SerialRangeCheck = 0;
+        consensus.height_start_ZC_SerialsV2 = 0;
+        consensus.height_ZC_RecalcAccumulators = 0;
 
         // validation by-pass
         consensus.nAlnjBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
@@ -280,17 +280,17 @@ public:
         consensus.height_last_PoW = 200;
         consensus.height_last_ZC_AccumCheckpoint = 1106090;
         consensus.height_last_ZC_WrappedSerials = -1;
-        consensus.height_start_BIP65 = 1;                  
+        consensus.height_start_BIP65 = 0;                  
         consensus.height_start_InvalidUTXOsCheck = 999999999;
-        consensus.height_start_MessSignaturesV2 = 1;      
-        consensus.height_start_StakeModifierNewSelection = 1;
-        consensus.height_start_StakeModifierV2 = 1;       
-        consensus.height_start_TimeProtoV2 = 1;           
-        consensus.height_start_ZC = 1;                     
+        consensus.height_start_MessSignaturesV2 = 0;      
+        consensus.height_start_StakeModifierNewSelection = 0;
+        consensus.height_start_StakeModifierV2 = 0;       
+        consensus.height_start_TimeProtoV2 = 0;           
+        consensus.height_start_ZC = 0;                     
         consensus.height_start_ZC_InvalidSerials = 999999999;
-        consensus.height_start_ZC_PublicSpends = 1;
-        consensus.height_start_ZC_SerialRangeCheck = 1;
-        consensus.height_start_ZC_SerialsV2 = 1;
+        consensus.height_start_ZC_PublicSpends = 0;
+        consensus.height_start_ZC_SerialRangeCheck = 0;
+        consensus.height_start_ZC_SerialsV2 = 0;
         consensus.height_ZC_RecalcAccumulators = 999999999;
         
         // validation by-pass
