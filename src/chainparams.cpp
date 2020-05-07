@@ -132,9 +132,9 @@ public:
 
         consensus.hashGenesisBlock = genesis.GetHash();
         
-        printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-        printf("new mainnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
-        printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+        printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot);
+        printf("new mainnet genesis nonce: %s\n", genesis.nNonce);
+        printf("new mainnet genesis hash: %s\n", genesis.GetHash);
         
         assert(consensus.hashGenesisBlock == uint256S("0x00000e98e5f9cc633d6612684289e718bb27c3fbccf2e832dc92f180b130629e"));
         assert(genesis.hashMerkleRoot == uint256S("0x75bcec5c34913e5cff5528d9a83eed62879ab0d41c483b99de4a9aeeb1c6d071"));
@@ -252,10 +252,10 @@ public:
         strNetworkID = "test";
 
         genesis = CreateGenesisBlock(1588826989, 1175957, 0x1e0ffff0, 1, 250 * COIN);
-        
-        printf("new testnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-        printf("new testnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
-        printf("new testnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+     
+        printf("new testnet genesis merkle root: %s\n", genesis.hashMerkleRoot);
+        printf("new testnet genesis nonce: %s\n", genesis.nNonce);
+        printf("new testnet genesis hash: %s\n", genesis.GetHash);
         
         
         consensus.hashGenesisBlock = genesis.GetHash();
@@ -377,9 +377,9 @@ public:
         genesis = CreateGenesisBlock(1588826989, 1175957, 0x1e0ffff0, 1, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
                 
-        printf("new regtest genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-        printf("new regtest genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
-        printf("new regtest genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+        printf("new regtest genesis merkle root: %s\n", genesis.hashMerkleRoot);
+        printf("new regtest genesis nonce: %s\n", genesis.nNonce);
+        printf("new regtest genesis hash: %s\n", genesis.GetHash);
         
         
         
