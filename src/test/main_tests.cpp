@@ -12,15 +12,15 @@
 
 BOOST_FIXTURE_TEST_SUITE(main_tests, TestingSetup)
 
-CAmount nMoneySupplyPoWEnd = 43199500 * COIN;
+CAmount nMoneySupplyPoWEnd = 53999437 * COIN;
 
 BOOST_AUTO_TEST_CASE(subsidy_limit_test)
 {
     CAmount nSum = 0;
     for (int nHeight = 0; nHeight < 1; nHeight += 1) {
-        /* premine in block 1 (60,001 ALNJ) */
+        /* premine in block 1 (10,799,888 ALNJ) */
         CAmount nSubsidy = GetBlockValue(nHeight);
-        BOOST_CHECK(nSubsidy <= 60001 * COIN);
+        BOOST_CHECK(nSubsidy <= 10799888 * COIN);
         nSum += nSubsidy;
     }
 
