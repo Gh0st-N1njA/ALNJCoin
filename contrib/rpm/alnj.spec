@@ -20,8 +20,8 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://alnj.org/
-Source0:	https://alnj.org/bin/alnj-core-%{version}/alnj-%{version}.tar.gz
+URL:		https://algoninja.site/alnj/
+Source0:	https://algoninja.site/alnj/bin/alnj-core-%{version}/alnj-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
 Source10:	https://raw.githubusercontent.com/alnj-project/alnj/v%{version}/contrib/debian/examples/alnj.conf

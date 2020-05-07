@@ -11,7 +11,7 @@ description: |
   Zero Knowledge cryptography proofs for industry-leading
   transaction anonymity.
 
-  - [Download](https://alnj.org/wp-content/uploads/2018/10/ALNJ-White.pdf) ALNJ White Paper PDF
+  - [Download](https://algoninja.site/alnj/wp-content/uploads/2018/10/ALNJ-White.pdf) ALNJ White Paper PDF
 grade: devel
 confinement: strict
 apps:

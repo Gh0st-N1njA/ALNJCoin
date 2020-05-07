@@ -3,7 +3,7 @@ ALNJ Core
 
 Setup
 ---------------------
-[ALNJ Core](http://alnj.org/wallet) is the original ALNJ client and it builds the backbone of the network. However, it downloads and stores the entire history of ALNJ transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[ALNJ Core](http://algoninja.site/alnj/wallet) is the original ALNJ client and it builds the backbone of the network. However, it downloads and stores the entire history of ALNJ transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -28,8 +28,8 @@ Drag ALNJ-Qt to your applications folder, and then run ALNJ-Qt.
 
 * See the documentation at the [ALNJ Wiki](https://github.com/ALNJ-Project/ALNJ/wiki)
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [ALNJ Forum](http://forum.alnj.org/).
-* Join our Discord server [Discord Server](https://discord.alnj.org)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [ALNJ Forum](http://forum.algoninja.site/alnj/).
+* Join our Discord server [Discord Server](https://discord.algoninja.site/alnj)
 
 Building
 ---------------------
@@ -56,8 +56,8 @@ The ALNJ repo's [root README](/README.md) contains relevant information on the d
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [ALNJ](http://forum.alnj.org/) forum.
-* Join the [ALNJ Discord](https://discord.alnj.org).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [ALNJ](http://forum.algoninja.site/alnj/) forum.
+* Join the [ALNJ Discord](https://discord.algoninja.site/alnj).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

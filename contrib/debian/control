@@ -28,7 +28,7 @@ Build-Depends: debhelper,
  libzmq3-dev,
  dh-systemd
 Standards-Version: 3.9.2
-Homepage: http://www.alnj.org
+Homepage: http://www.algoninja.site/alnj
 Vcs-Git: git://github.com/ALNJ-Project/ALNJ.git
 Vcs-Browser: http://github.com/ALNJ-Project/ALNJ
 
