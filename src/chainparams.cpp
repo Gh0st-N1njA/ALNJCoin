@@ -127,7 +127,6 @@ public:
     {
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
-        hashGenesisBlock = uint256("0x01")
         
         genesis = CreateGenesisBlock(1588820064, 188983, 0x1e0ffff0, 1, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
