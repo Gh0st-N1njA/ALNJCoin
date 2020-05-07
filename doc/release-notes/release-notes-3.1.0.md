@@ -40,48 +40,48 @@ frequently tested on them.
 Notable Changes
 ==============
 
-zPIV Updates
+zALNJ Updates
 --------------
 
-### zPIV Staking
+### zALNJ Staking
 
-zPIV Staking is here! zPIV staking will be activated on the morning of the 8th of May 2018. With the release of zPIV staking, there are effectively 2 versions of zPIV, zPIV minted on the 3.0.6 ALNJ wallet or lower, and zPIV minted on ALNJ wallet version or higher. New features in this release will require the use of zPIV v2, zPIV minted on this wallet release 3.1.0 or later. If you currently hold zPIV v1 and wish to take advantage of zPIV staking and deterministic zPIV, you will need to spend the zPIV v1 to yourself and remint zPIV v2.
-Note: To find your zPIV version, click the privacy tab, then the zPIV Control button then expand the arrows next to the desired denomination.
-
-
-### Deterministic zPIV Seed Keys
-
-zPIV is now associated with a deterministic seed key. With this seed key, users are able to securely backup their zPIV outside of the wallet that the zPIV had been minted on. zPIV can also be transferred from wallet to wallet without the need of transferring the wallet data file.
+zALNJ Staking is here! zALNJ staking will be activated on the morning of the 8th of May 2018. With the release of zALNJ staking, there are effectively 2 versions of zALNJ, zALNJ minted on the 3.0.6 ALNJ wallet or lower, and zALNJ minted on ALNJ wallet version or higher. New features in this release will require the use of zALNJ v2, zALNJ minted on this wallet release 3.1.0 or later. If you currently hold zALNJ v1 and wish to take advantage of zALNJ staking and deterministic zALNJ, you will need to spend the zALNJ v1 to yourself and remint zALNJ v2.
+Note: To find your zALNJ version, click the privacy tab, then the zALNJ Control button then expand the arrows next to the desired denomination.
 
 
-### Updated zPIV minting
+### Deterministic zALNJ Seed Keys
 
-zPIV minting now only requires 1 further mint (down from 2) to mature. zPIV mints still require 20 confirmations.  Mints also require that the 'second' mint is at least two checkpoints deep in the chain (this was already the case, but the logic was not as precise).
-
-
-### zPIV Search
-
-Users will now have the ability to search the blockchain for a specific serial # to see if a zPIV denomination has been spent or not.
+zALNJ is now associated with a deterministic seed key. With this seed key, users are able to securely backup their zALNJ outside of the wallet that the zALNJ had been minted on. zALNJ can also be transferred from wallet to wallet without the need of transferring the wallet data file.
 
 
+### Updated zALNJ minting
 
-PIV/zPIV Staking and Masternode Rewards
+zALNJ minting now only requires 1 further mint (down from 2) to mature. zALNJ mints still require 20 confirmations.  Mints also require that the 'second' mint is at least two checkpoints deep in the chain (this was already the case, but the logic was not as precise).
+
+
+### zALNJ Search
+
+Users will now have the ability to search the blockchain for a specific serial # to see if a zALNJ denomination has been spent or not.
+
+
+
+ALNJ/zALNJ Staking and Masternode Rewards
 --------------
 
-### PIV, zPIV and Masternode Payment Schedule
+### ALNJ, zALNJ and Masternode Payment Schedule
 
-To encourage the use of zPIV and increase the ALNJ zerocoin anonymity set, the ALNJ payment schedule has been changed to the following:
+To encourage the use of zALNJ and increase the ALNJ zerocoin anonymity set, the ALNJ payment schedule has been changed to the following:
 
-If a user staking zPIV wins the reward for their block, the following zPIV reward will be: 
-- 3 zPIV (3 x 1 denominations) rewarded to the staker, 2 PIV rewarded to the masternode owner and 1 PIV available for the budget. This is a total block reward of 6 PIV, up from 5.
+If a user staking zALNJ wins the reward for their block, the following zALNJ reward will be: 
+- 3 zALNJ (3 x 1 denominations) rewarded to the staker, 2 ALNJ rewarded to the masternode owner and 1 ALNJ available for the budget. This is a total block reward of 6 ALNJ, up from 5.
 
-If a user staking PIV wins the reward, the following amounts will be rewarded: 
-- 2 PIV to the PIV staker, 3 PIV to the Masternode owner and 1 PIV available for the budget. This is a total block reward of 6 PIV, up from 5.
+If a user staking ALNJ wins the reward, the following amounts will be rewarded: 
+- 2 ALNJ to the ALNJ staker, 3 ALNJ to the Masternode owner and 1 ALNJ available for the budget. This is a total block reward of 6 ALNJ, up from 5.
 
 
-### Return change to sender when minting zPIV
+### Return change to sender when minting zALNJ
 
-Previously, zPIV minting would send any change to a newly generated "change address". This has caused confusion among some users, and in some cases insufficient backups of the wallet. The wallet will now find the contributing address which contained the most PIV and return the change from a zPIV mint to that address.
+Previously, zALNJ minting would send any change to a newly generated "change address". This has caused confusion among some users, and in some cases insufficient backups of the wallet. The wallet will now find the contributing address which contained the most ALNJ and return the change from a zALNJ mint to that address.
 
 
 User Experience
@@ -97,9 +97,9 @@ The overview tab has been simplified greatly to display only balances that are a
 ### Wallet Options
 
 There have been a number of changes to the tasks that you are able to perform from the wallet options. Users will now have the ability to do the following: 
--	Enable and disable the auto zPIV minting feature. This is enabled by default and the enablezeromint=0 setting in the alnj.conf file will overwrite the GUI option.
--	The percentage of autominted zPIV can now be set from 1 to 100, changed from 10 – 100.
--	The stake split threshold can now be set VIA the wallet options. This setting is an advanced feature for those wishing to remain staking regular PIV.
+-	Enable and disable the auto zALNJ minting feature. This is enabled by default and the enablezeromint=0 setting in the alnj.conf file will overwrite the GUI option.
+-	The percentage of autominted zALNJ can now be set from 1 to 100, changed from 10 – 100.
+-	The stake split threshold can now be set VIA the wallet options. This setting is an advanced feature for those wishing to remain staking regular ALNJ.
 -	“Unlock for staking and anonymization only” is now selected by default when unlocking the wallet from the User Interface
 
 
@@ -127,7 +127,7 @@ Note: System write permissions must be appropriate for the location the wallet i
 ### Details:
 
 * If path is set to directory, the backup will be named `wallet.dat-<year>-<month>-<day>-<hour>-<minute>-<second>`
-* If zPIV backup, auto generated name is `wallet-autozpivbackup.dat-<year>-<month>-<day>-<hour>-<minute>-<second>`
+* If zALNJ backup, auto generated name is `wallet-autozpivbackup.dat-<year>-<month>-<day>-<hour>-<minute>-<second>`
 * If path set to file, backup will be named `<filename>.dat`
 * walletbackupthreshold enables the user to select the maximum count of backup files to be written before overwriting existing backups.
 
@@ -188,7 +188,7 @@ This allows for a user (such as a third party integration) to query the blockcha
 ### New RPC command 
 `findserial`
 
-Search the zerocoin database for a zerocoinspend transaction that contains the given serial. This will be a helpful tool for the ALNJ support group, which often times sees users say "I didn't spend that zPIV". This RPC call allows for support to grab the serial, and then find the spend tx on the chain.
+Search the zerocoin database for a zerocoinspend transaction that contains the given serial. This will be a helpful tool for the ALNJ support group, which often times sees users say "I didn't spend that zALNJ". This RPC call allows for support to grab the serial, and then find the spend tx on the chain.
 
 
 ### New RPC commands 
@@ -206,11 +206,11 @@ Network Layer 2 Changes (Proposals / Budgets / SwiftX)
 
 ### Monthly Budget Increase
 
-As voted on by the ALNJ masternodes, the monthly budget available to be utilised has been increased to 42,000 PIV / month. This PIV only has the opportunity to be raised once per month (paid to winning proposals) with any unused PIV not created by the blockchain.
+As voted on by the ALNJ masternodes, the monthly budget available to be utilised has been increased to 42,000 ALNJ / month. This ALNJ only has the opportunity to be raised once per month (paid to winning proposals) with any unused ALNJ not created by the blockchain.
 
 ### Budget Finalization Fee
 
-The ALNJ finalization fee for successful proposals has now been reduced, this fee is now 5 PIV down from 50 PIV. The total fee outlay for a successful proposal is now a total of 55 PIV.
+The ALNJ finalization fee for successful proposals has now been reduced, this fee is now 5 ALNJ down from 50 ALNJ. The total fee outlay for a successful proposal is now a total of 55 ALNJ.
 
 
 ### SwiftX Raw Transactions
@@ -248,8 +248,8 @@ When inputting wrong data into the GUI for a SOCKS5 proxy, the wallet would cras
 Minor Enhancements
 --------------
 
--	Enforced v1 zPIV spends to require a security level of 100
--	Updates to zPIV spends to avoid segfaults
+-	Enforced v1 zALNJ spends to require a security level of 100
+-	Updates to zALNJ spends to avoid segfaults
 -	Updates to configuration will now reflect on the privacy tab
 -	Fixed a  bug that would not start masternodes from the ALNJ-Qt masternodes tab
 -	Updated ALNJ-Qt tooltips
@@ -263,12 +263,12 @@ Minor Enhancements
 Further Reading: Version 2 Zerocoins
 ==============
 
-Several critical security flaws in the zerocoin protocol and ALNJ's zerocoin implementation have been patched. Enough has changed that new zerocoins are distinct from old zerocoins, and have been labelled as *version 2*. When using the zPIV Control dialog in the QT wallet, a user is able to see zPIV marked as version 1 or 2.
+Several critical security flaws in the zerocoin protocol and ALNJ's zerocoin implementation have been patched. Enough has changed that new zerocoins are distinct from old zerocoins, and have been labelled as *version 2*. When using the zALNJ Control dialog in the QT wallet, a user is able to see zALNJ marked as version 1 or 2.
 
-zPoS (zPIV staking)
+zPoS (zALNJ staking)
 --------------
 
-Once a zPIV has over 200 confirmations it becomes available to stake. Staking zPIV will consume the exact zerocoin that is staked and replace it with a freshly minted zerocoin of the same denomination as well as a reward of three 1 denomination zPIV. So for example if a 1,000 zPIV denomination is staked, the protocol replaces that with a fresh 1,000 denomination and three1 denomination zPIVs.
+Once a zALNJ has over 200 confirmations it becomes available to stake. Staking zALNJ will consume the exact zerocoin that is staked and replace it with a freshly minted zerocoin of the same denomination as well as a reward of three 1 denomination zALNJ. So for example if a 1,000 zALNJ denomination is staked, the protocol replaces that with a fresh 1,000 denomination and three1 denomination zALNJs.
 
 Secure Spending
 --------------
@@ -280,7 +280,7 @@ The serial troll situation is mitigated in version 2 by requiring that the seria
 Deterministic Zerocoin Generation
 --------------
 
-Zerocoins, or zPIV, are now deterministically generated using a unique 256 bit seed. Each wallet will generate a new seed on its first run. The deterministic seed is used to generate a string of zPIV that can be recalculated at any time using the seed. Deterministic zPIV allows for users to backup all of their future zPIV by simply recording their seed and keeping it in a safe place (similar to backing up a private key for PIV). The zPIV seed needs to remain in the wallet in order to spend the zPIV after it is generated, if the seed is changed then the coins will not be spendable because the wallet will not have the ability to regenerate all of the private zPIV data from the seed. It is important that users record & backup their seed after their first run of the wallet. If the wallet is locked during the first run, then the seed will be generated the first time the wallet is unlocked.
+Zerocoins, or zALNJ, are now deterministically generated using a unique 256 bit seed. Each wallet will generate a new seed on its first run. The deterministic seed is used to generate a string of zALNJ that can be recalculated at any time using the seed. Deterministic zALNJ allows for users to backup all of their future zALNJ by simply recording their seed and keeping it in a safe place (similar to backing up a private key for ALNJ). The zALNJ seed needs to remain in the wallet in order to spend the zALNJ after it is generated, if the seed is changed then the coins will not be spendable because the wallet will not have the ability to regenerate all of the private zALNJ data from the seed. It is important that users record & backup their seed after their first run of the wallet. If the wallet is locked during the first run, then the seed will be generated the first time the wallet is unlocked.
 
 Zerocoin Modulus
 --------------
@@ -294,7 +294,7 @@ ALNJ's zerocoin implementation used the same code from the ZCoin project to impo
 Detailed release notes follow. This overview includes changes that affect behavior, not code moves, refactors and string updates. For convenience in locating the code changes and accompanying discussion, both the pull request and git merge commit are mentioned.
 
 ### Core Features
- - #582 `cb1632520` [Core] zPIV v2: zPoS dzPIV ezPIV external backup and budget fixes (too many to list)
+ - #582 `cb1632520` [Core] zALNJ v2: zPoS dzALNJ ezALNJ external backup and budget fixes (too many to list)
  - #558 `c7e6f0f7f` [Core] Remove Gitan-OSX warning for High Sierra builds (Mrs-X)
  - #523 `926c073ea` [Core] Give high priority to zerocoinspends to make it into the next block. (presstab)
  - #535 `5e8875feb` [Core] Minor refacturing + unused variable removed (Mrs-X)
@@ -318,7 +318,7 @@ Detailed release notes follow. This overview includes changes that affect behavi
  - #542 `61156def7` [Network] Remove vfReachable and modify IsReachable to only use vfLimited. (Patrick Strateman)
 
 ### GUI
- - #572 `d9b23fe60` [Qt] Refresh zPIV balance after resetting mints or spends (warrows)
+ - #572 `d9b23fe60` [Qt] Refresh zALNJ balance after resetting mints or spends (warrows)
  - #571 `1c8e7cb7b` [Qt] Update privacy tab info about zeromint on config change (warrows)
  - #568 `f226de09e` [Qt] Connect automint icon to the UI automint setting change (warrows)
  - #566 `84f43857c` [Qt] Add automint status bar icon (Fuzzbawls)
@@ -329,7 +329,7 @@ Detailed release notes follow. This overview includes changes that affect behavi
  - #521 `fbb105a00` [Qt] Make "For anonymization and staking only" checked by default (Mrs-X)
  - #508 `2cf3be6bb` [Qt] Fix crash when inputting wrong port for network proxy (warrows)
  - #500 `4c01ba65d` [Qt] Remove duplicate code for updating address book labels. (blondfrogs)
- - #506 `ae72bf4e2` [Qt] Autoscroll to end of zPIV status output (Mrs-X)
+ - #506 `ae72bf4e2` [Qt] Autoscroll to end of zALNJ status output (Mrs-X)
  - #499 `6305264f2` [Qt] Send popup simplified + SwiftTX -> SwiftX (Mrs-X)
  - #490 `ba777e4ef` [Qt] Update MultiSend GUI to allow address labels (blondfrogs)
  - #483 `5b1070365` [Qt] Fixed Dynamic Screen Elements Issue for Multisig (blondfrogs)
@@ -361,15 +361,15 @@ Detailed release notes follow. This overview includes changes that affect behavi
  - #170 `027f16c64` [RPC] Convert source tree from json_spirit to UniValue (Fuzzbawls)
 
 ### Wallet
- - #570 `8c8350b59` [Wallet] Add a check on zPIV spend to avoid a segfault (warrows)
+ - #570 `8c8350b59` [Wallet] Add a check on zALNJ spend to avoid a segfault (warrows)
  - #565 `80b803201` [Wallet] Increase valid range for automint percentage (Fuzzbawls)
  - #518 `9f6449a70` [Wallet] Combine fees when possible and fix autocombine insufficient funds (warrows)
  - #497 `f21e4456b` [Wallet] Call AutocombineDust less often (warrows)
  - #498 `bfad2a1df` [Wallet] Change the way transaction list is handled (warrows)
  - #477 `93c5f9ff5` [Wallet] Remove potential memory leak (blondfrogs)
  - #488 `d09cf916a` [Wallet] Fixes an autocombinerewards bug with above max size TXs (warrows)
- - #448 `222ef6e6b` [Wallet] Return change to sender when minting zPIV. (presstab)
- - #445 `fc570fc1e` [Wallet] Only require 1 mint to be added before spending zPIV. (presstab)
+ - #448 `222ef6e6b` [Wallet] Return change to sender when minting zALNJ. (presstab)
+ - #445 `fc570fc1e` [Wallet] Only require 1 mint to be added before spending zALNJ. (presstab)
  
 ### Miscellaneous
  - #559 `d2b017217` [Bug] Segfault with -enableswifttx=0 / -enableswifttx=false (Mrs-X)

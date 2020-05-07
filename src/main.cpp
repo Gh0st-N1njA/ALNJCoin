@@ -1038,7 +1038,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("%s : zPIV spend tx %s already in block %d",
+                return state.Invalid(error("%s : zALNJ spend tx %s already in block %d",
                         __func__, tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1050,7 +1050,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 
                 libzerocoin::ZerocoinParams* params = consensus.Zerocoin_Params(false);
                 PublicCoinSpend publicSpend(params);
-                if (!ZPIVModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                if (!ZALNJModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                     return false;
                 }
                 if (!ContextualCheckZerocoinSpend(tx, &publicSpend, chainHeight, UINT256_ZERO))
@@ -1090,9 +1090,9 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 }
             }
 
-            // Reject legacy zPIV mints
+            // Reject legacy zALNJ mints
             if (!Params().IsRegTestNet() && tx.HasZerocoinMintOutputs())
-                return state.Invalid(error("%s : tried to include zPIV mint output in tx %s",
+                return state.Invalid(error("%s : tried to include zALNJ mint output in tx %s",
                         __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-outputs");
 
             // are the actual inputs available?
@@ -1836,7 +1836,7 @@ void AddInvalidSpendsToMap(const CBlock& block)
                 if (isPublicSpend) {
                     PublicCoinSpend publicSpend(params);
                     CValidationState state;
-                    if (!ZPIVModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                    if (!ZALNJModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                         throw std::runtime_error("Failed to parse public spend");
                     }
                     spend = &publicSpend;
@@ -2055,9 +2055,9 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
     if (blockUndo.vtxundo.size() + 1 != block.vtx.size())
         return error("DisconnectBlock() : block and undo data inconsistent");
 
-    //Track zPIV money supply
-    if (!UpdateZPIVSupplyDisconnect(block, pindex))
-        return error("%s: Failed to calculate new zPIV supply", __func__);
+    //Track zALNJ money supply
+    if (!UpdateZALNJSupplyDisconnect(block, pindex))
+        return error("%s: Failed to calculate new zALNJ supply", __func__);
 
     // undo transactions in reverse order
     for (int i = block.vtx.size() - 1; i >= 0; i--) {
@@ -2078,7 +2078,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
                         if (isPublicSpend) {
                             PublicCoinSpend publicSpend(params);
                             CValidationState state;
-                            if (!ZPIVModule::ParseZerocoinPublicSpend(txin, tx, state, publicSpend)) {
+                            if (!ZALNJModule::ParseZerocoinPublicSpend(txin, tx, state, publicSpend)) {
                                 return error("Failed to parse public spend");
                             }
                             serial = publicSpend.getCoinSerialNumber();
@@ -2365,7 +2365,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 if (isPublicSpend) {
                     libzerocoin::ZerocoinParams* params = consensus.Zerocoin_Params(false);
                     PublicCoinSpend publicSpend(params);
-                    if (!ZPIVModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                    if (!ZALNJModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                         return false;
                     }
                     nValueIn += publicSpend.getDenomination() * COIN;
@@ -2475,7 +2475,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         setDirtyBlockIndex.insert(pindex);
     }
 
-    //Record zPIV serials
+    //Record zALNJ serials
     if (pwalletMain) {
         std::set<uint256> setAddedTx;
         for (const std::pair<libzerocoin::CoinSpend, uint256>& pSpend : vSpends) {
@@ -2518,16 +2518,16 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // add this block to the view's block chain
     view.SetBestBlock(pindex->GetBlockHash());
 
-    // Update zPIV money supply map
-    if (!UpdateZPIVSupplyConnect(block, pindex, fJustCheck)) {
-        return state.DoS(100, error("%s: Failed to calculate new zPIV supply for block=%s height=%d", __func__,
+    // Update zALNJ money supply map
+    if (!UpdateZALNJSupplyConnect(block, pindex, fJustCheck)) {
+        return state.DoS(100, error("%s: Failed to calculate new zALNJ supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
     }
 
-    // A one-time event where the zPIV supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where the zALNJ supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1
             && GetZerocoinSupply() != consensus.ZC_WrappedSerialsSupply + GetWrapppedSerialInflationAmount()) {
-        RecalculatePIVSupply(consensus.height_start_ZC, false);
+        RecalculateALNJSupply(consensus.height_start_ZC, false);
     }
 
     // Add fraudulent funds to the supply and remove any recovered funds.
@@ -2539,7 +2539,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         nMoneySupply -= nLocked;
     }
 
-    // Update PIV money supply
+    // Update ALNJ money supply
     nMoneySupply += (nValueOut - nValueIn);
 
     int64_t nTime3 = GetTimeMicros();
@@ -3613,7 +3613,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         ))
             return error("%s : CheckTransaction failed", __func__);
 
-        // double check that there are no double spent zPIV spends in this block
+        // double check that there are no double spent zALNJ spends in this block
         if (tx.HasZerocoinSpendInputs()) {
             for (const CTxIn& txIn : tx.vin) {
                 bool isPublicSpend = txIn.IsZerocoinPublicSpend();
@@ -3622,7 +3622,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                     if (isPublicSpend) {
                         libzerocoin::ZerocoinParams* params = Params().GetConsensus().Zerocoin_Params(false);
                         PublicCoinSpend publicSpend(params);
-                        if (!ZPIVModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                        if (!ZALNJModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                             return false;
                         }
                         spend = publicSpend;
@@ -3635,7 +3635,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                         spend = TxInToZerocoinSpend(txIn);
                     }
                     if (std::count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zPIV serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of zALNJ serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -3943,17 +3943,17 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
         // Inputs
         std::vector<CTxIn> pivInputs;
-        std::vector<CTxIn> zPIVInputs;
+        std::vector<CTxIn> zALNJInputs;
 
         for (const CTxIn& stakeIn : stakeTxIn.vin) {
             if(stakeIn.IsZerocoinSpend()){
-                zPIVInputs.push_back(stakeIn);
+                zALNJInputs.push_back(stakeIn);
             }else{
                 pivInputs.push_back(stakeIn);
             }
         }
-        const bool hasPIVInputs = !pivInputs.empty();
-        const bool hasZPIVInputs = !zPIVInputs.empty();
+        const bool hasALNJInputs = !pivInputs.empty();
+        const bool hasZALNJInputs = !zALNJInputs.empty();
 
         // ZC started after PoS.
         // Check for serial double spent on the same block, TODO: Move this to the proper method..
@@ -3975,7 +3975,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                         if (isPublicSpend) {
                             libzerocoin::ZerocoinParams* params = Params().GetConsensus().Zerocoin_Params(false);
                             PublicCoinSpend publicSpend(params);
-                            if (!ZPIVModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                            if (!ZALNJModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                                 return false;
                             }
                             spend = publicSpend;
@@ -3991,7 +3991,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     }
                 }
                 if(tx.IsCoinStake()) continue;
-                if(hasPIVInputs) {
+                if(hasALNJInputs) {
                     // Check if coinstake input is double spent inside the same block
                     for (const CTxIn& pivIn : pivInputs)
                         if(pivIn.prevout == in.prevout)
@@ -4033,11 +4033,11 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     for (const CTxIn& in: t.vin) {
                         // If this input is a zerocoin spend, and the coinstake has zerocoin inputs
                         // then store the serials for later check
-                        if(hasZPIVInputs && in.IsZerocoinSpend())
+                        if(hasZALNJInputs && in.IsZerocoinSpend())
                             vBlockSerials.push_back(TxInToZerocoinSpend(in).getCoinSerialNumber());
 
                         // Loop through every input of the staking tx
-                        if (hasPIVInputs) {
+                        if (hasALNJInputs) {
                             for (const CTxIn& stakeIn : pivInputs)
                                 // check if the tx input is double spending any coinstake input
                                 if (stakeIn.prevout == in.prevout)
@@ -4057,9 +4057,9 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             // Split height
             splitHeight = prev->nHeight;
 
-            // Now that this loop if completed. Check if we have zPIV inputs.
-            if(hasZPIVInputs) {
-                for (const CTxIn& zPivInput : zPIVInputs) {
+            // Now that this loop if completed. Check if we have zALNJ inputs.
+            if(hasZALNJInputs) {
+                for (const CTxIn& zPivInput : zALNJInputs) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
 
                     // First check if the serials were not already spent on the forked blocks.
@@ -4107,7 +4107,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             }
         } else {
             if(!isBlockFromFork)
-                for (const CTxIn& zPivInput : zPIVInputs) {
+                for (const CTxIn& zPivInput : zALNJInputs) {
                         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
                         if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex->nHeight, UINT256_ZERO))
                             return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,

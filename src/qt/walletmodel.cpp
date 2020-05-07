@@ -500,7 +500,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
 
 
         if (recipients[0].useSwiftTX && total > sporkManager.GetSporkValue(SPORK_5_MAX_VALUE) * COIN) {
-            Q_EMIT message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.").arg(sporkManager.GetSporkValue(SPORK_5_MAX_VALUE)),
+            Q_EMIT message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALNJ.").arg(sporkManager.GetSporkValue(SPORK_5_MAX_VALUE)),
                 CClientUIInterface::MSG_ERROR);
             return TransactionCreationFailed;
         }
@@ -518,7 +518,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
         transaction.setTransactionFee(nFeeRequired);
 
         if (recipients[0].useSwiftTX && newTx->GetValueOut() > sporkManager.GetSporkValue(SPORK_5_MAX_VALUE) * COIN) {
-            Q_EMIT message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.").arg(sporkManager.GetSporkValue(SPORK_5_MAX_VALUE)),
+            Q_EMIT message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALNJ.").arg(sporkManager.GetSporkValue(SPORK_5_MAX_VALUE)),
                 CClientUIInterface::MSG_ERROR);
             return TransactionCreationFailed;
         }
@@ -629,7 +629,7 @@ bool WalletModel::createZpivSpend(
     }
 
     if (wallet->IsLocked()) {
-        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZPIV_WALLET_LOCKED);
+        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZALNJ_WALLET_LOCKED);
         return false;
     }
 
@@ -860,9 +860,9 @@ static void NotifyZerocoinChanged(WalletModel* walletmodel, CWallet* wallet, con
                               Q_ARG(int, status));
 }
 
-static void NotifyzPIVReset(WalletModel* walletmodel)
+static void NotifyzALNJReset(WalletModel* walletmodel)
 {
-    qDebug() << "NotifyzPIVReset";
+    qDebug() << "NotifyzALNJReset";
     QMetaObject::invokeMethod(walletmodel, "checkBalanceChanged", Qt::QueuedConnection);
 }
 
@@ -900,7 +900,7 @@ void WalletModel::subscribeToCoreSignals()
     wallet->NotifyWatchonlyChanged.connect(boost::bind(NotifyWatchonlyChanged, this, _1));
     wallet->NotifyMultiSigChanged.connect(boost::bind(NotifyMultiSigChanged, this, _1));
     wallet->NotifyZerocoinChanged.connect(boost::bind(NotifyZerocoinChanged, this, _1, _2, _3, _4));
-    wallet->NotifyzPIVReset.connect(boost::bind(NotifyzPIVReset, this));
+    wallet->NotifyzALNJReset.connect(boost::bind(NotifyzALNJReset, this));
     wallet->NotifyWalletBacked.connect(boost::bind(NotifyWalletBacked, this, _1, _2));
 }
 
@@ -914,7 +914,7 @@ void WalletModel::unsubscribeFromCoreSignals()
     wallet->NotifyWatchonlyChanged.disconnect(boost::bind(NotifyWatchonlyChanged, this, _1));
     wallet->NotifyMultiSigChanged.disconnect(boost::bind(NotifyMultiSigChanged, this, _1));
     wallet->NotifyZerocoinChanged.disconnect(boost::bind(NotifyZerocoinChanged, this, _1, _2, _3, _4));
-    wallet->NotifyzPIVReset.disconnect(boost::bind(NotifyzPIVReset, this));
+    wallet->NotifyzALNJReset.disconnect(boost::bind(NotifyzALNJReset, this));
     wallet->NotifyWalletBacked.disconnect(boost::bind(NotifyWalletBacked, this, _1, _2));
 }
 

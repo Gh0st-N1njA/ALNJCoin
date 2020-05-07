@@ -75,7 +75,7 @@
 
 
 #ifdef ENABLE_WALLET
-CzPIVWallet* zwalletMain = NULL;
+CzALNJWallet* zwalletMain = NULL;
 int nWalletBackups = 10;
 #endif
 volatile bool fFeeEstimatesInitialized = false;
@@ -395,7 +395,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "alnjd.pid"));
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
-    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the PIV and zPIV money supply statistics") + " " + _("on startup"));
+    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the ALNJ and zALNJ money supply statistics") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-resync", _("Delete blockchain folders and resync from scratch") + " " + _("on startup"));
 #if !defined(WIN32)
     strUsage += HelpMessageOpt("-sysperms", _("Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)"));
@@ -450,9 +450,9 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-disablewallet", _("Do not load the wallet and disable wallet RPC calls"));
     strUsage += HelpMessageOpt("-keypool=<n>", strprintf(_("Set key pool size to <n> (default: %u)"), 100));
     if (GetBoolArg("-help-debug", false))
-        strUsage += HelpMessageOpt("-mintxfee=<amt>", strprintf(_("Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)"),
+        strUsage += HelpMessageOpt("-mintxfee=<amt>", strprintf(_("Fees (in ALNJ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)"),
             FormatMoney(CWallet::minTxFee.GetFeePerK())));
-    strUsage += HelpMessageOpt("-paytxfee=<amt>", strprintf(_("Fee (in PIV/kB) to add to transactions you send (default: %s)"), FormatMoney(payTxFee.GetFeePerK())));
+    strUsage += HelpMessageOpt("-paytxfee=<amt>", strprintf(_("Fee (in ALNJ/kB) to add to transactions you send (default: %s)"), FormatMoney(payTxFee.GetFeePerK())));
     strUsage += HelpMessageOpt("-rescan", _("Rescan the block chain for missing wallet transactions") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-salvagewallet", _("Attempt to recover private keys from a corrupt wallet.dat") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-sendfreetransactions", strprintf(_("Send transactions as zero-fee transactions if possible (default: %u)"), 0));
@@ -516,7 +516,7 @@ std::string HelpMessage(HelpMessageMode mode)
         strUsage += HelpMessageOpt("-maxsigcachesize=<n>", strprintf(_("Limit size of signature cache to <n> entries (default: %u)"), 50000));
     }
     strUsage += HelpMessageOpt("-maxtipage=<n>", strprintf("Maximum tip age in seconds to consider node in initial block download (default: %u)", DEFAULT_MAX_TIP_AGE));
-    strUsage += HelpMessageOpt("-minrelaytxfee=<amt>", strprintf(_("Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)"), FormatMoney(::minRelayTxFee.GetFeePerK())));
+    strUsage += HelpMessageOpt("-minrelaytxfee=<amt>", strprintf(_("Fees (in ALNJ/Kb) smaller than this are considered zero fee for relaying (default: %s)"), FormatMoney(::minRelayTxFee.GetFeePerK())));
     strUsage += HelpMessageOpt("-printtoconsole", strprintf(_("Send trace/debug info to console instead of debug.log file (default: %u)"), 0));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printpriority", strprintf(_("Log transaction priority and fee per kB when mining blocks (default: %u)"), 0));
@@ -533,8 +533,8 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageGroup(_("Staking options:"));
     strUsage += HelpMessageOpt("-staking=<n>", strprintf(_("Enable staking functionality (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-coldstaking=<n>", strprintf(_("Enable cold staking functionality (0-1, default: %u). Disabled if staking=0"), 1));
-    strUsage += HelpMessageOpt("-pivstake=<n>", strprintf(_("Enable or disable staking functionality for PIV inputs (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-zpivstake=<n>", strprintf(_("Enable or disable staking functionality for zPIV inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-pivstake=<n>", strprintf(_("Enable or disable staking functionality for ALNJ inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-zpivstake=<n>", strprintf(_("Enable or disable staking functionality for zALNJ inputs (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-reservebalance=<amt>", _("Keep the specified amount available for spending at all times (default: 0)"));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printstakemodifier", _("Display the stake modifier calculations in the debug.log file."));
@@ -1511,17 +1511,17 @@ bool AppInit2()
                     LOCK(cs_main);
                     chainHeight = chainActive.Height();
 
-                    // initialize PIV and zPIV supply to 0
+                    // initialize ALNJ and zALNJ supply to 0
                     mapZerocoinSupply.clear();
                     for (auto& denom : libzerocoin::zerocoinDenomList) mapZerocoinSupply.insert(std::make_pair(denom, 0));
                     nMoneySupply = 0;
 
-                    // Load PIV and zPIV supply from DB
+                    // Load ALNJ and zALNJ supply from DB
                     if (chainHeight >= 0) {
                         const uint256& tipHash = chainActive[chainHeight]->GetBlockHash();
                         CLegacyBlockIndex bi;
 
-                        // Load zPIV supply map
+                        // Load zALNJ supply map
                         if (!fReindexZerocoin && chainHeight >= consensus.height_start_ZC && !zerocoinDB->ReadZCSupply(mapZerocoinSupply)) {
                             // try first reading legacy block index from DB
                             if (pblocktree->ReadLegacyBlockIndex(tipHash, bi) && !bi.mapZerocoinSupply.empty()) {
@@ -1532,7 +1532,7 @@ bool AppInit2()
                             }
                         }
 
-                        // Load PIV supply amount
+                        // Load ALNJ supply amount
                         if (!fReindexMoneySupply && !pblocktree->ReadMoneySupply(nMoneySupply)) {
                             // try first reading legacy block index from DB
                             if (pblocktree->ReadLegacyBlockIndex(tipHash, bi)) {
@@ -1560,7 +1560,7 @@ bool AppInit2()
                 if (fReindexMoneySupply) {
                     LOCK(cs_main);
                     // Skip zpiv if already reindexed
-                    RecalculatePIVSupply(1, fReindexZerocoin);
+                    RecalculateALNJSupply(1, fReindexZerocoin);
                 }
 
                 if (!fReindex) {
@@ -1747,7 +1747,7 @@ bool AppInit2()
 
         LogPrintf("Init errors: %s\n", strErrors.str());
         LogPrintf("Wallet completed loading in %15dms\n", GetTimeMillis() - nWalletStartTime);
-        zwalletMain = new CzPIVWallet(pwalletMain);
+        zwalletMain = new CzALNJWallet(pwalletMain);
         pwalletMain->setZWallet(zwalletMain);
 
         RegisterValidationInterface(pwalletMain);
@@ -1798,8 +1798,8 @@ bool AppInit2()
         fVerifyingBlocks = false;
 
         if (!zwalletMain->GetMasterSeed().IsNull()) {
-            //Inititalize zPIVWallet
-            uiInterface.InitMessage(_("Syncing zPIV wallet..."));
+            //Inititalize zALNJWallet
+            uiInterface.InitMessage(_("Syncing zALNJ wallet..."));
 
             //Load zerocoin mint hashes to memory
             pwalletMain->zpivTracker->Init();

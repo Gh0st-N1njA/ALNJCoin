@@ -67,17 +67,17 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"difficulty\": xxxxxx,         (numeric) the current difficulty\n"
             "  \"testnet\": true|false,        (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"    (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zPIVsupply\" :\n"
+            "  \"zALNJsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zPIV denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zPIV denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zPIV denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zPIV denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zPIV denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zPIV denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zPIV denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zPIV denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zPIV denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zALNJ denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zALNJ denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zALNJ denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zALNJ denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zALNJ denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zALNJ denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zALNJ denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zALNJ denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zALNJ denominations\n"
             "  }\n"
             "  \"keypoololdest\": xxxxxx,      (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,          (numeric) how many new keys are pre-generated\n"
@@ -153,7 +153,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             zpivObj.push_back(Pair(std::to_string(denom), ValueFromAmount(mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zpivObj.push_back(Pair("total", ValueFromAmount(GetZerocoinSupply())));
-    obj.push_back(Pair("zPIVsupply", zpivObj));
+    obj.push_back(Pair("zALNJsupply", zpivObj));
 
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
@@ -675,7 +675,7 @@ UniValue getstakingstatus(const UniValue& params, bool fHelp)
             "  \"mnsync\": true|false,              (boolean) whether the required masternode/spork data is synced\n"
             "  \"walletunlocked\": true|false,      (boolean) whether the wallet is unlocked\n"
             "  \"stakeablecoins\": n                (numeric) number of stakeable UTXOs\n"
-            "  \"stakingbalance\": d                (numeric) PIV value of the stakeable coins (minus reserve balance, if any)\n"
+            "  \"stakingbalance\": d                (numeric) ALNJ value of the stakeable coins (minus reserve balance, if any)\n"
             "  \"stakesplitthreshold\": d           (numeric) value of the current threshold for stake split\n"
             "  \"lastattempt_age\": n               (numeric) seconds since last stake attempt\n"
             "  \"lastattempt_depth\": n             (numeric) depth of the block on top of which the last stake attempt was made\n"

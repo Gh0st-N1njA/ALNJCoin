@@ -111,11 +111,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie PIV überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie ALNJ überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie PIV empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie ALNJ empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -131,7 +131,7 @@
     </message>
     <message>
         <source>These are your ALNJ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre ALNJ-Adressen zum Senden von Zahlungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie PIV überweisen.</translation>
+        <translation>Dies sind ihre ALNJ-Adressen zum Senden von Zahlungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie ALNJ überweisen.</translation>
     </message>
     <message>
         <source>These are your ALNJ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -379,7 +379,7 @@ for staking</source>
         <translation>Wenn Sie ihr Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie</translation>
     </message>
     <message>
-        <source>LOSE ALL OF YOUR PIV</source>
+        <source>LOSE ALL OF YOUR ALNJ</source>
         <translation>ALLE IHRE ALNJ VERLIEREN</translation>
     </message>
     <message>
@@ -395,8 +395,8 @@ for staking</source>
         <translation>WARNUNG: CAPS LOCK IST EINGESCHALTET</translation>
     </message>
     <message>
-        <source>ALNJ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer PIVs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>ALNJ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALNJs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer ALNJs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -465,7 +465,7 @@ for staking</source>
         <translation>Erspartes</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
+        <source>0,00 ALNJ</source>
         <translation>0,00 ALNJ</translation>
     </message>
     <message>
@@ -507,8 +507,8 @@ for staking</source>
         <translation>Münzenauswahl </translation>
     </message>
     <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>PIV Outputs zum Ausgeben wählen</translation>
+        <source>Select ALNJ Outputs to Spend</source>
+        <translation>ALNJ Outputs zum Ausgeben wählen</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -535,8 +535,8 @@ for staking</source>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 ALNJ</source>
+        <translation>0.00 ALNJ</translation>
     </message>
     <message>
         <source>0</source>
@@ -802,17 +802,17 @@ for staking</source>
         <translation>Fehler beim Laden der Zuweisungen: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
+        <source>You can delegate your ALNJs, letting a hot node (24/7 online node)
 stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>Sie können Ihre PIVs zuweisen und einen Node (24/7) für Sie staken lassen, während Sie Ihre Schlüssel sicher offline verwahren. </translation>
+        <translation>Sie können Ihre ALNJs zuweisen und einen Node (24/7) für Sie staken lassen, während Sie Ihre Schlüssel sicher offline verwahren. </translation>
     </message>
     <message>
         <source>Enter owner address</source>
         <translation>Adresse des Besitzers eingeben</translation>
     </message>
     <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>PIV Zusweisung annehmen / PIV zuweisen</translation>
+        <source>Accept ALNJ delegation / Delegate ALNJ</source>
+        <translation>ALNJ Zusweisung annehmen / ALNJ zuweisen</translation>
     </message>
     <message>
         <source>Cold Staking address</source>
@@ -874,8 +874,8 @@ Möchten Sie fortfahren?</translation>
         <translation>Coins zugewiesen</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Sie haben keine PIV zu wählen</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Sie haben keine ALNJ zu wählen</translation>
     </message>
     <message>
         <source>Cannot perform operation, wallet locked</source>
@@ -1005,12 +1005,12 @@ address</source>
         <translation>Staking Statistiken</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>ALNJ</source>
+        <translation>ALNJ</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zALNJ</source>
+        <translation>zALNJ</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1041,8 +1041,8 @@ address</source>
         <translation>Der Link zum Verlauf des Accounts</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Wieviele PIV und z PIV am staken sind.</translation>
+        <source>Amount of ALNJ and zALNJ staked.</source>
+        <translation>Wieviele ALNJ und z ALNJ am staken sind.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1053,8 +1053,8 @@ address</source>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Wie bekommt man PIV oder zPIV</translation>
+        <source>How to get ALNJ or zALNJ</source>
+        <translation>Wie bekommt man ALNJ oder zALNJ</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1393,8 +1393,8 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>Erzeuge neuen Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a ALNJ Masternode you must dedicate 10,000 PIV (the unit of ALNJ) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>Um einen ALNJ Masternode zu erzeugen, müssen Sie 10.000 PIV (die Einheit von ALNJ) dem Netzwerk zuweisen (diese Coins sind weiterhin Ihre und Sie werden Ihren Besitz nicht verlassen)
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a ALNJ Masternode you must dedicate 10,000 ALNJ (the unit of ALNJ) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Um einen ALNJ Masternode zu erzeugen, müssen Sie 10.000 ALNJ (die Einheit von ALNJ) dem Netzwerk zuweisen (diese Coins sind weiterhin Ihre und Sie werden Ihren Besitz nicht verlassen)
 Sie können den Node jederzeit deaktivieren und die Coins entriegeln.</translation>
     </message>
     <message>
@@ -1414,8 +1414,8 @@ Sie können den Node jederzeit deaktivieren und die Coins entriegeln.</translati
         <translation>Stellen Sie sicher, dass Sie die Anzahl Coins besitzen.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 PIV wird gemacht&lt;/p&gt;&lt;p&gt;auf eine leere Adresse in Ihrer Wallet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 ALNJ will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 ALNJ wird gemacht&lt;/p&gt;&lt;p&gt;auf eine leere Adresse in Ihrer Wallet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1652,8 +1652,8 @@ Sind sie sicher?</translation>
         <translation>Konnte keinen Masternode Controller erzeugen, das Wallet ist verriegelt</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 PIV werden benötigt.</translation>
+        <source>Not enough balance to create a masternode, 10,000 ALNJ required.</source>
+        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 ALNJ werden benötigt.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1900,36 +1900,36 @@ https://www.transifex.com/alnj-project/alnj-project-translations</translation>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Aktivieren Sie die automatische Prägung von PIV-Einheiten zu zPIV</translation>
+        <source>Enable automatic minting of ALNJ units to zALNJ</source>
+        <translation>Aktivieren Sie die automatische Prägung von ALNJ-Einheiten zu zALNJ</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Aktivieren Sie zPIV Automint</translation>
+        <source>Enable zALNJ Automint</source>
+        <translation>Aktivieren Sie zALNJ Automint</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Automatisches zPIV Minting von spezifischen Adressen erlauben</translation>
+        <source>Enable automatic zALNJ minting from specific addresses</source>
+        <translation>Automatisches zALNJ Minting von spezifischen Adressen erlauben</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen aktivieren</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden PIV, welcher automatisch zu zPIV via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming ALNJ which get automatically converted to zALNJ via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden ALNJ, welcher automatisch zu zALNJ via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Prozentsatz der automatisierten zPIV</translation>
+        <source>Percentage of autominted zALNJ</source>
+        <translation>Prozentsatz der automatisierten zALNJ</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend PIV für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough ALNJ for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend ALNJ für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Bevorzugte automatisierte zPIV Stückelung </translation>
+        <source>Preferred Automint zALNJ Denomination</source>
+        <translation>Bevorzugte automatisierte zALNJ Stückelung </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2299,49 +2299,49 @@ Adresse: %4</translation>
         <translation>Prägen</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zALNJ anonymizes your ALNJ by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Das Prägen von zPIV anonymisiert Ihre PIV, indem es die Transaktionshistorie entfernt und Transaktionen so nicht rückverfolgbar macht.</translation>
+        <translation>Das Prägen von zALNJ anonymisiert Ihre ALNJ, indem es die Transaktionshistorie entfernt und Transaktionen so nicht rückverfolgbar macht.</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>Präge neue zPIV oder einlösen für PIV</translation>
+        <source>Mint new zALNJ or convert back to ALNJ</source>
+        <translation>Präge neue zALNJ oder einlösen für ALNJ</translation>
     </message>
     <message>
-        <source>Last zPIV Movements</source>
-        <translation>letzte zPIV Bewegungen</translation>
+        <source>Last zALNJ Movements</source>
+        <translation>letzte zALNJ Bewegungen</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>zPIV prägen</translation>
+        <source>Mint zALNJ</source>
+        <translation>zALNJ prägen</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>Gebe eine Anzahl PIV ein, um sie in zPIV zu wechseln</translation>
+        <source>Enter amount of ALNJ to mint into zALNJ</source>
+        <translation>Gebe eine Anzahl ALNJ ein, um sie in zALNJ zu wechseln</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>Konvertiere zPIV zurück zu PIV</translation>
+        <source>Convert back to ALNJ</source>
+        <translation>Konvertiere zALNJ zurück zu ALNJ</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>Geben Sie die Menge zPIV ein, die in PIV umgewandelt werden sollen</translation>
+        <source>Enter amount of zALNJ to convert back into ALNJ</source>
+        <translation>Geben Sie die Menge zALNJ ein, die in ALNJ umgewandelt werden sollen</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV wird momentan überarbeitet</translation>
+        <source>zALNJ is currently undergoing maintenance</source>
+        <translation>zALNJ wird momentan überarbeitet</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>Sie müssen Ihr Wallet entriegeln, um %1 zPIV zu</translation>
+        <source>You need to unlock the wallet to be able to %1 zALNJ</source>
+        <translation>Sie müssen Ihr Wallet entriegeln, um %1 zALNJ zu</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2356,16 +2356,16 @@ transaction history, making transactions untraceable </source>
         <translation>Ungültiger Wert</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV erfolgreich geprägt</translation>
+        <source>zALNJ minted successfully</source>
+        <translation>zALNJ erfolgreich geprägt</translation>
     </message>
     <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV zurück in PIV konvertiert</translation>
+        <source>zALNJ converted back to ALNJ</source>
+        <translation>zALNJ zurück in ALNJ konvertiert</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Sie haben keine PIV zu wählen</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Sie haben keine ALNJ zu wählen</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2376,8 +2376,8 @@ transaction history, making transactions untraceable </source>
         <translation>Ihre zerocoin Prägungen werden von Beginn der Blockchain gescannt</translation>
     </message>
     <message>
-        <source>Reset Spent zPIV</source>
-        <translation>Ausgegebene zPIV erneut senden</translation>
+        <source>Reset Spent zALNJ</source>
+        <translation>Ausgegebene zALNJ erneut senden</translation>
     </message>
     <message>
         <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
@@ -2774,8 +2774,8 @@ transaction history, making transactions untraceable </source>
         <translation>Benutzerdefinierter Sicherungspfad:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Benutzerdefinierter zPIV Sicherungspfad:</translation>
+        <source>Custom zALNJ Backup Path:</source>
+        <translation>Benutzerdefinierter zALNJ Sicherungspfad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3020,8 +3020,8 @@ transaction history, making transactions untraceable </source>
         <translation>Empfangen</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
-        <translation>QR-Code scannen oder Adresse kopieren um PIV zu erhalten.</translation>
+        <source>Scan the QR code or copy the address to receive ALNJ.</source>
+        <translation>QR-Code scannen oder Adresse kopieren um ALNJ zu erhalten.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3130,8 +3130,8 @@ transaction history, making transactions untraceable </source>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>ALNJ</source>
+        <translation>ALNJ</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3260,8 +3260,8 @@ transaction history, making transactions untraceable </source>
         <translation>Empfohlen</translation>
     </message>
     <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/kB</translation>
+        <source>ALNJ/kilobyte</source>
+        <translation>ALNJ/kB</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3330,8 +3330,8 @@ transaction history, making transactions untraceable </source>
         <translation>Schicken</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>Sie können öffentliche Coins (PIV) oder private Coins (zPIV) transferieren</translation>
+        <source>You can transfer public coins (ALNJ) or private coins (zALNJ)</source>
+        <translation>Sie können öffentliche Coins (ALNJ) oder private Coins (zALNJ) transferieren</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3362,12 +3362,12 @@ transaction history, making transactions untraceable </source>
         <translation>Totalbetrag zum Senden</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>Sende PIV</translation>
+        <source>Send ALNJ</source>
+        <translation>Sende ALNJ</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>Sende zPIV</translation>
+        <source>Send zALNJ</source>
+        <translation>Sende zALNJ</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3429,8 +3429,8 @@ Transaktion gibt eine cold-staking Zuweisung aus und macht diese nichtig. Diese 
         <translation>Überweise Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV unterliegt momentan Wartungsarbeiten.</translation>
+        <source>zALNJ is currently undergoing maintenance.</source>
+        <translation>zALNJ unterliegt momentan Wartungsarbeiten.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3447,12 +3447,12 @@ Transaktion gibt eine cold-staking Zuweisung aus und macht diese nichtig. Diese 
         <translation>Sende %1 an Adressen %2</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
-        <translation>zPIV Transaktion ausgeführt</translation>
+        <source>zALNJ transaction sent!</source>
+        <translation>zALNJ Transaktion ausgeführt</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zPIV benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
+        <source>Version 1 zALNJ require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zALNJ benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3487,12 +3487,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Benutzerdefinierte Gebühr %1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Sie haben keine PIV zu wählen</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Sie haben keine ALNJ zu wählen</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>Sie haben keine zPIV zum Auswählen</translation>
+        <source>You don't have any zALNJ in your balance to select.</source>
+        <translation>Sie haben keine zALNJ zum Auswählen</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3985,29 +3985,29 @@ Es gab ein Problem bei dem Versuch die Adressen unter %1 zu speichern. Bitte ver
         <translation>1) Was ist ALNJ?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Wieso kann ich meine PIV nicht ausgeben?</translation>
+        <source>2) Why are my ALNJ unspendable?</source>
+        <translation>2) Wieso kann ich meine ALNJ nicht ausgeben?</translation>
     </message>
     <message>
-        <source>3) ALNJ privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3) ALNJ Privatsphäre? Was ist ein Zercoin (zPIV)?</translation>
+        <source>3) ALNJ privacy? What is Zerocoin (zALNJ)?</source>
+        <translation>3) ALNJ Privatsphäre? Was ist ein Zercoin (zALNJ)?</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4) Wieso kann ich meine zPIV nicht ausgeben?</translation>
+        <source>4) Why are my zALNJ unspendable?</source>
+        <translation>4) Wieso kann ich meine zALNJ nicht ausgeben?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
-        <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zPIV gewechselt?</translation>
+    into zALNJ automatically?</source>
+        <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zALNJ gewechselt?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6) Wie empfange ich PIV/zPIV?</translation>
+        <source>6) How do I receive ALNJ/zALNJ?</source>
+        <translation>6) Wie empfange ich ALNJ/zALNJ?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7) Wie stake ich PIV/zPIV?</translation>
+        <source>7) How do I stake ALNJ/zALNJ?</source>
+        <translation>7) Wie stake ich ALNJ/zALNJ?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4036,7 +4036,7 @@ Es gab ein Problem bei dem Versuch die Adressen unter %1 zu speichern. Bitte ver
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  ALNJ incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zALNJ) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            ALNJ utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of ALNJ to participate in earning block rewards
@@ -4045,7 +4045,7 @@ Es gab ein Problem bei dem Versuch die Adressen unter %1 zu speichern. Bitte ver
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>ALNJ ist eine Form von digitalem Onlinegeld, das die Blockchaintechnologie verwendet und
-einfach, global, sofort und nahezu kostenlos versendet werden kann. ALNJ enthält marktführende Sicherheits- und Privatsphäretechnologien und ist auch die erste PoS (Proof of Stake) Kryptowährung, die ZeroCoin (zPIV) und Zerocoin Staking verwendet.
+einfach, global, sofort und nahezu kostenlos versendet werden kann. ALNJ enthält marktführende Sicherheits- und Privatsphäretechnologien und ist auch die erste PoS (Proof of Stake) Kryptowährung, die ZeroCoin (zALNJ) und Zerocoin Staking verwendet.
 ALNJ nutzt einen PoS Konsensalgorithmus, der es den Besitzern von ALNJ erlaubt, an der Vergabe der Block Rewards teilzuhaben, während das Netzwerk durch Fullnode Wallets abgesichert ist. Darüber hinaus können Masternode Proposals einreichen und darüber abstimmen.</translation>
     </message>
     <message>
@@ -4053,8 +4053,8 @@ ALNJ nutzt einen PoS Konsensalgorithmus, der es den Besitzern von ALNJ erlaubt, 
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Wieso kann ich meine PIV nicht ausgeben?</translation>
+        <source>Why are my ALNJ unspendable?</source>
+        <translation>Wieso kann ich meine ALNJ nicht ausgeben?</translation>
     </message>
     <message>
         <source>
@@ -4073,24 +4073,24 @@ ALNJ nutzt einen PoS Konsensalgorithmus, der es den Besitzern von ALNJ erlaubt, 
         <translation>3</translation>
     </message>
     <message>
-        <source>ALNJ privacy? What is Zerocoin (zPIV)?</source>
-        <translation>ALNJ Privatsphäre? Was ist ein Zercoin (zPIV)?</translation>
+        <source>ALNJ privacy? What is Zerocoin (zALNJ)?</source>
+        <translation>ALNJ Privatsphäre? Was ist ein Zercoin (zALNJ)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
+                           zALNJ is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
                            &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
-                           "ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zPIV ist eine optionale Methode zur Mischung von Münzen auf der ALNJ Blockchain, deren Fokus auf Privatsphäre liegt. Im Grunde können all Ihre Transaktionen nicht auf einem Blockexplorer verfolgt werden. Hier  finden Sie mehr über die Technik heraus.
+zALNJ ist eine optionale Methode zur Mischung von Münzen auf der ALNJ Blockchain, deren Fokus auf Privatsphäre liegt. Im Grunde können all Ihre Transaktionen nicht auf einem Blockexplorer verfolgt werden. Hier  finden Sie mehr über die Technik heraus.
 &lt;a style='color: #b088ff' href='https://ALNJ.org/zpiv/'&gt;
-"ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;
+"ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
@@ -4098,42 +4098,42 @@ zPIV ist eine optionale Methode zur Mischung von Münzen auf der ALNJ Blockchain
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
-        <translation>Wieso kann ich meine zPIV nicht ausgeben?</translation>
+        <source>Why are my zALNJ unspendable?</source>
+        <translation>Wieso kann ich meine zALNJ nicht ausgeben?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zALNJ will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
-        <translation>Nach der Prägung - dem Minting - benötigen zPIV 20 Bestätigungen und eine weitere Prägung gleichen Nennwerts, bevor diese für Zahlungen geeignet sind.</translation>
+        <translation>Nach der Prägung - dem Minting - benötigen zALNJ 20 Bestätigungen und eine weitere Prägung gleichen Nennwerts, bevor diese für Zahlungen geeignet sind.</translation>
     </message>
     <message>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>Wieso hat meine Wallet automatisch das Guthaben in zPIV gewechselt?</translation>
+        <source>Why did my wallet convert the balance into zALNJ automatically?</source>
+        <translation>Wieso hat meine Wallet automatisch das Guthaben in zALNJ gewechselt?</translation>
     </message>
     <message>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>Wie empfange ich PIV/zPIV?</translation>
+        <source>How do I receive ALNJ/zALNJ?</source>
+        <translation>Wie empfange ich ALNJ/zALNJ?</translation>
     </message>
     <message>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>Wie stake ich PIV/zPIV?</translation>
+        <source>How do I stake ALNJ/zALNJ?</source>
+        <translation>Wie stake ich ALNJ/zALNJ?</translation>
     </message>
     <message>
         <source>Where should I go if I need support?</source>
@@ -5421,40 +5421,40 @@ BEDENKEN SIE: Nach dem Upgrade wird ein neues Backup erstellt.
         <translation>Empfangen von</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>ALNJ Stake</source>
+        <translation>ALNJ Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zALNJ Stake</source>
+        <translation>zALNJ Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>PIV Cold Stake</translation>
+        <source>ALNJ Cold Stake</source>
+        <translation>ALNJ Cold Stake</translation>
     </message>
     <message>
         <source>Stake delegation</source>
         <translation>Stake Zuweisung</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Umgewandeltes PIV zu zPIV</translation>
+        <source>Converted ALNJ to zALNJ</source>
+        <translation>Umgewandeltes ALNJ zu zALNJ</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Ausgegebene zPIV</translation>
+        <source>Spent zALNJ</source>
+        <translation>Ausgegebene zALNJ</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Empfangene PIV von zPIV</translation>
+        <source>Received ALNJ from zALNJ</source>
+        <translation>Empfangene ALNJ von zALNJ</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Geprägtes zPIV Wechselgeld aus zPIV Überweisung</translation>
+        <source>Minted Change as zALNJ from zALNJ Spend</source>
+        <translation>Geprägtes zALNJ Wechselgeld aus zALNJ Überweisung</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Umgewandeltes zPIV zu PIV</translation>
+        <source>Converted zALNJ to ALNJ</source>
+        <translation>Umgewandeltes zALNJ zu ALNJ</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5469,8 +5469,8 @@ BEDENKEN SIE: Nach dem Upgrade wird ein neues Backup erstellt.
         <translation>Eigenüberweisung</translation>
     </message>
     <message>
-        <source>PIV Stake on behalf of</source>
-        <translation>PIV Stake im Auftrag von</translation>
+        <source>ALNJ Stake on behalf of</source>
+        <translation>ALNJ Stake im Auftrag von</translation>
     </message>
     <message>
         <source>Stake delegation spent by</source>
@@ -5635,19 +5635,19 @@ BEDENKEN SIE: Nach dem Upgrade wird ein neues Backup erstellt.
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 ALNJ</source>
+        <translation>+0.000585 ALNJ</translation>
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>PIVs überweisen</translation>
+        <translation>ALNJs überweisen</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 PIV begrenzt.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALNJ.</source>
+        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 ALNJ begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -5721,8 +5721,8 @@ ALNJ Core Wallet</source>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Wählen Sie die zPIV aus, die Sie ausgeben möchten</translation>
+        <source>Select zALNJ to Spend</source>
+        <translation>Wählen Sie die zALNJ aus, die Sie ausgeben möchten</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -5734,7 +5734,7 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zPIV</translation>
+        <translation>zALNJ</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -5757,8 +5757,8 @@ ALNJ Core Wallet</source>
         <translation>Alle Aus-/Abwählen</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>Auswahl des zPIV Nennwerts für das Ausgaben</translation>
+        <source>Select zALNJ Denominations to Spend</source>
+        <translation>Auswahl des zALNJ Nennwerts für das Ausgaben</translation>
     </message>
 </context>
 <context>
@@ -5816,12 +5816,12 @@ ALNJ Core Wallet</source>
         <translation>Ermögliche Cold Staking Funktionalität (0-1, standardmäßig: %u). Ausgeschaltet, wenn staking=0</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für PIV Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for ALNJ inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für ALNJ Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zPIV Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zALNJ inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zALNJ Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5856,12 +5856,12 @@ ALNJ Core Wallet</source>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in PIV/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in ALNJ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in ALNJ/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in PIV/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in ALNJ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in ALNJ/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6216,8 +6216,8 @@ ALNJ Core Wallet</source>
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in PIV/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in ALNJ/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in ALNJ/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6292,12 +6292,12 @@ ALNJ Core Wallet</source>
         <translation>Ungültiger Port in masternode.conf entdeckt</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Bestimme PIV Bestand erneut...</translation>
+        <source>Recalculating ALNJ supply...</source>
+        <translation>Bestimme ALNJ Bestand erneut...</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Die Geldmengenstatistik PIV und zPIV neu indizieren</translation>
+        <source>Reindex the ALNJ and zALNJ money supply statistics</source>
+        <translation>Die Geldmengenstatistik ALNJ und zALNJ neu indizieren</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6772,8 +6772,8 @@ ALNJ Core Wallet</source>
         <translation>Synchronisiere Sporks....</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synchronisiere zPIV Wallet... </translation>
+        <source>Syncing zALNJ wallet...</source>
+        <translation>Synchronisiere zALNJ Wallet... </translation>
     </message>
     <message>
         <source>This help message</source>
@@ -6880,8 +6880,8 @@ ALNJ Core Wallet</source>
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zALNJ</source>
+        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zALNJ</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

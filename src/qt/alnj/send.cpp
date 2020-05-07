@@ -46,14 +46,14 @@ SendWidget::SendWidget(ALNJGUI* parent) :
     ui->labelTitle->setFont(fontLight);
 
     /* Button Group */
-    ui->pushLeft->setText("PIV");
+    ui->pushLeft->setText("ALNJ");
     setCssProperty(ui->pushLeft, "btn-check-left");
     ui->pushLeft->setChecked(true);
-    ui->pushRight->setText("zPIV");
+    ui->pushRight->setText("zALNJ");
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (PIV) or private coins (zPIV)"));
+    ui->labelSubtitle1->setText(tr("You can transfer public coins (ALNJ) or private coins (zALNJ)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     ui->labelSubtitle2->setText(tr("Select coin type to spend"));
@@ -109,7 +109,7 @@ SendWidget::SendWidget(ALNJGUI* parent) :
     ui->labelTitleTotalSend->setText(tr("Total to send"));
     setCssProperty(ui->labelTitleTotalSend, "text-title");
 
-    ui->labelAmountSend->setText("0.00 PIV");
+    ui->labelAmountSend->setText("0.00 ALNJ");
     setCssProperty(ui->labelAmountSend, "text-body1");
 
     // Total Remaining
@@ -139,8 +139,8 @@ SendWidget::SendWidget(ALNJGUI* parent) :
     setCustomFeeSelected(false);
 
     // Connect
-    connect(ui->pushLeft, &QPushButton::clicked, [this](){onPIVSelected(true);});
-    connect(ui->pushRight,  &QPushButton::clicked, [this](){onPIVSelected(false);});
+    connect(ui->pushLeft, &QPushButton::clicked, [this](){onALNJSelected(true);});
+    connect(ui->pushRight,  &QPushButton::clicked, [this](){onALNJSelected(false);});
     connect(ui->pushButtonSave, &QPushButton::clicked, this, &SendWidget::onSendClicked);
     connect(ui->pushButtonAddRecipient, &QPushButton::clicked, this, &SendWidget::onAddEntryClicked);
     connect(ui->pushButtonClear, &QPushButton::clicked, [this](){clearAll(true);});
@@ -149,7 +149,7 @@ SendWidget::SendWidget(ALNJGUI* parent) :
 void SendWidget::refreshView()
 {
     const bool isChecked = ui->pushLeft->isChecked();
-    ui->pushButtonSave->setText(isChecked ? tr("Send PIV") : tr("Send zPIV"));
+    ui->pushButtonSave->setText(isChecked ? tr("Send ALNJ") : tr("Send zALNJ"));
     ui->pushButtonAddRecipient->setVisible(isChecked);
     refreshAmounts();
 }
@@ -343,7 +343,7 @@ void SendWidget::setFocusOnLastEntry()
 void SendWidget::showHideCheckBoxDelegations()
 {
     // Show checkbox only when there is any available owned delegation,
-    // coincontrol is not selected, and we are trying to spend PIV (not zPIV)
+    // coincontrol is not selected, and we are trying to spend ALNJ (not zALNJ)
     const bool isZpiv = ui->pushRight->isChecked();
     const bool isCControl = CoinControlDialog::coinControl->HasSelected();
     const bool hasDel = cachedDelegatedBalance > 0;
@@ -461,7 +461,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients)
         return false;
 
     if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        Q_EMIT message(tr("Spend Zerocoin"), tr("zPIV is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
+        Q_EMIT message(tr("Spend Zerocoin"), tr("zALNJ is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
         return false;
     }
 
@@ -472,7 +472,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients)
         outputs.push_back(std::pair<CBitcoinAddress*, CAmount>(new CBitcoinAddress(rec.address.toStdString()),rec.amount));
     }
 
-    // use mints from zPIV selector if applicable
+    // use mints from zALNJ selector if applicable
     std::vector<CMintMeta> vMintsToFetch;
     std::vector<CZerocoinMint> vMintsSelected;
     if (!ZPivControlDialog::setSelectedMints.empty()) {
@@ -522,17 +522,17 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients)
             changeAddress
     )
             ) {
-        inform(tr("zPIV transaction sent!"));
+        inform(tr("zALNJ transaction sent!"));
         ZPivControlDialog::setSelectedMints.clear();
         clearAll(false);
         return true;
     } else {
         QString body;
-        if (receipt.GetStatus() == ZPIV_SPEND_V1_SEC_LEVEL) {
-            body = tr("Version 1 zPIV require a security level of 100 to successfully spend.");
+        if (receipt.GetStatus() == ZALNJ_SPEND_V1_SEC_LEVEL) {
+            body = tr("Version 1 zALNJ require a security level of 100 to successfully spend.");
         } else {
             int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-            const int nMaxSpends = Params().GetConsensus().ZC_MaxSpendsPerTx; // Maximum possible spends for one zPIV transaction
+            const int nMaxSpends = Params().GetConsensus().ZC_MaxSpendsPerTx; // Maximum possible spends for one zALNJ transaction
             if (nNeededSpends > nMaxSpends) {
                 body = tr("Too much inputs (") + QString::number(nNeededSpends, 10) +
                        tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
@@ -542,7 +542,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients)
                 body = QString::fromStdString(receipt.GetStatusMessage());
             }
         }
-        Q_EMIT message("zPIV transaction failed", body, CClientUIInterface::MSG_ERROR);
+        Q_EMIT message("zALNJ transaction failed", body, CClientUIInterface::MSG_ERROR);
         return false;
     }
 }
@@ -653,7 +653,7 @@ void SendWidget::onChangeCustomFeeClicked()
 
 void SendWidget::onCoinControlClicked()
 {
-    if (isPIV) {
+    if (isALNJ) {
         if (walletModel->getBalance() > 0) {
             if (!coinControlDialog) {
                 coinControlDialog = new CoinControlDialog();
@@ -665,7 +665,7 @@ void SendWidget::onCoinControlClicked()
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
             refreshAmounts();
         } else {
-            inform(tr("You don't have any PIV to select."));
+            inform(tr("You don't have any ALNJ to select."));
         }
     } else {
         if (walletModel->getZerocoinBalance() > 0) {
@@ -675,7 +675,7 @@ void SendWidget::onCoinControlClicked()
             ui->btnCoinControl->setActive(!ZPivControlDialog::setSelectedMints.empty());
             zPivControl->deleteLater();
         } else {
-            inform(tr("You don't have any zPIV in your balance to select."));
+            inform(tr("You don't have any zALNJ in your balance to select."));
         }
     }
 }
@@ -694,10 +694,10 @@ void SendWidget::onCheckBoxChanged()
     }
 }
 
-void SendWidget::onPIVSelected(bool _isPIV)
+void SendWidget::onALNJSelected(bool _isALNJ)
 {
-    isPIV = _isPIV;
-    setCssProperty(coinIcon, _isPIV ? "coin-icon-piv" : "coin-icon-zpiv");
+    isALNJ = _isALNJ;
+    setCssProperty(coinIcon, _isALNJ ? "coin-icon-piv" : "coin-icon-zpiv");
     refreshView();
     updateStyle(coinIcon);
 }

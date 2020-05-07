@@ -53,11 +53,11 @@ class ReorgStakeTest(AlnjTestFramework):
 
     def check_money_supply(self, expected_piv, expected_zpiv):
         g_info = [self.nodes[i].getinfo() for i in range(self.num_nodes)]
-        # verify that nodes have the expected PIV and zPIV supply
+        # verify that nodes have the expected ALNJ and zALNJ supply
         for node in g_info:
             assert_equal(node['moneysupply'], DecimalAmt(expected_piv))
-            for denom in node['zPIVsupply']:
-                assert_equal(node['zPIVsupply'][denom], DecimalAmt(expected_zpiv[denom]))
+            for denom in node['zALNJsupply']:
+                assert_equal(node['zALNJsupply'][denom], DecimalAmt(expected_zpiv[denom]))
 
 
     def run_test(self):
@@ -68,9 +68,9 @@ class ReorgStakeTest(AlnjTestFramework):
                     return True, x
             return False, None
 
-        # Check PIV and zPIV supply at the beginning
+        # Check ALNJ and zALNJ supply at the beginning
         # ------------------------------------------
-        # zPIV supply: 2 coins for each denomination
+        # zALNJ supply: 2 coins for each denomination
         expected_zpiv_supply = {
             "1": 2,
             "5": 10,
@@ -82,7 +82,7 @@ class ReorgStakeTest(AlnjTestFramework):
             "5000": 10000,
             "total": 13332,
         }
-        # PIV supply: block rewards minus burned fees for minting
+        # ALNJ supply: block rewards minus burned fees for minting
         expected_money_supply = 250.0 * 330 - 16 * 0.01
         self.check_money_supply(expected_money_supply, expected_zpiv_supply)
 
@@ -230,8 +230,8 @@ class ReorgStakeTest(AlnjTestFramework):
         res, utxo = findUtxoInList(stakeinput["txid"], stakeinput["vout"], self.nodes[0].listunspent())
         assert (not res or not utxo["spendable"])
 
-        # Verify that PIV and zPIV supplies were properly updated after the spends and reorgs
-        self.log.info("Check PIV and zPIV supply...")
+        # Verify that ALNJ and zALNJ supplies were properly updated after the spends and reorgs
+        self.log.info("Check ALNJ and zALNJ supply...")
         expected_money_supply += 250.0 * (self.nodes[1].getblockcount() - 330)
         spent_coin_0 = mints[0]["denomination"]
         spent_coin_1 = mints[1]["denomination"]

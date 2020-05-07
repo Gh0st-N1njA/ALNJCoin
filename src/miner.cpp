@@ -250,7 +250,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
                 int nConf = nHeight - coins->nHeight;
 
-                // zPIV spends can have very large priority, use non-overflowing safe functions
+                // zALNJ spends can have very large priority, use non-overflowing safe functions
                 dPriority = double_safe_addition(dPriority, ((double)nValueIn * nConf));
 
             }
@@ -323,7 +323,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             if (!view.HaveInputs(tx))
                 continue;
 
-            // double check that there are no double spent zPIV spends in this block or tx
+            // double check that there are no double spent zALNJ spends in this block or tx
             if (tx.HasZerocoinSpendInputs()) {
                 int nHeightTx = 0;
                 if (IsTransactionInChain(tx.GetHash(), nHeightTx))
@@ -338,7 +338,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                             libzerocoin::ZerocoinParams* params = consensus.Zerocoin_Params(false);
                             PublicCoinSpend publicSpend(params);
                             CValidationState state;
-                            if (!ZPIVModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                            if (!ZALNJModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                                 throw std::runtime_error("Invalid public spend parse");
                             }
                             spend = &publicSpend;
@@ -359,7 +359,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                         vTxSerials.emplace_back(spend->getCoinSerialNumber());
                     }
                 }
-                //This zPIV serial has already been included in the block, do not add this tx.
+                //This zALNJ serial has already been included in the block, do not add this tx.
                 if (fDoubleSerial)
                     continue;
             }

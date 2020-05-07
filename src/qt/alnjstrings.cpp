@@ -58,9 +58,9 @@ QT_TRANSLATE_NOOP("alnj-core", ""
 QT_TRANSLATE_NOOP("alnj-core", ""
 "Enable cold staking functionality (0-1, default: %u). Disabled if staking=0"),
 QT_TRANSLATE_NOOP("alnj-core", ""
-"Enable or disable staking functionality for PIV inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for ALNJ inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("alnj-core", ""
-"Enable or disable staking functionality for zPIV inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for zALNJ inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("alnj-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("alnj-core", ""
@@ -98,10 +98,10 @@ QT_TRANSLATE_NOOP("alnj-core", ""
 QT_TRANSLATE_NOOP("alnj-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("alnj-core", ""
-"Fees (in PIV/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in ALNJ/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("alnj-core", ""
-"Fees (in PIV/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in ALNJ/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("alnj-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -302,7 +302,7 @@ QT_TRANSLATE_NOOP("alnj-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("alnj-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("alnj-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("alnj-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("alnj-core", "Fee (in PIV/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("alnj-core", "Fee (in ALNJ/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("alnj-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("alnj-core", "Generate coins (default: %u)"),
 QT_TRANSLATE_NOOP("alnj-core", "How many blocks to check at startup (default: %u, 0 = all)"),
@@ -364,8 +364,8 @@ QT_TRANSLATE_NOOP("alnj-core", "RPC server options:"),
 QT_TRANSLATE_NOOP("alnj-core", "Randomly drop 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("alnj-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("alnj-core", "Rebuild block chain index from current blk000??.dat files"),
-QT_TRANSLATE_NOOP("alnj-core", "Recalculating PIV supply..."),
-QT_TRANSLATE_NOOP("alnj-core", "Reindex the PIV and zPIV money supply statistics"),
+QT_TRANSLATE_NOOP("alnj-core", "Recalculating ALNJ supply..."),
+QT_TRANSLATE_NOOP("alnj-core", "Reindex the ALNJ and zALNJ money supply statistics"),
 QT_TRANSLATE_NOOP("alnj-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("alnj-core", "Reindexing zerocoin failed"),
 QT_TRANSLATE_NOOP("alnj-core", "Relay and mine data carrier transactions (default: %u)"),
@@ -408,7 +408,7 @@ QT_TRANSLATE_NOOP("alnj-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("alnj-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("alnj-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("alnj-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("alnj-core", "Syncing zPIV wallet..."),
+QT_TRANSLATE_NOOP("alnj-core", "Syncing zALNJ wallet..."),
 QT_TRANSLATE_NOOP("alnj-core", "This help message"),
 QT_TRANSLATE_NOOP("alnj-core", "This is experimental software."),
 QT_TRANSLATE_NOOP("alnj-core", "This is intended for regression testing tools and app development."),
@@ -440,7 +440,7 @@ QT_TRANSLATE_NOOP("alnj-core", "Use block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("alnj-core", "Use the test network"),
 QT_TRANSLATE_NOOP("alnj-core", "User Agent comment (%s) contains unsafe characters."),
 QT_TRANSLATE_NOOP("alnj-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("alnj-core", "Value is below the smallest available denomination (= 1) of zPIV"),
+QT_TRANSLATE_NOOP("alnj-core", "Value is below the smallest available denomination (= 1) of zALNJ"),
 QT_TRANSLATE_NOOP("alnj-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("alnj-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("alnj-core", "Wallet %s resides outside data directory %s"),

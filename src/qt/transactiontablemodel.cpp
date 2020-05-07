@@ -453,13 +453,13 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("PIV Stake");
-    case TransactionRecord::StakeZPIV:
-        return tr("zPIV Stake");
+        return tr("ALNJ Stake");
+    case TransactionRecord::StakeZALNJ:
+        return tr("zALNJ Stake");
     case TransactionRecord::StakeDelegated:
-        return tr("PIV Cold Stake");
+        return tr("ALNJ Cold Stake");
     case TransactionRecord::StakeHot:
-        return tr("PIV Stake on behalf of");
+        return tr("ALNJ Stake on behalf of");
     case TransactionRecord::P2CSDelegationSent:
     case TransactionRecord::P2CSDelegationSentOwner:
     case TransactionRecord::P2CSDelegation:
@@ -470,15 +470,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted PIV to zPIV");
+        return tr("Converted ALNJ to zALNJ");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zPIV");
+        return tr("Spent zALNJ");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received PIV from zPIV");
+        return tr("Received ALNJ from zALNJ");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
-        return tr("Minted Change as zPIV from zPIV Spend");
+        return tr("Minted Change as zALNJ from zALNJ Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zPIV to PIV");
+        return tr("Converted zALNJ to ALNJ");
     default:
         return QString();
     }
@@ -489,7 +489,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::StakeZPIV:
+    case TransactionRecord::StakeZALNJ:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithAddress:
@@ -529,7 +529,7 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
-    case TransactionRecord::StakeZPIV:
+    case TransactionRecord::StakeZALNJ:
         return tr("Anonymous");
     case TransactionRecord::P2CSDelegation:
     case TransactionRecord::P2CSDelegationSent:
@@ -689,7 +689,7 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
     case Qt::ForegroundRole:
         // Minted
         if (rec->type == TransactionRecord::Generated || rec->type == TransactionRecord::StakeMint ||
-                rec->type == TransactionRecord::StakeZPIV || rec->type == TransactionRecord::MNReward) {
+                rec->type == TransactionRecord::StakeZALNJ || rec->type == TransactionRecord::MNReward) {
             if (rec->status.status == TransactionStatus::Conflicted || rec->status.status == TransactionStatus::NotAccepted)
                 return COLOR_ORPHAN;
             else
