@@ -33,7 +33,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
     txNew.nVersion = 1;
     txNew.vin.resize(1);
     txNew.vout.resize(1);
-    txNew.vin[0].scriptSig = CScript() << 420204799 << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+    txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
     txNew.vout[0].nValue = genesisReward;
     txNew.vout[0].scriptPubKey = genesisOutputScript;
 
@@ -131,11 +131,6 @@ public:
         genesis = CreateGenesisBlock(1588820064, 188983, 0x1e0ffff0, 1, 250 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetHash();
-        
-        printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot);
-        printf("new mainnet genesis nonce: %s\n", genesis.nNonce);
-        printf("new mainnet genesis hash: %s\n", genesis.GetHash);
-        
         assert(consensus.hashGenesisBlock == uint256S("0x00000e98e5f9cc633d6612684289e718bb27c3fbccf2e832dc92f180b130629e"));
         assert(genesis.hashMerkleRoot == uint256S("0x75bcec5c34913e5cff5528d9a83eed62879ab0d41c483b99de4a9aeeb1c6d071"));
 
@@ -252,12 +247,6 @@ public:
         strNetworkID = "test";
 
         genesis = CreateGenesisBlock(1588826989, 1175957, 0x1e0ffff0, 1, 250 * COIN);
-     
-        printf("new testnet genesis merkle root: %s\n", genesis.hashMerkleRoot);
-        printf("new testnet genesis nonce: %s\n", genesis.nNonce);
-        printf("new testnet genesis hash: %s\n", genesis.GetHash);
-        
-        
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000866fd3afefd805966b01d344ee5e5777a9a33918d3e7504cc8972207be9"));
         assert(genesis.hashMerkleRoot == uint256S("0x75bcec5c34913e5cff5528d9a83eed62879ab0d41c483b99de4a9aeeb1c6d071"));
@@ -376,13 +365,6 @@ public:
 
         genesis = CreateGenesisBlock(1588826989, 1175957, 0x1e0ffff0, 1, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-                
-        printf("new regtest genesis merkle root: %s\n", genesis.hashMerkleRoot);
-        printf("new regtest genesis nonce: %s\n", genesis.nNonce);
-        printf("new regtest genesis hash: %s\n", genesis.GetHash);
-        
-        
-        
         assert(consensus.hashGenesisBlock == uint256S("0x00000866fd3afefd805966b01d344ee5e5777a9a33918d3e7504cc8972207be9"));
         assert(genesis.hashMerkleRoot == uint256S("0x75bcec5c34913e5cff5528d9a83eed62879ab0d41c483b99de4a9aeeb1c6d071"));
 
