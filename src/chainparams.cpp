@@ -128,7 +128,7 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
         
-        genesis = CreateGenesisBlock(1588820064, 188983, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1588820064, 797425, 0x1e0ffff0, 1, 250 * COIN);
 
         if(genesis.GetHash() != uint256("0x"))
         {
@@ -157,8 +157,8 @@ public:
         
         
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000e98e5f9cc633d6612684289e718bb27c3fbccf2e832dc92f180b130629e"));
-        assert(genesis.hashMerkleRoot == uint256S("0x75bcec5c34913e5cff5528d9a83eed62879ab0d41c483b99de4a9aeeb1c6d071"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000cae85318fb5774bf402d76de12a1c91c4833f01725d0ed05eaba360a151"));
+        assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 20;   // ALNJ starting difficulty is 1 / 2^12
