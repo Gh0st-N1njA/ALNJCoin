@@ -161,8 +161,8 @@ public:
 
         // height-based activations
         consensus.height_last_PoW = 259200;
-        consensus.height_last_ZC_AccumCheckpoint = 100;
-        consensus.height_last_ZC_WrappedSerials = 100;
+        consensus.height_last_ZC_AccumCheckpoint = 1;
+        consensus.height_last_ZC_WrappedSerials = 1;
         consensus.height_start_BIP65 = 1;             
         consensus.height_start_InvalidUTXOsCheck = 1;
         consensus.height_start_MessSignaturesV2 = 1;  
@@ -170,11 +170,11 @@ public:
         consensus.height_start_StakeModifierV2 = 1;   
         consensus.height_start_TimeProtoV2 = 1;       
         consensus.height_start_ZC = 1;                 
-        consensus.height_start_ZC_InvalidSerials = 100;
-        consensus.height_start_ZC_PublicSpends = 100;
-        consensus.height_start_ZC_SerialRangeCheck = 100;
-        consensus.height_start_ZC_SerialsV2 = 100;
-        consensus.height_ZC_RecalcAccumulators = 100;
+        consensus.height_start_ZC_InvalidSerials = 1;
+        consensus.height_start_ZC_PublicSpends = 1;
+        consensus.height_start_ZC_SerialRangeCheck = 1;
+        consensus.height_start_ZC_SerialsV2 = 1;
+        consensus.height_ZC_RecalcAccumulators = 1;
 
         // validation by-pass
         consensus.nAlnjBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
@@ -192,7 +192,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1588814625;        // May 06, 2020 1:23:45 AM
+        consensus.ZC_TimeStart = 1577836801;        // Jan 01, 2020 00:00:01 AM
         consensus.ZC_WrappedSerialsSupply = 10799888 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
 
         /**
@@ -309,7 +309,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1588814625;
+        consensus.ZC_TimeStart = 1577836801;        // Jan 01, 2020 00:00:01 AM
         consensus.ZC_WrappedSerialsSupply = 0;   // WrappedSerials only on main net
 
         /**
