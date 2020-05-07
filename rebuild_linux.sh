@@ -1,7 +1,7 @@
 #!/bin/bash
 NUM_PROCS=`cat /proc/cpuinfo | grep proc | wc -l`
+let "NUM_PROCS--";
 
-cd ..
 make clean;
 ./autogen.sh;
 ./configure;
