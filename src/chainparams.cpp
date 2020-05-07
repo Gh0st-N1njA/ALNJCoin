@@ -208,8 +208,7 @@ public:
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         //TODO NEED TO ADD THESE
-        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnj.seed.fuzzbawls.pw", true));     // Primary DNS Seeder from Fuzzbawls
-        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnj.seed2.fuzzbawls.pw", true));    // Secondary DNS Seeder from Fuzzbawls
+        //vSeeds.push_back(CDNSSeedData("algoninja.site", "alnj.seed.algoninja.site", true));     // Primary DNS Seeder from Fuzzbawls
         vFixedSeeds.clear();
         vSeeds.clear();
         
@@ -329,8 +328,7 @@ public:
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         //TODO NEED TO ADD SEEDS
-        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnj-testnet.seed.fuzzbawls.pw", true));
-        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnj-testnet.seed2.fuzzbawls.pw", true));
+        //vSeeds.push_back(CDNSSeedData("algoninja.site", "alnj-testnet.seed.algoninja.site", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 91); // Testnet alnj addresses start with 'd' or 'e'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet alnj script addresses start with '8' or '9'
