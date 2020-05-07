@@ -192,7 +192,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1577836801;        // Jan 01, 2020 00:00:01 AM
+        consensus.ZC_TimeStart = 1588982400;        // Jan 01, 2020 00:00:01 AM
         consensus.ZC_WrappedSerialsSupply = 10799888 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
 
         /**
