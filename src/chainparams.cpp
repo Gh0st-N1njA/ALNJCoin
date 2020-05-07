@@ -128,7 +128,7 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
         
-        genesis = CreateGenesisBlock(1588820064, 797425, 0x1e0ffff0, 4, 250 * COIN);
+        genesis = CreateGenesisBlock(1588820064, 797425, 0x1e0ffff0, 1, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000cae85318fb5774bf402d76de12a1c91c4833f01725d0ed05eaba360a151"));
         assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
@@ -161,8 +161,8 @@ public:
 
         // height-based activations
         consensus.height_last_PoW = 259200;
-        consensus.height_last_ZC_AccumCheckpoint = 1;
-        consensus.height_last_ZC_WrappedSerials = 1;
+        consensus.height_last_ZC_AccumCheckpoint = 100;
+        consensus.height_last_ZC_WrappedSerials = 100;
         consensus.height_start_BIP65 = 1;             
         consensus.height_start_InvalidUTXOsCheck = 1;
         consensus.height_start_MessSignaturesV2 = 1;  
@@ -170,11 +170,11 @@ public:
         consensus.height_start_StakeModifierV2 = 1;   
         consensus.height_start_TimeProtoV2 = 1;       
         consensus.height_start_ZC = 1;                 
-        consensus.height_start_ZC_InvalidSerials = 1;
-        consensus.height_start_ZC_PublicSpends = 1;
-        consensus.height_start_ZC_SerialRangeCheck = 1;
-        consensus.height_start_ZC_SerialsV2 = 1;
-        consensus.height_ZC_RecalcAccumulators = 1;
+        consensus.height_start_ZC_InvalidSerials = 100;
+        consensus.height_start_ZC_PublicSpends = 100;
+        consensus.height_start_ZC_SerialRangeCheck = 100;
+        consensus.height_start_ZC_SerialsV2 = 100;
+        consensus.height_ZC_RecalcAccumulators = 100;
 
         // validation by-pass
         consensus.nAlnjBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
@@ -245,7 +245,7 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
 
-        genesis = CreateGenesisBlock(1588826989, 1664536, 0x1e0ffff0, 4, 250 * COIN);
+        genesis = CreateGenesisBlock(1588826989, 1664536, 0x1e0ffff0, 1, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000a210f4cded45591a2d09e708b3916d23595af3b9f21dc2df5e450f16074"));
         assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
@@ -362,7 +362,7 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
 
-        genesis = CreateGenesisBlock(1588826989, 1664536, 0x1e0ffff0, 4, 250 * COIN);
+        genesis = CreateGenesisBlock(1588826989, 1664536, 0x1e0ffff0, 1, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000a210f4cded45591a2d09e708b3916d23595af3b9f21dc2df5e450f16074"));
         assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
