@@ -128,7 +128,7 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
         
-        genesis = CreateGenesisBlock(1588820064, 797425, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1588820064, 797425, 0x1e0ffff0, 4, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000cae85318fb5774bf402d76de12a1c91c4833f01725d0ed05eaba360a151"));
         assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
@@ -245,7 +245,7 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
 
-        genesis = CreateGenesisBlock(1588826989, 1664536, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1588826989, 1664536, 0x1e0ffff0, 4, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000a210f4cded45591a2d09e708b3916d23595af3b9f21dc2df5e450f16074"));
         assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
@@ -362,7 +362,7 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
 
-        genesis = CreateGenesisBlock(1588826989, 1664536, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1588826989, 1664536, 0x1e0ffff0, 4, 250 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000a210f4cded45591a2d09e708b3916d23595af3b9f21dc2df5e450f16074"));
         assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
