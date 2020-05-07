@@ -1,15 +1,15 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/contactsdropdown.h"
+#include "qt/alnj/contactsdropdown.h"
 
 #include <QPainter>
 #include <QSizePolicy>
-#include "qt/pivx/addresslabelrow.h"
-#include "qt/pivx/contactdropdownrow.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/furlistrow.h"
+#include "qt/alnj/addresslabelrow.h"
+#include "qt/alnj/contactdropdownrow.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/furlistrow.h"
 #include "walletmodel.h"
 #include "addresstablemodel.h"
 

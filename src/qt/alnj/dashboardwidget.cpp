@@ -1,12 +1,12 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/dashboardwidget.h"
-#include "qt/pivx/forms/ui_dashboardwidget.h"
-#include "qt/pivx/sendconfirmdialog.h"
-#include "qt/pivx/txrow.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/alnj/dashboardwidget.h"
+#include "qt/alnj/forms/ui_dashboardwidget.h"
+#include "qt/alnj/sendconfirmdialog.h"
+#include "qt/alnj/txrow.h"
+#include "qt/alnj/qtutils.h"
 #include "guiutil.h"
 #include "walletmodel.h"
 #include "clientmodel.h"
@@ -23,7 +23,7 @@
 #define REQUEST_LOAD_TASK 1
 #define CHART_LOAD_MIN_TIME_INTERVAL 15
 
-DashboardWidget::DashboardWidget(PIVXGUI* parent) :
+DashboardWidget::DashboardWidget(ALNJGUI* parent) :
     PWidget(parent),
     ui(new Ui::DashboardWidget)
 {
@@ -53,12 +53,12 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
     setCssSubtitleScreen(ui->labelSubtitle);
 
     // Staking Information
-    ui->labelMessage->setText(tr("Amount of PIV and zPIV staked."));
+    ui->labelMessage->setText(tr("Amount of ALNJ and zALNJ staked."));
     setCssSubtitleScreen(ui->labelMessage);
-    setCssProperty(ui->labelSquarePiv, "square-chart-piv");
-    setCssProperty(ui->labelSquarezPiv, "square-chart-zpiv");
-    setCssProperty(ui->labelPiv, "text-chart-piv");
-    setCssProperty(ui->labelZpiv, "text-chart-zpiv");
+    setCssProperty(ui->labelSquareAlng, "square-chart-alng");
+    setCssProperty(ui->labelSquarezAlng, "square-chart-zalnj");
+    setCssProperty(ui->labelAlng, "text-chart-alng");
+    setCssProperty(ui->labelZalng, "text-chart-zalnj");
 
     // Staking Amount
     QFont fontBold;
@@ -66,10 +66,10 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
 
     setCssProperty(ui->labelChart, "legend-chart");
 
-    ui->labelAmountZpiv->setText("0 zPIV");
-    ui->labelAmountPiv->setText("0 PIV");
-    setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
-    setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv-disable");
+    ui->labelAmountZalng->setText("0 zALNJ");
+    ui->labelAmountAlng->setText("0 ALNJ");
+    setCssProperty(ui->labelAmountAlng, "text-stake-alng-disable");
+    setCssProperty(ui->labelAmountZalng, "text-stake-zalnj-disable");
 
     setCssProperty({ui->pushButtonAll,  ui->pushButtonMonth, ui->pushButtonYear}, "btn-check-time");
     setCssProperty({ui->comboBoxMonths,  ui->comboBoxYears}, "btn-combo-chart-selected");
@@ -133,7 +133,7 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
     setCssProperty(ui->chartContainer, "container-chart");
     setCssProperty(ui->pushImgEmptyChart, "img-empty-staking-on");
 
-    ui->btnHowTo->setText(tr("How to get PIV or zPIV"));
+    ui->btnHowTo->setText(tr("How to get ALNJ or zALNJ"));
     setCssBtnSecondary(ui->btnHowTo);
 
 
@@ -157,7 +157,7 @@ bool hasCharts = false;
     connect(ui->pushButtonMonth, &QPushButton::clicked, [this](){setChartShow(MONTH);});
     connect(ui->pushButtonAll, &QPushButton::clicked, [this](){setChartShow(ALL);});
     if (window)
-        connect(window, &PIVXGUI::windowResizeEvent, this, &DashboardWidget::windowResizeEvent);
+        connect(window, &ALNJGUI::windowResizeEvent, this, &DashboardWidget::windowResizeEvent);
 #endif
 
     if (hasCharts) {
@@ -207,8 +207,8 @@ void DashboardWidget::loadWalletModel()
             ui->comboBoxSort->setVisible(false);
         }
 
-        connect(ui->pushImgEmpty, &QPushButton::clicked, window, &PIVXGUI::openFAQ);
-        connect(ui->btnHowTo, &QPushButton::clicked, window, &PIVXGUI::openFAQ);
+        connect(ui->pushImgEmpty, &QPushButton::clicked, window, &ALNJGUI::openFAQ);
+        connect(ui->btnHowTo, &QPushButton::clicked, window, &ALNJGUI::openFAQ);
         connect(txModel, &TransactionTableModel::txArrived, this, &DashboardWidget::onTxArrived);
 
         // Notification pop-up for new transaction
@@ -225,7 +225,7 @@ void DashboardWidget::loadWalletModel()
         connect(walletModel->getOptionsModel(), &OptionsModel::hideChartsChanged, this, &DashboardWidget::onHideChartsChanged);
 #endif
     }
-    // update the display unit, to not use the default ("PIV")
+    // update the display unit, to not use the default ("ALNJ")
     updateDisplayUnit();
 }
 
@@ -501,7 +501,7 @@ void DashboardWidget::updateStakeFilter()
     }
 }
 
-// pair PIV, zPIV
+// pair ALNJ, zALNJ
 const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy()
 {
     updateStakeFilter();
@@ -512,7 +512,7 @@ const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy()
         QModelIndex modelIndex = stakesFilter->index(i, TransactionTableModel::ToAddress);
         qint64 amount = llabs(modelIndex.data(TransactionTableModel::AmountRole).toLongLong());
         QDate date = modelIndex.data(TransactionTableModel::DateRole).toDateTime().date();
-        bool isPiv = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZPIV;
+        bool isAlng = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZALNJ;
 
         int time = 0;
         switch (chartShow) {
@@ -533,16 +533,16 @@ const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy()
                 return amountBy;
         }
         if (amountBy.contains(time)) {
-            if (isPiv) {
+            if (isAlng) {
                 amountBy[time].first += amount;
             } else
                 amountBy[time].second += amount;
         } else {
-            if (isPiv) {
+            if (isAlng) {
                 amountBy[time] = std::make_pair(amount, 0);
             } else {
                 amountBy[time] = std::make_pair(0, amount);
-                hasZpivStakes = true;
+                hasZalngStakes = true;
             }
         }
     }
@@ -557,7 +557,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair PIV, zPIV
+    chartData->amountsByCache = getAmountBy(); // pair ALNJ, zALNJ
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {
@@ -570,22 +570,22 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
 
     for (int j = range.first; j < range.second; j++) {
         int num = (isOrderedByMonth && j > daysInMonth) ? (j % daysInMonth) : j;
-        qreal piv = 0;
-        qreal zpiv = 0;
+        qreal alng = 0;
+        qreal zalnj = 0;
         if (chartData->amountsByCache.contains(num)) {
             std::pair <qint64, qint64> pair = chartData->amountsByCache[num];
-            piv = (pair.first != 0) ? pair.first / 100000000 : 0;
-            zpiv = (pair.second != 0) ? pair.second / 100000000 : 0;
-            chartData->totalPiv += pair.first;
-            chartData->totalZpiv += pair.second;
+            alng = (pair.first != 0) ? pair.first / 100000000 : 0;
+            zalnj = (pair.second != 0) ? pair.second / 100000000 : 0;
+            chartData->totalAlng += pair.first;
+            chartData->totalZalng += pair.second;
         }
 
         chartData->xLabels << ((withMonthNames) ? monthsNames[num - 1] : QString::number(num));
 
-        chartData->valuesPiv.append(piv);
-        chartData->valueszPiv.append(zpiv);
+        chartData->valuesAlng.append(alng);
+        chartData->valueszAlng.append(zalnj);
 
-        int max = std::max(piv, zpiv);
+        int max = std::max(alng, zalnj);
         if (max > chartData->maxValue) {
             chartData->maxValue = max;
         }
@@ -642,8 +642,8 @@ void DashboardWidget::onChartRefreshed()
         axisX->clear();
     }
     // init sets
-    set0 = new QBarSet("PIV");
-    set1 = new QBarSet("zPIV");
+    set0 = new QBarSet("ALNJ");
+    set1 = new QBarSet("zALNJ");
     set0->setColor(QColor(92,75,125));
     set1->setColor(QColor(176,136,255));
 
@@ -654,24 +654,24 @@ void DashboardWidget::onChartRefreshed()
     series->attachAxis(axisX);
     series->attachAxis(axisY);
 
-    set0->append(chartData->valuesPiv);
-    set1->append(chartData->valueszPiv);
+    set0->append(chartData->valuesAlng);
+    set1->append(chartData->valueszAlng);
 
     // Total
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
-    if (chartData->totalPiv > 0 || chartData->totalZpiv > 0) {
-        setCssProperty(ui->labelAmountPiv, "text-stake-piv");
-        setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv");
+    if (chartData->totalAlng > 0 || chartData->totalZalng > 0) {
+        setCssProperty(ui->labelAmountAlng, "text-stake-alng");
+        setCssProperty(ui->labelAmountZalng, "text-stake-zalnj");
     } else {
-        setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
-        setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv-disable");
+        setCssProperty(ui->labelAmountAlng, "text-stake-alng-disable");
+        setCssProperty(ui->labelAmountZalng, "text-stake-zalnj-disable");
     }
-    forceUpdateStyle({ui->labelAmountPiv, ui->labelAmountZpiv});
-    ui->labelAmountPiv->setText(GUIUtil::formatBalance(chartData->totalPiv, nDisplayUnit));
-    ui->labelAmountZpiv->setText(GUIUtil::formatBalance(chartData->totalZpiv, nDisplayUnit, true));
+    forceUpdateStyle({ui->labelAmountAlng, ui->labelAmountZalng});
+    ui->labelAmountAlng->setText(GUIUtil::formatBalance(chartData->totalAlng, nDisplayUnit));
+    ui->labelAmountZalng->setText(GUIUtil::formatBalance(chartData->totalZalng, nDisplayUnit, true));
 
     series->append(set0);
-    if (hasZpivStakes)
+    if (hasZalngStakes)
         series->append(set1);
 
     // bar width

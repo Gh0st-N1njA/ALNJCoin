@@ -1,15 +1,15 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/receivewidget.h"
-#include "qt/pivx/forms/ui_receivewidget.h"
-#include "qt/pivx/requestdialog.h"
-#include "qt/pivx/addnewcontactdialog.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/myaddressrow.h"
-#include "qt/pivx/furlistrow.h"
-#include "qt/pivx/addressholder.h"
+#include "qt/alnj/receivewidget.h"
+#include "qt/alnj/forms/ui_receivewidget.h"
+#include "qt/alnj/requestdialog.h"
+#include "qt/alnj/addnewcontactdialog.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/myaddressrow.h"
+#include "qt/alnj/furlistrow.h"
+#include "qt/alnj/addressholder.h"
 #include "walletmodel.h"
 #include "guiutil.h"
 #include "pairresult.h"
@@ -21,7 +21,7 @@
 #define DECORATION_SIZE 70
 #define NUM_ITEMS 3
 
-ReceiveWidget::ReceiveWidget(PIVXGUI* parent) :
+ReceiveWidget::ReceiveWidget(ALNJGUI* parent) :
     PWidget(parent),
     ui(new Ui::ReceiveWidget)
 {
@@ -42,7 +42,7 @@ ReceiveWidget::ReceiveWidget(PIVXGUI* parent) :
 
     // Title
     ui->labelTitle->setText(tr("Receive"));
-    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive PIV."));
+    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive ALNJ."));
     setCssTitleScreen(ui->labelTitle);
     setCssSubtitleScreen(ui->labelSubtitle1);
 

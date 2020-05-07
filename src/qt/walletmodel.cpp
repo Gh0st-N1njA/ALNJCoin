@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2015-2020 The ALNJ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -23,7 +23,7 @@
 #include "wallet/walletdb.h" // for BackupWallet
 #include <stdint.h>
 #include <iostream>
-#include "zpiv/deterministicmint.h"
+#include "zalnj/deterministicmint.h"
 
 #include <QDebug>
 #include <QSet>
@@ -439,7 +439,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
                 return InvalidAmount;
             }
             total += subtotal;
-        } else { // User-entered pivx address / amount:
+        } else { // User-entered alnj address / amount:
             if (!validateAddress(rcp.address)) {
                 return InvalidAddress;
             }
@@ -500,7 +500,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
 
 
         if (recipients[0].useSwiftTX && total > sporkManager.GetSporkValue(SPORK_5_MAX_VALUE) * COIN) {
-            Q_EMIT message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.").arg(sporkManager.GetSporkValue(SPORK_5_MAX_VALUE)),
+            Q_EMIT message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALNJ.").arg(sporkManager.GetSporkValue(SPORK_5_MAX_VALUE)),
                 CClientUIInterface::MSG_ERROR);
             return TransactionCreationFailed;
         }
@@ -518,7 +518,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
         transaction.setTransactionFee(nFeeRequired);
 
         if (recipients[0].useSwiftTX && newTx->GetValueOut() > sporkManager.GetSporkValue(SPORK_5_MAX_VALUE) * COIN) {
-            Q_EMIT message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.").arg(sporkManager.GetSporkValue(SPORK_5_MAX_VALUE)),
+            Q_EMIT message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALNJ.").arg(sporkManager.GetSporkValue(SPORK_5_MAX_VALUE)),
                 CClientUIInterface::MSG_ERROR);
             return TransactionCreationFailed;
         }
@@ -568,7 +568,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(WalletModelTransaction& tran
                 std::string value;
                 rcp.paymentRequest.SerializeToString(&value);
                 newTx->vOrderForm.push_back(std::make_pair(key, value));
-            } else if (!rcp.message.isEmpty()) // Message from normal pivx:URI (pivx:XyZ...?message=example)
+            } else if (!rcp.message.isEmpty()) // Message from normal alnj:URI (alnj:XyZ...?message=example)
             {
                 newTx->vOrderForm.push_back(std::make_pair("Message", rcp.message.toStdString()));
             }
@@ -615,7 +615,7 @@ bool WalletModel::mintCoins(CAmount value, CCoinControl* coinControl ,std::strin
 }
 
 
-bool WalletModel::createZpivSpend(
+bool WalletModel::createZalngSpend(
         CWalletTx &wtxNew,
         std::vector<CZerocoinMint> &vMintsSelected,
         CZerocoinSpendReceipt &receipt,
@@ -629,7 +629,7 @@ bool WalletModel::createZpivSpend(
     }
 
     if (wallet->IsLocked()) {
-        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZPIV_WALLET_LOCKED);
+        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZALNJ_WALLET_LOCKED);
         return false;
     }
 
@@ -653,7 +653,7 @@ bool WalletModel::createZpivSpend(
     return CheckTransaction(wtxNew, true, true, state, true);
 }
 
-bool WalletModel::sendZpiv(
+bool WalletModel::sendZalng(
         std::vector<CZerocoinMint> &vMintsSelected,
         CZerocoinSpendReceipt &receipt,
         std::list<std::pair<CBitcoinAddress*, CAmount>> outputs,
@@ -677,7 +677,7 @@ bool WalletModel::sendZpiv(
 
 }
 
-bool WalletModel::convertBackZpiv(
+bool WalletModel::convertBackZalng(
         CAmount value,
         std::vector<CZerocoinMint> &vMintsSelected,
         CZerocoinSpendReceipt &receipt)
@@ -860,9 +860,9 @@ static void NotifyZerocoinChanged(WalletModel* walletmodel, CWallet* wallet, con
                               Q_ARG(int, status));
 }
 
-static void NotifyzPIVReset(WalletModel* walletmodel)
+static void NotifyzALNJReset(WalletModel* walletmodel)
 {
-    qDebug() << "NotifyzPIVReset";
+    qDebug() << "NotifyzALNJReset";
     QMetaObject::invokeMethod(walletmodel, "checkBalanceChanged", Qt::QueuedConnection);
 }
 
@@ -900,7 +900,7 @@ void WalletModel::subscribeToCoreSignals()
     wallet->NotifyWatchonlyChanged.connect(boost::bind(NotifyWatchonlyChanged, this, _1));
     wallet->NotifyMultiSigChanged.connect(boost::bind(NotifyMultiSigChanged, this, _1));
     wallet->NotifyZerocoinChanged.connect(boost::bind(NotifyZerocoinChanged, this, _1, _2, _3, _4));
-    wallet->NotifyzPIVReset.connect(boost::bind(NotifyzPIVReset, this));
+    wallet->NotifyzALNJReset.connect(boost::bind(NotifyzALNJReset, this));
     wallet->NotifyWalletBacked.connect(boost::bind(NotifyWalletBacked, this, _1, _2));
 }
 
@@ -914,7 +914,7 @@ void WalletModel::unsubscribeFromCoreSignals()
     wallet->NotifyWatchonlyChanged.disconnect(boost::bind(NotifyWatchonlyChanged, this, _1));
     wallet->NotifyMultiSigChanged.disconnect(boost::bind(NotifyMultiSigChanged, this, _1));
     wallet->NotifyZerocoinChanged.disconnect(boost::bind(NotifyZerocoinChanged, this, _1, _2, _3, _4));
-    wallet->NotifyzPIVReset.disconnect(boost::bind(NotifyzPIVReset, this));
+    wallet->NotifyzALNJReset.disconnect(boost::bind(NotifyzALNJReset, this));
     wallet->NotifyWalletBacked.disconnect(boost::bind(NotifyWalletBacked, this, _1, _2));
 }
 
@@ -1003,7 +1003,7 @@ bool WalletModel::updateAddressBookPurpose(const QString &addressStr, const std:
 {
     CBitcoinAddress address(addressStr.toStdString());
     if (address.IsStakingAddress())
-        return error("Invalid PIVX address, cold staking address");
+        return error("Invalid ALNJ address, cold staking address");
     CKeyID keyID;
     if (!getKeyId(address, keyID))
         return false;
@@ -1013,10 +1013,10 @@ bool WalletModel::updateAddressBookPurpose(const QString &addressStr, const std:
 bool WalletModel::getKeyId(const CBitcoinAddress& address, CKeyID& keyID)
 {
     if (!address.IsValid())
-        return error("Invalid PIVX address");
+        return error("Invalid ALNJ address");
 
     if (!address.GetKeyID(keyID))
-        return error("Unable to get KeyID from PIVX address");
+        return error("Unable to get KeyID from ALNJ address");
 
     return true;
 }
@@ -1119,7 +1119,7 @@ void WalletModel::listLockedCoins(std::vector<COutPoint>& vOutpts)
 void WalletModel::listZerocoinMints(std::set<CMintMeta>& setMints, bool fUnusedOnly, bool fMaturedOnly, bool fUpdateStatus, bool fWrongSeed)
 {
     setMints.clear();
-    setMints = pwalletMain->zpivTracker->ListMints(fUnusedOnly, fMaturedOnly, fUpdateStatus, fWrongSeed);
+    setMints = pwalletMain->zalnjTracker->ListMints(fUnusedOnly, fMaturedOnly, fUpdateStatus, fWrongSeed);
 }
 
 void WalletModel::loadReceiveRequests(std::vector<std::string>& vReceiveRequests)

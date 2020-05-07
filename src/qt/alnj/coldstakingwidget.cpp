@@ -1,23 +1,23 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/coldstakingwidget.h"
-#include "qt/pivx/forms/ui_coldstakingwidget.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/alnj/coldstakingwidget.h"
+#include "qt/alnj/forms/ui_coldstakingwidget.h"
+#include "qt/alnj/qtutils.h"
 #include "amount.h"
 #include "guiutil.h"
-#include "qt/pivx/requestdialog.h"
-#include "qt/pivx/tooltipmenu.h"
-#include "qt/pivx/furlistrow.h"
-#include "qt/pivx/sendconfirmdialog.h"
-#include "qt/pivx/addnewcontactdialog.h"
-#include "qt/pivx/guitransactionsutils.h"
+#include "qt/alnj/requestdialog.h"
+#include "qt/alnj/tooltipmenu.h"
+#include "qt/alnj/furlistrow.h"
+#include "qt/alnj/sendconfirmdialog.h"
+#include "qt/alnj/addnewcontactdialog.h"
+#include "qt/alnj/guitransactionsutils.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "coincontroldialog.h"
 #include "coincontrol.h"
-#include "qt/pivx/csrow.h"
+#include "qt/alnj/csrow.h"
 
 #define DECORATION_SIZE 70
 #define NUM_ITEMS 3
@@ -71,7 +71,7 @@ private:
     CSRow *cachedRow = nullptr;
 };
 
-ColdStakingWidget::ColdStakingWidget(PIVXGUI* parent) :
+ColdStakingWidget::ColdStakingWidget(ALNJGUI* parent) :
     PWidget(parent),
     ui(new Ui::ColdStakingWidget),
     isLoading(false)
@@ -101,7 +101,7 @@ ColdStakingWidget::ColdStakingWidget(PIVXGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can delegate your PIVs, letting a hot node (24/7 online node)\nstake on your behalf, while you keep the keys securely offline."));
+    ui->labelSubtitle1->setText(tr("You can delegate your ALNJs, letting a hot node (24/7 online node)\nstake on your behalf, while you keep the keys securely offline."));
     setCssSubtitleScreen(ui->labelSubtitle1);
     spacerDiv = new QSpacerItem(40, 20, QSizePolicy::Maximum, QSizePolicy::Expanding);
 
@@ -112,7 +112,7 @@ ColdStakingWidget::ColdStakingWidget(PIVXGUI* parent) :
     ui->lineEditOwnerAddress->setAttribute(Qt::WA_MacShowFocusRect, 0);
     setShadow(ui->lineEditOwnerAddress);
 
-    ui->labelSubtitle2->setText(tr("Accept PIV delegation / Delegate PIV"));
+    ui->labelSubtitle2->setText(tr("Accept ALNJ delegation / Delegate ALNJ"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
 
@@ -139,7 +139,7 @@ ColdStakingWidget::ColdStakingWidget(PIVXGUI* parent) :
     setCssProperty(ui->labelEmpty, "text-empty");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select PIV outputs to delegate.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select ALNJ outputs to delegate.");
 
     ui->btnColdStaking->setTitleClassAndText("btn-title-grey", "Create Cold Staking Address");
     ui->btnColdStaking->setSubTitleClassAndText("text-subtitle", "Creates an address to receive delegated coins\nand stake them on their owner's behalf.");
@@ -554,7 +554,7 @@ void ColdStakingWidget::onCoinControlClicked()
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any PIV to select."));
+            inform(tr("You don't have any ALNJ to select."));
         }
     }
 }
@@ -796,7 +796,7 @@ void ColdStakingWidget::updateStakingTotalLabel()
 {
     const CAmount& total = csModel->getTotalAmount();
     ui->labelStakingTotal->setText(tr("Total Staking: %1").arg(
-            (total == 0) ? "0.00 PIV" : GUIUtil::formatBalance(total, nDisplayUnit))
+            (total == 0) ? "0.00 ALNJ" : GUIUtil::formatBalance(total, nDisplayUnit))
     );
 }
 

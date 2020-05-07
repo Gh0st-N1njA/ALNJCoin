@@ -130,12 +130,12 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için olan PIVX adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
+        <source>These are your ALNJ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için olan ALNJ adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için olan PIVX adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
+        <source>These are your ALNJ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için olan ALNJ adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -376,8 +376,8 @@ Stake için kaldırın</translation>
         <translation>İPTAL</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, PIV'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>ALNJ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALNJs from being stolen by malware infecting your computer.</source>
+        <translation>ALNJ şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, ALNJ'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -446,8 +446,8 @@ Stake için kaldırın</translation>
         <translation>Birikimler</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 ALNJ</source>
+        <translation>0,00 ALNJ</translation>
     </message>
     <message>
         <source>address</source>
@@ -512,8 +512,8 @@ Stake için kaldırın</translation>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 ALNJ</source>
+        <translation>0.00 ALNJ</translation>
     </message>
     <message>
         <source>0</source>
@@ -664,8 +664,8 @@ Stake için kaldırın</translation>
         <translation>Herhangi bir alıcı %1 'den küçük bir miktar alırsa, bu etiket kırmızıya döner.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Her giriş için +/- %1 upiv farkedebilir.</translation>
+        <source>Can vary +/- %1 ualng per input.</source>
+        <translation>Her giriş için +/- %1 ualng farkedebilir.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -787,8 +787,8 @@ Devam etmek istiyor musunuz?</translation>
         <translation>Koinler delege edildi</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Seçebileceğiniz ALNJ'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -915,12 +915,12 @@ kopyala</translation>
         <translation>Stake İstatistikleri</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>ALNJ</source>
+        <translation>ALNJ</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zALNJ</source>
+        <translation>zALNJ</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -951,8 +951,8 @@ kopyala</translation>
         <translation>Hesap geçmişinizde görebilirsiniz</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Stake edilmiş PIV ve zPIV miktarı</translation>
+        <source>Amount of ALNJ and zALNJ staked.</source>
+        <translation>Stake edilmiş ALNJ ve zALNJ miktarı</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -963,8 +963,8 @@ kopyala</translation>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>PIV veya zPIV nasıl alınır</translation>
+        <source>How to get ALNJ or zALNJ</source>
+        <translation>ALNJ veya zALNJ nasıl alınır</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1059,8 +1059,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Gönderen adresini düzenle</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>Girilen "%1" adresi geçerli bir PIVX adresi değil.</translation>
+        <source>The entered address "%1" is not a valid ALNJ address.</source>
+        <translation>Girilen "%1" adresi geçerli bir ALNJ adresi değil.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1112,16 +1112,16 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>PIVX Core Hakkında </translation>
+        <source>About ALNJ Core</source>
+        <translation>ALNJ Core Hakkında </translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1171,16 +1171,16 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>PIVX Core'a hoşgeldiniz.</translation>
+        <source>Welcome to ALNJ Core.</source>
+        <translation>ALNJ Core'a hoşgeldiniz.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Program ilk başlatıldığında PIVX Core'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
+        <source>As this is the first time the program is launched, you can choose where ALNJ Core will store its data.</source>
+        <translation>Program ilk başlatıldığında ALNJ Core'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core, PIVX blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecektir. Ayrıca cüzdanınız da bu dizinde saklanır.</translation>
+        <source>ALNJ Core will download and store a copy of the ALNJ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>ALNJ Core, ALNJ blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecektir. Ayrıca cüzdanınız da bu dizinde saklanır.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1199,8 +1199,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>TAMAM</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1299,8 +1299,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Bu miktarda koininizin olduğundan emin olunuz.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 PIV'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 ALNJ will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 ALNJ'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1413,7 +1413,7 @@ and vote on the treasury system receiving a periodic reward.</source>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the alnj.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1421,7 +1421,7 @@ this controller wallet (select the Masternode in the list and press "start").
 panoya almak üzeresiniz.
 
 
-Bilgiyi uzak sunucunuzdaki pivx.conf dosyasına yapıştırmanız ve
+Bilgiyi uzak sunucunuzdaki alnj.conf dosyasına yapıştırmanız ve
  başlatmanız gerekecektir, ondan sonra bu kontrol cüzdanını kullanan
 Masternodu başlatın (Listeden Masternodu seçip "başlat" tuşuna basın).
 </translation>
@@ -1453,8 +1453,8 @@ Emin misiniz?</translation>
         <translation> masternode.conf dosyası bulunamadı</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Masternode yaratmak için yetersiz bakiye, 10,000 PIV gerekmektedir.</translation>
+        <source>Not enough balance to create a masternode, 10,000 ALNJ required.</source>
+        <translation>Masternode yaratmak için yetersiz bakiye, 10,000 ALNJ gerekmektedir.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1577,8 +1577,8 @@ Emin misiniz?</translation>
         <translation>Ayrıştırılmış bilgi çok büyük</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>Geçersiz URI, "pivx" ön adıyla başlamıyor</translation>
+        <source>Invalid URI, not starting with "alnj" prefix</source>
+        <translation>Geçersiz URI, "alnj" ön adıyla başlamıyor</translation>
     </message>
 </context>
 <context>
@@ -1627,8 +1627,8 @@ Emin misiniz?</translation>
         <translation>Doğrulanmamış değişikliğin harcamasını devre dışı bırakırsanız, bir işlemdeki değişiklik&lt;br/&gt;Bu işlem en az bir onay alıncaya kadar kullanılamaz.&lt;br/&gt;Bu aynı zamanda bakiyenizin nasıl hesaplandığını etkiler.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticideki PIVX istemci bağlantı noktasını otomatik olarak açın. Bu, yalnızca yönlendiriciniz UPnP'yi destekliyorsa ve etkinleştirilmişse çalışır.</translation>
+        <source>Automatically open the ALNJ client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticideki ALNJ istemci bağlantı noktasını otomatik olarak açın. Bu, yalnızca yönlendiriciniz UPnP'yi destekliyorsa ve etkinleştirilmişse çalışır.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1647,12 +1647,12 @@ Emin misiniz?</translation>
         <translation>Uzman</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra otomatik olarak PIVX'i başlatın.</translation>
+        <source>Automatically start ALNJ after logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra otomatik olarak ALNJ'i başlatın.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp; Sistem oturum açma işleminde PIVX'i başlat</translation>
+        <source>&amp;Start ALNJ on system login</source>
+        <translation>&amp; Sistem oturum açma işleminde ALNJ'i başlat</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1679,58 +1679,58 @@ Emin misiniz?</translation>
         <translation>&amp;Ağ</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, PIVX yeniden başlatıldıktan sonra geçerli olur.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting ALNJ.</source>
+        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, ALNJ yeniden başlatıldıktan sonra geçerli olur.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation>Dil eksik veya çeviri tamamlanmamış mı? Katkıda bulunan çevirilere yardımcı olun:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/alnj-project/alnj-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>PIV birimlerinin zPIV'e otomatik basımını ektinleştir</translation>
+        <source>Enable automatic minting of ALNJ units to zALNJ</source>
+        <translation>ALNJ birimlerinin zALNJ'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>zPIV Otomatik basımı etkinleştir</translation>
+        <source>Enable zALNJ Automint</source>
+        <translation>zALNJ Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Belirli bir adresten otomatik zPIV minting yapılmasını etkinleştir</translation>
+        <source>Enable automatic zALNJ minting from specific addresses</source>
+        <translation>Belirli bir adresten otomatik zALNJ minting yapılmasını etkinleştir</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint adreslerini etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zPIV'ye dönüştürülen gelen PIV yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming ALNJ which get automatically converted to zALNJ via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zALNJ'ye dönüştürülen gelen ALNJ yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Otomatikleştirilmiş zPIV yüzdesi</translation>
+        <source>Percentage of autominted zALNJ</source>
+        <translation>Otomatikleştirilmiş zALNJ yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Bu bölen için yeterli PIV bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough ALNJ for this denomination is available</source>
+        <translation>Bu bölen için yeterli ALNJ bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Tercih edilen Automint zPIV Nominal değeri</translation>
+        <source>Preferred Automint zALNJ Denomination</source>
+        <translation>Tercih edilen Automint zALNJ Nominal değeri</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Stake bölme eşiği</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Bir SOCKS5 proxy vasıtasıyla PIVX ağına bağlanın.</translation>
+        <source>Connect to the ALNJ network through a SOCKS5 proxy.</source>
+        <translation>Bir SOCKS5 proxy vasıtasıyla ALNJ ağına bağlanın.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1874,10 +1874,10 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>PIVXGUI</name>
+    <name>ALNJGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1904,8 +1904,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Uygulamayı sonlandır</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core istemci</translation>
+        <source>ALNJ Core client</source>
+        <translation>ALNJ Core istemci</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1948,8 +1948,8 @@ Adres: %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
-        <translation>Onarılamaz bir hata oluştu. PIVX güvenli bir şekilde çalışamaz, kapanacaktır.</translation>
+        <source>A fatal error occurred. ALNJ can no longer continue safely and will quit.</source>
+        <translation>Onarılamaz bir hata oluştu. ALNJ güvenli bir şekilde çalışamaz, kapanacaktır.</translation>
     </message>
 </context>
 <context>
@@ -1975,12 +1975,12 @@ Adres: %4
         <translation>Geçersiz ödeme adresi %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Pivx başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
+        <source>Cannot start alnj: click-to-pay handler</source>
+        <translation>Alnj başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir PIVX adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid ALNJ address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir ALNJ adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2093,45 +2093,45 @@ Adres: %4
         <translation>Mint</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zALNJ anonymizes your ALNJ by removing any
 transaction history, making transactions untraceable </source>
-        <translation>zPIV mintleme işlemi PIV'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
+        <translation>zALNJ mintleme işlemi ALNJ'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>Yeni zPIV mintle veya PIV'e geri dönüştür</translation>
+        <source>Mint new zALNJ or convert back to ALNJ</source>
+        <translation>Yeni zALNJ mintle veya ALNJ'e geri dönüştür</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>Mint ZPIV</translation>
+        <source>Mint zALNJ</source>
+        <translation>Mint ZALNJ</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>zPIV'e mintlenmek için dönüştürülecek PIV miktarını gir</translation>
+        <source>Enter amount of ALNJ to mint into zALNJ</source>
+        <translation>zALNJ'e mintlenmek için dönüştürülecek ALNJ miktarını gir</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>PIV'e geri dönüştür</translation>
+        <source>Convert back to ALNJ</source>
+        <translation>ALNJ'e geri dönüştür</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>PIV'e geri dönüştürülecek zPIV miktarını gir</translation>
+        <source>Enter amount of zALNJ to convert back into ALNJ</source>
+        <translation>ALNJ'e geri dönüştürülecek zALNJ miktarını gir</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV şu anda bakımdadır</translation>
+        <source>zALNJ is currently undergoing maintenance</source>
+        <translation>zALNJ şu anda bakımdadır</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>%1 zPIV yapabilmek için cüzdanınızın kilidini kaldırmalısınız</translation>
+        <source>You need to unlock the wallet to be able to %1 zALNJ</source>
+        <translation>%1 zALNJ yapabilmek için cüzdanınızın kilidini kaldırmalısınız</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2146,16 +2146,16 @@ transaction history, making transactions untraceable </source>
         <translation>Geçersiz değer</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV minting başarılı</translation>
+        <source>zALNJ minted successfully</source>
+        <translation>zALNJ minting başarılı</translation>
     </message>
     <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV PIV'e dönüştürüldü</translation>
+        <source>zALNJ converted back to ALNJ</source>
+        <translation>zALNJ ALNJ'e dönüştürüldü</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Seçebileceğiniz ALNJ'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2221,8 +2221,8 @@ transaction history, making transactions untraceable </source>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2241,8 +2241,8 @@ transaction history, making transactions untraceable </source>
         <translation>Masternode konfigürasyon dosyası okuma hatası: %1</translation>
     </message>
     <message>
-        <source>PIVX Core didn't yet exit safely...</source>
-        <translation>PIVX Core henüz güvenle kapanmadı..</translation>
+        <source>ALNJ Core didn't yet exit safely...</source>
+        <translation>ALNJ Core henüz güvenle kapanmadı..</translation>
     </message>
     <message>
         <source>Cold Staking</source>
@@ -2372,8 +2372,8 @@ transaction history, making transactions untraceable </source>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Geçerli veri dizininden PIVX hata ayıklama günlük dosyasını açın. Bu, büyük günlük dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the ALNJ debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Geçerli veri dizininden ALNJ hata ayıklama günlük dosyasını açın. Bu, büyük günlük dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2516,8 +2516,8 @@ transaction history, making transactions untraceable </source>
         <translation>Özel Yedekleme Yolu:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Özel zPIV Yedekleme Yolu:</translation>
+        <source>Custom zALNJ Backup Path:</source>
+        <translation>Özel zALNJ Yedekleme Yolu:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2596,8 +2596,8 @@ transaction history, making transactions untraceable </source>
         <translation>Dışa:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>PIVX RPC konsola hoşgeldiniz</translation>
+        <source>Welcome to the ALNJ RPC console.</source>
+        <translation>ALNJ RPC konsola hoşgeldiniz</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2762,8 +2762,8 @@ transaction history, making transactions untraceable </source>
         <translation>Al</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
-        <translation>PIVX almak için QR kodunu okutun veya adresi kopyalayın</translation>
+        <source>Scan the QR code or copy the address to receive ALNJ.</source>
+        <translation>ALNJ almak için QR kodunu okutun veya adresi kopyalayın</translation>
     </message>
     <message>
         <source>No address </source>
@@ -2864,8 +2864,8 @@ transaction history, making transactions untraceable </source>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>ALNJ</source>
+        <translation>ALNJ</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2943,8 +2943,8 @@ transaction history, making transactions untraceable </source>
         <translation>Özel fark adresi</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PIVX address</source>
-        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" PIV adresine gider</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" ALNJ address</source>
+        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" ALNJ adresine gider</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -3032,8 +3032,8 @@ transaction history, making transactions untraceable </source>
         <translation>Gönder</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>Açık koin PIV veya gizli koin zPIV transfer edebilirsiniz</translation>
+        <source>You can transfer public coins (ALNJ) or private coins (zALNJ)</source>
+        <translation>Açık koin ALNJ veya gizli koin zALNJ transfer edebilirsiniz</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3064,12 +3064,12 @@ transaction history, making transactions untraceable </source>
         <translation>Gönderilecek toplam</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>PIV Gönder</translation>
+        <source>Send ALNJ</source>
+        <translation>ALNJ Gönder</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>zPIV gönder</translation>
+        <source>Send zALNJ</source>
+        <translation>zALNJ gönder</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3124,8 +3124,8 @@ Bu koinler artık soğuk stakelenmeyecektir.</translation>
         <translation>Zerocoin Harca</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV halen bakımda.</translation>
+        <source>zALNJ is currently undergoing maintenance.</source>
+        <translation>zALNJ halen bakımda.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3144,12 +3144,12 @@ Bu koinler artık soğuk stakelenmeyecektir.</translation>
 %2 adreslerine gönderiliyor</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
-        <translation>zPIV ödemesi gönderildi</translation>
+        <source>zALNJ transaction sent!</source>
+        <translation>zALNJ ödemesi gönderildi</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Versiyon 1 olan zPIV'lerin başarıyla harcanabilmesi için güvenlik seviyesinin 100 olması gerekiyor.</translation>
+        <source>Version 1 zALNJ require a security level of 100 to successfully spend.</source>
+        <translation>Versiyon 1 olan zALNJ'lerin başarıyla harcanabilmesi için güvenlik seviyesinin 100 olması gerekiyor.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3184,12 +3184,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Belirlenmiş masraf %1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Seçebileceğiniz ALNJ'iniz bulunmuyor</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>Bakiyenizde seçebileceğiniz zPIV'iniz bulunmuyor</translation>
+        <source>You don't have any zALNJ in your balance to select.</source>
+        <translation>Bakiyenizde seçebileceğiniz zALNJ'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3469,8 +3469,8 @@ Verify that you have installed a predetermined text editor.</source>
 Önceden belirlenmiş bir text editleme programınız olup olmadığını kontrol ediniz.</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>PIVX RPC konsola hoşgeldiniz</translation>
+        <source>Welcome to the ALNJ RPC console.</source>
+        <translation>ALNJ RPC konsola hoşgeldiniz</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3602,34 +3602,34 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>1) What is PIVX?</source>
-        <translation>1)PIVX nedir?</translation>
+        <source>1) What is ALNJ?</source>
+        <translation>1)ALNJ nedir?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) PIV'lerim neden harcanabilir değil?</translation>
+        <source>2) Why are my ALNJ unspendable?</source>
+        <translation>2) ALNJ'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
-        <source>3) PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3)PIVX gizliliği? Zerocoin (zPIV) nedir?</translation>
+        <source>3) ALNJ privacy? What is Zerocoin (zALNJ)?</source>
+        <translation>3)ALNJ gizliliği? Zerocoin (zALNJ) nedir?</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4)  zPIV'lerim neden harcanabilir değil?</translation>
+        <source>4) Why are my zALNJ unspendable?</source>
+        <translation>4)  zALNJ'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zALNJ automatically?</source>
         <translation>5)Neden cüzdanım bakiyemi otomatik olarak
-zPIV'e dönüştürdü?</translation>
+zALNJ'e dönüştürdü?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6) Nasıl PIV/zPIV alabilirim?</translation>
+        <source>6) How do I receive ALNJ/zALNJ?</source>
+        <translation>6) Nasıl ALNJ/zALNJ alabilirim?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7) Nasıl PIV/zPIV staking yapabilirim?</translation>
+        <source>7) How do I stake ALNJ/zALNJ?</source>
+        <translation>7) Nasıl ALNJ/zALNJ staking yapabilirim?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -3640,34 +3640,34 @@ zPIV'e dönüştürdü?</translation>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PIVX?</source>
-        <translation>PIVX Nedir?</translation>
+        <source>What is ALNJ?</source>
+        <translation>ALNJ Nedir?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX is a form of digital online money using blockchain technology
+                           ALNJ is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
+                           zero fees.  ALNJ incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zALNJ) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
+                           ALNJ utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of ALNJ to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX blockchain teknolojisini kullanan bir dijital online para birimidir
+                           ALNJ blockchain teknolojisini kullanan bir dijital online para birimidir
                            global olarak anında ve sıfıra yakın ücretlerle transfer edilebilir
-                           PIVX sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
-                          Zerocoin (zPIV) ve Zerocoin staking özelliklerini
+                           ALNJ sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
+                          Zerocoin (zALNJ) ve Zerocoin staking özelliklerini
                           uygulayan ilk PoS (Proof of Stake) Kriptoparadır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
-bu sayede PIVX sahipleri blok ödülü kazanımına katılabilmektedir
+                           ALNJ bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
+bu sayede ALNJ sahipleri blok ödülü kazanımına katılabilmektedir
                            ağı diğer tam düğüm sahibi cüzdanlarla birlikte güvenli hale getirirler
                            ayrıca Masternode oluşturarak tekliflere oy verirler.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3678,25 +3678,25 @@ bu sayede PIVX sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>PIV'lerim neden harcanabilir değil?</translation>
+        <source>Why are my ALNJ unspendable?</source>
+        <translation>ALNJ'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PIVX requires 6 confirmations on the network
+                           Newly received ALNJ requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PIVX wallet also needs to be completely synchronized
+                           Your ALNJ wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Yeni alınmış PIVX'lerin harcanabilr hale gelmesi için ağdan 6 onay
+                           Yeni alınmış ALNJ'lerin harcanabilr hale gelmesi için ağdan 6 onay
                            alması gerekmektedir, bu işlem yaklaşık olarak 6 dakika sürer.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX cüzdanınızın ağdaki bakiyesini görebilmesi ve harcayabilmesi
+                           ALNJ cüzdanınızın ağdaki bakiyesini görebilmesi ve harcayabilmesi
                            için tamamen senkronize olması gerekmektedir.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3706,27 +3706,27 @@ bu sayede PIVX sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>3</translation>
     </message>
     <message>
-        <source>PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>PIVX gizliliği? Zerocoin (zPIV) nedir?</translation>
+        <source>ALNJ privacy? What is Zerocoin (zALNJ)?</source>
+        <translation>ALNJ gizliliği? Zerocoin (zALNJ) nedir?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
+                           zALNJ is an optional privacy-centric method of coin mixing on the
+                           ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
+                           "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV PIVX blockchaini üzerinde koinleri karıştırmak için kullanılan
+                           zALNJ ALNJ blockchaini üzerinde koinleri karıştırmak için kullanılan
 gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
  hiçbir tarayıcı tarafından takip edilemez. Teknik detayları
  hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Teknik Makalesi"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
+                           "ALNJ Zerocoin (zALNJ) Teknik Makalesi"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -3735,20 +3735,20 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
-        <translation>zPIV'lerim neden harcanabilir değil?</translation>
+        <source>Why are my zALNJ unspendable?</source>
+        <translation>zALNJ'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zALNJ will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Mint işlemi sonrasında, zPIV'lerin harcanabilir duruma gelmesi
+                           Mint işlemi sonrasında, zALNJ'lerin harcanabilir duruma gelmesi
  için 20 onay alması ve kendisiyle aynı
  bölüme sahip fazladan 1 mint'e ihtiyaç vardır.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3759,34 +3759,34 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>Neden cüzdanım bakiyemi otomatik olarak zPIV'e dönüştürdü?</translation>
+        <source>Why did my wallet convert the balance into zALNJ automatically?</source>
+        <translation>Neden cüzdanım bakiyemi otomatik olarak zALNJ'e dönüştürdü?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the PIVX wallet will convert 10% of your entire PIV
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your PIVX wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
-                           If you are not making use of the PIVX-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           By default the ALNJ wallet will convert 10% of your entire ALNJ
+                           balance to zALNJ to assist the network. If you do not wish to
+                           stake zALNJ or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your ALNJ wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zALNJ Automint”.
+                           If you are not making use of the ALNJ-QT or GUI you can simply open
+                           your alnj.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the "How do I stake"
+                           You can read more about zALNJ in the
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zALNJ, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX cüzdanınız ağa destek olmak için varsayılan olarak tüm PIV bakiyenizin 10% 'unu zPIV'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zPIV stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zPIV Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. PIVXQT veya GUI kullanmıyorsanız, pivx.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
+                           ALNJ cüzdanınız ağa destek olmak için varsayılan olarak tüm ALNJ bakiyenizin 10% 'unu zALNJ'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zALNJ stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zALNJ Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. ALNJQT veya GUI kullanmıyorsanız, alnj.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; "PIVX Zerocoin (zPIV) Teknik Makalesi"&lt;/a&gt;.
-                           zPIV'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Teknik Makalesi"&lt;/a&gt;.
+                           zALNJ'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
 kısmını okuyunuz.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3796,25 +3796,25 @@ kısmını okuyunuz.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>Nasıl PIV/zPIV alabilirim?</translation>
+        <source>How do I receive ALNJ/zALNJ?</source>
+        <translation>Nasıl ALNJ/zALNJ alabilirim?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
+                           zALNJ can be spent and sent to any ALNJ address. The receiver will
+                           receive standard ALNJ but the origin of the ALNJ is anonymized by the zALNJ Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zALNJ you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV herhangi bir PIVX adresine gönderilerek harcanabilir.
-                           Alıcı standart PIVX alacaktır fakat PIVX kaynağı
-zPIV Protokolü ile anonimleştirilmiş olacaktır.
+                           zALNJ herhangi bir ALNJ adresine gönderilerek harcanabilir.
+                           Alıcı standart ALNJ alacaktır fakat ALNJ kaynağı
+zALNJ Protokolü ile anonimleştirilmiş olacaktır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Daha fazla zPIV istiyorsanız, "Gizlilik" tabından bakiyenizi mintlemeniz gerekecektir.
+                           Daha fazla zALNJ istiyorsanız, "Gizlilik" tabından bakiyenizi mintlemeniz gerekecektir.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -3823,8 +3823,8 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>Nasıl PIV/zPIV staking yapabilirim?</translation>
+        <source>How do I stake ALNJ/zALNJ?</source>
+        <translation>Nasıl ALNJ/zALNJ staking yapabilirim?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -3841,8 +3841,8 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           A masternode is a computer running a full node ALNJ core wallet with a
+                           requirement of 10,000 ALNJ secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3864,17 +3864,17 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in ALNJ Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the ALNJ network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 ALNJ per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -3883,7 +3883,7 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Tam düğüm PIVX core cüzdanını çalıştıran, gereken 10,000 PIV
+                           Tam düğüm ALNJ core cüzdanını çalıştıran, gereken 10,000 ALNJ
                            teminat bakiyesini barındırarak ağa ekstra hizmetler sunan ve
                            karşılığında da her blok ödülünden düzenli olarak pay alan bir
                            bilgisayardır.Bu hizmetler aşağıdaki gibidir:
@@ -3906,17 +3906,17 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
                            Masternode Avantajları:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;PIVX yönetimine katılın&lt;/li&gt;
+                           &lt;li&gt;ALNJ yönetimine katılın&lt;/li&gt;
                            &lt;li&gt;Masternode Ödülleri kazanın&lt;/li&gt;
                            &lt;li&gt;İlerde satabileceğiniz bir varlık opsiyonu&lt;/li&gt;
-                           &lt;li&gt;PIVX ağını güvenliğine destek olun&lt;/li&gt;
+                           &lt;li&gt;ALNJ ağını güvenliğine destek olun&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Gereksinimler:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Her Masternod için ayrı 10,000 PIV
+                           &lt;li&gt;Her Masternod için ayrı 10,000 ALNJ
                            &lt;li&gt;Core cüzdan içinde saklanmalıdır.&lt;/li&gt;
                            &lt;li&gt;Atanmış IP adresi gerekmektedir. &lt;/li&gt;
                            &lt;li&gt;Masternode cüzdanının online olması&lt;/li&gt;
@@ -4000,8 +4000,8 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
         <translation>Yedek klasörü açılamadı</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>pivx.conf dosyası uygulama tarafından açılamadı</translation>
+        <source>Unable to open alnj.conf with default application</source>
+        <translation>alnj.conf dosyası uygulama tarafından açılamadı</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4059,8 +4059,8 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
         <translation>Komut onay parça sayısı</translation>
     </message>
     <message>
-        <source>Start PIVX on system login</source>
-        <translation>Sistem açılışında PIVX'i başlat</translation>
+        <source>Start ALNJ on system login</source>
+        <translation>Sistem açılışında ALNJ'i başlat</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -4139,8 +4139,8 @@ Emin misiniz?
         <translation>CheckBox</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
-        <translation>ÇokluGönder olgunlaşmış masternode ve staking ödüllerinizin 100% 'üne kadarını diğer PIVX adreslerine otomatik olarak göndermenizi sağlar. </translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ALNJ addresses after it matures.</source>
+        <translation>ÇokluGönder olgunlaşmış masternode ve staking ödüllerinizin 100% 'üne kadarını diğer ALNJ adreslerine otomatik olarak göndermenizi sağlar. </translation>
     </message>
     <message>
         <source>Active</source>
@@ -4587,8 +4587,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>SSS</translation>
     </message>
     <message>
-        <source>About PIVX</source>
-        <translation>PIVX Hakkında</translation>
+        <source>About ALNJ</source>
+        <translation>ALNJ Hakkında</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4654,8 +4654,8 @@ Emin misiniz?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core kapanıyor ...</translation>
+        <source>ALNJ Core is shutting down...</source>
+        <translation>ALNJ Core kapanıyor ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4684,15 +4684,15 @@ Emin misiniz?
         <translation>Yükleniyor...</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4707,8 +4707,8 @@ Emin misiniz?
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>The PIVX Core developers</translation>
+        <source>The ALNJ Core developers</source>
+        <translation>The ALNJ Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -5034,40 +5034,40 @@ Emin misiniz?
         <translation>Tarafından alındı</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>ALNJ Stake</source>
+        <translation>ALNJ Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zALNJ Stake</source>
+        <translation>zALNJ Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>PIV Soğuk Stake</translation>
+        <source>ALNJ Cold Stake</source>
+        <translation>ALNJ Soğuk Stake</translation>
     </message>
     <message>
         <source>Stake delegation</source>
         <translation>Stake delegasyonu</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>PIV'den zPIV'e dönüştürülen</translation>
+        <source>Converted ALNJ to zALNJ</source>
+        <translation>ALNJ'den zALNJ'e dönüştürülen</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>zPIV Harca</translation>
+        <source>Spent zALNJ</source>
+        <translation>zALNJ Harca</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>zPIV'den PIV olarak alınan</translation>
+        <source>Received ALNJ from zALNJ</source>
+        <translation>zALNJ'den ALNJ olarak alınan</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>zPIV harcamasından kaynaklanan zPIV mint farkı</translation>
+        <source>Minted Change as zALNJ from zALNJ Spend</source>
+        <translation>zALNJ harcamasından kaynaklanan zALNJ mint farkı</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>zPIV'den PIV' dönüştürülen</translation>
+        <source>Converted zALNJ to ALNJ</source>
+        <translation>zALNJ'den ALNJ' dönüştürülen</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5220,8 +5220,8 @@ Emin misiniz?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 ALNJ</source>
+        <translation>+0.000585 ALNJ</translation>
     </message>
 </context>
 <context>
@@ -5231,8 +5231,8 @@ Emin misiniz?
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 PIV ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALNJ.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 ALNJ ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -5275,25 +5275,25 @@ Emin misiniz?
     </message>
     <message>
         <source>Welcome to
-PIVX Core Wallet</source>
-        <translation>PIVX Core Cüzdanı'na
+ALNJ Core Wallet</source>
+        <translation>ALNJ Core Cüzdanı'na
 Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>PIVX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PIVX Proof of Stake tabanlı dünyadaki en yenilikçi blockchain teknolojisidir. Yüksek tecrübeye sahip yazılımcılar ve kriptograflardan oluşan bir ekip tarafından geliştirilmiştir.</translation>
+        <source>ALNJ is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>ALNJ Proof of Stake tabanlı dünyadaki en yenilikçi blockchain teknolojisidir. Yüksek tecrübeye sahip yazılımcılar ve kriptograflardan oluşan bir ekip tarafından geliştirilmiştir.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PIVX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Manifestomuzda yazdığı gibi: Gizlilik, pazarlık yapılamayacak temel bir insan hakkıdır; kullanıcılarına istedikleri zaman ve istedikleri kişiyle verilerini paylaşma özgürlüğü verir - PIVX özerkliğe inanır.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - ALNJ believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Manifestomuzda yazdığı gibi: Gizlilik, pazarlık yapılamayacak temel bir insan hakkıdır; kullanıcılarına istedikleri zaman ve istedikleri kişiyle verilerini paylaşma özgürlüğü verir - ALNJ özerkliğe inanır.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is PIVX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Masternode ağı dağıtık yönetim ve hazine yönetimini sağlayan PIVX blockchaini üzerindeki ikinci katmandır.</translation>
+        <source>The masternode network is ALNJ's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Masternode ağı dağıtık yönetim ve hazine yönetimini sağlayan ALNJ blockchaini üzerindeki ikinci katmandır.</translation>
     </message>
     <message>
-        <source>How PIVX respects your privacy?</source>
-        <translation>PIVX gizliliğinize nasıl saygı duyar?</translation>
+        <source>How ALNJ respects your privacy?</source>
+        <translation>ALNJ gizliliğinize nasıl saygı duyar?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5305,10 +5305,10 @@ Hoşgeldiniz</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZAlngControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Harcanacak zPIV'leri seçin</translation>
+        <source>Select zALNJ to Spend</source>
+        <translation>Harcanacak zALNJ'leri seçin</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -5319,8 +5319,8 @@ Hoşgeldiniz</translation>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zAlng</source>
+        <translation>zAlng</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -5343,12 +5343,12 @@ Hoşgeldiniz</translation>
         <translation>Seç/Çıkar Hepsini</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>Harcanacak zPIV Bölümlerini Seçin</translation>
+        <source>Select zALNJ Denominations to Spend</source>
+        <translation>Harcanacak zALNJ Bölümlerini Seçin</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>alnj-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx meta verileri, örneğin hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verileri bırak)</translation>
@@ -5370,8 +5370,8 @@ Hoşgeldiniz</translation>
         <translation>JSON-RPC bağlantılarını dinlemek için verilen adrese bağlanın. IPv6 için [host]: port gösterimini kullanın. Bu seçenek birden çok kez belirtilebilir (varsayılan: tüm arabirimlere bağlanır)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. PIVX Core muhtemelen zaten çalışıyor.</translation>
+        <source>Cannot obtain a lock on data directory %s. ALNJ Core is probably already running.</source>
+        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. ALNJ Core muhtemelen zaten çalışıyor.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5402,12 +5402,12 @@ Hoşgeldiniz</translation>
         <translation>Soğuk stakeleme fonksiyonunu etkinleştirin (0-1, varsayılan: %u). Staking=0 ise etkin değildir</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>PIV girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
+        <source>Enable or disable staking functionality for ALNJ inputs (0-1, default: %u)</source>
+        <translation>ALNJ girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>zPIV girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
+        <source>Enable or disable staking functionality for zALNJ inputs (0-1, default: %u)</source>
+        <translation>zALNJ girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5442,12 +5442,12 @@ Hoşgeldiniz</translation>
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (PIV / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in ALNJ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (ALNJ / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (PIV / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in ALNJ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (ALNJ / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5554,8 +5554,8 @@ Hoşgeldiniz</translation>
         <translation>Ağ versiyon dizisi toplam uzunluğu(%i) maksimum uzunluğu aşıyor(%i). Yorumların büyüklüğünü veya sayısını azaltın.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Bu bilgisayarda %s 'e bağlanılamıyor. PIVX Core muhtemelen zaten çalışıyor.</translation>
+        <source>Unable to bind to %s on this computer. ALNJ Core is probably already running.</source>
+        <translation>Bu bilgisayarda %s 'e bağlanılamıyor. ALNJ Core muhtemelen zaten çalışıyor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5570,8 +5570,8 @@ Hoşgeldiniz</translation>
         <translation>Uyarı: paytxfee değeri çok yüksek ayarlanmış! Bu para gönderirken ödeyeceğiniz transfer ücretidir.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Uyarı: Bilgisayarınızın tarih ve saat ayarlarının doğruluğunu kontrol edin! Saatiniz yanlış ise PIVX Core düzgün çalışmayacaktır. </translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong ALNJ Core will not work properly.</source>
+        <translation>Uyarı: Bilgisayarınızın tarih ve saat ayarlarının doğruluğunu kontrol edin! Saatiniz yanlış ise ALNJ Core düzgün çalışmayacaktır. </translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5686,8 +5686,8 @@ Hoşgeldiniz</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
+        <source>Copyright (C) 2015-%i The ALNJ Core Developers</source>
+        <translation>Copyright (C) 2015-%i The ALNJ Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5762,8 +5762,8 @@ Hoşgeldiniz</translation>
         <translation>Wallet.dat yüklenirken hata oluştu: Cüzdan dosyası bozuk</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Wallet.dat yüklenirken hata oluştu: Cüzdan daha yeni bir PIVX Core versiyonuna ihtiyaç duyuyor</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of ALNJ Core</source>
+        <translation>Wallet.dat yüklenirken hata oluştu: Cüzdan daha yeni bir ALNJ Core versiyonuna ihtiyaç duyuyor</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5810,8 +5810,8 @@ Hoşgeldiniz</translation>
         <translation>Blok okuma hatası</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gönderdiğiniz transfere (PIV/kb cinsinden) bir masraf ekleyin (varsayılan: %s) </translation>
+        <source>Fee (in ALNJ/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gönderdiğiniz transfere (ALNJ/kb cinsinden) bir masraf ekleyin (varsayılan: %s) </translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5850,8 +5850,8 @@ Hoşgeldiniz</translation>
         <translation>Bilgi</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Sağlama kontrolü başlatımı başarısız. PIVX Core kapatılıyor.</translation>
+        <source>Initialization sanity check failed. ALNJ Core is shutting down.</source>
+        <translation>Sağlama kontrolü başlatımı başarısız. ALNJ Core kapatılıyor.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5886,12 +5886,12 @@ Hoşgeldiniz</translation>
         <translation>masternode.conf dosyasında geçersiz port tespit edildi</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>PIV tedariği tekrar hesaplanıyor...</translation>
+        <source>Recalculating ALNJ supply...</source>
+        <translation>ALNJ tedariği tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>PIV ve zPIV para tedarik istatistiklerini tekrar endeksle</translation>
+        <source>Reindex the ALNJ and zALNJ money supply statistics</source>
+        <translation>ALNJ ve zALNJ para tedarik istatistiklerini tekrar endeksle</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5930,8 +5930,8 @@ Hoşgeldiniz</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>PIVX spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, varsayılan: %u)</translation>
+        <source>Disable all ALNJ specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>ALNJ spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6354,8 +6354,8 @@ Hoşgeldiniz</translation>
         <translation>Sporklar eşzamanlanıyor..</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>zPIV cüzdanı eşzamanlanıyor..</translation>
+        <source>Syncing zALNJ wallet...</source>
+        <translation>zALNJ cüzdanı eşzamanlanıyor..</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -6462,8 +6462,8 @@ Hoşgeldiniz</translation>
         <translation>JSON-RPC bağlantısı için kullanıcı adı</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Aşağıdaki değer zPIV'in mümkün olan en küçük bölüm değeridir (=1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zALNJ</source>
+        <translation>Aşağıdaki değer zALNJ'in mümkün olan en küçük bölüm değeridir (=1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6478,8 +6478,8 @@ Hoşgeldiniz</translation>
         <translation>Cüzdan %s bilgi dizini %s dışında bulunuyor</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Cüzdanın tekrar yazılması gerekiyor: tamamlamak için PIVX Core uygulamasını tekrar başlatın.</translation>
+        <source>Wallet needed to be rewritten: restart ALNJ Core to complete</source>
+        <translation>Cüzdanın tekrar yazılması gerekiyor: tamamlamak için ALNJ Core uygulamasını tekrar başlatın.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

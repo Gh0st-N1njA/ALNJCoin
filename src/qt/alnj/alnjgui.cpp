@@ -1,8 +1,8 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/pivxgui.h"
+#include "qt/alnj/alnjgui.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -14,9 +14,9 @@
 #include "networkstyle.h"
 #include "notificator.h"
 #include "guiinterface.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/defaultdialog.h"
-#include "qt/pivx/settings/settingsfaqwidget.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/defaultdialog.h"
+#include "qt/alnj/settings/settingsfaqwidget.h"
 
 #include "init.h"
 #include "util.h"
@@ -37,9 +37,9 @@
 #define BASE_WINDOW_MIN_WIDTH 1100
 
 
-const QString PIVXGUI::DEFAULT_WALLET = "~Default";
+const QString ALNJGUI::DEFAULT_WALLET = "~Default";
 
-PIVXGUI::PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent) :
+ALNJGUI::ALNJGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         QMainWindow(parent),
         clientModel(0){
 
@@ -67,7 +67,7 @@ PIVXGUI::PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 
     QString windowTitle = QString::fromStdString(GetArg("-windowtitle", ""));
     if (windowTitle.isEmpty()) {
-        windowTitle = tr("PIVX Core") + " - ";
+        windowTitle = tr("ALNJ Core") + " - ";
         windowTitle += ((enableWallet) ? tr("Wallet") : tr("Node"));
     }
     windowTitle += " " + networkStyle->getTitleAddText();
@@ -167,7 +167,7 @@ PIVXGUI::PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 
 }
 
-void PIVXGUI::createActions(const NetworkStyle* networkStyle){
+void ALNJGUI::createActions(const NetworkStyle* networkStyle){
     toggleHideAction = new QAction(networkStyle->getAppIcon(), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
 
@@ -176,14 +176,14 @@ void PIVXGUI::createActions(const NetworkStyle* networkStyle){
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
 
-    connect(toggleHideAction, &QAction::triggered, this, &PIVXGUI::toggleHidden);
+    connect(toggleHideAction, &QAction::triggered, this, &ALNJGUI::toggleHidden);
     connect(quitAction, &QAction::triggered, qApp, &QApplication::quit);
 }
 
 /**
  * Here add every event connection
  */
-void PIVXGUI::connectActions() {
+void ALNJGUI::connectActions() {
     QShortcut *consoleShort = new QShortcut(this);
     consoleShort->setKey(QKeySequence(SHORT_KEY + Qt::Key_C));
     connect(consoleShort, &QShortcut::activated, [this](){
@@ -191,25 +191,25 @@ void PIVXGUI::connectActions() {
         settingsWidget->showDebugConsole();
         goToSettings();
     });
-    connect(topBar, &TopBar::showHide, this, &PIVXGUI::showHide);
-    connect(topBar, &TopBar::themeChanged, this, &PIVXGUI::changeTheme);
+    connect(topBar, &TopBar::showHide, this, &ALNJGUI::showHide);
+    connect(topBar, &TopBar::themeChanged, this, &ALNJGUI::changeTheme);
     connect(topBar, &TopBar::onShowHideColdStakingChanged, navMenu, &NavMenuWidget::onShowHideColdStakingChanged);
-    connect(settingsWidget, &SettingsWidget::showHide, this, &PIVXGUI::showHide);
-    connect(sendWidget, &SendWidget::showHide, this, &PIVXGUI::showHide);
-    connect(receiveWidget, &ReceiveWidget::showHide, this, &PIVXGUI::showHide);
-    connect(addressesWidget, &AddressesWidget::showHide, this, &PIVXGUI::showHide);
-    connect(masterNodesWidget, &MasterNodesWidget::showHide, this, &PIVXGUI::showHide);
-    connect(masterNodesWidget, &MasterNodesWidget::execDialog, this, &PIVXGUI::execDialog);
-    connect(coldStakingWidget, &ColdStakingWidget::showHide, this, &PIVXGUI::showHide);
-    connect(coldStakingWidget, &ColdStakingWidget::execDialog, this, &PIVXGUI::execDialog);
-    connect(settingsWidget, &SettingsWidget::execDialog, this, &PIVXGUI::execDialog);
+    connect(settingsWidget, &SettingsWidget::showHide, this, &ALNJGUI::showHide);
+    connect(sendWidget, &SendWidget::showHide, this, &ALNJGUI::showHide);
+    connect(receiveWidget, &ReceiveWidget::showHide, this, &ALNJGUI::showHide);
+    connect(addressesWidget, &AddressesWidget::showHide, this, &ALNJGUI::showHide);
+    connect(masterNodesWidget, &MasterNodesWidget::showHide, this, &ALNJGUI::showHide);
+    connect(masterNodesWidget, &MasterNodesWidget::execDialog, this, &ALNJGUI::execDialog);
+    connect(coldStakingWidget, &ColdStakingWidget::showHide, this, &ALNJGUI::showHide);
+    connect(coldStakingWidget, &ColdStakingWidget::execDialog, this, &ALNJGUI::execDialog);
+    connect(settingsWidget, &SettingsWidget::execDialog, this, &ALNJGUI::execDialog);
 }
 
 
-void PIVXGUI::createTrayIcon(const NetworkStyle* networkStyle) {
+void ALNJGUI::createTrayIcon(const NetworkStyle* networkStyle) {
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
-    QString toolTip = tr("PIVX Core client") + " " + networkStyle->getTitleAddText();
+    QString toolTip = tr("ALNJ Core client") + " " + networkStyle->getTitleAddText();
     trayIcon->setToolTip(toolTip);
     trayIcon->setIcon(networkStyle->getAppIcon());
     trayIcon->hide();
@@ -218,7 +218,7 @@ void PIVXGUI::createTrayIcon(const NetworkStyle* networkStyle) {
 }
 
 //
-PIVXGUI::~PIVXGUI() {
+ALNJGUI::~ALNJGUI() {
     // Unsubscribe from notifications from core
     unsubscribeFromCoreSignals();
 
@@ -232,13 +232,13 @@ PIVXGUI::~PIVXGUI() {
 
 
 /** Get restart command-line parameters and request restart */
-void PIVXGUI::handleRestart(QStringList args){
+void ALNJGUI::handleRestart(QStringList args){
     if (!ShutdownRequested())
         Q_EMIT requestedRestart(args);
 }
 
 
-void PIVXGUI::setClientModel(ClientModel* clientModel) {
+void ALNJGUI::setClientModel(ClientModel* clientModel) {
     this->clientModel = clientModel;
     if(this->clientModel) {
 
@@ -252,7 +252,7 @@ void PIVXGUI::setClientModel(ClientModel* clientModel) {
         settingsWidget->setClientModel(clientModel);
 
         // Receive and report messages from client model
-        connect(clientModel, &ClientModel::message, this, &PIVXGUI::message);
+        connect(clientModel, &ClientModel::message, this, &ALNJGUI::message);
         connect(topBar, &TopBar::walletSynced, dashboard, &DashboardWidget::walletSynced);
         connect(topBar, &TopBar::walletSynced, coldStakingWidget, &ColdStakingWidget::walletSynced);
 
@@ -276,7 +276,7 @@ void PIVXGUI::setClientModel(ClientModel* clientModel) {
     }
 }
 
-void PIVXGUI::createTrayIconMenu() {
+void ALNJGUI::createTrayIconMenu() {
 #ifndef Q_OS_MAC
     // return if trayIcon is unset (only on non-macOSes)
     if (!trayIcon)
@@ -285,11 +285,11 @@ void PIVXGUI::createTrayIconMenu() {
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
 
-    connect(trayIcon, &QSystemTrayIcon::activated, this, &PIVXGUI::trayIconActivated);
+    connect(trayIcon, &QSystemTrayIcon::activated, this, &ALNJGUI::trayIconActivated);
 #else
     // Note: On macOS, the Dock icon is used to provide the tray's functionality.
     MacDockIconHandler* dockIconHandler = MacDockIconHandler::instance();
-    connect(dockIconHandler, &MacDockIconHandler::dockIconClicked, this, &PIVXGUI::macosDockIconActivated);
+    connect(dockIconHandler, &MacDockIconHandler::dockIconClicked, this, &ALNJGUI::macosDockIconActivated);
 
     trayIconMenu = new QMenu(this);
     trayIconMenu->setAsDockMenu();
@@ -306,7 +306,7 @@ void PIVXGUI::createTrayIconMenu() {
 }
 
 #ifndef Q_OS_MAC
-void PIVXGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
+void ALNJGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     if (reason == QSystemTrayIcon::Trigger) {
         // Click on system tray icon triggers show/hide of the main window
@@ -314,14 +314,14 @@ void PIVXGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
     }
 }
 #else
-void PIVXGUI::macosDockIconActivated()
+void ALNJGUI::macosDockIconActivated()
  {
      show();
      activateWindow();
  }
 #endif
 
-void PIVXGUI::changeEvent(QEvent* e)
+void ALNJGUI::changeEvent(QEvent* e)
 {
     QMainWindow::changeEvent(e);
 #ifndef Q_OS_MAC // Ignored on Mac
@@ -329,7 +329,7 @@ void PIVXGUI::changeEvent(QEvent* e)
         if (clientModel && clientModel->getOptionsModel() && clientModel->getOptionsModel()->getMinimizeToTray()) {
             QWindowStateChangeEvent* wsevt = static_cast<QWindowStateChangeEvent*>(e);
             if (!(wsevt->oldState() & Qt::WindowMinimized) && isMinimized()) {
-                QTimer::singleShot(0, this, &PIVXGUI::hide);
+                QTimer::singleShot(0, this, &ALNJGUI::hide);
                 e->ignore();
             }
         }
@@ -337,7 +337,7 @@ void PIVXGUI::changeEvent(QEvent* e)
 #endif
 }
 
-void PIVXGUI::closeEvent(QCloseEvent* event)
+void ALNJGUI::closeEvent(QCloseEvent* event)
 {
 #ifndef Q_OS_MAC // Ignored on Mac
     if (clientModel && clientModel->getOptionsModel()) {
@@ -350,7 +350,7 @@ void PIVXGUI::closeEvent(QCloseEvent* event)
 }
 
 
-void PIVXGUI::messageInfo(const QString& text){
+void ALNJGUI::messageInfo(const QString& text){
     if(!this->snackBar) this->snackBar = new SnackBar(this, this);
     this->snackBar->setText(text);
     this->snackBar->resize(this->width(), snackBar->height());
@@ -358,8 +358,8 @@ void PIVXGUI::messageInfo(const QString& text){
 }
 
 
-void PIVXGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
-    QString strTitle =  tr("PIVX Core"); // default title
+void ALNJGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
+    QString strTitle =  tr("ALNJ Core"); // default title
     // Default to information icon
     int nNotifyIcon = Notificator::Information;
 
@@ -409,14 +409,14 @@ void PIVXGUI::message(const QString& title, const QString& message, unsigned int
     } else if(style & CClientUIInterface::MSG_INFORMATION_SNACK){
         messageInfo(message);
     }else {
-        // Append title to "PIVX - "
+        // Append title to "ALNJ - "
         if (!msgType.isEmpty())
             strTitle += " - " + msgType;
         notificator->notify((Notificator::Class) nNotifyIcon, strTitle, message);
     }
 }
 
-bool PIVXGUI::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn){
+bool ALNJGUI::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn){
     DefaultDialog *dialog;
     if (isVisible()) {
         showHide(true);
@@ -427,7 +427,7 @@ bool PIVXGUI::openStandardDialog(QString title, QString body, QString okBtn, QSt
     } else {
         dialog = new DefaultDialog();
         dialog->setText(title, body, okBtn);
-        dialog->setWindowTitle(tr("PIVX Core"));
+        dialog->setWindowTitle(tr("ALNJ Core"));
         dialog->adjustSize();
         dialog->raise();
         dialog->exec();
@@ -438,7 +438,7 @@ bool PIVXGUI::openStandardDialog(QString title, QString body, QString okBtn, QSt
 }
 
 
-void PIVXGUI::showNormalIfMinimized(bool fToggleHidden) {
+void ALNJGUI::showNormalIfMinimized(bool fToggleHidden) {
     if (!clientModel)
         return;
     if (!isHidden() && !isMinimized() && !GUIUtil::isObscured(this) && fToggleHidden) {
@@ -448,11 +448,11 @@ void PIVXGUI::showNormalIfMinimized(bool fToggleHidden) {
     }
 }
 
-void PIVXGUI::toggleHidden() {
+void ALNJGUI::toggleHidden() {
     showNormalIfMinimized(true);
 }
 
-void PIVXGUI::detectShutdown() {
+void ALNJGUI::detectShutdown() {
     if (ShutdownRequested()) {
         if (rpcConsole)
             rpcConsole->hide();
@@ -460,49 +460,49 @@ void PIVXGUI::detectShutdown() {
     }
 }
 
-void PIVXGUI::goToDashboard(){
+void ALNJGUI::goToDashboard(){
     if(stackedContainer->currentWidget() != dashboard){
         stackedContainer->setCurrentWidget(dashboard);
         topBar->showBottom();
     }
 }
 
-void PIVXGUI::goToSend(){
+void ALNJGUI::goToSend(){
     showTop(sendWidget);
 }
 
-void PIVXGUI::goToAddresses(){
+void ALNJGUI::goToAddresses(){
     showTop(addressesWidget);
 }
 
-void PIVXGUI::goToPrivacy(){
+void ALNJGUI::goToPrivacy(){
     if (privacyWidget) showTop(privacyWidget);
 }
 
-void PIVXGUI::goToMasterNodes(){
+void ALNJGUI::goToMasterNodes(){
     showTop(masterNodesWidget);
 }
 
-void PIVXGUI::goToColdStaking(){
+void ALNJGUI::goToColdStaking(){
     showTop(coldStakingWidget);
 }
 
-void PIVXGUI::goToSettings(){
+void ALNJGUI::goToSettings(){
     showTop(settingsWidget);
 }
 
-void PIVXGUI::goToReceive(){
+void ALNJGUI::goToReceive(){
     showTop(receiveWidget);
 }
 
-void PIVXGUI::showTop(QWidget* view){
+void ALNJGUI::showTop(QWidget* view){
     if(stackedContainer->currentWidget() != view){
         stackedContainer->setCurrentWidget(view);
         topBar->showTop();
     }
 }
 
-void PIVXGUI::changeTheme(bool isLightTheme){
+void ALNJGUI::changeTheme(bool isLightTheme){
 
     QString css = GUIUtil::loadStyleSheet();
     this->setStyleSheet(css);
@@ -514,7 +514,7 @@ void PIVXGUI::changeTheme(bool isLightTheme){
     updateStyle(this);
 }
 
-void PIVXGUI::resizeEvent(QResizeEvent* event){
+void ALNJGUI::resizeEvent(QResizeEvent* event){
     // Parent..
     QMainWindow::resizeEvent(event);
     // background
@@ -523,11 +523,11 @@ void PIVXGUI::resizeEvent(QResizeEvent* event){
     Q_EMIT windowResizeEvent(event);
 }
 
-bool PIVXGUI::execDialog(QDialog *dialog, int xDiv, int yDiv){
+bool ALNJGUI::execDialog(QDialog *dialog, int xDiv, int yDiv){
     return openDialogWithOpaqueBackgroundY(dialog, this);
 }
 
-void PIVXGUI::showHide(bool show){
+void ALNJGUI::showHide(bool show){
     if(!op) op = new QLabel(this);
     if(!show){
         op->setVisible(false);
@@ -554,11 +554,11 @@ void PIVXGUI::showHide(bool show){
     }
 }
 
-int PIVXGUI::getNavWidth(){
+int ALNJGUI::getNavWidth(){
     return this->navMenu->width();
 }
 
-void PIVXGUI::openFAQ(int section){
+void ALNJGUI::openFAQ(int section){
     showHide(true);
     SettingsFaqWidget* dialog = new SettingsFaqWidget(this);
     if (section > 0) dialog->setSection(section);
@@ -568,7 +568,7 @@ void PIVXGUI::openFAQ(int section){
 
 
 #ifdef ENABLE_WALLET
-bool PIVXGUI::addWallet(const QString& name, WalletModel* walletModel)
+bool ALNJGUI::addWallet(const QString& name, WalletModel* walletModel)
 {
     // Single wallet supported for now..
     if(!stackedContainer || !clientModel || !walletModel)
@@ -591,35 +591,35 @@ bool PIVXGUI::addWallet(const QString& name, WalletModel* walletModel)
         stackedContainer->addWidget(privacyWidget);
 
         privacyWidget->setWalletModel(walletModel);
-        connect(privacyWidget, &PrivacyWidget::message, this, &PIVXGUI::message);
-        connect(privacyWidget, &PrivacyWidget::showHide, this, &PIVXGUI::showHide);
+        connect(privacyWidget, &PrivacyWidget::message, this, &ALNJGUI::message);
+        connect(privacyWidget, &PrivacyWidget::showHide, this, &ALNJGUI::showHide);
     }
 
     // Connect actions..
-    connect(masterNodesWidget, &MasterNodesWidget::message, this, &PIVXGUI::message);
-    connect(coldStakingWidget, &ColdStakingWidget::message, this, &PIVXGUI::message);
-    connect(topBar, &TopBar::message, this, &PIVXGUI::message);
-    connect(sendWidget, &SendWidget::message,this, &PIVXGUI::message);
-    connect(receiveWidget, &ReceiveWidget::message,this, &PIVXGUI::message);
-    connect(addressesWidget, &AddressesWidget::message,this, &PIVXGUI::message);
-    connect(settingsWidget, &SettingsWidget::message, this, &PIVXGUI::message);
+    connect(masterNodesWidget, &MasterNodesWidget::message, this, &ALNJGUI::message);
+    connect(coldStakingWidget, &ColdStakingWidget::message, this, &ALNJGUI::message);
+    connect(topBar, &TopBar::message, this, &ALNJGUI::message);
+    connect(sendWidget, &SendWidget::message,this, &ALNJGUI::message);
+    connect(receiveWidget, &ReceiveWidget::message,this, &ALNJGUI::message);
+    connect(addressesWidget, &AddressesWidget::message,this, &ALNJGUI::message);
+    connect(settingsWidget, &SettingsWidget::message, this, &ALNJGUI::message);
 
     // Pass through transaction notifications
-    connect(dashboard, &DashboardWidget::incomingTransaction, this, &PIVXGUI::incomingTransaction);
+    connect(dashboard, &DashboardWidget::incomingTransaction, this, &ALNJGUI::incomingTransaction);
 
     return true;
 }
 
-bool PIVXGUI::setCurrentWallet(const QString& name) {
+bool ALNJGUI::setCurrentWallet(const QString& name) {
     // Single wallet supported.
     return true;
 }
 
-void PIVXGUI::removeAllWallets() {
+void ALNJGUI::removeAllWallets() {
     // Single wallet supported.
 }
 
-void PIVXGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address) {
+void ALNJGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address) {
     // Only send notifications when not disabled
     if(!bdisableSystemnotifications){
         // On new transaction, make an info balloon
@@ -641,7 +641,7 @@ void PIVXGUI::incomingTransaction(const QString& date, int unit, const CAmount& 
 #endif // ENABLE_WALLET
 
 
-static bool ThreadSafeMessageBox(PIVXGUI* gui, const std::string& message, const std::string& caption, unsigned int style)
+static bool ThreadSafeMessageBox(ALNJGUI* gui, const std::string& message, const std::string& caption, unsigned int style)
 {
     bool modal = (style & CClientUIInterface::MODAL);
     // The SECURE flag has no effect in the Qt GUI.
@@ -660,13 +660,13 @@ static bool ThreadSafeMessageBox(PIVXGUI* gui, const std::string& message, const
 }
 
 
-void PIVXGUI::subscribeToCoreSignals()
+void ALNJGUI::subscribeToCoreSignals()
 {
     // Connect signals to client
     uiInterface.ThreadSafeMessageBox.connect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));
 }
 
-void PIVXGUI::unsubscribeFromCoreSignals()
+void ALNJGUI::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
     uiInterface.ThreadSafeMessageBox.disconnect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));

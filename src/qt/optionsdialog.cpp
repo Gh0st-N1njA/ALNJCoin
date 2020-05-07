@@ -1,10 +1,10 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017-2020 The PIVX developers
+// Copyright (c) 2017-2020 The ALNJ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/alnj-config.h"
 #endif
 
 #include "optionsdialog.h"
@@ -67,12 +67,12 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWindow));
 #endif
 
-    /* remove Wallet tab and zPiv options in case of -disablewallet */
+    /* remove Wallet tab and zAlng options in case of -disablewallet */
     if (!enableWallet) {
         ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWallet));
 
-        ui->verticalZpivOptionsWidget->hide();
-        ui->verticalZpivDisplayWidget->hide();
+        ui->verticalZalngOptionsWidget->hide();
+        ui->verticalZalngDisplayWidget->hide();
     }
 
     /* Display elements init */

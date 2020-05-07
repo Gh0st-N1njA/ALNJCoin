@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/settings/settingsfaqwidget.h"
-#include "qt/pivx/settings/forms/ui_settingsfaqwidget.h"
+#include "qt/alnj/settings/settingsfaqwidget.h"
+#include "qt/alnj/settings/forms/ui_settingsfaqwidget.h"
 #include <QScrollBar>
 #include <QMetaObject>
-#include "qt/pivx/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
-SettingsFaqWidget::SettingsFaqWidget(PIVXGUI *parent) :
+SettingsFaqWidget::SettingsFaqWidget(ALNJGUI *parent) :
     QDialog(parent),
     ui(new Ui::SettingsFaqWidget)
 {
@@ -91,7 +91,7 @@ SettingsFaqWidget::SettingsFaqWidget(PIVXGUI *parent) :
     setCssProperty(ui->pushButtonExit, "btn-faq-exit");
 
     // Web Link
-    ui->pushButtonWebLink->setText("https://PIVX.org/");
+    ui->pushButtonWebLink->setText("https://ALNJ.org/");
     setCssProperty(ui->pushButtonWebLink, "btn-faq-web");
     setCssProperty(ui->containerButtons, "container-faq-buttons");
 
@@ -109,7 +109,7 @@ SettingsFaqWidget::SettingsFaqWidget(PIVXGUI *parent) :
     connect(ui->pushButtonFaq10, &QPushButton::clicked, this, &SettingsFaqWidget::onFaq10Clicked);
 
     if (parent)
-        connect(parent, &PIVXGUI::windowResizeEvent, this, &SettingsFaqWidget::windowResizeEvent);
+        connect(parent, &ALNJGUI::windowResizeEvent, this, &SettingsFaqWidget::windowResizeEvent);
 }
 
 void SettingsFaqWidget::showEvent(QShowEvent *event){

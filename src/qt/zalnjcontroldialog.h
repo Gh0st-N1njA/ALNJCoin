@@ -1,38 +1,38 @@
-// Copyright (c) 2017-2020 The PIVX developers
+// Copyright (c) 2017-2020 The ALNJ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZPIVCONTROLDIALOG_H
-#define ZPIVCONTROLDIALOG_H
+#ifndef ZALNJCONTROLDIALOG_H
+#define ZALNJCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
-#include "zpiv/zerocoin.h"
+#include "zalnj/zerocoin.h"
 
 class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZPivControlDialog;
+class ZAlngControlDialog;
 }
 
-class CZPivControlWidgetItem : public QTreeWidgetItem
+class CZAlngControlWidgetItem : public QTreeWidgetItem
 {
 public:
-    explicit CZPivControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
-    explicit CZPivControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
-    explicit CZPivControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZAlngControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZAlngControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CZAlngControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
 
     bool operator<(const QTreeWidgetItem &other) const;
 };
 
-class ZPivControlDialog : public QDialog
+class ZAlngControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZPivControlDialog(QWidget *parent);
-    ~ZPivControlDialog();
+    explicit ZAlngControlDialog(QWidget *parent);
+    ~ZAlngControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -41,7 +41,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZPivControlDialog *ui;
+    Ui::ZAlngControlDialog *ui;
     WalletModel* model;
 
     void updateList();
@@ -55,11 +55,11 @@ private:
         COLUMN_CONFIRMATIONS,
         COLUMN_ISSPENDABLE
     };
-    friend class CZPivControlWidgetItem;
+    friend class CZAlngControlWidgetItem;
 
 private Q_SLOTS:
     void updateSelection(QTreeWidgetItem* item, int column);
     void ButtonAllClicked();
 };
 
-#endif // ZPIVCONTROLDIALOG_H
+#endif // ZALNJCONTROLDIALOG_H

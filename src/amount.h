@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2017-2020 The PIVX developers
+// Copyright (c) 2017-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,14 +12,14 @@
 #include <stdlib.h>
 #include <string>
 
-/** Amount in PIV (Can be negative) */
+/** Amount in ALNJ (Can be negative) */
 typedef int64_t CAmount;
 
 static const CAmount COIN = 100000000;
 static const CAmount CENT = 1000000;
 
 /**
- * Fee rate in PIV per kilobyte: CAmount / kB
+ * Fee rate in ALNJ per kilobyte: CAmount / kB
  */
 class CFeeRate
 {

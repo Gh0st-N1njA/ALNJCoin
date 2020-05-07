@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,18 +8,18 @@
 #include <QWidget>
 #include <QPushButton>
 
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/contactsdropdown.h"
-#include "qt/pivx/sendmultirow.h"
-#include "qt/pivx/sendcustomfeedialog.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/contactsdropdown.h"
+#include "qt/alnj/sendmultirow.h"
+#include "qt/alnj/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
-#include "zpivcontroldialog.h"
-#include "qt/pivx/tooltipmenu.h"
+#include "zalnjcontroldialog.h"
+#include "qt/alnj/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
 
-class PIVXGUI;
+class ALNJGUI;
 class ClientModel;
 class WalletModel;
 class WalletModelTransaction;
@@ -34,7 +34,7 @@ class SendWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SendWidget(PIVXGUI* parent);
+    explicit SendWidget(ALNJGUI* parent);
     ~SendWidget();
 
     void addEntry();
@@ -60,7 +60,7 @@ protected:
     void showEvent(QShowEvent *event) override;
 
 private Q_SLOTS:
-    void onPIVSelected(bool _isPIV);
+    void onALNJSelected(bool _isALNJ);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -93,12 +93,12 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isPIV = true;
+    bool isALNJ = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();
     bool send(QList<SendCoinsRecipient> recipients);
-    bool sendZpiv(QList<SendCoinsRecipient> recipients);
+    bool sendZalng(QList<SendCoinsRecipient> recipients);
     void setFocusOnLastEntry();
     void showHideCheckBoxDelegations();
     void updateEntryLabels(QList<SendCoinsRecipient> recipients);

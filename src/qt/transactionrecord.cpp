@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2015-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@
 #include "swifttx.h"
 #include "timedata.h"
 #include "wallet/wallet.h"
-#include "zpivchain.h"
+#include "zalnjchain.h"
 #include "main.h"
 
 #include <algorithm>
@@ -31,7 +31,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     bool fZSpendFromMe = false;
 
     if (wtx.HasZerocoinSpendInputs()) {
-        libzerocoin::CoinSpend zcspend = wtx.HasZerocoinPublicSpendInputs() ? ZPIVModule::parseCoinSpend(wtx.vin[0]) : TxInToZerocoinSpend(wtx.vin[0]);
+        libzerocoin::CoinSpend zcspend = wtx.HasZerocoinPublicSpendInputs() ? ZALNJModule::parseCoinSpend(wtx.vin[0]) : TxInToZerocoinSpend(wtx.vin[0]);
         fZSpendFromMe = wallet->IsMyZerocoinSpend(zcspend.getCoinSerialNumber());
     }
 
@@ -42,10 +42,10 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         if (!wtx.HasZerocoinSpendInputs() && !ExtractDestination(wtx.vout[1].scriptPubKey, address))
             return parts;
 
-        if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zpivTracker->HasMintTx(hash))) {
-            //zPIV stake reward
+        if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zalnjTracker->HasMintTx(hash))) {
+            //zALNJ stake reward
             sub.involvesWatchAddress = false;
-            sub.type = TransactionRecord::StakeZPIV;
+            sub.type = TransactionRecord::StakeZALNJ;
             sub.address = mapValue["zerocoinmint"];
             sub.credit = 0;
             for (const CTxOut& out : wtx.vout) {
@@ -63,7 +63,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 parts.append(sub);
                 return parts;
             } else {
-                // PIV stake reward
+                // ALNJ stake reward
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 sub.type = TransactionRecord::StakeMint;
                 sub.address = CBitcoinAddress(address).ToString();
@@ -97,7 +97,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 isminetype mine = wallet->IsMine(txout);
                 TransactionRecord sub(hash, nTime, wtx.GetTotalSize());
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
-                sub.type = TransactionRecord::ZerocoinSpend_Change_zPiv;
+                sub.type = TransactionRecord::ZerocoinSpend_Change_zAlng;
                 sub.address = mapValue["zerocoinmint"];
                 if (!fFeeAssigned) {
                     sub.debit -= (wtx.GetZerocoinSpent() - wtx.GetValueOut());
@@ -175,7 +175,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 sub.credit = txout.nValue;
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address)) {
-                    // Received by PIVX Address
+                    // Received by ALNJ Address
                     sub.type = TransactionRecord::RecvWithAddress;
                     sub.address = CBitcoinAddress(address).ToString();
                 } else {
@@ -261,7 +261,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                     //private keys that the change was sent to. Do not display a "sent to" here.
                     if (wtx.HasZerocoinMintOutputs())
                         continue;
-                    // Sent to PIVX Address
+                    // Sent to ALNJ Address
                     sub.type = TransactionRecord::SendToAddress;
                     sub.address = CBitcoinAddress(address).ToString();
                 } else if (txout.IsZerocoinMint()){
@@ -393,14 +393,14 @@ bool TransactionRecord::ExtractAddress(const CScript& scriptPubKey, bool fColdSt
     }
 }
 
-bool IsZPIVType(TransactionRecord::Type type)
+bool IsZALNJType(TransactionRecord::Type type)
 {
     switch (type) {
-        case TransactionRecord::StakeZPIV:
+        case TransactionRecord::StakeZALNJ:
         case TransactionRecord::ZerocoinMint:
         case TransactionRecord::ZerocoinSpend:
         case TransactionRecord::RecvFromZerocoinSpend:
-        case TransactionRecord::ZerocoinSpend_Change_zPiv:
+        case TransactionRecord::ZerocoinSpend_Change_zAlng:
         case TransactionRecord::ZerocoinSpend_FromMe:
             return true;
         default:
@@ -455,7 +455,7 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
     // For generated transactions, determine maturity
     else if (type == TransactionRecord::Generated ||
             type == TransactionRecord::StakeMint ||
-            type == TransactionRecord::StakeZPIV ||
+            type == TransactionRecord::StakeZALNJ ||
             type == TransactionRecord::MNReward ||
             type == TransactionRecord::StakeDelegated ||
             type == TransactionRecord::StakeHot) {
@@ -508,7 +508,7 @@ int TransactionRecord::getOutputIndex() const
 
 bool TransactionRecord::isCoinStake() const
 {
-    return (type == TransactionRecord::StakeMint || type == TransactionRecord::Generated || type == TransactionRecord::StakeZPIV);
+    return (type == TransactionRecord::StakeMint || type == TransactionRecord::Generated || type == TransactionRecord::StakeZALNJ);
 }
 
 bool TransactionRecord::isAnyColdStakingType() const

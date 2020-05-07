@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-from test_framework.test_framework import PivxTestFramework
+from test_framework.test_framework import AlnjTestFramework
 from test_framework.util import (
     assert_equal,
     assert_fee_amount,
@@ -22,7 +22,7 @@ def get_unspent(listunspent, amount):
     raise AssertionError('Could not find unspent with amount={}'.format(amount))
 
 
-class RawTransactionsTest(PivxTestFramework):
+class RawTransactionsTest(AlnjTestFramework):
 
     def __init__(self):
         super().__init__()
@@ -209,9 +209,9 @@ class RawTransactionsTest(PivxTestFramework):
 
         try:
             self.nodes[2].fundrawtransaction(rawtx, {'changeAddress': 'foobar'})
-            raise AssertionError("Accepted invalid pivx address")
+            raise AssertionError("Accepted invalid alnj address")
         except JSONRPCException as e:
-            assert("changeAddress must be a valid pivx address" in e.error['message'])
+            assert("changeAddress must be a valid alnj address" in e.error['message'])
 
 
         ############################################################

@@ -1,16 +1,16 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/settings/settingsbackupwallet.h"
-#include "qt/pivx/settings/forms/ui_settingsbackupwallet.h"
+#include "qt/alnj/settings/settingsbackupwallet.h"
+#include "qt/alnj/settings/forms/ui_settingsbackupwallet.h"
 #include <QFile>
 #include <QGraphicsDropShadowEffect>
 #include "guiutil.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/alnj/qtutils.h"
 #include "guiinterface.h"
-#include "qt/pivx/qtutils.h"
-SettingsBackupWallet::SettingsBackupWallet(PIVXGUI* _window, QWidget *parent) :
+#include "qt/alnj/qtutils.h"
+SettingsBackupWallet::SettingsBackupWallet(ALNJGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsBackupWallet)
 {

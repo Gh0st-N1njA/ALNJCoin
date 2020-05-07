@@ -130,12 +130,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Voici vos adresses PIVX pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
+        <source>These are your ALNJ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Voici vos adresses ALNJ pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Voici vos adresses PIVX pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
+        <source>These are your ALNJ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Voici vos adresses ALNJ pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -251,8 +251,8 @@
         <translation>Par exemple: Pierre Dupont</translation>
     </message>
     <message>
-        <source>Enter PIVX address</source>
-        <translation>Entrez une adresse PIVX</translation>
+        <source>Enter ALNJ address</source>
+        <translation>Entrez une adresse ALNJ</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -260,7 +260,7 @@
     </message>
     <message>
         <source>Invalid Contact Address</source>
-        <translation>Adresse Pivx incorrecte</translation>
+        <translation>Adresse Alnj incorrecte</translation>
     </message>
     <message>
         <source>Cannot store your own address as contact</source>
@@ -380,8 +380,8 @@ pour le staking</translation>
         <translation>Si vous chiffrez votre portefeuille et perdez votre phrase secrète, vous allez</translation>
     </message>
     <message>
-        <source>LOSE ALL OF YOUR PIV</source>
-        <translation>PERDRE TOUS VOS PIV</translation>
+        <source>LOSE ALL OF YOUR ALNJ</source>
+        <translation>PERDRE TOUS VOS ALNJ</translation>
     </message>
     <message>
         <source>ENCRYPT</source>
@@ -396,8 +396,8 @@ pour le staking</translation>
         <translation>ATTENTION : la touche de verrouillage des majuscules est activée!</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos PIVs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>ALNJ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALNJs from being stolen by malware infecting your computer.</source>
+        <translation>ALNJ va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos ALNJs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -466,8 +466,8 @@ pour le staking</translation>
         <translation>Épargne</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 ALNJ</source>
+        <translation>0,00 ALNJ</translation>
     </message>
     <message>
         <source>address</source>
@@ -508,8 +508,8 @@ pour le staking</translation>
         <translation>Sélection des pièces</translation>
     </message>
     <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>Choisir les sorties PIV à dépenser</translation>
+        <source>Select ALNJ Outputs to Spend</source>
+        <translation>Choisir les sorties ALNJ à dépenser</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -536,8 +536,8 @@ pour le staking</translation>
         <translation>Montant</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 ALNJ</source>
+        <translation>0.00 ALNJ</translation>
     </message>
     <message>
         <source>0</source>
@@ -720,8 +720,8 @@ pour le staking</translation>
         <translation>Ce libellé devient rouge si l'un des destinataires reçoit un montant inférieur à %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Peut varier de +/- %1 upiv par entrée.</translation>
+        <source>Can vary +/- %1 ualng per input.</source>
+        <translation>Peut varier de +/- %1 ualng par entrée.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -803,17 +803,17 @@ pour le staking</translation>
         <translation>Erreur lors du chargement des délégations: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
+        <source>You can delegate your ALNJs, letting a hot node (24/7 online node)
 stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>Vous pouvez déléguer vos PIVs et laissez un noeud à chaud (en ligne 24/7) faire du staking en votre nom, tout en conservant les clés privées hors ligne.</translation>
+        <translation>Vous pouvez déléguer vos ALNJs et laissez un noeud à chaud (en ligne 24/7) faire du staking en votre nom, tout en conservant les clés privées hors ligne.</translation>
     </message>
     <message>
         <source>Enter owner address</source>
         <translation>Entrer l'adresse propriétaire</translation>
     </message>
     <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>Accepter la délégation de PIV / Déléguer des PIV</translation>
+        <source>Accept ALNJ delegation / Delegate ALNJ</source>
+        <translation>Accepter la délégation de ALNJ / Déléguer des ALNJ</translation>
     </message>
     <message>
         <source>Cold Staking address</source>
@@ -880,8 +880,8 @@ Souhaitez-vous continuer ?</translation>
         <translation>Pièces déléguées</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Vous n'avez aucun PIV à sélectionner</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Vous n'avez aucun ALNJ à sélectionner</translation>
     </message>
     <message>
         <source>Cannot perform operation, wallet locked</source>
@@ -1012,12 +1012,12 @@ propriétaire</translation>
         <translation>Statistiques de staking</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>ALNJ</source>
+        <translation>ALNJ</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zALNJ</source>
+        <translation>zALNJ</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1048,8 +1048,8 @@ propriétaire</translation>
         <translation>Vous pouvez voir l'historique de votre compte</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Le montant de PIV et de zPIV en staking</translation>
+        <source>Amount of ALNJ and zALNJ staked.</source>
+        <translation>Le montant de ALNJ et de zALNJ en staking</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1060,8 +1060,8 @@ propriétaire</translation>
         <translation>Pas encore de transaction</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Comment obtenir des PIV ou zPIV</translation>
+        <source>How to get ALNJ or zALNJ</source>
+        <translation>Comment obtenir des ALNJ ou zALNJ</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1156,8 +1156,8 @@ Il commencera automatiquement dès que le portefeuille aura assez de confirmatio
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse PIVX valide</translation>
+        <source>The entered address "%1" is not a valid ALNJ address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse ALNJ valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1209,16 +1209,16 @@ Il commencera automatiquement dès que le portefeuille aura assez de confirmatio
         <translation>version</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>A propos de PIVX Core</translation>
+        <source>About ALNJ Core</source>
+        <translation>A propos de ALNJ Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1272,16 +1272,16 @@ Il commencera automatiquement dès que le portefeuille aura assez de confirmatio
         <translation>Bienvenu</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Bienvenue à PIVX Core</translation>
+        <source>Welcome to ALNJ Core.</source>
+        <translation>Bienvenue à ALNJ Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où PIVX Core va stocker ses données.</translation>
+        <source>As this is the first time the program is launched, you can choose where ALNJ Core will store its data.</source>
+        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où ALNJ Core va stocker ses données.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core téléchargera et stockera une copie de la chaîne de blocs PIVX. Au moins %1 Go de données sera stocké dans ce répertoire, et il va augmenter au fil du temps. Le portefeuille sera également stocké dans ce répertoire.</translation>
+        <source>ALNJ Core will download and store a copy of the ALNJ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>ALNJ Core téléchargera et stockera une copie de la chaîne de blocs ALNJ. Au moins %1 Go de données sera stocké dans ce répertoire, et il va augmenter au fil du temps. Le portefeuille sera également stocké dans ce répertoire.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1300,8 +1300,8 @@ Il commencera automatiquement dès que le portefeuille aura assez de confirmatio
         <translation>OK</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1400,8 +1400,8 @@ Il commencera automatiquement dès que le portefeuille aura assez de confirmatio
         <translation>Créer un nouveau contrôleur de Masternode</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pour créer un Masternode PIVX vous devez dédier 10.000 PIV (l'unité de PIVX) au réseau (notez que ces monnaies restent les votres et ne quitteront jamais votre portefeuille)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; Vous pouvez désactiver votre noeud et libérer vos monnaies en tous temps. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a ALNJ Masternode you must dedicate 10,000 ALNJ (the unit of ALNJ) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pour créer un Masternode ALNJ vous devez dédier 10.000 ALNJ (l'unité de ALNJ) au réseau (notez que ces monnaies restent les votres et ne quitteront jamais votre portefeuille)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; Vous pouvez désactiver votre noeud et libérer vos monnaies en tous temps. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1420,8 +1420,8 @@ Il commencera automatiquement dès que le portefeuille aura assez de confirmatio
         <translation>Assurez-vous d'avoir ce montant de pièces.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Une transaction de 10 000 PIV sera effectuée &lt;/p&gt;&lt;p&gt; vers une nouvelle adresse de votre partefeuille.&lt;/p&gt;&lt;p&gt; L'adresse est étiquettée avec le nom de masternode. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 ALNJ will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Une transaction de 10 000 ALNJ sera effectuée &lt;/p&gt;&lt;p&gt; vers une nouvelle adresse de votre partefeuille.&lt;/p&gt;&lt;p&gt; L'adresse est étiquettée avec le nom de masternode. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1612,7 +1612,7 @@ and vote on the treasury system receiving a periodic reward.</source>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the alnj.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1620,7 +1620,7 @@ this controller wallet (select the Masternode in the list and press "start").
 sur un serveur distant vers votre presse-papiers.
 
 
-Il vous suffira de coller les données dans le fichier pivx.conf
+Il vous suffira de coller les données dans le fichier alnj.conf
 de votre serveur distant, le démarrer, puis de lancer le masternode en utilisant
 ce portefeuille (sélectionnez le masternode dans la liste et appuyez sur "Démarrer").</translation>
     </message>
@@ -1654,8 +1654,8 @@ Confirmez-vous?</translation>
         <translation>Impossible de créer le contrôleur masternode, portefeuille vérouillé</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Fonds insuffisant pour créer un masternode, 10 000 PIV sont requis.</translation>
+        <source>Not enough balance to create a masternode, 10,000 ALNJ required.</source>
+        <translation>Fonds insuffisant pour créer un masternode, 10 000 ALNJ sont requis.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1786,8 +1786,8 @@ Confirmez-vous?</translation>
         <translation>Données traitées trop grandes</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>URI invalide, ne commence pas par "pivx"</translation>
+        <source>Invalid URI, not starting with "alnj" prefix</source>
+        <translation>URI invalide, ne commence pas par "alnj"</translation>
     </message>
 </context>
 <context>
@@ -1836,8 +1836,8 @@ Confirmez-vous?</translation>
         <translation>SI vous désactivez la dépense de la monnaire non confirmée, la monnaie rendue sur une transaction &lt;br/&gt;ne peut pas être utilisée tant que celle-ci n'a pas reçue au moins une confirmation &lt;br/&gt;Ceci implique également la manière dont votre solde est calculé.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client PIVX sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
+        <source>Automatically open the ALNJ client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquement le port du client ALNJ sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1856,12 +1856,12 @@ Confirmez-vous?</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Démarrez PIVX automatiquement après vous être connecté au système.</translation>
+        <source>Automatically start ALNJ after logging in to the system.</source>
+        <translation>Démarrez ALNJ automatiquement après vous être connecté au système.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>Démarrer PIVX au démarrage système</translation>
+        <source>&amp;Start ALNJ on system login</source>
+        <translation>Démarrer ALNJ au démarrage système</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1888,58 +1888,58 @@ Confirmez-vous?</translation>
         <translation>Réseau</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting ALNJ.</source>
+        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de ALNJ.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation>Langue manquante ou traduction incomplète? Aidez-nous à traduire ce projet ici:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/alnj-project/alnj-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Répertorier les port utilisant UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Activé l'auto-monnayage de PIV unités en zPIV</translation>
+        <source>Enable automatic minting of ALNJ units to zALNJ</source>
+        <translation>Activé l'auto-monnayage de ALNJ unités en zALNJ</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Activer l'Auto-monnayage zPIV </translation>
+        <source>Enable zALNJ Automint</source>
+        <translation>Activer l'Auto-monnayage zALNJ </translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Activer la frappe zPIV automatique à partir d'adresses spécifiques</translation>
+        <source>Enable automatic zALNJ minting from specific addresses</source>
+        <translation>Activer la frappe zALNJ automatique à partir d'adresses spécifiques</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Activer les Adresses Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Pourcentage des PIV entrants qui seront automatiquement convertis en zPIV via le protocole Zerocoin (min. 10%)</translation>
+        <source>Percentage of incoming ALNJ which get automatically converted to zALNJ via Zerocoin Protocol (min: 10%)</source>
+        <translation>Pourcentage des ALNJ entrants qui seront automatiquement convertis en zALNJ via le protocole Zerocoin (min. 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Pourcentage de zPIV auto-monnayé</translation>
+        <source>Percentage of autominted zALNJ</source>
+        <translation>Pourcentage de zALNJ auto-monnayé</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Met en attente la conversion automatique Zerocoin jusqu'à ce qu'il y ai suffisament de PIV disponibles pour la dénomination demandée</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough ALNJ for this denomination is available</source>
+        <translation>Met en attente la conversion automatique Zerocoin jusqu'à ce qu'il y ai suffisament de ALNJ disponibles pour la dénomination demandée</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Dénomination préférée pour l'auto-monnayage zPIV</translation>
+        <source>Preferred Automint zALNJ Denomination</source>
+        <translation>Dénomination préférée pour l'auto-monnayage zALNJ</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Seuil de partage du Stake</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Se connetcer au réseau PIVX via un proxy SOCKS5.</translation>
+        <source>Connect to the ALNJ network through a SOCKS5 proxy.</source>
+        <translation>Se connetcer au réseau ALNJ via un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2083,10 +2083,10 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>PIVXGUI</name>
+    <name>ALNJGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -2113,8 +2113,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Quitter l'application</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core client</translation>
+        <source>ALNJ Core client</source>
+        <translation>ALNJ Core client</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2157,8 +2157,8 @@ Adresse : %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale s'est produite. PIVX Core ne peut plus poursuivre en toute sécurité et va quitter.</translation>
+        <source>A fatal error occurred. ALNJ can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale s'est produite. ALNJ Core ne peut plus poursuivre en toute sécurité et va quitter.</translation>
     </message>
 </context>
 <context>
@@ -2184,12 +2184,12 @@ Adresse : %4
         <translation>Adresse de paiement invalide %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Impossible de démarrer pivx: gestionnaire click-to-pay</translation>
+        <source>Cannot start alnj: click-to-pay handler</source>
+        <translation>Impossible de démarrer alnj: gestionnaire click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse PIVX invalide ou à des paramètres URI incorrectes.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid ALNJ address or malformed URI parameters.</source>
+        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse ALNJ invalide ou à des paramètres URI incorrectes.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2302,50 +2302,50 @@ Adresse : %4
         <translation>Monnayage</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zALNJ anonymizes your ALNJ by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Frapper des zPIV anonymise vos PIV en supprimant tout
+        <translation>Frapper des zALNJ anonymise vos ALNJ en supprimant tout
 l'historique de transaction, rendant les transactions intraçables</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>Frapper de nouveaux zPIV ou reconvertir en PIV</translation>
+        <source>Mint new zALNJ or convert back to ALNJ</source>
+        <translation>Frapper de nouveaux zALNJ ou reconvertir en ALNJ</translation>
     </message>
     <message>
-        <source>Last zPIV Movements</source>
-        <translation>Derniers mouvements zPIV</translation>
+        <source>Last zALNJ Movements</source>
+        <translation>Derniers mouvements zALNJ</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>Pas encore de transaction</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>Frapper des zPIV</translation>
+        <source>Mint zALNJ</source>
+        <translation>Frapper des zALNJ</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>Entrer le montant de PIV à monnayer en zPIV</translation>
+        <source>Enter amount of ALNJ to mint into zALNJ</source>
+        <translation>Entrer le montant de ALNJ à monnayer en zALNJ</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>Reconvertir en PIV</translation>
+        <source>Convert back to ALNJ</source>
+        <translation>Reconvertir en ALNJ</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>Entrer le montant de zPIV à reconvertir en PIV</translation>
+        <source>Enter amount of zALNJ to convert back into ALNJ</source>
+        <translation>Entrer le montant de zALNJ à reconvertir en ALNJ</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV est actuellement en maintenance</translation>
+        <source>zALNJ is currently undergoing maintenance</source>
+        <translation>zALNJ est actuellement en maintenance</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>Vous devez dévérouiller le portefeuille pour pouvoir %1 zPIV</translation>
+        <source>You need to unlock the wallet to be able to %1 zALNJ</source>
+        <translation>Vous devez dévérouiller le portefeuille pour pouvoir %1 zALNJ</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2360,16 +2360,16 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Valeur incorrecte</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV frappées avec succès</translation>
+        <source>zALNJ minted successfully</source>
+        <translation>zALNJ frappées avec succès</translation>
     </message>
     <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV reconverti en PIV</translation>
+        <source>zALNJ converted back to ALNJ</source>
+        <translation>zALNJ reconverti en ALNJ</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Vous n'avez aucun PIV à sélectionner</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Vous n'avez aucun ALNJ à sélectionner</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2380,8 +2380,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Votre monnayage Zerocoin va être retracer à partir de la blockchain</translation>
     </message>
     <message>
-        <source>Reset Spent zPIV</source>
-        <translation>Réinitialiser les zPIV dépensés</translation>
+        <source>Reset Spent zALNJ</source>
+        <translation>Réinitialiser les zALNJ dépensés</translation>
     </message>
     <message>
         <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
@@ -2399,8 +2399,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter PIVX address (e.g. %1)</source>
-        <translation>Entrez une adresse PIVX (par ex. %1)</translation>
+        <source>Enter ALNJ address (e.g. %1)</source>
+        <translation>Entrez une adresse ALNJ (par ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2443,8 +2443,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2463,8 +2463,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Erreur de lecture du fichier de configuration Masternode: %1</translation>
     </message>
     <message>
-        <source>PIVX Core didn't yet exit safely...</source>
-        <translation>PIVX Core n'a pas encore quitté en toute sécurité ...</translation>
+        <source>ALNJ Core didn't yet exit safely...</source>
+        <translation>ALNJ Core n'a pas encore quitté en toute sécurité ...</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2650,7 +2650,7 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Chaîne de bloc</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the ALNJ debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Ouvrir le fichier journal de déboguage depuis le répertoire de données courant. Cela peut prendre quelques minutes pour les fichier journaux volumineux.</translation>
     </message>
     <message>
@@ -2794,8 +2794,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Chemin du répertoire de sauvegarde personnalisé:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Chemin du répertoire de sauvegarde zPIV personnalisé:</translation>
+        <source>Custom zALNJ Backup Path:</source>
+        <translation>Chemin du répertoire de sauvegarde zALNJ personnalisé:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2874,8 +2874,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Sortie:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Bienvenue sur la console PIVX RPC.</translation>
+        <source>Welcome to the ALNJ RPC console.</source>
+        <translation>Bienvenue sur la console ALNJ RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3040,8 +3040,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Recevoir</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
-        <translation>Balayez le QR code ou copiez l'adresse pour recevoir les PIV.</translation>
+        <source>Scan the QR code or copy the address to receive ALNJ.</source>
+        <translation>Balayez le QR code ou copiez l'adresse pour recevoir les ALNJ.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3150,8 +3150,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Montant</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>ALNJ</source>
+        <translation>ALNJ</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3190,8 +3190,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Nouvelle demande de paiement</translation>
     </message>
     <message>
-        <source>Instead of sharing only a PIVX address, you can create a payment request, bundling up more information.</source>
-        <translation>Plutôt que de partager votre adresse PIVX, vous pouvez créer une demande de paiement, contenant plus d'informations.</translation>
+        <source>Instead of sharing only a ALNJ address, you can create a payment request, bundling up more information.</source>
+        <translation>Plutôt que de partager votre adresse ALNJ, vous pouvez créer une demande de paiement, contenant plus d'informations.</translation>
     </message>
     <message>
         <source>Enter a label for the address</source>
@@ -3249,8 +3249,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Adresse de changement personnalisée</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PIVX address</source>
-        <translation>Le reste de la valeur résultante des entrées moins la valeur des sorties est envoyé à l'adresse "change" PIVX </translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" ALNJ address</source>
+        <translation>Le reste de la valeur résultante des entrées moins la valeur des sorties est envoyé à l'adresse "change" ALNJ </translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -3284,8 +3284,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Recommandé </translation>
     </message>
     <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/kilo-octet</translation>
+        <source>ALNJ/kilobyte</source>
+        <translation>ALNJ/kilo-octet</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3354,8 +3354,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Envoyer</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>Vous pouvez transférer des pièces publiques (PIV) ou des pièces privées (zPIV)</translation>
+        <source>You can transfer public coins (ALNJ) or private coins (zALNJ)</source>
+        <translation>Vous pouvez transférer des pièces publiques (ALNJ) ou des pièces privées (zALNJ)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3386,12 +3386,12 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Total à envoyer</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>Envoyer PIV</translation>
+        <source>Send ALNJ</source>
+        <translation>Envoyer ALNJ</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>Envoyer zPIV</translation>
+        <source>Send zALNJ</source>
+        <translation>Envoyer zALNJ</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3422,8 +3422,8 @@ Voulez-vous continuer ?</translation>
         <translation>Quantité maximale de données de sortie atteinte</translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>Adresse PIVX ou nom du contact</translation>
+        <source>ALNJ address or contact label</source>
+        <translation>Adresse ALNJ ou nom du contact</translation>
     </message>
     <message>
         <source>Invalid entry, previous entries must be valid before add a new one</source>
@@ -3466,8 +3466,8 @@ Ces pièces ne pourront plus être utilisées pour le staking à froid.</transla
         <translation>Dépenser les Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV est actuellement en cours de maintenance.</translation>
+        <source>zALNJ is currently undergoing maintenance.</source>
+        <translation>zALNJ est actuellement en cours de maintenance.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3486,12 +3486,12 @@ Ces pièces ne pourront plus être utilisées pour le staking à froid.</transla
  %2</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
-        <translation>Transaction zPIV envoyée!</translation>
+        <source>zALNJ transaction sent!</source>
+        <translation>Transaction zALNJ envoyée!</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de zPIV requiert un niveau de sécurité de 100 pour les dépenser.
+        <source>Version 1 zALNJ require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de zALNJ requiert un niveau de sécurité de 100 pour les dépenser.
 </translation>
     </message>
     <message>
@@ -3527,12 +3527,12 @@ Monnayez des dénominations plus élevées (moins d'intrants sont nécessaires),
         <translation>Frais personnalisé %1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Vous n'avez aucun PIV à sélectionner</translation>
+        <source>You don't have any ALNJ to select.</source>
+        <translation>Vous n'avez aucun ALNJ à sélectionner</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>Vous n'avez aucun zPIV à sélectionner.</translation>
+        <source>You don't have any zALNJ in your balance to select.</source>
+        <translation>Vous n'avez aucun zALNJ à sélectionner.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3701,8 +3701,8 @@ Cette option créé un fichier wallet.dat qui peut être utiliser pour restaurer
         <translation>CLÉ DÉCHIFFRÉE</translation>
     </message>
     <message>
-        <source>PIVX address</source>
-        <translation>Adresse PIVX</translation>
+        <source>ALNJ address</source>
+        <translation>Adresse ALNJ</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3834,8 +3834,8 @@ Verify that you have installed a predetermined text editor.</source>
 Vérifiez que vous avez installé un logiciel éditeur de texte.</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Bienvenue sur la console PIVX RPC.</translation>
+        <source>Welcome to the ALNJ RPC console.</source>
+        <translation>Bienvenue sur la console ALNJ RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3948,12 +3948,12 @@ Vérifiez que vous avez installé un logiciel éditeur de texte.</translation>
         <translation>Exporter la liste des adresses</translation>
     </message>
     <message>
-        <source>PIVX_tx_csv_export(*.csv)</source>
-        <translation>PIVX_tx_csv_export(*.csv)</translation>
+        <source>ALNJ_tx_csv_export(*.csv)</source>
+        <translation>ALNJ_tx_csv_export(*.csv)</translation>
     </message>
     <message>
-        <source>PIVX_addresses_csv_export(*.csv)</source>
-        <translation>PIVX_addresses_csv_export(*.csv)</translation>
+        <source>ALNJ_addresses_csv_export(*.csv)</source>
+        <translation>ALNJ_addresses_csv_export(*.csv)</translation>
     </message>
     <message>
         <source>Please select a folder to export the csv file first.</source>
@@ -4031,34 +4031,34 @@ Il y a eu une erreur de sauvegarde de la liste d'adresses vers %1. SVP rééssay
         <translation>Bouton poussoir</translation>
     </message>
     <message>
-        <source>1) What is PIVX?</source>
-        <translation>1) Qu'est ce que PIVX?</translation>
+        <source>1) What is ALNJ?</source>
+        <translation>1) Qu'est ce que ALNJ?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Pourquoi mes PIV ne peuvent pas être dépensés?</translation>
+        <source>2) Why are my ALNJ unspendable?</source>
+        <translation>2) Pourquoi mes ALNJ ne peuvent pas être dépensés?</translation>
     </message>
     <message>
-        <source>3) PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3) Confidentialité et PIVX? Qu'est ce que Zerocoin (zPIV)?</translation>
+        <source>3) ALNJ privacy? What is Zerocoin (zALNJ)?</source>
+        <translation>3) Confidentialité et ALNJ? Qu'est ce que Zerocoin (zALNJ)?</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4) Pourquoi mes zPIV ne peuvent pas être dépensés?</translation>
+        <source>4) Why are my zALNJ unspendable?</source>
+        <translation>4) Pourquoi mes zALNJ ne peuvent pas être dépensés?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zALNJ automatically?</source>
         <translation>5) Pourquoi mon portefeuille convertit-il automatiquement
-mon solde en zPIV?</translation>
+mon solde en zALNJ?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6) Comment recevoir des PIV/zPIV?</translation>
+        <source>6) How do I receive ALNJ/zALNJ?</source>
+        <translation>6) Comment recevoir des ALNJ/zALNJ?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7) Comment staker des PIV/zPIV?</translation>
+        <source>7) How do I stake ALNJ/zALNJ?</source>
+        <translation>7) Comment staker des ALNJ/zALNJ?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4077,33 +4077,33 @@ mon solde en zPIV?</translation>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PIVX?</source>
-        <translation>Qu'est ce que PIVX ?</translation>
+        <source>What is ALNJ?</source>
+        <translation>Qu'est ce que ALNJ ?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX is a form of digital online money using blockchain technology
+                           ALNJ is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
+                           zero fees.  ALNJ incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zALNJ) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
+                           ALNJ utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of ALNJ to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-PIVX est une forme de monnaie digitale en ligne qui utilise la technologie de la blockchain
+ALNJ est une forme de monnaie digitale en ligne qui utilise la technologie de la blockchain
 et qui peut être facilement transférée globalement, instantanément, avec des frais
-quasi nuls. PIVX intègre les meilleures solutions de sécurité et de confidentialité
-du marché et elle est également la première cryptomonnaie avec un consensus PoS (Proof of Stake ou Preuve d'Enjeu) à implémenter Zerocoin(zPIV) ainsi que le staking de Zerocoin.
+quasi nuls. ALNJ intègre les meilleures solutions de sécurité et de confidentialité
+du marché et elle est également la première cryptomonnaie avec un consensus PoS (Proof of Stake ou Preuve d'Enjeu) à implémenter Zerocoin(zALNJ) ainsi que le staking de Zerocoin.
 &lt;/p&gt;&lt;p align="justify"&gt;
-PIVX utilise un système de consensus de type Proof of Stake (PoS),
-permettant à tous les détenteurs de PIVX de participer au réseau et de gagner des récompenses
+ALNJ utilise un système de consensus de type Proof of Stake (PoS),
+permettant à tous les détenteurs de ALNJ de participer au réseau et de gagner des récompenses
 lorsqu'ils sécurisent le réseau au moyen de leur portefeuille full node, ainsi qu'en
 éxécutant des masternodes pour créer et voter des propositions.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -4113,25 +4113,25 @@ lorsqu'ils sécurisent le réseau au moyen de leur portefeuille full node, ainsi
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Pourquoi mes PIV ne peuvent pas être dépensés?</translation>
+        <source>Why are my ALNJ unspendable?</source>
+        <translation>Pourquoi mes ALNJ ne peuvent pas être dépensés?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PIVX requires 6 confirmations on the network
+                           Newly received ALNJ requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PIVX wallet also needs to be completely synchronized
+                           Your ALNJ wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Les nouveaux PIVX reçus nécessitent 6 confirmations sur le réseau
+Les nouveaux ALNJ reçus nécessitent 6 confirmations sur le réseau
 pour être disponible à la dépense ce qui peut prendre ~6 minutes.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Votre portefeuille PIVX a besoin également d'être totalement synchronisé
+Votre portefeuille ALNJ a besoin également d'être totalement synchronisé
 pour voir votre solde de monnaie dépensable sur le réseau.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4141,24 +4141,24 @@ pour voir votre solde de monnaie dépensable sur le réseau.
         <translation>3</translation>
     </message>
     <message>
-        <source>PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>Confidentialité et PIVX? Qu'est ce que Zerocoin (zPIV)?</translation>
+        <source>ALNJ privacy? What is Zerocoin (zALNJ)?</source>
+        <translation>Confidentialité et ALNJ? Qu'est ce que Zerocoin (zALNJ)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
+                           zALNJ is an optional privacy-centric method of coin mixing on the
+                           ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
+                           "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zPIV est une méthode optionnelle de fongibilité des pièces sur la blockchain PIVX, axée sur la confidentialité. Basiquement, cela permet rendre vos transactions intraçables par les explorateurs de blocs. Vous pouvez en savoir plus sur les aspects techniques en consultant le document
-&lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
- "PIVX Zerocoin (zPIV) Technical Paper".&lt;/a&gt;
+zALNJ est une méthode optionnelle de fongibilité des pièces sur la blockchain ALNJ, axée sur la confidentialité. Basiquement, cela permet rendre vos transactions intraçables par les explorateurs de blocs. Vous pouvez en savoir plus sur les aspects techniques en consultant le document
+&lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
+ "ALNJ Zerocoin (zALNJ) Technical Paper".&lt;/a&gt;
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4167,19 +4167,19 @@ zPIV est une méthode optionnelle de fongibilité des pièces sur la blockchain 
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
-        <translation>Pourquoi mes zPIV ne peuvent pas être dépensés?</translation>
+        <source>Why are my zALNJ unspendable?</source>
+        <translation>Pourquoi mes zALNJ ne peuvent pas être dépensés?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zALNJ will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Après le monnayage, zPIV va nécessiter 20 confirmations ainsi que 1
+Après le monnayage, zALNJ va nécessiter 20 confirmations ainsi que 1
 monnayage supplémentaire sur le réseau de la même dénomination
 afin d'être dépensable.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4190,41 +4190,41 @@ afin d'être dépensable.
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
+        <source>Why did my wallet convert the balance into zALNJ automatically?</source>
         <translation>Pourquoi mon portefeuille convertit-il automatiquement
-mon solde en zPIV?</translation>
+mon solde en zALNJ?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the PIVX wallet will convert 10% of your entire PIV
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your PIVX wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
-                           If you are not making use of the PIVX-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           By default the ALNJ wallet will convert 10% of your entire ALNJ
+                           balance to zALNJ to assist the network. If you do not wish to
+                           stake zALNJ or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your ALNJ wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zALNJ Automint”.
+                           If you are not making use of the ALNJ-QT or GUI you can simply open
+                           your alnj.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the "How do I stake"
+                           You can read more about zALNJ in the
+                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zALNJ, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Par défaut le portefeuille PIVX convertit % de voter total de PIV
-en zPIV afin de soutenir le réseau. Si vous ne souhaitez pas
-conserver des zPIV ou profiter de ses propriétés en matière de confidentialité,
-vous pouvez désactiver cette fonctionnalité dans votre portefeuille PIVX en
-allant dans Paramètres-&gt;Options et décocher “Activer l'atuto-monnayage zPIV”.
-Si vous n'utilisez pas PIVX-QT ou le GUI vous pouvez simplement ouvrir
-votre fichier pivx.conf et ajouter &lt;i&gt; enablezeromint=0&lt;/i&gt; sans guillements
+Par défaut le portefeuille ALNJ convertit % de voter total de ALNJ
+en zALNJ afin de soutenir le réseau. Si vous ne souhaitez pas
+conserver des zALNJ ou profiter de ses propriétés en matière de confidentialité,
+vous pouvez désactiver cette fonctionnalité dans votre portefeuille ALNJ en
+allant dans Paramètres-&gt;Options et décocher “Activer l'atuto-monnayage zALNJ”.
+Si vous n'utilisez pas ALNJ-QT ou le GUI vous pouvez simplement ouvrir
+votre fichier alnj.conf et ajouter &lt;i&gt; enablezeromint=0&lt;/i&gt; sans guillements
 et redémarrer votre portefeuille.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-Vous pouvez en savoir plus sur zPIV dans
-&lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; le document "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-Si vous voulez conserver et mettre en jeu vos zPIV, veuillez lire la section "Comment staker"
+Vous pouvez en savoir plus sur zALNJ dans
+&lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; le document "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+Si vous voulez conserver et mettre en jeu vos zALNJ, veuillez lire la section "Comment staker"
 de la FAQ ci-dessous.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4234,23 +4234,23 @@ de la FAQ ci-dessous.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>Comment recevoir des PIV/zPIV?</translation>
+        <source>How do I receive ALNJ/zALNJ?</source>
+        <translation>Comment recevoir des ALNJ/zALNJ?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
+                           zALNJ can be spent and sent to any ALNJ address. The receiver will
+                           receive standard ALNJ but the origin of the ALNJ is anonymized by the zALNJ Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zALNJ you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zPIV peut être dépensé et envoyé à n'importe quelle adresse PIVX. Le destinataire va recevoir des PIVX standards mais l'origine de ceux-ci sera anonymisé par le protocol zPIV.
+zALNJ peut être dépensé et envoyé à n'importe quelle adresse ALNJ. Le destinataire va recevoir des ALNJ standards mais l'origine de ceux-ci sera anonymisé par le protocol zALNJ.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Si vous désirez obtenir plus de zPIV vous devez créer cette monnaie à partir de l'onglet "Confidentialité".
+Si vous désirez obtenir plus de zALNJ vous devez créer cette monnaie à partir de l'onglet "Confidentialité".
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4259,32 +4259,32 @@ Si vous désirez obtenir plus de zPIV vous devez créer cette monnaie à partir 
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>Comment staker des PIV/zPIV?</translation>
+        <source>How do I stake ALNJ/zALNJ?</source>
+        <translation>Comment staker des ALNJ/zALNJ?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           To Stake PIVX:
+                           To Stake ALNJ:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of PIVX with a minimum of 600 confirmations.
+                           You must have a balance of ALNJ with a minimum of 600 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (alnj-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zPIV:
+                           To Stake zALNJ:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zALNJ balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4293,26 +4293,26 @@ Si vous désirez obtenir plus de zPIV vous devez créer cette monnaie à partir 
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Pour faire du Stake avec vos PIV:
+Pour faire du Stake avec vos ALNJ:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
 Assurez-vous que votre portefeuillle est complètement synchronisé et que vous utilisez la dernière version du portefeuille.
 &lt;li&gt;
-Votre solde de PIVX doit avoir reçu un minimum de 600 confirmations.
+Votre solde de ALNJ doit avoir reçu un minimum de 600 confirmations.
 &lt;li&gt;
 Votre portefeuille doit rester en ligne et dévérouillé pour le staking.
 &lt;li&gt;
 Une fois ces étapes accomplies le staking devrait être activé.
 &lt;li&gt;
- Vous pouvez voir le statut du staking dans le portefeuille en survolant l'icône du package dans la rangée en haut à gauche de l'interface du portefeuille. Le package sera allumé et indiquera "Staking Enabled" pour confirmer qu'il est effectivement activé. Dans le cas de l'utilisation de l'interface en ligne de commande (pivx-cli); La commande &lt;i&gt;getstakingstatus&lt;/i&gt; confirmera que le staking est actif.
+ Vous pouvez voir le statut du staking dans le portefeuille en survolant l'icône du package dans la rangée en haut à gauche de l'interface du portefeuille. Le package sera allumé et indiquera "Staking Enabled" pour confirmer qu'il est effectivement activé. Dans le cas de l'utilisation de l'interface en ligne de commande (alnj-cli); La commande &lt;i&gt;getstakingstatus&lt;/i&gt; confirmera que le staking est actif.
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-Pour faire du Stake avec vos zPIV:
+Pour faire du Stake avec vos zALNJ:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
 Assurez-vous que votre portefeuillle est complètement synchronisé et que vous utilisez la dernière version du portefeuille.
 &lt;li&gt;
-Votre solde de zPIV doit avoir reçu un minimum de 200 confirmations.
+Votre solde de zALNJ doit avoir reçu un minimum de 200 confirmations.
 &lt;li&gt;
 Votre portefeuille doit rester en ligne et dévérouillé pour l'anonymisation et le staking.
 Le staking devrait maintenant être actif.
@@ -4333,8 +4333,8 @@ Le staking devrait maintenant être actif.
         <translation>10) Qu'est ce qu'un contrôleur de Masternode?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; Un contrôleur de masternode est un portefeuille dans lequel le dépôt de garantie de 10 000 PIV réside pendant la configuration d'un masternode contrôleur-distant. C'est un portefeuille qui peut activer le portefeuille masternode distant et vous permet de conserver le dépôt de garantie hors ligne tandis que le masternode restera en ligne.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 ALNJ collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; Un contrôleur de masternode est un portefeuille dans lequel le dépôt de garantie de 10 000 ALNJ réside pendant la configuration d'un masternode contrôleur-distant. C'est un portefeuille qui peut activer le portefeuille masternode distant et vous permet de conserver le dépôt de garantie hors ligne tandis que le masternode restera en ligne.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>8</source>
@@ -4344,20 +4344,20 @@ Le staking devrait maintenant être actif.
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.ALNJ.org'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
+                           &lt;a style='color: #b088ff' href='https://ALNJ.freshdesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;
 Nous avons des services de support dans la plupart de nos groupes de discussion officiels, tel que
-&lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
+&lt;a style='color: #b088ff' href='https://discord.ALNJ.org'&gt;
  #support dans notre groupe Discord&lt;/a&gt;.
 Si vous préférez soumettre un ticket, utilisez
-&lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
+&lt;a style='color: #b088ff' href='https://ALNJ.freshdesk.com'&gt;
 notre site support Freshdesk&lt;/a&gt;.
 &lt;p align="justify"&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4369,8 +4369,8 @@ notre site support Freshdesk&lt;/a&gt;.
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           A masternode is a computer running a full node ALNJ core wallet with a
+                           requirement of 10,000 ALNJ secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4392,17 +4392,17 @@ notre site support Freshdesk&lt;/a&gt;.
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in ALNJ Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the ALNJ network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 ALNJ per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4411,8 +4411,8 @@ notre site support Freshdesk&lt;/a&gt;.
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Un masternode est un ordinateur qui exécute un noeud complet du portefeuille PIVX core avec une
-exigence de 10 000 PIV déposé en garantie pour fournir au réseau des services aditionnels et recevoir, en retour et régulièrement, une partie des récompense de blocs.
+Un masternode est un ordinateur qui exécute un noeud complet du portefeuille ALNJ core avec une
+exigence de 10 000 ALNJ déposé en garantie pour fournir au réseau des services aditionnels et recevoir, en retour et régulièrement, une partie des récompense de blocs.
 Ces services comprennent:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
@@ -4428,17 +4428,17 @@ Pour fournir ces services, les masternodes sont payés avec une certaine portion
 Avantages du Masternode:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;Participer à la gouvernance de PIVX&lt;/li&gt;
+&lt;li&gt;Participer à la gouvernance de ALNJ&lt;/li&gt;
 &lt;li&gt;Gagner les récompences prévues pour les masternodes&lt;/li&gt;
 &lt;li&gt;Option de marchandise pour vente future&lt;/li&gt;
-&lt;li&gt;Aider à sécuriser le réseau PIVX&lt;/li&gt;
+&lt;li&gt;Aider à sécuriser le réseau ALNJ&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 
 Exigences:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;10 000 PIV pour chaque instance de masternode&lt;/li&gt;
+&lt;li&gt;10 000 ALNJ pour chaque instance de masternode&lt;/li&gt;
 &lt;li&gt;Montant conservé dans un portefeuille core&lt;/li&gt;
 &lt;li&gt;Nécessite une IP fixe dédiée&lt;/li&gt;
 &lt;li&gt;Le portefeuille masternode doit rester en ligne&lt;/li&gt;
@@ -4562,8 +4562,8 @@ Exigences:
         <translation>Impossible d'ouvrir le répertoire de backups</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Impossible d'ouvrir pivx.conf avec l'application par défaut</translation>
+        <source>Unable to open alnj.conf with default application</source>
+        <translation>Impossible d'ouvrir alnj.conf avec l'application par défaut</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4621,8 +4621,8 @@ Exigences:
         <translation>Nombre de threads de vérification de script</translation>
     </message>
     <message>
-        <source>Start PIVX on system login</source>
-        <translation>Lancer PIVX à l'ouverture de la session</translation>
+        <source>Start ALNJ on system login</source>
+        <translation>Lancer ALNJ à l'ouverture de la session</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -4709,8 +4709,8 @@ Confirmez-vous?
         <translation>CheckBox</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
-        <translation>MultiSend vous pernet d'envoyer automatiquement jusqu'à 100% des récompenses de stake et masternode matures vers une liste d'adresses PIVX de votre choix.</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ALNJ addresses after it matures.</source>
+        <translation>MultiSend vous pernet d'envoyer automatiquement jusqu'à 100% des récompenses de stake et masternode matures vers une liste d'adresses ALNJ de votre choix.</translation>
     </message>
     <message>
         <source>Active</source>
@@ -4840,8 +4840,8 @@ Cochez l'une ou l'autre des cases à cocher pour envoyer les récompenses stake 
         <translation>Message</translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>Adresse PIVX ou nom du contact</translation>
+        <source>ALNJ address or contact label</source>
+        <translation>Adresse ALNJ ou nom du contact</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -5177,8 +5177,8 @@ Cochez l'une ou l'autre des cases à cocher pour envoyer les récompenses stake 
         <translation>FAQ</translation>
     </message>
     <message>
-        <source>About PIVX</source>
-        <translation>A propos de PIVX</translation>
+        <source>About ALNJ</source>
+        <translation>A propos de ALNJ</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -5244,8 +5244,8 @@ Confirmez-vous ?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core est en cours de fermeture...</translation>
+        <source>ALNJ Core is shutting down...</source>
+        <translation>ALNJ Core est en cours de fermeture...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -5274,15 +5274,15 @@ Confirmez-vous ?
         <translation>Chargement...</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>ALNJ Core</source>
+        <translation>ALNJ Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -5297,8 +5297,8 @@ Confirmez-vous ?
         <translation>Les développeurs Dash Core</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>Les développeurs PIVX Core</translation>
+        <source>The ALNJ Core developers</source>
+        <translation>Les développeurs ALNJ Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -5732,40 +5732,40 @@ sauvegarde sera créée.
         <translation>Reçu depuis</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>ALNJ Stake</source>
+        <translation>ALNJ Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zALNJ Stake</source>
+        <translation>zALNJ Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>Stake à froid PIVX</translation>
+        <source>ALNJ Cold Stake</source>
+        <translation>Stake à froid ALNJ</translation>
     </message>
     <message>
         <source>Stake delegation</source>
         <translation>Délégation staking</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>PIV converti en zPIV</translation>
+        <source>Converted ALNJ to zALNJ</source>
+        <translation>ALNJ converti en zALNJ</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>zPIV dépensés</translation>
+        <source>Spent zALNJ</source>
+        <translation>zALNJ dépensés</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>PIV reçu depuis zPIV</translation>
+        <source>Received ALNJ from zALNJ</source>
+        <translation>ALNJ reçu depuis zALNJ</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Monnaie rendue à partir d'une dépense zPIV frappée comme zPIV </translation>
+        <source>Minted Change as zALNJ from zALNJ Spend</source>
+        <translation>Monnaie rendue à partir d'une dépense zALNJ frappée comme zALNJ </translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>zPIV converti en PIV</translation>
+        <source>Converted zALNJ to ALNJ</source>
+        <translation>zALNJ converti en ALNJ</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5780,8 +5780,8 @@ sauvegarde sera créée.
         <translation>Paiement à vous-même</translation>
     </message>
     <message>
-        <source>PIV Stake on behalf of</source>
-        <translation>Stake de PIV pour le compte de </translation>
+        <source>ALNJ Stake on behalf of</source>
+        <translation>Stake de ALNJ pour le compte de </translation>
     </message>
     <message>
         <source>Stake delegation spent by</source>
@@ -5946,8 +5946,8 @@ sauvegarde sera créée.
         <translation>18/05/2018</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 ALNJ</source>
+        <translation>+0.000585 ALNJ</translation>
     </message>
 </context>
 <context>
@@ -5957,8 +5957,8 @@ sauvegarde sera créée.
         <translation>Envoyer des pièces</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX ne supporte pas l'envoi de montants aussi élevés. Les transactions sont actuellement lmitées à %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALNJ.</source>
+        <translation>SwiftX ne supporte pas l'envoi de montants aussi élevés. Les transactions sont actuellement lmitées à %1 ALNJ.</translation>
     </message>
 </context>
 <context>
@@ -6001,25 +6001,25 @@ sauvegarde sera créée.
     </message>
     <message>
         <source>Welcome to
-PIVX Core Wallet</source>
+ALNJ Core Wallet</source>
         <translation>Bienvenu au
-Portefeuille PIVX Core</translation>
+Portefeuille ALNJ Core</translation>
     </message>
     <message>
-        <source>PIVX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PIVX est la technologie la plus innovante au monde de preuve d'enjeu basée sur une blockchain. Développé par une équipe de développeurs et cryptographes très expérimentés.</translation>
+        <source>ALNJ is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>ALNJ est la technologie la plus innovante au monde de preuve d'enjeu basée sur une blockchain. Développé par une équipe de développeurs et cryptographes très expérimentés.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PIVX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt; Comme notre manifeste l'indique: la vie privée est un droit de base non-négociable de l'être humain; il permet aux utilisateurs la liberté de partager leurs donnée quand et avec qui ils le souhaitent - PIVX croit en l'auto gestion. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - ALNJ believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt; Comme notre manifeste l'indique: la vie privée est un droit de base non-négociable de l'être humain; il permet aux utilisateurs la liberté de partager leurs donnée quand et avec qui ils le souhaitent - ALNJ croit en l'auto gestion. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
     <message>
-        <source>The masternode network is PIVX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Le réseau masternode est une seconde couche réseau de PIVX au dessus de la blockchain qui permet à notre organisation une gouvernance décentralisée et une trésorerie.</translation>
+        <source>The masternode network is ALNJ's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Le réseau masternode est une seconde couche réseau de ALNJ au dessus de la blockchain qui permet à notre organisation une gouvernance décentralisée et une trésorerie.</translation>
     </message>
     <message>
-        <source>How PIVX respects your privacy?</source>
-        <translation>Comment PIVX respecte votre vie privée?</translation>
+        <source>How ALNJ respects your privacy?</source>
+        <translation>Comment ALNJ respecte votre vie privée?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -6031,10 +6031,10 @@ Portefeuille PIVX Core</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZAlngControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Choisir les zPIV à dépenser</translation>
+        <source>Select zALNJ to Spend</source>
+        <translation>Choisir les zALNJ à dépenser</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6045,8 +6045,8 @@ Portefeuille PIVX Core</translation>
         <translation>Bouton poussoir</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPIV</translation>
+        <source>zAlng</source>
+        <translation>zALNJ</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -6069,12 +6069,12 @@ Portefeuille PIVX Core</translation>
         <translation>Tout Sélectionner/Désélectionner</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>Sélectionnez les dénominations zPIV à dépenser</translation>
+        <source>Select zALNJ Denominations to Spend</source>
+        <translation>Sélectionnez les dénominations zALNJ à dépenser</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>alnj-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = conserve les métadonnées de transaction, par exemple le propriétaire du compte et les informations de demande de paiement, 2 = supprime les métadonnées)</translation>
@@ -6096,8 +6096,8 @@ Portefeuille PIVX Core</translation>
         <translation>Relier à une adresse spécifique pour écouter les connections JSON-RPC. Utilisez la notation [host]:port pour IPv6. Cette option peut être spécifiée plusieurs fois (par défaut: liaison à toutes les interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Impossible de vérouiller le répertoire de données %s. PIVX Core est probablement déjà en cours d'exécution.</translation>
+        <source>Cannot obtain a lock on data directory %s. ALNJ Core is probably already running.</source>
+        <translation>Impossible de vérouiller le répertoire de données %s. ALNJ Core est probablement déjà en cours d'exécution.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -6128,12 +6128,12 @@ Portefeuille PIVX Core</translation>
         <translation>Active la fonctionnalité de cold staking (0-1, par défaut: %u). Désactivé si staking=0</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées PIV (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for ALNJ inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées ALNJ (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zPIV (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for zALNJ inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zALNJ (0-1, par défaut: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6172,12 +6172,12 @@ Portefeuille PIVX Core</translation>
         <translation>Exécuter la commande lorsque le meilleur bloc change  (%s dans cmd est remplacé par le hash du bloc)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Les frais (en PIV / Kb) inférieurs à ceux-ci sont considérés comme des frais nuls pour le relais (par défaut: %s)</translation>
+        <source>Fees (in ALNJ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Les frais (en ALNJ / Kb) inférieurs à ceux-ci sont considérés comme des frais nuls pour le relais (par défaut: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Les frais (en PIV / Kb) inférieurs à cette valeur sont considérés comme des frais nuls pour la création de transaction (par défaut: %s)</translation>
+        <source>Fees (in ALNJ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Les frais (en ALNJ / Kb) inférieurs à cette valeur sont considérés comme des frais nuls pour la création de transaction (par défaut: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6284,8 +6284,8 @@ Portefeuille PIVX Core</translation>
         <translation>La longueur totale de la chaîne dans la version réseau (%i) dépasse la longueur maximale (%i). Réduisez le nombre ou la taille des commentaires de l'Agent Utilisateur</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Impossible de se lier à %s depuis cet ordinateur. PIVX Core est probablement déjà en cours d'exécution.</translation>
+        <source>Unable to bind to %s on this computer. ALNJ Core is probably already running.</source>
+        <translation>Impossible de se lier à %s depuis cet ordinateur. ALNJ Core est probablement déjà en cours d'exécution.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6300,8 +6300,8 @@ Portefeuille PIVX Core</translation>
         <translation>Attention: -paytxfee est réglé très haut! Ce sont les frais de transaction que vous paierez si vous envoyez une transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Avertissement: Veuillez vérifier que la date et l'heure de votre ordinateur sont correctes! Si votre horloge est incorrecte, PIVX Core ne fonctionnera pas correctement.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong ALNJ Core will not work properly.</source>
+        <translation>Avertissement: Veuillez vérifier que la date et l'heure de votre ordinateur sont correctes! Si votre horloge est incorrecte, ALNJ Core ne fonctionnera pas correctement.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -6309,7 +6309,7 @@ Portefeuille PIVX Core</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Attention: Il semble que nous soyons en désaccord avec nos pairs sur le réseau! Cela signifie que vous pourriez avoir besoin de mettre à jour votre PIVX Core, ou que les autres noeuds aient besoin de se mettre à jour de leur côté.</translation>
+        <translation>Attention: Il semble que nous soyons en désaccord avec nos pairs sur le réseau! Cela signifie que vous pourriez avoir besoin de mettre à jour votre ALNJ Core, ou que les autres noeuds aient besoin de se mettre à jour de leur côté.</translation>
     </message>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -6416,8 +6416,8 @@ Portefeuille PIVX Core</translation>
         <translation>Copyright (C) 2014-%i Les développeurs de DASH Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i Les développeurs de PIVX Core</translation>
+        <source>Copyright (C) 2015-%i The ALNJ Core Developers</source>
+        <translation>Copyright (C) 2015-%i Les développeurs de ALNJ Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -6492,8 +6492,8 @@ Portefeuille PIVX Core</translation>
         <translation>Erreur de chargement du fichier wallet.dat: Portefeuille corrompu</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du PIVX core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of ALNJ Core</source>
+        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du ALNJ core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -6544,8 +6544,8 @@ Portefeuille PIVX Core</translation>
         <translation>Impossible de lire le bloc</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Frais (en PIV/kB) à ajouter aux transactions envoyées (défaut: %s)</translation>
+        <source>Fee (in ALNJ/kB) to add to transactions you send (default: %s)</source>
+        <translation>Frais (en ALNJ/kB) à ajouter aux transactions envoyées (défaut: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6584,8 +6584,8 @@ Portefeuille PIVX Core</translation>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Échec de la vérification de l'initialisation. PIVX Core va fermer.</translation>
+        <source>Initialization sanity check failed. ALNJ Core is shutting down.</source>
+        <translation>Échec de la vérification de l'initialisation. ALNJ Core va fermer.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -6620,12 +6620,12 @@ Portefeuille PIVX Core</translation>
         <translation>Port invalide détecté dans masternode.conf</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Recalcule de PIV émis...</translation>
+        <source>Recalculating ALNJ supply...</source>
+        <translation>Recalcule de ALNJ émis...</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Recalculer les statistiques sur l'approvisionnement en PIV et zPIV</translation>
+        <source>Reindex the ALNJ and zALNJ money supply statistics</source>
+        <translation>Recalculer les statistiques sur l'approvisionnement en ALNJ et zALNJ</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6665,8 +6665,8 @@ Portefeuille PIVX Core</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Désactiver toutes les fonctionnalités spécifiques à PIVX (Masternodes, Zerocoin, SwiftX, Budgétisation) (0-1, défaut: %u)</translation>
+        <source>Disable all ALNJ specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Désactiver toutes les fonctionnalités spécifiques à ALNJ (Masternodes, Zerocoin, SwiftX, Budgétisation) (0-1, défaut: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6694,7 +6694,7 @@ Portefeuille PIVX Core</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zPIV. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
+        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zALNJ. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
     </message>
     <message>
         <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
@@ -6925,8 +6925,8 @@ Portefeuille PIVX Core</translation>
         <translation>Préparation à la resynchronistaion...</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>SVP vérifiez que la date et l'heure de votre ordinateur sont correctes! Si votre horloge est incorrecte, PIVX Core ne fonctionnera pas correctement.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong ALNJ Core will not work properly.</source>
+        <translation>SVP vérifiez que la date et l'heure de votre ordinateur sont correctes! Si votre horloge est incorrecte, ALNJ Core ne fonctionnera pas correctement.</translation>
     </message>
     <message>
         <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
@@ -7125,8 +7125,8 @@ Portefeuille PIVX Core</translation>
         <translation>Synchronisation des sporks ...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synchronisation du portefeuille zPIV ...</translation>
+        <source>Syncing zALNJ wallet...</source>
+        <translation>Synchronisation du portefeuille zALNJ ...</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -7241,8 +7241,8 @@ Portefeuille PIVX Core</translation>
         <translation>Nom d'utilisateur pour les connections JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zALNJ</source>
+        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zALNJ</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -7257,8 +7257,8 @@ Portefeuille PIVX Core</translation>
         <translation>Le portefeuille %s se trouve à l'extérieur du répertoire de données %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Le portefeuille doit être réécrit: redémarrez PIVX Core pour terminer</translation>
+        <source>Wallet needed to be rewritten: restart ALNJ Core to complete</source>
+        <translation>Le portefeuille doit être réécrit: redémarrez ALNJ Core pour terminer</translation>
     </message>
     <message>
         <source>Wallet options:</source>

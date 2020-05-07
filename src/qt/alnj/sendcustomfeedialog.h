@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,9 +7,9 @@
 
 #include <QDialog>
 #include "amount.h"
-#include "qt/pivx/snackbar.h"
+#include "qt/alnj/snackbar.h"
 
-class PIVXGUI;
+class ALNJGUI;
 class WalletModel;
 
 namespace Ui {
@@ -21,7 +21,7 @@ class SendCustomFeeDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit SendCustomFeeDialog(PIVXGUI* parent, WalletModel* model);
+    explicit SendCustomFeeDialog(ALNJGUI* parent, WalletModel* model);
     ~SendCustomFeeDialog();
 
     void showEvent(QShowEvent* event) override;

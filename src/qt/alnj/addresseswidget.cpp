@@ -1,17 +1,17 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/addresseswidget.h"
-#include "qt/pivx/forms/ui_addresseswidget.h"
-#include "qt/pivx/addresslabelrow.h"
-#include "qt/pivx/addnewaddressdialog.h"
-#include "qt/pivx/tooltipmenu.h"
+#include "qt/alnj/addresseswidget.h"
+#include "qt/alnj/forms/ui_addresseswidget.h"
+#include "qt/alnj/addresslabelrow.h"
+#include "qt/alnj/addnewaddressdialog.h"
+#include "qt/alnj/tooltipmenu.h"
 
-#include "qt/pivx/addnewcontactdialog.h"
-#include "qt/pivx/pivxgui.h"
+#include "qt/alnj/addnewcontactdialog.h"
+#include "qt/alnj/alnjgui.h"
 #include "guiutil.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/alnj/qtutils.h"
 #include "walletmodel.h"
 
 #include <QModelIndex>
@@ -56,7 +56,7 @@ public:
 };
 
 
-AddressesWidget::AddressesWidget(PIVXGUI* parent) :
+AddressesWidget::AddressesWidget(ALNJGUI* parent) :
     PWidget(parent),
     ui(new Ui::AddressesWidget)
 {
@@ -122,7 +122,7 @@ AddressesWidget::AddressesWidget(PIVXGUI* parent) :
     setCssEditLine(ui->lineEditName, true);
 
     // Address
-    ui->labelAddress->setText(tr("Enter PIVX address"));
+    ui->labelAddress->setText(tr("Enter ALNJ address"));
     setCssProperty(ui->labelAddress, "text-title");
     ui->lineEditAddress->setPlaceholderText("e.g. D7VFR83SQbiezrW72hjc…");
     setCssEditLine(ui->lineEditAddress, true);
@@ -191,8 +191,8 @@ void AddressesWidget::onStoreContactClicked(){
             return;
         }
 
-        CBitcoinAddress pivAdd = CBitcoinAddress(address.toUtf8().constData());
-        if (walletModel->isMine(pivAdd)) {
+        CBitcoinAddress alngAdd = CBitcoinAddress(address.toUtf8().constData());
+        if (walletModel->isMine(alngAdd)) {
             setCssEditLine(ui->lineEditAddress, false, true);
             inform(tr("Cannot store your own address as contact"));
             return;
@@ -205,8 +205,8 @@ void AddressesWidget::onStoreContactClicked(){
             return;
         }
 
-        if (walletModel->updateAddressBookLabels(pivAdd.Get(), label.toUtf8().constData(),
-                pivAdd.IsStakingAddress() ? AddressBook::AddressBookPurpose::COLD_STAKING_SEND : AddressBook::AddressBookPurpose::SEND)
+        if (walletModel->updateAddressBookLabels(alngAdd.Get(), label.toUtf8().constData(),
+                alngAdd.IsStakingAddress() ? AddressBook::AddressBookPurpose::COLD_STAKING_SEND : AddressBook::AddressBookPurpose::SEND)
                 ) {
             ui->lineEditAddress->setText("");
             ui->lineEditName->setText("");

@@ -1,13 +1,13 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef PRIVACYWIDGET_H
 #define PRIVACYWIDGET_H
 
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/furabstractlistitemdelegate.h"
-#include "qt/pivx/txviewholder.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/furabstractlistitemdelegate.h"
+#include "qt/alnj/txviewholder.h"
 #include "transactiontablemodel.h"
 #include "transactionfilterproxy.h"
 #include "coincontroldialog.h"
@@ -15,7 +15,7 @@
 #include <QLabel>
 #include <QWidget>
 
-class PIVXGUI;
+class ALNJGUI;
 class WalletModel;
 
 namespace Ui {
@@ -31,7 +31,7 @@ class PrivacyWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit PrivacyWidget(PIVXGUI* parent);
+    explicit PrivacyWidget(ALNJGUI* parent);
     ~PrivacyWidget();
 
     void loadWalletModel() override;
@@ -40,7 +40,7 @@ private Q_SLOTS:
     void onCoinControlClicked();
     void onRescanMintsClicked();
     void onResetZeroClicked();
-    void onTotalZpivClicked();
+    void onTotalZalngClicked();
     void updateDisplayUnit();
     void showList();
     void onSendClicked();

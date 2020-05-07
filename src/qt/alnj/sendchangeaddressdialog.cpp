@@ -1,12 +1,12 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The ALNJ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/sendchangeaddressdialog.h"
-#include "qt/pivx/forms/ui_sendchangeaddressdialog.h"
+#include "qt/alnj/sendchangeaddressdialog.h"
+#include "qt/alnj/forms/ui_sendchangeaddressdialog.h"
 
 #include "coincontrol.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
 SendChangeAddressDialog::SendChangeAddressDialog(QWidget* parent, WalletModel* model) :
     QDialog(parent),
@@ -26,10 +26,10 @@ SendChangeAddressDialog::SendChangeAddressDialog(QWidget* parent, WalletModel* m
     ui->labelTitle->setText(tr("Custom Change Address"));
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
-    ui->labelMessage->setText(tr("The remainder of the value resultant from the inputs minus the outputs value goes to the \"change\" PIVX address"));
+    ui->labelMessage->setText(tr("The remainder of the value resultant from the inputs minus the outputs value goes to the \"change\" ALNJ address"));
     ui->labelMessage->setProperty("cssClass", "text-main-grey");
 
-    ui->lineEditAddress->setPlaceholderText("Enter PIVX address (e.g D7VFR83SQbiezrW72hjc… ");
+    ui->lineEditAddress->setPlaceholderText("Enter ALNJ address (e.g D7VFR83SQbiezrW72hjc… ");
     initCssEditLine(ui->lineEditAddress, true);
 
     // Buttons
