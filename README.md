@@ -17,9 +17,9 @@ More information at [algoninja.site/alnj](http://www.algoninja.site/alnj) Visit 
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 ALNJ</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>53,999,437 ALNJ</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
-<tr><td>Premine</td><td>100,000 ALNJ*</td></tr>
+<tr><td>Premine</td><td>10,799,887 ALNJ (20% of PoW Phase)</td></tr>
 </table>
 
 ### Reward Distribution
@@ -27,7 +27,7 @@ More information at [algoninja.site/alnj](http://www.algoninja.site/alnj) Visit 
 <table>
 <th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>100,000 ALNJ</td><td>Initial Pre-mine</td></tr>
+<tr><td>1</td><td>10,799,887 ALNJ</td><td>Initial Pre-mine</td></tr>
 </table>
 
 ### PoW Rewards Breakdown
@@ -35,7 +35,7 @@ More information at [algoninja.site/alnj](http://www.algoninja.site/alnj) Visit 
 <table>
 <th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
 <tr><td>2-86400</td><td>20% (50 ALNJ)</td><td>80% (200 ALNJ)</td><td>N/A</td></tr>
-<tr><td>86401-151200</td><td>20% (50 ALNJ)</td><td>70% (200 ALNJ)</td><td>10% (25 ALNJ)</td></tr>
+<tr><td>86401-151200</td><td>20% (50 ALNJ)</td><td>70% (225 ALNJ)</td><td>10% (25 ALNJ)</td></tr>
 <tr><td>151201-259200</td><td>45% (22.5 ALNJ)</td><td>45% (22.5 ALNJ)</td><td>10% (5 ALNJ)</td></tr>
 </table>
 
