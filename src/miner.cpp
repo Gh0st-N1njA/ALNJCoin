@@ -459,6 +459,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                 LogPrintf("%s: Signing new block with UTXO key failed \n", __func__);
                 return nullptr;
             }
+        } else {
+           LogPrintf("ALNJMiner : proof-of-work block found %s \n", pblock->GetHash().GetHex());
         }
 
         CValidationState state;
