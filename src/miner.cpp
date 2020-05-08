@@ -512,6 +512,8 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey, CWallet* pwallet)
         return nullptr;
     }
 
+    LogPrintf("%s: Attempting PoW block creation\n", __func__);
+    LogPrintf("%s: pubkey: %s\n", __func__, pubkey->ToString());
     CScript scriptPubKey = CScript() << ToByteVector(pubkey) << OP_CHECKSIG;
     return CreateNewBlock(scriptPubKey, pwallet, false);
 }
