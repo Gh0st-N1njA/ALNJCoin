@@ -3910,7 +3910,8 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             return state.DoS(100, error("%s: proof of stake check failed (%s)", __func__, strError));
     }
 
-    if (!AcceptBlockHeader(block, state, &pindex))
+    if (!AcceptBlockHeader(block, state, &pindex)){
+        LogPrintf("AcceptBlock() : AcceptBlockHeader failed");
         return false;
 
     if (pindex->nStatus & BLOCK_HAVE_DATA) {
