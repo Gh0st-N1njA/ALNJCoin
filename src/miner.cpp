@@ -632,6 +632,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         if (!pblocktemplate.get()) {
             LogPrintf("BitcoinMiner(): pblocktemplate.get() is NULL.\n");
             continue;
+        }
         LogPrintf("BitcoinMiner(): pblocktemplate.get() is true\n");
         CBlock* pblock = &pblocktemplate->block;
         LogPrintf("BitcoinMiner(): pblock: %s\n", pblock->ToString());
