@@ -626,8 +626,10 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         std::unique_ptr<CBlockTemplate> pblocktemplate((fProofOfStake ?
                                                         CreateNewBlock(CScript(), pwallet, fProofOfStake) :
                                                         CreateNewBlockWithKey(reservekey, pwallet)));
-        if (!pblocktemplate.get()) continue;
-        LogPrintf("BitcoinMiner(): pblocktemplate.get() is false\n");
+        if (!pblocktemplate.get()) {
+            LogPrintf("BitcoinMiner(): pblocktemplate.get() is NULL.\n");
+            continue;
+        LogPrintf("BitcoinMiner(): pblocktemplate.get() is true\n");
         CBlock* pblock = &pblocktemplate->block;
         LogPrintf("BitcoinMiner(): pblock: %s\n", pblock->ToString());
 
