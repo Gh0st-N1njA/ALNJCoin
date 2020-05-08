@@ -3471,6 +3471,7 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
 
 bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig)
 {
+    //LogPrintf("%s : start\n", __func__);
     if (block.fChecked)
         return true;
 
@@ -3479,6 +3480,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
 
     // Check that the header is valid (particularly PoW).  This is mostly
     // redundant with the call in AcceptBlockHeader.
+    //LogPrintf("%s : checkBlockHeader\n", __func__);
     if (!CheckBlockHeader(block, state, !IsPoS))
         return state.DoS(100, error("%s : CheckBlockHeader failed", __func__), REJECT_INVALID, "bad-header", true);
 
@@ -4279,48 +4281,48 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
 
 bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex* const pindexPrev, bool fCheckPOW, bool fCheckMerkleRoot)
 {
-    LogPrintf("TestBlockValidity() - AssertLockHeld\n");
+    //LogPrintf("TestBlockValidity() - AssertLockHeld\n");
     AssertLockHeld(cs_main);
     assert(pindexPrev);
-    LogPrintf("TestBlockValidity() - assertions passed\n");
+    //LogPrintf("TestBlockValidity() - assertions passed\n");
     if (pindexPrev != chainActive.Tip()) {
         LogPrintf("%s : No longer working on chain tip\n", __func__);
         return false;
     }
 
-    LogPrintf("TestBlockValidity() - viewNew\n");
+    //LogPrintf("TestBlockValidity() - viewNew\n");
     CCoinsViewCache viewNew(pcoinsTip);
     CBlockIndex indexDummy(block);
     indexDummy.pprev = pindexPrev;
     indexDummy.nHeight = pindexPrev->nHeight + 1;
-    LogPrintf("TestBlockValidity() - indexDummy(): pprev: %d height:%d\n", indexDummy.pprev, indexDummy.nHeight);
+    //LogPrintf("TestBlockValidity() - indexDummy(): pprev: %d height:%d\n", indexDummy.pprev, indexDummy.nHeight);
 
     // NOTE: CheckBlockHeader is called by CheckBlock
-    LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader\n");
+    //LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader\n");
     if (!ContextualCheckBlockHeader(block, state, pindexPrev)){
-        LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader failed\n");
+        //LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader failed\n");
         return false;
     }
-    LogPrintf("TestBlockValidity() - CheckBlock\n");
+    //LogPrintf("TestBlockValidity() - CheckBlock\n");
     if (!CheckBlock(block, state, fCheckPOW, fCheckMerkleRoot)){
-        LogPrintf("TestBlockValidity() - CheckBlock failed\n");
+        //LogPrintf("TestBlockValidity() - CheckBlock failed\n");
         return false;
     }
-        LogPrintf("TestBlockValidity() - ContextualCheckBlock\n");
+        //LogPrintf("TestBlockValidity() - ContextualCheckBlock\n");
     if (!ContextualCheckBlock(block, state, pindexPrev)){
-        LogPrintf("TestBlockValidity() - ContextualCheckBlock failed\n");
+        //LogPrintf("TestBlockValidity() - ContextualCheckBlock failed\n");
         return false;
     }
-        LogPrintf("TestBlockValidity() - ConnectBlock\n");
+        //LogPrintf("TestBlockValidity() - ConnectBlock\n");
 
     if (!ConnectBlock(block, state, &indexDummy, viewNew, true)){
-        LogPrintf("TestBlockValidity() - ConnectBlock failed\n");
+        //LogPrintf("TestBlockValidity() - ConnectBlock failed\n");
         return false;
     }
-    LogPrintf("TestBlockValidity() - Assert state.isValid()\n");
+    //LogPrintf("TestBlockValidity() - Assert state.isValid()\n");
     assert(state.IsValid());
 
-    LogPrintf("TestBlockValidity() - Completed");
+    //LogPrintf("TestBlockValidity() - Completed");
     return true;
 }
 
