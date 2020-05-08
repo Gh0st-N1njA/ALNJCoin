@@ -551,8 +551,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     return true;
 }
 
-//WE CAN DISABLE CPU MINING HERE
-bool fGenerateBitcoins = true;
+bool fGenerateBitcoins = false;
 bool fStakeableCoins = false;
 int nMintableLastCheck = 0;
 
