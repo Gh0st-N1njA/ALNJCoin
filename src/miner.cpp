@@ -448,7 +448,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         LogPrintf("CreateNewBlock() : pblock: %s\n", pblock->ToString());
         pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
-        CBlock *nblock = pblocktemplate->block;
+        CBlock *nblock = &pblocktemplate->block;
         LogPrintf("CreateNewBlock() : nblock: %s\n", nblock->ToString());
 
         if (fProofOfStake) {
