@@ -4306,7 +4306,7 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     // NOTE: CheckBlockHeader is called by CheckBlock
     //LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader\n");
 
-    LogPrintf("TestBlockValidity() - pindexPrev: %d\n", pindexPrev);
+    LogPrintf("TestBlockValidity() - pindexPrev: %d\n", pindexPrev->nHeight);
     
     
     if (!ContextualCheckBlockHeader(block, state, pindexPrev)){
