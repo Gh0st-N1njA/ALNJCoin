@@ -5,7 +5,7 @@ let "NUM_PROCS--";
 
 make clean;
 ./autogen.sh;
-./configure;
+./configure --without-gui;
 
 make -j${NUM_PROCS}
 make install
