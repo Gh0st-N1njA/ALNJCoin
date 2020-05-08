@@ -61,7 +61,8 @@ public:
     const CBlock& GenesisBlock() const { return genesis; }
 
     /** Make miner wait to have peers to avoid wasting work */
-    bool MiningRequiresPeers() const { return !IsRegTestNet(); }
+    bool MiningRequiresPeers() const { return false; //!IsRegTestNet();
+                                     }
     /** Headers first syncing is disabled */
     bool HeadersFirstSyncingActive() const { return false; };
     /** Default value for -checkmempool and -checkblockindex argument */
