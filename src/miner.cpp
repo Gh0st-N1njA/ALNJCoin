@@ -135,7 +135,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     if (Params().IsRegTestNet()) {
         pblock->nVersion = GetArg("-blockversion", pblock->nVersion);
     }
-    LogPrintf("%s: nVersion\n", __func__, pblock->nVersion);
+    LogPrintf("%s: nVersion: %d\n", __func__, pblock->nVersion);
 
     // Create coinbase tx
     CMutableTransaction txNew;
@@ -446,6 +446,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
         pblock->nNonce = 0;
 
+        LogPrintf("CreateNewBlock() : pblock: %s\n", pblock->ToString());
         pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
 
         if (fProofOfStake) {
