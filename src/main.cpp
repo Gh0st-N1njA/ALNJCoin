@@ -4285,7 +4285,8 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
         LogPrintf("%s : No longer working on chain tip\n", __func__);
         return false;
     }
-    LogPrintf("TestBlockValidity() - block %s", &block->ToString());
+    CBlock* nblock = &block;
+    LogPrintf("TestBlockValidity() - block %s", nblock->ToString());
 
     CCoinsViewCache viewNew(pcoinsTip);
     CBlockIndex indexDummy(block);
