@@ -4306,6 +4306,11 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
 
     // NOTE: CheckBlockHeader is called by CheckBlock
     //LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader\n");
+    const Consensus::Params& consensus = Params().GetConsensus();
+
+    if (block.GetHash() == consensus.hashGenesisBlock)
+        return true;
+    
     if (!ContextualCheckBlockHeader(block, state, pindexPrev)){
         //LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader failed\n");
         return false;
