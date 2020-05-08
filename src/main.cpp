@@ -3913,6 +3913,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
     if (!AcceptBlockHeader(block, state, &pindex)){
         LogPrintf("AcceptBlock() : AcceptBlockHeader failed");
         return false;
+    }
 
     if (pindex->nStatus & BLOCK_HAVE_DATA) {
         // TODO: deal better with duplicate blocks.
