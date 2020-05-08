@@ -124,7 +124,7 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits)
     bool fOverflow;
     uint256 bnTarget;
 
-    LogPrintf("%s : nBits: %d \n", __func__, nBits);
+    //LogPrintf("%s : nBits: %d \n", __func__, nBits);
     //return true;
     if (Params().IsRegTestNet()) return true;
 
@@ -136,9 +136,10 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits)
 
     // Check proof of work matches claimed amount
     if (hash > bnTarget){
-        printf("Hash: %s\n", hash.ToString().c_str());
-        printf("bnTarget: %s\n", bnTarget.ToString().c_str());
-        return error("CheckProofOfWork() : hash doesn't match nBits");
+        //printf("Hash: %s\n", hash.ToString().c_str());
+        //printf("bnTarget: %s\n", bnTarget.ToString().c_str());
+        //return error("CheckProofOfWork() : hash doesn't match nBits");
+        return false;
     }
 
     return true;
