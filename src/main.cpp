@@ -4285,6 +4285,7 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
         LogPrintf("%s : No longer working on chain tip\n", __func__);
         return false;
     }
+    LogPrintf("TestBlockValidity() - block %s", block->ToString());
 
     CCoinsViewCache viewNew(pcoinsTip);
     CBlockIndex indexDummy(block);
@@ -4307,6 +4308,7 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     if (!ConnectBlock(block, state, &indexDummy, viewNew, true)){
         return false;
     }
+    LogPrintf("TestBlockValidity() - no fails so far");
     assert(state.IsValid());
 
     return true;
