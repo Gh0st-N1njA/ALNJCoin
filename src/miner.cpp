@@ -464,6 +464,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         }
 
         CValidationState state;
+        LogPrintf("CreateNewBlock() : running TestBlockValidity\n");
         if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
             LogPrintf("CreateNewBlock() : TestBlockValidity failed\n");
             mempool.clear();
