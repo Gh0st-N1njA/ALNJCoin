@@ -188,20 +188,20 @@ public:
 
         // height-based activations
         consensus.height_last_PoW = 259200;
-        consensus.height_last_ZC_AccumCheckpoint = 15;
-        consensus.height_last_ZC_WrappedSerials = 15;
-        consensus.height_start_BIP65 = 10;             
-        consensus.height_start_InvalidUTXOsCheck = 10;
-        consensus.height_start_MessSignaturesV2 = 10;  
-        consensus.height_start_StakeModifierNewSelection = 10;
-        consensus.height_start_StakeModifierV2 = 10;   
-        consensus.height_start_TimeProtoV2 = 10;       
-        consensus.height_start_ZC = 15;                 
-        consensus.height_start_ZC_InvalidSerials = 15;
-        consensus.height_start_ZC_PublicSpends = 15;
-        consensus.height_start_ZC_SerialRangeCheck = 15;
-        consensus.height_start_ZC_SerialsV2 = 15;
-        consensus.height_ZC_RecalcAccumulators = 15;
+        consensus.height_last_ZC_AccumCheckpoint = 0;
+        consensus.height_last_ZC_WrappedSerials = 0;
+        consensus.height_start_BIP65 = 0;             
+        consensus.height_start_InvalidUTXOsCheck = 0;
+        consensus.height_start_MessSignaturesV2 = 0;  
+        consensus.height_start_StakeModifierNewSelection = 0;
+        consensus.height_start_StakeModifierV2 = 0;   
+        consensus.height_start_TimeProtoV2 = 0;       
+        consensus.height_start_ZC = 0;                 
+        consensus.height_start_ZC_InvalidSerials = 0;
+        consensus.height_start_ZC_PublicSpends = 0;
+        consensus.height_start_ZC_SerialRangeCheck = 0;
+        consensus.height_start_ZC_SerialsV2 = 0;
+        consensus.height_ZC_RecalcAccumulators = 0;
 
         // validation by-pass
         consensus.nAlnjBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
@@ -219,8 +219,8 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1620437245;        // May 06 2021 00:00:01 AM
-        consensus.ZC_WrappedSerialsSupply = 10799888 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
+        consensus.ZC_TimeStart = 1577915962;        // Jan 01 2020 00:00:01 AM
+        consensus.ZC_WrappedSerialsSupply = 0 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
