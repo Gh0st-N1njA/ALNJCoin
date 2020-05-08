@@ -113,7 +113,7 @@ CBlockIndex* GetChainTip()
 CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, bool fProofOfStake)
 {
     CReserveKey reservekey(pwallet);
-    LogPrintf("%s: create new block\n", __func__);
+    //LogPrintf("%s: create new block\n", __func__);
     // Create new block
     std::unique_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
     if (!pblocktemplate.get()) return nullptr;
@@ -124,7 +124,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     if (!pindexPrev) return nullptr;
     const int nHeight = pindexPrev->nHeight + 1;
 
-    LogPrintf("%s: nHeight: %d\n", __func__, nHeight);
+    //LogPrintf("%s: nHeight: %d\n", __func__, nHeight);
     // Make sure to create the correct block version
     const Consensus::Params& consensus = Params().GetConsensus();
 
@@ -135,7 +135,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     if (Params().IsRegTestNet()) {
         pblock->nVersion = GetArg("-blockversion", pblock->nVersion);
     }
-    LogPrintf("%s: nVersion: %d\n", __func__, pblock->nVersion);
+    //LogPrintf("%s: nVersion: %d\n", __func__, pblock->nVersion);
 
     // Create coinbase tx
     CMutableTransaction txNew;
@@ -430,7 +430,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         nLastBlockTx = nBlockTx;
         nLastBlockSize = nBlockSize;
-        LogPrintf("%s : total size %u\n", __func__, nBlockSize);
+        //LogPrintf("%s : total size %u\n", __func__, nBlockSize);
 
         // Compute final coinbase transaction.
         pblock->vtx[0].vin[0].scriptSig = CScript() << nHeight << OP_0;
@@ -446,10 +446,10 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
         pblock->nNonce = 0;
 
-        LogPrintf("CreateNewBlock() : pblock: %s\n", pblock->ToString());
+        //LogPrintf("CreateNewBlock() : pblock: %s\n", pblock->ToString());
         pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
         CBlock *nblock = &pblocktemplate->block;
-        LogPrintf("CreateNewBlock() : nblock: %s\n", nblock->ToString());
+        //LogPrintf("CreateNewBlock() : nblock: %s\n", nblock->ToString());
 
         if (fProofOfStake) {
             unsigned int nExtraNonce = 0;
@@ -460,18 +460,18 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                 return nullptr;
             }
         } else {
-           LogPrintf("ALNJMiner : proof-of-work block found %s \n", pblock->GetHash().GetHex());
+           //LogPrintf("ALNJMiner : proof-of-work block found %s \n", pblock->GetHash().GetHex());
         }
 
         CValidationState state;
-        LogPrintf("CreateNewBlock() : running TestBlockValidity\n");
+        //LogPrintf("CreateNewBlock() : running TestBlockValidity\n");
         if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
-            LogPrintf("CreateNewBlock() : TestBlockValidity failed\n");
+            //LogPrintf("CreateNewBlock() : TestBlockValidity failed\n");
             mempool.clear();
             return nullptr;
         }
     }
-    LogPrintf("CreateNewBlock() created");
+    //LogPrintf("CreateNewBlock() created");
     return pblocktemplate.release();
 }
 
