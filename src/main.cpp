@@ -4307,7 +4307,7 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     //LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader\n");
 
     LogPrintf("TestBlockValidity() - pindexPrev: %d\n", pindexPrev->nHeight);
-    if(pindexPrev->nHeight == 0)
+    if(pindexPrev->nHeight <= 10)
         return true;
     
     if (!ContextualCheckBlockHeader(block, state, pindexPrev)){
