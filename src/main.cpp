@@ -4279,19 +4279,21 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
 
 bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex* const pindexPrev, bool fCheckPOW, bool fCheckMerkleRoot)
 {
-    LogPrintf("TestBlockValidity() - AssertLockHeld");
+    LogPrintf("TestBlockValidity() - AssertLockHeld\n");
     AssertLockHeld(cs_main);
     assert(pindexPrev);
-    LogPrintf("TestBlockValidity() - assertions passed");
+    LogPrintf("TestBlockValidity() - assertions passed\n");
     if (pindexPrev != chainActive.Tip()) {
         LogPrintf("%s : No longer working on chain tip\n", __func__);
         return false;
     }
 
+    LogPrintf("TestBlockValidity() - viewNew\n");
     CCoinsViewCache viewNew(pcoinsTip);
     CBlockIndex indexDummy(block);
     indexDummy.pprev = pindexPrev;
     indexDummy.nHeight = pindexPrev->nHeight + 1;
+    LogPrintf("TestBlockValidity() - indexDummy(): pprev: %d height:%d", indexDummy.pprev, indexDummy.nHeight);
 
     // NOTE: CheckBlockHeader is called by CheckBlock
     if (!ContextualCheckBlockHeader(block, state, pindexPrev)){
