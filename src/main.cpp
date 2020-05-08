@@ -4292,14 +4292,21 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     indexDummy.nHeight = pindexPrev->nHeight + 1;
 
     // NOTE: CheckBlockHeader is called by CheckBlock
-    if (!ContextualCheckBlockHeader(block, state, pindexPrev))
+    if (!ContextualCheckBlockHeader(block, state, pindexPrev)){
+        LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader failed");
         return false;
-    if (!CheckBlock(block, state, fCheckPOW, fCheckMerkleRoot))
+    }
+    if (!CheckBlock(block, state, fCheckPOW, fCheckMerkleRoot)){
+        LogPrintf("TestBlockValidity() - CheckBlock failed");
         return false;
-    if (!ContextualCheckBlock(block, state, pindexPrev))
+    }
+    if (!ContextualCheckBlock(block, state, pindexPrev)){
+        LogPrintf("TestBlockValidity() - ContextualCheckBlock failed");
         return false;
-    if (!ConnectBlock(block, state, &indexDummy, viewNew, true))
+    }
+    if (!ConnectBlock(block, state, &indexDummy, viewNew, true)){
         return false;
+    }
     assert(state.IsValid());
 
     return true;
