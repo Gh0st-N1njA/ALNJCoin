@@ -3406,7 +3406,7 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
     const Consensus::Params& consensus = Params().GetConsensus();
     uint256 hash = block.GetHash();
 
-    if (hash == consensus.hashGenesisBlock)
+    if (block.GetHash() == consensus.hashGenesisBlock)
         return true;
     
     // Check proof of work matches claimed amount
