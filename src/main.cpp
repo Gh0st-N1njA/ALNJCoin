@@ -4279,14 +4279,14 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
 
 bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex* const pindexPrev, bool fCheckPOW, bool fCheckMerkleRoot)
 {
+    LogPrintf("TestBlockValidity() - AssertLockHeld");
     AssertLockHeld(cs_main);
     assert(pindexPrev);
+    LogPrintf("TestBlockValidity() - assertions passed");
     if (pindexPrev != chainActive.Tip()) {
         LogPrintf("%s : No longer working on chain tip\n", __func__);
         return false;
     }
-    CBlock* nblock = &block;
-    LogPrintf("TestBlockValidity() - block %s", nblock->ToString());
 
     CCoinsViewCache viewNew(pcoinsTip);
     CBlockIndex indexDummy(block);
@@ -4309,9 +4309,10 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     if (!ConnectBlock(block, state, &indexDummy, viewNew, true)){
         return false;
     }
-    LogPrintf("TestBlockValidity() - no fails so far");
+    LogPrintf("TestBlockValidity() - Assert state.isValid()");
     assert(state.IsValid());
 
+    LogPrintf("TestBlockValidity() - Completed");
     return true;
 }
 
