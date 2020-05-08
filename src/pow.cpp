@@ -130,10 +130,6 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits)
 
     bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
     
-    printf("Hash: %s\n", hash.ToString().c_str());
-    printf("bnTarget: %s\n", bnTarget.ToString().c_str());
-    
-    return true;
 
     // Check range
     if (fNegative || bnTarget.IsNull() || fOverflow || bnTarget > Params().GetConsensus().powLimit)
