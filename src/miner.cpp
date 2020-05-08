@@ -626,7 +626,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             return;
        }
 
-        LogPrintf("BitcoinMiner(): create new block\n");
+        //LogPrintf("BitcoinMiner(): create new block\n");
         //
         // Create new block
         //
@@ -636,12 +636,12 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                                                         CreateNewBlock(CScript(), pwallet, fProofOfStake) :
                                                         CreateNewBlockWithKey(reservekey, pwallet)));
         if (!pblocktemplate.get()) {
-            LogPrintf("BitcoinMiner(): pblocktemplate.get() is NULL.\n");
+            //LogPrintf("BitcoinMiner(): pblocktemplate.get() is NULL.\n");
             continue;
         }
-        LogPrintf("BitcoinMiner(): pblocktemplate.get() is true\n");
-        CBlock* pblock = &pblocktemplate->block;
-        LogPrintf("BitcoinMiner(): pblock: %s\n", pblock->ToString());
+        //LogPrintf("BitcoinMiner(): pblocktemplate.get() is true\n");
+        //CBlock* pblock = &pblocktemplate->block;
+        //LogPrintf("BitcoinMiner(): pblock: %s\n", pblock->ToString());
 
 
         // POS - block found: process it
@@ -656,7 +656,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("BitcoinMiner(): nExtraNonce: %d\n", nExtraNonce);
+        //LogPrintf("BitcoinMiner(): nExtraNonce: %d\n", nExtraNonce);
         // POW - miner main
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
