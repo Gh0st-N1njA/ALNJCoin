@@ -4293,25 +4293,31 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     CBlockIndex indexDummy(block);
     indexDummy.pprev = pindexPrev;
     indexDummy.nHeight = pindexPrev->nHeight + 1;
-    LogPrintf("TestBlockValidity() - indexDummy(): pprev: %d height:%d", indexDummy.pprev, indexDummy.nHeight);
+    LogPrintf("TestBlockValidity() - indexDummy(): pprev: %d height:%d\n", indexDummy.pprev, indexDummy.nHeight);
 
     // NOTE: CheckBlockHeader is called by CheckBlock
+    LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader\n");
     if (!ContextualCheckBlockHeader(block, state, pindexPrev)){
-        LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader failed");
+        LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader failed\n");
         return false;
     }
+    LogPrintf("TestBlockValidity() - CheckBlock\n");
     if (!CheckBlock(block, state, fCheckPOW, fCheckMerkleRoot)){
-        LogPrintf("TestBlockValidity() - CheckBlock failed");
+        LogPrintf("TestBlockValidity() - CheckBlock failed\n");
         return false;
     }
+        LogPrintf("TestBlockValidity() - ContextualCheckBlock\n");
     if (!ContextualCheckBlock(block, state, pindexPrev)){
-        LogPrintf("TestBlockValidity() - ContextualCheckBlock failed");
+        LogPrintf("TestBlockValidity() - ContextualCheckBlock failed\n");
         return false;
     }
+        LogPrintf("TestBlockValidity() - ConnectBlock\n");
+
     if (!ConnectBlock(block, state, &indexDummy, viewNew, true)){
+        LogPrintf("TestBlockValidity() - ConnectBlock failed\n");
         return false;
     }
-    LogPrintf("TestBlockValidity() - Assert state.isValid()");
+    LogPrintf("TestBlockValidity() - Assert state.isValid()\n");
     assert(state.IsValid());
 
     LogPrintf("TestBlockValidity() - Completed");
