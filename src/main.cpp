@@ -4307,8 +4307,8 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     //LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader\n");
     const Consensus::Params& consensus = Params().GetConsensus();
 
-    if (block->nHeight == 1)
-        return true;
+    LogPrintf("TestBlockValidity() - pindexPrev: %d\n", pindexPrev);
+    
     
     if (!ContextualCheckBlockHeader(block, state, pindexPrev)){
         //LogPrintf("TestBlockValidity() - ContextualCheckBlockHeader failed\n");
