@@ -8,5 +8,5 @@ make clean;
 ./configure --without-gui;
 
 make -j${NUM_PROCS}
-make install
+sudo make install
 
