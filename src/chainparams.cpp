@@ -128,8 +128,9 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
         
-        genesis = CreateGenesisBlock(1588820064, 1, 0x1e0ffff0, 1, 250 * COIN);
-        if(genesis.GetHash() != uint256("0x"))
+        genesis = CreateGenesisBlock(1588820064, 797425, 0x1e0ffff0, 1, 250 * COIN);
+ /*       
+ if(genesis.GetHash() != uint256("0x"))
 {
       printf("MSearching for genesis block...\n");
       uint256 hashTarget;
@@ -153,6 +154,7 @@ public:
       printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
       printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 }
+*/
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000cae85318fb5774bf402d76de12a1c91c4833f01725d0ed05eaba360a151"));
         assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
