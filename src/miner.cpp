@@ -627,7 +627,10 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                                                         CreateNewBlock(CScript(), pwallet, fProofOfStake) :
                                                         CreateNewBlockWithKey(reservekey, pwallet)));
         if (!pblocktemplate.get()) continue;
+        LogPrintf("BitcoinMiner(): pblocktemplate.get() is false\n");
         CBlock* pblock = &pblocktemplate->block;
+        LogPrintf("BitcoinMiner(): pblock: %s\n", pblock->ToString());
+
 
         // POS - block found: process it
         if (fProofOfStake) {
