@@ -520,7 +520,7 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey, CWallet* pwallet)
         return nullptr;
     }
 
-    LogPrintf("%s: Attempting PoW block creation\n", __func__);
+    //LogPrintf("%s: Attempting PoW block creation\n", __func__);
     CScript scriptPubKey = CScript() << ToByteVector(pubkey) << OP_CHECKSIG;
     return CreateNewBlock(scriptPubKey, pwallet, false);
 }
@@ -589,7 +589,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
     unsigned int nExtraNonce = 0;
 
     while (fGenerateBitcoins || fProofOfStake) {
-        LogPrintf("BitcoinMiner(): fGenerateBitcoins = true\n");
+        //LogPrintf("BitcoinMiner(): fGenerateBitcoins = true\n");
         CBlockIndex* pindexPrev = GetChainTip();
         if (!pindexPrev) {
             MilliSleep(nSpacingMillis);       // sleep a block
