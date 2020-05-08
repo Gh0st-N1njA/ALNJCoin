@@ -124,6 +124,7 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits)
     bool fOverflow;
     uint256 bnTarget;
 
+    LogPrintf("%s : nBits: %d \n", __func__, nBits);
     //return true;
     if (Params().IsRegTestNet()) return true;
 
