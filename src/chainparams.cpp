@@ -336,7 +336,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1620437245;        // May 06 2021 00:00:01 AM
+        consensus.ZC_TimeStart = 1577915962;        // Jan 01 2020 00:00:01 AM
         consensus.ZC_WrappedSerialsSupply = 0;   // WrappedSerials only on main net
 
         /**
