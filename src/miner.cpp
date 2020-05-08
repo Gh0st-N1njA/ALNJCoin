@@ -471,7 +471,6 @@ void IncrementExtraNonce(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& 
 {
     LogPrintf("IncrementExtraNonce(): %s\n", pblock->ToString());
     LogPrintf("IncrementExtraNonce(): ExtraNonce: %d\n", nExtraNonce);
-    LogPrintf("IncrementExtraNonce(): hashPrevBlock: %s\n", hashPrevBlock.ToString());
     // Update nExtraNonce
     static uint256 hashPrevBlock;
     if (hashPrevBlock != pblock->hashPrevBlock) {
