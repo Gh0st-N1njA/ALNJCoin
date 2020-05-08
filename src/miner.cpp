@@ -113,7 +113,7 @@ CBlockIndex* GetChainTip()
 CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, bool fProofOfStake)
 {
     CReserveKey reservekey(pwallet);
-
+    LogPrintf("%s: create new block\n", __func__);
     // Create new block
     std::unique_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
     if (!pblocktemplate.get()) return nullptr;
@@ -124,6 +124,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     if (!pindexPrev) return nullptr;
     const int nHeight = pindexPrev->nHeight + 1;
 
+    LogPrintf("%s: nHeight: %d\n", __func__, nHeight);
     // Make sure to create the correct block version
     const Consensus::Params& consensus = Params().GetConsensus();
 
@@ -134,6 +135,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     if (Params().IsRegTestNet()) {
         pblock->nVersion = GetArg("-blockversion", pblock->nVersion);
     }
+    LogPrintf("%s: nVersion\n", __func__, pblock->nVersion);
 
     // Create coinbase tx
     CMutableTransaction txNew;
@@ -463,7 +465,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             return nullptr;
         }
     }
-
+    LogPrintf("CreateNewBlock() created");
     return pblocktemplate.release();
 }
 
@@ -513,7 +515,6 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey, CWallet* pwallet)
     }
 
     LogPrintf("%s: Attempting PoW block creation\n", __func__);
-    LogPrintf("%s: pubkey: %s\n", __func__, pubkey.ToString());
     CScript scriptPubKey = CScript() << ToByteVector(pubkey) << OP_CHECKSIG;
     return CreateNewBlock(scriptPubKey, pwallet, false);
 }
