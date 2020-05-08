@@ -580,6 +580,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
     unsigned int nExtraNonce = 0;
 
     while (fGenerateBitcoins || fProofOfStake) {
+        LogPrintf("BitcoinMiner(): fGenerateBitcoins = true\n");
         CBlockIndex* pindexPrev = GetChainTip();
         if (!pindexPrev) {
             MilliSleep(nSpacingMillis);       // sleep a block
@@ -616,6 +617,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             return;
        }
 
+        LogPrintf("BitcoinMiner(): create new block\n");
         //
         // Create new block
         //
@@ -639,6 +641,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
+        LogPrintf("BitcoinMiner(): nExtraNonce: %d\n", nExtraNonce);
         // POW - miner main
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
