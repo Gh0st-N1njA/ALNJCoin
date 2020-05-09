@@ -256,8 +256,7 @@ if(genesis.GetHash() != uint256("0x"))
         assert(genesis.hashMerkleRoot == uint256("0x3a2353b4f74192b56cc2cfbbfe49796948f47cece1b9ea3278fd11aed287b4d1"));
 
         vSeeds.clear();
-       // vSeeds.push_back(CDNSSeedData("alnjite.com", "seedhost1.alnjite.com"));     // Primary DNS Seeder
-       // vSeeds.push_back(CDNSSeedData("alnjite.com", "seedhost2.alnjite.com"));    // Secondary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("algoninja.site", "alnj-mainnet.seed.algoninja.site"));     // Primary DNS Seeder
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);  //starting with A
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  //starting with 8
@@ -270,8 +269,7 @@ if(genesis.GetHash() != uint256("0x"))
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x0f)(0xc9).convert_to_container<std::vector<unsigned char> >();
 
-        vFixedSeeds.clear();
-        //convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
+        convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
@@ -346,7 +344,7 @@ public:
         nMasternodeCountDrift = 4;
         nMasternodeCollateral = 1000 * COIN;
         nModifierUpdateBlock = INT_MAX; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 1000000000 * COIN;
+        nMaxMoneyOut = 21000000 * COIN;
         nZerocoinStartHeight = INT_MAX;
         nZerocoinStartTime = INT_MAX;
         nBlockEnforceSerialRange = INT_MAX; //Enforce serial range starting this block
@@ -407,11 +405,8 @@ if(genesis.GetHash() != uint256("0x"))
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x000005350f609d8dee013062226f9459d859d95db8023623b8c22b07a322e565"));
 
-        vFixedSeeds.clear();
         vSeeds.clear();
-        // vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnj-testnet.seed.fuzzbawls.pw"));
-        // vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnj-testnet.seed2.fuzzbawls.pw"));
-        // vSeeds.push_back(CDNSSeedData("warrows.dev", "testnet.dnsseed.alnj.warrows.dev"));
+        vSeeds.push_back(CDNSSeedData("algoninja.site", "alnj-testnet.seed.algoninja.site"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 120); // Testnet alnj addresses start with 'q'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet alnj script addresses start with '8' or '9'
@@ -522,9 +517,9 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
 
         /* Spork Key for RegTest:
-        WIF private key: 932HEevBSujW2ud7RfB1YF91AFygbBRQj3de3LyaCRqNzKKgWXi
+        WIF private key: cR1WmXzgR5yPswWYpJBsAcYDPqq1H9dpiZmsk2EondZ91zSkzSwx
         private key hex: bd4960dcbd9e7f2223f24e7164ecb6f1fe96fc3a416f5d3a830ba5720c84b8ca
-        Address: yCvUVd72w7xpimf981m114FSFbmAmne7j9
+        Address: qf7Zgh2DbuCrt8hkQAcM9iTGZDfMCJDYBF
         */
         strSporkPubKey = "043969b1b0e6f327de37f297a015d37e2235eaaeeb3933deecd8162c075cee0207b13537618bde640879606001a8136091c62ec272dd0133424a178704e6e75bb7";
     }
