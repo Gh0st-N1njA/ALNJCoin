@@ -2001,13 +2001,13 @@ int64_t GetBlockValue(int nHeight)
             return 250000 * COIN;
     }
 
-    if (Params().IsRegTestNet()) {
+    if (Params().NetworkID() == CBaseChainParams::REGTEST) {
         if (nHeight == 0)
             return 250 * COIN;
 
     }
 
-    const int last_pow_block = Params().GetConsensus().height_last_PoW;
+    const int last_pow_block = Params().LAST_POW_BLOCK();
     int64_t nSubsidy = 0;
     if (nHeight == 0) {
         nSubsidy = 10799888 * COIN;
@@ -2035,7 +2035,7 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 13.5 * COIN;
     } else if (nHeight <= 647999 && nHeight >= 604800) {
         nSubsidy = 9 * COIN;
-    } else if (nHeight < Params().GetConsensus().height_start_ZC_SerialsV2) {
+    } else if (nHeight >= Params().Zerocoin_Block_V2_Start()) {
         nSubsidy = 4.5 * COIN;
     } else {
         nSubsidy = 5 * COIN;
