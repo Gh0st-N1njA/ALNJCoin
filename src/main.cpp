@@ -1536,7 +1536,6 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos)
 
     // Check the header
     if (block.IsProofOfWork()) {
-        block.print();
         if (!CheckProofOfWork(block.GetHash(), block.nBits))
             return error("ReadBlockFromDisk : Errors in block header");
     }
@@ -3408,7 +3407,9 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
 
     if (block.GetHash() == consensus.hashGenesisBlock)
         return true;
-    
+            
+    block.print();
+
     // Check proof of work matches claimed amount
     if (fCheckPOW && !CheckProofOfWork(block.GetHash(), block.nBits))
         return state.DoS(50, error("CheckBlockHeader() : proof of work failed"),
