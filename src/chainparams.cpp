@@ -285,8 +285,8 @@ if(genesis.GetHash() != uint256("0x"))
         nPoolMaxTransactions = 3;
         nBudgetCycleBlocks = 43200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
         //TODO - UPDATE THIS
-        strSporkPubKey = "04bc10da9808467708edf1177571c041fc4b6a81300eff228603e813cb37afd37b725c786c7e305415a743a07c2948d0ec1b33a4cc2a852a7d5aa4b8b462c4b846";
-        strObfuscationPoolDummyAddress = "QY2Q5hqcEx94dJj5MFUE3AbpY1oUZcNX6j";
+        strSporkPubKey = "04acf22045d0db1b019608ba9e790ed2c3eca7bcb6b40b2dadcf095046de9f62ffc4a65b5940379e8c5e5d807294849cd1bc17c09984b5fa424dfb6b55edf291e1";
+        strObfuscationPoolDummyAddress = "AYYSz71nhCKrxECeNBQrvMpkGYhp7QEJAL";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
@@ -378,7 +378,7 @@ public:
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1577169143;
         genesis.nNonce = 454267;
-
+/*
 if(genesis.GetHash() != uint256("0x"))
 {
       printf("MSearching for genesis block...\n");
@@ -389,13 +389,13 @@ if(genesis.GetHash() != uint256("0x"))
           ++genesis.nNonce;
           if (genesis.nNonce == 0)
           {
-              printf("Mainnet NONCE WRAPPED, incrementing time");
-              std::cout << std::string("Mainnet NONCE WRAPPED, incrementing time:\n");
+              printf("Testnet NONCE WRAPPED, incrementing time");
+              std::cout << std::string("Testnet NONCE WRAPPED, incrementing time:\n");
               ++genesis.nTime;
           }
           if (genesis.nNonce % 10000 == 0)
           {
-              printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
+              printf("Testnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
           }
       }
       printf("Testnet block.nTime = %u \n", genesis.nTime);
@@ -403,6 +403,7 @@ if(genesis.GetHash() != uint256("0x"))
       printf("Testnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
       printf("Testnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 }
+*/
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x000005350f609d8dee013062226f9459d859d95db8023623b8c22b07a322e565"));
 
@@ -435,7 +436,7 @@ if(genesis.GetHash() != uint256("0x"))
         nPoolMaxTransactions = 2;
         nBudgetCycleBlocks = 144; //!< Ten cycles per day on testnet
         strSporkPubKey = "04E88BB455E2A04E65FCC41D88CD367E9CCE1F5A409BE94D8C2B4B35D223DED9C8E2F4E061349BA3A38839282508066B6DC4DB72DD432AC4067991E6BF20176127";
-        strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
+        strObfuscationPoolDummyAddress = "qZ2DdjJQMEH5ZCaCMD2duXn1faeqgt8CdM";
         nStartMasternodePayments = 201; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
