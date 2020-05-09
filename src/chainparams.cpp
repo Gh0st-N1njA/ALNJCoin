@@ -149,6 +149,7 @@ public:
         pchMessageStart[2] = 0xfc;
         pchMessageStart[3] = 0xa7;
         nDefaultPort = 12122;
+        //TODO - UPDATE THIS
         vAlertPubKey = ParseHex("04c71824527cff7dde535017fc15de7ae8038232ef207b8cc824e1ac164a737978143937e3bf7dc3ad9ebd1d455cb8ad4ae4c5070dade82a6d7dc5092f319b7f8f");
         bnProofOfWorkLimit = ~uint256(0) >> 20; // ALNJ starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
@@ -281,6 +282,7 @@ if(genesis.GetHash() != uint256("0x"))
 
         nPoolMaxTransactions = 3;
         nBudgetCycleBlocks = 43200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
+        //TODO - UPDATE THIS
         strSporkPubKey = "04bc10da9808467708edf1177571c041fc4b6a81300eff228603e813cb37afd37b725c786c7e305415a743a07c2948d0ec1b33a4cc2a852a7d5aa4b8b462c4b846";
         strObfuscationPoolDummyAddress = "QY2Q5hqcEx94dJj5MFUE3AbpY1oUZcNX6j";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
@@ -327,8 +329,9 @@ public:
         pchMessageStart[1] = 0xdf;
         pchMessageStart[2] = 0x90;
         pchMessageStart[3] = 0x94;
+        //TODO - UPDATE THIS
         vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
-        nDefaultPort = 18233;
+        nDefaultPort = 12124;
         nEnforceBlockUpgradeMajority = 4320; // 75%
         nRejectBlockOutdatedMajority = 5472; // 95%
         nToCheckBlockUpgradeMajority = 5760; // 4 days
@@ -458,7 +461,7 @@ public:
         pchMessageStart[1] = 0xfb;
         pchMessageStart[2] = 0xf8;
         pchMessageStart[3] = 0xc5;
-        nDefaultPort = 18244;
+        nDefaultPort = 12126;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
@@ -539,7 +542,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 18255;
+        nDefaultPort = 12128;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
