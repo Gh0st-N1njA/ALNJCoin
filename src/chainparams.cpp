@@ -150,7 +150,7 @@ public:
         pchMessageStart[3] = 0xa7;
         nDefaultPort = 12122;
         //TODO - UPDATE THIS
-        vAlertPubKey = ParseHex("04c71824527cff7dde535017fc15de7ae8038232ef207b8cc824e1ac164a737978143937e3bf7dc3ad9ebd1d455cb8ad4ae4c5070dade82a6d7dc5092f319b7f8f");
+        vAlertPubKey = ParseHex("04d9b8f2da5fb9cbc23c467485dfba351a83ccb781a1b82a7e651947188c40d09d8aba496b38adaad20a98aa4c5b149b917fddab5ca13130e996edc614f18d93ff");
         bnProofOfWorkLimit = ~uint256(0) >> 20; // ALNJ starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
         bnProofOfStakeLimit_V2 = ~uint256(0) >> 20; // 60/4 = 15 ==> use 2**4 higher limit
@@ -224,7 +224,8 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 1502666;
 
-
+/*
+// CODE TO GENERATE A GENESIS BLOCK
 if(genesis.GetHash() != uint256("0x"))
 {
       printf("MSearching for genesis block...\n");
@@ -249,6 +250,7 @@ if(genesis.GetHash() != uint256("0x"))
       printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
       printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 }
+*/
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x000008d0d565c1bc0fa245fc4d8b31f1de1438979c2b3b73234364f60b2673ef"));
         assert(genesis.hashMerkleRoot == uint256("0x3a2353b4f74192b56cc2cfbbfe49796948f47cece1b9ea3278fd11aed287b4d1"));
@@ -330,7 +332,7 @@ public:
         pchMessageStart[2] = 0x90;
         pchMessageStart[3] = 0x94;
         //TODO - UPDATE THIS
-        vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
+        vAlertPubKey = ParseHex("047caf819d16519eee6d37f7a1d3efb35302730f6bcb13803c1860811028ead173b5d0ab39d16db33d043e4d52e1616a0c1c617faa7b99661d90f4dc1365f1c4f0");
         nDefaultPort = 12124;
         nEnforceBlockUpgradeMajority = 4320; // 75%
         nRejectBlockOutdatedMajority = 5472; // 95%
