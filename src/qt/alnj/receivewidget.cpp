@@ -3,14 +3,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/receivewidget.h"
-#include "qt/alnjl/forms/ui_receivewidget.h"
-#include "qt/alnjl/requestdialog.h"
-#include "qt/alnjl/addnewcontactdialog.h"
-#include "qt/alnjl/qtutils.h"
-#include "qt/alnjl/myaddressrow.h"
-#include "qt/alnjl/furlistrow.h"
-#include "qt/alnjl/addressholder.h"
+#include "qt/alnj/receivewidget.h"
+#include "qt/alnj/forms/ui_receivewidget.h"
+#include "qt/alnj/requestdialog.h"
+#include "qt/alnj/addnewcontactdialog.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/myaddressrow.h"
+#include "qt/alnj/furlistrow.h"
+#include "qt/alnj/addressholder.h"
 #include "walletmodel.h"
 #include "guiutil.h"
 #include "pairresult.h"

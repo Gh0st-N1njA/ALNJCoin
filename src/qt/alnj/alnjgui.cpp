@@ -3,7 +3,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/alnjlgui.h"
+#include "qt/alnj/alnjgui.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -15,9 +15,9 @@
 #include "networkstyle.h"
 #include "notificator.h"
 #include "guiinterface.h"
-#include "qt/alnjl/qtutils.h"
-#include "qt/alnjl/defaultdialog.h"
-#include "qt/alnjl/settings/settingsfaqwidget.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/defaultdialog.h"
+#include "qt/alnj/settings/settingsfaqwidget.h"
 
 #include <QHBoxLayout>
 #include <QVBoxLayout>

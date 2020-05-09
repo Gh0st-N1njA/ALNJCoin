@@ -6,7 +6,7 @@
 #ifndef SETTINGSMAINOPTIONSWIDGET_H
 #define SETTINGSMAINOPTIONSWIDGET_H
 
-#include "qt/alnjl/pwidget.h"
+#include "qt/alnj/pwidget.h"
 
 #include <QWidget>
 

@@ -537,7 +537,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>alnjl-core</name>
+    <name>alnj-core</name>
     <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Saltando todas las transacciones del monedero...</translation>

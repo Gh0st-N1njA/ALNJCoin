@@ -2563,7 +2563,7 @@ bool CWallet::CreateTransaction(const std::vector<std::pair<CScript, CAmount> >&
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-alnjl-address
+                    // change transaction isn't always pay-to-alnj-address
                     CScript scriptChange;
                     bool combineChange = false;
 
@@ -4240,7 +4240,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
             reservekey->ReturnKey();
     }
 
-    // Sign if these are alnjl outputs - NOTE that zPIV outputs are signed later in SoK
+    // Sign if these are alnj outputs - NOTE that zPIV outputs are signed later in SoK
     if (!isZCSpendChange) {
         int nIn = 0;
         for (const std::pair<const CWalletTx*, unsigned int>& coin : setCoins) {
@@ -4667,7 +4667,7 @@ bool CWallet::CreateZerocoinSpendTransaction(
 
             for (std::pair<CBitcoinAddress*,CAmount> pair : addressesTo){
                 CScript scriptZerocoinSpend = GetScriptForDestination(pair.first->Get());
-                //add output to alnjl address to the transaction (the actual primary spend taking place)
+                //add output to alnj address to the transaction (the actual primary spend taking place)
                 // TODO: check value?
                 CTxOut txOutZerocoinSpend(pair.second, scriptZerocoinSpend);
                 txNew.vout.push_back(txOutZerocoinSpend);
@@ -5221,7 +5221,7 @@ void CWallet::PrecomputeSpends()
     // We don't even need to worry about this code.. no zPIV.
     /*
     LogPrintf("Precomputer started\n");
-    RenameThread("alnjl-precomputer");
+    RenameThread("alnj-precomputer");
 
     CWalletDB walletdb("precomputes.dat", "cr+");
 

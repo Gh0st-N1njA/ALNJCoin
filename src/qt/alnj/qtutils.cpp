@@ -3,9 +3,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
-#include "qt/alnjl/snackbar.h"
+#include "qt/alnj/snackbar.h"
 #include "qrencode.h"
 #include "guiconstants.h"
 

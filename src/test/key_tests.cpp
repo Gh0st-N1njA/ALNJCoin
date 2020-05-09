@@ -11,7 +11,7 @@
 #include "uint256.h"
 #include "util.h"
 #include "utilstrencodings.h"
-#include "test_alnjl.h"
+#include "test_alnj.h"
 
 #include <string>
 #include <vector>

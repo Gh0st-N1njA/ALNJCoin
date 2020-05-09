@@ -286,8 +286,8 @@
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (alnjl.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (alnjl.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (alnj.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (alnj.conf).</translation>
     </message>
 </context>
 <context>
@@ -1089,9 +1089,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/alnjl-project/alnjl-project-translations</source>
+https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/alnjl-project/alnjl-project-translations</translation>
+https://www.transifex.com/alnj-project/alnj-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1355,8 +1355,8 @@ Address: %4
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start alnjl: click-to-pay handler</source>
-        <translation>Провал при стартирането на alnjl: click-to-pay обработвател</translation>
+        <source>Cannot start alnj: click-to-pay handler</source>
+        <translation>Провал при стартирането на alnj: click-to-pay обработвател</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid ALNJ address or malformed URI parameters.</source>
@@ -2943,7 +2943,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     </context>
 <context>
-    <name>alnjl-core</name>
+    <name>alnj-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = пази мета данните от преводи, например собственик на акаунта и ифнормация за изисквани плащания, 2 = изхръвли мета данните от преводи)</translation>

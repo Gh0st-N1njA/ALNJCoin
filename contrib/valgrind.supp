@@ -4,9 +4,9 @@
 # in-tree.
 #
 # Example use:
-# $ valgrind --suppressions=contrib/valgrind.supp src/test/test_alnjl
+# $ valgrind --suppressions=contrib/valgrind.supp src/test/test_alnj
 # $ valgrind --suppressions=contrib/valgrind.supp --leak-check=full \
-#       --show-leak-kinds=all src/test/test_alnjl --log_level=test_suite
+#       --show-leak-kinds=all src/test/test_alnj --log_level=test_suite
 {
    Suppress libstdc++ warning - https://gcc.gnu.org/bugzilla/show_bug.cgi?id=65434
    Memcheck:Leak

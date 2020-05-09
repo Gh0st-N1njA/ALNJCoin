@@ -6,7 +6,7 @@
 #include "masternode-budget.h"
 #include "tinyformat.h"
 #include "utilmoneystr.h"
-#include "test_alnjl.h"
+#include "test_alnj.h"
 
 #include <boost/test/unit_test.hpp>
 

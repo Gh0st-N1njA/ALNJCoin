@@ -9,7 +9,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnjl-config.h"
+#include "config/alnj-config.h"
 #endif
 
 #ifdef WIN32

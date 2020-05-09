@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnjl-config.h"
+#include "config/alnj-config.h"
 #endif
 
 #include "tinyformat.h"

@@ -6,7 +6,7 @@
 
 #define BOOST_TEST_MODULE Alnj Test Suite
 
-#include "test_alnjl.h"
+#include "test_alnj.h"
 
 #include "main.h"
 #include "random.h"
@@ -49,7 +49,7 @@ TestingSetup::TestingSetup()
         bitdb.MakeMock();
 #endif
         ClearDatadirCache();
-        pathTemp = GetTempPath() / strprintf("test_alnjl_%lu_%i", (unsigned long)GetTime(), (int)(InsecureRandRange(100000)));
+        pathTemp = GetTempPath() / strprintf("test_alnj_%lu_%i", (unsigned long)GetTime(), (int)(InsecureRandRange(100000)));
         boost::filesystem::create_directories(pathTemp);
         mapArgs["-datadir"] = pathTemp.string();
         pblocktree = new CBlockTreeDB(1 << 20, true);

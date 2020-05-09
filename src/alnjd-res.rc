@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "ALNJ"
-            VALUE "FileDescription",    "alnjld (OSS daemon/client for ALNJ)"
+            VALUE "FileDescription",    "alnjd (OSS daemon/client for ALNJ)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "alnjld"
+            VALUE "InternalName",       "alnjd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "alnjld.exe"
-            VALUE "ProductName",        "alnjld"
+            VALUE "OriginalFilename",   "alnjd.exe"
+            VALUE "ProductName",        "alnjd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

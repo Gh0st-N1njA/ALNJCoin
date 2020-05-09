@@ -3,16 +3,16 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/addresseswidget.h"
-#include "qt/alnjl/forms/ui_addresseswidget.h"
-#include "qt/alnjl/addresslabelrow.h"
-#include "qt/alnjl/addnewaddressdialog.h"
-#include "qt/alnjl/tooltipmenu.h"
+#include "qt/alnj/addresseswidget.h"
+#include "qt/alnj/forms/ui_addresseswidget.h"
+#include "qt/alnj/addresslabelrow.h"
+#include "qt/alnj/addnewaddressdialog.h"
+#include "qt/alnj/tooltipmenu.h"
 
-#include "qt/alnjl/addnewcontactdialog.h"
-#include "qt/alnjl/alnjlgui.h"
+#include "qt/alnj/addnewcontactdialog.h"
+#include "qt/alnj/alnjgui.h"
 #include "guiutil.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 #include "walletmodel.h"
 
 #include <QModelIndex>

@@ -5,10 +5,10 @@
 """Test bitcoind with different proxy configuration.
 
 Test plan:
-- Start alnjld's with different proxy configurations
+- Start alnjd's with different proxy configurations
 - Use addnode to initiate connections
 - Verify that proxies are connected to, and the right connection command is given
-- Proxy configurations to test on alnjld side:
+- Proxy configurations to test on alnjd side:
     - `-proxy` (proxy everything)
     - `-onion` (proxy just onions)
     - `-proxyrandomize` Circuit randomization
@@ -18,8 +18,8 @@ Test plan:
     - proxy on IPv6
 
 - Create various proxies (as threads)
-- Create alnjlds that connect to them
-- Manipulate the alnjlds using addnode (onetry) an observe effects
+- Create alnjds that connect to them
+- Manipulate the alnjds using addnode (onetry) an observe effects
 
 addnode connect to IPv4
 addnode connect to IPv6

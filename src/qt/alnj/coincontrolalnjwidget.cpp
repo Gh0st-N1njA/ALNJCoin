@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/coincontrolalnjwidget.h"
-#include "qt/alnjl/forms/ui_coincontrolalnjwidget.h"
+#include "qt/alnj/coincontrolalnjwidget.h"
+#include "qt/alnj/forms/ui_coincontrolalnjwidget.h"
 
 CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
     QDialog(parent),

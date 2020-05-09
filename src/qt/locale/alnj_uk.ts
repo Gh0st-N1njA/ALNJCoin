@@ -441,7 +441,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>alnjl-core</name>
+    <name>alnj-core</name>
     </context>
 <context>
     <name>send</name>

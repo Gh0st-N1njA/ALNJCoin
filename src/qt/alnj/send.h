@@ -9,14 +9,14 @@
 #include <QWidget>
 #include <QPushButton>
 
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/contactsdropdown.h"
-#include "qt/alnjl/sendmultirow.h"
-#include "qt/alnjl/sendcustomfeedialog.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/contactsdropdown.h"
+#include "qt/alnj/sendmultirow.h"
+#include "qt/alnj/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
 #include "zalnjcontroldialog.h"
-#include "qt/alnjl/tooltipmenu.h"
+#include "qt/alnj/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
 

@@ -11,7 +11,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between alnjl-cli and alnjld)
+ * CBaseChainParams defines the base parameters (shared between alnj-cli and alnjd)
  * of a given instance of the Alnj system.
  */
 class CBaseChainParams

@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/requestdialog.h"
-#include "qt/alnjl/forms/ui_requestdialog.h"
+#include "qt/alnj/requestdialog.h"
+#include "qt/alnj/forms/ui_requestdialog.h"
 #include <QListView>
 
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 #include "guiutil.h"
 #include "amount.h"
 #include "pairresult.h"

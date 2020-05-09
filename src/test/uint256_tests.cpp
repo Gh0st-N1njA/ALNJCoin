@@ -13,7 +13,7 @@
 #include "uint256.h"
 #include <string>
 #include "version.h"
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 BOOST_FIXTURE_TEST_SUITE(uint256_tests, BasicTestingSetup)
 

@@ -9,7 +9,7 @@
 #include <QObject>
 #include <QWidget>
 #include <QString>
-#include "qt/alnjl/prunnable.h"
+#include "qt/alnj/prunnable.h"
 
 class ALNJGUI;
 class ClientModel;

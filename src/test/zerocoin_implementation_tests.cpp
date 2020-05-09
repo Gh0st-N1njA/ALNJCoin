@@ -18,7 +18,7 @@
 #include "wallet/wallet.h"
 #include "zalnj/zalnjwallet.h"
 #include "zalnjchain.h"
-#include "test_alnjl.h"
+#include "test_alnj.h"
 
 
 extern bool DecodeHexTx(CTransaction& tx, const std::string& strHexTx);

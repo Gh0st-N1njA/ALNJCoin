@@ -3,7 +3,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/guitransactionsutils.h"
+#include "qt/alnj/guitransactionsutils.h"
 #include "bitcoinunits.h"
 #include "optionsmodel.h"
 

@@ -3,15 +3,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/sendconfirmdialog.h"
-#include "qt/alnjl/forms/ui_sendconfirmdialog.h"
+#include "qt/alnj/sendconfirmdialog.h"
+#include "qt/alnj/forms/ui_sendconfirmdialog.h"
 #include "bitcoinunits.h"
 #include "walletmodel.h"
 #include "transactiontablemodel.h"
 #include "transactionrecord.h"
 #include "wallet/wallet.h"
 #include "guiutil.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 #include <QList>
 #include <QDateTime>
 

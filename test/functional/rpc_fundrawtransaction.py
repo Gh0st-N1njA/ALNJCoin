@@ -201,9 +201,9 @@ class RawTransactionsTest(BitcoinTestFramework):
 
         try:
             self.nodes[2].fundrawtransaction(rawtx, {'changeAddress': 'foobar'})
-            raise AssertionError("Accepted invalid alnjl address")
+            raise AssertionError("Accepted invalid alnj address")
         except JSONRPCException as e:
-            assert("changeAddress must be a valid alnjl address" in e.error['message'])
+            assert("changeAddress must be a valid alnj address" in e.error['message'])
 
 
         ############################################################

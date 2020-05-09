@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/splash.h"
-#include "qt/alnjl/forms/ui_splash.h"
+#include "qt/alnj/splash.h"
+#include "qt/alnj/forms/ui_splash.h"
 #include "QFile"
 
 #include "init.h"

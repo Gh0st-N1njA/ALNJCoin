@@ -3,12 +3,12 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/topbar.h"
-#include "qt/alnjl/forms/ui_topbar.h"
+#include "qt/alnj/topbar.h"
+#include "qt/alnj/forms/ui_topbar.h"
 #include <QPixmap>
-#include "qt/alnjl/lockunlock.h"
-#include "qt/alnjl/qtutils.h"
-#include "qt/alnjl/receivedialog.h"
+#include "qt/alnj/lockunlock.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/receivedialog.h"
 #include "askpassphrasedialog.h"
 
 #include "bitcoinunits.h"

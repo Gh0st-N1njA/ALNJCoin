@@ -364,34 +364,34 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  true,  false  },
 
         /* ALNJ features */
-        {"alnjl", "listmasternodes", &listmasternodes, true, true, false},
-        {"alnjl", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"alnjl", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"alnjl", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"alnjl", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"alnjl", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"alnjl", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"alnjl", "masternodedebug", &masternodedebug, true, true, false},
-        {"alnjl", "startmasternode", &startmasternode, true, true, false},
-        {"alnjl", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"alnjl", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"alnjl", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"alnjl", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"alnjl", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"alnjl", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"alnjl", "preparebudget", &preparebudget, true, true, false},
-        {"alnjl", "submitbudget", &submitbudget, true, true, false},
-        {"alnjl", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"alnjl", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"alnjl", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"alnjl", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"alnjl", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"alnjl", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"alnjl", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"alnjl", "checkbudgets", &checkbudgets, true, true, false},
-        {"alnjl", "mnsync", &mnsync, true, true, false},
-        {"alnjl", "spork", &spork, true, true, false},
-        {"alnjl", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"alnj", "listmasternodes", &listmasternodes, true, true, false},
+        {"alnj", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"alnj", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"alnj", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"alnj", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"alnj", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"alnj", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"alnj", "masternodedebug", &masternodedebug, true, true, false},
+        {"alnj", "startmasternode", &startmasternode, true, true, false},
+        {"alnj", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"alnj", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"alnj", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"alnj", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"alnj", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"alnj", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"alnj", "preparebudget", &preparebudget, true, true, false},
+        {"alnj", "submitbudget", &submitbudget, true, true, false},
+        {"alnj", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"alnj", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"alnj", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"alnj", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"alnj", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"alnj", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"alnj", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"alnj", "checkbudgets", &checkbudgets, true, true, false},
+        {"alnj", "mnsync", &mnsync, true, true, false},
+        {"alnj", "spork", &spork, true, true, false},
+        {"alnj", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -642,7 +642,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> alnjl-cli " + methodname + " " + args + "\n";
+    return "> alnj-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)

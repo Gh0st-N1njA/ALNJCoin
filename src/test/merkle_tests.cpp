@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "consensus/merkle.h"
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <boost/test/unit_test.hpp>
 

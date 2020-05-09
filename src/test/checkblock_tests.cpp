@@ -12,7 +12,7 @@
 #include "clientversion.h"
 #include "main.h"
 #include "utiltime.h"
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <cstdio>
 

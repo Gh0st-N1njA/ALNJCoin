@@ -470,8 +470,8 @@ para staking</translation>
         <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (alnjl.conf).</source>
-        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (alnjl.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (alnj.conf).</source>
+        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (alnj.conf).</translation>
     </message>
 </context>
 <context>
@@ -1863,14 +1863,14 @@ Por favor, espera unos minutos más. </translation>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the alnjl.conf file
+You will only have to paste the data in the alnj.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
         <translation>Estás a punto de exportar los datos necesarios para ejecutar un Masternode de un servidor remoto a tu portapapeles.
 
 
-Sólo tendrás que pegar los datos en el archivo alnjl.conf de tu servidor remoto e iniciarlo, luego inicia el Masternode usando esta cartera de controladores (selecciona el Masternode en la lista y presione "start").
+Sólo tendrás que pegar los datos en el archivo alnj.conf de tu servidor remoto e iniciarlo, luego inicia el Masternode usando esta cartera de controladores (selecciona el Masternode en la lista y presione "start").
 </translation>
     </message>
     <message>
@@ -2036,8 +2036,8 @@ Are you sure?</source>
         <translation>Los datos analizados son demasiado grandes</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "alnjl" prefix</source>
-        <translation>URI inválido, no empezar con el prefijo "alnjl"</translation>
+        <source>Invalid URI, not starting with "alnj" prefix</source>
+        <translation>URI inválido, no empezar con el prefijo "alnj"</translation>
     </message>
 </context>
 <context>
@@ -2143,9 +2143,9 @@ Are you sure?</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/alnjl-project/alnjl-project-translations</source>
+https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
-https://www.transifex.com/alnjl-project/alnjl-project-translations</translation>
+https://www.transifex.com/alnj-project/alnj-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2441,8 +2441,8 @@ Dirección: %4
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>Cannot start alnjl: click-to-pay handler</source>
-        <translation>No se puede iniciar alnjl: módulo click-to-pay</translation>
+        <source>Cannot start alnj: click-to-pay handler</source>
+        <translation>No se puede iniciar alnj: módulo click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid ALNJ address or malformed URI parameters.</source>
@@ -4225,14 +4225,14 @@ Tu cartera ALNJ también necesita estar completamente sincronizada para que pued
                            zPIV is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt;
+                           &lt;a style='color: #b088ff' href='https://alnjite.com/zalnj/'&gt;
                            "ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; 
 zPIV es un método opcional centrado en la privacidad de monedas en la Blockchain ALNJ. Básicamente, todas sus transacciones no pueden ser rastreadas en ningún explorador de bloques. Puedes leer más sobre los aspectos técnicos en el
- &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt;
+ &lt;a style='color: #b088ff' href='https://alnjite.com/zalnj/'&gt;
 "Documentación Técnica de ALNJ Zerocoin (zPIV) ". &lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4273,11 +4273,11 @@ zPIV es un método opcional centrado en la privacidad de monedas en la Blockchai
                            you can disable the automatic minting in your ALNJ wallet by
                            going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
                            If you are not making use of the ALNJ-QT or GUI you can simply open
-                           your alnjl.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your alnj.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt; "ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://alnjite.com/zalnj/'&gt; "ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zPIV, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4290,11 +4290,11 @@ stake por zPIV o aprovechar el beneficio de privacidad que te brinda,
 puedes desactivar la acuñación automática en tu billetera ALNJ yendo
 a Ajustes-&gt;Opciones y deseleccionando "Activar zPIV Automint".
 Si no estás haciendo uso de la ALNJ-QT o GUI puedes simplemente abrir
-tu archivo alnjl.conf y agregar &lt;i&gt; enablezeromint=0&lt;/i&gt; Sin las comillas
+tu archivo alnj.conf y agregar &lt;i&gt; enablezeromint=0&lt;/i&gt; Sin las comillas
 luego reinicia tu billetera para deshabilitar la impresión automática.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Puedes leer más sobre zPIV en el
-&lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt; "Documentación Técnica de ALNJ Zerocoin (zPIV)" &lt;/a&gt;.
+&lt;a style='color: #b088ff' href='https://alnjite.com/zalnj/'&gt; "Documentación Técnica de ALNJ Zerocoin (zPIV)" &lt;/a&gt;.
 Si deseas conservar y hacer stake tu zPIV, lee la sección "¿Cómo puedo hacer stake?"de las preguntas frecuentes a continuación.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -4345,7 +4345,7 @@ Si quieres más zPIV necesitarás acuñar tu saldo en la pestaña "Privacidad".
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (alnjl-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (alnj-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            To Stake zPIV:
@@ -4372,7 +4372,7 @@ Asegúrate de que tu billetera esté completamente sincronizada y de que esté u
 &lt;li&gt;
 Una vez que se siguen todos estos pasos, se debe habilitar el stake.
 &lt;li&gt;
- Puedes ver el estado del stake en la billetera pasando el ratón sobre el icono del paquete en la fila de la parte superior izquierda de la interfaz de la billetera. El paquete se iluminará y mostrará el mensaje "Stake Activado" para indicar que está hecho el stake. Usando la interfaz de línea de comandos (alnjl-cli); el comando &lt;i&gt;getstakingstatus&lt;/i&gt; confirmará que el stake está activo.
+ Puedes ver el estado del stake en la billetera pasando el ratón sobre el icono del paquete en la fila de la parte superior izquierda de la interfaz de la billetera. El paquete se iluminará y mostrará el mensaje "Stake Activado" para indicar que está hecho el stake. Usando la interfaz de línea de comandos (alnj-cli); el comando &lt;i&gt;getstakingstatus&lt;/i&gt; confirmará que el stake está activo.
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Para hacer stake zPIV:
@@ -4400,7 +4400,7 @@ El stake debe estar ahora habilitado.
                            &lt;a style='color: #b088ff' href='https://Discord.ALNJ.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://alnjlite.freshdesk.com'&gt;
+                           &lt;a style='color: #b088ff' href='https://alnjite.freshdesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4410,7 +4410,7 @@ Tenemos canales de ayuda en la mayoría de nuestros grupos de chat oficiales, po
 &lt;a style='color: #b088ff' href='https://Discord.ALNJ.com'&gt;
 #support en nuestro Discord&lt;/a&gt;.
 Si prefieres enviar una solicitud, una puede ser
-&lt;a style='color: #b088ff' href='https://alnjlite.freshdesk.com'&gt;
+&lt;a style='color: #b088ff' href='https://alnjite.freshdesk.com'&gt;
 nuestro sitio de apoyo Freshdesk&lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
@@ -4626,8 +4626,8 @@ Requisitos:
         <translation>No se puede abrir la carpeta de copias de seguridad</translation>
     </message>
     <message>
-        <source>Unable to open alnjl.conf with default application</source>
-        <translation>No se puede abrir alnjl.conf con la aplicación predeterminada</translation>
+        <source>Unable to open alnj.conf with default application</source>
+        <translation>No se puede abrir alnj.conf con la aplicación predeterminada</translation>
     </message>
     <message>
         <source>In:</source>
@@ -6133,7 +6133,7 @@ ALNJ Core Wallet</translation>
     </message>
 </context>
 <context>
-    <name>alnjl-core</name>
+    <name>alnj-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1= mantener los metadatos tx p.e. dueño de la cuenta e información de la solicitud de pago, 2 = ignorar metadatos tx)</translation>

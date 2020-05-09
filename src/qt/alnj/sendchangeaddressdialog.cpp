@@ -3,10 +3,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/sendchangeaddressdialog.h"
-#include "qt/alnjl/forms/ui_sendchangeaddressdialog.h"
+#include "qt/alnj/sendchangeaddressdialog.h"
+#include "qt/alnj/forms/ui_sendchangeaddressdialog.h"
 #include "walletmodel.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
 SendChangeAddressDialog::SendChangeAddressDialog(QWidget *parent) :
     QDialog(parent),

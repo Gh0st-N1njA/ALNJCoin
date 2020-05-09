@@ -11,7 +11,7 @@
 #include "guiutil.h"
 
 #include "util.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
 #include <boost/filesystem.hpp>
 
@@ -210,8 +210,8 @@ bool Intro::pickDataDirectory()
     }
 
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the alnjl.conf file in the default data directory
-     * (to be consistent with alnjld behavior)
+     * override -datadir in the alnj.conf file in the default data directory
+     * (to be consistent with alnjd behavior)
      */
 
     if (dataDir != getDefaultDataDirectory())

@@ -5,7 +5,7 @@
 
 #include "random.h"
 
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <boost/test/unit_test.hpp>
 

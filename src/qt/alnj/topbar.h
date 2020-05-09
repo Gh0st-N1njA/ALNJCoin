@@ -7,8 +7,8 @@
 #define TOPBAR_H
 
 #include <QWidget>
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/lockunlock.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/lockunlock.h"
 #include "amount.h"
 #include <QTimer>
 #include <QProgressBar>

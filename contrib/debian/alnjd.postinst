@@ -1,15 +1,15 @@
 
 #!/bin/sh
 
-# setup alnjl account, homedir etc
+# setup alnj account, homedir etc
 
 set -e
 
-BCUSER="alnjl"
-BCHOME="/var/lib/alnjl"
+BCUSER="alnj"
+BCHOME="/var/lib/alnj"
 
 if [ "$1" = "configure" ]; then
-	# Add alnjl user/group - this will gracefully abort if the user already exists.
+	# Add alnj user/group - this will gracefully abort if the user already exists.
 	# A homedir is never created.
 	set +e
 	adduser --system --home "${BCHOME}" --no-create-home --group "${BCUSER}" 2>/dev/null

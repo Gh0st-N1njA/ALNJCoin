@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/settings/settingsfaqwidget.h"
-#include "qt/alnjl/settings/forms/ui_settingsfaqwidget.h"
+#include "qt/alnj/settings/settingsfaqwidget.h"
+#include "qt/alnj/settings/forms/ui_settingsfaqwidget.h"
 #include <QScrollBar>
 #include <QMetaObject>
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
 SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     QDialog(parent),
@@ -92,7 +92,7 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty(ui->pushButtonExit, "btn-faq-exit");
 
     // Web Link
-    ui->pushButtonWebLink->setText("https://alnjlite.com/");
+    ui->pushButtonWebLink->setText("https://alnjite.com/");
     setCssProperty(ui->pushButtonWebLink, "btn-faq-web");
     setCssProperty(ui->containerButtons, "container-faq-buttons");
 

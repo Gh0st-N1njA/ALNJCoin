@@ -18,7 +18,7 @@
 #include <QPixmap>
 #include <QStandardPaths>
 #include <initializer_list>
-#include "qt/alnjl/alnjlgui.h"
+#include "qt/alnj/alnjgui.h"
 
 // Repair parameters
 const QString SALVAGEWALLET("-salvagewallet");

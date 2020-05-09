@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/txrow.h"
-#include "qt/alnjl/forms/ui_txrow.h"
+#include "qt/alnj/txrow.h"
+#include "qt/alnj/forms/ui_txrow.h"
 
 #include "guiutil.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
 TxRow::TxRow(QWidget *parent) :
     QWidget(parent),

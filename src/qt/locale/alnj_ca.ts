@@ -2053,7 +2053,7 @@ for staking</source>
     </message>
     </context>
 <context>
-    <name>alnjl-core</name>
+    <name>alnj-core</name>
     <message>
         <source>Connection options:</source>
         <translation>Opcions de connexió:</translation>

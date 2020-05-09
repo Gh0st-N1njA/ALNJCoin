@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/lockunlock.h"
-#include "qt/alnjl/forms/ui_lockunlock.h"
+#include "qt/alnj/lockunlock.h"
+#include "qt/alnj/forms/ui_lockunlock.h"
 
 LockUnlock::LockUnlock(QWidget *parent) :
     QWidget(parent),

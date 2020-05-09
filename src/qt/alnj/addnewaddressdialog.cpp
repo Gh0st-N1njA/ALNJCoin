@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/addnewaddressdialog.h"
-#include "qt/alnjl/forms/ui_addnewaddressdialog.h"
+#include "qt/alnj/addnewaddressdialog.h"
+#include "qt/alnj/forms/ui_addnewaddressdialog.h"
 
 AddNewAddressDialog::AddNewAddressDialog(QWidget *parent) :
     QWidget(parent),

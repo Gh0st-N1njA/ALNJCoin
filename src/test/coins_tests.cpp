@@ -8,7 +8,7 @@
 #include "script/standard.h"
 #include "uint256.h"
 #include "utilstrencodings.h"
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <vector>
 #include <map>

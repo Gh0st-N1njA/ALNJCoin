@@ -6,7 +6,7 @@
 #ifndef TOOLTIPMENU_H
 #define TOOLTIPMENU_H
 
-#include "qt/alnjl/pwidget.h"
+#include "qt/alnj/pwidget.h"
 #include <QWidget>
 #include <QModelIndex>
 

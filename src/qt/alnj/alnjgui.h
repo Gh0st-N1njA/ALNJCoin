@@ -7,7 +7,7 @@
 #define ALNJ_CORE_NEW_GUI_ALNJGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnjl-config.h"
+#include "config/alnj-config.h"
 #endif
 
 #include <QMainWindow>
@@ -15,17 +15,17 @@
 #include <QSystemTrayIcon>
 #include <QLabel>
 
-#include "qt/alnjl/navmenuwidget.h"
-#include "qt/alnjl/topbar.h"
-#include "qt/alnjl/dashboardwidget.h"
-#include "qt/alnjl/send.h"
-#include "qt/alnjl/receivewidget.h"
-#include "qt/alnjl/addresseswidget.h"
-#include "qt/alnjl/privacywidget.h"
-#include "qt/alnjl/coldstakingwidget.h"
-#include "qt/alnjl/masternodeswidget.h"
-#include "qt/alnjl/snackbar.h"
-#include "qt/alnjl/settings/settingswidget.h"
+#include "qt/alnj/navmenuwidget.h"
+#include "qt/alnj/topbar.h"
+#include "qt/alnj/dashboardwidget.h"
+#include "qt/alnj/send.h"
+#include "qt/alnj/receivewidget.h"
+#include "qt/alnj/addresseswidget.h"
+#include "qt/alnj/privacywidget.h"
+#include "qt/alnj/coldstakingwidget.h"
+#include "qt/alnj/masternodeswidget.h"
+#include "qt/alnj/snackbar.h"
+#include "qt/alnj/settings/settingswidget.h"
 #include "qt/rpcconsole.h"
 
 

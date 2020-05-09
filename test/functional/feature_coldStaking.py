@@ -14,7 +14,7 @@ from test_framework.blocktools import create_coinbase, create_block
 from test_framework.key import CECKey
 from test_framework.messages import CTransaction, CTxIn, CTxOut, COutPoint, COIN
 from test_framework.mininode import network_thread_start
-from test_framework.alnjl_node import AlnjTestNode
+from test_framework.alnj_node import AlnjTestNode
 from test_framework.script import CScript, OP_CHECKSIG
 from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import hash256, connect_nodes_bi, p2p_port, bytes_to_hex_str, \

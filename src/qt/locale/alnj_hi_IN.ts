@@ -405,7 +405,7 @@
     </message>
     </context>
 <context>
-    <name>alnjl-core</name>
+    <name>alnj-core</name>
     <message>
         <source>Information</source>
         <translation>जानकारी</translation>

@@ -3,19 +3,19 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/settings/settingsmainoptionswidget.h"
-#include "qt/alnjl/settings/forms/ui_settingsmainoptionswidget.h"
+#include "qt/alnj/settings/settingsmainoptionswidget.h"
+#include "qt/alnj/settings/forms/ui_settingsmainoptionswidget.h"
 #include "QListView"
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnjl-config.h"
+#include "config/alnj-config.h"
 #endif
 
 #include "bitcoinunits.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
 #include "clientmodel.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
 #include "main.h" // for MAX_SCRIPTCHECK_THREADS
 #include "netbase.h"

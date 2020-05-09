@@ -7,7 +7,7 @@
 #include "serialize.h"
 #include "streams.h"
 #include "hash.h"
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <stdint.h>
 

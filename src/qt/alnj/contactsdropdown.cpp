@@ -3,14 +3,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/contactsdropdown.h"
+#include "qt/alnj/contactsdropdown.h"
 
 #include <QPainter>
 #include <QSizePolicy>
-#include "qt/alnjl/addresslabelrow.h"
-#include "qt/alnjl/contactdropdownrow.h"
-#include "qt/alnjl/qtutils.h"
-#include "qt/alnjl/furlistrow.h"
+#include "qt/alnj/addresslabelrow.h"
+#include "qt/alnj/contactdropdownrow.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/furlistrow.h"
 #include "walletmodel.h"
 #include "addresstablemodel.h"
 

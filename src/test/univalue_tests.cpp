@@ -9,7 +9,7 @@
 #include <string>
 #include <map>
 #include <univalue.h>
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <boost/test/unit_test.hpp>
 

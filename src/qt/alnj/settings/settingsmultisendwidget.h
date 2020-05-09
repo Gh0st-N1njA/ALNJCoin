@@ -8,8 +8,8 @@
 
 #include <QWidget>
 #include <QAbstractTableModel>
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/furabstractlistitemdelegate.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/furabstractlistitemdelegate.h"
 
 class ALNJGUI;
 

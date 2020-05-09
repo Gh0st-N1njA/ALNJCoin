@@ -3,10 +3,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/settings/settingsmultisendwidget.h"
-#include "qt/alnjl/settings/forms/ui_settingsmultisendwidget.h"
-#include "qt/alnjl/settings/settingsmultisenddialog.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/settings/settingsmultisendwidget.h"
+#include "qt/alnj/settings/forms/ui_settingsmultisendwidget.h"
+#include "qt/alnj/settings/settingsmultisenddialog.h"
+#include "qt/alnj/qtutils.h"
 #include "addresstablemodel.h"
 #include "base58.h"
 #include "init.h"

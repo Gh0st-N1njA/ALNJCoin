@@ -11,7 +11,7 @@
 #include <QAction>
 #include "walletmodel.h"
 #include "amount.h"
-#include "qt/alnjl/pwidget.h"
+#include "qt/alnj/pwidget.h"
 
 class WalletModel;
 class SendCoinsRecipient;

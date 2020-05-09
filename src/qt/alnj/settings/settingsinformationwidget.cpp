@@ -3,14 +3,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/settings/settingsinformationwidget.h"
-#include "qt/alnjl/settings/forms/ui_settingsinformationwidget.h"
+#include "qt/alnj/settings/settingsinformationwidget.h"
+#include "qt/alnj/settings/forms/ui_settingsinformationwidget.h"
 #include "clientmodel.h"
 #include "chainparams.h"
 #include "db.h"
 #include "util.h"
 #include "guiutil.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 #include <QDir>
 
 SettingsInformationWidget::SettingsInformationWidget(ALNJGUI* _window,QWidget *parent) :
@@ -115,7 +115,7 @@ SettingsInformationWidget::SettingsInformationWidget(ALNJGUI* _window,QWidget *p
     });
     connect(ui->pushButtonFile, &QPushButton::clicked, [this](){
         if (!GUIUtil::openConfigfile())
-            inform(tr("Unable to open alnjl.conf with default application"));
+            inform(tr("Unable to open alnj.conf with default application"));
     });
     connect(ui->pushButtonNetworkMonitor, SIGNAL(clicked()), this, SLOT(openNetworkMonitor()));
 }

@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.alnjl.Alnj-Qt";
+        return @"io.alnj.Alnj-Qt";
     } else {
         return [self __bundleIdentifier];
     }

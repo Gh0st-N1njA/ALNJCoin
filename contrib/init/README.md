@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: alnjld.service
-Upstart: alnjld.conf
-OpenRC:  alnjld.openrc
-         alnjld.openrcconf
-CentOS:  alnjld.init
-macOS:    org.alnjl.alnjld.plist
+SystemD: alnjd.service
+Upstart: alnjd.conf
+OpenRC:  alnjd.openrc
+         alnjd.openrcconf
+CentOS:  alnjd.init
+macOS:    org.alnj.alnjd.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

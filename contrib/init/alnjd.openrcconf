@@ -1,25 +1,25 @@
-# /etc/conf.d/alnjld: config file for /etc/init.d/alnjld
+# /etc/conf.d/alnjd: config file for /etc/init.d/alnjd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/alnjl/alnjl.conf"
+#BITCOIND_CONFIGFILE="/etc/alnj/alnj.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/alnjld"
+#BITCOIND_PIDDIR="/var/run/alnjd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/alnjld.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/alnjd.pid"
 
-# Where to write alnjld data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/alnjld"
+# Where to write alnjd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/alnjd"
 
-# User and group to own alnjld process
-#BITCOIND_USER="alnjl"
-#BITCOIND_GROUP="alnjl"
+# User and group to own alnjd process
+#BITCOIND_USER="alnj"
+#BITCOIND_GROUP="alnj"
 
-# Path to alnjld executable
-#BITCOIND_BIN="/usr/bin/alnjld"
+# Path to alnjd executable
+#BITCOIND_BIN="/usr/bin/alnjd"
 
-# Nice value to run alnjld under
+# Nice value to run alnjd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

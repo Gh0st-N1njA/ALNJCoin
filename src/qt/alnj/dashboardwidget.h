@@ -6,11 +6,11 @@
 #ifndef DASHBOARDWIDGET_H
 #define DASHBOARDWIDGET_H
 
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/furabstractlistitemdelegate.h"
-#include "qt/alnjl/furlistrow.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/furabstractlistitemdelegate.h"
+#include "qt/alnj/furlistrow.h"
 #include "transactiontablemodel.h"
-#include "qt/alnjl/txviewholder.h"
+#include "qt/alnj/txviewholder.h"
 #include "transactionfilterproxy.h"
 
 #include <atomic>
@@ -20,7 +20,7 @@
 #include <QMap>
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnjl-config.h" /* for USE_QTCHARTS */
+#include "config/alnj-config.h" /* for USE_QTCHARTS */
 #endif
 
 #ifdef USE_QTCHARTS

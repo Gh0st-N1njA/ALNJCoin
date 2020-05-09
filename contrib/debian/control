@@ -1,4 +1,4 @@
-Source: alnjl
+Source: alnj
 Section: utils
 Priority: optional
 Maintainer: Fuzzbawls <fuzzbawls@gmail.com>
@@ -28,11 +28,11 @@ Build-Depends: debhelper,
  libzmq3-dev,
  dh-systemd
 Standards-Version: 3.9.2
-Homepage: http://www.alnjlite.com
+Homepage: http://www.alnjite.com
 Vcs-Git: git://github.com/ALNJ-Project/ALNJ.git
 Vcs-Browser: http://github.com/ALNJ-Project/ALNJ
 
-Package: alnjld
+Package: alnjd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -45,10 +45,10 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 10+ GB of space, slowly growing.
  .
- This package provides the daemon, alnjld, and the CLI tool
- alnjl-cli to interact with the daemon.
+ This package provides the daemon, alnjd, and the CLI tool
+ alnj-cli to interact with the daemon.
 
-Package: alnjl-qt
+Package: alnj-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI

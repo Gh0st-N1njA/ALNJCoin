@@ -8,8 +8,8 @@
 
 #include <QWidget>
 #include <QColor>
-#include "qt/alnjl/myaddressrow.h"
-#include "qt/alnjl/furlistrow.h"
+#include "qt/alnj/myaddressrow.h"
+#include "qt/alnj/furlistrow.h"
 #include "guiutil.h"
 
 

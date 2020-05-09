@@ -2579,7 +2579,7 @@
     </message>
     </context>
 <context>
-    <name>alnjl-core</name>
+    <name>alnj-core</name>
     <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation>Otkrij svoju IP adresu (zadano: 1 kada sluša i nema -externalip)</translation>

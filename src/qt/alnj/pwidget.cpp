@@ -3,9 +3,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/qtutils.h"
-#include "qt/alnjl/loadingdialog.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/loadingdialog.h"
 #include <QRunnable>
 #include <QThreadPool>
 

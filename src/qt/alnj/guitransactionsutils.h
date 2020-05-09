@@ -7,7 +7,7 @@
 #define FURSZY_ALNJ_GUITRANSACTIONSUTILS_H
 
 #include "walletmodel.h"
-#include "qt/alnjl/pwidget.h"
+#include "qt/alnj/pwidget.h"
 
 
 namespace GuiTransactionsUtils {

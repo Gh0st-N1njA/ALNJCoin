@@ -10,7 +10,7 @@
 #include "base58.h"
 #include "wallet/wallet.h"
 
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <boost/algorithm/string.hpp>
 #include <boost/test/unit_test.hpp>

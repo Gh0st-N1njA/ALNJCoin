@@ -3,9 +3,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/masternodewizarddialog.h"
-#include "qt/alnjl/forms/ui_masternodewizarddialog.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/masternodewizarddialog.h"
+#include "qt/alnj/forms/ui_masternodewizarddialog.h"
+#include "qt/alnj/qtutils.h"
 #include "optionsmodel.h"
 #include "pairresult.h"
 #include "activemasternode.h"

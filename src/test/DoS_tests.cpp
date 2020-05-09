@@ -18,7 +18,7 @@
 #include "serialize.h"
 #include "util.h"
 
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <stdint.h>
 

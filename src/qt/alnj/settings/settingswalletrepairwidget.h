@@ -7,7 +7,7 @@
 #define SETTINGSWALLETREPAIRWIDGET_H
 
 #include <QWidget>
-#include "qt/alnjl/pwidget.h"
+#include "qt/alnj/pwidget.h"
 
 namespace Ui {
 class SettingsWalletRepairWidget;

@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/tooltipmenu.h"
-#include "qt/alnjl/forms/ui_tooltipmenu.h"
+#include "qt/alnj/tooltipmenu.h"
+#include "qt/alnj/forms/ui_tooltipmenu.h"
 
-#include "qt/alnjl/alnjlgui.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/alnjgui.h"
+#include "qt/alnj/qtutils.h"
 #include <QTimer>
 
 TooltipMenu::TooltipMenu(ALNJGUI *_window, QWidget *parent) :

@@ -9,7 +9,7 @@
 #include <QDialog>
 #include <QPixmap>
 #include "walletmodel.h"
-#include "qt/alnjl/snackbar.h"
+#include "qt/alnj/snackbar.h"
 
 class WalletModel;
 class ALNJGUI;

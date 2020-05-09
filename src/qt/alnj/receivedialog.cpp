@@ -3,9 +3,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/receivedialog.h"
-#include "qt/alnjl/forms/ui_receivedialog.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/receivedialog.h"
+#include "qt/alnj/forms/ui_receivedialog.h"
+#include "qt/alnj/qtutils.h"
 #include "walletmodel.h"
 #include <QFile>
 

@@ -17,7 +17,7 @@ nBlockStakeModifierlV2 = 255
 ''' -------------------------------------------------------------------------
 TestNode CLASS --------------------------------------------------------------
 
-A peer we use to send messsages to alnjld and store responses
+A peer we use to send messsages to alnjd and store responses
 Extends P2PInterface.
 '''
 

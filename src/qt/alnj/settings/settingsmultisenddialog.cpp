@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/settings/settingsmultisenddialog.h"
-#include "qt/alnjl/settings/forms/ui_settingsmultisenddialog.h"
+#include "qt/alnj/settings/settingsmultisenddialog.h"
+#include "qt/alnj/settings/forms/ui_settingsmultisenddialog.h"
 #include <QListView>
 #include <QIntValidator>
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/qtutils.h"
 
 SettingsMultisendDialog::SettingsMultisendDialog(QWidget *parent) :
     QDialog(parent),

@@ -9,7 +9,7 @@
 #define BITCOIN_BIGNUM_H
 
 #if defined HAVE_CONFIG_H
-#include "config/alnjl-config.h"
+#include "config/alnj-config.h"
 #endif
 
 #if defined(USE_NUM_OPENSSL)

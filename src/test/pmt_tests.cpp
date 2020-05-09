@@ -10,7 +10,7 @@
 #include "uint256.h"
 #include "version.h"
 #include "consensus/merkle.h"
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 
 #include <vector>
 

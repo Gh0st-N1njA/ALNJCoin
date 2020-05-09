@@ -2796,7 +2796,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("alnjl-scriptch");
+    RenameThread("alnj-scriptch");
     scriptcheckqueue.Thread();
 }
 

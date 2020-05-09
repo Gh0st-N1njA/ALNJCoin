@@ -1,6 +1,6 @@
 [Protocol]
-exec=alnjl-qt '%u'
-protocol=alnjl
+exec=alnj-qt '%u'
+protocol=alnj
 input=none
 output=none
 helper=true

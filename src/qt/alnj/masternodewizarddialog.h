@@ -8,7 +8,7 @@
 
 #include <QDialog>
 #include "walletmodel.h"
-#include "qt/alnjl/snackbar.h"
+#include "qt/alnj/snackbar.h"
 #include "masternodeconfig.h"
 
 class WalletModel;

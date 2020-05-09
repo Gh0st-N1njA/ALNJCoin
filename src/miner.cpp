@@ -669,7 +669,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
     LogPrintf("ALNJMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("alnjl-miner");
+    RenameThread("alnj-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

@@ -8,7 +8,7 @@
 
 #include <QWidget>
 #include <QDataWidgetMapper>
-#include "qt/alnjl/pwidget.h"
+#include "qt/alnj/pwidget.h"
 namespace Ui {
 class SettingsWalletOptionsWidget;
 }

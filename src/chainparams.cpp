@@ -253,8 +253,8 @@ if(genesis.GetHash() != uint256("0x"))
         assert(genesis.hashMerkleRoot == uint256("0x3a2353b4f74192b56cc2cfbbfe49796948f47cece1b9ea3278fd11aed287b4d1"));
 
         vSeeds.clear();
-       // vSeeds.push_back(CDNSSeedData("alnjlite.com", "seedhost1.alnjlite.com"));     // Primary DNS Seeder
-       // vSeeds.push_back(CDNSSeedData("alnjlite.com", "seedhost2.alnjlite.com"));    // Secondary DNS Seeder
+       // vSeeds.push_back(CDNSSeedData("alnjite.com", "seedhost1.alnjite.com"));     // Primary DNS Seeder
+       // vSeeds.push_back(CDNSSeedData("alnjite.com", "seedhost2.alnjite.com"));    // Secondary DNS Seeder
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);  //starting with A
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  //starting with 8
@@ -403,19 +403,19 @@ if(genesis.GetHash() != uint256("0x"))
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        // vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnjl-testnet.seed.fuzzbawls.pw"));
-        // vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnjl-testnet.seed2.fuzzbawls.pw"));
-        // vSeeds.push_back(CDNSSeedData("warrows.dev", "testnet.dnsseed.alnjl.warrows.dev"));
+        // vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnj-testnet.seed.fuzzbawls.pw"));
+        // vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "alnj-testnet.seed2.fuzzbawls.pw"));
+        // vSeeds.push_back(CDNSSeedData("warrows.dev", "testnet.dnsseed.alnj.warrows.dev"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 120); // Testnet alnjl addresses start with 'q'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet alnjl script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 120); // Testnet alnj addresses start with 'q'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet alnj script addresses start with '8' or '9'
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 73);     // starting with 'W'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet alnjl BIP32 pubkeys start with 'DRKV'
+        // Testnet alnj BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet alnjl BIP32 prvkeys start with 'DRKP'
+        // Testnet alnj BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet alnjl BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet alnj BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));

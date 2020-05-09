@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../alnjl.qrc"/>
+  <include location="../alnj.qrc"/>
  </resources>
  <connections/>
 </ui>

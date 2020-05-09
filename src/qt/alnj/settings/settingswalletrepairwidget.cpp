@@ -3,9 +3,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/settings/settingswalletrepairwidget.h"
-#include "qt/alnjl/settings/forms/ui_settingswalletrepairwidget.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/settings/settingswalletrepairwidget.h"
+#include "qt/alnj/settings/forms/ui_settingswalletrepairwidget.h"
+#include "qt/alnj/qtutils.h"
 
 SettingsWalletRepairWidget::SettingsWalletRepairWidget(ALNJGUI* _window, QWidget *parent) :
     PWidget(_window, parent),

@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/dashboardwidget.h"
-#include "qt/alnjl/forms/ui_dashboardwidget.h"
-#include "qt/alnjl/sendconfirmdialog.h"
-#include "qt/alnjl/txrow.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/dashboardwidget.h"
+#include "qt/alnj/forms/ui_dashboardwidget.h"
+#include "qt/alnj/sendconfirmdialog.h"
+#include "qt/alnj/txrow.h"
+#include "qt/alnj/qtutils.h"
 #include "guiutil.h"
 #include "walletmodel.h"
 #include "clientmodel.h"

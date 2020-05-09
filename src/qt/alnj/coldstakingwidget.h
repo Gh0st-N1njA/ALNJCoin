@@ -6,14 +6,14 @@
 #ifndef COLDSTAKINGWIDGET_H
 #define COLDSTAKINGWIDGET_H
 
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/furabstractlistitemdelegate.h"
-#include "qt/alnjl/txviewholder.h"
-#include "qt/alnjl/tooltipmenu.h"
-#include "qt/alnjl/sendmultirow.h"
-#include "qt/alnjl/coldstakingmodel.h"
-#include "qt/alnjl/contactsdropdown.h"
-#include "qt/alnjl/addressholder.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/furabstractlistitemdelegate.h"
+#include "qt/alnj/txviewholder.h"
+#include "qt/alnj/tooltipmenu.h"
+#include "qt/alnj/sendmultirow.h"
+#include "qt/alnj/coldstakingmodel.h"
+#include "qt/alnj/contactsdropdown.h"
+#include "qt/alnj/addressholder.h"
 #include "transactiontablemodel.h"
 #include "addresstablemodel.h"
 #include "addressfilterproxymodel.h"

@@ -11,14 +11,14 @@
 #include "txdb.h"
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
 
 
 BOOST_FIXTURE_TEST_SUITE(zerocoin_denom_tests, BasicTestingSetup)
 
-//translation from alnjl quantity to zerocoin denomination
+//translation from alnj quantity to zerocoin denomination
 BOOST_AUTO_TEST_CASE(amount_to_denomination_test)
 {
     std::cout << "Running amount_to_denomination_test...\n";

@@ -43,7 +43,7 @@ public:
 
     bool addWitWork(CGenWit wit) {
         if (!isWorkerRunning) {
-            LogPrintf("%s not running trying to add wit work \n", "alnjl-light-thread");
+            LogPrintf("%s not running trying to add wit work \n", "alnj-light-thread");
             return false;
         }
         requestsQueue.push(wit);
@@ -51,13 +51,13 @@ public:
     }
 
     void StartLightZalnjThread(boost::thread_group& threadGroup) {
-        LogPrintf("%s thread start\n", "alnjl-light-thread");
+        LogPrintf("%s thread start\n", "alnj-light-thread");
         threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZPIVSimplified, this));
     }
 
     void StopLightZalnjThread() {
         threadIns.interrupt();
-        LogPrintf("%s thread interrupted\n", "alnjl-light-thread");
+        LogPrintf("%s thread interrupted\n", "alnj-light-thread");
     }
 
 private:

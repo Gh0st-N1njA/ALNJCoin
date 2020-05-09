@@ -14,7 +14,7 @@
 #include "wallet/walletdb.h"
 #include "txdb.h"
 #include "zalnj/zalnjmodule.h"
-#include "test/test_alnjl.h"
+#include "test/test_alnj.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
 

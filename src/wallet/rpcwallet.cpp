@@ -111,7 +111,7 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
             "1. \"account\"        (string, optional) The account name for the address to be linked to. if not provided, the default account \"\" is used. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"alnjladdress\"    (string) The new alnjl address\n"
+            "\"alnjaddress\"    (string) The new alnj address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewaddress", "") + HelpExampleRpc("getnewaddress", "\"\"") +
@@ -133,7 +133,7 @@ UniValue getnewstakingaddress(const UniValue& params, bool fHelp)
 
 
             "\nResult:\n"
-            "\"alnjladdress\"    (string) The new alnjl address\n"
+            "\"alnjaddress\"    (string) The new alnj address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewstakingaddress", "") + HelpExampleRpc("getnewstakingaddress", "\"\"") +
@@ -323,7 +323,7 @@ UniValue getaccountaddress(const UniValue& params, bool fHelp)
             "1. \"account\"       (string, required) The account name for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"alnjladdress\"   (string) The account alnjl address\n"
+            "\"alnjaddress\"   (string) The account alnj address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getaccountaddress", "") + HelpExampleCli("getaccountaddress", "\"\"") +
@@ -377,11 +377,11 @@ UniValue setaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
-            "setaccount \"alnjladdress\" \"account\"\n"
+            "setaccount \"alnjaddress\" \"account\"\n"
             "\nSets the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"alnjladdress\"  (string, required) The alnjl address to be associated with an account.\n"
+            "1. \"alnjaddress\"  (string, required) The alnj address to be associated with an account.\n"
             "2. \"account\"         (string, required) The account to assign the address to.\n"
 
             "\nExamples:\n" +
@@ -418,11 +418,11 @@ UniValue getaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw std::runtime_error(
-            "getaccount \"alnjladdress\"\n"
+            "getaccount \"alnjaddress\"\n"
             "\nReturns the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"alnjladdress\"  (string, required) The alnjl address for account lookup.\n"
+            "1. \"alnjaddress\"  (string, required) The alnj address for account lookup.\n"
 
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
@@ -456,7 +456,7 @@ UniValue getaddressesbyaccount(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "[                     (json array of string)\n"
-            "  \"alnjladdress\"  (string) a alnjl address associated with the given account\n"
+            "  \"alnjaddress\"  (string) a alnj address associated with the given account\n"
             "  ,...\n"
             "]\n"
 
@@ -514,12 +514,12 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw std::runtime_error(
-            "sendtoaddress \"alnjladdress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddress \"alnjaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"alnjladdress\"  (string, required) The alnjl address to send to.\n"
+            "1. \"alnjaddress\"  (string, required) The alnj address to send to.\n"
             "2. \"amount\"      (numeric, required) The amount in ALNJ to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
@@ -656,9 +656,9 @@ UniValue delegatestake(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"stakingaddress\"      (string, required) The alnjl staking address to delegate.\n"
+            "1. \"stakingaddress\"      (string, required) The alnj staking address to delegate.\n"
             "2. \"amount\"              (numeric, required) The amount in ALNJ to delegate for staking. eg 100\n"
-            "3. \"owneraddress\"        (string, optional) The alnjl address corresponding to the key that will be able to spend the stake. \n"
+            "3. \"owneraddress\"        (string, optional) The alnj address corresponding to the key that will be able to spend the stake. \n"
             "                               If not provided, or empty string, a new wallet address is generated.\n"
             "4. \"fExternalOwner\"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.\n"
             "                               WARNING: The owner of the keys to 'owneraddress' will be the only one allowed to spend these coins.\n"
@@ -700,9 +700,9 @@ UniValue rawdelegatestake(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"stakingaddress\"      (string, required) The alnjl staking address to delegate.\n"
+            "1. \"stakingaddress\"      (string, required) The alnj staking address to delegate.\n"
             "2. \"amount\"              (numeric, required) The amount in ALNJ to delegate for staking. eg 100\n"
-            "3. \"owneraddress\"        (string, optional) The alnjl address corresponding to the key that will be able to spend the stake. \n"
+            "3. \"owneraddress\"        (string, optional) The alnj address corresponding to the key that will be able to spend the stake. \n"
             "                               If not provided, or empty string, a new wallet address is generated.\n"
             "4. \"fExternalOwner\"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.\n"
             "                               WARNING: The owner of the keys to 'owneraddress' will be the only one allowed to spend these coins.\n"
@@ -736,7 +736,7 @@ UniValue rawdelegatestake(const UniValue& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"alnjladdress\"        (string) alnjl address\n"
+            "           \"alnjaddress\"        (string) alnj address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -767,12 +767,12 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw std::runtime_error(
-            "sendtoaddressix \"alnjladdress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddressix \"alnjaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"alnjladdress\"  (string, required) The alnjl address to send to.\n"
+            "1. \"alnjaddress\"  (string, required) The alnj address to send to.\n"
             "2. \"amount\"      (numeric, required) The amount in ALNJ to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
@@ -824,7 +824,7 @@ UniValue listaddressgroupings(const UniValue& params, bool fHelp)
             "[\n"
             "  [\n"
             "    [\n"
-            "      \"alnjladdress\",     (string) The alnjl address\n"
+            "      \"alnjaddress\",     (string) The alnj address\n"
             "      amount,                 (numeric) The amount in ALNJ\n"
             "      \"account\"             (string, optional) The account\n"
             "    ]\n"
@@ -861,12 +861,12 @@ UniValue signmessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw std::runtime_error(
-            "signmessage \"alnjladdress\" \"message\"\n"
+            "signmessage \"alnjaddress\" \"message\"\n"
             "\nSign a message with the private key of an address" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"alnjladdress\"  (string, required) The alnjl address to use for the private key.\n"
+            "1. \"alnjaddress\"  (string, required) The alnj address to use for the private key.\n"
             "2. \"message\"         (string, required) The message to create a signature of.\n"
 
             "\nResult:\n"
@@ -916,11 +916,11 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
-            "getreceivedbyaddress \"alnjladdress\" ( minconf )\n"
-            "\nReturns the total amount received by the given alnjladdress in transactions with at least minconf confirmations.\n"
+            "getreceivedbyaddress \"alnjaddress\" ( minconf )\n"
+            "\nReturns the total amount received by the given alnjaddress in transactions with at least minconf confirmations.\n"
 
             "\nArguments:\n"
-            "1. \"alnjladdress\"  (string, required) The alnjl address for transactions.\n"
+            "1. \"alnjaddress\"  (string, required) The alnj address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
@@ -938,7 +938,7 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
-    // alnjl address
+    // alnj address
     CBitcoinAddress address = CBitcoinAddress(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid ALNJ address");
@@ -1279,14 +1279,14 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 7)
         throw std::runtime_error(
-            "sendfrom \"fromaccount\" \"toalnjladdress\" amount ( minconf \"comment\" \"comment-to\" includeDelegated)\n"
-            "\nSent an amount from an account to a alnjl address.\n"
+            "sendfrom \"fromaccount\" \"toalnjaddress\" amount ( minconf \"comment\" \"comment-to\" includeDelegated)\n"
+            "\nSent an amount from an account to a alnj address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001." +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
-            "2. \"toalnjladdress\"  (string, required) The alnjl address to send funds to.\n"
+            "2. \"toalnjaddress\"  (string, required) The alnj address to send funds to.\n"
             "3. amount                (numeric, required) The amount in ALNJ. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
@@ -1354,7 +1354,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
             "1. \"fromaccount\"         (string, required) The account to send the funds from, can be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The alnjl address is the key, the numeric amount in ALNJ is the value\n"
+            "      \"address\":amount   (numeric) The alnj address is the key, the numeric amount in ALNJ is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1445,15 +1445,15 @@ UniValue addmultisigaddress(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. nrequired        (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keysobject\"   (string, required) A json array of alnjl addresses or hex-encoded public keys\n"
+            "2. \"keysobject\"   (string, required) A json array of alnj addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"address\"  (string) alnjl address or hex-encoded public key\n"
+            "       \"address\"  (string) alnj address or hex-encoded public key\n"
             "       ...,\n"
             "     ]\n"
             "3. \"account\"      (string, optional) An account to assign the addresses to.\n"
 
             "\nResult:\n"
-            "\"alnjladdress\"  (string) A alnjl address associated with the keys.\n"
+            "\"alnjaddress\"  (string) A alnj address associated with the keys.\n"
 
             "\nExamples:\n"
             "\nAdd a multisig address from 2 addresses\n" +
@@ -1853,7 +1853,7 @@ UniValue listtransactions(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. \n"
             "                                                It will be \"\" for the default account.\n"
-            "    \"address\":\"alnjladdress\",    (string) The alnjl address of the transaction. Not present for \n"
+            "    \"address\":\"alnjaddress\",    (string) The alnj address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
@@ -2055,7 +2055,7 @@ UniValue listsinceblock(const UniValue& params, bool fHelp)
             "{\n"
             "  \"transactions\": [\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. Will be \"\" for the default account.\n"
-            "    \"address\":\"alnjladdress\",    (string) The alnjl address of the transaction. Not present for move transactions (category = move).\n"
+            "    \"address\":\"alnjaddress\",    (string) The alnj address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
             "    \"amount\": x.xxx,          (numeric) The amount in ALNJ. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
@@ -2152,7 +2152,7 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
             "  \"details\" : [\n"
             "    {\n"
             "      \"account\" : \"accountname\",  (string) The account name involved in the transaction, can be \"\" for the default account.\n"
-            "      \"address\" : \"alnjladdress\",   (string) The alnjl address involved in the transaction\n"
+            "      \"address\" : \"alnjaddress\",   (string) The alnj address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
             "      \"amount\" : x.xxx                  (numeric) The amount in ALNJ\n"
             "      \"vout\" : n,                       (numeric) the vout value\n"
@@ -2476,7 +2476,7 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
             "\nNow set the passphrase to use the wallet, such as for signing or sending PIVs\n" +
             HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n" +
-            HelpExampleCli("signmessage", "\"alnjladdress\" \"test message\"") +
+            HelpExampleCli("signmessage", "\"alnjaddress\" \"test message\"") +
             "\nNow lock the wallet again by removing the passphrase\n" +
             HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n" +
@@ -2507,7 +2507,7 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; alnjl server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; alnj server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
 }
 
 UniValue lockunspent(const UniValue& params, bool fHelp)

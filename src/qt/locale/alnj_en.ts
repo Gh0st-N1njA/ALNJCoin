@@ -4,7 +4,7 @@
 <context>
     <name>AddNewAddressDialog</name>
     <message>
-        <location filename="../alnjl/forms/addnewaddressdialog.ui" line="+14"/>
+        <location filename="../alnj/forms/addnewaddressdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -37,7 +37,7 @@
 <context>
     <name>AddNewContactDialog</name>
     <message>
-        <location filename="../alnjl/forms/addnewcontactdialog.ui" line="+14"/>
+        <location filename="../alnj/forms/addnewcontactdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -58,7 +58,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/addnewcontactdialog.cpp" line="+20"/>
+        <location filename="../alnj/addnewcontactdialog.cpp" line="+20"/>
         <source>Edit Contact</source>
         <translation type="unfinished"></translation>
     </message>
@@ -210,7 +210,7 @@
 <context>
     <name>AddressLabelRow</name>
     <message>
-        <location filename="../alnjl/forms/addresslabelrow.ui" line="+20"/>
+        <location filename="../alnj/forms/addresslabelrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -251,7 +251,7 @@
 <context>
     <name>AddressesWidget</name>
     <message>
-        <location filename="../alnjl/forms/addresseswidget.ui" line="+14"/>
+        <location filename="../alnj/forms/addresseswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -272,7 +272,7 @@
     </message>
     <message>
         <location line="+74"/>
-        <location filename="../alnjl/addresseswidget.cpp" line="+109"/>
+        <location filename="../alnj/addresseswidget.cpp" line="+109"/>
         <source>Contact name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -287,7 +287,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/addresseswidget.cpp" line="-28"/>
+        <location filename="../alnj/addresseswidget.cpp" line="-28"/>
         <source>Contacts</source>
         <translation type="unfinished"></translation>
     </message>
@@ -591,14 +591,14 @@ for staking</source>
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+480"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (alnjl.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (alnj.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CSRow</name>
     <message>
-        <location filename="../alnjl/forms/csrow.ui" line="+14"/>
+        <location filename="../alnj/forms/csrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -623,7 +623,7 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/csrow.cpp" line="+27"/>
+        <location filename="../alnj/csrow.cpp" line="+27"/>
         <source>Own delegation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -964,7 +964,7 @@ for staking</source>
 <context>
     <name>CoinControlPivWidget</name>
     <message>
-        <location filename="../alnjl/forms/coincontrolalnjwidget.ui" line="+14"/>
+        <location filename="../alnj/forms/coincontrolalnjwidget.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1073,7 +1073,7 @@ for staking</source>
 <context>
     <name>ColdStakingWidget</name>
     <message>
-        <location filename="../alnjl/forms/coldstakingwidget.ui" line="+14"/>
+        <location filename="../alnj/forms/coldstakingwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1109,7 +1109,7 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/coldstakingwidget.cpp" line="+88"/>
+        <location filename="../alnj/coldstakingwidget.cpp" line="+88"/>
         <source>Cold Staking</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1335,7 +1335,7 @@ address</source>
 <context>
     <name>ContactDropdownRow</name>
     <message>
-        <location filename="../alnjl/forms/contactdropdownrow.ui" line="+20"/>
+        <location filename="../alnj/forms/contactdropdownrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1353,7 +1353,7 @@ address</source>
 <context>
     <name>DashboardWidget</name>
     <message>
-        <location filename="../alnjl/forms/dashboardwidget.ui" line="+14"/>
+        <location filename="../alnj/forms/dashboardwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1379,7 +1379,7 @@ address</source>
     </message>
     <message>
         <location line="+93"/>
-        <location filename="../alnjl/dashboardwidget.cpp" line="+49"/>
+        <location filename="../alnj/dashboardwidget.cpp" line="+49"/>
         <source>Staking Rewards</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1437,7 +1437,7 @@ address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/dashboardwidget.cpp" line="+5"/>
+        <location filename="../alnj/dashboardwidget.cpp" line="+5"/>
         <source>You can view your account&apos;s history</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1559,7 +1559,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>DefaultDialog</name>
     <message>
-        <location filename="../alnjl/forms/defaultdialog.ui" line="+14"/>
+        <location filename="../alnj/forms/defaultdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1587,7 +1587,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>DenomGenerationDialog</name>
     <message>
-        <location filename="../alnjl/forms/denomgenerationdialog.ui" line="+14"/>
+        <location filename="../alnj/forms/denomgenerationdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1728,7 +1728,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>ExpandableButton</name>
     <message>
-        <location filename="../alnjl/forms/expandablebutton.ui" line="+26"/>
+        <location filename="../alnj/forms/expandablebutton.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1964,7 +1964,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>LoadingDialog</name>
     <message>
-        <location filename="../alnjl/forms/loadingdialog.ui" line="+14"/>
+        <location filename="../alnj/forms/loadingdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1975,7 +1975,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+44"/>
-        <location filename="../alnjl/loadingdialog.cpp" line="+43"/>
+        <location filename="../alnj/loadingdialog.cpp" line="+43"/>
         <source>Loading</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1988,12 +1988,12 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>LockUnlock</name>
     <message>
-        <location filename="../alnjl/forms/lockunlock.ui" line="+14"/>
+        <location filename="../alnj/forms/lockunlock.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location filename="../alnjl/lockunlock.cpp" line="+26"/>
+        <location filename="../alnj/lockunlock.cpp" line="+26"/>
         <source>Unlock Wallet</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2011,7 +2011,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MNRow</name>
     <message>
-        <location filename="../alnjl/forms/mnrow.ui" line="+14"/>
+        <location filename="../alnj/forms/mnrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2034,7 +2034,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MasterNodeWizardDialog</name>
     <message>
-        <location filename="../alnjl/forms/masternodewizarddialog.ui" line="+14"/>
+        <location filename="../alnj/forms/masternodewizarddialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2124,7 +2124,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/masternodewizarddialog.cpp" line="+51"/>
+        <location filename="../alnj/masternodewizarddialog.cpp" line="+51"/>
         <source>e.g user_masternode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2237,7 +2237,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MasterNodesWidget</name>
     <message>
-        <location filename="../alnjl/forms/masternodeswidget.ui" line="+14"/>
+        <location filename="../alnj/forms/masternodeswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2253,7 +2253,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/masternodeswidget.cpp" line="+90"/>
+        <location filename="../alnj/masternodeswidget.cpp" line="+90"/>
         <source>Masternodes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2316,7 +2316,7 @@ Please wait few more minutes.</source>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the alnjl.conf file
+You will only have to paste the data in the alnj.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press &quot;start&quot;).
 </source>
@@ -2369,13 +2369,13 @@ Are you sure?</source>
 <context>
     <name>MnInfoDialog</name>
     <message>
-        <location filename="../alnjl/forms/mninfodialog.ui" line="+20"/>
+        <location filename="../alnj/forms/mninfodialog.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+84"/>
-        <location filename="../alnjl/mninfodialog.cpp" line="+20"/>
+        <location filename="../alnj/mninfodialog.cpp" line="+20"/>
         <source>Master Node Information</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2434,7 +2434,7 @@ Are you sure?</source>
 <context>
     <name>MyAddressRow</name>
     <message>
-        <location filename="../alnjl/forms/myaddressrow.ui" line="+14"/>
+        <location filename="../alnj/forms/myaddressrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2457,7 +2457,7 @@ Are you sure?</source>
 <context>
     <name>NavMenuWidget</name>
     <message>
-        <location filename="../alnjl/forms/navmenuwidget.ui" line="+14"/>
+        <location filename="../alnj/forms/navmenuwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2467,7 +2467,7 @@ Are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/navmenuwidget.cpp" line="+22"/>
+        <location filename="../alnj/navmenuwidget.cpp" line="+22"/>
         <source>v%1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2521,14 +2521,14 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Invalid URI, not starting with &quot;alnjl&quot; prefix</source>
+        <source>Invalid URI, not starting with &quot;alnj&quot; prefix</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OptionButton</name>
     <message>
-        <location filename="../alnjl/forms/optionbutton.ui" line="+14"/>
+        <location filename="../alnj/forms/optionbutton.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2654,7 +2654,7 @@ Are you sure?</source>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/alnjl-project/alnjl-project-translations</source>
+https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2895,7 +2895,7 @@ https://www.transifex.com/alnjl-project/alnjl-project-translations</source>
 <context>
     <name>ALNJGUI</name>
     <message>
-        <location filename="../alnjl/alnjlgui.cpp" line="+53"/>
+        <location filename="../alnj/alnjgui.cpp" line="+53"/>
         <location line="+294"/>
         <location line="+68"/>
         <source>ALNJ Core</source>
@@ -2985,7 +2985,7 @@ Address: %4
 </translation>
     </message>
     <message>
-        <location filename="../alnjl.cpp" line="+505"/>
+        <location filename="../alnj.cpp" line="+505"/>
         <source>A fatal error occurred. ALNJ can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2993,7 +2993,7 @@ Address: %4
 <context>
     <name>PWidget</name>
     <message>
-        <location filename="../alnjl/pwidget.cpp" line="+94"/>
+        <location filename="../alnj/pwidget.cpp" line="+94"/>
         <source>Wallet locked, you need to unlock it to perform this action</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3034,7 +3034,7 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Cannot start alnjl: click-to-pay handler</source>
+        <source>Cannot start alnj: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3141,7 +3141,7 @@ Address: %4
 <context>
     <name>PrivacyWidget</name>
     <message>
-        <location filename="../alnjl/forms/privacywidget.ui" line="+14"/>
+        <location filename="../alnj/forms/privacywidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -3187,7 +3187,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/privacywidget.cpp" line="+38"/>
+        <location filename="../alnj/privacywidget.cpp" line="+38"/>
         <source>Privacy</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3466,7 +3466,7 @@ transaction history, making transactions untraceable </source>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <location filename="../alnjl.cpp" line="+75"/>
+        <location filename="../alnj.cpp" line="+75"/>
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
@@ -4049,7 +4049,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>ReceiveDialog</name>
     <message>
-        <location filename="../alnjl/forms/receivedialog.ui" line="+14"/>
+        <location filename="../alnj/forms/receivedialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4077,7 +4077,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>ReceiveWidget</name>
     <message>
-        <location filename="../alnjl/forms/receivewidget.ui" line="+20"/>
+        <location filename="../alnj/forms/receivewidget.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4091,30 +4091,30 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+25"/>
-        <location filename="../alnjl/receivewidget.cpp" line="+218"/>
+        <location filename="../alnj/receivewidget.cpp" line="+218"/>
         <source>No address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <location filename="../alnjl/receivewidget.cpp" line="-150"/>
+        <location filename="../alnj/receivewidget.cpp" line="-150"/>
         <source>Add Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../alnjl/receivewidget.cpp" line="+4"/>
+        <location filename="../alnj/receivewidget.cpp" line="+4"/>
         <source>Generate Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../alnjl/receivewidget.cpp" line="+4"/>
+        <location filename="../alnj/receivewidget.cpp" line="+4"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/receivewidget.cpp" line="-32"/>
+        <location filename="../alnj/receivewidget.cpp" line="-32"/>
         <source>Receive</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4227,13 +4227,13 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>RequestDialog</name>
     <message>
-        <location filename="../alnjl/forms/requestdialog.ui" line="+14"/>
+        <location filename="../alnj/forms/requestdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+81"/>
-        <location filename="../alnjl/requestdialog.cpp" line="+25"/>
+        <location filename="../alnj/requestdialog.cpp" line="+25"/>
         <source>New Request Payment</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4244,7 +4244,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+43"/>
-        <location filename="../alnjl/requestdialog.cpp" line="+17"/>
+        <location filename="../alnj/requestdialog.cpp" line="+17"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
@@ -4285,7 +4285,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/requestdialog.cpp" line="-14"/>
+        <location filename="../alnj/requestdialog.cpp" line="-14"/>
         <source>Instead of only sharing a ALNJ address, you can create a Payment Request message which bundles up more information than is contained in just a ALNJ address.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4338,7 +4338,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendChangeAddressDialog</name>
     <message>
-        <location filename="../alnjl/forms/sendchangeaddressdialog.ui" line="+14"/>
+        <location filename="../alnj/forms/sendchangeaddressdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4363,7 +4363,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/sendchangeaddressdialog.cpp" line="+21"/>
+        <location filename="../alnj/sendchangeaddressdialog.cpp" line="+21"/>
         <source>Custom Change Address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4376,7 +4376,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendCustomFeeDialog</name>
     <message>
-        <location filename="../alnjl/forms/sendcustomfeedialog.ui" line="+14"/>
+        <location filename="../alnj/forms/sendcustomfeedialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4421,7 +4421,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/sendcustomfeedialog.cpp" line="+25"/>
+        <location filename="../alnj/sendcustomfeedialog.cpp" line="+25"/>
         <source>Customize Fee</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4454,7 +4454,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendMultiRow</name>
     <message>
-        <location filename="../alnjl/forms/sendmultirow.ui" line="+26"/>
+        <location filename="../alnj/forms/sendmultirow.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4464,7 +4464,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/sendmultirow.cpp" line="+22"/>
+        <location filename="../alnj/sendmultirow.cpp" line="+22"/>
         <source>Add address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4477,7 +4477,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendWidget</name>
     <message>
-        <location filename="../alnjl/send.cpp" line="+44"/>
+        <location filename="../alnj/send.cpp" line="+44"/>
         <source>Send</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4733,7 +4733,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SettingsBackupWallet</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsbackupwallet.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsbackupwallet.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4747,7 +4747,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsbackupwallet.cpp" line="+26"/>
+        <location filename="../alnj/settings/settingsbackupwallet.cpp" line="+26"/>
         <source>Backup Wallet </source>
         <translation type="unfinished"></translation>
     </message>
@@ -4818,7 +4818,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
 <context>
     <name>SettingsBitToolWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsbittoolwidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsbittoolwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4846,7 +4846,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <location line="+63"/>
-        <location filename="../alnjl/settings/settingsbittoolwidget.cpp" line="+74"/>
+        <location filename="../alnj/settings/settingsbittoolwidget.cpp" line="+74"/>
         <source>Import Address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4857,7 +4857,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation type="unfinished">Clear</translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsbittoolwidget.cpp" line="-39"/>
+        <location filename="../alnj/settings/settingsbittoolwidget.cpp" line="-39"/>
         <source>BIP38 Tool</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5034,7 +5034,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
 <context>
     <name>SettingsConsoleWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsconsolewidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsconsolewidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5044,7 +5044,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsconsolewidget.cpp" line="+254"/>
+        <location filename="../alnj/settings/settingsconsolewidget.cpp" line="+254"/>
         <source>Console</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5093,7 +5093,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsDisplayOptionsWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5109,7 +5109,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+58"/>
-        <location filename="../alnjl/settings/settingsdisplayoptionswidget.cpp" line="+97"/>
+        <location filename="../alnj/settings/settingsdisplayoptionswidget.cpp" line="+97"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5119,7 +5119,7 @@ Verify that you have installed a predetermined text editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsdisplayoptionswidget.cpp" line="-68"/>
+        <location filename="../alnj/settings/settingsdisplayoptionswidget.cpp" line="-68"/>
         <source>Display</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5172,7 +5172,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsFaqWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsfaqwidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsfaqwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5307,7 +5307,7 @@ Verify that you have installed a predetermined text editor.</source>
                            zPIV is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjlite.com/zalnj/&apos;&gt;
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjite.com/zalnj/&apos;&gt;
                            &quot;ALNJ Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5354,11 +5354,11 @@ Verify that you have installed a predetermined text editor.</source>
                            you can disable the automatic minting in your ALNJ wallet by
                            going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
                            If you are not making use of the ALNJ-QT or GUI you can simply open
-                           your alnjl.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your alnj.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            You can read more about zPIV in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjlite.com/zalnj/&apos;&gt; &quot;ALNJ Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjite.com/zalnj/&apos;&gt; &quot;ALNJ Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
                            If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -5412,7 +5412,7 @@ Verify that you have installed a predetermined text editor.</source>
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (alnjl-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (alnj-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            To Stake zPIV:
@@ -5444,10 +5444,10 @@ Verify that you have installed a predetermined text editor.</source>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://discord.alnjlite.com&apos;&gt;
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://discord.alnjite.com&apos;&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjlite.freshdesk.com&apos;&gt;
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjite.freshdesk.com&apos;&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5525,7 +5525,7 @@ Verify that you have installed a predetermined text editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsfaqwidget.cpp" line="+19"/>
+        <location filename="../alnj/settings/settingsfaqwidget.cpp" line="+19"/>
         <source>Frequently Asked Questions</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5543,7 +5543,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsInformationWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsinformationwidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsinformationwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5578,12 +5578,12 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="-536"/>
-        <location filename="../alnjl/settings/settingsinformationwidget.cpp" line="+96"/>
+        <location filename="../alnj/settings/settingsinformationwidget.cpp" line="+96"/>
         <source>Network Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsinformationwidget.cpp" line="-67"/>
+        <location filename="../alnj/settings/settingsinformationwidget.cpp" line="-67"/>
         <source>Information</source>
         <translation type="unfinished">Information</translation>
     </message>
@@ -5684,7 +5684,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to open alnjl.conf with default application</source>
+        <source>Unable to open alnj.conf with default application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5701,7 +5701,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsMainOptionsWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5731,7 +5731,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+40"/>
-        <location filename="../alnjl/settings/settingsmainoptionswidget.cpp" line="+81"/>
+        <location filename="../alnj/settings/settingsmainoptionswidget.cpp" line="+81"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5742,12 +5742,12 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+38"/>
-        <location filename="../alnjl/settings/settingsmainoptionswidget.cpp" line="-1"/>
+        <location filename="../alnj/settings/settingsmainoptionswidget.cpp" line="-1"/>
         <source>SAVE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsmainoptionswidget.cpp" line="-31"/>
+        <location filename="../alnj/settings/settingsmainoptionswidget.cpp" line="-31"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5798,7 +5798,7 @@ Are you sure?
 <context>
     <name>SettingsMultisendDialog</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsmultisenddialog.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsmultisenddialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5825,7 +5825,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsmultisenddialog.cpp" line="+24"/>
+        <location filename="../alnj/settings/settingsmultisenddialog.cpp" line="+24"/>
         <source>New recipient for multisend</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5848,7 +5848,7 @@ Are you sure?
 <context>
     <name>SettingsMultisendWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingsmultisendwidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingsmultisendwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5870,7 +5870,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingsmultisendwidget.cpp" line="+156"/>
+        <location filename="../alnj/settings/settingsmultisendwidget.cpp" line="+156"/>
         <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ALNJ addresses after it matures.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5980,7 +5980,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsSignMessageWidgets</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6000,7 +6000,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished">Clear</translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingssignmessagewidgets.cpp" line="+35"/>
+        <location filename="../alnj/settings/settingssignmessagewidgets.cpp" line="+35"/>
         <source>Sign/Verify Message</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6146,7 +6146,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWalletOptionsWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6175,7 +6175,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+139"/>
-        <location filename="../alnjl/settings/settingswalletoptionswidget.cpp" line="+69"/>
+        <location filename="../alnj/settings/settingswalletoptionswidget.cpp" line="+69"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6185,7 +6185,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingswalletoptionswidget.cpp" line="-43"/>
+        <location filename="../alnj/settings/settingswalletoptionswidget.cpp" line="-43"/>
         <source>Wallet</source>
         <translation type="unfinished">Wallet</translation>
     </message>
@@ -6258,7 +6258,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWalletRepairWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6276,7 +6276,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingswalletrepairwidget.cpp" line="+22"/>
+        <location filename="../alnj/settings/settingswalletrepairwidget.cpp" line="+22"/>
         <source>Wallet Repair</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6384,7 +6384,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWidget</name>
     <message>
-        <location filename="../alnjl/settings/forms/settingswidget.ui" line="+14"/>
+        <location filename="../alnj/settings/forms/settingswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6475,7 +6475,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/settings/settingswidget.cpp" line="+47"/>
+        <location filename="../alnj/settings/settingswidget.cpp" line="+47"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6560,7 +6560,7 @@ Are you sure?
 <context>
     <name>SnackBar</name>
     <message>
-        <location filename="../alnjl/forms/snackbar.ui" line="+26"/>
+        <location filename="../alnj/forms/snackbar.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6573,7 +6573,7 @@ Are you sure?
 <context>
     <name>Splash</name>
     <message>
-        <location filename="../alnjl/forms/splash.ui" line="+26"/>
+        <location filename="../alnj/forms/splash.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6583,7 +6583,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/splash.cpp" line="+29"/>
+        <location filename="../alnj/splash.cpp" line="+29"/>
         <source>ALNJ Core</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6624,7 +6624,7 @@ Are you sure?
 <context>
     <name>TooltipMenu</name>
     <message>
-        <location filename="../alnjl/forms/tooltipmenu.ui" line="+26"/>
+        <location filename="../alnj/forms/tooltipmenu.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6652,7 +6652,7 @@ Are you sure?
 <context>
     <name>TopBar</name>
     <message>
-        <location filename="../alnjl/forms/topbar.ui" line="+26"/>
+        <location filename="../alnj/forms/topbar.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6707,7 +6707,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/topbar.cpp" line="+240"/>
+        <location filename="../alnj/topbar.cpp" line="+240"/>
         <source>Wallet Unlocked for staking</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7287,13 +7287,13 @@ Are you sure?
 <context>
     <name>TxDetailDialog</name>
     <message>
-        <location filename="../alnjl/forms/sendconfirmdialog.ui" line="+26"/>
+        <location filename="../alnj/forms/sendconfirmdialog.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+90"/>
-        <location filename="../alnjl/sendconfirmdialog.cpp" line="+74"/>
+        <location filename="../alnj/sendconfirmdialog.cpp" line="+74"/>
         <source>Transaction Details</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7423,7 +7423,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/sendconfirmdialog.cpp" line="-26"/>
+        <location filename="../alnj/sendconfirmdialog.cpp" line="-26"/>
         <source>Confirm Your Transaction</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7446,7 +7446,7 @@ Are you sure?
 <context>
     <name>TxRow</name>
     <message>
-        <location filename="../alnjl/forms/txrow.ui" line="+20"/>
+        <location filename="../alnj/forms/txrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -7485,7 +7485,7 @@ Are you sure?
 <context>
     <name>WalletPasswordDialog</name>
     <message>
-        <location filename="../alnjl/forms/walletpassworddialog.ui" line="+14"/>
+        <location filename="../alnj/forms/walletpassworddialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7515,7 +7515,7 @@ Are you sure?
 <context>
     <name>WelcomeContentWidget</name>
     <message>
-        <location filename="../alnjl/forms/welcomecontentwidget.ui" line="+14"/>
+        <location filename="../alnj/forms/welcomecontentwidget.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7596,7 +7596,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnjl/welcomecontentwidget.cpp" line="+173"/>
+        <location filename="../alnj/welcomecontentwidget.cpp" line="+173"/>
         <source>default</source>
         <translation type="unfinished">default</translation>
     </message>
@@ -7655,9 +7655,9 @@ ALNJ Core Wallet</source>
     </message>
 </context>
 <context>
-    <name>alnjl-core</name>
+    <name>alnj-core</name>
     <message>
-        <location filename="../alnjlstrings.cpp" line="+15"/>
+        <location filename="../alnjstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -9347,7 +9347,7 @@ ALNJ Core Wallet</source>
 <context>
     <name>send</name>
     <message>
-        <location filename="../alnjl/forms/send.ui" line="+14"/>
+        <location filename="../alnj/forms/send.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>

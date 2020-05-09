@@ -5,7 +5,7 @@
 
 #include "compat/sanity.h"
 #include "key.h"
-#include "test_alnjl.h"
+#include "test_alnj.h"
 
 #include <boost/test/unit_test.hpp>
 

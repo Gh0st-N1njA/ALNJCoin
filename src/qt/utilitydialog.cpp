@@ -14,7 +14,7 @@
 #include "intro.h"
 #include "guiutil.h"
 
-#include "qt/alnjl/qtutils.cpp"
+#include "qt/alnj/qtutils.cpp"
 
 #include "clientversion.h"
 #include "init.h"
@@ -72,7 +72,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(pare
     } else {
         setWindowTitle(tr("Command-line options"));
         QString header = tr("Usage:") + "\n" +
-                         "  alnjl-qt [" + tr("command-line options") + "]                     " + "\n";
+                         "  alnj-qt [" + tr("command-line options") + "]                     " + "\n";
         QTextCursor cursor(ui->helpMessage->document());
         cursor.insertText(version);
         cursor.insertBlock();

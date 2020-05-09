@@ -6,11 +6,11 @@
 #ifndef ADDRESSESWIDGET_H
 #define ADDRESSESWIDGET_H
 
-#include "qt/alnjl/pwidget.h"
+#include "qt/alnj/pwidget.h"
 #include "addresstablemodel.h"
-#include "qt/alnjl/tooltipmenu.h"
+#include "qt/alnj/tooltipmenu.h"
 #include "furabstractlistitemdelegate.h"
-#include "qt/alnjl/addressfilterproxymodel.h"
+#include "qt/alnj/addressfilterproxymodel.h"
 
 #include <QWidget>
 

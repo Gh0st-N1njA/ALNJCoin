@@ -3,9 +3,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/settings/settingssignmessagewidgets.h"
-#include "qt/alnjl/settings/forms/ui_settingssignmessagewidgets.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/settings/settingssignmessagewidgets.h"
+#include "qt/alnj/settings/forms/ui_settingssignmessagewidgets.h"
+#include "qt/alnj/qtutils.h"
 #include "guiutil.h"
 #include "walletmodel.h"
 

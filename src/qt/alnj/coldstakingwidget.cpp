@@ -3,22 +3,22 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/coldstakingwidget.h"
-#include "qt/alnjl/forms/ui_coldstakingwidget.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/coldstakingwidget.h"
+#include "qt/alnj/forms/ui_coldstakingwidget.h"
+#include "qt/alnj/qtutils.h"
 #include "amount.h"
 #include "guiutil.h"
-#include "qt/alnjl/requestdialog.h"
-#include "qt/alnjl/tooltipmenu.h"
-#include "qt/alnjl/furlistrow.h"
-#include "qt/alnjl/sendconfirmdialog.h"
-#include "qt/alnjl/addnewcontactdialog.h"
-#include "qt/alnjl/guitransactionsutils.h"
+#include "qt/alnj/requestdialog.h"
+#include "qt/alnj/tooltipmenu.h"
+#include "qt/alnj/furlistrow.h"
+#include "qt/alnj/sendconfirmdialog.h"
+#include "qt/alnj/addnewcontactdialog.h"
+#include "qt/alnj/guitransactionsutils.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "coincontroldialog.h"
 #include "coincontrol.h"
-#include "qt/alnjl/csrow.h"
+#include "qt/alnj/csrow.h"
 
 #define DECORATION_SIZE 70
 #define NUM_ITEMS 3

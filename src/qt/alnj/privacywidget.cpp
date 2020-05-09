@@ -3,12 +3,12 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/privacywidget.h"
-#include "qt/alnjl/forms/ui_privacywidget.h"
-#include "qt/alnjl/qtutils.h"
+#include "qt/alnj/privacywidget.h"
+#include "qt/alnj/forms/ui_privacywidget.h"
+#include "qt/alnj/qtutils.h"
 #include "guiutil.h"
-#include "qt/alnjl/denomgenerationdialog.h"
-#include "qt/alnjl/txviewholder.h"
+#include "qt/alnj/denomgenerationdialog.h"
+#include "qt/alnj/txviewholder.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "coincontroldialog.h"

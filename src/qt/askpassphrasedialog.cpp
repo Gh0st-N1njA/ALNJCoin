@@ -12,10 +12,10 @@
 #include "guiconstants.h"
 #include "guiutil.h"
 #include "walletmodel.h"
-#include "qt/alnjl/qtutils.h"
-#include "qt/alnjl/loadingdialog.h"
-#include "qt/alnjl/defaultdialog.h"
-#include "qt/alnjl/alnjlgui.h"
+#include "qt/alnj/qtutils.h"
+#include "qt/alnj/loadingdialog.h"
+#include "qt/alnj/defaultdialog.h"
+#include "qt/alnj/alnjgui.h"
 #include <QDebug>
 
 #include <QKeyEvent>

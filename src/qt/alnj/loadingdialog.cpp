@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/loadingdialog.h"
-#include "qt/alnjl/forms/ui_loadingdialog.h"
+#include "qt/alnj/loadingdialog.h"
+#include "qt/alnj/forms/ui_loadingdialog.h"
 #include <QMovie>
 
 void Worker::process(){

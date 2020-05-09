@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnjl/addresslabelrow.h"
-#include "qt/alnjl/forms/ui_addresslabelrow.h"
+#include "qt/alnj/addresslabelrow.h"
+#include "qt/alnj/forms/ui_addresslabelrow.h"
 
 AddressLabelRow::AddressLabelRow(QWidget *parent) :
     QWidget(parent),

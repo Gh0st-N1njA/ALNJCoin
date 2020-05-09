@@ -7,10 +7,10 @@
 #define MASTERNODESWIDGET_H
 
 #include <QWidget>
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/furabstractlistitemdelegate.h"
-#include "qt/alnjl/mnmodel.h"
-#include "qt/alnjl/tooltipmenu.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/furabstractlistitemdelegate.h"
+#include "qt/alnj/mnmodel.h"
+#include "qt/alnj/tooltipmenu.h"
 #include <QTimer>
 
 class ALNJGUI;

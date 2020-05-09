@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnjl-config.h"
+#include "config/alnj-config.h"
 #endif
 
 #include "util.h"
@@ -216,8 +216,8 @@ bool LogAcceptCategory(const char* category)
             const std::vector<std::string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new std::set<std::string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "alnjl" is a composite category enabling all ALNJ-related debug output
-            if (ptrCategory->count(std::string("alnjl"))) {
+            // "alnj" is a composite category enabling all ALNJ-related debug output
+            if (ptrCategory->count(std::string("alnj"))) {
                 ptrCategory->insert(std::string("obfuscation"));
                 ptrCategory->insert(std::string("swiftx"));
                 ptrCategory->insert(std::string("masternode"));
@@ -384,7 +384,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "alnjl";
+    const char* pszModule = "alnj";
 #endif
     if (pex)
         return strprintf(
@@ -408,7 +408,7 @@ boost::filesystem::path GetDefaultDataDir()
 // Windows < Vista: C:\Documents and Settings\Username\Application Data\ALNJ
 // Windows >= Vista: C:\Users\Username\AppData\Roaming\ALNJ
 // Mac: ~/Library/Application Support/ALNJ
-// Unix: ~/.alnjl
+// Unix: ~/.alnj
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "ALNJ";
@@ -426,7 +426,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "ALNJ";
 #else
     // Unix
-    return pathRet / ".alnjl";
+    return pathRet / ".alnj";
 #endif
 #endif
 }
@@ -473,7 +473,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "alnjl.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "alnj.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -492,7 +492,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty alnjl.conf if it does not exist
+        // Create empty alnj.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -503,7 +503,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override alnjl.conf
+        // Don't overwrite existing settings so command line settings override alnj.conf
         std::string strKey = std::string("-") + it->string_key;
         std::string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
@@ -518,7 +518,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "alnjld.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "alnjd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

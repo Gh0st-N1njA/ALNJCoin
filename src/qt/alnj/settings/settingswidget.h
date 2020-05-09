@@ -7,17 +7,17 @@
 #define SETTINGSWIDGET_H
 
 #include <QWidget>
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/settings/settingsbackupwallet.h"
-#include "qt/alnjl/settings/settingsbittoolwidget.h"
-#include "qt/alnjl/settings/settingssignmessagewidgets.h"
-#include "qt/alnjl/settings/settingswalletrepairwidget.h"
-#include "qt/alnjl/settings/settingswalletoptionswidget.h"
-#include "qt/alnjl/settings/settingsmainoptionswidget.h"
-#include "qt/alnjl/settings/settingsdisplayoptionswidget.h"
-#include "qt/alnjl/settings/settingsmultisendwidget.h"
-#include "qt/alnjl/settings/settingsinformationwidget.h"
-#include "qt/alnjl/settings/settingsconsolewidget.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/settings/settingsbackupwallet.h"
+#include "qt/alnj/settings/settingsbittoolwidget.h"
+#include "qt/alnj/settings/settingssignmessagewidgets.h"
+#include "qt/alnj/settings/settingswalletrepairwidget.h"
+#include "qt/alnj/settings/settingswalletoptionswidget.h"
+#include "qt/alnj/settings/settingsmainoptionswidget.h"
+#include "qt/alnj/settings/settingsdisplayoptionswidget.h"
+#include "qt/alnj/settings/settingsmultisendwidget.h"
+#include "qt/alnj/settings/settingsinformationwidget.h"
+#include "qt/alnj/settings/settingsconsolewidget.h"
 
 class ALNJGUI;
 

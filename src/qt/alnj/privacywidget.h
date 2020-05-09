@@ -6,9 +6,9 @@
 #ifndef PRIVACYWIDGET_H
 #define PRIVACYWIDGET_H
 
-#include "qt/alnjl/pwidget.h"
-#include "qt/alnjl/furabstractlistitemdelegate.h"
-#include "qt/alnjl/txviewholder.h"
+#include "qt/alnj/pwidget.h"
+#include "qt/alnj/furabstractlistitemdelegate.h"
+#include "qt/alnj/txviewholder.h"
 #include "transactiontablemodel.h"
 #include "transactionfilterproxy.h"
 #include "coincontroldialog.h"
