@@ -1,17 +1,18 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/addresseswidget.h"
-#include "qt/alnj/forms/ui_addresseswidget.h"
-#include "qt/alnj/addresslabelrow.h"
-#include "qt/alnj/addnewaddressdialog.h"
-#include "qt/alnj/tooltipmenu.h"
+#include "qt/alnjl/addresseswidget.h"
+#include "qt/alnjl/forms/ui_addresseswidget.h"
+#include "qt/alnjl/addresslabelrow.h"
+#include "qt/alnjl/addnewaddressdialog.h"
+#include "qt/alnjl/tooltipmenu.h"
 
-#include "qt/alnj/addnewcontactdialog.h"
-#include "qt/alnj/alnjgui.h"
+#include "qt/alnjl/addnewcontactdialog.h"
+#include "qt/alnjl/alnjlgui.h"
 #include "guiutil.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 #include "walletmodel.h"
 
 #include <QModelIndex>
@@ -83,7 +84,7 @@ AddressesWidget::AddressesWidget(ALNJGUI* parent) :
     setCssTitleScreen(ui->labelTitle);
     setCssSubtitleScreen(ui->labelSubtitle1);
 
-    // Change address option
+    // Change eddress option
     ui->btnAddContact->setTitleClassAndText("btn-title-grey", "Add new contact");
     ui->btnAddContact->setSubTitleClassAndText("text-subtitle", "Generate a new address to receive tokens.");
     ui->btnAddContact->setRightIconClass("ic-arrow-down");
@@ -94,16 +95,6 @@ AddressesWidget::AddressesWidget(ALNJGUI* parent) :
     ui->listAddresses->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
     ui->listAddresses->setAttribute(Qt::WA_MacShowFocusRect, false);
     ui->listAddresses->setSelectionBehavior(QAbstractItemView::SelectRows);
-    ui->listAddresses->setUniformItemSizes(true);
-
-    // Sort Controls
-    SortEdit* lineEdit = new SortEdit(ui->comboBoxSort);
-    connect(lineEdit, &SortEdit::Mouse_Pressed, [this](){ui->comboBoxSort->showPopup();});
-    connect(ui->comboBoxSort, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &AddressesWidget::onSortChanged);
-    SortEdit* lineEditOrder = new SortEdit(ui->comboBoxSortOrder);
-    connect(lineEditOrder, &SortEdit::Mouse_Pressed, [this](){ui->comboBoxSortOrder->showPopup();});
-    connect(ui->comboBoxSortOrder, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &AddressesWidget::onSortOrderChanged);
-    fillAddressSortControls(lineEdit, lineEditOrder, ui->comboBoxSort, ui->comboBoxSortOrder);
 
     //Empty List
     ui->emptyContainer->setVisible(false);
@@ -122,7 +113,7 @@ AddressesWidget::AddressesWidget(ALNJGUI* parent) :
     setCssEditLine(ui->lineEditName, true);
 
     // Address
-    ui->labelAddress->setText(tr("Enter ALNJ address"));
+    ui->labelAddress->setText(tr("Enter a ALNJ address"));
     setCssProperty(ui->labelAddress, "text-title");
     ui->lineEditAddress->setPlaceholderText("e.g. D7VFR83SQbiezrW72hjc…");
     setCssEditLine(ui->lineEditAddress, true);
@@ -132,9 +123,9 @@ AddressesWidget::AddressesWidget(ALNJGUI* parent) :
     ui->btnSave->setText(tr("SAVE"));
     setCssBtnPrimary(ui->btnSave);
 
-    connect(ui->listAddresses, &QListView::clicked, this, &AddressesWidget::handleAddressClicked);
-    connect(ui->btnSave, &QPushButton::clicked, this, &AddressesWidget::onStoreContactClicked);
-    connect(ui->btnAddContact, &OptionButton::clicked, this, &AddressesWidget::onAddContactShowHideClicked);
+    connect(ui->listAddresses, SIGNAL(clicked(QModelIndex)), this, SLOT(handleAddressClicked(QModelIndex)));
+    connect(ui->btnSave, SIGNAL(clicked()), this, SLOT(onStoreContactClicked()));
+    connect(ui->btnAddContact, SIGNAL(clicked()), this, SLOT(onAddContactShowHideClicked()));
 }
 
 void AddressesWidget::handleAddressClicked(const QModelIndex &index){
@@ -149,9 +140,9 @@ void AddressesWidget::handleAddressClicked(const QModelIndex &index){
     if(!this->menu){
         this->menu = new TooltipMenu(window, this);
         connect(this->menu, &TooltipMenu::message, this, &AddressesWidget::message);
-        connect(this->menu, &TooltipMenu::onEditClicked, this, &AddressesWidget::onEditClicked);
-        connect(this->menu, &TooltipMenu::onDeleteClicked, this, &AddressesWidget::onDeleteClicked);
-        connect(this->menu, &TooltipMenu::onCopyClicked, this, &AddressesWidget::onCopyClicked);
+        connect(this->menu, SIGNAL(onEditClicked()), this, SLOT(onEditClicked()));
+        connect(this->menu, SIGNAL(onDeleteClicked()), this, SLOT(onDeleteClicked()));
+        connect(this->menu, SIGNAL(onCopyClicked()), this, SLOT(onCopyClicked()));
     }else {
         this->menu->hide();
     }
@@ -160,13 +151,11 @@ void AddressesWidget::handleAddressClicked(const QModelIndex &index){
     menu->show();
 }
 
-void AddressesWidget::loadWalletModel()
-{
+void AddressesWidget::loadWalletModel(){
     if(walletModel) {
         addressTablemodel = walletModel->getAddressTableModel();
         this->filter = new AddressFilterProxyModel(QStringList({AddressTableModel::Send, AddressTableModel::ColdStakingSend}), this);
         this->filter->setSourceModel(addressTablemodel);
-        this->filter->sort(sortType, sortOrder);
         ui->listAddresses->setModel(this->filter);
         ui->listAddresses->setModelColumn(AddressTableModel::Address);
 
@@ -191,8 +180,8 @@ void AddressesWidget::onStoreContactClicked(){
             return;
         }
 
-        CBitcoinAddress alngAdd = CBitcoinAddress(address.toUtf8().constData());
-        if (walletModel->isMine(alngAdd)) {
+        CBitcoinAddress alnjAdd = CBitcoinAddress(address.toUtf8().constData());
+        if (walletModel->isMine(alnjAdd)) {
             setCssEditLine(ui->lineEditAddress, false, true);
             inform(tr("Cannot store your own address as contact"));
             return;
@@ -205,8 +194,8 @@ void AddressesWidget::onStoreContactClicked(){
             return;
         }
 
-        if (walletModel->updateAddressBookLabels(alngAdd.Get(), label.toUtf8().constData(),
-                alngAdd.IsStakingAddress() ? AddressBook::AddressBookPurpose::COLD_STAKING_SEND : AddressBook::AddressBookPurpose::SEND)
+        if (walletModel->updateAddressBookLabels(alnjAdd.Get(), label.toUtf8().constData(),
+                alnjAdd.IsStakingAddress() ? AddressBook::AddressBookPurpose::COLD_STAKING_SEND : AddressBook::AddressBookPurpose::SEND)
                 ) {
             ui->lineEditAddress->setText("");
             ui->lineEditName->setText("");
@@ -268,24 +257,6 @@ void AddressesWidget::onAddContactShowHideClicked(){
         ui->btnAddContact->setRightIconClass("ic-arrow", true);
         ui->layoutNewContact->setVisible(false);
     }
-}
-
-void AddressesWidget::onSortChanged(int idx)
-{
-    sortType = (AddressTableModel::ColumnIndex) ui->comboBoxSort->itemData(idx).toInt();
-    sortAddresses();
-}
-
-void AddressesWidget::onSortOrderChanged(int idx)
-{
-    sortOrder = (Qt::SortOrder) ui->comboBoxSortOrder->itemData(idx).toInt();
-    sortAddresses();
-}
-
-void AddressesWidget::sortAddresses()
-{
-    if (this->filter)
-        this->filter->sort(sortType, sortOrder);
 }
 
 void AddressesWidget::changeTheme(bool isLightTheme, QString& theme){

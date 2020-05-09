@@ -1,9 +1,10 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/settings/settingsdisplayoptionswidget.h"
-#include "qt/alnj/settings/forms/ui_settingsdisplayoptionswidget.h"
+#include "qt/alnjl/settings/settingsdisplayoptionswidget.h"
+#include "qt/alnjl/settings/forms/ui_settingsdisplayoptionswidget.h"
 #include <QListView>
 #include <QSettings>
 #include <QDir>
@@ -11,7 +12,7 @@
 #include "clientmodel.h"
 #include "optionsmodel.h"
 #include "bitcoinunits.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 
 SettingsDisplayOptionsWidget::SettingsDisplayOptionsWidget(ALNJGUI* _window, QWidget *parent) :
     PWidget(_window,parent),
@@ -47,15 +48,10 @@ SettingsDisplayOptionsWidget::SettingsDisplayOptionsWidget(ALNJGUI* _window, QWi
     // TODO: Reconnect this option to an action. Hide it for now
     ui->labelTitleUrl->hide();
 
-    // Switch (hide for now)
+    // Switch
     ui->pushButtonSwitchBalance->setText(tr("Hide empty balances"));
     ui->pushButtonSwitchBalance->setProperty("cssClass", "btn-switch");
     ui->pushButtonSwitchBalance->setVisible(false);
-
-    // Hide checkbox if qtcharts not used
-#ifndef USE_QTCHARTS
-    ui->checkBoxHideCharts->setVisible(false);
-#endif
 
     // Combobox
     ui->comboBoxLanguage->setProperty("cssClass", "btn-combo");
@@ -106,33 +102,32 @@ SettingsDisplayOptionsWidget::SettingsDisplayOptionsWidget(ALNJGUI* _window, QWi
     setCssBtnSecondary(ui->pushButtonClean);
 
     initLanguages();
-    connect(ui->pushButtonSave, &QPushButton::clicked, [this] { Q_EMIT saveSettings(); });
-    connect(ui->pushButtonReset, &QPushButton::clicked, this, &SettingsDisplayOptionsWidget::onResetClicked);
-    connect(ui->pushButtonClean, &QPushButton::clicked, [this] { Q_EMIT discardSettings(); });
+    connect(ui->pushButtonSave, SIGNAL(clicked()), parent, SLOT(onSaveOptionsClicked()));
+    connect(ui->pushButtonReset, SIGNAL(clicked()), this, SLOT(onResetClicked()));
+    connect(ui->pushButtonClean, SIGNAL(clicked()), parent, SLOT(onDiscardChanges()));
 }
 
-void SettingsDisplayOptionsWidget::initLanguages()
-{
+void SettingsDisplayOptionsWidget::initLanguages(){
     /* Language selector */
     QDir translations(":translations");
     QString defaultStr = QString("(") + tr("default") + QString(")");
     ui->comboBoxLanguage->addItem(defaultStr, QVariant(""));
-    Q_FOREACH (const QString& langStr, translations.entryList()) {
+    foreach (const QString& langStr, translations.entryList()) {
         QLocale locale(langStr);
 
         /** check if the locale name consists of 2 parts (language_country) */
-        if (langStr.contains("_")) {
+        if(langStr.contains("_")){
             /** display language strings as "native language - native country (locale name)", e.g. "Deutsch - Deutschland (de)" */
             ui->comboBoxLanguage->addItem(locale.nativeLanguageName() + QString(" - ") + locale.nativeCountryName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
-        } else {
+        }
+        else{
             /** display language strings as "native language (locale name)", e.g. "Deutsch (de)" */
             ui->comboBoxLanguage->addItem(locale.nativeLanguageName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
         }
     }
 }
 
-void SettingsDisplayOptionsWidget::onResetClicked()
-{
+void SettingsDisplayOptionsWidget::onResetClicked() {
     if (clientModel) {
         OptionsModel *optionsModel = clientModel->getOptionsModel();
         QSettings settings;
@@ -141,25 +136,19 @@ void SettingsDisplayOptionsWidget::onResetClicked()
     }
 }
 
-void SettingsDisplayOptionsWidget::setMapper(QDataWidgetMapper *mapper)
-{
+void SettingsDisplayOptionsWidget::setMapper(QDataWidgetMapper *mapper){
     mapper->addMapping(ui->comboBoxDigits, OptionsModel::Digits);
-    mapper->addMapping(ui->comboBoxLanguage, OptionsModel::Language, "currentData");
+    mapper->addMapping(ui->comboBoxLanguage, OptionsModel::Language);
     mapper->addMapping(ui->comboBoxUnit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->pushButtonSwitchBalance, OptionsModel::HideZeroBalances);
-#ifdef USE_QTCHARTS
-    mapper->addMapping(ui->checkBoxHideCharts, OptionsModel::HideCharts);
-#endif
 }
 
-void SettingsDisplayOptionsWidget::loadClientModel()
-{
-    if (clientModel) {
+void SettingsDisplayOptionsWidget::loadClientModel(){
+    if(clientModel) {
         ui->comboBoxUnit->setCurrentIndex(this->clientModel->getOptionsModel()->getDisplayUnit());
     }
 }
 
-SettingsDisplayOptionsWidget::~SettingsDisplayOptionsWidget()
-{
+SettingsDisplayOptionsWidget::~SettingsDisplayOptionsWidget(){
     delete ui;
 }

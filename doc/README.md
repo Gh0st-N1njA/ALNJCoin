@@ -3,7 +3,7 @@ ALNJ Core
 
 Setup
 ---------------------
-[ALNJ Core](http://algoninja.site/alnj/wallet) is the original ALNJ client and it builds the backbone of the network. However, it downloads and stores the entire history of ALNJ transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[ALNJ Core](http://alnjlite.com/wallet) is the original ALNJ client and it builds the backbone of the network. However, it downloads and stores the entire history of ALNJ transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -13,12 +13,12 @@ The following are some helpful notes on how to run ALNJ Core on your native plat
 
 Unpack the files into a directory and run:
 
-- `bin/alnj-qt` (GUI) or
-- `bin/alnjd` (headless)
+- `bin/alnjl-qt` (GUI) or
+- `bin/alnjld` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run alnj-qt.exe.
+Unpack the files into a directory, and then run alnjl-qt.exe.
 
 ### macOS
 
@@ -28,8 +28,8 @@ Drag ALNJ-Qt to your applications folder, and then run ALNJ-Qt.
 
 * See the documentation at the [ALNJ Wiki](https://github.com/ALNJ-Project/ALNJ/wiki)
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [ALNJ Forum](http://forum.algoninja.site/alnj/).
-* Join our Discord server [Discord Server](https://discord.algoninja.site/alnj)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [ALNJ Forum](http://forum.alnjlite.com/).
+* Join our Discord server [Discord Server](https://discord.alnjlite.com)
 
 Building
 ---------------------
@@ -49,15 +49,15 @@ The ALNJ repo's [root README](/README.md) contains relevant information on the d
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://www.fuzzbawls.pw/alnj/doxygen/)
+- [Source Code Documentation (External Link)](https://www.fuzzbawls.pw/alnjl/doxygen/)
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [ALNJ](http://forum.algoninja.site/alnj/) forum.
-* Join the [ALNJ Discord](https://discord.algoninja.site/alnj).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [ALNJ](http://forum.alnjlite.com/) forum.
+* Join the [ALNJ Discord](https://discord.alnjlite.com).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

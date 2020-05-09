@@ -1,6 +1,7 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The ALNJ developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +11,7 @@
 #include "guiutil.h"
 
 #include "util.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 
 #include <boost/filesystem.hpp>
 
@@ -44,10 +45,10 @@ public:
         ST_ERROR
     };
 
-public Q_SLOTS:
+public slots:
     void check();
 
-Q_SIGNALS:
+signals:
     void reply(int status, const QString& message, quint64 available);
 
 private:
@@ -100,7 +101,7 @@ void FreespaceChecker::check()
         replyStatus = ST_ERROR;
         replyMessage = tr("Cannot create data directory here.");
     }
-    Q_EMIT reply(replyStatus, replyMessage, freeBytesAvailable);
+    emit reply(replyStatus, replyMessage, freeBytesAvailable);
 }
 
 
@@ -128,8 +129,8 @@ Intro::Intro(QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::W
     setCssBtnPrimary(ui->pushButtonOk);
     setCssBtnSecondary(ui->pushButtonCancel);
 
-    connect(ui->pushButtonOk, &QPushButton::clicked, this, &Intro::accept);
-    connect(ui->pushButtonCancel, &QPushButton::clicked, this, &Intro::close);
+    connect(ui->pushButtonOk, SIGNAL(clicked()), this, SLOT(accept()));
+    connect(ui->pushButtonCancel, SIGNAL(clicked()), this, SLOT(close()));
 
     ui->sizeWarningLabel->setText(ui->sizeWarningLabel->text().arg(BLOCK_CHAIN_SIZE / GB_BYTES));
     startThread();
@@ -139,7 +140,7 @@ Intro::~Intro()
 {
     delete ui;
     /* Ensure thread is finished before it is deleted */
-    Q_EMIT stopThread();
+    emit stopThread();
     thread->wait();
 }
 
@@ -209,8 +210,8 @@ bool Intro::pickDataDirectory()
     }
 
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the alnj.conf file in the default data directory
-     * (to be consistent with alnjd behavior)
+     * override -datadir in the alnjl.conf file in the default data directory
+     * (to be consistent with alnjld behavior)
      */
 
     if (dataDir != getDefaultDataDirectory())
@@ -289,11 +290,11 @@ void Intro::startThread()
     FreespaceChecker* executor = new FreespaceChecker(this);
     executor->moveToThread(thread);
 
-    connect(executor, &FreespaceChecker::reply, this, &Intro::setStatus);
-    connect(this, &Intro::requestCheck, executor, &FreespaceChecker::check);
+    connect(executor, SIGNAL(reply(int, QString, quint64)), this, SLOT(setStatus(int, QString, quint64)));
+    connect(this, SIGNAL(requestCheck()), executor, SLOT(check()));
     /*  make sure executor object is deleted in its own thread */
-    connect(this, &Intro::stopThread, executor, &QObject::deleteLater);
-    connect(this, &Intro::stopThread, thread, &QThread::quit);
+    connect(this, SIGNAL(stopThread()), executor, SLOT(deleteLater()));
+    connect(this, SIGNAL(stopThread()), thread, SLOT(quit()));
 
     thread->start();
 }
@@ -304,7 +305,7 @@ void Intro::checkPath(const QString& dataDir)
     pathToCheck = dataDir;
     if (!signalled) {
         signalled = true;
-        Q_EMIT requestCheck();
+        emit requestCheck();
     }
     mutex.unlock();
 }

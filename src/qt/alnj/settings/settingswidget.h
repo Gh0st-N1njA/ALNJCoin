@@ -1,4 +1,5 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,18 +7,17 @@
 #define SETTINGSWIDGET_H
 
 #include <QWidget>
-#include "qt/alnj/pwidget.h"
-#include "qt/alnj/settings/settingsbackupwallet.h"
-#include "qt/alnj/settings/settingsexportcsv.h"
-#include "qt/alnj/settings/settingsbittoolwidget.h"
-#include "qt/alnj/settings/settingssignmessagewidgets.h"
-#include "qt/alnj/settings/settingswalletrepairwidget.h"
-#include "qt/alnj/settings/settingswalletoptionswidget.h"
-#include "qt/alnj/settings/settingsmainoptionswidget.h"
-#include "qt/alnj/settings/settingsdisplayoptionswidget.h"
-#include "qt/alnj/settings/settingsmultisendwidget.h"
-#include "qt/alnj/settings/settingsinformationwidget.h"
-#include "qt/alnj/settings/settingsconsolewidget.h"
+#include "qt/alnjl/pwidget.h"
+#include "qt/alnjl/settings/settingsbackupwallet.h"
+#include "qt/alnjl/settings/settingsbittoolwidget.h"
+#include "qt/alnjl/settings/settingssignmessagewidgets.h"
+#include "qt/alnjl/settings/settingswalletrepairwidget.h"
+#include "qt/alnjl/settings/settingswalletoptionswidget.h"
+#include "qt/alnjl/settings/settingsmainoptionswidget.h"
+#include "qt/alnjl/settings/settingsdisplayoptionswidget.h"
+#include "qt/alnjl/settings/settingsmultisendwidget.h"
+#include "qt/alnjl/settings/settingsinformationwidget.h"
+#include "qt/alnjl/settings/settingsconsolewidget.h"
 
 class ALNJGUI;
 
@@ -42,11 +42,11 @@ public:
     void setMapper();
     void showDebugConsole();
 
-Q_SIGNALS:
+signals:
     /** Get restart command-line parameters and handle restart */
     void handleRestart(QStringList args);
 
-private Q_SLOTS:
+private slots:
     // File
     void onFileClicked();
     void onBackupWalletClicked();
@@ -56,7 +56,6 @@ private Q_SLOTS:
     void onConfigurationClicked();
     void onBipToolClicked();
     void onMultisendClicked();
-    void onExportCSVClicked();
 
     // Options
     void onOptionsClicked();
@@ -78,13 +77,10 @@ private Q_SLOTS:
 
     void onResetAction();
     void onSaveOptionsClicked();
-
 private:
     Ui::SettingsWidget *ui;
-    int navAreaBaseHeight{0};
 
     SettingsBackupWallet *settingsBackupWallet;
-    SettingsExportCSV *settingsExportCsvWidget;
     SettingsBitToolWidget *settingsBitToolWidget;
     SettingsSignMessageWidgets *settingsSingMessageWidgets;
     SettingsWalletRepairWidget *settingsWalletRepairWidget;
@@ -98,12 +94,9 @@ private:
     QDataWidgetMapper* mapper;
 
     QList<QPushButton*> options;
-    // Map of: menu button -> sub menu items
-    QMap <QPushButton*, QWidget*> menus;
 
     void selectOption(QPushButton* option);
-    bool openStandardDialog(const QString& title = "", const QString& body = "", const QString& okBtn = "OK", const QString& cancelBtn = "");
-    void selectMenu(QPushButton* btn);
+    bool openStandardDialog(QString title = "", QString body = "", QString okBtn = "OK", QString cancelBtn = "");
 };
 
 #endif // SETTINGSWIDGET_H

@@ -1,4 +1,5 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,14 +9,14 @@
 #include <QWidget>
 #include <QPushButton>
 
-#include "qt/alnj/pwidget.h"
-#include "qt/alnj/contactsdropdown.h"
-#include "qt/alnj/sendmultirow.h"
-#include "qt/alnj/sendcustomfeedialog.h"
+#include "qt/alnjl/pwidget.h"
+#include "qt/alnjl/contactsdropdown.h"
+#include "qt/alnjl/sendmultirow.h"
+#include "qt/alnjl/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
 #include "zalnjcontroldialog.h"
-#include "qt/alnj/tooltipmenu.h"
+#include "qt/alnjl/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
 
@@ -42,11 +43,11 @@ public:
     void loadClientModel() override;
     void loadWalletModel() override;
 
-Q_SIGNALS:
+signals:
     /** Signal raised when a URI was entered or dragged to the GUI */
     void receivedURI(const QString& uri);
 
-public Q_SLOTS:
+public slots:
     void onChangeAddressClicked();
     void onChangeCustomFeeClicked();
     void onCoinControlClicked();
@@ -57,23 +58,19 @@ public Q_SLOTS:
 
 protected:
     void resizeEvent(QResizeEvent *event) override;
-    void showEvent(QShowEvent *event) override;
 
-private Q_SLOTS:
-    void onALNJSelected(bool _isALNJ);
+private slots:
+    void onPIVSelected(bool _isPIV);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
     void onAddEntryClicked();
     void clearEntries();
-    void clearAll(bool fClearSettings = true);
+    void clearAll();
     void refreshView();
-    void onCheckBoxChanged();
     void onContactMultiClicked();
     void onDeleteClicked();
     void onResetCustomOptions(bool fRefreshAmounts);
-    void onResetSettings();
-
 private:
     Ui::send *ui;
     QPushButton *coinIcon;
@@ -81,8 +78,6 @@ private:
 
     SendCustomFeeDialog* customFeeDialog = nullptr;
     bool isCustomFeeSelected = false;
-    bool fDelegationsChecked = false;
-    CAmount cachedDelegatedBalance{0};
 
     int nDisplayUnit;
     QList<SendMultiRow*> entries;
@@ -93,16 +88,13 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isALNJ = true;
+    bool isPIV = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();
     bool send(QList<SendCoinsRecipient> recipients);
-    bool sendZalng(QList<SendCoinsRecipient> recipients);
-    void setFocusOnLastEntry();
-    void showHideCheckBoxDelegations();
+    bool sendZalnj(QList<SendCoinsRecipient> recipients);
     void updateEntryLabels(QList<SendCoinsRecipient> recipients);
-    void setCustomFeeSelected(bool isSelected, const CAmount& customFee = DEFAULT_TRANSACTION_FEE);
 
 };
 

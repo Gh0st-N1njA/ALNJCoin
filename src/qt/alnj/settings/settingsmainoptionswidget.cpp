@@ -1,20 +1,21 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/settings/settingsmainoptionswidget.h"
-#include "qt/alnj/settings/forms/ui_settingsmainoptionswidget.h"
+#include "qt/alnjl/settings/settingsmainoptionswidget.h"
+#include "qt/alnjl/settings/forms/ui_settingsmainoptionswidget.h"
 #include "QListView"
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnj-config.h"
+#include "config/alnjl-config.h"
 #endif
 
 #include "bitcoinunits.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
 #include "clientmodel.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 
 #include "main.h" // for MAX_SCRIPTCHECK_THREADS
 #include "netbase.h"
@@ -89,9 +90,9 @@ SettingsMainOptionsWidget::SettingsMainOptionsWidget(ALNJGUI* _window, QWidget *
     ui->threadsScriptVerif->setMinimum(-(int)boost::thread::hardware_concurrency());
     ui->threadsScriptVerif->setMaximum(MAX_SCRIPTCHECK_THREADS);
 
-    connect(ui->pushButtonSave, &QPushButton::clicked, [this] { Q_EMIT saveSettings(); });
-    connect(ui->pushButtonReset, &QPushButton::clicked, this, &SettingsMainOptionsWidget::onResetClicked);
-    connect(ui->pushButtonClean, &QPushButton::clicked, [this] { Q_EMIT discardSettings(); });
+    connect(ui->pushButtonSave, SIGNAL(clicked()), parent, SLOT(onSaveOptionsClicked()));
+    connect(ui->pushButtonReset, SIGNAL(clicked()), this, SLOT(onResetClicked()));
+    connect(ui->pushButtonClean, SIGNAL(clicked()), parent, SLOT(onDiscardChanges()));
 }
 
 void SettingsMainOptionsWidget::onResetClicked(){

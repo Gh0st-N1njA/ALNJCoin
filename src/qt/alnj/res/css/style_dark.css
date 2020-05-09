@@ -442,31 +442,6 @@ QPushButton[cssClass="btn-qr"] {
     border-radius:2px;
 }
 
-/** btn HD Upgrade */
-
-QPushButton[cssClass="btn-check-hd-upgrade"] {
-    background-color:#505c4b7d;
-    color:#FFFFFF;
-    font-weight: bold;
-    font-size: 15px;
-    padding-right:6px;
-    padding-left:6px;
-    border-bottom:2px solid #b088ff;
-    border-radius:2px;
-}
-
-QPushButton[cssClass="btn-check-hd-upgrade"]:hover {
-    font-size: 14px;
-}
-
-QPushButton[cssClass="btn-check-hd-upgrade"]:checked {
-    background-color:#505c4b7d;
-    border-bottom:2px solid #b088ff;
-    border-radius:2px;
-}
-
-/** End btn HD Upgrade */
-
 
 QPushButton[cssClass="btn-check-faq"] {
     qproperty-icon: url("://ic-check-faq");
@@ -600,35 +575,6 @@ QPushButton[cssClass="btn-check-connect"]:checked {
     color:#ffffff;
     border-bottom:2px solid #b088ff;
 }
-
-/* Tor status*/
-
-QPushButton[cssClass="btn-check-tor"] {
-    qproperty-icon: url("://ic-check-tor") ;
-    qproperty-iconSize: 24px 24px;
-    color:#ffffff;
-    background-color:#505c4b7d;
-    border-bottom:2px solid #b088ff;
-    border-radius:2px;
-}
-
-
-QPushButton[cssClass="btn-check-tor-inactive"] {
-    qproperty-icon: url("://ic-check-tor-off");
-    qproperty-iconSize: 24px 24px;
-    color:#B3FFFFFF;
-    background-color:#405c4b7d;
-    border-bottom:2px solid #5C4B7D;
-    border-radius:2px;
-}
-
-QPushButton[cssClass="btn-check-tor"]:checked {
-    background-color:#505c4b7d;
-    color:#ffffff;
-    border-bottom:2px solid #b088ff;
-}
-
-/* End tor status*/
 
 QPushButton[cssClass="btn-check-status-lock"] {
     background-color:#505c4b7d;
@@ -1020,10 +966,6 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     font-size:17px;
 }
 
-*[cssClass="text-main-hash"] {
-    color:#FFFFFF;
-    font-size:12px;
-}
 
 *[cssClass="text-main-settings"] {
     color:#FFFFFF;
@@ -1715,7 +1657,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="img-splash-logo"] {
-    qproperty-icon: url("://img-logo-alnj");
+    qproperty-icon: url("://img-logo-alnjl");
     qproperty-iconSize: 300px 100px;
     border:0;
     background-color:transparent;
@@ -1753,9 +1695,9 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     font-size:16px;
 }
 
-*[cssClass="text-warning-small"] {
-    color: #f84444;
-    font-size:14px;
+*[cssClass="text-violet-warning"] {
+    color: #877B9F;;
+    font-size:13px;
 }
 
 *[cssClass="ic-warning"] {
@@ -1770,14 +1712,14 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     font-size:20px;
 }
 
-*[cssClass="text-stake-alng"] {
+*[cssClass="text-stake-alnj"] {
     color:#5c4b7d;
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #5c4b7d;
 }
 
-*[cssClass="text-stake-alng-disable"] {
+*[cssClass="text-stake-alnj-disable"] {
     color:#69656F;
     font-size:16px;
     padding:10px;
@@ -1809,7 +1751,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     padding-left:4px;
 }
 
-*[cssClass="text-chart-alng"] {
+*[cssClass="text-chart-alnj"] {
     color:#5c4b7d;
     font-size:16px;
     padding-left:4px;
@@ -1820,7 +1762,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     border:none;
 }
 
-*[cssClass="square-chart-alng"] {
+*[cssClass="square-chart-alnj"] {
     background-color:#5c4b7d;
     border:none;
 }
@@ -2073,7 +2015,7 @@ HH       SPIN BOX
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 
-QSpinBox[cssClass="btn-spin-box"], QDoubleSpinBox[cssClass="btn-spin-box"] {
+QSpinBox[cssClass="btn-spin-box"] {
     background-color:#0f0b16;
     padding:10px 20px 10px 10px;
     font-size:16px;
@@ -2084,7 +2026,7 @@ QSpinBox[cssClass="btn-spin-box"], QDoubleSpinBox[cssClass="btn-spin-box"] {
 }
 
 
-QSpinBox[cssClass="btn-spin-box"]::up-button, QDoubleSpinBox[cssClass="btn-spin-box"]::up-button {
+QSpinBox[cssClass="btn-spin-box"]::up-button {
     image: url("://ic-arrow-drop-up-purple");
     subcontrol-position: top right; width: 20px; height: 20px;
     border: 0px;
@@ -2092,7 +2034,7 @@ QSpinBox[cssClass="btn-spin-box"]::up-button, QDoubleSpinBox[cssClass="btn-spin-
     margin:0px 5px 0px 0px;
 }
 
-QSpinBox[cssClass="btn-spin-box"]::down-button, QDoubleSpinBox[cssClass="btn-spin-box"]::down-button {
+QSpinBox[cssClass="btn-spin-box"]::down-button {
     image: url("://ic-arrow-drop-down-purple");
     subcontrol-position: bottom right; width: 20px; height: 20px;
     border: 0px;
@@ -2121,21 +2063,6 @@ QComboBox[cssClass="btn-combo"]::down-arrow {
     image: url("://ic-arrow-drop-down");
     width: 24px;
     height: 24px;
-}
-
-QComboBox[cssClass="btn-combo-small"] {
-    background-color:#0f0b16;
-    padding:8px 14px 8px 8px;
-    font-size:13px;
-    border:1px solid #0f0b16;
-    color: #707070;
-    text-align: right;
-}
-
-QComboBox[cssClass="btn-combo-small"]::down-arrow {
-    image: url("://ic-arrow-drop-down");
-    width: 15px;
-    height: 15px;
 }
 
 QComboBox[cssClass="btn-combo-edit"] {
@@ -2298,14 +2225,14 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 QScrollBar:vertical {
     border: 0px solid #bababa;
     background:#0f0b16;
-    width:7px;
+    width:4px;
     margin: 0px 0px 0px 0px;
 }
 
 
 QScrollBar::handle:vertical {
     background: #5c4b7d;
-    min-height: 10px;
+    min-height: 0px;
 }
 
 QScrollBar::add-line:vertical {
@@ -2401,9 +2328,9 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 
-*[cssClass="coin-icon-alng"] {
-    qproperty-icon: url("://ic-coin-alng") off,
-    url("://ic-coin-alng") on ;
+*[cssClass="coin-icon-alnj"] {
+    qproperty-icon: url("://ic-coin-alnj") off,
+    url("://ic-coin-alnj") on ;
     qproperty-iconSize: 24px 24px;
     background-color: #FFFFFF;
     border:  2px solid #0f0b16;

@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/alnj-config.h \
+           src/alnjl-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/alnj-config.h \
+           src/config/alnjl-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -332,7 +332,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/alnj.moc \
+           src/qt/alnjl.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -373,9 +373,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/alnj-cli.cpp \
-           src/alnj-tx.cpp \
-           src/alnj.cpp \
+           src/alnjl-cli.cpp \
+           src/alnjl-tx.cpp \
+           src/alnjl.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -470,8 +470,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/alnj.cpp \
-           src/qt/alnjstrings.cpp \
+           src/qt/alnjl.cpp \
+           src/qt/alnjlstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -549,7 +549,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_alnj.cpp \
+           src/test/test_alnjl.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -640,24 +640,24 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/alnj.qrc src/qt/alnj_locale.qrc
+RESOURCES += src/qt/alnjl.qrc src/qt/alnjl_locale.qrc
 
-TRANSLATIONS += src/qt/locale/alnj_bg.ts \
-                src/qt/locale/alnj_de.ts \
-                src/qt/locale/alnj_en.ts \
-                src/qt/locale/alnj_es.ts \
-                src/qt/locale/alnj_fi.ts \
-                src/qt/locale/alnj_fr.ts \
-                src/qt/locale/alnj_it.ts \
-                src/qt/locale/alnj_ja.ts \
-                src/qt/locale/alnj_pl.ts \
-                src/qt/locale/alnj_pt.ts \
-                src/qt/locale/alnj_ru.ts \
-                src/qt/locale/alnj_sk.ts \
-                src/qt/locale/alnj_sv.ts \
-                src/qt/locale/alnj_vi.ts \
-                src/qt/locale/alnj_zh_CN.ts \
-                src/qt/locale/alnj_zh_TW.ts
+TRANSLATIONS += src/qt/locale/alnjl_bg.ts \
+                src/qt/locale/alnjl_de.ts \
+                src/qt/locale/alnjl_en.ts \
+                src/qt/locale/alnjl_es.ts \
+                src/qt/locale/alnjl_fi.ts \
+                src/qt/locale/alnjl_fr.ts \
+                src/qt/locale/alnjl_it.ts \
+                src/qt/locale/alnjl_ja.ts \
+                src/qt/locale/alnjl_pl.ts \
+                src/qt/locale/alnjl_pt.ts \
+                src/qt/locale/alnjl_ru.ts \
+                src/qt/locale/alnjl_sk.ts \
+                src/qt/locale/alnjl_sv.ts \
+                src/qt/locale/alnjl_vi.ts \
+                src/qt/locale/alnjl_zh_CN.ts \
+                src/qt/locale/alnjl_zh_TW.ts
 
 DISTFILES += \
     README.md

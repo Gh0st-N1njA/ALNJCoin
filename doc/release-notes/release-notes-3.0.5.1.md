@@ -6,7 +6,7 @@ If you are stuck on block 908000:
 
 If you are stuck on a block before 908000:
 - Download the 3.0.5.1 wallet (the file names do not display the "build" version and cutoff the 1)
-- Start the wallet with `reindexaccumulators=1` in your `alnj.conf` file (you can figure out the location of your `alnj.conf` [here](https://alnj.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-) )
-- After starting the wallet, remove `reindexaccumulators=1` from your `alnj.conf` or else it will perform this operation each time you start your wallet.
+- Start the wallet with `reindexaccumulators=1` in your `alnjl.conf` file (you can figure out the location of your `alnjl.conf` [here](https://alnjlite.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-) )
+- After starting the wallet, remove `reindexaccumulators=1` from your `alnjl.conf` or else it will perform this operation each time you start your wallet.
 
 If both of those solutions failed you can use the [blockchain snapshot](http://178.254.23.111/~pub/ALNJ/Daily-Snapshots-Html/ALNJ-Daily-Snapshots.html). If using the snapshot, please carefully follow the instructions on the snapshot page.

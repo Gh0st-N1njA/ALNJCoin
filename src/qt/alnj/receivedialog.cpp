@@ -1,10 +1,11 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/receivedialog.h"
-#include "qt/alnj/forms/ui_receivedialog.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/receivedialog.h"
+#include "qt/alnjl/forms/ui_receivedialog.h"
+#include "qt/alnjl/qtutils.h"
 #include "walletmodel.h"
 #include <QFile>
 
@@ -50,8 +51,8 @@ ReceiveDialog::ReceiveDialog(QWidget *parent) :
     ui->btnCancel->setVisible(false);
 
 
-    connect(ui->btnEsc, &QPushButton::clicked, this, &ReceiveDialog::close);
-    connect(ui->btnSave, &QPushButton::clicked, this, &ReceiveDialog::onCopy);
+    connect(ui->btnEsc, SIGNAL(clicked()), this, SLOT(close()));
+    connect(ui->btnSave, SIGNAL(clicked()), this, SLOT(onCopy()));
 }
 
 void ReceiveDialog::updateQr(QString address){

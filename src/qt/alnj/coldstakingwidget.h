@@ -1,18 +1,19 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef COLDSTAKINGWIDGET_H
 #define COLDSTAKINGWIDGET_H
 
-#include "qt/alnj/pwidget.h"
-#include "qt/alnj/furabstractlistitemdelegate.h"
-#include "qt/alnj/txviewholder.h"
-#include "qt/alnj/tooltipmenu.h"
-#include "qt/alnj/sendmultirow.h"
-#include "qt/alnj/coldstakingmodel.h"
-#include "qt/alnj/contactsdropdown.h"
-#include "qt/alnj/addressholder.h"
+#include "qt/alnjl/pwidget.h"
+#include "qt/alnjl/furabstractlistitemdelegate.h"
+#include "qt/alnjl/txviewholder.h"
+#include "qt/alnjl/tooltipmenu.h"
+#include "qt/alnjl/sendmultirow.h"
+#include "qt/alnjl/coldstakingmodel.h"
+#include "qt/alnjl/contactsdropdown.h"
+#include "qt/alnjl/addressholder.h"
 #include "transactiontablemodel.h"
 #include "addresstablemodel.h"
 #include "addressfilterproxymodel.h"
@@ -48,10 +49,10 @@ public:
     void run(int type) override;
     void onError(QString error, int type) override;
 
-public Q_SLOTS:
+public slots:
     void walletSynced(bool sync);
 
-private Q_SLOTS:
+private slots:
     void changeTheme(bool isLightTheme, QString &theme) override;
     void handleAddressClicked(const QModelIndex &index);
     void handleMyColdAddressClicked(const QModelIndex &rIndex);
@@ -73,8 +74,6 @@ private Q_SLOTS:
     void onLabelClicked();
     void onMyStakingAddressesClicked();
     void onDelegationsRefreshed();
-    void onSortChanged(int idx);
-    void onSortOrderChanged(int idx);
 
 private:
     Ui::ColdStakingWidget *ui = nullptr;
@@ -91,7 +90,6 @@ private:
     QSpacerItem *spacerDiv = nullptr;
 
     bool isInDelegation = true;
-    bool isStakingAddressListVisible = false;
 
     ContactsDropdown *menuContacts = nullptr;
     TooltipMenu* menu = nullptr;
@@ -108,9 +106,6 @@ private:
     QModelIndex index;
     QModelIndex addressIndex;
 
-    // Cached sort type and order
-    AddressTableModel::ColumnIndex sortType = AddressTableModel::Label;
-    Qt::SortOrder sortOrder = Qt::AscendingOrder;
 
     int nDisplayUnit;
 
@@ -120,7 +115,6 @@ private:
     bool refreshDelegations();
     void onLabelClicked(QString dialogTitle, const QModelIndex &index, const bool& isMyColdStakingAddresses);
     void updateStakingTotalLabel();
-    void sortAddresses();
 };
 
 #endif // COLDSTAKINGWIDGET_H

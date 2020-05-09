@@ -1,14 +1,14 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/navmenuwidget.h"
-#include "qt/alnj/forms/ui_navmenuwidget.h"
-#include "qt/alnj/alnjgui.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/navmenuwidget.h"
+#include "qt/alnjl/forms/ui_navmenuwidget.h"
+#include "qt/alnjl/alnjlgui.h"
+#include "qt/alnjl/qtutils.h"
 #include "clientversion.h"
 #include "optionsmodel.h"
-#include <QScrollBar>
 
 NavMenuWidget::NavMenuWidget(ALNJGUI *mainWindow, QWidget *parent) :
     PWidget(mainWindow, parent),
@@ -36,6 +36,10 @@ NavMenuWidget::NavMenuWidget(ALNJGUI *mainWindow, QWidget *parent) :
     ui->btnAddress->setText("CONTACTS\n");
     ui->btnAddress->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
+    ui->btnPrivacy->setProperty("name", "privacy");
+    ui->btnPrivacy->setText("PRIVACY\n");
+    ui->btnPrivacy->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+
     ui->btnMaster->setProperty("name", "master");
     ui->btnMaster->setText("MASTER\r\nNODES");
     ui->btnMaster->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
@@ -52,35 +56,15 @@ NavMenuWidget::NavMenuWidget(ALNJGUI *mainWindow, QWidget *parent) :
     ui->btnReceive->setText("RECEIVE\n");
     ui->btnReceive->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
-    ui->btnPrivacy->setProperty("name", "privacy");
     btns = {ui->btnDashboard, ui->btnSend, ui->btnReceive, ui->btnAddress, ui->btnPrivacy, ui->btnMaster, ui->btnColdStaking, ui->btnSettings, ui->btnColdStaking};
     onNavSelected(ui->btnDashboard, true);
-
-    ui->scrollAreaNav->setWidgetResizable(true);
-
-    QSizePolicy scrollAreaPolicy = ui->scrollAreaNav->sizePolicy();
-    scrollAreaPolicy.setVerticalStretch(1);
-    ui->scrollAreaNav->setSizePolicy(scrollAreaPolicy);
-
-    QSizePolicy scrollVertPolicy = ui->scrollAreaNavVert->sizePolicy();
-    scrollVertPolicy.setVerticalStretch(1);
-    ui->scrollAreaNavVert->setSizePolicy(scrollVertPolicy);
 
     connectActions();
 }
 
 void NavMenuWidget::loadWalletModel() {
-    if (walletModel) {
-        if (walletModel->getZerocoinBalance() > 0) {
-            ui->btnPrivacy->setText("PRIVACY\n");
-            ui->btnPrivacy->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-            connect(ui->btnPrivacy, &QPushButton::clicked, this, &NavMenuWidget::onPrivacyClicked);
-        } else {
-            ui->btnPrivacy->setVisible(false);
-        }
-
-        if (walletModel->getOptionsModel())
-            ui->btnColdStaking->setVisible(walletModel->getOptionsModel()->isColdStakingScreenEnabled());
+    if (walletModel && walletModel->getOptionsModel()) {
+        ui->btnColdStaking->setVisible(walletModel->getOptionsModel()->isColdStakingScreenEnabled());
     }
 }
 
@@ -88,13 +72,14 @@ void NavMenuWidget::loadWalletModel() {
  * Actions
  */
 void NavMenuWidget::connectActions() {
-    connect(ui->btnDashboard, &QPushButton::clicked, this, &NavMenuWidget::onDashboardClicked);
-    connect(ui->btnSend, &QPushButton::clicked, this, &NavMenuWidget::onSendClicked);
-    connect(ui->btnAddress, &QPushButton::clicked, this, &NavMenuWidget::onAddressClicked);
-    connect(ui->btnMaster, &QPushButton::clicked, this, &NavMenuWidget::onMasterNodesClicked);
-    connect(ui->btnSettings, &QPushButton::clicked, this, &NavMenuWidget::onSettingsClicked);
-    connect(ui->btnReceive, &QPushButton::clicked, this, &NavMenuWidget::onReceiveClicked);
-    connect(ui->btnColdStaking, &QPushButton::clicked, this, &NavMenuWidget::onColdStakingClicked);
+    connect(ui->btnDashboard,SIGNAL(clicked()),this, SLOT(onDashboardClicked()));
+    connect(ui->btnSend,SIGNAL(clicked()),this, SLOT(onSendClicked()));
+    connect(ui->btnAddress,SIGNAL(clicked()),this, SLOT(onAddressClicked()));
+    connect(ui->btnPrivacy,SIGNAL(clicked()),this, SLOT(onPrivacyClicked()));
+    connect(ui->btnMaster,SIGNAL(clicked()),this, SLOT(onMasterNodesClicked()));
+    connect(ui->btnSettings,SIGNAL(clicked()),this, SLOT(onSettingsClicked()));
+    connect(ui->btnReceive,SIGNAL(clicked()),this, SLOT(onReceiveClicked()));
+    connect(ui->btnColdStaking,SIGNAL(clicked()),this, SLOT(onColdStakingClicked()));
 
     ui->btnDashboard->setShortcut(QKeySequence(SHORT_KEY + Qt::Key_1));
     ui->btnSend->setShortcut(QKeySequence(SHORT_KEY + Qt::Key_2));
@@ -149,7 +134,7 @@ void NavMenuWidget::onReceiveClicked(){
 
 void NavMenuWidget::onNavSelected(QWidget* active, bool startup) {
     QString start = "btn-nav-";
-    Q_FOREACH (QWidget* w, btns) {
+    foreach (QWidget* w, btns) {
         QString clazz = start + w->property("name").toString();
         if (w == active) {
             clazz += "-active";
@@ -165,15 +150,7 @@ void NavMenuWidget::selectSettings() {
 
 void NavMenuWidget::onShowHideColdStakingChanged(bool show) {
     ui->btnColdStaking->setVisible(show);
-    if (show)
-        ui->scrollAreaNav->verticalScrollBar()->setValue(ui->btnColdStaking->y());
-}
-
-void NavMenuWidget::showEvent(QShowEvent *event) {
-    if (!init) {
-        init = true;
-        ui->scrollAreaNav->verticalScrollBar()->setValue(ui->btnDashboard->y());
-    }
+    window->setMinimumHeight(show ? 780 : 740);
 }
 
 void NavMenuWidget::updateButtonStyles(){

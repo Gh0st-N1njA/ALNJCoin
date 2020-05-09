@@ -1,5 +1,6 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017-2020 The ALNJ developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -49,16 +50,13 @@ public:
         ZeromintAddresses,   // bool
         ZeromintPercentage,  // int
         ZeromintPrefDenom,   // int
-        HideCharts,          // bool
         HideZeroBalances,    // bool
         HideOrphans,    // bool
         AnonymizeAlnjAmount, //int
         ShowMasternodesTab,  // bool
         Listen,              // bool
-        StakeSplitThreshold,    // CAmount (LongLong)
-        ShowColdStakingScreen,  // bool
-        fUseCustomFee,          // bool
-        nCustomFee,             // CAmount (LongLong)
+        StakeSplitThreshold, // int
+        ShowColdStakingScreen, // bool
         OptionIDRowCount,
     };
 
@@ -72,13 +70,9 @@ public:
     /** Updates current unit in memory, settings and emits displayUnitChanged(newUnit) signal */
     void setDisplayUnit(const QVariant& value);
     /* Update StakeSplitThreshold's value in wallet */
-    void setStakeSplitThreshold(const CAmount value);
-    /* Update Custom Fee value in wallet */
-    void setUseCustomFee(bool fUse);
-    void setCustomFeeValue(const CAmount& value);
+    void setStakeSplitThreshold(int value);
 
     /* Explicit getters */
-    bool isHideCharts() { return fHideCharts; }
     bool getMinimizeToTray() { return fMinimizeToTray; }
     bool getMinimizeOnClose() { return fMinimizeOnClose; }
     int getDisplayUnit() { return nDisplayUnit; }
@@ -118,7 +112,6 @@ private:
     QString strThirdPartyTxUrls;
     bool fCoinControlFeatures;
     bool showColdStakingScreen;
-    bool fHideCharts;
     bool fHideZeroBalances;
     bool fHideOrphans;
     /* settings that were overriden by command-line */
@@ -127,7 +120,7 @@ private:
     /// Add option to list of GUI options overridden through command line/config file
     void addOverriddenOption(const std::string& option);
 
-Q_SIGNALS:
+signals:
     void displayUnitChanged(int unit);
     void zeromintEnableChanged(bool);
     void zeromintAddressesChanged(bool);
@@ -136,7 +129,6 @@ Q_SIGNALS:
     void anonymizeAlnjAmountChanged(int);
     void coinControlFeaturesChanged(bool);
     void showHideColdStakingScreen(bool);
-    void hideChartsChanged(bool);
     void hideZeroBalancesChanged(bool);
     void hideOrphansChanged(bool);
 };

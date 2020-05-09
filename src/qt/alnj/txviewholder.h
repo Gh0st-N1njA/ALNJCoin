@@ -1,12 +1,13 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef TXVIEWHOLDER_H
 #define TXVIEWHOLDER_H
 
-#include "qt/alnj/furlistrow.h"
-#include "qt/alnj/txrow.h"
+#include "qt/alnjl/furlistrow.h"
+#include "qt/alnjl/txrow.h"
 #include "bitcoinunits.h"
 #include <transactionfilterproxy.h>
 

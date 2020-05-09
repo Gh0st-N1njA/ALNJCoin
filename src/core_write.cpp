@@ -1,5 +1,6 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2017-2020 The ALNJ developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -133,7 +134,7 @@ void TxToUniv(const CTransaction& tx, const uint256& hashBlock, UniValue& entry)
     }
     entry.pushKV("vout", vout);
 
-    if (!hashBlock.IsNull())
+    if (hashBlock != 0)
         entry.pushKV("blockhash", hashBlock.GetHex());
 
     entry.pushKV("hex", EncodeHexTx(tx)); // the hex-encoded transaction. used the name "hex" to be consistent with the verbose output of "getrawtransaction".

@@ -1,6 +1,7 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2016-2020 The ALNJ developers
+// Copyright (c) 2016-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -142,7 +143,7 @@ public:
         else
             throw std::runtime_error("Corrupt priority value in estimates file.");
         if (feeSamples.size() + prioritySamples.size() > 0)
-            LogPrint(BCLog::ESTIMATEFEE, "Read %d fee samples and %d priority samples\n",
+            LogPrint("estimatefee", "Read %d fee samples and %d priority samples\n",
                 feeSamples.size(), prioritySamples.size());
     }
 };
@@ -185,7 +186,7 @@ private:
             // Neither or both fee and priority sufficient to get confirmed:
             // don't know why they got confirmed.
         }
-        LogPrint(BCLog::ESTIMATEFEE, "Seen TX confirm: %s : %s fee/%g priority, took %d blocks\n",
+        LogPrint("estimatefee", "Seen TX confirm: %s : %s fee/%g priority, took %d blocks\n",
             assignedTo, feeRate.ToString(), dPriority, nBlocksAgo);
     }
 
@@ -246,7 +247,7 @@ public:
 
         for (size_t i = 0; i < history.size(); i++) {
             if (history[i].FeeSamples() + history[i].PrioritySamples() > 0)
-                LogPrint(BCLog::ESTIMATEFEE, "estimates: for confirming within %d blocks based on %d/%d samples, fee=%s, prio=%g\n",
+                LogPrint("estimatefee", "estimates: for confirming within %d blocks based on %d/%d samples, fee=%s, prio=%g\n",
                     i,
                     history[i].FeeSamples(), history[i].PrioritySamples(),
                     estimateFee(i + 1).ToString(), estimatePriority(i + 1));
@@ -478,7 +479,7 @@ void CTxMemPool::removeCoinbaseSpends(const CCoinsViewCache* pcoins, unsigned in
                 continue;
             const CCoins* coins = pcoins->AccessCoins(txin.prevout.hash);
             if (fSanityCheck) assert(coins);
-            if (!coins || ((coins->IsCoinBase() || coins->IsCoinStake()) && nMemPoolHeight - coins->nHeight < (unsigned)Params().GetConsensus().nCoinbaseMaturity)) {
+            if (!coins || ((coins->IsCoinBase() || coins->IsCoinStake()) && nMemPoolHeight - coins->nHeight < (unsigned)Params().COINBASE_MATURITY())) {
                 transactionsToRemove.push_back(tx);
                 break;
             }
@@ -542,7 +543,7 @@ void CTxMemPool::check(const CCoinsViewCache* pcoins) const
     if (!fSanityCheck)
         return;
 
-    LogPrint(BCLog::MEMPOOL, "Checking mempool with %u transactions and %u inputs\n", (unsigned int)mapTx.size(), (unsigned int)mapNextTx.size());
+    LogPrint("mempool", "Checking mempool with %u transactions and %u inputs\n", (unsigned int)mapTx.size(), (unsigned int)mapNextTx.size());
 
     uint64_t checkTotal = 0;
 

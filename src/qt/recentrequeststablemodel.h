@@ -1,5 +1,6 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2011-2014 The Bitcoin developers
-// Copyright (c) 2017-2019 The ALNJ developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,7 +55,7 @@ private:
     Qt::SortOrder order;
 };
 
-/** Model for list of recently generated payment requests / alnj: URIs.
+/** Model for list of recently generated payment requests / alnjl: URIs.
  * Part of wallet model.
  */
 class RecentRequestsTableModel : public QAbstractTableModel
@@ -91,7 +92,7 @@ public:
     void addNewRequest(const std::string& recipient);
     void addNewRequest(RecentRequestEntry& recipient);
 
-public Q_SLOTS:
+public slots:
     void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
     void updateDisplayUnit();
 

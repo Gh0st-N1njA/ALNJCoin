@@ -1,3 +1,4 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,7 +15,7 @@ class PaymentServerTests : public QObject
 {
     Q_OBJECT
 
-private Q_SLOTS:
+private slots:
     void paymentServerTests();
 };
 
@@ -25,7 +26,7 @@ class RecipientCatcher : public QObject
 {
     Q_OBJECT
 
-public Q_SLOTS:
+public slots:
     void getRecipient(SendCoinsRecipient r);
 
 public:

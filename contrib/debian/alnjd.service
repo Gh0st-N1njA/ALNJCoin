@@ -1,23 +1,23 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit alnjd.service
+# $ systemctl edit alnjld.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/alnj/alnj.conf
+# /etc/alnjl/alnjl.conf
 
 [Unit]
 Description=ALNJ daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/alnjd -daemon -datadir=/var/lib/alnj -conf=/etc/alnj/alnj.conf -pid=/run/alnjd/alnjd.pid
-# Creates /run/alnjd owned by alnj
-RuntimeDirectory=alnjd
-User=alnj
+ExecStart=/usr/bin/alnjld -daemon -datadir=/var/lib/alnjl -conf=/etc/alnjl/alnjl.conf -pid=/run/alnjld/alnjld.pid
+# Creates /run/alnjld owned by alnjl
+RuntimeDirectory=alnjld
+User=alnjl
 Type=forking
-PIDFile=/run/alnjd/alnjd.pid
+PIDFile=/run/alnjld/alnjld.pid
 Restart=on-failure
 
 # Hardening measures

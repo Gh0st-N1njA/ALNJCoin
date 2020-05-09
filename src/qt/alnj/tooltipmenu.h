@@ -1,11 +1,12 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef TOOLTIPMENU_H
 #define TOOLTIPMENU_H
 
-#include "qt/alnj/pwidget.h"
+#include "qt/alnjl/pwidget.h"
 #include <QWidget>
 #include <QModelIndex>
 
@@ -40,13 +41,13 @@ public:
     void setEditBtnVisible(bool visible);
     void setLastBtnVisible(bool visible);
 
-Q_SIGNALS:
+signals:
     void onDeleteClicked();
     void onCopyClicked();
     void onEditClicked();
     void onLastClicked();
 
-private Q_SLOTS:
+private slots:
     void deleteClicked();
     void copyClicked();
     void editClicked();

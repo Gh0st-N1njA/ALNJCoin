@@ -1,4 +1,5 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,8 +27,7 @@ public:
     ~ExpandableButton();
 
     void setButtonClassStyle(const char *name, const QVariant &value, bool forceUpdate = false);
-    void setButtonText(const QString& _text);
-    void setNoIconText(const QString& _text);
+    void setButtonText(const QString _text);
     void setIcon(QString path);
 
     bool isChecked();
@@ -37,12 +37,12 @@ public:
     }
     void setSmall();
     void setExpanded();
-Q_SIGNALS:
+signals:
     void Mouse_Pressed();
     void Mouse_Hover();
     void Mouse_HoverLeave();
 
-public Q_SLOTS:
+public slots:
     void setText2(QString text2);
 
     QString getText(){
@@ -53,14 +53,16 @@ protected:
     virtual void enterEvent(QEvent *);
     virtual void leaveEvent(QEvent *);
 
-private Q_SLOTS:
+    //virtual void mouseMoveEvent(QMouseEvent *ev);
+    virtual void mousePressEvent(QMouseEvent *ev);
+
+private slots:
 
     void on_pushButton_clicked(bool checked);
 
-    void innerMousePressEvent();
+    void mousePressEvent();
 private:
     Ui::ExpandableButton *ui;
-    QString notExpandedText;
     QString text;
     std::atomic<bool> isAnimating;
     QPropertyAnimation *animation = nullptr;

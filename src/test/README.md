@@ -5,44 +5,44 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the alnjd tests manually, launch `src/test/test_alnj`. To recompile
+To run the alnjld tests manually, launch `src/test/test_alnjl`. To recompile
 after a test file was modified, run `make` and then run the test again. If you
 modify a non-test file, use `make -C src/test` to recompile only what's needed
-to run the alnjd tests.
+to run the alnjld tests.
 
-To add more alnjd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more alnjld tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_FIXTURE_TEST_SUITE sections.
 
-To run the alnj-qt tests manually, launch `src/qt/test/test_alnj-qt`
+To run the alnjl-qt tests manually, launch `src/qt/test/test_alnjl-qt`
 
-To add more alnj-qt tests, add them to the `src/qt/test/` directory and
+To add more alnjl-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
 
 ### Running individual tests
 
-test_alnj has some built-in command-line arguments; for
+test_alnjl has some built-in command-line arguments; for
 example, to run just the getarg_tests verbosely:
 
-    test_alnj --log_level=all --run_test=getarg_tests
+    test_alnjl --log_level=all --run_test=getarg_tests
 
 ... or to run just the doubledash test:
 
-    test_alnj --run_test=getarg_tests/doubledash
+    test_alnjl --run_test=getarg_tests/doubledash
 
-Run `test_alnj --help` for the full list.
+Run `test_alnjl --help` for the full list.
 
 ### Note on adding test cases
 
 The sources in this directory are unit test cases.  Boost includes a
-unit testing framework, and since alnj already uses boost, it makes
+unit testing framework, and since alnjl already uses boost, it makes
 sense to simply use this framework rather than require developers to
 configure some other framework (we want as few impediments to creating
 unit tests as possible).
 
-The build system is setup to compile an executable called `test_alnj`
+The build system is setup to compile an executable called `test_alnjl`
 that runs all of the unit tests.  The main source file is called
-test_alnj.cpp, which simply includes other files that contain the
+test_alnjl.cpp, which simply includes other files that contain the
 actual unit tests (outside of a couple required preprocessor
 directives). To add a new unit test file to our test suite you need
 to add the file to `src/Makefile.test.include`. The pattern is to

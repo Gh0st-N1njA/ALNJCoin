@@ -1,10 +1,11 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/settings/settingswalletrepairwidget.h"
-#include "qt/alnj/settings/forms/ui_settingswalletrepairwidget.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/settings/settingswalletrepairwidget.h"
+#include "qt/alnjl/settings/forms/ui_settingswalletrepairwidget.h"
+#include "qt/alnjl/qtutils.h"
 
 SettingsWalletRepairWidget::SettingsWalletRepairWidget(ALNJGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
@@ -72,13 +73,13 @@ SettingsWalletRepairWidget::SettingsWalletRepairWidget(ALNJGUI* _window, QWidget
 
 
     // Wallet Repair Buttons
-    connect(ui->pushButtonSalvage, &QPushButton::clicked, this, &SettingsWalletRepairWidget::walletSalvage);
-    connect(ui->pushButtonRescan, &QPushButton::clicked, this, &SettingsWalletRepairWidget::walletRescan);
-    connect(ui->pushButtonRecover1, &QPushButton::clicked, this, &SettingsWalletRepairWidget::walletZaptxes1);
-    connect(ui->pushButtonRecover2, &QPushButton::clicked, this, &SettingsWalletRepairWidget::walletZaptxes2);
-    connect(ui->pushButtonUpgrade, &QPushButton::clicked, this, &SettingsWalletRepairWidget::walletUpgrade);
-    connect(ui->pushButtonRebuild, &QPushButton::clicked, this, &SettingsWalletRepairWidget::walletReindex);
-    connect(ui->pushButtonDelete, &QPushButton::clicked, this, &SettingsWalletRepairWidget::walletResync);
+    connect(ui->pushButtonSalvage, SIGNAL(clicked()), this, SLOT(walletSalvage()));
+    connect(ui->pushButtonRescan, SIGNAL(clicked()), this, SLOT(walletRescan()));
+    connect(ui->pushButtonRecover1, SIGNAL(clicked()), this, SLOT(walletZaptxes1()));
+    connect(ui->pushButtonRecover2, SIGNAL(clicked()), this, SLOT(walletZaptxes2()));
+    connect(ui->pushButtonUpgrade, SIGNAL(clicked()), this, SLOT(walletUpgrade()));
+    connect(ui->pushButtonRebuild, SIGNAL(clicked()), this, SLOT(walletReindex()));
+    connect(ui->pushButtonDelete, SIGNAL(clicked()), this, SLOT(walletResync()));
 }
 
 /** Restart wallet with "-salvagewallet" */
@@ -157,7 +158,7 @@ void SettingsWalletRepairWidget::buildParameterlist(QString arg)
     args.append(arg);
 
     // Send command-line arguments to ALNJGUI::handleRestart()
-    Q_EMIT handleRestart(args);
+    emit handleRestart(args);
 }
 
 SettingsWalletRepairWidget::~SettingsWalletRepairWidget()

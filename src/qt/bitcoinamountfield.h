@@ -1,3 +1,4 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -56,7 +57,7 @@ public:
     */
     QWidget* setupTabChain(QWidget* prev);
 
-Q_SIGNALS:
+signals:
     void valueChanged();
 
 protected:
@@ -67,7 +68,7 @@ private:
     AmountSpinBox* amount;
     QValueComboBox* unit;
 
-private Q_SLOTS:
+private slots:
     void unitChanged(int idx);
 };
 

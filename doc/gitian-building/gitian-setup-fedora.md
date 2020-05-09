@@ -60,7 +60,7 @@ git config --global user.email "MY_NAME@example.com"
 Fetching the Build Script
 --------------------------
 
-The build script we'll be using is contained in the ALNJ github repository ([contrib/gitian-build.py](https://github.com/alnj-project/alnj/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the ALNJ repository and will need to fetch this script with the following commands:
+The build script we'll be using is contained in the ALNJ github repository ([contrib/gitian-build.py](https://github.com/alnjl-project/alnjl/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the ALNJ repository and will need to fetch this script with the following commands:
 
 ```bash
 curl -L -O https://raw.githubusercontent.com/ALNJ-Project/ALNJ/master/contrib/gitian-build.py
@@ -77,7 +77,7 @@ Initial Gitian Setup
 Now that the script has been downloaded to your home directory, its time to run it in setup mode. This will perform the following actions:
 
 - Install the necessary system packages for gitian (namely Docker and it's related cli tools).
-- Clone the gitian-builder, gitian.sigs, alnj-detached-sigs, and alnj GitHub repos.
+- Clone the gitian-builder, gitian.sigs, alnjl-detached-sigs, and alnjl GitHub repos.
 - Configure proper user/group permissions for running gitian with Docker
 - Create a base Docker image.
 

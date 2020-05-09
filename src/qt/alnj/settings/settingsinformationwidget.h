@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +7,7 @@
 #define SETTINGSINFORMATIONWIDGET_H
 
 #include <QWidget>
-#include "qt/alnj/pwidget.h"
+#include "qt/alnjl/pwidget.h"
 #include "rpcconsole.h"
 
 namespace Ui {
@@ -23,10 +24,9 @@ public:
 
     void loadClientModel() override;
 
-private Q_SLOTS:
+private slots:
     void setNumConnections(int count);
     void setNumBlocks(int count);
-    void setMasternodeCount(const QString& strMasternodes);
     void openNetworkMonitor();
 
 private:

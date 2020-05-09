@@ -1,15 +1,16 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef ADDRESSESWIDGET_H
 #define ADDRESSESWIDGET_H
 
-#include "qt/alnj/pwidget.h"
+#include "qt/alnjl/pwidget.h"
 #include "addresstablemodel.h"
-#include "qt/alnj/tooltipmenu.h"
+#include "qt/alnjl/tooltipmenu.h"
 #include "furabstractlistitemdelegate.h"
-#include "qt/alnj/addressfilterproxymodel.h"
+#include "qt/alnjl/addressfilterproxymodel.h"
 
 #include <QWidget>
 
@@ -37,15 +38,13 @@ public:
     void loadWalletModel() override;
     void onNewContactClicked();
 
-private Q_SLOTS:
+private slots:
     void handleAddressClicked(const QModelIndex &index);
     void onStoreContactClicked();
     void onEditClicked();
     void onDeleteClicked();
     void onCopyClicked();
     void onAddContactShowHideClicked();
-    void onSortChanged(int idx);
-    void onSortOrderChanged(int idx);
 
     void changeTheme(bool isLightTheme, QString &theme) override;
 private:
@@ -61,12 +60,7 @@ private:
     // Cached index
     QModelIndex index;
 
-    // Cached sort type and order
-    AddressTableModel::ColumnIndex sortType = AddressTableModel::Label;
-    Qt::SortOrder sortOrder = Qt::AscendingOrder;
-
     void updateListView();
-    void sortAddresses();
 };
 
 #endif // ADDRESSESWIDGET_H

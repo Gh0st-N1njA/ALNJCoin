@@ -1,4 +1,5 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,18 +20,11 @@ public:
     explicit DefaultDialog(QWidget *parent = nullptr);
     ~DefaultDialog();
 
-    void showEvent(QShowEvent *event) override;
-    void setText(const QString& title = "", const QString& message = "", const QString& okBtnText = "", const QString& cancelBtnText = "");
+    void setText(QString title = "", QString message = "", QString okBtnText = "", QString cancelBtnText = "");
 
     bool isOk = false;
-
-public Q_SLOTS:
-    void accept() override;
-
 private:
     Ui::DefaultDialog *ui;
-protected:
-    void keyPressEvent(QKeyEvent *e) override;
 };
 
 #endif // DEFAULTDIALOG_H

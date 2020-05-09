@@ -35,7 +35,7 @@ outgoing connections, but more is possible.
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-	./alnjd -proxy=127.0.0.1:9050
+	./alnjld -proxy=127.0.0.1:9050
 
 
 ## 2. Run a ALNJ Core hidden server
@@ -45,19 +45,17 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. For newer
 versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 
-	HiddenServiceDir /var/lib/tor/alnj-service/
-	HiddenServiceVersion 2
-	HiddenServicePort 51472 127.0.0.1:51472
+	HiddenServiceDir /var/lib/tor/alnjl-service/
+	HiddenServicePort 8233 127.0.0.1:8233
 	HiddenServicePort 61472 127.0.0.1:61472
 
 The directory can be different of course, but (both) port numbers should be equal to
-your alnjd's P2P listen port (51472 by default).
+your alnjld's P2P listen port (8233 by default).
 
-	-externalip=X   You can tell alnj about its publicly reachable address using
-	                this option, and this can be a v2 .onion address (v3 .onion
-	                addresses are not supported by the ALNJ network). Given the above
+	-externalip=X   You can tell alnjl about its publicly reachable address using
+	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your .onion address in
-	                /var/lib/tor/alnj-service/hostname. For connections
+	                /var/lib/tor/alnjl-service/hostname. For connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs), .onion addresses are given
 	                preference for your node to advertise itself with.
@@ -74,25 +72,25 @@ your alnjd's P2P listen port (51472 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-	./alnjd -proxy=127.0.0.1:9050 -externalip=alnjzj6l4cvo2fxy.onion -listen
+	./alnjld -proxy=127.0.0.1:9050 -externalip=alnjlzj6l4cvo2fxy.onion -listen
 
 (obviously, replace the .onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
-	./alnjd ... -bind=127.0.0.1
+	./alnjld ... -bind=127.0.0.1
 
 If you don't care too much about hiding your node, and want to be reachable on IPv4
 as well, use `discover` instead:
 
-	./alnjd ... -discover
+	./alnjld ... -discover
 
-and open port 51472 on your firewall (or use -upnp).
+and open port 8233 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach .onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-	./alnjd -onion=127.0.0.1:9050 -externalip=alnjzj6l4cvo2fxy.onion -discover
+	./alnjld -onion=127.0.0.1:9050 -externalip=alnjlzj6l4cvo2fxy.onion -discover
 
 ## 3. Automatically listen on Tor
 
@@ -111,12 +109,12 @@ To show verbose debugging information, pass `-debug=tor`.
 
 Connecting to Tor's control socket API requires one of two authentication methods to be
 configured. It also requires the control socket to be enabled, e.g. put `ControlPort 9051`
-in `torrc` config file. For cookie authentication the user running alnjd must have read
+in `torrc` config file. For cookie authentication the user running alnjld must have read
 access to the `CookieAuthFile` specified in Tor configuration. In some cases this is
 preconfigured and the creation of a hidden service is automatic. If permission problems
 are seen with `-debug=tor` they can be resolved by adding both the user running Tor and
-the user running alnjd to the same group and setting permissions appropriately. On
-Debian-based systems the user running alnjd can be added to the debian-tor group,
+the user running alnjld to the same group and setting permissions appropriately. On
+Debian-based systems the user running alnjld can be added to the debian-tor group,
 which has the appropriate permissions.
 
 An alternative authentication method is the use

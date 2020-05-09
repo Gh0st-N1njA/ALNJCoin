@@ -196,10 +196,6 @@
         <translation>Data</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Tipo</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(nessuna etichetta)</translation>
     </message>
@@ -219,8 +215,8 @@
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
+        <source>No active Master Node yet</source>
+        <translation>Ancora nessun MasterNode attivo</translation>
     </message>
     <message>
         <source>Contact name</source>
@@ -249,6 +245,10 @@
     <message>
         <source>e.g. John Doe</source>
         <translation>ad es. John Doe</translation>
+    </message>
+    <message>
+        <source>Enter a ALNJ address</source>
+        <translation>Inserisci un indirizzo ALNJ</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -369,19 +369,23 @@ per lo staking</translation>
     </message>
     <message>
         <source>ENCRYPT</source>
-        <translation>CRITTOGRAFA</translation>
+        <translation>Crittografa</translation>
     </message>
     <message>
         <source>CANCEL</source>
         <translation>CANCELLA</translation>
     </message>
     <message>
-        <source>ALNJ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALNJs from being stolen by malware infecting your computer.</source>
+        <source>ALNJ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
         <translation>ALNJ verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi ALNJ dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
+    </message>
+    <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALNJ&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI ALNJ&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -423,6 +427,10 @@ per lo staking</translation>
         <source>Wallet passphrase was successfully changed.</source>
         <translation>La passphrase del portafoglio è stata modificata correttamente.</translation>
     </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Attenzione: il tasto Caps Lock è attivo!</translation>
+    </message>
 </context>
 <context>
     <name>BanTableModel</name>
@@ -433,6 +441,37 @@ per lo staking</translation>
     <message>
         <source>Banned Until</source>
         <translation>Bloccato fino a</translation>
+    </message>
+</context>
+<context>
+    <name>BlockExplorer</name>
+    <message>
+        <source>Blockchain Explorer</source>
+        <translation>Esplora catena dei blocchi</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Indietro</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Avanti</translation>
+    </message>
+    <message>
+        <source>Address / Block / Transaction</source>
+        <translation>Indirizzo / Blocco / Transazione</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Cerca</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (alnjl.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (alnjl.conf)</translation>
     </message>
 </context>
 <context>
@@ -467,6 +506,10 @@ per lo staking</translation>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation>Totale: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Sconosciuti: %5)</translation>
+    </message>
+    <message>
+        <source>Network Alert</source>
+        <translation>Avviso di rete</translation>
     </message>
 </context>
 <context>
@@ -510,6 +553,14 @@ per lo staking</translation>
     <message>
         <source>Amount</source>
         <translation>Ammontare</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>0.00 ALNJ</source>
@@ -578,6 +629,34 @@ per lo staking</translation>
     <message>
         <source>Unlock unspent</source>
         <translation>Sblocca non spesi</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copia importo</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Copia commissione</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Copia importo al netto della commissione</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Copia byte</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>Copia priorità</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>Copia polvere</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Copia resto</translation>
     </message>
     <message>
         <source>Unselect all</source>
@@ -664,8 +743,8 @@ per lo staking</translation>
         <translation>Questa etichetta diventa rossa se uno dei destinatari riceve un importo inferiore a %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ualng per input.</source>
-        <translation>Può variare di +/- %1 uALNJ per input.</translation>
+        <source>Can vary +/- %1 ualnj per input.</source>
+        <translation>Può variare di +/- %1 uPIV per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -678,6 +757,89 @@ per lo staking</translation>
     <message>
         <source>(change)</source>
         <translation>(resto)</translation>
+    </message>
+</context>
+<context>
+    <name>CoinControlPivWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Finestra di dialogo</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>ALNJ:</source>
+        <translation>ALNJ:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantità:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Commissione:</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Ammontare</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Indirizzo</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Conferme</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Byte:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Polvere:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Differenza:</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Al netto della commissione:</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELLA</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -695,8 +857,24 @@ per lo staking</translation>
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>Owner Address (optional, if empty a new address will be created)</source>
+        <translation>Indirizzo del proprietario (facoltativo, se vuoto verrà creato un nuovo indirizzo)</translation>
+    </message>
+    <message>
         <source>List of delegated balance by address</source>
         <translation>Lista dei saldi delegati per indirizzo</translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation>Totale</translation>
+    </message>
+    <message>
+        <source>Unconfirmed balance will not be shown</source>
+        <translation>Il saldo non confermato non verrà visualizzato</translation>
     </message>
     <message>
         <source>No balance delegated</source>
@@ -715,12 +893,30 @@ per lo staking</translation>
         <translation>Delega</translation>
     </message>
     <message>
+        <source>You can delegate your PIVs and let a hot node (24/7 online node)
+stake in your behalf, keeping the keys in a secure place offline.</source>
+        <translation>Puoi delegare i tuoi ALNJ e lasciare un nodo attivo (nodo online 24/7) ad
+effettuare lo stake a tuo nome, mantenendo le chiavi in ​​un luogo sicuro offline.</translation>
+    </message>
+    <message>
+        <source>Add owner address</source>
+        <translation>Aggiungi indirizzo proprietario</translation>
+    </message>
+    <message>
+        <source>Delegate or Accept ALNJ delegation</source>
+        <translation>Delegare o accettare la delega ALNJ</translation>
+    </message>
+    <message>
         <source>Delegate</source>
         <translation>Delegato</translation>
     </message>
     <message>
         <source>Clear All</source>
         <translation>Cancella tutto</translation>
+    </message>
+    <message>
+        <source>Add the staking address</source>
+        <translation>Aggiungere l'indirizzo di staking</translation>
     </message>
     <message>
         <source>Delegated balance history</source>
@@ -749,6 +945,10 @@ per lo staking</translation>
     <message>
         <source>Invalid entry</source>
         <translation>Valore non valido</translation>
+    </message>
+    <message>
+        <source>Invalid entry, minimum delegable amount is 10 ALNJ</source>
+        <translation>Voce non valida, importo minimo delegabile è 10 ALNJ</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
@@ -903,6 +1103,10 @@ proprietario</translation>
         <translation>Nessuna transazione</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Staking Rewards</source>
         <translation>Premi dello Staking</translation>
     </message>
@@ -919,8 +1123,8 @@ proprietario</translation>
         <translation>ALNJ</translation>
     </message>
     <message>
-        <source>zALNJ</source>
-        <translation>zALNJ</translation>
+        <source>zPIV</source>
+        <translation>zPIV</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -951,8 +1155,52 @@ proprietario</translation>
         <translation>Puoi vedere la cronologia del tuo account</translation>
     </message>
     <message>
-        <source>Amount of ALNJ and zALNJ staked.</source>
-        <translation>Quantità di ALNJ e zALNJ dallo stake.</translation>
+        <source>Amount of ALNJ and zPIV staked.</source>
+        <translation>Quantità di ALNJ e zPIV dallo stake.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Tutto</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Ricevuto</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Inviato</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Minato</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Forgiato</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>Premio del MN</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>A te stesso</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>Cold stakes</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>Hot stakes</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>Delegato</translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>Deleghe</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -963,8 +1211,8 @@ proprietario</translation>
         <translation>Ancora nessuna transazione</translation>
     </message>
     <message>
-        <source>How to get ALNJ or zALNJ</source>
-        <translation>Come ottenere ALNJ o zALNJ</translation>
+        <source>How to get ALNJ or zPIV</source>
+        <translation>Come ottenere ALNJ o zPIV</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1010,6 +1258,69 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
     <message>
         <source>Text Label</source>
         <translation>Etichetta del testo</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELLA</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SALVA</translation>
+    </message>
+</context>
+<context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Modulo</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation>Questo sbloccherà completamente il tuo portafoglio, in modo che chiunque abbia accesso ad esso possa spendere fino a quando il portafoglio non verrà chiuso o nuovamente bloccato.</translation>
+    </message>
+    <message>
+        <source>5000</source>
+        <translation>5000</translation>
+    </message>
+    <message>
+        <source>100</source>
+        <translation>100</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>1000</source>
+        <translation>1000</translation>
+    </message>
+    <message>
+        <source>50</source>
+        <translation>50</translation>
+    </message>
+    <message>
+        <source>500</source>
+        <translation>500</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Seleziona tutto</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -1106,6 +1417,49 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Modulo</translation>
+    </message>
+    <message>
+        <source>GOVERNANCE</source>
+        <translation>GOVERNANCE</translation>
+    </message>
+    <message>
+        <source>Update Proposals</source>
+        <translation>Proposte di aggiornamento</translation>
+    </message>
+    <message>
+        <source>Next super block:</source>
+        <translation>Prossimo super blocco:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Blocks to next super block:</source>
+        <translation>Blocchi al prossimo super blocco:</translation>
+    </message>
+    <message>
+        <source>Days to budget payout (estimate):</source>
+        <translation>Giorni di pagamento del budget (stima):</translation>
+    </message>
+    <message>
+        <source>Allotted budget:</source>
+        <translation>Budget assegnato:</translation>
+    </message>
+    <message>
+        <source>Budget left:</source>
+        <translation>Budget residuo:</translation>
+    </message>
+    <message>
+        <source>Masternodes count:</source>
+        <translation>Numero dei Masternodes:</translation>
+    </message>
+</context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -1172,7 +1526,7 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
     </message>
     <message>
         <source>Welcome to ALNJ Core.</source>
-        <translation>Benvenuto in ALNJIX Core.</translation>
+        <translation>Benvenuto in PIVIX Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where ALNJ Core will store its data.</source>
@@ -1263,6 +1617,18 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <source>Form</source>
         <translation>Modulo</translation>
     </message>
+    <message>
+        <source>user_masternode</source>
+        <translation>user_masternode</translation>
+    </message>
+    <message>
+        <source>Address: 88.26.164.88:18233</source>
+        <translation>Address: 88.26.164.88:18233</translation>
+    </message>
+    <message>
+        <source>Jan. 19, 2019</source>
+        <translation>19 Gennaio 2019</translation>
+    </message>
 </context>
 <context>
     <name>MasterNodeWizardDialog</name>
@@ -1295,12 +1661,28 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Indirizzo</translation>
     </message>
     <message>
+        <source>Create New Master Node Controller</source>
+        <translation>Crea nuovo controller Masternode</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a ALNJ Masternode you must dedicate 10.000 ALNJ (the unit of ALNJ) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Per creare un Masternode ALNJ devi dedicare 10.000 ALNJ (l'unità di ALNJ) alla rete (tuttavia, queste valute sono ancora tue e saranno sempre in tuo possesso). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Puoi disattivare il nodo e sbloccare le valute in qualsiasi momento.</translation>
+    </message>
+    <message>
         <source>Make sure you have this amount of coins.</source>
         <translation>Assicurati di avere questa quantità di valuta.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 ALNJ will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>Set Master Node’s Name</source>
+        <translation>Imposta il nome del Masternode</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 1,00,000 ALNJ will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verrà effettuata una transazione di 10.000 ALNJ&lt;/p&gt;&lt;p&gt;a un nuovo indirizzo vuoto nel tuo portafoglio.&lt;p&gt;L'indirizzo è etichettato con il nome del Masternode.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Set Master Node’s IP and port</source>
+        <translation>Imposta indirizzo IP e porta del Masternode</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1309,6 +1691,10 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
     <message>
         <source>Enter IP address</source>
         <translation>Inserire indirizzo IP</translation>
+    </message>
+    <message>
+        <source>Enter Port</source>
+        <translation>Inserisci porta</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -1339,6 +1725,14 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>IP o porta non possono essere vuoti</translation>
     </message>
     <message>
+        <source>Invalid port number</source>
+        <translation>Valore della porta non valido</translation>
+    </message>
+    <message>
+        <source>Prepare master node failed..</source>
+        <translation>Preparazione del Masternode non riuscita...</translation>
+    </message>
+    <message>
         <source>Invalid masternode.conf file</source>
         <translation>Il file masternode.conf non è valido</translation>
     </message>
@@ -1347,8 +1741,56 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Errore durante l'analisi del file masternode.conf</translation>
     </message>
     <message>
+        <source>Invalid collaterall output index</source>
+        <translation>Indice di output collaterale non valido</translation>
+    </message>
+    <message>
+        <source>Master node created!</source>
+        <translation>Masternode creato!</translation>
+    </message>
+    <message>
         <source>masternode.conf file doesn't exists</source>
         <translation>il file masternode.conf non esiste</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation>L'indirizzo destinatario non è un indirizzo valido, controllare.</translation>
+    </message>
+    <message>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>L'importo da pagare deve essere maggiore di 0.</translation>
+    </message>
+    <message>
+        <source>The amount exceeds your balance.</source>
+        <translation>L'importo eccede il tuo saldo.</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>Il totale supera il saldo quando è incluso %1 quale commissione di transazione.</translation>
+    </message>
+    <message>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>È stato trovato un indirizzo duplicato, può essere inviato a ciascun indirizzo solo una volta per operazione di invio.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>Creazione della transazione non riuscita!</translation>
+    </message>
+    <message>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>La transazione è stata rifiutata! Ciò può accadere se alcune delle valute nel tuo portafoglio fossero già state spese, come se tu avessi usato una copia di wallet.dat e le valute fossero state spese nella copia ma non contrassegnate come spese qui.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Errore: il portafoglio è stato sbloccato solo per rendere anonime le valute.</translation>
+    </message>
+    <message>
+        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
+        <translation>Una commissione %1 volte superiore a %2 per kB è considerata una commissione follemente alta.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation>Errore: il portafoglio è stato sbloccato solo per rendere anonime le valute. Sblocco annullato.</translation>
     </message>
 </context>
 <context>
@@ -1362,8 +1804,12 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
+        <source>No active Master Node yet</source>
+        <translation>Ancora nessun MasterNode attivo</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -1406,6 +1852,12 @@ e votano il sistema di tesoreria ricevendo una ricompensa periodica.</translatio
 </translation>
     </message>
     <message>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
+        <translation>Impossibile avviare il masternode, la transazione collaterale non è stata accettata dalla rete.
+Per favore, attendi qualche minuto.</translation>
+    </message>
+    <message>
         <source>Remote Masternode Data</source>
         <translation>Remote Masternode Data</translation>
     </message>
@@ -1414,7 +1866,7 @@ e votano il sistema di tesoreria ricevendo una ricompensa periodica.</translatio
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the alnj.conf file
+You will only have to paste the data in the alnjl.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1422,10 +1874,14 @@ this controller wallet (select the Masternode in the list and press "start").
 un Masternode su un server remoto .
 
 
-Dovrai solo incollare i dati nel file alnj.conf del server remoto
+Dovrai solo incollare i dati nel file alnjl.conf del server remoto
 e avviarlo, quindi avviare il Masternode utilizzando questo portafoglio
 come controller (selezionare il Masternode nell'elenco e premere "start").
 </translation>
+    </message>
+    <message>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation>Masternode esportato!, controlla gli appunti</translation>
     </message>
     <message>
         <source>Delete Masternode</source>
@@ -1443,7 +1899,7 @@ Sei sicuro?</translation>
     </message>
     <message>
         <source>Invalid masternode.conf file</source>
-        <translation>Il file masternode.conf non è valido</translation>
+        <translation>il file masternode.conf non è valido</translation>
     </message>
     <message>
         <source>Error parsing masternode.conf file</source>
@@ -1454,7 +1910,7 @@ Sei sicuro?</translation>
         <translation>il file masternode.conf non esiste</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 ALNJ required.</source>
+        <source>Not enough balance to create a masternode, 1,00,000 ALNJ required.</source>
         <translation>Saldo insufficiente per creare un masternode, sono necessari 10.000 ALNJ.</translation>
     </message>
     <message>
@@ -1467,6 +1923,10 @@ Sei sicuro?</translation>
     <message>
         <source>Form</source>
         <translation>Modulo</translation>
+    </message>
+    <message>
+        <source>Master Node Information</source>
+        <translation>Informazioni sul Masternode</translation>
     </message>
     <message>
         <source>Public Key:</source>
@@ -1504,7 +1964,11 @@ Sei sicuro?</translation>
         <source>MISSING</source>
         <translation>MANCANTE</translation>
     </message>
-    </context>
+    <message>
+        <source>Export data to run the Master Node on a remote server</source>
+        <translation>Esporta i dati per eseguire il Masternode su un server remoto</translation>
+    </message>
+</context>
 <context>
     <name>MyAddressRow</name>
     <message>
@@ -1578,8 +2042,8 @@ Sei sicuro?</translation>
         <translation>Dati analizzati troppo grandi</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "alnj" prefix</source>
-        <translation>URI non valido, che non inizia con il prefisso "alnj"</translation>
+        <source>Invalid URI, not starting with "alnjl" prefix</source>
+        <translation>URI non valido, che non inizia con il prefisso "alnjl"</translation>
     </message>
 </context>
 <context>
@@ -1685,45 +2149,45 @@ Sei sicuro?</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/alnj-project/alnj-project-translations</source>
+https://www.transifex.com/alnjl-project/alnjl-project-translations</source>
         <translation>Lingua mancante o traduzione incompleta? Aiutaci a contribuire alle traduzioni qui:
-https://www.transifex.com/alnj-project/alnj-project-translations</translation>
+https://www.transifex.com/alnjl-project/alnjl-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of ALNJ units to zALNJ</source>
-        <translation>Attiva la forgiatura automatica di unità ALNJ in zALNJ</translation>
+        <source>Enable automatic minting of ALNJ units to zPIV</source>
+        <translation>Attiva la forgiatura automatica di unità ALNJ in zPIV</translation>
     </message>
     <message>
-        <source>Enable zALNJ Automint</source>
-        <translation>Attiva forgiatura automatica zALNJ</translation>
+        <source>Enable zPIV Automint</source>
+        <translation>Attiva forgiatura automatica zPIV</translation>
     </message>
     <message>
-        <source>Enable automatic zALNJ minting from specific addresses</source>
-        <translation>Attiva la forgiatura automatica di zALNJ da indirizzi specifici</translation>
+        <source>Enable automatic zPIV minting from specific addresses</source>
+        <translation>Attiva la forgiatura automatica di zPIV da indirizzi specifici</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Abilita indirizzi forgiatura automatica</translation>
     </message>
     <message>
-        <source>Percentage of incoming ALNJ which get automatically converted to zALNJ via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di ALNJ in entrata che viene automaticamente convertita in zALNJ attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming ALNJ which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di ALNJ in entrata che viene automaticamente convertita in zPIV attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zALNJ</source>
-        <translation>Percentuale di zALNJ Percentuale di zALNJ da forgiare automaticamente</translation>
+        <source>Percentage of autominted zPIV</source>
+        <translation>Percentuale di zPIV Percentuale di zPIV da forgiare automaticamente</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough ALNJ for this denomination is available</source>
         <translation>Attendere la conversione automatica in Zerocoin fino a quando non saranno disponibili abbastanza ALNJ per questa denominazione</translation>
     </message>
     <message>
-        <source>Preferred Automint zALNJ Denomination</source>
-        <translation>Denominazione preferita forgiatura automatica zALNJ</translation>
+        <source>Preferred Automint zPIV Denomination</source>
+        <translation>Denominazione preferita forgiatura automatica zPIV</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1954,6 +2418,13 @@ Indirizzo: %4
     </message>
 </context>
 <context>
+    <name>PWidget</name>
+    <message>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
+        <translation>Portafoglio bloccato, è necessario sbloccarlo per eseguire questa azione</translation>
+    </message>
+</context>
+<context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
@@ -1976,8 +2447,8 @@ Indirizzo: %4
         <translation>Indirizzo di pagamento %1 invalido</translation>
     </message>
     <message>
-        <source>Cannot start alnj: click-to-pay handler</source>
-        <translation>Impossibile avviare alnj: gestore click-to-pay</translation>
+        <source>Cannot start alnjl: click-to-pay handler</source>
+        <translation>Impossibile avviare alnjl: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid ALNJ address or malformed URI parameters.</source>
@@ -2078,8 +2549,8 @@ Indirizzo: %4
         <translation>Premi il bottone</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
+        <source>No active Master Node yet</source>
+        <translation>Ancora nessun MasterNode attivo</translation>
     </message>
     <message>
         <source>Privacy</source>
@@ -2094,46 +2565,50 @@ Indirizzo: %4
         <translation>Forgiatura</translation>
     </message>
     <message>
-        <source>Minting zALNJ anonymizes your ALNJ by removing any
+        <source>Minting zPIV anonymizes your ALNJ by removing any
 transaction history, making transactions untraceable </source>
-        <translation>La forgiatura zALNJ anonimizza il tuo ALNJ rimuovendo qualsiasi
+        <translation>La forgiatura zPIV anonimizza il tuo ALNJ rimuovendo qualsiasi
 cronologia delle transazioni, rendendo le transazioni non rintracciabili</translation>
     </message>
     <message>
-        <source>Mint new zALNJ or convert back to ALNJ</source>
-        <translation>Forgia nuovi zALNJ o converti nuovamente in ALNJ</translation>
+        <source>Mint new zPIV or convert back to ALNJ</source>
+        <translation>Forgia nuovi zPIV o converti nuovamente in ALNJ</translation>
+    </message>
+    <message>
+        <source>Last Zerocoin Movements</source>
+        <translation>Ultimi movimenti Zerocoin</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>Ancora nessuna transazione</translation>
     </message>
     <message>
-        <source>Mint zALNJ</source>
-        <translation>Forgiatura zALNJ</translation>
+        <source>Mint zPIV</source>
+        <translation>Forgiatura zPIV</translation>
     </message>
     <message>
-        <source>Enter amount of ALNJ to mint into zALNJ</source>
-        <translation>Immetti un importo di ALNJ da convertire in zALNJ</translation>
+        <source>Enter amount of ALNJ to mint into zPIV</source>
+        <translation>Immetti un importo di ALNJ da convertire in zPIV</translation>
     </message>
     <message>
         <source>Convert back to ALNJ</source>
         <translation>Converti nuovamente in ALNJ</translation>
     </message>
     <message>
-        <source>Enter amount of zALNJ to convert back into ALNJ</source>
-        <translation>Immetti un importo di zALNJ da convertire in ALNJ</translation>
+        <source>Enter amount of zPIV to convert back into ALNJ</source>
+        <translation>Immetti un importo di zPIV da convertire in ALNJ</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zALNJ is currently undergoing maintenance</source>
-        <translation>zALNJ è attualmente in fase di manutenzione</translation>
+        <source>zPIV is currently undergoing maintenance</source>
+        <translation>zPIV è attualmente in fase di manutenzione</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zALNJ</source>
-        <translation>Devi sbloccare il portafoglio per %1 zALNJ</translation>
+        <source>You need to unlock the wallet to be able to %1 zPIV</source>
+        <translation>Devi sbloccare il portafoglio per %1 zPIV</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2148,12 +2623,12 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Valore non valido</translation>
     </message>
     <message>
-        <source>zALNJ minted successfully</source>
-        <translation>zALNJ forgiati con successo</translation>
+        <source>zPIV minted successfully</source>
+        <translation>zPIV forgiati con successo</translation>
     </message>
     <message>
-        <source>zALNJ converted back to ALNJ</source>
-        <translation>zALNJ riconvertito in ALNJ</translation>
+        <source>zPIV converted back to ALNJ</source>
+        <translation>zPIV riconvertito in ALNJ</translation>
     </message>
     <message>
         <source>You don't have any ALNJ to select.</source>
@@ -2168,6 +2643,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>I tuoi movimenti Zerocoin forgiati saranno ora ricercati sulla blockchain da capo</translation>
     </message>
     <message>
+        <source>Reset Spent Zerocoins</source>
+        <translation>Azzera movimenti Zerocoin</translation>
+    </message>
+    <message>
         <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
         <translation>I tuoi movimenti Zerocoin saranno ora ricercati sulla blockchain da capo</translation>
     </message>
@@ -2177,10 +2656,83 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
     </message>
 </context>
 <context>
+    <name>ProposalFrame</name>
+    <message>
+        <source>Open proposal page in browser</source>
+        <translation>Apri la pagina della proposta nel browser</translation>
+    </message>
+    <message>
+        <source> remaining payment(s).</source>
+        <translation>pagamenti rimanenti.</translation>
+    </message>
+    <message>
+        <source>Yes:</source>
+        <translation>Si:</translation>
+    </message>
+    <message>
+        <source>Abstain:</source>
+        <translation>Astenersi:</translation>
+    </message>
+    <message>
+        <source>No:</source>
+        <translation>No:</translation>
+    </message>
+    <message>
+        <source>A proposal URL can be used for phishing, scams and computer viruses. Open this link only if you trust the following URL.
+</source>
+        <translation>Un URL proposto può essere utilizzato per phishing, truffe e virus informatici. Apri questo link solo se ti fidi del seguente URL.
+</translation>
+    </message>
+    <message>
+        <source>Open link</source>
+        <translation>Apri link</translation>
+    </message>
+    <message>
+        <source>Copy link</source>
+        <translation>Copia link</translation>
+    </message>
+    <message>
+        <source>Wallet Locked</source>
+        <translation>Portafoglio bloccato</translation>
+    </message>
+    <message>
+        <source>You must unlock your wallet to vote.</source>
+        <translation>Devi sbloccare il portafoglio per votare</translation>
+    </message>
+    <message>
+        <source>Do you want to vote %1 on</source>
+        <translation>Vuoi votare %1 su</translation>
+    </message>
+    <message>
+        <source>using all your masternodes?</source>
+        <translation>utilizzare tutti i masternode?</translation>
+    </message>
+    <message>
+        <source>Proposal Hash:</source>
+        <translation>Hash proposto:</translation>
+    </message>
+    <message>
+        <source>Proposal URL:</source>
+        <translation>URL proposto:</translation>
+    </message>
+    <message>
+        <source>Confirm Vote</source>
+        <translation>Conferma il voto</translation>
+    </message>
+    <message>
+        <source>Vote Results</source>
+        <translation>Risultati del voto</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Ammontare</translation>
+    </message>
+    <message>
+        <source>Enter a ALNJ address (e.g. %1)</source>
+        <translation>Inserisci un indirizzo ALNJ (ad es. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2205,6 +2757,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
     <message>
         <source>BLOOM</source>
         <translation>BLOOM</translation>
+    </message>
+    <message>
+        <source>ZK_BLOOM</source>
+        <translation>ZK_BLOOM</translation>
     </message>
     <message>
         <source>UNKNOWN</source>
@@ -2246,63 +2802,7 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <source>ALNJ Core didn't yet exit safely...</source>
         <translation>ALNJ Core non è ancora uscito in modo sicuro...</translation>
     </message>
-    <message>
-        <source>Cold Staking</source>
-        <translation>Cold Staking</translation>
-    </message>
-    <message>
-        <source>Unknown</source>
-        <translation>Sconosciuto</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>Tutto</translation>
-    </message>
-    <message>
-        <source>Contacts</source>
-        <translation>Contatti</translation>
-    </message>
-    <message>
-        <source>Received</source>
-        <translation>Ricevuto</translation>
-    </message>
-    <message>
-        <source>Sent</source>
-        <translation>Inviato</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Minato</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Forgiato</translation>
-    </message>
-    <message>
-        <source>MN reward</source>
-        <translation>Premio del MN</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>A te stesso</translation>
-    </message>
-    <message>
-        <source>Cold stakes</source>
-        <translation>Cold stakes</translation>
-    </message>
-    <message>
-        <source>Hot stakes</source>
-        <translation>Hot stakes</translation>
-    </message>
-    <message>
-        <source>Delegated</source>
-        <translation>Delegato</translation>
-    </message>
-    <message>
-        <source>Delegations</source>
-        <translation>Deleghe</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>RPCConsole</name>
     <message>
@@ -2518,8 +3018,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Percorso di backup personalizzato:</translation>
     </message>
     <message>
-        <source>Custom zALNJ Backup Path:</source>
-        <translation>Percorso di backup zALNJ personalizzato:</translation>
+        <source>Custom zPIV Backup Path:</source>
+        <translation>Percorso di backup zPIV personalizzato:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2721,6 +3221,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Dettagli della transazione</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
         <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
@@ -2780,8 +3284,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Errore generando l'indirizzo</translation>
     </message>
     <message>
-        <source>Edit Label</source>
-        <translation>Modifica etichetta</translation>
+        <source>Change Label</source>
+        <translation>Cambia etichetta</translation>
     </message>
     <message>
         <source>Edit Address Label</source>
@@ -2894,12 +3398,24 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>RICHIESTA</translation>
     </message>
     <message>
+        <source>Instead of only sharing a ALNJ address, you can create a Payment Request message which bundles up more information than is contained in just a ALNJ address.</source>
+        <translation>Invece di condividere solo un indirizzo ALNJ, è possibile creare un messaggio di richiesta di pagamento che raggruppa più informazioni di quelle contenute in un solo indirizzo ALNJ.</translation>
+    </message>
+    <message>
         <source>Label</source>
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>Enter a label to be saved within the address</source>
+        <translation>Inserisci un'etichetta da salvare con l'indirizzo</translation>
+    </message>
+    <message>
         <source>Description (optional)</source>
         <translation>Descrizione (opzionale)</translation>
+    </message>
+    <message>
+        <source>Add description </source>
+        <translation>Aggiungi descrizione</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2917,7 +3433,7 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <source>New Cold Staking Address</source>
         <translation>Nuovo indirizzo di Cold Staking</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>SendChangeAddressDialog</name>
     <message>
@@ -2927,6 +3443,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
     <message>
         <source>Transaction Details</source>
         <translation>Dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
@@ -2948,14 +3468,6 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" ALNJ address</source>
         <translation>Il resto del valore risultante dagli ingressi meno il valore delle uscite va all'indirizzo ALNJ "cambio"</translation>
     </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVA</translation>
-    </message>
-    <message>
-        <source>Invalid address</source>
-        <translation>Indirizzo non valido</translation>
-    </message>
 </context>
 <context>
     <name>SendCustomFeeDialog</name>
@@ -2972,12 +3484,20 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Personalizza la commissione di transazione a tuo piacimento; a seconda del valore della commissione, la transazione verrà inclusa o meno nella blockchain.</translation>
     </message>
     <message>
+        <source>Recomended</source>
+        <translation>Raccomandato</translation>
+    </message>
+    <message>
         <source>0.00 KB</source>
         <translation>0.00 KB</translation>
     </message>
     <message>
         <source>Custom</source>
         <translation>Personalizzato</translation>
+    </message>
+    <message>
+        <source>Per kilobyte</source>
+        <translation>Per kilobyte</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -2990,6 +3510,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
     <message>
         <source>Customize Fee</source>
         <translation>Tariffa personalizzata</translation>
+    </message>
+    <message>
+        <source>Customize the transaction fee, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Personalizza la commissione di transazione; a seconda del valore della commissione, la transazione verrà inclusa o meno nella blockchain.</translation>
     </message>
     <message>
         <source>Normal</source>
@@ -3007,7 +3531,7 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <source>SAVE</source>
         <translation>SALVA</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>SendMultiRow</name>
     <message>
@@ -3019,10 +3543,14 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Inserire indirizzo</translation>
+        <source>Add address</source>
+        <translation>Aggiungi indirizzo</translation>
     </message>
-    </context>
+    <message>
+        <source>Add description</source>
+        <translation>Aggiungi descrizione</translation>
+    </message>
+</context>
 <context>
     <name>SendWidget</name>
     <message>
@@ -3030,12 +3558,16 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Invia</translation>
     </message>
     <message>
-        <source>You can transfer public coins (ALNJ) or private coins (zALNJ)</source>
-        <translation>È possibile trasferire valuta pubblica (ALNJ) o valuta privata (zALNJ)</translation>
+        <source>You can transfer public coins (ALNJ) or private coins (zPIV)</source>
+        <translation>È possibile trasferire valuta pubblica (ALNJ) o valuta privata (zPIV)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
         <translation>Seleziona il tipo di valuta da spendere</translation>
+    </message>
+    <message>
+        <source>Enter a ALNJ address or contact label</source>
+        <translation>Inserisci un indirizzo ALNJ o etichetta</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3066,8 +3598,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Invia ALNJ</translation>
     </message>
     <message>
-        <source>Send zALNJ</source>
-        <translation>Invia zALNJ</translation>
+        <source>Send zPIV</source>
+        <translation>Invia zPIV</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3122,8 +3654,8 @@ Questa valuta non sarà più in cold-stake.</translation>
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>zALNJ is currently undergoing maintenance.</source>
-        <translation>zALNJ è attualmente in fase di manutenzione.</translation>
+        <source>zPIV is currently undergoing maintenance.</source>
+        <translation>zPIV è attualmente in fase di manutenzione.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3142,12 +3674,12 @@ Questa valuta non sarà più in cold-stake.</translation>
 %2</translation>
     </message>
     <message>
-        <source>zALNJ transaction sent!</source>
-        <translation>Transazione zALNJ inviata!</translation>
+        <source>zPIV transaction sent!</source>
+        <translation>Transazione zPIV inviata!</translation>
     </message>
     <message>
-        <source>Version 1 zALNJ require a security level of 100 to successfully spend.</source>
-        <translation>La versione 1 zALNJ richiede un livello di sicurezza di 100 per poter essere utilizzata con successo.</translation>
+        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
+        <translation>La versione 1 zPIV richiede un livello di sicurezza di 100 per poter essere utilizzata con successo.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3170,6 +3702,10 @@ Alternativamente forgia denominazioni più alte (quindi sono necessari meno inpu
         <translation>Aggiornamento dell'etichetta dell'indirizzo non riuscito per l'indirizzo: %1</translation>
     </message>
     <message>
+        <source>Invalid change address</source>
+        <translation>Indirizzo di cambio non valido</translation>
+    </message>
+    <message>
         <source>Invalid URI</source>
         <translation>URI non valido</translation>
     </message>
@@ -3186,8 +3722,8 @@ Alternativamente forgia denominazioni più alte (quindi sono necessari meno inpu
         <translation>Non hai alcun ALNJ da selezionare.</translation>
     </message>
     <message>
-        <source>You don't have any zALNJ in your balance to select.</source>
-        <translation>Non hai alcun zALNJ nel tuo saldo da selezionare.</translation>
+        <source>You don't have any zPIV in your balance to select.</source>
+        <translation>Non hai alcun zPIV nel tuo saldo da selezionare.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3237,12 +3773,22 @@ Alternativamente forgia denominazioni più alte (quindi sono necessari meno inpu
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Backup Wallet </source>
         <translation>Backup portafoglio</translation>
     </message>
     <message>
         <source>Change Wallet Passphrase</source>
         <translation>Cambia frase d'accesso al wallet</translation>
+    </message>
+    <message>
+        <source>Keep your wallet safe doing regular backups, store your backup file externally.
+This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) from another device.</source>
+        <translation>Mantieni il tuo portafoglio sicuro eseguendo backup regolari, archivia il tuo file di backup esternamente.
+Questa opzione crea un file wallet.dat che può essere utilizzato per recuperare l'intero saldo (transazioni e indirizzi) da un altro dispositivo.</translation>
     </message>
     <message>
         <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
@@ -3253,6 +3799,14 @@ Ricordati di scriverlo e conservarlo in modo sicuro, altrimenti potresti perdere
     <message>
         <source>Where</source>
         <translation>Dove</translation>
+    </message>
+    <message>
+        <source>Set a folder location</source>
+        <translation>Imposta un percorso per la cartella</translation>
+    </message>
+    <message>
+        <source>Backup</source>
+        <translation>Backup</translation>
     </message>
     <message>
         <source>Change Passphrase</source>
@@ -3346,12 +3900,16 @@ Ricordati di scriverlo e conservarlo in modo sicuro, altrimenti potresti perdere
         <translation>DECRITTOGRAFA LA CHIAVE</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Inserire indirizzo</translation>
+        <source>Enter a ALNJ address</source>
+        <translation>Inserisci un indirizzo ALNJ</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Inserire parola d'ordine</translation>
+        <source>Add address</source>
+        <translation>Aggiungi indirizzo</translation>
+    </message>
+    <message>
+        <source>Write a message</source>
+        <translation>Scrivi un messaggio</translation>
     </message>
     <message>
         <source>Encrypted Key</source>
@@ -3433,7 +3991,11 @@ Ricordati di scriverlo e conservarlo in modo sicuro, altrimenti potresti perdere
         <source>Error adding key to the wallet</source>
         <translation>Errore nell'inserimento della chiave nel portafoglio</translation>
     </message>
-    </context>
+    <message>
+        <source>Successfully added alnjate key to the wallet</source>
+        <translation>Chiave privata inserita correttamente nel portafoglio</translation>
+    </message>
+</context>
 <context>
     <name>SettingsConsoleWidget</name>
     <message>
@@ -3494,6 +4056,10 @@ Verifica di aver installato un editor di testo predeterminato.</translation>
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Reset to default</source>
         <translation>Ripristina valori predefiniti.</translation>
     </message>
@@ -3543,41 +4109,6 @@ Verifica di aver installato un editor di testo predeterminato.</translation>
     </message>
 </context>
 <context>
-    <name>SettingsExportCSV</name>
-    <message>
-        <source>Form</source>
-        <translation>Modulo</translation>
-    </message>
-    <message>
-        <source>Where</source>
-        <translation>Dove</translation>
-    </message>
-    <message>
-        <source>Export Address List</source>
-        <translation>Esporta elenco indirizzi</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Confermata</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Data</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Tipo</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etichetta</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Indirizzo</translation>
-    </message>
-    </context>
-<context>
     <name>SettingsFaqWidget</name>
     <message>
         <source>Form</source>
@@ -3600,30 +4131,38 @@ Verifica di aver installato un editor di testo predeterminato.</translation>
         <translation>2) Perché i miei ALNJ non sono spendibili?</translation>
     </message>
     <message>
-        <source>3) ALNJ privacy? What is Zerocoin (zALNJ)?</source>
-        <translation>3) Privacy ALNJ? Che cos'è Zerocoin (zALNJ)?</translation>
+        <source>3) ALNJ privacy? What is Zerocoin (zPIV)?</source>
+        <translation>3) Privacy ALNJ? Che cos'è Zerocoin (zPIV)?</translation>
     </message>
     <message>
-        <source>4) Why are my zALNJ unspendable?</source>
-        <translation>4) Perché i miei zALNJ non sono spendibili?</translation>
+        <source>4) Why are my zPIV unspendable?</source>
+        <translation>4) Perché i miei zPIV non sono spendibili?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zALNJ automatically?</source>
+    into zPIV automatically?</source>
         <translation>5) Perché il mio portafoglio ha convertito il saldo
-  in zALNJ automaticamente?</translation>
+  in zPIV automaticamente?</translation>
     </message>
     <message>
-        <source>6) How do I receive ALNJ/zALNJ?</source>
-        <translation>6) Come ottenere ALNJ o zALNJ?</translation>
+        <source>6) How do I receive ALNJ/zPIV?</source>
+        <translation>6) Come ottenere ALNJ o zPIV?</translation>
     </message>
     <message>
-        <source>7) How do I stake ALNJ/zALNJ?</source>
-        <translation>7) Come posso fare lo stake di ALNJ / zALNJ?</translation>
+        <source>7) How do I stake ALNJ/zPIV?</source>
+        <translation>7) Come posso fare lo stake di ALNJ / zPIV?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
         <translation>8) Dove dovrei andare se ho bisogno di supporto?</translation>
+    </message>
+    <message>
+        <source>9) What is a Master Node?</source>
+        <translation>9) Cos'è un Masternode?</translation>
+    </message>
+    <message>
+        <source>10) What is a Master Node Controller?</source>
+        <translation>10) Cos'è un Masternode controller?</translation>
     </message>
     <message>
         <source>1</source>
@@ -3640,7 +4179,7 @@ Verifica di aver installato un editor di testo predeterminato.</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  ALNJ incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zALNJ) and Zerocoin staking.
+                           to implement ZeroCoin(zPIV) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            ALNJ utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of ALNJ to participate in earning block rewards
@@ -3654,7 +4193,7 @@ ALNJ è una forma di denaro online digitale che utilizza la tecnologia blockchai
 che può essere facilmente trasferito a livello globale, istantaneamente e con quasi
 zero costi. ALNJ incorpora le tecniche di sicurezza e privacy più avanzate del mercato
 ed è anche la prima criptovaluta PoS (Proof of Stake)
-ad implementare lo staking di ZeroCoin (zALNJ) e Zerocoin.
+ad implementare lo staking di ZeroCoin (zPIV) e Zerocoin.
 &lt;/p&gt;&lt;p align="justify"&gt;
 ALNJ utilizza un algoritmo del sistema di consenso Proof of Stake (PoS),
 consentendo a tutti i proprietari di ALNJ di partecipare alle ricompense dei blocchi
@@ -3696,26 +4235,26 @@ per vedere e spendere i saldi sulla rete.
         <translation>3</translation>
     </message>
     <message>
-        <source>ALNJ privacy? What is Zerocoin (zALNJ)?</source>
-        <translation>ALNJ privacy? What is Zerocoin (zALNJ)?</translation>
+        <source>ALNJ privacy? What is Zerocoin (zPIV)?</source>
+        <translation>ALNJ privacy? What is Zerocoin (zPIV)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zALNJ is an optional privacy-centric method of coin mixing on the
+                           zPIV is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
-                           "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt;
+                           "ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zALNJ è un metodo opzionale incentrato sulla privacy per la miscelazione delle valute sulla
+                           zPIV è un metodo opzionale incentrato sulla privacy per la miscelazione delle valute sulla
 Blockchain ALNJ. Essenzialmente, tutte le tue transazioni non potranno essere tracciate
 su un block explorer. Puoi leggere di più sugli aspetti tecnici nel
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
-                           "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt;
+                           "ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -3724,20 +4263,20 @@ su un block explorer. Puoi leggere di più sugli aspetti tecnici nel
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zALNJ unspendable?</source>
-        <translation>Perché i miei zALNJ non sono spendibili?</translation>
+        <source>Why are my zPIV unspendable?</source>
+        <translation>Perché i miei zPIV non sono spendibili?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zALNJ will require 20 confirmations as well as 1
+                           After minting, zPIV will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Dopo la forgiatura, zALNJ richiederà 20 conferme e 1
+                           Dopo la forgiatura, zPIV richiederà 20 conferme e 1
 forgiatura aggiuntiva della stessa denominazione sulla rete
 per diventare idoneo alla spesa.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3748,41 +4287,41 @@ per diventare idoneo alla spesa.
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zALNJ automatically?</source>
-        <translation>Perché il mio portafoglio ha convertito il saldo in zALNJ automaticamente?</translation>
+        <source>Why did my wallet convert the balance into zPIV automatically?</source>
+        <translation>Perché il mio portafoglio ha convertito il saldo in zPIV automaticamente?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            By default the ALNJ wallet will convert 10% of your entire ALNJ
-                           balance to zALNJ to assist the network. If you do not wish to
-                           stake zALNJ or take advantage of the privacy benefit it brings,
+                           balance to zPIV to assist the network. If you do not wish to
+                           stake zPIV or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your ALNJ wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zALNJ Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
                            If you are not making use of the ALNJ-QT or GUI you can simply open
-                           your alnj.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your alnjl.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zALNJ in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zALNJ, please read the "How do I stake"
+                           You can read more about zPIV in the
+                           &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt; "ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zPIV, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 Come impostazione predefinita, il portafoglio ALNJ convertirà il 10% dell'intero
-saldo ALNJ con zALNJ, per supportare la rete. Se non desideri effettuare lo
-staking di zALNJ o sfruttare il vantaggio sulla privacy che ne comporta,
+saldo ALNJ con zPIV, per supportare la rete. Se non desideri effettuare lo
+staking di zPIV o sfruttare il vantaggio sulla privacy che ne comporta,
 puoi disabilitare la forgiatura automatica nel tuo portafoglio ALNJ
-andando su Impostazioni-&gt;Opzioni e deselezionando “Abilita zALNJ Automint”.
+andando su Impostazioni-&gt;Opzioni e deselezionando “Abilita zPIV Automint”.
 Se non si utilizzi ALNJ-QT o la GUI, è possibile aprire semplicemente
-il tuo file alnj.conf e aggiungere&lt;i&gt;enablezeromint=0&lt;/i&gt; senza gli apostrofi
+il tuo file alnjl.conf e aggiungere&lt;i&gt;enablezeromint=0&lt;/i&gt; senza gli apostrofi
 e far ripartire il portafoglio per disabilitare la forgiatura automatica.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Puoi leggere di più su zALNJ nel
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; "ALNJ Zerocoin (zALNJ) Technical Paper"&lt;/a&gt;.
-                           Se desideri effettuare lo staking dei tuoi zALNJ, leggi "Come faccio ad effettuare lo staking"
+                           Puoi leggere di più su zPIV nel
+                           &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt; "ALNJ Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           Se desideri effettuare lo staking dei tuoi zPIV, leggi "Come faccio ad effettuare lo staking"
 nella sezione delle FAQ di seguito.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3792,24 +4331,24 @@ nella sezione delle FAQ di seguito.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive ALNJ/zALNJ?</source>
-        <translation>Come ottenere ALNJ o zALNJ?</translation>
+        <source>How do I receive ALNJ/zPIV?</source>
+        <translation>Come ottenere ALNJ o zPIV?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zALNJ can be spent and sent to any ALNJ address. The receiver will
-                           receive standard ALNJ but the origin of the ALNJ is anonymized by the zALNJ Protocol.
+                           zPIV can be spent and sent to any ALNJ address. The receiver will
+                           receive standard ALNJ but the origin of the ALNJ is anonymized by the zPIV Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zALNJ you will need to mint your balance in the “Privacy” tab.
+                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zALNJ può essere speso e inviato a qualsiasi indirizzo ALNJ. Il ricevente
-otterrà ALNJ standard ma l'origine dei ALNJ è anonimizzata dal protocollo zALNJ.
+                           zPIV può essere speso e inviato a qualsiasi indirizzo ALNJ. Il ricevente
+otterrà ALNJ standard ma l'origine dei ALNJ è anonimizzata dal protocollo zPIV.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Se desideri più zALNJ, dovrai forgiare il saldo nella scheda "Privacy".
+Se desideri più zPIV, dovrai forgiare il saldo nella scheda "Privacy".
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -3818,26 +4357,110 @@ Se desideri più zALNJ, dovrai forgiare il saldo nella scheda "Privacy".
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake ALNJ/zALNJ?</source>
-        <translation>Come posso fare lo stake di ALNJ / zALNJ?</translation>
+        <source>How do I stake ALNJ/zPIV?</source>
+        <translation>Come posso fare lo stake di ALNJ / zPIV?</translation>
     </message>
     <message>
-        <source>What is a Masternode?</source>
-        <translation>Cos'è un Masternode?</translation>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           To Stake ALNJ:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ol&gt;&lt;li&gt;
+                           Make sure your wallet is completely synchronized and you are using the latest release.
+                           &lt;li&gt;
+                           You must have a balance of ALNJ with a minimum of 101 confirmations.
+                           &lt;li&gt;
+                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
+                           &lt;li&gt;
+                           Once all those steps are followed staking should be enabled.
+                           &lt;li&gt;
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (alnjl-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           &lt;/li&gt;&lt;/ol&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           To Stake zPIV:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ol&gt;&lt;li&gt;
+                           Make sure your wallet is completely synchronized and you are using the latest release.
+                           &lt;li&gt;
+                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           &lt;li&gt;
+                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
+                           Staking should now be enabled.
+                           &lt;/li&gt;&lt;/ol&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Per fare lo Stake di ALNJ:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ol&gt;&lt;li&gt;
+                           Assicurati che il tuo portafoglio sia completamente sincronizzato e stai utilizzando l'ultima versione.
+                           &lt;li&gt;
+                           Devi avere un saldo di ALNJ con un minimo di 101 conferme.
+                           &lt;li&gt;
+                           Il tuo portafoglio deve rimanere online ed essere sbloccato per scopi di anonimizzazione e staking.
+                           &lt;li&gt;
+                           Una volta seguiti tutti questi passaggi, è necessario abilitare lo staking.
+                           &lt;li&gt;
+                           Puoi vedere lo stato dello staking nel portafoglio spostando il mouse sull'icona del pacchetto nella riga in alto a sinistra dell'interfaccia del portafoglio. Il pacchetto verrà illuminato e indicherà "Staking Enabled" per indicare che sta effettuando lo staking. Utilizzando l'interfaccia della riga di comando (alnjl-cli); il comando&lt;i&gt;getstakingstatus&lt;/i&gt; confermerà che lo staking é attivo.
+                           &lt;/li&gt;&lt;/ol&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Per fare Staking zPIV:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ol&gt;&lt;li&gt;
+                           Assicurati che il tuo portafoglio sia completamente sincronizzato e stai utilizzando l'ultima versione.
+                           &lt;li&gt;
+                           Il saldo zPIV appena forgiato o esistente deve avere un minimo di 200 conferme.
+                           &lt;li&gt;
+                           Il tuo portafoglio deve rimanere online ed essere sbloccato per scopi di anonimizzazione e staking.
+                           Lo Staking dovrebbe ora essere attivo.
+                           &lt;/li&gt;&lt;/ol&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
     </message>
     <message>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
+        <source>Where I should go if I need support?</source>
+        <translation>Dove dovrei andare se ho bisogno di supporto?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           We have support channels in most of our official chat groups, for example
+                           &lt;a style='color: #b088ff' href='https://Discord.ALNJ.com'&gt;
+                           #support in our Discord&lt;/a&gt;.
+                           If you prefer to submit a ticket, One can be
+                           &lt;a style='color: #b088ff' href='https://alnjlite.freshdesk.com'&gt;
+                           our Freshdesk support site&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Abbiamo canali di supporto nella maggior parte dei nostri gruppi di chat ufficiali, ad esempio
+                           &lt;a style='color: #b088ff' href='https://Discord.ALNJ.com'&gt;
+                           #support nel nostro Discord&lt;/a&gt;.
+                           Se preferisci aprire un ticket, puoi farlo su
+                           &lt;a style='color: #b088ff' href='https://alnjlite.freshdesk.com'&gt;
+                           il nostro sito di supporto Freshdesk&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
         <source>9</source>
         <translation>9</translation>
+    </message>
+    <message>
+        <source>What is a Master Node?</source>
+        <translation>Cos'è un Masternode?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node ALNJ core wallet with a
-                           requirement of 10,000 ALNJ secured collateral to provide extra services
+                           requirement of 1,00,000 ALNJ secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3869,7 +4492,7 @@ Se desideri più zALNJ, dovrai forgiare il saldo nella scheda "Privacy".
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 ALNJ per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;1,00,000 ALNJ per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -3911,7 +4534,7 @@ regolarmente. Questi servizi includono:
                            Requisiti:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 ALNJ per singolo Masternode
+                           &lt;li&gt;1,00,000 ALNJ per singolo Masternode
                            &lt;li&gt;Devono essere conservati in un portafoglio core&lt;/li&gt;
                            &lt;li&gt;Necessita un indirizzo IP dedicato&lt;/li&gt;
                            &lt;li&gt;Il portafoglio del Masternode deve rimanere online&lt;/li&gt;
@@ -3922,6 +4545,14 @@ regolarmente. Questi servizi includono:
     <message>
         <source>10</source>
         <translation>10</translation>
+    </message>
+    <message>
+        <source>What is a Master Node Controller?</source>
+        <translation>Cos'è un Masternode controller?</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 1,00,000 ALNJ collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Un portafoglio Masternode Controller è dove i 10.000 ALNJ collaterali possono risiedere durante l'impostazione del Masternode Controller remoto. È un portafoglio che può attivare uno o più portafogli masternode remoti e ti consente di mantenere offline le tue valute collaterali mentre il masternode remoto rimane online.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -3943,6 +4574,10 @@ regolarmente. Questi servizi includono:
         <translation>Modulo</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
         <source>Network Monitor</source>
         <translation>Monitor rete</translation>
     </message>
@@ -3955,8 +4590,24 @@ regolarmente. Questi servizi includono:
         <translation>Generale</translation>
     </message>
     <message>
+        <source>Client Version: </source>
+        <translation>Versione del client:</translation>
+    </message>
+    <message>
         <source>User Agent:</source>
         <translation>User Agent:</translation>
+    </message>
+    <message>
+        <source>Using BerkeleyDB version:</source>
+        <translation>Utilizza versione BerkeleyDB:</translation>
+    </message>
+    <message>
+        <source>Datadir: </source>
+        <translation>Datadir: </translation>
+    </message>
+    <message>
+        <source>Startup Time:  </source>
+        <translation>Tempo di avvio:</translation>
     </message>
     <message>
         <source>Network</source>
@@ -3967,12 +4618,28 @@ regolarmente. Questi servizi includono:
         <translation>Nome:</translation>
     </message>
     <message>
+        <source>Number Connections:</source>
+        <translation>Numero delle connessioni:</translation>
+    </message>
+    <message>
         <source>Blockchain</source>
         <translation>Blockchain</translation>
     </message>
     <message>
+        <source>Current Number of Blocks:</source>
+        <translation>Numero attuale dei blocchi:</translation>
+    </message>
+    <message>
+        <source>Last Block Time:</source>
+        <translation>Ultimo blocco:</translation>
+    </message>
+    <message>
         <source>Memory Pool</source>
         <translation>Pool di memoria</translation>
+    </message>
+    <message>
+        <source>Current Number of Transactions:</source>
+        <translation>Numero attuale delle transazioni:</translation>
     </message>
     <message>
         <source>Main</source>
@@ -3995,8 +4662,8 @@ regolarmente. Questi servizi includono:
         <translation>Impossibile aprire la cartella dei backup</translation>
     </message>
     <message>
-        <source>Unable to open alnj.conf with default application</source>
-        <translation>Impossibile aprire alnj.conf con l'applicazione predefinita</translation>
+        <source>Unable to open alnjl.conf with default application</source>
+        <translation>Impossibile aprire alnjl.conf con l'applicazione predefinita</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4111,6 +4778,14 @@ Sei sicuro?
         <translation>Nuovo destinatario per multisend</translation>
     </message>
     <message>
+        <source>Label (optional)</source>
+        <translation>Etichetta (opzionale)</translation>
+    </message>
+    <message>
+        <source>Enter a label to add this address in your address book</source>
+        <translation>Inserisci un'etichetta per questo indirizzo da aggiungere alla tua rubrica</translation>
+    </message>
+    <message>
         <source>Percentage</source>
         <translation>Percentuale</translation>
     </message>
@@ -4126,8 +4801,8 @@ Sei sicuro?
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
+        <source>No active Master Node yet</source>
+        <translation>Ancora nessun MasterNode attivo</translation>
     </message>
     <message>
         <source>CheckBox</source>
@@ -4233,12 +4908,24 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>Cancella</translation>
     </message>
     <message>
         <source>Sign/Verify Message</source>
         <translation>Firma/Verifica messaggio</translation>
+    </message>
+    <message>
+        <source>Enter a ALNJ address or contact label</source>
+        <translation>Inserisci un indirizzo ALNJ o etichetta</translation>
+    </message>
+    <message>
+        <source>Add address</source>
+        <translation>Aggiungi indirizzo</translation>
     </message>
     <message>
         <source>Sign</source>
@@ -4257,8 +4944,8 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
         <translation>Messaggio</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Inserire indirizzo</translation>
+        <source>Write a message</source>
+        <translation>Scrivi un messaggio</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -4364,6 +5051,10 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
         <translation>Non salvare le modifiche</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Wallet</source>
         <translation>Portafoglio</translation>
     </message>
@@ -4429,6 +5120,10 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
     <message>
         <source>TextLabel</source>
         <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>Wallet Repair</source>
@@ -4520,6 +5215,10 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
     <message>
         <source>Form</source>
         <translation>Modulo</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -4740,6 +5439,14 @@ Sei sicuro?
         <translation>Modulo</translation>
     </message>
     <message>
+        <source>480.0685 ALNJ</source>
+        <translation>480.0685 ALNJ</translation>
+    </message>
+    <message>
+        <source>1,000 zPIV</source>
+        <translation>1,000 zPIV</translation>
+    </message>
+    <message>
         <source>Available</source>
         <translation>Disponibile</translation>
     </message>
@@ -4748,8 +5455,24 @@ Sei sicuro?
         <translation>In attesa</translation>
     </message>
     <message>
+        <source>6.943 ALNJ</source>
+        <translation>6.943 ALNJ</translation>
+    </message>
+    <message>
         <source>Immature</source>
         <translation>Immaturo</translation>
+    </message>
+    <message>
+        <source>10 ALNJ</source>
+        <translation>10 ALNJ</translation>
+    </message>
+    <message>
+        <source>60 zPIV</source>
+        <translation>60 zPIV</translation>
+    </message>
+    <message>
+        <source>10 zPIV</source>
+        <translation>10 zPIV</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -4764,6 +5487,14 @@ Sei sicuro?
         <translation>Indirizzo copiato</translation>
     </message>
     <message>
+        <source>Automint enabled</source>
+        <translation>Forgiatura automatica abilitata</translation>
+    </message>
+    <message>
+        <source>Automint disabled</source>
+        <translation>Forgiatura automatica disabilitata</translation>
+    </message>
+    <message>
         <source>Staking active</source>
         <translation>Stacking attivo</translation>
     </message>
@@ -4771,27 +5502,35 @@ Sei sicuro?
         <source>Staking not active</source>
         <translation>Stacking non attivo</translation>
     </message>
+    <message numerus="yes">
+        <source>%n active connection(s)</source>
+        <translation><numerusform>%n connessioni attive</numerusform><numerusform>%n connessioni attive</numerusform></translation>
+    </message>
+    <message>
+        <source>Synchronized</source>
+        <translation>Sincronizzato</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n ora</numerusform><numerusform>%n ore</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n giorno</numerusform><numerusform>%n giorni</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n settimana</numerusform><numerusform>%n settimane</numerusform></translation>
+    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 e %2</translation>
     </message>
-    <message>
-        <source>Backup Wallet</source>
-        <translation>Backup portafoglio</translation>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n anno</numerusform><numerusform>%n anni</numerusform></translation>
     </message>
-    <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (*.dat)</translation>
-    </message>
-    <message>
-        <source>Backup created</source>
-        <translation>Backup creato</translation>
-    </message>
-    <message>
-        <source>Backup creation failed</source>
-        <translation>Creazione del backup non riuscita</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>TrafficGraphWidget</name>
     <message>
@@ -4801,6 +5540,10 @@ Sei sicuro?
 </context>
 <context>
     <name>TransactionDesc</name>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Aperto per altro %n blocco</numerusform><numerusform>Aperto per altri %n blocchi</numerusform></translation>
+    </message>
     <message>
         <source>Open until %1</source>
         <translation>Apri fino a %1</translation>
@@ -4861,6 +5604,10 @@ Sei sicuro?
         <source>, has not been successfully broadcast yet</source>
         <translation>, non è stato ancora trasmesso con successo</translation>
     </message>
+    <message numerus="yes">
+        <source>, broadcast through %n node(s)</source>
+        <translation><numerusform>, trasmesso attraverso %n nodo</numerusform><numerusform>, trasmesso attraverso %n nodi</numerusform></translation>
+    </message>
     <message>
         <source>Date</source>
         <translation>Data</translation>
@@ -4900,6 +5647,10 @@ Sei sicuro?
     <message>
         <source>Credit</source>
         <translation>Credito</translation>
+    </message>
+    <message numerus="yes">
+        <source>matures in %n more block(s)</source>
+        <translation><numerusform>matura in %n blocco</numerusform><numerusform>matura in altri %n blocchi</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -4984,6 +5735,10 @@ Sei sicuro?
         <source>Address</source>
         <translation>Indirizzo</translation>
     </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Aperto per %n blocco</numerusform><numerusform>Aperto per altri %n blocchi</numerusform></translation>
+    </message>
     <message>
         <source>Open until %1</source>
         <translation>Apri fino a %1</translation>
@@ -5029,40 +5784,64 @@ Sei sicuro?
         <translation>Ricevuto da</translation>
     </message>
     <message>
+        <source>Received via Obfuscation</source>
+        <translation>Ricevuto tramite offuscamento</translation>
+    </message>
+    <message>
         <source>ALNJ Stake</source>
         <translation>ALNJ Stake</translation>
     </message>
     <message>
-        <source>zALNJ Stake</source>
-        <translation>zALNJ Stake</translation>
+        <source>zPIV Stake</source>
+        <translation>zPIV Stake</translation>
     </message>
     <message>
         <source>ALNJ Cold Stake</source>
         <translation>ALNJ Cold Stake</translation>
     </message>
     <message>
+        <source>ALNJ Stake in behalf of</source>
+        <translation>ALNJ Stake per conto di</translation>
+    </message>
+    <message>
         <source>Stake delegation</source>
         <translation>Delega allo stake</translation>
     </message>
     <message>
-        <source>Converted ALNJ to zALNJ</source>
-        <translation>Convertito ALNJ in zALNJ</translation>
+        <source>Obfuscation Denominate</source>
+        <translation>Denominazione Offuscamento</translation>
     </message>
     <message>
-        <source>Spent zALNJ</source>
-        <translation>zALNJ spesi</translation>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>Offuscamento del pagamento collaterale</translation>
     </message>
     <message>
-        <source>Received ALNJ from zALNJ</source>
-        <translation>Ricevuto ALNJ da zALNJ</translation>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>L'offuscamento produce input collaterali</translation>
     </message>
     <message>
-        <source>Minted Change as zALNJ from zALNJ Spend</source>
-        <translation>Forgiatura cambiata in zALNJ da zALNJ spesi</translation>
+        <source>Obfuscation Create Denominations</source>
+        <translation>L'offuscamento crea denominazioni</translation>
     </message>
     <message>
-        <source>Converted zALNJ to ALNJ</source>
-        <translation>Convertito zALNJ in ALNJ</translation>
+        <source>Converted ALNJ to zPIV</source>
+        <translation>Convertito ALNJ in zPIV</translation>
+    </message>
+    <message>
+        <source>Spent zPIV</source>
+        <translation>zPIV spesi</translation>
+    </message>
+    <message>
+        <source>Received ALNJ from zPIV</source>
+        <translation>Ricevuto ALNJ da zPIV</translation>
+    </message>
+    <message>
+        <source>Minted Change as zPIV from zPIV Spend</source>
+        <translation>Forgiatura cambiata in zPIV da zPIV spesi</translation>
+    </message>
+    <message>
+        <source>Converted zPIV to ALNJ</source>
+        <translation>Convertito zPIV in ALNJ</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5079,6 +5858,10 @@ Sei sicuro?
     <message>
         <source>Mined</source>
         <translation>Minato</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>Offuscato</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -5132,8 +5915,36 @@ Sei sicuro?
         <translation>Dettagli della transazione</translation>
     </message>
     <message>
+        <source>ID:</source>
+        <translation>ID:</translation>
+    </message>
+    <message>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
+    </message>
+    <message>
+        <source>Sending to: </source>
+        <translation>Inviando a:</translation>
+    </message>
+    <message>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
+    </message>
+    <message>
         <source>Total amount</source>
         <translation>Importo totale</translation>
+    </message>
+    <message>
+        <source>2 ALNJ</source>
+        <translation>2 ALNJ</translation>
+    </message>
+    <message>
+        <source>Coin inputs:</source>
+        <translation>Coin inputs:</translation>
+    </message>
+    <message>
+        <source>1 Inputs</source>
+        <translation>1 Input</translation>
     </message>
     <message>
         <source>Previous Transaction</source>
@@ -5144,28 +5955,52 @@ Sei sicuro?
         <translation>Indice di uscita</translation>
     </message>
     <message>
+        <source>Fee:</source>
+        <translation>Commissione:</translation>
+    </message>
+    <message>
+        <source>0.0001 ALNJ</source>
+        <translation>0.0001 ALNJ</translation>
+    </message>
+    <message>
+        <source>Change address:</source>
+        <translation>Modifica indirizzo:</translation>
+    </message>
+    <message>
         <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
         <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
+    </message>
+    <message>
+        <source>Confirmations:</source>
+        <translation>Conferme:</translation>
+    </message>
+    <message>
+        <source>12</source>
+        <translation>12</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>Dimensione:</translation>
+    </message>
+    <message>
+        <source>2 kB</source>
+        <translation>2 kB</translation>
+    </message>
+    <message>
+        <source>Date:</source>
+        <translation>Data:</translation>
     </message>
     <message>
         <source>May 25, 2017</source>
         <translation>25 Maggio, 2017</translation>
     </message>
     <message>
+        <source>Status:</source>
+        <translation>Stato:</translation>
+    </message>
+    <message>
         <source>Spendable</source>
         <translation>Spendibile</translation>
-    </message>
-    <message>
-        <source>Confirmations</source>
-        <translation>Conferme</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Stato</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Data</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -5227,7 +6062,38 @@ Sei sicuro?
     </message>
 </context>
 <context>
+    <name>WalletPasswordDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Finestra di dialogo</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELLA</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
     <name>WelcomeContentWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Finestra di dialogo</translation>
+    </message>
     <message>
         <source>1</source>
         <translation>1</translation>
@@ -5296,10 +6162,10 @@ Portafoglio ALNJ Core.</translation>
     </message>
 </context>
 <context>
-    <name>ZAlngControlDialog</name>
+    <name>ZPivControlDialog</name>
     <message>
-        <source>Select zALNJ to Spend</source>
-        <translation>Seleziona zALNJ da spendere</translation>
+        <source>Select zPIV to Spend</source>
+        <translation>Seleziona zPIV da spendere</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -5310,8 +6176,8 @@ Portafoglio ALNJ Core.</translation>
         <translation>Premi il bottone</translation>
     </message>
     <message>
-        <source>zAlng</source>
-        <translation>zAlng</translation>
+        <source>zPiv</source>
+        <translation>zPiv</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -5334,12 +6200,12 @@ Portafoglio ALNJ Core.</translation>
         <translation>Seleziona/Deseleziona tutto</translation>
     </message>
     <message>
-        <source>Select zALNJ Denominations to Spend</source>
-        <translation>Seleziona le denominazioni zALNJ da spendere</translation>
+        <source>Select zPIV Denominations to Spend</source>
+        <translation>Seleziona le denominazioni zPIV da spendere</translation>
     </message>
 </context>
 <context>
-    <name>alnj-core</name>
+    <name>alnjl-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = conserva i metadati tx, ad esempio il proprietario dell'account e le informazioni sulla richiesta di pagamento, 2 = elimina i metadati tx)</translation>
@@ -5359,6 +6225,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
         <translation>Associa l'indirizzo indicato per ascoltare le connessioni JSON-RPC. Usa la notazione [host]:porta per IPv6. Questa opzione può essere specificata più volte (impostazione predefinita: associa a tutte le interfacce)</translation>
+    </message>
+    <message>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Il punto di controllo dell'accumulatore calcolato non è ciò che viene registrato dall'indice di blocco</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. ALNJ Core is probably already running.</source>
@@ -5389,6 +6259,14 @@ Portafoglio ALNJ Core.</translation>
         <translation>Distribuito sotto la licenza del software MIT, consultare il file di accompagnamento COPYING o &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation>Abilita forgiatura automatica Zerocoin da indirizzi specifici (0-1, impostazione predefinita: %u)</translation>
+    </message>
+    <message>
+        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
+        <translation>Abilita i backup automatici del portafoglio attivati ​​dopo ogni forgiatura zPIV (0-1, impostazione predefinita: %u)</translation>
+    </message>
+    <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>Abilita la funzionalità di cold staking (0-1, default: %u). Disabilitato se staking=0</translation>
     </message>
@@ -5397,8 +6275,8 @@ Portafoglio ALNJ Core.</translation>
         <translation>Abilita o disabilita la funzionalità di cold staking per gli input ALNJ (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zALNJ inputs (0-1, default: %u)</source>
-        <translation>Abilita o disabilita la funzionalità di cold staking per gli input zALNJ (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
+        <translation>Abilita o disabilita la funzionalità di cold staking per gli input zPIV (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5493,6 +6371,10 @@ Portafoglio ALNJ Core.</translation>
         <translation>Numero di secondi per impedire la riconnessione dei peer che si comportano male (impostazione predefinita: %u)</translation>
     </message>
     <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>L'offuscamento utilizza importi esatti per inviare fondi, potrebbe essere necessario anonimizzare altre valute.</translation>
+    </message>
+    <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Informazioni sul debug dell'output (impostazione predefinita: %u, fornitura &lt;category&gt; è opzionale)</translation>
     </message>
@@ -5515,6 +6397,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Imposta la dimensione massima delle transazioni ad alta priorità / a basso costo in byte (impostazione predefinita: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of included blocks to precompute per cycle. (minimum: %d) (maximum: %d) (default: %d)</source>
+        <translation>Imposta il numero di blocchi inclusi da pre-calcolare per ciclo. (minimo: %d) (massimo: %d) (valore predefinito: %d)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
@@ -5549,6 +6435,18 @@ Portafoglio ALNJ Core.</translation>
         <translation>Impossibile associare %s su questo computer. Probabilmente ALNJ Core è già in esecuzione.</translation>
     </message>
     <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Impossibile individuare abbastanza fondi denominati di offuscamento per questa transazione.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ALNJ.</source>
+        <translation>Impossibile individuare fondi non denominati di offuscamento sufficienti per questa transazione non uguali a 10000 ALNJ.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ALNJ.</source>
+        <translation>Impossibile individuare fondi per questa transazione non uguali a 10000 ALNJ.</translation>
+    </message>
+    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Utilizza un proxy SOCKS5 separato per raggiungere i peer tramite i servizi nascosti Tor (impostazione predefinita: %s)</translation>
     </message>
@@ -5559,6 +6457,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Attenzione: -paytxfee è impostato molto alto! Questa è la commissione di transazione che dovrai pagare se invii una transazione.</translation>
+    </message>
+    <message>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong ALNJ Core will not work properly.</source>
+        <translation>Avvertenza: i peer vengono disconnessi a causa di differenze temporali. Verifica che la data e l'ora del tuo computer siano corrette! Se l'orologio è sbagliato, ALNJ Core non funzionerà correttamente.</translation>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong ALNJ Core will not work properly.</source>
@@ -5593,8 +6495,8 @@ Portafoglio ALNJ Core.</translation>
         <translation>È necessario specificare una chiave masternodepriv nella configurazione. Consultare la documentazione per assistenza.</translation>
     </message>
     <message>
-        <source>(51472 could be used only on mainnet)</source>
-        <translation>(51472 potrebbe essere utilizzato solo su mainnet)</translation>
+        <source>(8233 could be used only on mainnet)</source>
+        <translation>(8233 potrebbe essere utilizzato solo su mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5605,8 +6507,8 @@ Portafoglio ALNJ Core.</translation>
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 51472 for mainnet)</source>
-        <translation>(deve essere 51472 per mainnet)</translation>
+        <source>(must be 8233 for mainnet)</source>
+        <translation>(deve essere 8233 per mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5623,6 +6525,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Aggiungere un nodo a cui connettersi e tentare di mantenere aperta la connessione</translation>
+    </message>
+    <message>
+        <source>Adding Wrapped Serials supply...</source>
+        <translation>Aggiunta la fornitura dei Wrapped Serials...</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -5649,8 +6555,28 @@ Portafoglio ALNJ Core.</translation>
         <translation>Opzioni di creazione del blocco:</translation>
     </message>
     <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>Calcolo degli accumulatori mancanti...</translation>
+    </message>
+    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Impossibile eseguire il downgrade del portafoglio</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Impossibile risolvere l'indirizzo -bind: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Impossibile risolvere l'indirizzo -externalip: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Impossibile risolvere l'indirizzo -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>CoinSpend: failed check</source>
+        <translation>CoinSpend: controllo fallito</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -5689,6 +6615,10 @@ Portafoglio ALNJ Core.</translation>
         <translation>Impossibile effettuare l'analisi del file masternode.conf</translation>
     </message>
     <message>
+        <source>Couldn't generate the accumulator witness</source>
+        <translation>Impossibile generare il testimone dell'accumulatore</translation>
+    </message>
+    <message>
         <source>Debugging/Testing options:</source>
         <translation>Opzioni di debug / test:</translation>
     </message>
@@ -5719,6 +6649,14 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Done loading</source>
         <translation>Caricamento completato</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>Abilita forgiatura automatica Zerocoin (0-1, impostazione predefinita: %u)</translation>
+    </message>
+    <message>
+        <source>Enable precomputation of zPIV spends and stakes (0-1, default %u)</source>
+        <translation>Abilita pre-calcolo delle spese e degli stake di zPIV (0-1, valore predefinito %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -5789,6 +6727,10 @@ Portafoglio ALNJ Core.</translation>
         <translation>Errore: portafoglio bloccato, impossibile creare la transazione!</translation>
     </message>
     <message>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Calcolo del checkpoint dell'accumulatore non riuscito</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Impossibile ascoltare su qualsiasi porta. Usa -listen=0 se vuoi questo.</translation>
     </message>
@@ -5857,8 +6799,28 @@ Portafoglio ALNJ Core.</translation>
         <translation>Invalid -proxy address or hostname: '%s'</translation>
     </message>
     <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Importo invalido per -maxtxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Importo invalido per -mintxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (deve essere almeno %s)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Invalid amount for -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
         <source>Invalid amount</source>
@@ -5877,12 +6839,24 @@ Portafoglio ALNJ Core.</translation>
         <translation>Invalid port detected in masternode.conf</translation>
     </message>
     <message>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Percentuale di Zerocoin forgiati automaticamente (1-100, valore predefinito: %u)</translation>
+    </message>
+    <message>
         <source>Recalculating ALNJ supply...</source>
         <translation>Ricalcolo della supply ALNJ...</translation>
     </message>
     <message>
-        <source>Reindex the ALNJ and zALNJ money supply statistics</source>
-        <translation>Reindicizza le statistiche sulla supply di ALNJ e zALNJ</translation>
+        <source>Recalculating minted ZPIV...</source>
+        <translation>Ricalcolo ZPIV forgiati...</translation>
+    </message>
+    <message>
+        <source>Recalculating spent ZPIV...</source>
+        <translation>Ricalcolo spese ZPIV...</translation>
+    </message>
+    <message>
+        <source>Reindex the ALNJ and zPIV money supply statistics</source>
+        <translation>Reindicizza le statistiche sulla supply di ALNJ e zPIV</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5895,6 +6869,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Il valore delle coin selezionate è inferiore all'obiettivo di pagamento</translation>
+    </message>
+    <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>Supporta il protocollo zerocoin light node (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
@@ -5933,6 +6911,10 @@ Portafoglio ALNJ Core.</translation>
         <translation>Errore: la transazione è stata rifiutata! Ciò potrebbe accadere se alcune delle coin nel tuo portafoglio fossero già state spese, come se tu avessi usato una copia di wallet.dat e le coin fossero state spese nella copia ma non contrassegnate come spese qui.</translation>
     </message>
     <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Errore: questa transazione richiede una commissione di transazione di almeno %s a causa della sua quantità, complessità o utilizzo dei fondi ricevuti di recente!</translation>
+    </message>
+    <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
         <translation>Errore: argomento non supportato -checklevel trovato. Il livello di controllo deve essere di livello 4.</translation>
     </message>
@@ -5947,6 +6929,14 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
         <translation>In rari casi, una spesa con 7 coin supera la dimensione massima consentita della transazione, riprovare a utilizzare 6 o meno coin</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Denominazione preferita per Zerocoin forgiato automaticamente (1/5/10/50/100/500/1000/5000), 0 per nessuna preferenza. impostazione predefinita: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificare il percorso di backup personalizzato per aggiungere una copia di qualsiasi backup zPIV automatico. Se impostato come dir, ogni backup genera un file con data e ora. Se impostato come file, riscriverà su quel file ogni backup. Se viene impostato anche il backuppath, verranno eseguiti 4 backup</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5967,6 +6957,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Cannot create public spend input</source>
         <translation>Impossibile creare input di spesa pubblica</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: il testimone dell'accumulatore non verifica</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -6003,6 +6997,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Error: No valid utxo!</source>
         <translation>Errore: Nessun utxo valido!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>Errore durante la forgiatura</translation>
     </message>
     <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
@@ -6067,6 +7065,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Loading sporks...</source>
         <translation>Caricamento sporks...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Caricamento portafoglio... (%3.2f %%)</translation>
     </message>
     <message>
         <source>Loading wallet...</source>
@@ -6153,6 +7155,10 @@ Portafoglio ALNJ Core.</translation>
         <translation>Usa il filtro antispam di blocco (default: %u)</translation>
     </message>
     <message>
+        <source>could not get lock on cs_spendcache</source>
+        <translation>impossibile ottenere il blocco su cs_spendcache</translation>
+    </message>
+    <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
         <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
     </message>
@@ -6193,6 +7199,14 @@ Portafoglio ALNJ Core.</translation>
         <translation>Ricostruisce l'indice della blockchain dai file blk000??.dat corrente.</translation>
     </message>
     <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Ricevi e visualizza avvisi di rete P2P (default: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Reindicizzazione del database accumulatore</translation>
+    </message>
+    <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
         <translation>Transazioni e operazioni di estrazione dati da mining (default: %u)</translation>
     </message>
@@ -6227,6 +7241,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Invia transazioni come transazioni a costo zero, se possibile (default: %u)</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>La sessione è scaduta.</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -6271,6 +7289,10 @@ Portafoglio ALNJ Core.</translation>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Riduci il file debug.log all'avvio del client (impostazione predefinita: 1 se non -debug)</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>Firma scaduta.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -6329,6 +7351,10 @@ Portafoglio ALNJ Core.</translation>
         <translation>Sincronizzazione finita</translation>
     </message>
     <message>
+        <source>Synchronization pending...</source>
+        <translation>Sincronizzazione in attesa...</translation>
+    </message>
+    <message>
         <source>Synchronizing budgets...</source>
         <translation>Sincronizzazione budgets...</translation>
     </message>
@@ -6345,8 +7371,16 @@ Portafoglio ALNJ Core.</translation>
         <translation>Sincronizzazione sporks...</translation>
     </message>
     <message>
-        <source>Syncing zALNJ wallet...</source>
-        <translation>Sincronizzazione del portafoglio zALNJ...</translation>
+        <source>Syncing zPIV wallet...</source>
+        <translation>Sincronizzazione del portafoglio zPIV...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>La coin spend è stata utilizzata</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>La transazione non è stata verificata</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -6453,8 +7487,8 @@ Portafoglio ALNJ Core.</translation>
         <translation>Nome utente per connessioni JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zALNJ</source>
-        <translation>Il valore è inferiore alla denominazione più piccola disponibile (=1) di zALNJ</translation>
+        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
+        <translation>Il valore è inferiore alla denominazione più piccola disponibile (=1) di zPIV</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

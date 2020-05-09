@@ -1,11 +1,12 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/settings/settingsnetworkwidget.h"
-#include "qt/alnj/settings/forms/ui_settingsnetworkwidget.h"
+#include "qt/alnjl/settings/settingsnetworkwidget.h"
+#include "qt/alnjl/settings/forms/ui_settingsnetworkwidget.h"
 #include "optionsmodel.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 
 SettingsNetworkWidget::SettingsNetworkWidget(ALNJGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
@@ -25,7 +26,7 @@ SettingsNetworkWidget::SettingsNetworkWidget(ALNJGUI* _window, QWidget *parent) 
     setCssBtnPrimary(ui->pushButtonSave);
     setCssBtnSecondary(ui->pushButtonReset);
 
-    connect(ui->pushButtonSave, &QPushButton::clicked, [this] { Q_EMIT saveSettings(); });
+    connect(ui->pushButtonSave, SIGNAL(clicked()), parent, SLOT(onSaveOptionsClicked()));
 }
 
 void SettingsNetworkWidget::setMapper(QDataWidgetMapper *mapper){

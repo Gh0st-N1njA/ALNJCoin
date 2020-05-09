@@ -1,15 +1,16 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef DASHBOARDWIDGET_H
 #define DASHBOARDWIDGET_H
 
-#include "qt/alnj/pwidget.h"
-#include "qt/alnj/furabstractlistitemdelegate.h"
-#include "qt/alnj/furlistrow.h"
+#include "qt/alnjl/pwidget.h"
+#include "qt/alnjl/furabstractlistitemdelegate.h"
+#include "qt/alnjl/furlistrow.h"
 #include "transactiontablemodel.h"
-#include "qt/alnj/txviewholder.h"
+#include "qt/alnjl/txviewholder.h"
 #include "transactionfilterproxy.h"
 
 #include <atomic>
@@ -19,7 +20,7 @@
 #include <QMap>
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnj-config.h" /* for USE_QTCHARTS */
+#include "config/alnjl-config.h" /* for USE_QTCHARTS */
 #endif
 
 #ifdef USE_QTCHARTS
@@ -50,12 +51,12 @@ public:
     explicit SortEdit(QWidget* parent = nullptr) : QLineEdit(parent){}
 
     inline void mousePressEvent(QMouseEvent *) override{
-        Q_EMIT Mouse_Pressed();
+        emit Mouse_Pressed();
     }
 
     ~SortEdit() override{}
 
-Q_SIGNALS:
+signals:
     void Mouse_Pressed();
 
 };
@@ -80,10 +81,10 @@ public:
 
     QMap<int, std::pair<qint64, qint64>> amountsByCache;
     qreal maxValue = 0;
-    qint64 totalAlng = 0;
-    qint64 totalZalng = 0;
-    QList<qreal> valuesAlng;
-    QList<qreal> valueszAlng;
+    qint64 totalPiv = 0;
+    qint64 totalZalnj = 0;
+    QList<qreal> valuesPiv;
+    QList<qreal> valueszPiv;
     QStringList xLabels;
 };
 
@@ -105,17 +106,17 @@ public:
     void run(int type) override;
     void onError(QString error, int type) override;
 
-public Q_SLOTS:
+public slots:
     void walletSynced(bool isSync);
     /**
      * Show incoming transaction notification for new transactions.
      * The new items are those between start and end inclusive, under the given parent item.
     */
     void processNewTransaction(const QModelIndex& parent, int start, int /*end*/);
-Q_SIGNALS:
+signals:
     /** Notify that a new transaction appeared */
     void incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address);
-private Q_SLOTS:
+private slots:
     void handleTransactionClicked(const QModelIndex &index);
     void changeTheme(bool isLightTheme, QString &theme) override;
     void onSortChanged(const QString&);
@@ -125,7 +126,7 @@ private Q_SLOTS:
     void onTxArrived(const QString& hash, const bool& isCoinStake, const bool& isCSAnyType);
 
 #ifdef USE_QTCHARTS
-    void windowResizeEvent(QResizeEvent* event);
+    void windowResizeEvent(QResizeEvent *event);
     void changeChartColors();
     void onChartYearChanged(const QString&);
     void onChartMonthChanged(const QString&);
@@ -163,11 +164,10 @@ private:
     int yearFilter = 0;
     int monthFilter = 0;
     int dayStart = 1;
-    bool hasZalngStakes = false;
+    bool hasZalnjStakes = false;
 
     ChartData* chartData = nullptr;
     bool hasStakes = false;
-    bool fShowCharts = true;
 
     void initChart();
     void showHideEmptyChart(bool show, bool loading, bool forceView = false);
@@ -180,9 +180,8 @@ private:
     void setChartShow(ChartShowType type);
     std::pair<int, int> getChartRange(QMap<int, std::pair<qint64, qint64>> amountsBy);
 
-private Q_SLOTS:
+private slots:
     void onChartRefreshed();
-    void onHideChartsChanged(bool fHide);
 
 #endif
 

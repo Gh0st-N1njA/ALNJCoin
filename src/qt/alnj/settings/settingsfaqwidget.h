@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,8 +7,6 @@
 #define SETTINGSFAQWIDGET_H
 
 #include <QDialog>
-
-class ALNJGUI;
 
 namespace Ui {
 class SettingsFaqWidget;
@@ -18,15 +17,15 @@ class SettingsFaqWidget : public QDialog
     Q_OBJECT
 
 public:
-    explicit SettingsFaqWidget(ALNJGUI *parent = nullptr);
+    explicit SettingsFaqWidget(QWidget *parent = nullptr);
     ~SettingsFaqWidget();
 
     void showEvent(QShowEvent *event) override;
 
-public Q_SLOTS:
+public slots:
    void windowResizeEvent(QResizeEvent* event);
    void setSection(int num);
-private Q_SLOTS:
+private slots:
     void onFaq1Clicked();
     void onFaq2Clicked();
     void onFaq3Clicked();

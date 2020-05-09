@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  alnjd The ALNJ core server.
+#  alnjld The ALNJ core server.
 #
 #
 # chkconfig: 345 80 20
-# description: alnjd
-# processname: alnjd
+# description: alnjld
+# processname: alnjld
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/alnjd, see below
-if [ -f /etc/sysconfig/alnjd ]; then
-        . /etc/sysconfig/alnjd
+# you can override defaults in /etc/sysconfig/alnjld, see below
+if [ -f /etc/sysconfig/alnjld ]; then
+        . /etc/sysconfig/alnjld
 fi
 
 RETVAL=0
 
-prog=alnjd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/alnjd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/alnjd}
+prog=alnjld
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/alnjld
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/alnjld}
 
-# alnjd defaults to /usr/bin/alnjd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/alnjd}
+# alnjld defaults to /usr/bin/alnjld, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/alnjld}
 
-# alnjd opts default to -disablewallet, override with BITCOIND_OPTS
+# alnjld opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

@@ -1,12 +1,11 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/defaultdialog.h"
-#include "qt/alnj/forms/ui_defaultdialog.h"
+#include "qt/alnjl/defaultdialog.h"
+#include "qt/alnjl/forms/ui_defaultdialog.h"
 #include "guiutil.h"
-#include <QKeyEvent>
-
 DefaultDialog::DefaultDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DefaultDialog)
@@ -35,19 +34,12 @@ DefaultDialog::DefaultDialog(QWidget *parent) :
     ui->btnSave->setText("OK");
     ui->btnSave->setProperty("cssClass", "btn-primary");
 
-    connect(ui->btnEsc, &QPushButton::clicked, this, &DefaultDialog::close);
-    connect(ui->btnCancel, &QPushButton::clicked, this, &DefaultDialog::close);
-    connect(ui->btnSave, &QPushButton::clicked, this, &DefaultDialog::accept);
+    connect(ui->btnEsc, SIGNAL(clicked()), this, SLOT(close()));
+    connect(ui->btnCancel, SIGNAL(clicked()), this, SLOT(close()));
+    connect(ui->btnSave, &QPushButton::clicked, [this](){this->isOk = true; accept();});
 }
 
-void DefaultDialog::showEvent(QShowEvent *event)
-{
-    setFocus();
-}
-
-
-void DefaultDialog::setText(const QString& title, const QString& message, const QString& okBtnText, const QString& cancelBtnText)
-{
+void DefaultDialog::setText(QString title, QString message, QString okBtnText, QString cancelBtnText){
     if(!okBtnText.isNull()) ui->btnSave->setText(okBtnText);
     if(!cancelBtnText.isNull()){
         ui->btnCancel->setVisible(true);
@@ -57,23 +49,6 @@ void DefaultDialog::setText(const QString& title, const QString& message, const 
     }
     if(!message.isNull()) ui->labelMessage->setText(message);
     if(!title.isNull()) ui->labelTitle->setText(title);
-}
-
-void DefaultDialog::accept()
-{
-    this->isOk = true;
-    QDialog::accept();
-}
-
-void DefaultDialog::keyPressEvent(QKeyEvent *event)
-{
-    if (event->type() == QEvent::KeyPress) {
-        QKeyEvent* ke = static_cast<QKeyEvent*>(event);
-        // Detect Enter key press
-        if (ke->key() == Qt::Key_Enter || ke->key() == Qt::Key_Return) accept();
-        // Detect Esc key press
-        if (ke->key() == Qt::Key_Escape) close();
-    }
 }
 
 DefaultDialog::~DefaultDialog()

@@ -1,8 +1,9 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/coldstakingmodel.h"
+#include "qt/alnjl/coldstakingmodel.h"
 #include "uint256.h"
 #include "bitcoinunits.h"
 #include "guiutil.h"
@@ -21,7 +22,7 @@ void ColdStakingModel::updateCSList() {
 }
 
 void ColdStakingModel::emitDataSetChanged() {
-    Q_EMIT dataChanged(index(0, 0, QModelIndex()), index(cachedDelegations.size(), COLUMN_COUNT, QModelIndex()) );
+    emit dataChanged(index(0, 0, QModelIndex()), index(cachedDelegations.size(), COLUMN_COUNT, QModelIndex()) );
 }
 
 void ColdStakingModel::refresh() {
@@ -178,6 +179,6 @@ void ColdStakingModel::removeRowAndEmitDataChanged(const int idx)
 {
     beginRemoveRows(QModelIndex(), idx, idx);
     endRemoveRows();
-    Q_EMIT dataChanged(index(idx, 0, QModelIndex()), index(idx, COLUMN_COUNT, QModelIndex()) );
+    emit dataChanged(index(idx, 0, QModelIndex()), index(idx, COLUMN_COUNT, QModelIndex()) );
 }
 

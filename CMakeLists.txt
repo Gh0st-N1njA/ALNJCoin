@@ -1,16 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-
-# Search for and use ccache if available to speed up build times
-find_program(CCACHE_PROGRAM ccache)
-if(CCACHE_PROGRAM)
-    message(STATUS "Found ccache: ${CCACHE_PROGRAM}")
-    set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CCACHE_PROGRAM}")
-    # Set up wrapper scripts
-    set(C_LAUNCHER   "${CCACHE_PROGRAM}")
-    set(CXX_LAUNCHER "${CCACHE_PROGRAM}")
-endif()
-
-project(ALNJ)
+project(PIVX)
 
 set(BDB_VER "4.8.30")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/contrib/cmake")
@@ -26,11 +15,11 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     message(STATUS "Compiling on macOS")
     set(ENV{target} "Mac")
     list(APPEND CMAKE_PREFIX_PATH /usr/local/opt/qt5)
-    list(APPEND CMAKE_PREFIX_PATH /usr/local/opt/openssl@1.1)
+    list(APPEND CMAKE_PREFIX_PATH /usr/local/opt/openssl)
     list(APPEND CMAKE_PREFIX_PATH /usr/local/Cellar/berkeley-db@4)
-    #set(OPENSSL_ROOT_DIR "/usr/local/opt/openssl@1.1/")
-    #set(ENV{CPPFLAGS} "-I${OPENSSL_ROOT_DIR}/include")
-    #set(ENV{LDFLAGS} "-L${OPENSSL_ROOT_DIR}/lib")
+    set(OPENSSL_ROOT_DIR "/usr/local/opt/openssl/")
+    set(ENV{CPPFLAGS} "-I${OPENSSL_ROOT_DIR}/include")
+    set(ENV{LDFLAGS} "-L${OPENSSL_ROOT_DIR}/lib")
     set(BerkeleyDB_ROOT_DIR "/usr/local/Cellar/berkeley-db@4/${BDB_VER}/")
     set(Boost_USE_MULTITHREADED ON)
     set(Boost_NO_BOOST_CMAKE ON)
@@ -270,7 +259,6 @@ file(GLOB ZMQ_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/zmq/*.h)
 file(GLOB SCRIPT_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/script/*.h)
 file(GLOB RPC_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/rpc/*.h)
 file(GLOB COMPAT_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/compat/*.h)
-file(GLOB CONSENSUS_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/consensus/*.h)
 
 source_group("BitcoinHeaders" FILES
         ${HEADERS}
@@ -280,12 +268,12 @@ source_group("BitcoinHeaders" FILES
         ${SCRIPT_HEADERS}
         ${RPC_HEADERS}
         ${COMPAT_HEADERS}
-        ${CONSENSUS_HEADERS}
         ./src/support/cleanse.h
         )
 
 set(SERVER_SOURCES
         ./src/addrman.cpp
+        ./src/alert.cpp
         ./src/bloom.cpp
         ./src/blocksignature.cpp
         ./src/chain.cpp
@@ -344,6 +332,8 @@ set(WALLET_SOURCES
         ./src/activemasternode.cpp
         ./src/bip38.cpp
         ./src/denomination_functions.cpp
+        ./src/obfuscation.cpp
+        ./src/obfuscation-relay.cpp
         ./src/wallet/db.cpp
         ./src/addressbook.cpp
         ./src/crypter.cpp
@@ -356,23 +346,20 @@ set(WALLET_SOURCES
         ./src/masternodeman.cpp
         ./src/messagesigner.cpp
         ./src/zalnj/mintpool.cpp
-        ./src/wallet/hdchain.cpp
         ./src/wallet/rpcdump.cpp
         ./src/zalnj/deterministicmint.cpp
         ./src/zalnj/zerocoin.cpp
-        ./src/wallet/scriptpubkeyman.cpp
         ./src/wallet/rpcwallet.cpp
         ./src/kernel.cpp
-        ./src/legacy/stakemodifier.cpp
         ./src/wallet/wallet.cpp
-        ./src/wallet/wallet_zerocoin.cpp
         ./src/wallet/wallet_ismine.cpp
         ./src/wallet/walletdb.cpp
         ./src/zalnj/zalnjwallet.cpp
         ./src/zalnj/zalnjtracker.cpp
         ./src/zalnj/zalnjmodule.cpp
-        ./src/zalnj/zpos.cpp
         ./src/stakeinput.cpp
+        ./src/genwit.cpp
+        ./src/lightzalnjthread.cpp
         )
 add_library(WALLET_A STATIC ${BitcoinHeaders} ${WALLET_SOURCES})
 target_include_directories(WALLET_A PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
@@ -423,6 +410,7 @@ target_include_directories(BITCOIN_CRYPTO_A PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/s
 
 set(ZEROCOIN_SOURCES
         ./src/libzerocoin/Accumulator.h
+        ./src/libzerocoin/AccumulatorProofOfKnowledge.h
         ./src/libzerocoin/bignum.h
         ./src/libzerocoin/bignum.cpp
         ./src/libzerocoin/Coin.h
@@ -432,15 +420,19 @@ set(ZEROCOIN_SOURCES
         ./src/libzerocoin/Denominations.h
         ./src/libzerocoin/ParamGeneration.h
         ./src/libzerocoin/Params.h
+        ./src/libzerocoin/SerialNumberSignatureOfKnowledge.h
         ./src/libzerocoin/SpendType.h
         ./src/libzerocoin/ZerocoinDefines.h
         ./src/libzerocoin/Accumulator.cpp
+        ./src/libzerocoin/AccumulatorProofOfKnowledge.cpp
         ./src/libzerocoin/Coin.cpp
         ./src/libzerocoin/CoinRandomnessSchnorrSignature.cpp
         ./src/libzerocoin/Denominations.cpp
         ./src/libzerocoin/CoinSpend.cpp
+        ./src/libzerocoin/Commitment.cpp
         ./src/libzerocoin/ParamGeneration.cpp
         ./src/libzerocoin/Params.cpp
+        ./src/libzerocoin/SerialNumberSignatureOfKnowledge.cpp
         )
 if(GMP_FOUND)
     list(APPEND ZEROCOIN_SOURCES ./src/libzerocoin/bignum_gmp.cpp)
@@ -453,17 +445,18 @@ target_include_directories(ZEROCOIN_A PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
         )
 
 set(COMMON_SOURCES
+        ./src/zalnj/accumulators.cpp
+        ./src/zalnj/accumulatorcheckpoints.cpp
+        ./src/zalnj/accumulatormap.cpp
+        ./src/zalnj/witness.cpp
         ./src/allocators.cpp
         ./src/amount.cpp
         ./src/base58.cpp
         ./src/bip38.cpp
         ./src/chainparams.cpp
         ./src/coins.cpp
-        ./src/key_io.cpp
         ./src/compressor.cpp
         ./src/consensus/merkle.cpp
-        ./src/consensus/tx_verify.cpp
-        ./src/consensus/zerocoin_verify.cpp
         ./src/primitives/block.cpp
         ./src/zalnj/deterministicmint.cpp
         ./src/primitives/transaction.cpp
@@ -502,12 +495,10 @@ set(UTIL_SOURCES
         ./src/compat/glibcxx_sanity.cpp
         ./src/chainparamsbase.cpp
         ./src/clientversion.cpp
-        ./src/logging.cpp
         ./src/random.cpp
         ./src/rpc/protocol.cpp
         ./src/sync.cpp
         ./src/uint256.cpp
-        ./src/util/threadnames.cpp
         ./src/util.cpp
         ./src/utilstrencodings.cpp
         ./src/utilmoneystr.cpp

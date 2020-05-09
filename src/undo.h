@@ -1,13 +1,13 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
-// Copyright (c) 2016-2019 The ALNJ developers
+// Copyright (c) 2016-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_UNDO_H
 #define BITCOIN_UNDO_H
 
-#include "chain.h"
 #include "compressor.h"
 #include "primitives/transaction.h"
 #include "serialize.h"
@@ -74,24 +74,6 @@ public:
     {
         READWRITE(vprevout);
     }
-};
-
-/** Undo information for a CBlock */
-class CBlockUndo
-{
-public:
-    std::vector<CTxUndo> vtxundo; // for all but the coinbase
-
-    ADD_SERIALIZE_METHODS;
-
-    template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion)
-    {
-        READWRITE(vtxundo);
-    }
-
-    bool WriteToDisk(CDiskBlockPos& pos, const uint256& hashBlock);
-    bool ReadFromDisk(const CDiskBlockPos& pos, const uint256& hashBlock);
 };
 
 #endif // BITCOIN_UNDO_H

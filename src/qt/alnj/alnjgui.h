@@ -1,4 +1,5 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +7,7 @@
 #define ALNJ_CORE_NEW_GUI_ALNJGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnj-config.h"
+#include "config/alnjl-config.h"
 #endif
 
 #include <QMainWindow>
@@ -14,17 +15,17 @@
 #include <QSystemTrayIcon>
 #include <QLabel>
 
-#include "qt/alnj/navmenuwidget.h"
-#include "qt/alnj/topbar.h"
-#include "qt/alnj/dashboardwidget.h"
-#include "qt/alnj/send.h"
-#include "qt/alnj/receivewidget.h"
-#include "qt/alnj/addresseswidget.h"
-#include "qt/alnj/privacywidget.h"
-#include "qt/alnj/coldstakingwidget.h"
-#include "qt/alnj/masternodeswidget.h"
-#include "qt/alnj/snackbar.h"
-#include "qt/alnj/settings/settingswidget.h"
+#include "qt/alnjl/navmenuwidget.h"
+#include "qt/alnjl/topbar.h"
+#include "qt/alnjl/dashboardwidget.h"
+#include "qt/alnjl/send.h"
+#include "qt/alnjl/receivewidget.h"
+#include "qt/alnjl/addresseswidget.h"
+#include "qt/alnjl/privacywidget.h"
+#include "qt/alnjl/coldstakingwidget.h"
+#include "qt/alnjl/masternodeswidget.h"
+#include "qt/alnjl/snackbar.h"
+#include "qt/alnjl/settings/settingswidget.h"
 #include "qt/rpcconsole.h"
 
 
@@ -57,10 +58,10 @@ public:
     void resizeEvent(QResizeEvent *event) override;
     void showHide(bool show);
     int getNavWidth();
-Q_SIGNALS:
+signals:
     void themeChanged(bool isLightTheme, QString& theme);
     void windowResizeEvent(QResizeEvent* event);
-public Q_SLOTS:
+public slots:
     void changeTheme(bool isLightTheme);
     void goToDashboard();
     void goToSend();
@@ -162,26 +163,22 @@ private:
     /** Disconnect core signals from GUI client */
     void unsubscribeFromCoreSignals();
 
-public Q_SLOTS:
-    /** called by a timer to check if fRequestShutdown has been set **/
-    void detectShutdown();
-
-private Q_SLOTS:
+private slots:
     /** Show window if hidden, unminimize when minimized, rise when obscured or show if hidden and fToggleHidden is true */
     void showNormalIfMinimized(bool fToggleHidden = false);
 
     /** Simply calls showNormalIfMinimized(true) for use in SLOT() macro */
     void toggleHidden();
 
+    /** called by a timer to check if fRequestShutdown has been set **/
+    void detectShutdown();
+
 #ifndef Q_OS_MAC
     /** Handle tray icon clicked */
     void trayIconActivated(QSystemTrayIcon::ActivationReason reason);
-#else
-    /** Handle macOS Dock icon clicked */
-     void macosDockIconActivated();
 #endif
 
-Q_SIGNALS:
+signals:
     /** Signal raised when a URI was entered or dragged to the GUI */
     void receivedURI(const QString& uri);
     /** Restart handling */

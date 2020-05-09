@@ -1,14 +1,15 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2020 The ALNJ developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/alnj-config.h"
+#include "config/alnjl-config.h"
 #endif
 
-#include "qt/alnj/alnjgui.h"
+#include "qt/alnjl/alnjlgui.h"
 
 #include "clientmodel.h"
 #include "guiconstants.h"
@@ -17,8 +18,8 @@
 #include "net.h"
 #include "networkstyle.h"
 #include "optionsmodel.h"
-#include "qt/alnj/splash.h"
-#include "qt/alnj/welcomecontentwidget.h"
+#include "qt/alnjl/splash.h"
+#include "qt/alnjl/welcomecontentwidget.h"
 #include "utilitydialog.h"
 #include "winshutdownmonitor.h"
 
@@ -56,6 +57,9 @@
 
 #if defined(QT_STATICPLUGIN)
 #include <QtPlugin>
+#if QT_VERSION < 0x050400
+Q_IMPORT_PLUGIN(AccessibleFactory)
+#endif
 #if defined(QT_QPA_PLATFORM_XCB)
 Q_IMPORT_PLUGIN(QXcbIntegrationPlugin);
 #elif defined(QT_QPA_PLATFORM_WINDOWS)
@@ -65,7 +69,6 @@ Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin);
 #endif
 Q_IMPORT_PLUGIN(QSvgPlugin);
 Q_IMPORT_PLUGIN(QSvgIconPlugin);
-Q_IMPORT_PLUGIN(QGifPlugin);
 #endif
 
 // Declare meta types used for QMetaObject::invokeMethod
@@ -82,10 +85,10 @@ static void InitMessage(const std::string& message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("alnj-core", psz).toStdString();
+    return QCoreApplication::translate("alnjl-core", psz).toStdString();
 }
 
-static QString GetLangTerritory(bool forceLangFromSetting = false)
+static QString GetLangTerritory()
 {
     QSettings settings;
     // Get desired locale (e.g. "de_DE")
@@ -97,11 +100,11 @@ static QString GetLangTerritory(bool forceLangFromSetting = false)
         lang_territory = lang_territory_qsettings;
     // 3) -lang command line argument
     lang_territory = QString::fromStdString(GetArg("-lang", lang_territory.toStdString()));
-    return (forceLangFromSetting) ? lang_territory_qsettings : lang_territory;
+    return lang_territory;
 }
 
 /** Set up translations */
-static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTranslator, QTranslator& translatorBase, QTranslator& translator, bool forceLangFromSettings = false)
+static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTranslator, QTranslator& translatorBase, QTranslator& translator)
 {
     // Remove old translators
     QApplication::removeTranslator(&qtTranslatorBase);
@@ -111,7 +114,7 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
 
     // Get desired locale (e.g. "de_DE")
     // 1) System default language
-    QString lang_territory = GetLangTerritory(forceLangFromSettings);
+    QString lang_territory = GetLangTerritory();
 
     // Convert to "de" only by truncating "_DE"
     QString lang = lang_territory;
@@ -129,11 +132,11 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in alnj.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in alnjl.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in alnj.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in alnjl.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -142,11 +145,8 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
 void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, const QString& msg)
 {
     Q_UNUSED(context);
-    if (type == QtDebugMsg) {
-        LogPrint(BCLog::QT, "GUI: %s\n", msg.toStdString());
-    } else {
-        LogPrintf("GUI: %s\n", msg.toStdString());
-    }
+    const char* category = (type == QtDebugMsg) ? "qt" : NULL;
+    LogPrint(category, "GUI: %s\n", msg.toStdString());
 }
 
 /** Class encapsulating ALNJ Core startup and shutdown.
@@ -158,12 +158,12 @@ class BitcoinCore : public QObject
 public:
     explicit BitcoinCore();
 
-public Q_SLOTS:
+public slots:
     void initialize();
     void shutdown();
     void restart(QStringList args);
 
-Q_SIGNALS:
+signals:
     void initializeResult(int retval);
     void shutdownResult(int retval);
     void runawayException(const QString& message);
@@ -188,8 +188,6 @@ public:
     /// Create payment server
     void createPaymentServer();
 #endif
-    /// parameter interaction/setup based on rules
-    void parameterSetup();
     /// Create options model
     void createOptionsModel();
     /// Create main window
@@ -211,14 +209,14 @@ public:
     /// Get window identifier of QMainWindow (ALNJGUI)
     WId getMainWinId() const;
 
-public Q_SLOTS:
+public slots:
     void initializeResult(int retval);
     void shutdownResult(int retval);
     /// Handle runaway exceptions. Shows a message box with the problem and quits the program.
     void handleRunawayException(const QString& message);
-    void updateTranslation(bool forceLangFromSettings = false);
+    void updateTranslation();
 
-Q_SIGNALS:
+signals:
     void requestedInitialize();
     void requestedRestart(QStringList args);
     void requestedShutdown();
@@ -241,7 +239,7 @@ private:
     void startThread();
 };
 
-#include "alnj.moc"
+#include "alnjl.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -250,7 +248,7 @@ BitcoinCore::BitcoinCore() : QObject()
 void BitcoinCore::handleRunawayException(const std::exception* e)
 {
     PrintExceptionContinue(e, "Runaway exception");
-    Q_EMIT runawayException(QString::fromStdString(strMiscWarning));
+    emit runawayException(QString::fromStdString(strMiscWarning));
 }
 
 void BitcoinCore::initialize()
@@ -260,7 +258,7 @@ void BitcoinCore::initialize()
     try {
         qDebug() << __func__ << ": Running AppInit2 in thread";
         int rv = AppInit2();
-        Q_EMIT initializeResult(rv);
+        emit initializeResult(rv);
     } catch (const std::exception& e) {
         handleRunawayException(&e);
     } catch (...) {
@@ -277,7 +275,7 @@ void BitcoinCore::restart(QStringList args)
             Interrupt();
             PrepareShutdown();
             qDebug() << __func__ << ": Shutdown finished";
-            Q_EMIT shutdownResult(1);
+            emit shutdownResult(1);
             CExplicitNetCleanup::callCleanup();
             QProcess::startDetached(QApplication::applicationFilePath(), args);
             qDebug() << __func__ << ": Restart initiated...";
@@ -297,7 +295,7 @@ void BitcoinCore::shutdown()
         Interrupt();
         Shutdown();
         qDebug() << __func__ << ": Shutdown finished";
-        Q_EMIT shutdownResult(1);
+        emit shutdownResult(1);
     } catch (const std::exception& e) {
         handleRunawayException(&e);
     } catch (...) {
@@ -324,7 +322,7 @@ BitcoinApplication::~BitcoinApplication()
 {
     if (coreThread) {
         qDebug() << __func__ << ": Stopping thread";
-        Q_EMIT stopThread();
+        emit stopThread();
         coreThread->wait();
         qDebug() << __func__ << ": Stopped thread";
     }
@@ -362,7 +360,7 @@ void BitcoinApplication::createWindow(const NetworkStyle* networkStyle)
     window = new ALNJGUI(networkStyle, 0);
 
     pollShutdownTimer = new QTimer(window);
-    connect(pollShutdownTimer, &QTimer::timeout, window, &ALNJGUI::detectShutdown);
+    connect(pollShutdownTimer, SIGNAL(timeout()), window, SLOT(detectShutdown()));
     pollShutdownTimer->start(200);
 }
 
@@ -373,8 +371,7 @@ void BitcoinApplication::createSplashScreen(const NetworkStyle* networkStyle)
     // Qt::WA_DeleteOnClose to make sure that the window will be deleted eventually.
     splash->setAttribute(Qt::WA_DeleteOnClose);
     splash->show();
-    connect(this, &BitcoinApplication::splashFinished, splash, &Splash::slotFinish);
-    connect(this, &BitcoinApplication::requestedShutdown, splash, &QWidget::close);
+    connect(this, SIGNAL(splashFinished(QWidget*)), splash, SLOT(slotFinish(QWidget*)));
 }
 
 bool BitcoinApplication::createTutorialScreen()
@@ -382,7 +379,7 @@ bool BitcoinApplication::createTutorialScreen()
     WelcomeContentWidget* widget = new WelcomeContentWidget();
 
     connect(widget, &WelcomeContentWidget::onLanguageSelected, [this](){
-        updateTranslation(true);
+        updateTranslation();
     });
 
     widget->exec();
@@ -391,9 +388,9 @@ bool BitcoinApplication::createTutorialScreen()
     return ret;
 }
 
-void BitcoinApplication::updateTranslation(bool forceLangFromSettings){
+void BitcoinApplication::updateTranslation(){
     // Re-initialize translations after change them
-    initTranslations(this->qtTranslatorBase, this->qtTranslator, this->translatorBase, this->translator, forceLangFromSettings);
+    initTranslations(this->qtTranslatorBase, this->qtTranslator, this->translatorBase, this->translator);
 }
 
 void BitcoinApplication::startThread()
@@ -405,34 +402,24 @@ void BitcoinApplication::startThread()
     executor->moveToThread(coreThread);
 
     /*  communication to and from thread */
-    connect(executor, &BitcoinCore::initializeResult, this, &BitcoinApplication::initializeResult);
-    connect(executor, &BitcoinCore::shutdownResult, this, &BitcoinApplication::shutdownResult);
-    connect(executor, &BitcoinCore::runawayException, this, &BitcoinApplication::handleRunawayException);
-    connect(this, &BitcoinApplication::requestedInitialize, executor, &BitcoinCore::initialize);
-    connect(this, &BitcoinApplication::requestedShutdown, executor, &BitcoinCore::shutdown);
-    connect(window, &ALNJGUI::requestedRestart, executor, &BitcoinCore::restart);
+    connect(executor, SIGNAL(initializeResult(int)), this, SLOT(initializeResult(int)));
+    connect(executor, SIGNAL(shutdownResult(int)), this, SLOT(shutdownResult(int)));
+    connect(executor, SIGNAL(runawayException(QString)), this, SLOT(handleRunawayException(QString)));
+    connect(this, SIGNAL(requestedInitialize()), executor, SLOT(initialize()));
+    connect(this, SIGNAL(requestedShutdown()), executor, SLOT(shutdown()));
+    connect(window, SIGNAL(requestedRestart(QStringList)), executor, SLOT(restart(QStringList)));
     /*  make sure executor object is deleted in its own thread */
-    connect(this, &BitcoinApplication::stopThread, executor, &QObject::deleteLater);
-    connect(this, &BitcoinApplication::stopThread, coreThread, &QThread::quit);
+    connect(this, SIGNAL(stopThread()), executor, SLOT(deleteLater()));
+    connect(this, SIGNAL(stopThread()), coreThread, SLOT(quit()));
 
     coreThread->start();
-}
-
-void BitcoinApplication::parameterSetup()
-{
-    // Default printtoconsole to false for the GUI. GUI programs should not
-    // print to the console unnecessarily.
-    SoftSetBoolArg("-printtoconsole", false);
-
-    InitLogging();
-    InitParameterInteraction();
 }
 
 void BitcoinApplication::requestInitialize()
 {
     qDebug() << __func__ << ": Requesting initialize";
     startThread();
-    Q_EMIT requestedInitialize();
+    emit requestedInitialize();
 }
 
 void BitcoinApplication::requestShutdown()
@@ -455,7 +442,7 @@ void BitcoinApplication::requestShutdown()
     ShutdownWindow::showShutdownWindow(window);
 
     // Request shutdown from core thread
-    Q_EMIT requestedShutdown();
+    emit requestedShutdown();
 }
 
 void BitcoinApplication::initializeResult(int retval)
@@ -479,8 +466,8 @@ void BitcoinApplication::initializeResult(int retval)
             window->addWallet(ALNJGUI::DEFAULT_WALLET, walletModel);
             window->setCurrentWallet(ALNJGUI::DEFAULT_WALLET);
 
-            connect(walletModel, &WalletModel::coinsSent,
-                    paymentServer, &PaymentServer::fetchPaymentACK);
+            connect(walletModel, SIGNAL(coinsSent(CWallet*, SendCoinsRecipient, QByteArray)),
+                paymentServer, SLOT(fetchPaymentACK(CWallet*, const SendCoinsRecipient&, QByteArray)));
         }
 #endif
 
@@ -490,17 +477,18 @@ void BitcoinApplication::initializeResult(int retval)
         } else {
             window->show();
         }
-        Q_EMIT splashFinished(window);
+        emit splashFinished(window);
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
         // ALNJ: URIs or payment requests:
-        //connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &ALNJGUI::handlePaymentRequest);
-        connect(window, &ALNJGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
-        connect(paymentServer, &PaymentServer::message, [this](const QString& title, const QString& message, unsigned int style) {
-          window->message(title, message, style);
-        });
-        QTimer::singleShot(100, paymentServer, &PaymentServer::uiReady);
+        connect(paymentServer, SIGNAL(receivedPaymentRequest(SendCoinsRecipient)),
+            window, SLOT(handlePaymentRequest(SendCoinsRecipient)));
+        connect(window, SIGNAL(receivedURI(QString)),
+            paymentServer, SLOT(handleURIOrFile(QString)));
+        connect(paymentServer, SIGNAL(message(QString, QString, unsigned int)),
+            window, SLOT(message(QString, QString, unsigned int)));
+        QTimer::singleShot(100, paymentServer, SLOT(uiReady()));
 #endif
     } else {
         quit(); // Exit main loop
@@ -539,11 +527,13 @@ int main(int argc, char* argv[])
 // Do not refer to data directory yet, this can be overridden by Intro::pickDataDirectory
 
 /// 2. Basic Qt initialization (not dependent on parameters or configuration)
-    Q_INIT_RESOURCE(alnj_locale);
-    Q_INIT_RESOURCE(alnj);
+    Q_INIT_RESOURCE(alnjl_locale);
+    Q_INIT_RESOURCE(alnjl);
 
+#if QT_VERSION > 0x050100
     // Generate high-dpi pixmaps
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
+#endif
 #if QT_VERSION >= 0x050600
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
@@ -585,7 +575,7 @@ int main(int argc, char* argv[])
     if (!Intro::pickDataDirectory())
         return 0;
 
-    /// 6. Determine availability of data directory and parse alnj.conf
+    /// 6. Determine availability of data directory and parse alnjl.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false))) {
         QMessageBox::critical(0, QObject::tr("ALNJ Core"),
@@ -642,7 +632,7 @@ int main(int argc, char* argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // alnj: links repeatedly have their payment requests routed to this process:
+    // alnjl: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 
@@ -655,8 +645,6 @@ int main(int argc, char* argv[])
 #endif
     // Install qDebug() message handler to route to debug.log
     qInstallMessageHandler(DebugMessageHandler);
-    // Allow parameter interaction before we create the options model
-    app.parameterSetup();
     // Load GUI settings from QSettings
     app.createOptionsModel();
 

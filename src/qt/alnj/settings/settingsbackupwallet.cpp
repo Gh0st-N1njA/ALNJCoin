@@ -1,15 +1,16 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/settings/settingsbackupwallet.h"
-#include "qt/alnj/settings/forms/ui_settingsbackupwallet.h"
+#include "qt/alnjl/settings/settingsbackupwallet.h"
+#include "qt/alnjl/settings/forms/ui_settingsbackupwallet.h"
 #include <QFile>
 #include <QGraphicsDropShadowEffect>
 #include "guiutil.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 #include "guiinterface.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 SettingsBackupWallet::SettingsBackupWallet(ALNJGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsBackupWallet)
@@ -31,7 +32,7 @@ SettingsBackupWallet::SettingsBackupWallet(ALNJGUI* _window, QWidget *parent) :
     ui->labelDivider->setProperty("cssClass", "container-divider");
 
     // Subtitle
-    ui->labelSubtitle1->setText(tr("Keep your wallet safe by doing regular backups and storing your backup file externally.\nThis option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device."));
+    ui->labelSubtitle1->setText(tr("Keep your wallet safe doing regular backups, store your backup file externally.\nThis option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) from another device."));
     ui->labelSubtitle1->setProperty("cssClass", "text-subtitle");
 
     ui->labelSubtitle_2->setText(tr("This will decrypt the whole wallet data and encrypt it back with the new passphrase.\nRemember to write it down and store it safely, otherwise you might lose access to your funds."));
@@ -41,29 +42,41 @@ SettingsBackupWallet::SettingsBackupWallet(ALNJGUI* _window, QWidget *parent) :
     ui->labelSubtitleLocation->setText(tr("Where"));
     ui->labelSubtitleLocation->setProperty("cssClass", "text-title");
 
-    ui->pushButtonDocuments->setText(tr("Select folder..."));
+    ui->pushButtonDocuments->setText(tr("Set a folder location"));
     ui->pushButtonDocuments->setProperty("cssClass", "btn-edit-primary-folder");
     setShadow(ui->pushButtonDocuments);
 
     // Buttons
+    ui->pushButtonSave->setText(tr("Backup"));
+    setCssBtnPrimary(ui->pushButtonSave);
+
     ui->pushButtonSave_2->setText(tr("Change Passphrase"));
     setCssBtnPrimary(ui->pushButtonSave_2);
 
-    connect(ui->pushButtonDocuments, &QPushButton::clicked, this, &SettingsBackupWallet::selectFileOutput);
-    connect(ui->pushButtonSave_2, &QPushButton::clicked, this, &SettingsBackupWallet::changePassphrase);
+    connect(ui->pushButtonSave, SIGNAL(clicked()), this, SLOT(backupWallet()));
+    connect(ui->pushButtonDocuments, SIGNAL(clicked()), this, SLOT(selectFileOutput()));
+    connect(ui->pushButtonSave_2, SIGNAL(clicked()), this, SLOT(changePassphrase()));
 }
 
 void SettingsBackupWallet::selectFileOutput()
 {
-    QString filename = GUIUtil::getSaveFileName(this,
+    QString filenameRet = GUIUtil::getSaveFileName(this,
                                         tr("Backup Wallet"), QString(),
                                         tr("Wallet Data (*.dat)"), NULL);
 
-    if (!filename.isEmpty() && walletModel) {
+    if (!filenameRet.isEmpty()) {
+        filename = filenameRet;
         ui->pushButtonDocuments->setText(filename);
+    }
+}
+
+void SettingsBackupWallet::backupWallet()
+{
+    if(walletModel && !filename.isEmpty()) {
         inform(walletModel->backupWallet(filename) ? tr("Backup created") : tr("Backup creation failed"));
+        filename = QString();
+        ui->pushButtonDocuments->setText(tr("Set a folder location"));
     } else {
-        ui->pushButtonDocuments->setText(tr("Select folder..."));
         inform(tr("Please select a folder to export the backup first."));
     }
 }
@@ -80,7 +93,7 @@ void SettingsBackupWallet::changePassphrase()
                 walletModel, AskPassphraseDialog::Context::ChangePass);
     }
     dlg->adjustSize();
-    Q_EMIT execDialog(dlg);
+    emit execDialog(dlg);
     dlg->deleteLater();
 }
 

@@ -12,13 +12,8 @@ Test the following RPCs:
    - getrawtransaction
 """
 
-from test_framework.test_framework import AlnjTestFramework
-from test_framework.util import (
-    assert_equal,
-    assert_raises_rpc_error,
-    connect_nodes,
-    Decimal,
-)
+from test_framework.test_framework import BitcoinTestFramework
+from test_framework.util import *
 
 
 class multidict(dict):
@@ -40,14 +35,14 @@ class multidict(dict):
 
 
 # Create one-input, one-output, no-fee transaction:
-class RawTransactionsTest(AlnjTestFramework):
+class RawTransactionsTest(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 3
 
     def setup_network(self, split=False):
         super().setup_network()
-        connect_nodes(self.nodes[0], 2)
+        connect_nodes_bi(self.nodes,0,2)
 
     def run_test(self):
 

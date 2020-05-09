@@ -1,5 +1,6 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2014-2017 The Bitcoin developers
-// Copyright (c) 2017-2020 The ALNJ developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,7 +14,7 @@
 #include "utilstrencodings.h"
 
 
-static RecursiveMutex cs_nTimeOffset;
+static CCriticalSection cs_nTimeOffset;
 static int64_t nTimeOffset = 0;
 
 /**
@@ -43,7 +44,7 @@ void AddTimeData(const CNetAddr& ip, int64_t nOffsetSample, int nOffsetLimit)
     static std::set<CNetAddr> setKnown;
     if (setKnown.size() == BITCOIN_TIMEDATA_MAX_SAMPLES)
         return;
-    if (!Params().IsRegTestNet() && !setKnown.insert(ip).second)
+    if (!setKnown.insert(ip).second && Params().NetworkID() != CBaseChainParams::REGTEST)
         return;
 
     // Add data
@@ -82,24 +83,11 @@ void AddTimeData(const CNetAddr& ip, int64_t nOffsetSample, int nOffsetLimit)
             LogPrintf("*** %s\n", strMessage);
             uiInterface.ThreadSafeMessageBox(strMessage, "", CClientUIInterface::MSG_ERROR);
         }
-        if (!GetBoolArg("-shrinkdebugfile", g_logger->DefaultShrinkDebugFile())) {
+        if (fDebug) {
             for (int64_t n : vSorted)
                 LogPrintf("%+d  ", n);
             LogPrintf("|  ");
         }
         LogPrintf("nTimeOffset = %+d\n", nTimeOffset);
     }
-}
-
-// Time Protocol V2
-// Timestamp for time protocol V2: slot duration 15 seconds
-int64_t GetTimeSlot(const int64_t nTime)
-{
-    const int slotLen = Params().GetConsensus().nTimeSlotLength;
-    return (nTime / slotLen) * slotLen;
-}
-
-int64_t GetCurrentTimeSlot()
-{
-    return GetTimeSlot(GetAdjustedTime());
 }

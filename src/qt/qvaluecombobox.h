@@ -1,3 +1,4 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -24,13 +25,13 @@ public:
     /** Specify model role to use as ordinal value (defaults to Qt::UserRole) */
     void setRole(int role);
 
-Q_SIGNALS:
+signals:
     void valueChanged();
 
 private:
     int role;
 
-private Q_SLOTS:
+private slots:
     void handleSelectionChanged(int idx);
 };
 

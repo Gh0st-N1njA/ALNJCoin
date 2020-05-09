@@ -1,10 +1,11 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/optionbutton.h"
-#include "qt/alnj/forms/ui_optionbutton.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/optionbutton.h"
+#include "qt/alnjl/forms/ui_optionbutton.h"
+#include "qt/alnjl/qtutils.h"
 #include <QMouseEvent>
 
 OptionButton::OptionButton(QWidget *parent) :
@@ -61,7 +62,7 @@ void OptionButton::setActive(bool isActive){
 
 void OptionButton::setChecked(bool checked){
     ui->labelArrow3->setChecked(checked);
-    Q_EMIT clicked();
+    emit clicked();
 }
 
 void OptionButton::mousePressEvent(QMouseEvent *qevent){

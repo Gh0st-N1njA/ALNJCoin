@@ -6,7 +6,7 @@
 #define BITCOIN_CRYPTO_COMMON_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/alnj-config.h>
+#include <config/alnjl-config.h>
 #endif
 
 #include <stdint.h>

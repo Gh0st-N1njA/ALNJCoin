@@ -1,4 +1,5 @@
-// Copyright (c) 2017-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -77,7 +78,7 @@ public:
         value = 0;
         denomination = libzerocoin::ZQ_ERROR;
         nHeight = 0;
-        txid.SetNull();
+        txid = 0;
         version = 1;
         privkey.clear();
     }
@@ -209,7 +210,7 @@ public:
     void SetNull()
     {
         coinSerial = 0;
-        hashTx.SetNull();
+        hashTx = 0;
         pubCoin = 0;
         denomination = libzerocoin::ZQ_ERROR;
     }

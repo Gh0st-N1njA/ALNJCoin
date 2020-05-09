@@ -1,24 +1,23 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/sendconfirmdialog.h"
-#include "qt/alnj/forms/ui_sendconfirmdialog.h"
+#include "qt/alnjl/sendconfirmdialog.h"
+#include "qt/alnjl/forms/ui_sendconfirmdialog.h"
 #include "bitcoinunits.h"
 #include "walletmodel.h"
 #include "transactiontablemodel.h"
 #include "transactionrecord.h"
 #include "wallet/wallet.h"
 #include "guiutil.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 #include <QList>
 #include <QDateTime>
-#include <QKeyEvent>
 
-TxDetailDialog::TxDetailDialog(QWidget *parent, bool _isConfirmDialog, const QString& warningStr) :
+TxDetailDialog::TxDetailDialog(QWidget *parent, bool isConfirmDialog, QString warningStr) :
     QDialog(parent),
-    ui(new Ui::TxDetailDialog),
-    isConfirmDialog(_isConfirmDialog)
+    ui(new Ui::TxDetailDialog)
 {
     ui->setupUi(this);
 
@@ -30,9 +29,9 @@ TxDetailDialog::TxDetailDialog(QWidget *parent, bool _isConfirmDialog, const QSt
 
     // Labels
     setCssProperty(ui->labelWarning, "text-title2-dialog");
-    setCssProperty({ui->labelAmount, ui->labelSend, ui->labelInputs, ui->labelFee, ui->labelChange, ui->labelId, ui->labelSize, ui->labelStatus, ui->labelConfirmations, ui->labelDate}, "text-subtitle");
-    setCssProperty({ui->labelDividerID, ui->labelDividerOutputs, ui->labelDividerPrevtx, ui->labelDividerFeeSize, ui->labelDividerChange, ui->labelDividerConfs}, "container-divider");
-    setCssProperty({ui->textAmount, ui->textSendLabel, ui->textInputs, ui->textFee, ui->textChange, ui->textId, ui->textSize, ui->textStatus, ui->textConfirmations, ui->textDate} , "text-body3-dialog");
+    setCssTextBodyDialog({ui->labelAmount, ui->labelSend, ui->labelInputs, ui->labelFee, ui->labelChange, ui->labelId, ui->labelSize, ui->labelStatus, ui->labelConfirmations, ui->labelDate});
+    setCssProperty({ui->labelDivider1, ui->labelDivider2, ui->labelDivider3, ui->labelDivider4, ui->labelDivider5, ui->labelDivider6, ui->labelDivider7, ui->labelDivider8, ui->labelDivider9}, "container-divider");
+    setCssTextBodyDialog({ui->textAmount, ui->textSend, ui->textInputs, ui->textFee, ui->textChange, ui->textId, ui->textSize, ui->textStatus, ui->textConfirmations, ui->textDate});
 
     setCssProperty(ui->pushCopy, "ic-copy-big");
     setCssProperty({ui->pushInputs, ui->pushOutputs}, "ic-arrow-down");
@@ -41,14 +40,12 @@ TxDetailDialog::TxDetailDialog(QWidget *parent, bool _isConfirmDialog, const QSt
     ui->labelWarning->setVisible(false);
     ui->gridInputs->setVisible(false);
     ui->outputsScrollArea->setVisible(false);
-
-    // hide change address for now
     ui->contentChangeAddress->setVisible(false);
-    ui->labelDividerChange->setVisible(false);
+    ui->labelDivider4->setVisible(false);
 
-    setCssProperty({ui->labelOutputIndex, ui->textSend, ui->labelTitlePrevTx}, "text-body2-dialog");
+    setCssProperty({ui->labelOutputIndex, ui->labelTitlePrevTx}, "text-body2-dialog");
 
-    if (isConfirmDialog) {
+    if(isConfirmDialog){
         ui->labelTitle->setText(tr("Confirm Your Transaction"));
         setCssProperty(ui->btnCancel, "btn-dialog-cancel");
         ui->btnSave->setText(tr("SEND"));
@@ -60,28 +57,28 @@ TxDetailDialog::TxDetailDialog(QWidget *parent, bool _isConfirmDialog, const QSt
             ui->labelWarning->setVisible(false);
         }
 
-        // hide id / confirmations / date / status / size
-        ui->contentID->setVisible(false);
-        ui->labelDividerID->setVisible(false);
-        ui->gridConfDateStatus->setVisible(false);
-        ui->labelDividerConfs->setVisible(false);
+        // hide change address for now
+        ui->contentConfirmations->setVisible(false);
+        ui->contentStatus->setVisible(false);
+        ui->contentDate->setVisible(false);
         ui->contentSize->setVisible(false);
+        ui->contentConfirmations->setVisible(false);
+        ui->contentID->setVisible(false);
+        ui->labelDivider7->setVisible(false);
+        ui->labelDivider5->setVisible(false);
+        ui->labelDivider3->setVisible(false);
+        ui->labelDivider9->setVisible(false);
 
-        connect(ui->btnCancel, &QPushButton::clicked, this, &TxDetailDialog::close);
+        connect(ui->btnCancel, SIGNAL(clicked()), this, SLOT(close()));
         connect(ui->btnSave, &QPushButton::clicked, [this](){acceptTx();});
     }else{
         ui->labelTitle->setText(tr("Transaction Details"));
         ui->containerButtons->setVisible(false);
     }
 
-    connect(ui->btnEsc, &QPushButton::clicked, this, &TxDetailDialog::closeDialog);
-    connect(ui->pushInputs, &QPushButton::clicked, this, &TxDetailDialog::onInputsClicked);
-    connect(ui->pushOutputs, &QPushButton::clicked, this, &TxDetailDialog::onOutputsClicked);
-}
-
-void TxDetailDialog::showEvent(QShowEvent *event)
-{
-    setFocus();
+    connect(ui->btnEsc, SIGNAL(clicked()), this, SLOT(closeDialog()));
+    connect(ui->pushInputs, SIGNAL(clicked()), this, SLOT(onInputsClicked()));
+    connect(ui->pushOutputs, SIGNAL(clicked()), this, SLOT(onOutputsClicked()));
 }
 
 void TxDetailDialog::setData(WalletModel *model, const QModelIndex &index){
@@ -100,11 +97,10 @@ void TxDetailDialog::setData(WalletModel *model, const QModelIndex &index){
         ui->textId->setText(hash.left(20) + "..." + hash.right(20));
         ui->textId->setTextInteractionFlags(Qt::TextSelectableByMouse);
         if (tx->vout.size() == 1) {
-            ui->textSendLabel->setText(address);
+            ui->textSend->setText(address);
         } else {
-            ui->textSendLabel->setText(QString::number(tx->vout.size()) + " recipients");
+            ui->textSend->setText(QString::number(tx->vout.size()) + " recipients");
         }
-        ui->textSend->setVisible(false);
 
         ui->textInputs->setText(QString::number(tx->vin.size()));
         ui->textConfirmations->setText(QString::number(rec->status.depth));
@@ -123,48 +119,36 @@ void TxDetailDialog::setData(WalletModel *model, const QModelIndex &index){
 
 }
 
-void TxDetailDialog::setData(WalletModel *model, WalletModelTransaction &tx)
-{
+void TxDetailDialog::setData(WalletModel *model, WalletModelTransaction &tx){
     this->model = model;
     this->tx = &tx;
     CAmount txFee = tx.getTransactionFee();
     CAmount totalAmount = tx.getTotalTransactionAmount() + txFee;
 
     ui->textAmount->setText(BitcoinUnits::formatWithUnit(nDisplayUnit, totalAmount, false, BitcoinUnits::separatorAlways) + " (Fee included)");
-    int nRecipients = tx.getRecipients().size();
-    if (nRecipients == 1) {
-        SendCoinsRecipient recipient = tx.getRecipients().at(0);
-        if (recipient.label.isEmpty()) { // If there is no label, then do not show the blank space.
-            ui->textSendLabel->setText(recipient.address);
-            ui->textSend->setVisible(false);
-        } else {
-            ui->textSend->setText(recipient.address);
-            ui->textSendLabel->setText(recipient.label);
-        }
+    if(tx.getRecipients().size() == 1){
+        ui->textSend->setText(tx.getRecipients().at(0).address);
         ui->pushOutputs->setVisible(false);
-    } else {
-        ui->textSendLabel->setText(QString::number(nRecipients) + " recipients");
-        ui->textSend->setVisible(false);
+    }else{
+        ui->textSend->setText(QString::number(tx.getRecipients().size()) + " recipients");
     }
     ui->textInputs->setText(QString::number(tx.getTransaction()->vin.size()));
     ui->textFee->setText(BitcoinUnits::formatWithUnit(nDisplayUnit, txFee, false, BitcoinUnits::separatorAlways));
 }
 
-void TxDetailDialog::acceptTx()
-{
-    if (!isConfirmDialog)
-        throw GUIException(strprintf("%s called on non confirm dialog", __func__));
+void TxDetailDialog::acceptTx(){
     this->confirm = true;
     this->sendStatus = model->sendCoins(*this->tx);
     accept();
 }
 
-void TxDetailDialog::onInputsClicked()
-{
+void TxDetailDialog::onInputsClicked() {
     if (ui->gridInputs->isVisible()) {
         ui->gridInputs->setVisible(false);
+        ui->contentInputs->layout()->setContentsMargins(0,9,12,9);
     } else {
         ui->gridInputs->setVisible(true);
+        ui->contentInputs->layout()->setContentsMargins(0,9,12,0);
         if (!inputsLoaded) {
             inputsLoaded = true;
             const CWalletTx* tx = (this->tx) ? this->tx->getTransaction() : model->getTx(this->txHash);
@@ -173,13 +157,13 @@ void TxDetailDialog::onInputsClicked()
                 int i = 1;
                 for (const CTxIn &in : tx->vin) {
                     QString hash = QString::fromStdString(in.prevout.hash.GetHex());
-                    QLabel *label_txid = new QLabel(hash.left(18) + "..." + hash.right(18));
-                    QLabel *label_txidn = new QLabel(QString::number(in.prevout.n));
-                    label_txidn->setAlignment(Qt::AlignCenter | Qt::AlignRight);
-                    setCssProperty({label_txid, label_txidn}, "text-body2-dialog");
+                    QLabel *label = new QLabel(hash.left(18) + "..." + hash.right(18));
+                    QLabel *label1 = new QLabel(QString::number(in.prevout.n));
+                    label1->setAlignment(Qt::AlignCenter);
+                    setCssProperty({label, label1}, "text-body2-dialog");
 
-                    ui->gridLayoutInput->addWidget(label_txid,i,0);
-                    ui->gridLayoutInput->addWidget(label_txidn,i,1);
+                    ui->gridLayoutInput->addWidget(label,i,0);
+                    ui->gridLayoutInput->addWidget(label1,i,1, Qt::AlignCenter);
                     i++;
                 }
             }
@@ -187,22 +171,29 @@ void TxDetailDialog::onInputsClicked()
     }
 }
 
-void TxDetailDialog::onOutputsClicked()
-{
+void TxDetailDialog::onOutputsClicked() {
     if (ui->outputsScrollArea->isVisible()) {
         ui->outputsScrollArea->setVisible(false);
     } else {
         ui->outputsScrollArea->setVisible(true);
         if (!outputsLoaded) {
             outputsLoaded = true;
-            QGridLayout* layoutGrid = new QGridLayout();
-            layoutGrid->setContentsMargins(0,0,12,0);
-            ui->container_outputs_base->setLayout(layoutGrid);
+            QVBoxLayout* layoutVertical = new QVBoxLayout();
+            layoutVertical->setContentsMargins(0,0,12,0);
+            layoutVertical->setSpacing(6);
+            ui->container_outputs_base->setLayout(layoutVertical);
 
             const CWalletTx* tx = (this->tx) ? this->tx->getTransaction() : model->getTx(this->txHash);
-            if (tx) {
-                int i = 0;
+            if(tx) {
                 for (const CTxOut &out : tx->vout) {
+                    QFrame *frame = new QFrame(ui->container_outputs_base);
+
+                    QHBoxLayout *layout = new QHBoxLayout();
+                    layout->setContentsMargins(0, 0, 0, 0);
+                    layout->setSpacing(12);
+                    frame->setLayout(layout);
+
+                    QLabel *label = nullptr;
                     QString labelRes;
                     CTxDestination dest;
                     bool isCsAddress = out.scriptPubKey.IsPayToColdStaking();
@@ -213,42 +204,26 @@ void TxDetailDialog::onOutputsClicked()
                     } else {
                         labelRes = tr("Unknown");
                     }
-                    QLabel *label_address = new QLabel(labelRes);
-                    QLabel *label_value = new QLabel(BitcoinUnits::formatWithUnit(nDisplayUnit, out.nValue, false, BitcoinUnits::separatorAlways));
-                    label_value->setAlignment(Qt::AlignCenter | Qt::AlignRight);
-                    setCssProperty({label_address, label_value}, "text-body2-dialog");
-                    layoutGrid->addWidget(label_address,i,0);
-                    layoutGrid->addWidget(label_value,i,0);
-                    i++;
+                    label = new QLabel(labelRes);
+                    QLabel *label1 = new QLabel(BitcoinUnits::formatWithUnit(nDisplayUnit, out.nValue, false, BitcoinUnits::separatorAlways));
+                    label1->setAlignment(Qt::AlignCenter | Qt::AlignRight);
+                    setCssProperty({label, label1}, "text-body2-dialog");
+
+                    layout->addWidget(label);
+                    layout->addWidget(label1);
+                    layoutVertical->addWidget(frame);
                 }
             }
         }
     }
 }
 
-void TxDetailDialog::keyPressEvent(QKeyEvent *event)
-{
-    if (event->type() == QEvent::KeyPress) {
-        QKeyEvent* ke = static_cast<QKeyEvent*>(event);
-        // Detect Enter key press
-        if (ke->key() == Qt::Key_Enter || ke->key() == Qt::Key_Return) {
-            if (isConfirmDialog) acceptTx();
-            else accept();
-        }
-        // Detect Esc key press
-        if (ke->key() == Qt::Key_Escape)
-            closeDialog();
-    }
-}
-
-void TxDetailDialog::closeDialog()
-{
+void TxDetailDialog::closeDialog(){
     if(snackBar && snackBar->isVisible()) snackBar->hide();
     close();
 }
 
-TxDetailDialog::~TxDetailDialog()
-{
+TxDetailDialog::~TxDetailDialog(){
     if(snackBar) delete snackBar;
     delete ui;
 }

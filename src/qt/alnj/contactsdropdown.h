@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,10 +7,10 @@
 #define CONTACTSDROPDOWN_H
 
 #include "addresstablemodel.h"
-#include "qt/alnj/pwidget.h"
-#include "qt/alnj/contactdropdownrow.h"
-#include "qt/alnj/furabstractlistitemdelegate.h"
-#include "qt/alnj/addressfilterproxymodel.h"
+#include "qt/alnjl/pwidget.h"
+#include "qt/alnjl/contactdropdownrow.h"
+#include "qt/alnjl/furabstractlistitemdelegate.h"
+#include "qt/alnjl/addressfilterproxymodel.h"
 #include <QListView>
 #include <QObject>
 #include <QWidget>
@@ -34,7 +35,7 @@ public:
     void setWalletModel(WalletModel* _model, const QString& type);
     void setType(const QString& type);
     void changeTheme(bool isLightTheme, QString& theme) override;
-Q_SIGNALS:
+signals:
     void contactSelected(QString address, QString label);
 private:
     FurAbstractListItemDelegate* delegate = nullptr;
@@ -42,7 +43,7 @@ private:
     AddressFilterProxyModel *filter = nullptr;
     QListView *list;
     QFrame *frameList;
-private Q_SLOTS:
+private slots:
     void handleClick(const QModelIndex &index);
 };
 

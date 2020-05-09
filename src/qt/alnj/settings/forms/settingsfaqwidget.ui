@@ -222,7 +222,7 @@
                       <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="text">
-                      <string>3) ALNJ privacy? What is Zerocoin (zALNJ)?</string>
+                      <string>3) ALNJ privacy? What is Zerocoin (zPIV)?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -250,7 +250,7 @@
                       <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="text">
-                      <string>4) Why are my zALNJ unspendable?</string>
+                      <string>4) Why are my zPIV unspendable?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -273,7 +273,7 @@
                      </property>
                      <property name="text">
                       <string>5) Why did my wallet convert the balance
-    into zALNJ automatically?</string>
+    into zPIV automatically?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -295,7 +295,7 @@
                       <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="text">
-                      <string>6) How do I receive ALNJ/zALNJ?</string>
+                      <string>6) How do I receive ALNJ/zPIV?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -317,7 +317,7 @@
                       <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="text">
-                      <string>7) How do I stake ALNJ/zALNJ?</string>
+                      <string>7) How do I stake ALNJ/zPIV?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -361,7 +361,7 @@
                       <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="text">
-                      <string>9) What is a Masternode?</string>
+                      <string>9) What is a Master Node?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -383,7 +383,7 @@
                       <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="text">
-                      <string>10) What is a Masternode Controller?</string>
+                      <string>10) What is a Master Node Controller?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -628,7 +628,7 @@
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  ALNJ incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zALNJ) and Zerocoin staking.
+                           to implement ZeroCoin(zPIV) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            ALNJ utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of ALNJ to participate in earning block rewards
@@ -800,7 +800,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle3">
                         <property name="text">
-                         <string>ALNJ privacy? What is Zerocoin (zALNJ)?</string>
+                         <string>ALNJ privacy? What is Zerocoin (zPIV)?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -828,11 +828,11 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zALNJ is an optional privacy-centric method of coin mixing on the
+                           zPIV is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt;
-                           &quot;ALNJ Zerocoin (zALNJ) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt;
+                           &quot;ALNJ Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
                         </property>
@@ -898,7 +898,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle4">
                         <property name="text">
-                         <string>Why are my zALNJ unspendable?</string>
+                         <string>Why are my zPIV unspendable?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -926,7 +926,7 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           After minting, zALNJ will require 20 confirmations as well as 1
+                           After minting, zPIV will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -994,7 +994,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle5">
                         <property name="text">
-                         <string>Why did my wallet convert the balance into zALNJ automatically?</string>
+                         <string>Why did my wallet convert the balance into zPIV automatically?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1023,17 +1023,17 @@
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            By default the ALNJ wallet will convert 10% of your entire ALNJ
-                           balance to zALNJ to assist the network. If you do not wish to
-                           stake zALNJ or take advantage of the privacy benefit it brings,
+                           balance to zPIV to assist the network. If you do not wish to
+                           stake zPIV or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your ALNJ wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zALNJ Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
                            If you are not making use of the ALNJ-QT or GUI you can simply open
-                           your alnj.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your alnjl.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           You can read more about zALNJ in the
-                           &lt;a style='color: #b088ff' href='https://ALNJ.org/zalnj/'&gt; &quot;ALNJ Zerocoin (zALNJ) Technical Paper&quot;&lt;/a&gt;.
-                           If you would like to keep and stake your zALNJ, please read the &quot;How do I stake&quot;
+                           You can read more about zPIV in the
+                           &lt;a style='color: #b088ff' href='https://alnjlite.com/zalnj/'&gt; &quot;ALNJ Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
@@ -1103,7 +1103,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle6">
                         <property name="text">
-                         <string>How do I receive ALNJ/zALNJ?</string>
+                         <string>How do I receive ALNJ/zPIV?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1131,10 +1131,10 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zALNJ can be spent and sent to any ALNJ address. The receiver will
-                           receive standard ALNJ but the origin of the ALNJ is anonymized by the zALNJ Protocol.
+                           zPIV can be spent and sent to any ALNJ address. The receiver will
+                           receive standard ALNJ but the origin of the ALNJ is anonymized by the zPIV Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           If you want more zALNJ you will need to mint your balance in the “Privacy” tab.
+                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
                         </property>
@@ -1200,7 +1200,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle7">
                         <property name="text">
-                         <string>How do I stake ALNJ/zALNJ?</string>
+                         <string>How do I stake ALNJ/zPIV?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1233,21 +1233,21 @@
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of ALNJ with a minimum of 600 confirmations.
+                           You must have a balance of ALNJ with a minimum of 101 confirmations.
                            &lt;li&gt;
-                           Your wallet must stay online and be unlocked for staking purposes.
+                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (alnj-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (alnjl-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake zALNJ:
+                           To Stake zPIV:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zALNJ balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -1317,7 +1317,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle8">
                         <property name="text">
-                         <string>Where should I go if I need support?</string>
+                         <string>Where I should go if I need support?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1346,10 +1346,10 @@
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.ALNJ.org'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.alnjlite.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://ALNJ.freshdesk.com'&gt;
+                           &lt;a style='color: #b088ff' href='https://alnjlite.freshdesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
@@ -1416,7 +1416,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle9">
                         <property name="text">
-                         <string>What is a Masternode?</string>
+                         <string>What is a Master Node?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1445,7 +1445,7 @@
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            A masternode is a computer running a full node ALNJ core wallet with a
-                           requirement of 10,000 ALNJ secured collateral to provide extra services
+                           requirement of 1,00,000 ALNJ secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -1477,7 +1477,7 @@
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 ALNJ per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;1,00,000 ALNJ per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -1547,7 +1547,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle10">
                         <property name="text">
-                         <string>What is a Masternode Controller?</string>
+                         <string>What is a Master Node Controller?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1573,7 +1573,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent10">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 ALNJ collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 1,00,000 ALNJ collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1621,7 +1621,7 @@
   <customwidget>
    <class>PFBorderImage</class>
    <extends>QFrame</extends>
-   <header>qt/alnj/pfborderimage.h</header>
+   <header>qt/alnjl/pfborderimage.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

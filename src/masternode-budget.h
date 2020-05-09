@@ -1,5 +1,6 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2020 The ALNJ developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,7 +17,7 @@
 #include "util.h"
 
 
-extern RecursiveMutex cs_budget;
+extern CCriticalSection cs_budget;
 
 class CBudgetManager;
 class CFinalizedBudgetBroadcast;
@@ -183,7 +184,7 @@ private:
 
 public:
     // critical section to protect the inner data structures
-    mutable RecursiveMutex cs;
+    mutable CCriticalSection cs;
 
     // keep track of the scanning errors I've seen
     std::map<uint256, CBudgetProposal> mapProposals;
@@ -289,7 +290,7 @@ public:
     {
         payee = CScript();
         nAmount = 0;
-        nProposalHash = UINT256_ZERO;
+        nProposalHash = 0;
     }
 
     ADD_SERIALIZE_METHODS;
@@ -312,7 +313,7 @@ class CFinalizedBudget
 {
 private:
     // critical section to protect the inner data structures
-    mutable RecursiveMutex cs;
+    mutable CCriticalSection cs;
     bool fAutoChecked; //If it matches what we see, we'll auto vote for it (masternode only)
 
 public:
@@ -327,7 +328,7 @@ public:
     CFinalizedBudget();
     CFinalizedBudget(const CFinalizedBudget& other);
 
-    void CleanAndRemove();
+    void CleanAndRemove(bool fSignatureCheck);
     bool AddOrUpdateVote(CFinalizedBudgetVote& vote, std::string& strError);
     double GetScore();
     bool HasMinimumRequiredSupport();
@@ -365,7 +366,7 @@ public:
 
     // Verify and vote on finalized budget
     void CheckAndVote();
-    //total alnj paid out by this budget
+    //total alnjl paid out by this budget
     CAmount GetTotalPayout();
     //vote on this finalized budget as a masternode
     void SubmitVote();
@@ -455,7 +456,7 @@ class CBudgetProposal
 {
 private:
     // critical section to protect the inner data structures
-    mutable RecursiveMutex cs;
+    mutable CCriticalSection cs;
     CAmount nAlloted;
 
 public:
@@ -509,7 +510,7 @@ public:
     void SetAllotted(CAmount nAllotedIn) { nAlloted = nAllotedIn; }
     CAmount GetAllotted() { return nAlloted; }
 
-    void CleanAndRemove();
+    void CleanAndRemove(bool fSignatureCheck);
 
     uint256 GetHash() const
     {

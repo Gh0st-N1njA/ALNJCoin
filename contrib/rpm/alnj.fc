@@ -1,8 +1,8 @@
-/usr/bin/alnj-cli		--	gen_context(system_u:object_r:alnj_exec_t,s0)
-/usr/sbin/alnjd		--	gen_context(system_u:object_r:alnj_exec_t,s0)
-/usr/lib(64)?/alnj/alnjd		--	gen_context(system_u:object_r:alnj_exec_t,s0)
+/usr/bin/alnjl-cli		--	gen_context(system_u:object_r:alnjl_exec_t,s0)
+/usr/sbin/alnjld		--	gen_context(system_u:object_r:alnjl_exec_t,s0)
+/usr/lib(64)?/alnjl/alnjld		--	gen_context(system_u:object_r:alnjl_exec_t,s0)
 
-/etc/alnj(/.*)?		gen_context(system_u:object_r:alnj_conf_t,s0)
-/var/lib/alnj(/.*)?		gen_context(system_u:object_r:alnj_var_lib_t,s0)
+/etc/alnjl(/.*)?		gen_context(system_u:object_r:alnjl_conf_t,s0)
+/var/lib/alnjl(/.*)?		gen_context(system_u:object_r:alnjl_var_lib_t,s0)
 
-(/var)?/run/alnjd(/.*)?   gen_context(system_u:object_r:alnj_var_run_t,s0)
+(/var)?/run/alnjld(/.*)?   gen_context(system_u:object_r:alnjl_var_run_t,s0)

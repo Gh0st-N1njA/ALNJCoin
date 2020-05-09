@@ -1,5 +1,6 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2014 The Bitcoin developers
-// Copyright (c) 2017-2020 The ALNJ developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +11,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between alnj-cli and alnjd)
+ * CBaseChainParams defines the base parameters (shared between alnjl-cli and alnjld)
  * of a given instance of the Alnj system.
  */
 class CBaseChainParams
@@ -20,6 +21,7 @@ public:
         MAIN,
         TESTNET,
         REGTEST,
+        UNITTEST,
 
         MAX_NETWORK_TYPES
     };

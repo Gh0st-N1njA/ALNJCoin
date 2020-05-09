@@ -1,12 +1,13 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/settings/settingsmultisenddialog.h"
-#include "qt/alnj/settings/forms/ui_settingsmultisenddialog.h"
+#include "qt/alnjl/settings/settingsmultisenddialog.h"
+#include "qt/alnjl/settings/forms/ui_settingsmultisenddialog.h"
 #include <QListView>
 #include <QIntValidator>
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 
 SettingsMultisendDialog::SettingsMultisendDialog(QWidget *parent) :
     QDialog(parent),
@@ -25,16 +26,16 @@ SettingsMultisendDialog::SettingsMultisendDialog(QWidget *parent) :
     setCssProperty(ui->labelTitle, "text-title-dialog");
 
     // Label
-    ui->labelSubtitleLabel->setText(tr("Address Label (optional)"));
+    ui->labelSubtitleLabel->setText(tr("Label (optional)"));
     setCssProperty(ui->labelSubtitleLabel, "text-title2-dialog");
 
-    ui->lineEditLabel->setPlaceholderText(tr("Enter label to be saved with this address"));
+    ui->lineEditLabel->setPlaceholderText(tr("Enter a label to add this address in your address book"));
     initCssEditLine(ui->lineEditLabel, true);
 
     // Address
-    ui->labelSubtitleAddress->setText("ALNJ address or contact label");
+    ui->labelSubtitleAddress->setText("Enter a ALNJ address or contact label");
     setCssProperty(ui->labelSubtitleAddress, "text-title2-dialog");
-    ui->lineEditAddress->setPlaceholderText("Enter address");
+    ui->lineEditAddress->setPlaceholderText("e.g D7VFR83SQbiezrW72hjc… ");
     initCssEditLine(ui->lineEditAddress, true);
     ui->lineEditAddress->setValidator(new QRegExpValidator(QRegExp("^[A-Za-z0-9]+"), ui->lineEditAddress));
 
@@ -51,8 +52,8 @@ SettingsMultisendDialog::SettingsMultisendDialog(QWidget *parent) :
     ui->btnSave->setText("ADD");
     setCssBtnPrimary(ui->btnSave);
 
-    connect(ui->btnEsc, &QPushButton::clicked, this, &SettingsMultisendDialog::close);
-    connect(ui->btnCancel, &QPushButton::clicked, this, &SettingsMultisendDialog::close);
+    connect(ui->btnEsc, SIGNAL(clicked()), this, SLOT(close()));
+    connect(ui->btnCancel, SIGNAL(clicked()), this, SLOT(close()));
     connect(ui->btnSave, &QPushButton::clicked, [this](){
         this->isOk = true;
         accept();

@@ -267,7 +267,7 @@
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>140</width>
+                   <width>16777215</width>
                    <height>1</height>
                   </size>
                  </property>
@@ -353,7 +353,7 @@
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>140</width>
+                   <width>16777215</width>
                    <height>1</height>
                   </size>
                  </property>
@@ -439,7 +439,7 @@
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>160</width>
+                   <width>16777215</width>
                    <height>1</height>
                   </size>
                  </property>
@@ -715,7 +715,7 @@
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
-                      <width>20</width>
+                      <width>40</width>
                       <height>20</height>
                      </size>
                     </property>
@@ -725,7 +725,7 @@
                    <widget class="QPushButton" name="pushName4">
                     <property name="minimumSize">
                      <size>
-                      <width>150</width>
+                      <width>110</width>
                       <height>0</height>
                      </size>
                     </property>
@@ -759,7 +759,7 @@
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
-                      <width>76</width>
+                      <width>96</width>
                       <height>20</height>
                      </size>
                     </property>
@@ -1181,7 +1181,7 @@ ALNJ Core Wallet</string>
   <customwidget>
    <class>PFBorderImage</class>
    <extends>QFrame</extends>
-   <header>qt/alnj/pfborderimage.h</header>
+   <header>qt/alnjl/pfborderimage.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

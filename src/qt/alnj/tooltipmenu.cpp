@@ -1,12 +1,13 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/tooltipmenu.h"
-#include "qt/alnj/forms/ui_tooltipmenu.h"
+#include "qt/alnjl/tooltipmenu.h"
+#include "qt/alnjl/forms/ui_tooltipmenu.h"
 
-#include "qt/alnj/alnjgui.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/alnjlgui.h"
+#include "qt/alnjl/qtutils.h"
 #include <QTimer>
 
 TooltipMenu::TooltipMenu(ALNJGUI *_window, QWidget *parent) :
@@ -17,10 +18,10 @@ TooltipMenu::TooltipMenu(ALNJGUI *_window, QWidget *parent) :
     ui->btnLast->setVisible(false);
     setCssProperty(ui->container, "container-list-menu");
     setCssProperty({ui->btnCopy, ui->btnDelete, ui->btnEdit, ui->btnLast}, "btn-list-menu");
-    connect(ui->btnCopy, &QPushButton::clicked, this, &TooltipMenu::copyClicked);
-    connect(ui->btnDelete, &QPushButton::clicked, this, &TooltipMenu::deleteClicked);
-    connect(ui->btnEdit, &QPushButton::clicked, this, &TooltipMenu::editClicked);
-    connect(ui->btnLast, &QPushButton::clicked, this, &TooltipMenu::lastClicked);
+    connect(ui->btnCopy, SIGNAL(clicked()), this, SLOT(copyClicked()));
+    connect(ui->btnDelete, SIGNAL(clicked()), this, SLOT(deleteClicked()));
+    connect(ui->btnEdit, SIGNAL(clicked()), this, SLOT(editClicked()));
+    connect(ui->btnLast, SIGNAL(clicked()), this, SLOT(lastClicked()));
 }
 
 void TooltipMenu::setEditBtnText(QString btnText){
@@ -58,26 +59,26 @@ void TooltipMenu::setLastBtnVisible(bool visible) {
 
 void TooltipMenu::deleteClicked(){
     hide();
-    Q_EMIT onDeleteClicked();
+    emit onDeleteClicked();
 }
 
 void TooltipMenu::copyClicked(){
     hide();
-    Q_EMIT onCopyClicked();
+    emit onCopyClicked();
 }
 
 void TooltipMenu::editClicked(){
     hide();
-    Q_EMIT onEditClicked();
+    emit onEditClicked();
 }
 
 void TooltipMenu::lastClicked() {
     hide();
-    Q_EMIT onLastClicked();
+    emit onLastClicked();
 }
 
 void TooltipMenu::showEvent(QShowEvent *event){
-    QTimer::singleShot(5000, this, &TooltipMenu::hide);
+    QTimer::singleShot(5000, this, SLOT(hide()));
 }
 
 TooltipMenu::~TooltipMenu()

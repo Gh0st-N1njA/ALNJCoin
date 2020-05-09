@@ -23,7 +23,7 @@ Table of Contents
 - [Preparing the Gitian builder host](#preparing-the-gitian-builder-host)
   - [macOS Builds](#macos-builds)
 - [Initial Gitian Setup](#initial-gitian-setup)
-- [Building ALNJ Core](#building-alnj-core)
+- [Building ALNJ Core](#building-alnjl-core)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
 
@@ -104,15 +104,15 @@ Signing Externally
 If your gitian host does not have your GPG private key installed, you will need to copy these uncommited changes to your host machine, where you can sign them:
 
 ```bash
-gpg --output ${VERSION}-linux/${NAME}/alnj-linux-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-linux/$NAME/alnj-linux-${VERSION%\.*}-build.assert
-gpg --output ${VERSION}-osx-unsigned/$NAME/alnj-osx-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-osx-unsigned/$NAME/alnj-osx-${VERSION%\.*}-build.assert
-gpg --output ${VERSION}-win-unsigned/$NAME/alnj-win-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-win-unsigned/$NAME/alnj-win-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-linux/${NAME}/alnjl-linux-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-linux/$NAME/alnjl-linux-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-osx-unsigned/$NAME/alnjl-osx-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-osx-unsigned/$NAME/alnjl-osx-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-win-unsigned/$NAME/alnjl-win-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-win-unsigned/$NAME/alnjl-win-${VERSION%\.*}-build.assert
 ```
 
 Uploading Signatures
 --------------------
 Make a Pull Request (both the `.assert` and `.assert.sig` files) to the
-[gitian.sigs](https://github.com/alnj-project/gitian.sigs/) repository:
+[gitian.sigs](https://github.com/alnjl-project/gitian.sigs/) repository:
 
 ```bash
 git checkout -b ${VERSION}-not-codesigned
@@ -120,12 +120,12 @@ git commit -S -a -m "Add $NAME $VERSION non-code signed signatures"
 git push --set-upstream $NAME $VERSION-not-codesigned
 ```
 
-You can also mail the files to Fuzzbawls (fuzzbawls@algoninja.site/alnj) and he will commit them.
+You can also mail the files to Fuzzbawls (fuzzbawls@alnjlite.com) and he will commit them.
 
 ```bash
-gpg --detach-sign ${VERSION}-linux/${NAME}/alnj-linux-*-build.assert
-gpg --detach-sign ${VERSION}-win-unsigned/${NAME}/alnj-win-*-build.assert
-gpg --detach-sign ${VERSION}-osx-unsigned/${NAME}/alnj-osx-*-build.assert
+gpg --detach-sign ${VERSION}-linux/${NAME}/alnjl-linux-*-build.assert
+gpg --detach-sign ${VERSION}-win-unsigned/${NAME}/alnjl-win-*-build.assert
+gpg --detach-sign ${VERSION}-osx-unsigned/${NAME}/alnjl-osx-*-build.assert
 ```
 
 You may have other .assert files as well (e.g. `signed` ones), in which case you should sign them too. You can see all of them by doing `ls ${VERSION}-*/${NAME}`.

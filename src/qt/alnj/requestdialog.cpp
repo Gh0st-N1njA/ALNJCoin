@@ -1,12 +1,13 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/requestdialog.h"
-#include "qt/alnj/forms/ui_requestdialog.h"
+#include "qt/alnjl/requestdialog.h"
+#include "qt/alnjl/forms/ui_requestdialog.h"
 #include <QListView>
 
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 #include "guiutil.h"
 #include "amount.h"
 #include "pairresult.h"
@@ -22,10 +23,10 @@ RequestDialog::RequestDialog(QWidget *parent) :
     setCssProperty(ui->frame, "container-dialog");
 
     // Text
-    ui->labelTitle->setText(tr("New Payment Request"));
+    ui->labelTitle->setText(tr("New Request Payment"));
     setCssProperty(ui->labelTitle, "text-title-dialog");
 
-    ui->labelMessage->setText(tr("Instead of sharing only a ALNJ address, you can create a payment request, bundling up more information."));
+    ui->labelMessage->setText(tr("Instead of only sharing a ALNJ address, you can create a Payment Request message which bundles up more information than is contained in just a ALNJ address."));
     setCssProperty(ui->labelMessage, "text-main-grey");
 
     // Combo Coins
@@ -35,7 +36,7 @@ RequestDialog::RequestDialog(QWidget *parent) :
     // Label
     ui->labelSubtitleLabel->setText(tr("Label"));
     setCssProperty(ui->labelSubtitleLabel, "text-title2-dialog");
-    ui->lineEditLabel->setPlaceholderText(tr("Enter a label for the address"));
+    ui->lineEditLabel->setPlaceholderText(tr("Enter a label to be saved within the address"));
     setCssEditLineDialog(ui->lineEditLabel, true);
 
     // Amount
@@ -49,7 +50,7 @@ RequestDialog::RequestDialog(QWidget *parent) :
     ui->labelSubtitleDescription->setText(tr("Description (optional)"));
     setCssProperty(ui->labelSubtitleDescription, "text-title2-dialog");
 
-    ui->lineEditDescription->setPlaceholderText(tr("Enter description"));
+    ui->lineEditDescription->setPlaceholderText(tr("Add description "));
     setCssEditLineDialog(ui->lineEditDescription, true);
 
     // Stack
@@ -67,12 +68,12 @@ RequestDialog::RequestDialog(QWidget *parent) :
     setCssBtnPrimary(ui->btnCopyAddress);
     setCssBtnPrimary(ui->btnCopyUrl);
 
-    connect(ui->btnCancel, &QPushButton::clicked, this, &RequestDialog::close);
-    connect(ui->btnEsc, &QPushButton::clicked, this, &RequestDialog::close);
-    connect(ui->btnSave, &QPushButton::clicked, this, &RequestDialog::onNextClicked);
+    connect(ui->btnCancel, SIGNAL(clicked()), this, SLOT(close()));
+    connect(ui->btnEsc, SIGNAL(clicked()), this, SLOT(close()));
+    connect(ui->btnSave, SIGNAL(clicked()), this, SLOT(onNextClicked()));
     // TODO: Change copy address for save image (the method is already implemented in other class called exportQr or something like that)
-    connect(ui->btnCopyAddress, &QPushButton::clicked, this, &RequestDialog::onCopyClicked);
-    connect(ui->btnCopyUrl, &QPushButton::clicked, this, &RequestDialog::onCopyUriClicked);
+    connect(ui->btnCopyAddress, SIGNAL(clicked()), this, SLOT(onCopyClicked()));
+    connect(ui->btnCopyUrl, SIGNAL(clicked()), this, SLOT(onCopyUriClicked()));
 }
 
 void RequestDialog::setWalletModel(WalletModel *model){

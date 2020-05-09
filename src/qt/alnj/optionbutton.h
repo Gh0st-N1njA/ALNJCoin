@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,7 +27,7 @@ public:
     void setRightIcon(QPixmap icon);
     void setActive(bool);
     void setChecked(bool checked);
-Q_SIGNALS:
+signals:
     void clicked();
 
 protected:

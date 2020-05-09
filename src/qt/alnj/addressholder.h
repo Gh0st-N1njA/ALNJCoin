@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,8 +8,8 @@
 
 #include <QWidget>
 #include <QColor>
-#include "qt/alnj/myaddressrow.h"
-#include "qt/alnj/furlistrow.h"
+#include "qt/alnjl/myaddressrow.h"
+#include "qt/alnjl/furlistrow.h"
 #include "guiutil.h"
 
 

@@ -1,10 +1,11 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "random.h"
 
-#include "test/test_alnj.h"
+#include "test/test_alnjl.h"
 
 #include <boost/test/unit_test.hpp>
 

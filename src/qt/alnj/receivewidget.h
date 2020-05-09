@@ -1,14 +1,15 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef RECEIVEWIDGET_H
 #define RECEIVEWIDGET_H
 
-#include "qt/alnj/pwidget.h"
+#include "qt/alnjl/pwidget.h"
 #include "addresstablemodel.h"
-#include "qt/alnj/furabstractlistitemdelegate.h"
-#include "qt/alnj/addressfilterproxymodel.h"
+#include "qt/alnjl/furabstractlistitemdelegate.h"
+#include "qt/alnjl/addressfilterproxymodel.h"
 
 #include <QSpacerItem>
 #include <QWidget>
@@ -35,20 +36,17 @@ public:
 
     void loadWalletModel() override;
 
-public Q_SLOTS:
+public slots:
     void onRequestClicked();
     void onMyAddressesClicked();
     void onNewAddressClicked();
 
-private Q_SLOTS:
+private slots:
     void changeTheme(bool isLightTheme, QString &theme) override ;
     void onLabelClicked();
     void onCopyClicked();
-    void refreshView(const QModelIndex& tl, const QModelIndex& br);
     void refreshView(QString refreshAddress = QString());
     void handleAddressClicked(const QModelIndex &index);
-    void onSortChanged(int idx);
-    void onSortOrderChanged(int idx);
 private:
     Ui::ReceiveWidget *ui;
 
@@ -63,14 +61,9 @@ private:
     // Cached qr
     QPixmap *qrImage = nullptr;
 
-    // Cached sort type and order
-    AddressTableModel::ColumnIndex sortType = AddressTableModel::Label;
-    Qt::SortOrder sortOrder = Qt::AscendingOrder;
-
     void updateQr(QString address);
     void updateLabel();
     void showAddressGenerationDialog(bool isPaymentRequest);
-    void sortAddresses();
 
     bool isShowingDialog = false;
 

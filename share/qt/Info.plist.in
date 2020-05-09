@@ -38,7 +38,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.alnj.Alnj-Qt</string>
+  <string>io.alnjl.Alnj-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.alnj.AlnjPayment</string>
+      <string>io.alnjl.AlnjPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>alnj</string>
+        <string>alnjl</string>
       </array>
     </dict>
   </array>
@@ -58,7 +58,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.alnj.paymentrequest</string>
+      <string>io.alnjl.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Alnj payment request</string>
       <key>UTTypeConformsTo</key>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-alnj-payment-request</string>
+        <string>application/x-alnjl-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>alnjpaymentrequest</string>
+          <string>alnjlpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.alnj.paymentrequest</string>
+        <string>io.alnjl.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

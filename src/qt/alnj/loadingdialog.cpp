@@ -1,9 +1,10 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/loadingdialog.h"
-#include "qt/alnj/forms/ui_loadingdialog.h"
+#include "qt/alnjl/loadingdialog.h"
+#include "qt/alnjl/forms/ui_loadingdialog.h"
 #include <QMovie>
 
 void Worker::process(){
@@ -13,16 +14,16 @@ void Worker::process(){
         } catch (std::exception &e) {
             QString errorStr = QString::fromStdString(e.what());
             runnable->onError(errorStr, type);
-            Q_EMIT error(errorStr, type);
+            emit error(errorStr, type);
         } catch (...) {
             QString errorStr = QString::fromStdString("Unknown error running background task");
             runnable->onError(errorStr, type);
-            Q_EMIT error(errorStr, type);
+            emit error(errorStr, type);
         }
     } else {
-        Q_EMIT error("Null runnable", type);
+        emit error("Null runnable", type);
     }
-    Q_EMIT finished();
+    emit finished();
 };
 
 LoadingDialog::LoadingDialog(QWidget *parent) :
@@ -45,22 +46,19 @@ LoadingDialog::LoadingDialog(QWidget *parent) :
     ui->labelDots->setProperty("cssClass", "text-loading");
 }
 
-void LoadingDialog::execute(Runnable *runnable, int type, std::unique_ptr<WalletModel::UnlockContext> pctx)
-{
+void LoadingDialog::execute(Runnable *runnable, int type){
     loadingTimer = new QTimer(this);
-    connect(loadingTimer, &QTimer::timeout, this, &LoadingDialog::loadingTextChange);
+    connect(loadingTimer, SIGNAL(timeout()), this, SLOT(loadingTextChange()));
     loadingTimer->start(250);
 
     QThread* thread = new QThread;
-    Worker* worker = (pctx == nullptr ?
-                      new Worker(runnable, type) :
-                      new WalletWorker(runnable, type, std::move(pctx)));
+    Worker* worker = new Worker(runnable, type);
     worker->moveToThread(thread);
-    connect(thread, &QThread::started, worker, &Worker::process);
-    connect(worker, &Worker::finished, thread, &QThread::quit);
-    connect(worker, &Worker::finished, worker, &Worker::deleteLater);
-    connect(thread, &QThread::finished, thread, &QThread::deleteLater);
-    connect(worker, &Worker::finished, this, &LoadingDialog::finished);
+    connect(thread, SIGNAL (started()), worker, SLOT (process()));
+    connect(worker, SIGNAL (finished()), thread, SLOT (quit()));
+    connect(worker, SIGNAL (finished()), worker, SLOT (deleteLater()));
+    connect(thread, SIGNAL (finished()), thread, SLOT (deleteLater()));
+    connect(worker, SIGNAL (finished()), this, SLOT (finished()));
     thread->start();
 }
 

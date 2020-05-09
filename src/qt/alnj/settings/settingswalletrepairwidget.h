@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +7,7 @@
 #define SETTINGSWALLETREPAIRWIDGET_H
 
 #include <QWidget>
-#include "qt/alnj/pwidget.h"
+#include "qt/alnjl/pwidget.h"
 
 namespace Ui {
 class SettingsWalletRepairWidget;
@@ -23,11 +24,11 @@ public:
     /** Build parameter list for restart */
     void buildParameterlist(QString arg);
 
-Q_SIGNALS:
+signals:
     /** Get restart command-line parameters and handle restart */
     void handleRestart(QStringList args);
 
-public Q_SLOTS:
+public slots:
     void walletSalvage();
     void walletRescan();
     void walletZaptxes1();

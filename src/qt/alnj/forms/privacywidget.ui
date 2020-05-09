@@ -492,7 +492,7 @@
                    <string notr="true"/>
                   </property>
                   <property name="text">
-                   <string>N/A</string>
+                   <string>No active Master Node yet</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -538,6 +538,16 @@
        </widget>
       </item>
       <item>
+       <widget class="OptionButton" name="btnDenomGeneration" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="OptionButton" name="btnRescanMints" native="true">
         <property name="minimumSize">
          <size>
@@ -558,7 +568,7 @@
        </widget>
       </item>
       <item>
-       <widget class="OptionButton" name="btnTotalzALNJ" native="true">
+       <widget class="OptionButton" name="btnTotalzPIV" native="true">
         <property name="minimumSize">
          <size>
           <width>0</width>
@@ -785,7 +795,7 @@
   <customwidget>
    <class>OptionButton</class>
    <extends>QWidget</extends>
-   <header>qt/alnj/optionbutton.h</header>
+   <header>qt/alnjl/optionbutton.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

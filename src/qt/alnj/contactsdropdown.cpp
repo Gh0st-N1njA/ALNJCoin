@@ -1,15 +1,16 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/contactsdropdown.h"
+#include "qt/alnjl/contactsdropdown.h"
 
 #include <QPainter>
 #include <QSizePolicy>
-#include "qt/alnj/addresslabelrow.h"
-#include "qt/alnj/contactdropdownrow.h"
-#include "qt/alnj/qtutils.h"
-#include "qt/alnj/furlistrow.h"
+#include "qt/alnjl/addresslabelrow.h"
+#include "qt/alnjl/contactdropdownrow.h"
+#include "qt/alnjl/qtutils.h"
+#include "qt/alnjl/furlistrow.h"
 #include "walletmodel.h"
 #include "addresstablemodel.h"
 
@@ -78,7 +79,7 @@ ContactsDropdown::ContactsDropdown(int minWidth, int minHeight, PWidget *parent)
     list->setAttribute(Qt::WA_MacShowFocusRect, false);
     list->setSelectionBehavior(QAbstractItemView::SelectRows);
 
-    connect(list, &QListView::clicked, this, &ContactsDropdown::handleClick);
+    connect(list, SIGNAL(clicked(QModelIndex)), this, SLOT(handleClick(QModelIndex)));
 }
 
 void ContactsDropdown::setWalletModel(WalletModel* _model, const QString& type){
@@ -86,7 +87,6 @@ void ContactsDropdown::setWalletModel(WalletModel* _model, const QString& type){
         model = _model->getAddressTableModel();
         this->filter = new AddressFilterProxyModel(type, this);
         this->filter->setSourceModel(model);
-        this->filter->sort(AddressTableModel::Label, Qt::AscendingOrder);
         list->setModel(this->filter);
         list->setModelColumn(AddressTableModel::Address);
     } else {
@@ -119,7 +119,7 @@ void ContactsDropdown::handleClick(const QModelIndex &index){
     QString address = rIndex.data(Qt::DisplayRole).toString();
     QModelIndex sibling = rIndex.sibling(rIndex.row(), AddressTableModel::Label);
     QString label = sibling.data(Qt::DisplayRole).toString();
-    Q_EMIT contactSelected(address, label);
+    emit contactSelected(address, label);
     close();
 }
 

@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,8 +8,8 @@
 
 #include <QWidget>
 #include <QAbstractTableModel>
-#include "qt/alnj/pwidget.h"
-#include "qt/alnj/furabstractlistitemdelegate.h"
+#include "qt/alnjl/pwidget.h"
+#include "qt/alnjl/furabstractlistitemdelegate.h"
 
 class ALNJGUI;
 
@@ -48,7 +49,7 @@ public:
     void loadWalletModel() override;
     void changeTheme(bool isLightTheme, QString &theme) override;
 
-private Q_SLOTS:
+private slots:
     void onAddRecipientClicked();
     void clearAll();
     void checkBoxChanged();

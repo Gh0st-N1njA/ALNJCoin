@@ -1,7 +1,8 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin developers
 // Copyright (c) 2009-2015 The Dash developers
-// Copyright (c) 2015-2019 The ALNJ developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -32,7 +33,7 @@ std::string HelpMessageCli()
     std::string strUsage;
     strUsage += HelpMessageGroup(_("Options:"));
     strUsage += HelpMessageOpt("-?", _("This help message"));
-    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "alnj.conf"));
+    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "alnjl.conf"));
     strUsage += HelpMessageOpt("-datadir=<dir>", _("Specify data directory"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
     strUsage += HelpMessageOpt("-regtest", _("Enter regression test mode, which uses a special chain in which blocks can be "
@@ -74,9 +75,9 @@ static bool AppInitRPC(int argc, char* argv[])
         std::string strUsage = _("ALNJ Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  alnj-cli [options] <command> [params]  " + _("Send command to ALNJ Core") + "\n" +
-                        "  alnj-cli [options] help                " + _("List commands") + "\n" +
-                        "  alnj-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                        "  alnjl-cli [options] <command> [params]  " + _("Send command to ALNJ Core") + "\n" +
+                        "  alnjl-cli [options] help                " + _("List commands") + "\n" +
+                        "  alnjl-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }

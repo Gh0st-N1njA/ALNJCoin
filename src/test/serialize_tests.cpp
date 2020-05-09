@@ -1,12 +1,13 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2012-2013 The Bitcoin Core developers
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "serialize.h"
 #include "streams.h"
 #include "hash.h"
-#include "test/test_alnj.h"
+#include "test/test_alnjl.h"
 
 #include <stdint.h>
 

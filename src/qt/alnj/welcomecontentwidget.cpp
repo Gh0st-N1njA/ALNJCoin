@@ -1,9 +1,10 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/welcomecontentwidget.h"
-#include "qt/alnj/forms/ui_welcomecontentwidget.h"
+#include "qt/alnjl/welcomecontentwidget.h"
+#include "qt/alnjl/forms/ui_welcomecontentwidget.h"
 #include <QFile>
 #include <QListView>
 #include <QDir>
@@ -158,10 +159,10 @@ WelcomeContentWidget::WelcomeContentWidget(QWidget *parent) :
     ui->pushButtonSkip->setProperty("cssClass", "btn-close-white");
     onNextClicked();
 
-    connect(ui->pushButtonSkip, &QPushButton::clicked, this, &WelcomeContentWidget::close);
-    connect(nextButton, &QPushButton::clicked, this, &WelcomeContentWidget::onNextClicked);
-    connect(backButton, &QPushButton::clicked, this, &WelcomeContentWidget::onBackClicked);
-    connect(ui->comboBoxLanguage, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &WelcomeContentWidget::checkLanguage);
+    connect(ui->pushButtonSkip, SIGNAL(clicked()), this, SLOT(close()));
+    connect(nextButton, SIGNAL(clicked()), this, SLOT(onNextClicked()));
+    connect(backButton, SIGNAL(clicked()), this, SLOT(onBackClicked()));
+
     initLanguages();
 
 
@@ -176,7 +177,7 @@ void WelcomeContentWidget::initLanguages(){
     /* Language selector */
     QDir translations(":translations");
     ui->comboBoxLanguage->addItem(QString("(") + tr("default") + QString(")"), QVariant(""));
-    Q_FOREACH (const QString& langStr, translations.entryList()) {
+    foreach (const QString& langStr, translations.entryList()) {
         QLocale locale(langStr);
 
         /** check if the locale name consists of 2 parts (language_country) */
@@ -200,9 +201,7 @@ void WelcomeContentWidget::checkLanguage(){
     QSettings settings;
     if (settings.value("language") != sel){
         settings.setValue("language", sel);
-        settings.sync();
-        Q_EMIT onLanguageSelected();
-        ui->retranslateUi(this);
+        emit onLanguageSelected();
     }
 }
 

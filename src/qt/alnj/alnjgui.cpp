@@ -1,8 +1,9 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/alnjgui.h"
+#include "qt/alnjl/alnjlgui.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -14,14 +15,10 @@
 #include "networkstyle.h"
 #include "notificator.h"
 #include "guiinterface.h"
-#include "qt/alnj/qtutils.h"
-#include "qt/alnj/defaultdialog.h"
-#include "qt/alnj/settings/settingsfaqwidget.h"
+#include "qt/alnjl/qtutils.h"
+#include "qt/alnjl/defaultdialog.h"
+#include "qt/alnjl/settings/settingsfaqwidget.h"
 
-#include "init.h"
-#include "util.h"
-
-#include <QDesktopWidget>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QApplication>
@@ -30,11 +27,10 @@
 #include <QKeySequence>
 #include <QWindowStateChangeEvent>
 
+#include "util.h"
 
 #define BASE_WINDOW_WIDTH 1200
 #define BASE_WINDOW_HEIGHT 740
-#define BASE_WINDOW_MIN_HEIGHT 620
-#define BASE_WINDOW_MIN_WIDTH 1100
 
 
 const QString ALNJGUI::DEFAULT_WALLET = "~Default";
@@ -45,18 +41,8 @@ ALNJGUI::ALNJGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 
     /* Open CSS when configured */
     this->setStyleSheet(GUIUtil::loadStyleSheet());
-    this->setMinimumSize(BASE_WINDOW_MIN_WIDTH, BASE_WINDOW_MIN_HEIGHT);
-
-
-    // Adapt screen size
-    QRect rec = QApplication::desktop()->screenGeometry();
-    int adaptedHeight = (rec.height() < BASE_WINDOW_HEIGHT) ?  BASE_WINDOW_MIN_HEIGHT : BASE_WINDOW_HEIGHT;
-    int adaptedWidth = (rec.width() < BASE_WINDOW_WIDTH) ?  BASE_WINDOW_MIN_WIDTH : BASE_WINDOW_WIDTH;
-    GUIUtil::restoreWindowGeometry(
-            "nWindow",
-            QSize(adaptedWidth, adaptedHeight),
-            this
-    );
+    this->setMinimumSize(BASE_WINDOW_WIDTH, BASE_WINDOW_HEIGHT);
+    GUIUtil::restoreWindowGeometry("nWindow", QSize(BASE_WINDOW_WIDTH, BASE_WINDOW_HEIGHT), this);
 
 #ifdef ENABLE_WALLET
     /* if compiled with wallet support, -disablewallet can still disable the wallet */
@@ -65,24 +51,28 @@ ALNJGUI::ALNJGUI(const NetworkStyle* networkStyle, QWidget* parent) :
     enableWallet = false;
 #endif // ENABLE_WALLET
 
-    QString windowTitle = QString::fromStdString(GetArg("-windowtitle", ""));
-    if (windowTitle.isEmpty()) {
-        windowTitle = tr("ALNJ Core") + " - ";
-        windowTitle += ((enableWallet) ? tr("Wallet") : tr("Node"));
-    }
+    QString windowTitle = tr("ALNJ Core") + " - ";
+    windowTitle += ((enableWallet) ? tr("Wallet") : tr("Node"));
     windowTitle += " " + networkStyle->getTitleAddText();
     setWindowTitle(windowTitle);
 
+#ifndef Q_OS_MAC
     QApplication::setWindowIcon(networkStyle->getAppIcon());
     setWindowIcon(networkStyle->getAppIcon());
+#else
+    MacDockIconHandler::instance()->setIcon(networkStyle->getAppIcon());
+#endif
+
+
+
 
 #ifdef ENABLE_WALLET
     // Create wallet frame
     if(enableWallet){
 
         QFrame* centralWidget = new QFrame(this);
-        this->setMinimumWidth(BASE_WINDOW_MIN_WIDTH);
-        this->setMinimumHeight(BASE_WINDOW_MIN_HEIGHT);
+        this->setMinimumWidth(BASE_WINDOW_WIDTH);
+        this->setMinimumHeight(BASE_WINDOW_HEIGHT);
         QHBoxLayout* centralWidgetLayouot = new QHBoxLayout();
         centralWidget->setLayout(centralWidgetLayouot);
         centralWidgetLayouot->setContentsMargins(0,0,0,0);
@@ -126,6 +116,7 @@ ALNJGUI::ALNJGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         sendWidget = new SendWidget(this);
         receiveWidget = new ReceiveWidget(this);
         addressesWidget = new AddressesWidget(this);
+        privacyWidget = new PrivacyWidget(this);
         masterNodesWidget = new MasterNodesWidget(this);
         coldStakingWidget = new ColdStakingWidget(this);
         settingsWidget = new SettingsWidget(this);
@@ -135,6 +126,7 @@ ALNJGUI::ALNJGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         stackedContainer->addWidget(sendWidget);
         stackedContainer->addWidget(receiveWidget);
         stackedContainer->addWidget(addressesWidget);
+        stackedContainer->addWidget(privacyWidget);
         stackedContainer->addWidget(masterNodesWidget);
         stackedContainer->addWidget(coldStakingWidget);
         stackedContainer->addWidget(settingsWidget);
@@ -176,8 +168,8 @@ void ALNJGUI::createActions(const NetworkStyle* networkStyle){
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
 
-    connect(toggleHideAction, &QAction::triggered, this, &ALNJGUI::toggleHidden);
-    connect(quitAction, &QAction::triggered, qApp, &QApplication::quit);
+    connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
+    connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
 }
 
 /**
@@ -198,6 +190,7 @@ void ALNJGUI::connectActions() {
     connect(sendWidget, &SendWidget::showHide, this, &ALNJGUI::showHide);
     connect(receiveWidget, &ReceiveWidget::showHide, this, &ALNJGUI::showHide);
     connect(addressesWidget, &AddressesWidget::showHide, this, &ALNJGUI::showHide);
+    connect(privacyWidget, &PrivacyWidget::showHide, this, &ALNJGUI::showHide);
     connect(masterNodesWidget, &MasterNodesWidget::showHide, this, &ALNJGUI::showHide);
     connect(masterNodesWidget, &MasterNodesWidget::execDialog, this, &ALNJGUI::execDialog);
     connect(coldStakingWidget, &ColdStakingWidget::showHide, this, &ALNJGUI::showHide);
@@ -234,7 +227,7 @@ ALNJGUI::~ALNJGUI() {
 /** Get restart command-line parameters and request restart */
 void ALNJGUI::handleRestart(QStringList args){
     if (!ShutdownRequested())
-        Q_EMIT requestedRestart(args);
+        emit requestedRestart(args);
 }
 
 
@@ -252,9 +245,9 @@ void ALNJGUI::setClientModel(ClientModel* clientModel) {
         settingsWidget->setClientModel(clientModel);
 
         // Receive and report messages from client model
-        connect(clientModel, &ClientModel::message, this, &ALNJGUI::message);
-        connect(topBar, &TopBar::walletSynced, dashboard, &DashboardWidget::walletSynced);
-        connect(topBar, &TopBar::walletSynced, coldStakingWidget, &ColdStakingWidget::walletSynced);
+        connect(clientModel, SIGNAL(message(QString, QString, unsigned int)), this, SLOT(message(QString, QString, unsigned int)));
+        connect(topBar, SIGNAL(walletSynced(bool)), dashboard, SLOT(walletSynced(bool)));
+        connect(topBar, SIGNAL(walletSynced(bool)), coldStakingWidget, SLOT(walletSynced(bool)));
 
         // Get restart command-line parameters and handle restart
         connect(settingsWidget, &SettingsWidget::handleRestart, [this](QStringList arg){handleRestart(arg);});
@@ -278,28 +271,27 @@ void ALNJGUI::setClientModel(ClientModel* clientModel) {
 
 void ALNJGUI::createTrayIconMenu() {
 #ifndef Q_OS_MAC
-    // return if trayIcon is unset (only on non-macOSes)
+    // return if trayIcon is unset (only on non-Mac OSes)
     if (!trayIcon)
         return;
 
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
 
-    connect(trayIcon, &QSystemTrayIcon::activated, this, &ALNJGUI::trayIconActivated);
+    connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
+            this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
 #else
-    // Note: On macOS, the Dock icon is used to provide the tray's functionality.
+    // Note: On Mac, the dock icon is used to provide the tray's functionality.
     MacDockIconHandler* dockIconHandler = MacDockIconHandler::instance();
-    connect(dockIconHandler, &MacDockIconHandler::dockIconClicked, this, &ALNJGUI::macosDockIconActivated);
-
-    trayIconMenu = new QMenu(this);
-    trayIconMenu->setAsDockMenu();
+    dockIconHandler->setMainWindow((QMainWindow*)this);
+    trayIconMenu = dockIconHandler->dockMenu();
 #endif
 
-    // Configuration of the tray icon (or Dock icon) icon menu
+    // Configuration of the tray icon (or dock icon) icon menu
     trayIconMenu->addAction(toggleHideAction);
     trayIconMenu->addSeparator();
 
-#ifndef Q_OS_MAC // This is built-in on macOS
+#ifndef Q_OS_MAC // This is built-in on Mac
     trayIconMenu->addSeparator();
     trayIconMenu->addAction(quitAction);
 #endif
@@ -313,12 +305,6 @@ void ALNJGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
         toggleHidden();
     }
 }
-#else
-void ALNJGUI::macosDockIconActivated()
- {
-     show();
-     activateWindow();
- }
 #endif
 
 void ALNJGUI::changeEvent(QEvent* e)
@@ -329,7 +315,7 @@ void ALNJGUI::changeEvent(QEvent* e)
         if (clientModel && clientModel->getOptionsModel() && clientModel->getOptionsModel()->getMinimizeToTray()) {
             QWindowStateChangeEvent* wsevt = static_cast<QWindowStateChangeEvent*>(e);
             if (!(wsevt->oldState() & Qt::WindowMinimized) && isMinimized()) {
-                QTimer::singleShot(0, this, &ALNJGUI::hide);
+                QTimer::singleShot(0, this, SLOT(hide()));
                 e->ignore();
             }
         }
@@ -441,11 +427,18 @@ bool ALNJGUI::openStandardDialog(QString title, QString body, QString okBtn, QSt
 void ALNJGUI::showNormalIfMinimized(bool fToggleHidden) {
     if (!clientModel)
         return;
-    if (!isHidden() && !isMinimized() && !GUIUtil::isObscured(this) && fToggleHidden) {
+    // activateWindow() (sometimes) helps with keyboard focus on Windows
+    if (isHidden()) {
+        show();
+        activateWindow();
+    } else if (isMinimized()) {
+        showNormal();
+        activateWindow();
+    } else if (GUIUtil::isObscured(this)) {
+        raise();
+        activateWindow();
+    } else if (fToggleHidden)
         hide();
-    } else {
-        GUIUtil::bringToFront(this);
-    }
 }
 
 void ALNJGUI::toggleHidden() {
@@ -476,7 +469,7 @@ void ALNJGUI::goToAddresses(){
 }
 
 void ALNJGUI::goToPrivacy(){
-    if (privacyWidget) showTop(privacyWidget);
+    showTop(privacyWidget);
 }
 
 void ALNJGUI::goToMasterNodes(){
@@ -508,7 +501,7 @@ void ALNJGUI::changeTheme(bool isLightTheme){
     this->setStyleSheet(css);
 
     // Notify
-    Q_EMIT themeChanged(isLightTheme, css);
+    emit themeChanged(isLightTheme, css);
 
     // Update style
     updateStyle(this);
@@ -520,7 +513,7 @@ void ALNJGUI::resizeEvent(QResizeEvent* event){
     // background
     showHide(opEnabled);
     // Notify
-    Q_EMIT windowResizeEvent(event);
+    emit windowResizeEvent(event);
 }
 
 bool ALNJGUI::execDialog(QDialog *dialog, int xDiv, int yDiv){
@@ -581,23 +574,15 @@ bool ALNJGUI::addWallet(const QString& name, WalletModel* walletModel)
     receiveWidget->setWalletModel(walletModel);
     sendWidget->setWalletModel(walletModel);
     addressesWidget->setWalletModel(walletModel);
+    privacyWidget->setWalletModel(walletModel);
     masterNodesWidget->setWalletModel(walletModel);
     coldStakingWidget->setWalletModel(walletModel);
     settingsWidget->setWalletModel(walletModel);
 
-    // Privacy screen
-    if (walletModel->getZerocoinBalance() > 0) {
-        privacyWidget = new PrivacyWidget(this);
-        stackedContainer->addWidget(privacyWidget);
-
-        privacyWidget->setWalletModel(walletModel);
-        connect(privacyWidget, &PrivacyWidget::message, this, &ALNJGUI::message);
-        connect(privacyWidget, &PrivacyWidget::showHide, this, &ALNJGUI::showHide);
-    }
-
     // Connect actions..
+    connect(privacyWidget, &PrivacyWidget::message, this, &ALNJGUI::message);
     connect(masterNodesWidget, &MasterNodesWidget::message, this, &ALNJGUI::message);
-    connect(coldStakingWidget, &ColdStakingWidget::message, this, &ALNJGUI::message);
+    connect(coldStakingWidget, &MasterNodesWidget::message, this, &ALNJGUI::message);
     connect(topBar, &TopBar::message, this, &ALNJGUI::message);
     connect(sendWidget, &SendWidget::message,this, &ALNJGUI::message);
     connect(receiveWidget, &ReceiveWidget::message,this, &ALNJGUI::message);
@@ -605,7 +590,7 @@ bool ALNJGUI::addWallet(const QString& name, WalletModel* walletModel)
     connect(settingsWidget, &SettingsWidget::message, this, &ALNJGUI::message);
 
     // Pass through transaction notifications
-    connect(dashboard, &DashboardWidget::incomingTransaction, this, &ALNJGUI::incomingTransaction);
+    connect(dashboard, SIGNAL(incomingTransaction(QString, int, CAmount, QString, QString)), this, SLOT(incomingTransaction(QString, int, CAmount, QString, QString)));
 
     return true;
 }

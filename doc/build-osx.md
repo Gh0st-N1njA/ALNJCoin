@@ -38,10 +38,10 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see [*Disable-wallet mode*](/doc/build-osx.md#disable-wallet-mode)).
 
-Build ALNJ Core
+Build PIVX Core
 ------------------------
 
-1. Clone the ALNJ Core source code:
+1. Clone the PIVX Core source code:
 
         git clone https://github.com/alnj-project/alnj
         cd alnj
@@ -51,7 +51,7 @@ Build ALNJ Core
         export LDFLAGS+=-L/usr/local/opt/openssl/lib
         export CPPFLAGS+=-I/usr/local/opt/openssl/include
 
-3.  Build ALNJ Core:
+3.  Build PIVX Core:
 
         ./autogen.sh
         ./configure
@@ -69,7 +69,7 @@ Disable-wallet mode
 --------------------
 **Note:** This functionality is not yet completely implemented, and compilation using the below option will currently fail.
 
-When the intention is to run only a P2P node without a wallet, ALNJ Core may be compiled in
+When the intention is to run only a P2P node without a wallet, PIVX Core may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet
@@ -79,21 +79,21 @@ In this case there is no dependency on Berkeley DB 4.8.
 Running
 -------
 
-ALNJ Core is now available at `./src/alnjd`
+PIVX Core is now available at `./src/alnjd`
 
 Before running, you may create an empty configuration file:
 
-    mkdir -p "/Users/${USER}/Library/Application Support/ALNJ"
+    mkdir -p "/Users/${USER}/Library/Application Support/PIVX"
 
-    touch "/Users/${USER}/Library/Application Support/ALNJ/alnj.conf"
+    touch "/Users/${USER}/Library/Application Support/PIVX/alnj.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/ALNJ/alnj.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/PIVX/alnj.conf"
 
 The first time you run alnjd, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/ALNJ/debug.log
+    tail -f $HOME/Library/Application\ Support/PIVX/debug.log
 
 Other commands:
 -------

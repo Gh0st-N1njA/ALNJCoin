@@ -1,5 +1,5 @@
 ---
-name: "alnj-dmg-signer"
+name: "alnjl-dmg-signer"
 distro: "ubuntu"
 suites:
 - "bionic"
@@ -8,10 +8,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/alnj-project/alnj-detached-sigs.git"
+- "url": "https://github.com/alnjl-project/alnjl-detached-sigs.git"
   "dir": "signature"
 files:
-- "alnj-osx-unsigned.tar.gz"
+- "alnjl-osx-unsigned.tar.gz"
 script: |
   set -e -o pipefail
 
@@ -30,8 +30,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=alnj-osx-unsigned.tar.gz
-  SIGNED=alnj-osx-signed.dmg
+  UNSIGNED=alnjl-osx-unsigned.tar.gz
+  SIGNED=alnjl-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

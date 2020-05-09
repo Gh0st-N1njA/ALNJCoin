@@ -1,10 +1,11 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/expandablebutton.h"
-#include "qt/alnj/forms/ui_expandablebutton.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/expandablebutton.h"
+#include "qt/alnjl/forms/ui_expandablebutton.h"
+#include "qt/alnjl/qtutils.h"
 #include <QParallelAnimationGroup>
 #include <QPropertyAnimation>
 #include <QStyle>
@@ -21,35 +22,25 @@ ExpandableButton::ExpandableButton(QWidget *parent) :
     ui->pushButton->setCheckable(true);
     this->layout()->setSizeConstraint(QLayout::SetFixedSize);
 
-    connect(ui->pushButton, &QPushButton::clicked, this, &ExpandableButton::innerMousePressEvent);
+    connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(mousePressEvent()));
 }
 
-void ExpandableButton::setButtonClassStyle(const char *name, const QVariant &value, bool forceUpdate)
-{
+void ExpandableButton::setButtonClassStyle(const char *name, const QVariant &value, bool forceUpdate){
     ui->pushButton->setProperty(name, value);
     if(forceUpdate){
         updateStyle(ui->pushButton);
     }
 }
 
-void ExpandableButton::setIcon(QString path)
-{
+void ExpandableButton::setIcon(QString path){
     ui->pushButton->setIcon(QIcon(path));
 }
 
-void ExpandableButton::setButtonText(const QString& _text)
-{
+void ExpandableButton::setButtonText(const QString _text){
     this->text = _text;
     if(this->isExpanded){
         ui->pushButton->setText(_text);
     }
-}
-
-void ExpandableButton::setNoIconText(const QString& _text)
-{
-    notExpandedText = _text;
-    if (!this->isExpanded)
-        ui->pushButton->setText(_text);
 }
 
 void ExpandableButton::setText2(QString text2)
@@ -63,51 +54,50 @@ ExpandableButton::~ExpandableButton()
     delete ui;
 }
 
-bool ExpandableButton::isChecked()
-{
+bool ExpandableButton::isChecked(){
     return ui->pushButton->isChecked();
 }
 
-void ExpandableButton::setChecked(bool check)
-{
+void ExpandableButton::setChecked(bool check){
     ui->pushButton->setChecked(check);
 }
 
 void ExpandableButton::setSmall()
 {
-    ui->pushButton->setText(notExpandedText);
+    ui->pushButton->setText("");
     this->setMaximumWidth(36);
     this->isExpanded = false;
     update();
 }
 
-void ExpandableButton::setExpanded()
-{
+void ExpandableButton::setExpanded(){
     this->setMaximumWidth(100);
     ui->pushButton->setText(text);
     this->isExpanded = true;
 }
 
-void ExpandableButton::enterEvent(QEvent *)
-{
+void ExpandableButton::enterEvent(QEvent *) {
     if(!this->isAnimating){
         setExpanded();
-        Q_EMIT Mouse_Hover();
+        emit Mouse_Hover();
     }
     update();
 }
 
-void ExpandableButton::leaveEvent(QEvent *)
-{
+void ExpandableButton::leaveEvent(QEvent *) {
     if(!keepExpanded){
         this->setSmall();
     }
-    Q_EMIT Mouse_HoverLeave();
+    emit Mouse_HoverLeave();
 }
 
-void ExpandableButton::innerMousePressEvent()
+void ExpandableButton::mousePressEvent(){
+    emit Mouse_Pressed();
+}
+
+void ExpandableButton::mousePressEvent(QMouseEvent *ev)
 {
-    Q_EMIT Mouse_Pressed();
+    emit Mouse_Pressed();
 }
 
 void ExpandableButton::on_pushButton_clicked(bool checked)

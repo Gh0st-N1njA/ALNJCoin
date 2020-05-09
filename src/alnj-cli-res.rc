@@ -19,10 +19,10 @@ BEGIN
             VALUE "CompanyName",        "Alnj"
             VALUE "FileDescription",    "Alnj-cli (OSS RPC client for Alnj)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "alnj-cli"
+            VALUE "InternalName",       "alnjl-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "alnj-cli.exe"
+            VALUE "OriginalFilename",   "alnjl-cli.exe"
             VALUE "ProductName",        "Alnj-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

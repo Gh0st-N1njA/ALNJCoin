@@ -1,5 +1,6 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2015-2020 The ALNJ developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -45,10 +46,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Alnj Core alnj-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Alnj Core alnjl-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  alnj-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded alnj transaction") + "\n" +
-                               "  alnj-tx [options] -create [commands]   " + _("Create hex-encoded alnj transaction") + "\n" +
+                               "  alnjl-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded alnjl transaction") + "\n" +
+                               "  alnjl-tx [options] -create [commands]   " + _("Create hex-encoded alnjl transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -311,7 +312,7 @@ static bool findSighashFlags(int& flags, const std::string& flagStr)
 uint256 ParseHashUO(std::map<std::string, UniValue>& o, std::string strKey)
 {
     if (!o.count(strKey))
-        return UINT256_ZERO;
+        return 0;
     return ParseHashUV(o[strKey], strKey);
 }
 
@@ -496,7 +497,7 @@ static void MutateTx(CMutableTransaction& tx, const std::string& command, const 
 static void OutputTxJSON(const CTransaction& tx)
 {
     UniValue entry(UniValue::VOBJ);
-    TxToUniv(tx, UINT256_ZERO, entry);
+    TxToUniv(tx, 0, entry);
 
     std::string jsonOutput = entry.write(4);
     fprintf(stdout, "%s\n", jsonOutput.c_str());
@@ -566,7 +567,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw std::runtime_error("too few parameters");
 
-            // param: hex-encoded alnj transaction
+            // param: hex-encoded alnjl transaction
             std::string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

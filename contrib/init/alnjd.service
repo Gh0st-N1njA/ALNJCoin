@@ -5,19 +5,19 @@
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/alnj/alnj.conf
+# /etc/alnjl/alnjl.conf
 
 [Unit]
 Description=ALNJ daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/alnjd -daemon -conf=/etc/alnj/alnj.conf -pid=/run/alnjd/alnjd.pid
-# Creates /run/alnjd owned by alnj
-RuntimeDirectory=alnjd
-User=alnj
+ExecStart=/usr/bin/alnjld -daemon -conf=/etc/alnjl/alnjl.conf -pid=/run/alnjld/alnjld.pid
+# Creates /run/alnjld owned by alnjl
+RuntimeDirectory=alnjld
+User=alnjl
 Type=forking
-PIDFile=/run/alnjd/alnjd.pid
+PIDFile=/run/alnjld/alnjld.pid
 Restart=on-failure
 
 # Hardening measures

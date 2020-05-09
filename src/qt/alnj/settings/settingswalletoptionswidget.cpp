@@ -1,13 +1,14 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/settings/settingswalletoptionswidget.h"
-#include "qt/alnj/settings/forms/ui_settingswalletoptionswidget.h"
+#include "qt/alnjl/settings/settingswalletoptionswidget.h"
+#include "qt/alnjl/settings/forms/ui_settingswalletoptionswidget.h"
 #include <QListView>
 #include "optionsmodel.h"
 #include "clientmodel.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 
 SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(ALNJGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
@@ -71,9 +72,9 @@ SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(ALNJGUI* _window, QWidg
     setCssBtnSecondary(ui->pushButtonReset);
     setCssBtnSecondary(ui->pushButtonClean);
 
-    connect(ui->pushButtonSave, &QPushButton::clicked, [this] { Q_EMIT saveSettings(); });
-    connect(ui->pushButtonReset, &QPushButton::clicked, this, &SettingsWalletOptionsWidget::onResetClicked);
-    connect(ui->pushButtonClean, &QPushButton::clicked, [this] { Q_EMIT discardSettings(); });
+    connect(ui->pushButtonSave, SIGNAL(clicked()), parent, SLOT(onSaveOptionsClicked()));
+    connect(ui->pushButtonReset, SIGNAL(clicked()), this, SLOT(onResetClicked()));
+    connect(ui->pushButtonClean, SIGNAL(clicked()), parent, SLOT(onDiscardChanges()));
 }
 
 void SettingsWalletOptionsWidget::onResetClicked(){

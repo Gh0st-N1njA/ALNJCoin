@@ -1,10 +1,11 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/mnrow.h"
-#include "qt/alnj/forms/ui_mnrow.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/mnrow.h"
+#include "qt/alnjl/forms/ui_mnrow.h"
+#include "qt/alnjl/qtutils.h"
 
 MNRow::MNRow(QWidget *parent) :
     QWidget(parent),
@@ -17,19 +18,17 @@ MNRow::MNRow(QWidget *parent) :
     ui->lblDivisory->setStyleSheet("background-color:#bababa;");
 }
 
-void MNRow::updateView(QString address, QString label, QString status, bool wasCollateralAccepted)
-{
+void MNRow::updateView(QString address, QString label, QString status, bool wasCollateralAccepted){
     ui->labelName->setText(label);
     ui->labelAddress->setText(address);
     ui->labelDate->setText("Status: " + status);
-    if (!wasCollateralAccepted) {
+    if (!wasCollateralAccepted){
         ui->labelDate->setText("Status: Collateral tx not found");
     } else {
         ui->labelDate->setText("Status: " + status);
     }
 }
 
-MNRow::~MNRow()
-{
+MNRow::~MNRow(){
     delete ui;
 }

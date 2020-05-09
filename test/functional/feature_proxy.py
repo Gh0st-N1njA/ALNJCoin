@@ -5,10 +5,10 @@
 """Test bitcoind with different proxy configuration.
 
 Test plan:
-- Start alnjd's with different proxy configurations
+- Start alnjld's with different proxy configurations
 - Use addnode to initiate connections
 - Verify that proxies are connected to, and the right connection command is given
-- Proxy configurations to test on alnjd side:
+- Proxy configurations to test on alnjld side:
     - `-proxy` (proxy everything)
     - `-onion` (proxy just onions)
     - `-proxyrandomize` Circuit randomization
@@ -18,8 +18,8 @@ Test plan:
     - proxy on IPv6
 
 - Create various proxies (as threads)
-- Create alnjds that connect to them
-- Manipulate the alnjds using addnode (onetry) an observe effects
+- Create alnjlds that connect to them
+- Manipulate the alnjlds using addnode (onetry) an observe effects
 
 addnode connect to IPv4
 addnode connect to IPv6
@@ -31,7 +31,7 @@ import socket
 import os
 
 from test_framework.socks5 import Socks5Configuration, Socks5Command, Socks5Server, AddressType
-from test_framework.test_framework import AlnjTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import (
     PORT_MIN,
     PORT_RANGE,
@@ -41,7 +41,7 @@ from test_framework.netutil import test_ipv6_local
 
 RANGE_BEGIN = PORT_MIN + 2 * PORT_RANGE  # Start after p2p and rpc ports
 
-class ProxyTest(AlnjTestFramework):
+class ProxyTest(BitcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
 

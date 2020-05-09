@@ -1,11 +1,12 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef SETTINGSMAINOPTIONSWIDGET_H
 #define SETTINGSMAINOPTIONSWIDGET_H
 
-#include "qt/alnj/pwidget.h"
+#include "qt/alnjl/pwidget.h"
 
 #include <QWidget>
 
@@ -27,11 +28,7 @@ public:
 
     void setMapper(QDataWidgetMapper *mapper);
 
-Q_SIGNALS:
-    void saveSettings();
-    void discardSettings();
-
-public Q_SLOTS:
+public slots:
     void onResetClicked();
 
 private:

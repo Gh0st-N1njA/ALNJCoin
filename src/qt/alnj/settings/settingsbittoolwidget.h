@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,8 +7,8 @@
 #define SETTINGSBITTOOLWIDGET_H
 
 #include <QWidget>
-#include "qt/alnj/pwidget.h"
-#include "qt/alnj/contactsdropdown.h"
+#include "qt/alnjl/pwidget.h"
+#include "qt/alnjl/contactsdropdown.h"
 #include "key.h"
 
 namespace Ui {
@@ -23,7 +24,7 @@ public:
     ~SettingsBitToolWidget();
 protected:
     void resizeEvent(QResizeEvent *event) override;
-public Q_SLOTS:
+public slots:
     void onEncryptSelected(bool isEncr);
     void setAddress_ENC(const QString& address);
     void onEncryptKeyButtonENCClicked();

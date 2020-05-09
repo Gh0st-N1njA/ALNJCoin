@@ -1,15 +1,16 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/sendmultirow.h"
-#include "qt/alnj/forms/ui_sendmultirow.h"
+#include "qt/alnjl/sendmultirow.h"
+#include "qt/alnjl/forms/ui_sendmultirow.h"
 
 #include "optionsmodel.h"
 #include "addresstablemodel.h"
 #include "guiutil.h"
 #include "bitcoinunits.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/qtutils.h"
 
 SendMultiRow::SendMultiRow(PWidget *parent) :
     PWidget(parent),
@@ -19,7 +20,7 @@ SendMultiRow::SendMultiRow(PWidget *parent) :
     ui->setupUi(this);
     this->setStyleSheet(parent->styleSheet());
 
-    ui->lineEditAddress->setPlaceholderText(tr("Enter address"));
+    ui->lineEditAddress->setPlaceholderText(tr("Add address"));
     setCssProperty(ui->lineEditAddress, "edit-primary-multi-book");
     ui->lineEditAddress->setAttribute(Qt::WA_MacShowFocusRect, 0);
     setShadow(ui->stackedAddress);
@@ -29,9 +30,9 @@ SendMultiRow::SendMultiRow(PWidget *parent) :
     GUIUtil::setupAmountWidget(ui->lineEditAmount, this);
 
     /* Description */
-    ui->labelSubtitleDescription->setText("Address label (optional)");
+    ui->labelSubtitleDescription->setText("Label address (optional)");
     setCssProperty(ui->labelSubtitleDescription, "text-title");
-    ui->lineEditDescription->setPlaceholderText(tr("Enter label"));
+    ui->lineEditDescription->setPlaceholderText(tr("Add description"));
     initCssEditLine(ui->lineEditDescription);
 
     // Button menu
@@ -56,10 +57,10 @@ SendMultiRow::SendMultiRow(PWidget *parent) :
     int posIconY = 14;
     iconNumber->move(posIconX, posIconY);
 
-    connect(ui->lineEditAmount, &QLineEdit::textChanged, this, &SendMultiRow::amountChanged);
-    connect(ui->lineEditAddress, &QLineEdit::textChanged, [this](){addressChanged(ui->lineEditAddress->text());});
-    connect(btnContact, &QAction::triggered, [this](){Q_EMIT onContactsClicked(this);});
-    connect(ui->btnMenu, &QPushButton::clicked, [this](){Q_EMIT onMenuClicked(this);});
+    connect(ui->lineEditAmount, SIGNAL(textChanged(const QString&)), this, SLOT(amountChanged(const QString&)));
+    connect(ui->lineEditAddress, SIGNAL(textChanged(const QString&)), this, SLOT(addressChanged(const QString&)));
+    connect(btnContact, &QAction::triggered, [this](){emit onContactsClicked(this);});
+    connect(ui->btnMenu, &QPushButton::clicked, [this](){emit onMenuClicked(this);});
 }
 
 void SendMultiRow::amountChanged(const QString& amount){
@@ -71,7 +72,7 @@ void SendMultiRow::amountChanged(const QString& amount){
             setCssEditLine(ui->lineEditAmount, true, true);
         }
     }
-    Q_EMIT onValueChanged();
+    emit onValueChanged();
 }
 
 /**
@@ -83,11 +84,10 @@ CAmount SendMultiRow::getAmountValue(QString amount){
     return isValid ? value : -1;
 }
 
-bool SendMultiRow::addressChanged(const QString& str, bool fOnlyValidate)
-{
+bool SendMultiRow::addressChanged(const QString& str){
     if(!str.isEmpty()) {
         QString trimmedStr = str.trimmed();
-        const bool valid = walletModel->validateAddress(trimmedStr, this->onlyStakingAddressAccepted);
+        bool valid = (this->onlyStakingAddressAccepted) ? walletModel->validateStakingAddress(trimmedStr) : walletModel->validateAddress(trimmedStr);
         if (!valid) {
             // check URI
             SendCoinsRecipient rcp;
@@ -101,17 +101,15 @@ bool SendMultiRow::addressChanged(const QString& str, bool fOnlyValidate)
                 } else if(!rcp.message.isEmpty())
                     ui->lineEditDescription->setText(rcp.message);
 
-                Q_EMIT onUriParsed(rcp);
+                emit onUriParsed(rcp);
             } else {
                 setCssProperty(ui->lineEditAddress, "edit-primary-multi-book-error");
             }
         } else {
             setCssProperty(ui->lineEditAddress, "edit-primary-multi-book");
-            if (!fOnlyValidate) {
-                QString label = walletModel->getAddressTableModel()->labelForAddress(trimmedStr);
-                if (!label.isEmpty()) {
-                    ui->lineEditDescription->setText(label);
-                }
+            QString label = walletModel->getAddressTableModel()->labelForAddress(trimmedStr);
+            if (!label.isNull()){
+                ui->lineEditDescription->setText(label);
             }
         }
         updateStyle(ui->lineEditAddress);
@@ -124,7 +122,7 @@ bool SendMultiRow::addressChanged(const QString& str, bool fOnlyValidate)
 void SendMultiRow::loadWalletModel() {
     if (walletModel && walletModel->getOptionsModel()) {
         displayUnit = walletModel->getOptionsModel()->getDisplayUnit();
-        connect(walletModel->getOptionsModel(), &OptionsModel::displayUnitChanged, this, &SendMultiRow::updateDisplayUnit);
+        connect(walletModel->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     }
     clear();
 }
@@ -135,7 +133,7 @@ void SendMultiRow::updateDisplayUnit(){
 }
 
 void SendMultiRow::deleteClicked() {
-    Q_EMIT removeEntry(this);
+    emit removeEntry(this);
 }
 
 void SendMultiRow::clear() {
@@ -163,7 +161,7 @@ bool SendMultiRow::validate()
         retval = false;
         setCssProperty(ui->lineEditAddress, "edit-primary-multi-book-error", true);
     } else
-        retval = addressChanged(address, true);
+        retval = addressChanged(address);
 
     CAmount value = getAmountValue(ui->lineEditAmount->text());
 

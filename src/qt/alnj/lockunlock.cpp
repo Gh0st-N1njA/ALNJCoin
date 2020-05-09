@@ -1,9 +1,10 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/lockunlock.h"
-#include "qt/alnj/forms/ui_lockunlock.h"
+#include "qt/alnjl/lockunlock.h"
+#include "qt/alnjl/forms/ui_lockunlock.h"
 
 LockUnlock::LockUnlock(QWidget *parent) :
     QWidget(parent),
@@ -28,9 +29,9 @@ LockUnlock::LockUnlock(QWidget *parent) :
     ui->pushButtonStaking->setText(tr("Staking Only"));
 
     // Connect
-    connect(ui->pushButtonUnlocked, &QPushButton::clicked, this, &LockUnlock::onUnlockClicked);
-    connect(ui->pushButtonLocked, &QPushButton::clicked, this, &LockUnlock::onLockClicked);
-    connect(ui->pushButtonStaking, &QPushButton::clicked, this, &LockUnlock::onStakingClicked);
+    connect(ui->pushButtonUnlocked, SIGNAL(clicked()), this, SLOT(onUnlockClicked()));
+    connect(ui->pushButtonLocked, SIGNAL(clicked()), this, SLOT(onLockClicked()));
+    connect(ui->pushButtonStaking, SIGNAL(clicked()), this, SLOT(onStakingClicked()));
 }
 
 LockUnlock::~LockUnlock()
@@ -38,15 +39,14 @@ LockUnlock::~LockUnlock()
     delete ui;
 }
 
-void LockUnlock::updateStatus(WalletModel::EncryptionStatus status)
-{
-    switch (status) {
+void LockUnlock::updateStatus(WalletModel::EncryptionStatus status){
+    switch (status){
         case WalletModel::EncryptionStatus::Unlocked:
             ui->pushButtonUnlocked->setChecked(true);
             ui->pushButtonLocked->setChecked(false);
             ui->pushButtonStaking->setChecked(false);
             break;
-        case WalletModel::EncryptionStatus::UnlockedForStaking:
+        case WalletModel::EncryptionStatus::UnlockedForAnonymizationOnly:
             ui->pushButtonUnlocked->setChecked(false);
             ui->pushButtonLocked->setChecked(false);
             ui->pushButtonStaking->setChecked(true);
@@ -61,37 +61,33 @@ void LockUnlock::updateStatus(WalletModel::EncryptionStatus status)
     }
 }
 
-void LockUnlock::onLockClicked()
-{
+void LockUnlock::onLockClicked(){
     lock = 0;
-    Q_EMIT lockClicked(StateClicked::LOCK);
+    emit lockClicked(StateClicked::LOCK);
 }
 
-void LockUnlock::onUnlockClicked()
-{
+void LockUnlock::onUnlockClicked(){
     lock = 1;
-    Q_EMIT lockClicked(StateClicked::UNLOCK);
+    emit lockClicked(StateClicked::UNLOCK);
 }
 
-void LockUnlock::onStakingClicked()
-{
+void LockUnlock::onStakingClicked(){
     lock = 2;
-    Q_EMIT lockClicked(StateClicked::UNLOCK_FOR_STAKING);
+    emit lockClicked(StateClicked::UNLOCK_FOR_STAKING);
 }
 
 void LockUnlock::enterEvent(QEvent *)
 {
     isOnHover = true;
-    Q_EMIT Mouse_Entered();
+    emit Mouse_Entered();
 }
 
 void LockUnlock::leaveEvent(QEvent *)
 {
     isOnHover = false;
-    Q_EMIT Mouse_Leave();
+    emit Mouse_Leave();
 }
 
-bool LockUnlock::isHovered()
-{
+bool LockUnlock::isHovered(){
     return isOnHover;
 }

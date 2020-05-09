@@ -1,24 +1,24 @@
-// Copyright (c) 2017-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "amount.h"
 #include "chainparams.h"
 #include "coincontrol.h"
-#include "consensus/zerocoin_verify.h"
 #include "denomination_functions.h"
 #include "main.h"
 #include "txdb.h"
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
-#include "test/test_alnj.h"
+#include "test/test_alnjl.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
 
 
 BOOST_FIXTURE_TEST_SUITE(zerocoin_denom_tests, BasicTestingSetup)
 
-//translation from alnj quantity to zerocoin denomination
+//translation from alnjl quantity to zerocoin denomination
 BOOST_AUTO_TEST_CASE(amount_to_denomination_test)
 {
     std::cout << "Running amount_to_denomination_test...\n";
@@ -72,6 +72,7 @@ BOOST_AUTO_TEST_CASE(denomination_to_value_test)
 BOOST_AUTO_TEST_CASE(zerocoin_spend_test241)
 {
     const int nMaxNumberOfSpends = 4;
+    const bool fMinimizeChange = false;
     const int DenomAmounts[] = {1, 2, 3, 4, 0, 0, 0, 0};
     CAmount nSelectedValue;
     std::list<CMintMeta> listMints;
@@ -126,6 +127,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test241)
     for (int i = 0; i < CoinsHeld; i++) {
         std::vector<CMintMeta> vSpends = SelectMintsFromList(nValueTarget, nSelectedValue,
                                                                  nMaxNumberOfSpends,
+                                                                 fMinimizeChange,
                                                                  nCoinsReturned,
                                                                  listMints,
                                                                  mapDenom,
@@ -155,6 +157,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test241)
 BOOST_AUTO_TEST_CASE(zerocoin_spend_test115)
 {
     const int nMaxNumberOfSpends = 4;
+    const bool fMinimizeChange = false;
     const int DenomAmounts[] = {0, 1, 1, 2, 0, 0, 0, 0};
     CAmount nSelectedValue;
     std::list<CMintMeta> listMints;
@@ -203,6 +206,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test115)
 
     std::vector<CMintMeta> vSpends = SelectMintsFromList(nValueTarget, nSelectedValue,
                                                              nMaxNumberOfSpends,
+                                                             fMinimizeChange,
                                                              nCoinsReturned,
                                                              listMints,
                                                              mapDenom,
@@ -288,6 +292,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test_from_245)
     for (int i = 0; i < CoinsHeld; i++) {
         std::vector<CMintMeta> vSpends = SelectMintsFromList(nValueTarget, nSelectedValue,
                                                                  nMaxNumberOfSpends,
+                                                                 false,
                                                                  nCoinsReturned,
                                                                  listMints,
                                                                  mapOfDenomsHeld,
@@ -309,6 +314,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test_from_245)
 
         std::vector<CMintMeta> vSpendsAlt = SelectMintsFromList(nValueTarget, nSelectedValue,
                                                                     nMaxNumberOfSpends,
+                                                                    true,
                                                                     nCoinsReturned,
                                                                     listMints,
                                                                     mapOfDenomsHeld,
@@ -391,6 +397,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test_from_145)
     for (int i = 0; i < CoinsHeld; i++) {
         std::vector<CMintMeta> vSpends = SelectMintsFromList(nValueTarget, nSelectedValue,
                                                                  nMaxNumberOfSpends,
+                                                                 false,
                                                                  nCoinsReturned,
                                                                  listMints,
                                                                  mapOfDenomsHeld,
@@ -412,6 +419,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test_from_145)
 
         std::vector<CMintMeta> vSpendsAlt = SelectMintsFromList(nValueTarget, nSelectedValue,
                                                                     nMaxNumberOfSpends,
+                                                                    true,
                                                                     nCoinsReturned,
                                                                     listMints,
                                                                     mapOfDenomsHeld,
@@ -441,6 +449,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test_from_145)
 BOOST_AUTO_TEST_CASE(zerocoin_spend_test99)
 {
     const int nMaxNumberOfSpends = 4;
+    const bool fMinimizeChange = false;
     const int DenomAmounts[] = {0, 1, 4, 2, 1, 0, 0, 0};
     CAmount nSelectedValue;
     std::list<CMintMeta> listMints;
@@ -489,8 +498,9 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test99)
 
     std::vector<CMintMeta> vSpends = SelectMintsFromList(nValueTarget, nSelectedValue,
                                                              nMaxNumberOfSpends,
+                                                             fMinimizeChange,
                                                              nCoinsReturned,
-                                                             listMints,
+                                                            listMints,
                                                              mapOfDenomsHeld,
                                                              nNeededSpends);
 

@@ -1,7 +1,8 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The ALNJ developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -28,7 +29,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called ALNJ (http://www.algoninja.site/alnj),
+ * This is the developer documentation of the reference client for an experimental new digital currency called ALNJ (http://www.alnjlite.com),
  * which enables instant payments to anyone, anywhere in the world. ALNJ uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
@@ -62,7 +63,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/alnj.conf are parsed in qt/alnj.cpp's main()
+    // If Qt is used, parameters/alnjl.conf are parsed in qt/alnjl.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -73,7 +74,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  alnjd [options]                     " + _("Start Alnj Core Daemon") + "\n";
+                        "  alnjld [options]                     " + _("Start Alnj Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -109,11 +110,11 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "alnj:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "alnjl:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in alnjd anymore. Use the alnj-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in alnjld anymore. Use the alnjl-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
@@ -140,9 +141,6 @@ bool AppInit(int argc, char* argv[])
 #endif
         SoftSetBoolArg("-server", true);
 
-        // Set this early so that parameter interactions go to console
-        InitLogging();
-        InitParameterInteraction();
         fRet = AppInit2();
     } catch (const std::exception& e) {
         PrintExceptionContinue(&e, "AppInit()");
@@ -164,7 +162,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect alnjd signal handlers
+    // Connect alnjld signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

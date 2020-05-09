@@ -1,4 +1,5 @@
-// Copyright (c) 2019-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,8 +9,7 @@
 #include <QObject>
 #include <QWidget>
 #include <QString>
-#include "qt/alnj/prunnable.h"
-#include "walletmodel.h"
+#include "qt/alnjl/prunnable.h"
 
 class ALNJGUI;
 class ClientModel;
@@ -20,13 +20,7 @@ namespace Ui {
 class PWidget;
 }
 
-class Translator
-{
-public:
-    virtual QString translate(const char *msg) = 0;
-};
-
-class PWidget : public QWidget, public Runnable, public Translator
+class PWidget : public QWidget, public Runnable
 {
     Q_OBJECT
 public:
@@ -44,14 +38,16 @@ public:
     void inform(const QString& message);
     void emitMessage(const QString& title, const QString& message, unsigned int style, bool* ret = nullptr);
 
-    QString translate(const char *msg) override { return tr(msg); }
+    QString translate(const char *msg) {
+        return tr(msg);
+    }
 
-Q_SIGNALS:
+signals:
     void message(const QString& title, const QString& body, unsigned int style, bool* ret = nullptr);
     void showHide(bool show);
     bool execDialog(QDialog *dialog, int xDiv = 3, int yDiv = 5);
 
-protected Q_SLOTS:
+protected slots:
     virtual void changeTheme(bool isLightTheme, QString &theme);
     void onChangeTheme(bool isLightTheme, QString &theme);
 
@@ -64,16 +60,18 @@ protected:
     virtual void loadWalletModel();
 
     void showHideOp(bool show);
-    bool execute(int type, std::unique_ptr<WalletModel::UnlockContext> pctx = nullptr);
+    bool execute(int type);
     void warn(const QString& title, const QString& message);
     bool ask(const QString& title, const QString& message);
     void showDialog(QDialog *dialog, int xDiv = 3, int yDiv = 5);
+
+    bool verifyWalletUnlocked();
 
 private:
     QSharedPointer<WorkerTask> task;
 
     void init();
-private Q_SLOTS:
+private slots:
     void errorString(QString, int);
 
 };

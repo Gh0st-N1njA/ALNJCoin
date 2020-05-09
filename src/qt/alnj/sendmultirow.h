@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +11,7 @@
 #include <QAction>
 #include "walletmodel.h"
 #include "amount.h"
-#include "qt/alnj/pwidget.h"
+#include "qt/alnjl/pwidget.h"
 
 class WalletModel;
 class SendCoinsRecipient;
@@ -55,11 +56,11 @@ public:
     int getEditWidth();
     int getMenuBtnWidth();
 
-public Q_SLOTS:
+public slots:
     void clear();
     void updateDisplayUnit();
 
-Q_SIGNALS:
+signals:
     void removeEntry(SendMultiRow* entry);
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -71,9 +72,9 @@ protected:
     virtual void enterEvent(QEvent *) override ;
     virtual void leaveEvent(QEvent *) override ;
 
-private Q_SLOTS:
+private slots:
     void amountChanged(const QString&);
-    bool addressChanged(const QString&, bool fOnlyValidate = false);
+    bool addressChanged(const QString&);
     void deleteClicked();
     //void on_payTo_textChanged(const QString& address);
     //void on_addressBookButton_clicked();

@@ -4,7 +4,7 @@
 <context>
     <name>AddNewAddressDialog</name>
     <message>
-        <location filename="../alnj/forms/addnewaddressdialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/addnewaddressdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -37,7 +37,7 @@
 <context>
     <name>AddNewContactDialog</name>
     <message>
-        <location filename="../alnj/forms/addnewcontactdialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/addnewcontactdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -58,7 +58,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/addnewcontactdialog.cpp" line="+20"/>
+        <location filename="../alnjl/addnewcontactdialog.cpp" line="+20"/>
         <source>Edit Contact</source>
         <translation type="unfinished"></translation>
     </message>
@@ -210,7 +210,7 @@
 <context>
     <name>AddressLabelRow</name>
     <message>
-        <location filename="../alnj/forms/addresslabelrow.ui" line="+20"/>
+        <location filename="../alnjl/forms/addresslabelrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -228,7 +228,7 @@
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+283"/>
+        <location filename="../addresstablemodel.cpp" line="+279"/>
         <source>Label</source>
         <translation>Label</translation>
     </message>
@@ -243,12 +243,7 @@
         <translation type="unfinished">Date</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>Type</source>
-        <translation type="unfinished">Type</translation>
-    </message>
-    <message>
-        <location line="+38"/>
+        <location line="+48"/>
         <source>(no label)</source>
         <translation>(no label)</translation>
     </message>
@@ -256,7 +251,7 @@
 <context>
     <name>AddressesWidget</name>
     <message>
-        <location filename="../alnj/forms/addresseswidget.ui" line="+14"/>
+        <location filename="../alnjl/forms/addresseswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -271,13 +266,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+204"/>
-        <source>N/A</source>
-        <translation type="unfinished">N/A</translation>
+        <location line="+154"/>
+        <source>No active Master Node yet</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+74"/>
-        <location filename="../alnj/addresseswidget.cpp" line="+119"/>
+        <location filename="../alnjl/addresseswidget.cpp" line="+109"/>
         <source>Contact name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -292,7 +287,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/addresseswidget.cpp" line="-38"/>
+        <location filename="../alnjl/addresseswidget.cpp" line="-28"/>
         <source>Contacts</source>
         <translation type="unfinished"></translation>
     </message>
@@ -302,7 +297,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+20"/>
         <source>No contacts yet</source>
         <translation type="unfinished"></translation>
     </message>
@@ -313,7 +308,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Enter ALNJ address</source>
+        <source>Enter a ALNJ address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -322,7 +317,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+56"/>
         <source>Invalid Contact Address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -407,7 +402,7 @@ Are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+86"/>
+        <location filename="../askpassphrasedialog.cpp" line="+85"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
     </message>
@@ -459,22 +454,7 @@ for staking</source>
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>WARNING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>If you encrypt your wallet and lose your passphrase, you will</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>LOSE ALL OF YOUR ALNJ</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>ENCRYPT</source>
         <translation type="unfinished"></translation>
     </message>
@@ -484,20 +464,19 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+87"/>
-        <location line="+26"/>
-        <source>WARNING: The Caps Lock key is on!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+31"/>
-        <source>ALNJ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALNJs from being stolen by malware infecting your computer.</source>
+        <location line="+144"/>
+        <source>ALNJ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-145"/>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALNJ&lt;/b&gt;!</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+46"/>
@@ -558,11 +537,17 @@ for staking</source>
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Wallet passphrase was successfully changed.</translation>
     </message>
+    <message>
+        <location line="+42"/>
+        <location line="+26"/>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Warning: The Caps Lock key is on!</translation>
+    </message>
 </context>
 <context>
     <name>BanTableModel</name>
     <message>
-        <location filename="../bantablemodel.cpp" line="+89"/>
+        <location filename="../bantablemodel.cpp" line="+87"/>
         <source>IP/Netmask</source>
         <translation type="unfinished"></translation>
     </message>
@@ -573,9 +558,47 @@ for staking</source>
     </message>
 </context>
 <context>
+    <name>BlockExplorer</name>
+    <message>
+        <location filename="../forms/blockexplorer.ui" line="+14"/>
+        <source>Blockchain Explorer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Forward</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Address / Block / Transaction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../blockexplorer.cpp" line="+480"/>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (alnjl.conf).</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CSRow</name>
     <message>
-        <location filename="../alnj/forms/csrow.ui" line="+14"/>
+        <location filename="../alnjl/forms/csrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -600,7 +623,7 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/csrow.cpp" line="+27"/>
+        <location filename="../alnjl/csrow.cpp" line="+27"/>
         <source>Own delegation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -608,50 +631,50 @@ for staking</source>
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+83"/>
+        <location filename="../clientmodel.cpp" line="+82"/>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+110"/>
+        <source>Network Alert</source>
+        <translation>Network Alert</translation>
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="+202"/>
+        <location filename="../forms/coincontroldialog.ui" line="+198"/>
         <source>Quantity:</source>
         <translation>Quantity:</translation>
     </message>
     <message>
-        <location line="+385"/>
+        <location line="+333"/>
         <source>Bytes:</source>
         <translation>Bytes:</translation>
     </message>
     <message>
-        <location line="-323"/>
+        <location line="-297"/>
         <source>Fee:</source>
         <translation>Fee:</translation>
     </message>
     <message>
-        <location line="-244"/>
+        <location line="-214"/>
         <source>Coin Selection</source>
         <translation>Coin Selection</translation>
     </message>
     <message>
-        <location line="+81"/>
-        <source>Select ALNJ Outputs to Spend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+532"/>
+        <location line="+531"/>
         <source>Dust:</source>
         <translation>Dust:</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+20"/>
         <source>Change:</source>
         <translation>Change:</translation>
     </message>
     <message>
-        <location line="-209"/>
+        <location line="-157"/>
         <source>Tree mode</source>
         <translation>Tree mode</translation>
     </message>
@@ -666,28 +689,38 @@ for staking</source>
         <translation>(1 locked)</translation>
     </message>
     <message>
-        <location line="-356"/>
-        <location line="+400"/>
+        <location line="-278"/>
+        <location line="+322"/>
         <source>Amount</source>
         <translation>Amount</translation>
     </message>
     <message>
-        <location line="-393"/>
-        <location line="+124"/>
-        <location line="+461"/>
+        <location line="-380"/>
+        <source>Transaction Details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <location line="+72"/>
+        <location line="+357"/>
         <source>0.00 ALNJ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-523"/>
-        <location line="+385"/>
-        <location line="+92"/>
+        <location line="-393"/>
+        <location line="+333"/>
+        <location line="+40"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-319"/>
-        <location filename="../coincontroldialog.cpp" line="+149"/>
+        <location line="-267"/>
+        <location filename="../coincontroldialog.cpp" line="+163"/>
         <location line="+93"/>
         <source>Select all</source>
         <translation type="unfinished"></translation>
@@ -708,17 +741,17 @@ for staking</source>
         <translation>Received with address</translation>
     </message>
     <message>
-        <location line="+175"/>
+        <location line="+97"/>
         <source>After Fee: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+75"/>
+        <location line="+49"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-245"/>
+        <location line="-141"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -733,7 +766,7 @@ for staking</source>
         <translation>Confirmed</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="-142"/>
+        <location filename="../coincontroldialog.cpp" line="-149"/>
         <source>Copy address</source>
         <translation>Copy address</translation>
     </message>
@@ -744,11 +777,12 @@ for staking</source>
     </message>
     <message>
         <location line="+1"/>
+        <location line="+26"/>
         <source>Copy amount</source>
         <translation>Copy amount</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-25"/>
         <source>Copy transaction ID</source>
         <translation>Copy transaction ID</translation>
     </message>
@@ -763,53 +797,53 @@ for staking</source>
         <translation>Unlock unspent</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+22"/>
+        <source>Copy quantity</source>
+        <translation>Copy quantity</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy fee</source>
+        <translation>Copy fee</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation>Copy after fee</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation>Copy bytes</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation>Copy priority</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy dust</source>
+        <translation>Copy dust</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation>Copy change</translation>
+    </message>
+    <message>
+        <location line="+20"/>
         <location line="+97"/>
         <source>Unselect all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+35"/>
         <source>Please switch to &quot;List mode&quot; to use this function.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+96"/>
-        <source>Quantity Copied</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Amount Copied</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Fee Copied</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>After Fee Copied</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Bytes Copied</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Dust Copied</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Change Copied</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+83"/>
+        <location line="+210"/>
         <source>highest</source>
         <translation>highest</translation>
     </message>
@@ -869,13 +903,8 @@ for staking</source>
         <translation>yes</translation>
     </message>
     <message>
-        <location line="+220"/>
-        <source>delegated to %1 for cold staking</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="+77"/>
-        <location filename="../coincontroldialog.cpp" line="-220"/>
+        <location filename="../forms/coincontroldialog.ui" line="+51"/>
+        <location filename="../coincontroldialog.cpp" line="+0"/>
         <source>no</source>
         <translation>no</translation>
     </message>
@@ -912,12 +941,12 @@ for staking</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Can vary +/- %1 ualng per input.</source>
+        <source>Can vary +/- %1 ualnj per input.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+49"/>
-        <location line="+92"/>
+        <location line="+78"/>
         <source>(no label)</source>
         <translation>(no label)</translation>
     </message>
@@ -933,9 +962,118 @@ for staking</source>
     </message>
 </context>
 <context>
+    <name>CoinControlPivWidget</name>
+    <message>
+        <location filename="../alnjl/forms/coincontrolalnjwidget.ui" line="+14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+78"/>
+        <source>Transaction Details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>ALNJ:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+36"/>
+        <location line="+36"/>
+        <location line="+143"/>
+        <location line="+20"/>
+        <location line="+20"/>
+        <location line="+20"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-246"/>
+        <source>Quantity:</source>
+        <translation type="unfinished">Quantity:</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Fee:</source>
+        <translation type="unfinished">Fee:</translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Amount</source>
+        <translation type="unfinished">Amount</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Label</source>
+        <translation type="unfinished">Label</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Address</source>
+        <translation type="unfinished">Address</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Type</source>
+        <translation type="unfinished">Type</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Date</source>
+        <translation type="unfinished">Date</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Confirmations</source>
+        <translation type="unfinished">Confirmations</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>CheckBox</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Bytes:</source>
+        <translation type="unfinished">Bytes:</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Dust:</source>
+        <translation type="unfinished">Dust:</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Change:</source>
+        <translation type="unfinished">Change:</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>After Fee: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ColdStakingWidget</name>
     <message>
-        <location filename="../alnj/forms/coldstakingwidget.ui" line="+14"/>
+        <location filename="../alnjl/forms/coldstakingwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -951,17 +1089,17 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+117"/>
-        <source>Owner address (optional, if empty a new address will be created)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+214"/>
+        <location line="+331"/>
         <source>Total Staking:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-23"/>
+        <location line="-214"/>
+        <source>Owner Address (optional, if empty a new address will be created)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+191"/>
         <source>List of delegated balance by address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -971,7 +1109,7 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/coldstakingwidget.cpp" line="+93"/>
+        <location filename="../alnjl/coldstakingwidget.cpp" line="+88"/>
         <source>Cold Staking</source>
         <translation type="unfinished"></translation>
     </message>
@@ -986,7 +1124,23 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+5"/>
+        <source>You can delegate your PIVs and let a hot node (24/7 online node)
+stake in your behalf, keeping the keys in a secure place offline.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Add owner address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Delegate or Accept ALNJ delegation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Delegate</source>
         <translation type="unfinished"></translation>
     </message>
@@ -996,7 +1150,12 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+6"/>
+        <source>Add the staking address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Delegated balance history</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1006,38 +1165,17 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+660"/>
+        <location line="+124"/>
         <source>Total Staking: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-501"/>
+        <location line="+19"/>
         <source>Error loading delegations: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-193"/>
-        <source>You can delegate your ALNJs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Enter owner address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Accept ALNJ delegation / Delegate ALNJ</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Cold Staking address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+189"/>
+        <location line="+17"/>
         <source>No receive addresses available, you can go to the receive screen and create some there!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1047,12 +1185,7 @@ stake on your behalf, while you keep the keys securely offline.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+114"/>
-        <source>Cannot send delegation, wallet locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+103"/>
         <source>Cold staking is networkely disabled</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1103,17 +1236,12 @@ Do you wish to proceed?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+28"/>
         <source>You don&apos;t have any ALNJ to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+19"/>
         <source>URI copied to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1154,47 +1282,47 @@ address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+39"/>
         <source>Address copied</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+4"/>
         <source>Edit Cold Address Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+9"/>
         <source>Whitelist failed, please check the logs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+7"/>
         <source> staking!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+6"/>
         <source>Blacklist failed, please check the logs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+7"/>
         <source> blacklisted from staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+10"/>
         <source>Owner address copied</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Edit Owner Address Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+28"/>
         <source>Address label saved</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1207,7 +1335,7 @@ address</source>
 <context>
     <name>ContactDropdownRow</name>
     <message>
-        <location filename="../alnj/forms/contactdropdownrow.ui" line="+20"/>
+        <location filename="../alnjl/forms/contactdropdownrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1225,7 +1353,7 @@ address</source>
 <context>
     <name>DashboardWidget</name>
     <message>
-        <location filename="../alnj/forms/dashboardwidget.ui" line="+14"/>
+        <location filename="../alnjl/forms/dashboardwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1251,7 +1379,7 @@ address</source>
     </message>
     <message>
         <location line="+93"/>
-        <location filename="../alnj/dashboardwidget.cpp" line="+47"/>
+        <location filename="../alnjl/dashboardwidget.cpp" line="+49"/>
         <source>Staking Rewards</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1275,7 +1403,7 @@ address</source>
     </message>
     <message>
         <location line="+42"/>
-        <source>zALNJ</source>
+        <source>zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1309,17 +1437,72 @@ address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/dashboardwidget.cpp" line="+5"/>
+        <location filename="../alnjl/dashboardwidget.cpp" line="+5"/>
         <source>You can view your account&apos;s history</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Amount of ALNJ and zALNJ staked.</source>
+        <source>Amount of ALNJ and zPIV staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+48"/>
+        <source>All</source>
+        <translation type="unfinished">All</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Received</source>
+        <translation type="unfinished">Received</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sent</source>
+        <translation type="unfinished">Sent</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Mined</source>
+        <translation type="unfinished">Mined</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Minted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>MN reward</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>To yourself</source>
+        <translation type="unfinished">To yourself</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cold stakes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Hot stakes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delegated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delegations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1330,7 +1513,7 @@ address</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>How to get ALNJ or zALNJ</source>
+        <source>How to get ALNJ or zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1341,34 +1524,34 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+23"/>
-        <location line="+245"/>
+        <location line="+235"/>
         <source>You have no staking rewards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-243"/>
+        <location line="-233"/>
         <source>No charts library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+243"/>
+        <location line="+233"/>
         <source>Loading chart..</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+123"/>
-        <location line="+220"/>
-        <location line="+52"/>
+        <location line="+119"/>
+        <location line="+215"/>
+        <location line="+49"/>
         <source>Error loading chart, invalid show option</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-61"/>
+        <location line="-58"/>
         <source>Error loading chart, invalid data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+97"/>
+        <location line="+84"/>
         <source>Error loading chart: %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1376,7 +1559,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>DefaultDialog</name>
     <message>
-        <location filename="../alnj/forms/defaultdialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/defaultdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1397,6 +1580,79 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+22"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <location filename="../alnjl/forms/denomgenerationdialog.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <source>Transaction Details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+66"/>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>5000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>100</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>1000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>50</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>500</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Select All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>SAVE</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1472,7 +1728,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>ExpandableButton</name>
     <message>
-        <location filename="../alnj/forms/expandablebutton.ui" line="+26"/>
+        <location filename="../alnjl/forms/expandablebutton.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1503,6 +1759,64 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <location line="+6"/>
         <source>Cannot create data directory here.</source>
         <translation>Cannot create data directory here.</translation>
+    </message>
+</context>
+<context>
+    <name>GovernancePage</name>
+    <message>
+        <location filename="../forms/governancepage.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>GOVERNANCE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+141"/>
+        <source>Update Proposals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Next super block:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+14"/>
+        <location line="+14"/>
+        <location line="+14"/>
+        <location line="+14"/>
+        <location line="+14"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-63"/>
+        <source>Blocks to next super block:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Days to budget payout (estimate):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Allotted budget:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Budget left:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Masternodes count:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1559,12 +1873,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Hide QT staking charts on startup (default: %u)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-4"/>
+        <location line="-3"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
         <translation>Set language, for example &quot;de_DE&quot; (default: system locale)</translation>
     </message>
@@ -1655,7 +1964,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>LoadingDialog</name>
     <message>
-        <location filename="../alnj/forms/loadingdialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/loadingdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1666,7 +1975,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+44"/>
-        <location filename="../alnj/loadingdialog.cpp" line="+43"/>
+        <location filename="../alnjl/loadingdialog.cpp" line="+43"/>
         <source>Loading</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1679,12 +1988,12 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>LockUnlock</name>
     <message>
-        <location filename="../alnj/forms/lockunlock.ui" line="+14"/>
+        <location filename="../alnjl/forms/lockunlock.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location filename="../alnj/lockunlock.cpp" line="+26"/>
+        <location filename="../alnjl/lockunlock.cpp" line="+26"/>
         <source>Unlock Wallet</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1702,15 +2011,30 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MNRow</name>
     <message>
-        <location filename="../alnj/forms/mnrow.ui" line="+14"/>
+        <location filename="../alnjl/forms/mnrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+69"/>
+        <source>user_masternode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Address: 88.26.164.88:18233</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Jan. 19, 2019</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MasterNodeWizardDialog</name>
     <message>
-        <location filename="../alnj/forms/masternodewizarddialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/masternodewizarddialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1746,41 +2070,36 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+94"/>
-        <source>Create New Masternode Controller</source>
+        <source>Create New Master Node Controller</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a ALNJ Masternode you must dedicate 10,000 ALNJ (the unit of ALNJ) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a ALNJ Masternode you must dedicate 10.000 ALNJ (the unit of ALNJ) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+89"/>
-        <source>Set Masternode Name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+83"/>
-        <source>Set Masternode IP and Port</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+81"/>
-        <source>Enter port</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-218"/>
+        <location line="+35"/>
         <source>Make sure you have this amount of coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+93"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 ALNJ will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location line="+54"/>
+        <source>Set Master Node’s Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location line="+39"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 1,00,000 ALNJ will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Set Master Node’s IP and port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Address of the node that must always be online running the actual master node.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1790,7 +2109,12 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+134"/>
+        <location line="+45"/>
+        <source>Enter Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+89"/>
         <source>CANCEL</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1800,12 +2124,12 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/masternodewizarddialog.cpp" line="+56"/>
+        <location filename="../alnjl/masternodewizarddialog.cpp" line="+51"/>
         <source>e.g user_masternode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+31"/>
         <source>NEXT</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1815,7 +2139,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+84"/>
+        <location line="+82"/>
         <source>address label cannot be empty</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1825,37 +2149,17 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Invalid IP address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+44"/>
-        <source>Prepare master node failed.
-
-%1
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+77"/>
-        <source>Invalid collateral output index</source>
+        <location line="+6"/>
+        <source>Invalid port number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+36"/>
-        <source>Master node created! Wait %1 confirmations before starting it.</source>
+        <source>Prepare master node failed..</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Cannot send collateral transaction.
-
-%1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-92"/>
+        <location line="+22"/>
         <source>Invalid masternode.conf file</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1865,15 +2169,75 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+66"/>
+        <location line="+27"/>
+        <source>Invalid collaterall output index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Master node created!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>masternode.conf file doesn&apos;t exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation type="unfinished">The recipient address is not valid, please recheck.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation type="unfinished">The amount to pay must be larger than 0.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The amount exceeds your balance.</source>
+        <translation type="unfinished">The amount exceeds your balance.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation type="unfinished">The total exceeds your balance when the %1 transaction fee is included.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation type="unfinished">Duplicate address found, can only send to each address once per send operation.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Transaction creation failed!</source>
+        <translation type="unfinished">Transaction creation failed!</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished">The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation type="unfinished">Error: The wallet was unlocked only to anonymize coins.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
+        <translation type="unfinished">A fee %1 times higher than %2 per kB is considered an insanely high fee.</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MasterNodesWidget</name>
     <message>
-        <location filename="../alnj/forms/masternodeswidget.ui" line="+14"/>
+        <location filename="../alnjl/forms/masternodeswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1885,21 +2249,11 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+154"/>
-        <source>N/A</source>
-        <translation type="unfinished">N/A</translation>
-    </message>
-    <message>
-        <location line="+65"/>
-        <source>Start All</source>
+        <source>No active Master Node yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Start Inactive/s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../alnj/masternodeswidget.cpp" line="+95"/>
+        <location filename="../alnjl/masternodeswidget.cpp" line="+90"/>
         <source>Masternodes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1915,12 +2269,12 @@ and vote on the treasury system receiving a periodic reward.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+18"/>
         <source>No active Masternode yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+48"/>
         <source>Start</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1935,12 +2289,7 @@ and vote on the treasury system receiving a periodic reward.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>Please wait until the node is fully synced</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
+        <location line="+24"/>
         <source>Start Masternode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1951,58 +2300,13 @@ and vote on the treasury system receiving a periodic reward.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Cannot edit masternode, wallet locked</source>
+        <location line="+5"/>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
-Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+44"/>
-        <source>Background task is being executed, please wait</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Start ALL masternodes failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Wallet unlock cancelled</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Cannot perform Masternodes start</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+31"/>
-        <source>%1 Masternodes failed to start, %2 started</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>All Masternodes started!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Cannot show Masternode information, wallet locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Masternode data copied to the clipboard.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-11"/>
+        <location line="+41"/>
         <source>Remote Masternode Data</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2012,14 +2316,19 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the alnj.conf file
+You will only have to paste the data in the alnjl.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press &quot;start&quot;).
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+10"/>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
         <source>Delete Masternode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2042,18 +2351,13 @@ Are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+45"/>
         <source>masternode.conf file doesn&apos;t exists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Cannot create Masternode controller, wallet locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Not enough balance to create a masternode, 10,000 ALNJ required.</source>
+        <location line="+7"/>
+        <source>Not enough balance to create a masternode, 1,00,000 ALNJ required.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2065,13 +2369,14 @@ Are you sure?</source>
 <context>
     <name>MnInfoDialog</name>
     <message>
-        <location filename="../alnj/forms/mninfodialog.ui" line="+20"/>
+        <location filename="../alnjl/forms/mninfodialog.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+84"/>
-        <source>Masternode Information</source>
+        <location filename="../alnjl/mninfodialog.cpp" line="+20"/>
+        <source>Master Node Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2122,14 +2427,14 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+38"/>
-        <source>Export data to run the Masternode on a remote server</source>
+        <source>Export data to run the Master Node on a remote server</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MyAddressRow</name>
     <message>
-        <location filename="../alnj/forms/myaddressrow.ui" line="+14"/>
+        <location filename="../alnjl/forms/myaddressrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2152,17 +2457,17 @@ Are you sure?</source>
 <context>
     <name>NavMenuWidget</name>
     <message>
-        <location filename="../alnj/forms/navmenuwidget.ui" line="+14"/>
+        <location filename="../alnjl/forms/navmenuwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+373"/>
+        <location line="+276"/>
         <source>V 1.0.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/navmenuwidget.cpp" line="+23"/>
+        <location filename="../alnjl/navmenuwidget.cpp" line="+22"/>
         <source>v%1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2216,14 +2521,14 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Invalid URI, not starting with &quot;alnj&quot; prefix</source>
+        <source>Invalid URI, not starting with &quot;alnjl&quot; prefix</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OptionButton</name>
     <message>
-        <location filename="../alnj/forms/optionbutton.ui" line="+14"/>
+        <location filename="../alnjl/forms/optionbutton.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2349,7 +2654,7 @@ Are you sure?</source>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/alnj-project/alnj-project-translations</source>
+https://www.transifex.com/alnjl-project/alnjl-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2359,17 +2664,17 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of ALNJ units to zALNJ</source>
+        <source>Enable automatic minting of ALNJ units to zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zALNJ Automint</source>
+        <source>Enable zPIV Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zALNJ minting from specific addresses</source>
+        <source>Enable automatic zPIV minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2379,12 +2684,12 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming ALNJ which get automatically converted to zALNJ via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming ALNJ which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zALNJ</source>
+        <source>Percentage of autominted zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2395,7 +2700,7 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zALNJ Denomination</source>
+        <source>Preferred Automint zPIV Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2536,7 +2841,7 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation>&amp;Cancel</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+91"/>
+        <location filename="../optionsdialog.cpp" line="+92"/>
         <source>Any</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2551,7 +2856,7 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation>none</translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+98"/>
         <source>Confirm options reset</source>
         <translation>Confirm options reset</translation>
     </message>
@@ -2590,14 +2895,14 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
 <context>
     <name>ALNJGUI</name>
     <message>
-        <location filename="../alnj/alnjgui.cpp" line="+70"/>
-        <location line="+292"/>
+        <location filename="../alnjl/alnjlgui.cpp" line="+53"/>
+        <location line="+294"/>
         <location line="+68"/>
         <source>ALNJ Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-359"/>
+        <location line="-361"/>
         <source>Wallet</source>
         <translation type="unfinished">Wallet</translation>
     </message>
@@ -2607,7 +2912,7 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation type="unfinished">Node</translation>
     </message>
     <message>
-        <location line="+100"/>
+        <location line="+108"/>
         <source>&amp;Show / Hide</source>
         <translation type="unfinished">&amp;Show / Hide</translation>
     </message>
@@ -2627,12 +2932,12 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation type="unfinished">Quit application</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+38"/>
         <source>ALNJ Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+162"/>
+        <location line="+155"/>
         <source>Error</source>
         <translation type="unfinished">Error</translation>
     </message>
@@ -2652,7 +2957,7 @@ https://www.transifex.com/alnj-project/alnj-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+243"/>
+        <location line="+242"/>
         <source>Sent MultiSend transaction</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2680,8 +2985,16 @@ Address: %4
 </translation>
     </message>
     <message>
-        <location filename="../alnj.cpp" line="+518"/>
+        <location filename="../alnjl.cpp" line="+505"/>
         <source>A fatal error occurred. ALNJ can no longer continue safely and will quit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PWidget</name>
+    <message>
+        <location filename="../alnjl/pwidget.cpp" line="+94"/>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2689,7 +3002,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+287"/>
-        <location line="+202"/>
+        <location line="+205"/>
         <location line="+33"/>
         <location line="+104"/>
         <location line="+12"/>
@@ -2698,7 +3011,7 @@ Address: %4
         <translation>Payment request error</translation>
     </message>
     <message>
-        <location line="-274"/>
+        <location line="-275"/>
         <location line="+12"/>
         <location line="+5"/>
         <source>URI handling</source>
@@ -2720,12 +3033,12 @@ Address: %4
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <location line="-102"/>
-        <source>Cannot start alnj: click-to-pay handler</source>
+        <location line="-104"/>
+        <source>Cannot start alnjl: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+108"/>
+        <location line="+110"/>
         <source>URI cannot be parsed! This can be caused by an invalid ALNJ address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2735,7 +3048,7 @@ Address: %4
         <translation>Payment request file cannot be read! This can be caused by an invalid payment request file.</translation>
     </message>
     <message>
-        <location line="+66"/>
+        <location line="+67"/>
         <location line="+8"/>
         <location line="+30"/>
         <source>Payment request rejected</source>
@@ -2810,7 +3123,7 @@ Address: %4
 <context>
     <name>PeerTableModel</name>
     <message>
-        <location filename="../peertablemodel.cpp" line="+116"/>
+        <location filename="../peertablemodel.cpp" line="+114"/>
         <source>Address/Hostname</source>
         <translation>Address/Hostname</translation>
     </message>
@@ -2828,7 +3141,7 @@ Address: %4
 <context>
     <name>PrivacyWidget</name>
     <message>
-        <location filename="../alnj/forms/privacywidget.ui" line="+14"/>
+        <location filename="../alnjl/forms/privacywidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2842,7 +3155,7 @@ Address: %4
         <location line="+123"/>
         <location line="+53"/>
         <location line="+86"/>
-        <location line="+247"/>
+        <location line="+257"/>
         <location line="+7"/>
         <location line="+14"/>
         <location line="+7"/>
@@ -2862,7 +3175,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-587"/>
+        <location line="-597"/>
         <location line="+28"/>
         <location line="+119"/>
         <source>PushButton</source>
@@ -2870,11 +3183,11 @@ Address: %4
     </message>
     <message>
         <location line="+183"/>
-        <source>N/A</source>
-        <translation type="unfinished">N/A</translation>
+        <source>No active Master Node yet</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/privacywidget.cpp" line="+36"/>
+        <location filename="../alnjl/privacywidget.cpp" line="+38"/>
         <source>Privacy</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2890,18 +3203,18 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>Minting zALNJ anonymizes your ALNJ by removing any
+        <source>Minting zPIV anonymizes your ALNJ by removing any
 transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Mint new zALNJ or convert back to ALNJ</source>
+        <source>Mint new zPIV or convert back to ALNJ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+53"/>
-        <source>Last zALNJ Movements</source>
+        <source>Last Zerocoin Movements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2911,12 +3224,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+87"/>
-        <source>Mint zALNJ</source>
+        <source>Mint zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of ALNJ to mint into zALNJ</source>
+        <source>Enter amount of ALNJ to mint into zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2926,22 +3239,22 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of zALNJ to convert back into ALNJ</source>
+        <source>Enter amount of zPIV to convert back into ALNJ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+35"/>
         <source>Zerocoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
-        <source>zALNJ is currently undergoing maintenance</source>
+        <source>zPIV is currently undergoing maintenance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>You need to unlock the wallet to be able to %1 zALNJ</source>
+        <location line="+8"/>
+        <source>You need to unlock the wallet to be able to %1 zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2960,22 +3273,22 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+19"/>
-        <source>zALNJ minted successfully</source>
+        <location line="+18"/>
+        <source>zPIV minted successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>zPIV converted back to ALNJ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>zALNJ converted back to ALNJ</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+20"/>
         <source>You don&apos;t have any ALNJ to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+12"/>
         <source>Rescan Mints</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2985,8 +3298,8 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Reset Spent zALNJ</source>
+        <location line="+8"/>
+        <source>Reset Spent Zerocoins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2995,8 +3308,92 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+96"/>
         <source>Total %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ProposalFrame</name>
+    <message>
+        <location filename="../proposalframe.cpp" line="+94"/>
+        <source>Open proposal page in browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source> remaining payment(s).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Yes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Abstain:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>No:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>A proposal URL can be used for phishing, scams and computer viruses. Open this link only if you trust the following URL.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Open link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Wallet Locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>You must unlock your wallet to vote.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Do you want to vote %1 on</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>using all your masternodes?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Proposal Hash:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Proposal URL:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Confirm Vote</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+69"/>
+        <source>Vote Results</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3008,12 +3405,12 @@ transaction history, making transactions untraceable </source>
         <translation>Amount</translation>
     </message>
     <message>
-        <location filename="../guiutil.cpp" line="+144"/>
-        <source>Enter ALNJ address (e.g. %1)</source>
+        <location filename="../guiutil.cpp" line="+143"/>
+        <source>Enter a ALNJ address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+796"/>
+        <location line="+783"/>
         <source>%1 d</source>
         <translation>%1 d</translation>
     </message>
@@ -3029,18 +3426,23 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+2"/>
-        <location line="+40"/>
+        <location line="+43"/>
         <source>%1 s</source>
         <translation>%1 s</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-28"/>
         <source>NETWORK</source>
         <translation>NETWORK</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>BLOOM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>ZK_BLOOM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3064,7 +3466,7 @@ transaction history, making transactions untraceable </source>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <location filename="../alnj.cpp" line="+73"/>
+        <location filename="../alnjl.cpp" line="+75"/>
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
@@ -3092,151 +3494,8 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+63"/>
+        <location line="+61"/>
         <source>ALNJ Core didn&apos;t yet exit safely...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../addresstablemodel.cpp" line="-230"/>
-        <source>Contact</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <location filename="../alnj/qtutils.cpp" line="+136"/>
-        <source>Receiving</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Delegator</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <location filename="../alnj/qtutils.cpp" line="+2"/>
-        <source>Cold Staking</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Cold Staking Contact</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Hidden</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Unknown</source>
-        <translation type="unfinished">Unknown</translation>
-    </message>
-    <message>
-        <location filename="../alnj/qtutils.cpp" line="-3"/>
-        <location line="+21"/>
-        <source>All</source>
-        <translation type="unfinished">All</translation>
-    </message>
-    <message>
-        <location line="-19"/>
-        <source>Contacts</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Delegators</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Staking Contacts</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Date desc</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Date asc</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Amount desc</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Amount asc</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Received</source>
-        <translation type="unfinished">Received</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Sent</source>
-        <translation type="unfinished">Sent</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Mined</source>
-        <translation type="unfinished">Mined</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Minted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>MN reward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>To yourself</source>
-        <translation type="unfinished">To yourself</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Cold stakes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Hot stakes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Delegated</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Delegations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+84"/>
-        <source>by Label</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>by Address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>by Date</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3426,8 +3685,8 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+59"/>
-        <location filename="../rpcconsole.cpp" line="+317"/>
-        <location line="+728"/>
+        <location filename="../rpcconsole.cpp" line="+326"/>
+        <location line="+730"/>
         <source>Select a peer to view detailed information.</source>
         <translation>Select a peer to view detailed information.</translation>
     </message>
@@ -3543,7 +3802,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zALNJ Backup Path:</source>
+        <source>Custom zPIV Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3647,7 +3906,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-218"/>
+        <location line="-219"/>
         <source>&amp;Disconnect Node</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3680,7 +3939,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+45"/>
+        <location line="+46"/>
         <source>&amp;Unban Node</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3790,7 +4049,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>ReceiveDialog</name>
     <message>
-        <location filename="../alnj/forms/receivedialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/receivedialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3818,7 +4077,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>ReceiveWidget</name>
     <message>
-        <location filename="../alnj/forms/receivewidget.ui" line="+20"/>
+        <location filename="../alnjl/forms/receivewidget.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -3832,30 +4091,30 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+25"/>
-        <location filename="../alnj/receivewidget.cpp" line="+248"/>
+        <location filename="../alnjl/receivewidget.cpp" line="+218"/>
         <source>No address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <location filename="../alnj/receivewidget.cpp" line="-180"/>
+        <location filename="../alnjl/receivewidget.cpp" line="-150"/>
         <source>Add Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../alnj/receivewidget.cpp" line="+4"/>
+        <location filename="../alnjl/receivewidget.cpp" line="+4"/>
         <source>Generate Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../alnj/receivewidget.cpp" line="+4"/>
+        <location filename="../alnjl/receivewidget.cpp" line="+4"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/receivewidget.cpp" line="-32"/>
+        <location filename="../alnjl/receivewidget.cpp" line="-32"/>
         <source>Receive</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3870,7 +4129,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+96"/>
+        <location line="+76"/>
         <location line="+12"/>
         <source>No available address, try unlocking the wallet</source>
         <translation type="unfinished"></translation>
@@ -3882,12 +4141,12 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>Edit Label</source>
+        <location line="+11"/>
+        <source>Change Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+33"/>
         <source>Edit Address Label</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3902,27 +4161,17 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Cannot create new address, wallet locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+15"/>
+        <location line="+22"/>
         <source>New address created</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+9"/>
         <source>Address copied</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+15"/>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+18"/>
         <source>URI copied to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3935,7 +4184,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="+29"/>
+        <location filename="../recentrequeststablemodel.cpp" line="+27"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -3978,12 +4227,13 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>RequestDialog</name>
     <message>
-        <location filename="../alnj/forms/requestdialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/requestdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+81"/>
+        <location filename="../alnjl/requestdialog.cpp" line="+25"/>
         <source>New Request Payment</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3994,7 +4244,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+43"/>
-        <location filename="../alnj/requestdialog.cpp" line="+42"/>
+        <location filename="../alnjl/requestdialog.cpp" line="+17"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
@@ -4035,33 +4285,28 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/requestdialog.cpp" line="-6"/>
+        <location filename="../alnjl/requestdialog.cpp" line="-14"/>
+        <source>Instead of only sharing a ALNJ address, you can create a Payment Request message which bundles up more information than is contained in just a ALNJ address.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Label</source>
         <translation type="unfinished">Label</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+2"/>
+        <source>Enter a label to be saved within the address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
         <source>Description (optional)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-24"/>
-        <source>New Payment Request</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location line="+3"/>
-        <source>Instead of sharing only a ALNJ address, you can create a payment request, bundling up more information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Enter a label for the address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Enter description</source>
+        <source>Add description </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4093,7 +4338,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendChangeAddressDialog</name>
     <message>
-        <location filename="../alnj/forms/sendchangeaddressdialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/sendchangeaddressdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4109,7 +4354,6 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+82"/>
-        <location filename="../alnj/sendchangeaddressdialog.cpp" line="+68"/>
         <source>CANCEL</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4119,7 +4363,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/sendchangeaddressdialog.cpp" line="-42"/>
+        <location filename="../alnjl/sendchangeaddressdialog.cpp" line="+21"/>
         <source>Custom Change Address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4128,26 +4372,11 @@ transaction history, making transactions untraceable </source>
         <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; ALNJ address</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location line="+11"/>
-        <source>SAVE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>RESET</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>Invalid address</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>SendCustomFeeDialog</name>
     <message>
-        <location filename="../alnj/forms/sendcustomfeedialog.ui" line="+14"/>
+        <location filename="../alnjl/forms/sendcustomfeedialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4163,16 +4392,11 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+46"/>
-        <source>Recommended</source>
+        <source>Recomended</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+82"/>
-        <source>ALNJ/kilobyte</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-59"/>
+        <location line="+23"/>
         <source>0.00 KB</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4182,7 +4406,12 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+75"/>
+        <location line="+26"/>
+        <source>Per kilobyte</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
         <source>CANCEL</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4192,13 +4421,13 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/sendcustomfeedialog.cpp" line="+28"/>
+        <location filename="../alnjl/sendcustomfeedialog.cpp" line="+25"/>
         <source>Customize Fee</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain.</source>
+        <source>Customize the transaction fee, depending on the fee value your transaction will be included or not in the blockchain.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4217,25 +4446,15 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+10"/>
         <source>SAVE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+79"/>
-        <source>Fee too high. Must be below: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Fee too low. Must be at least: %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SendMultiRow</name>
     <message>
-        <location filename="../alnj/forms/sendmultirow.ui" line="+26"/>
+        <location filename="../alnjl/forms/sendmultirow.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4245,26 +4464,26 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/sendmultirow.cpp" line="+22"/>
-        <source>Enter address</source>
+        <location filename="../alnjl/sendmultirow.cpp" line="+22"/>
+        <source>Add address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <source>Enter label</source>
+        <source>Add description</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SendWidget</name>
     <message>
-        <location filename="../alnj/send.cpp" line="+44"/>
+        <location filename="../alnjl/send.cpp" line="+44"/>
         <source>Send</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <source>You can transfer public coins (ALNJ) or private coins (zALNJ)</source>
+        <source>You can transfer public coins (ALNJ) or private coins (zPIV)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4273,7 +4492,12 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+4"/>
+        <source>Enter a ALNJ address or contact label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
@@ -4298,69 +4522,48 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+26"/>
         <source>Total to send</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+40"/>
         <source>Send ALNJ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>Send zALNJ</source>
+        <location line="+3"/>
+        <source>Send zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
         <source>Total remaining from the selected UTXO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+4"/>
         <source>Total remaining</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+411"/>
-        <source>Warning!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>The change address doesn&apos;t belong to this wallet.
-
-Do you want to continue?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+285"/>
+        <location line="+44"/>
+        <location line="+355"/>
         <source>Customize Fee</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-595"/>
+        <location line="-321"/>
         <source>Maximum amount of outputs reached</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-221"/>
-        <source>ALNJ address or contact label</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+249"/>
+        <location line="+25"/>
         <source>Invalid entry, previous entries must be valid before add a new one</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+43"/>
-        <source>Possibly spend coins delegated for cold-staking (currently available: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
+        <location line="+26"/>
         <source>Invalid entry</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4370,36 +4573,36 @@ Do you want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Cannot send, wallet locked</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+27"/>
         <source>Cannot create transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+7"/>
         <source>WARNING:
 Transaction spends a cold-stake delegation, voiding it.
 These coins will no longer be cold-staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+20"/>
         <source>Transaction sent</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+15"/>
         <location line="+38"/>
         <source>Spend Zerocoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-38"/>
-        <source>zALNJ is currently undergoing maintenance.</source>
+        <source>zPIV is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4420,13 +4623,13 @@ These coins will no longer be cold-staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+29"/>
-        <source>zALNJ transaction sent!</source>
+        <location line="+31"/>
+        <source>zPIV transaction sent!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Version 1 zALNJ require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4447,12 +4650,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+29"/>
         <source>Address label update failed for address: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+23"/>
+        <source>Invalid change address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
         <source>Invalid URI</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4462,32 +4670,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+260"/>
+        <location line="+31"/>
         <source>Custom Fee %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-210"/>
+        <location line="+23"/>
         <source>You don&apos;t have any ALNJ to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>You don&apos;t have any zALNJ in your balance to select.</source>
+        <source>You don&apos;t have any zPIV in your balance to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+24"/>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+57"/>
         <source>Save contact</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+16"/>
         <source>Address field is empty</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4512,7 +4720,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+9"/>
         <source>New Contact Stored</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4525,7 +4733,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SettingsBackupWallet</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsbackupwallet.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsbackupwallet.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4533,13 +4741,13 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <location line="+41"/>
         <location line="+7"/>
         <location line="+30"/>
-        <location line="+68"/>
+        <location line="+139"/>
         <location line="+7"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsbackupwallet.cpp" line="+26"/>
+        <location filename="../alnjl/settings/settingsbackupwallet.cpp" line="+26"/>
         <source>Backup Wallet </source>
         <translation type="unfinished"></translation>
     </message>
@@ -4549,7 +4757,13 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+5"/>
+        <source>Keep your wallet safe doing regular backups, store your backup file externally.
+This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) from another device.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
 Remember to write it down and store it safely, otherwise you might lose access to your funds.</source>
         <translation type="unfinished"></translation>
@@ -4560,24 +4774,23 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-7"/>
-        <source>Keep your wallet safe by doing regular backups and storing your backup file externally.
-This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device.</source>
+        <location line="+3"/>
+        <location line="+33"/>
+        <source>Set a folder location</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <location line="+22"/>
-        <source>Select folder...</source>
+        <location line="-28"/>
+        <source>Backup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-17"/>
+        <location line="+3"/>
         <source>Change Passphrase</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+11"/>
         <source>Backup Wallet</source>
         <translation type="unfinished">Backup Wallet</translation>
     </message>
@@ -4587,7 +4800,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished">Wallet Data (*.dat)</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+11"/>
         <source>Backup created</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4597,7 +4810,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Please select a folder to export the backup first.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4605,7 +4818,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
 <context>
     <name>SettingsBitToolWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsbittoolwidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsbittoolwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4633,7 +4846,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
     </message>
     <message>
         <location line="+63"/>
-        <location filename="../alnj/settings/settingsbittoolwidget.cpp" line="+74"/>
+        <location filename="../alnjl/settings/settingsbittoolwidget.cpp" line="+74"/>
         <source>Import Address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4644,7 +4857,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished">Clear</translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsbittoolwidget.cpp" line="-39"/>
+        <location filename="../alnjl/settings/settingsbittoolwidget.cpp" line="-39"/>
         <source>BIP38 Tool</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4660,23 +4873,23 @@ This option creates a wallet.dat file that can be used to recover your whole bal
     </message>
     <message>
         <location line="+9"/>
-        <location line="+55"/>
+        <location line="+54"/>
         <source>Encrypted key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-53"/>
+        <location line="-52"/>
         <source>Enter a encrypted key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <location line="+38"/>
+        <location line="+37"/>
         <source>Passphrase</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-35"/>
+        <location line="-34"/>
         <source>Enter a passphrase </source>
         <translation type="unfinished"></translation>
     </message>
@@ -4696,18 +4909,18 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>ALNJ address</source>
+        <location line="+13"/>
+        <source>Enter a ALNJ address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter address</source>
+        <source>Add address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Enter passphrase</source>
+        <source>Write a message</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4731,7 +4944,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+51"/>
         <source>The entered passphrase is invalid. </source>
         <translation type="unfinished"></translation>
     </message>
@@ -4758,12 +4971,12 @@ This option creates a wallet.dat file that can be used to recover your whole bal
     </message>
     <message>
         <location line="+7"/>
-        <location line="+114"/>
+        <location line="+106"/>
         <source>Wallet unlock was cancelled.</source>
         <translation type="unfinished">Wallet unlock was cancelled.</translation>
     </message>
     <message>
-        <location line="-107"/>
+        <location line="-99"/>
         <source>Private key for the entered address is not available.</source>
         <translation type="unfinished">Private key for the entered address is not available.</translation>
     </message>
@@ -4773,12 +4986,12 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+14"/>
         <source>No addresses available, you can go to the receive screen and add some there!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+63"/>
         <source>Failed to decrypt.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4788,7 +5001,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+23"/>
         <source>Data Not Valid.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4814,14 +5027,14 @@ This option creates a wallet.dat file that can be used to recover your whole bal
     </message>
     <message>
         <location line="+10"/>
-        <source>Successfully added private key to the wallet</source>
+        <source>Successfully added alnjate key to the wallet</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SettingsConsoleWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsconsolewidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsconsolewidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4831,7 +5044,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsconsolewidget.cpp" line="+253"/>
+        <location filename="../alnjl/settings/settingsconsolewidget.cpp" line="+254"/>
         <source>Console</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4852,17 +5065,12 @@ This option creates a wallet.dat file that can be used to recover your whole bal
     </message>
     <message>
         <location line="+6"/>
-        <source>Clear history</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
         <source>Cannot open debug file.
 Verify that you have installed a predetermined text editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+144"/>
+        <location line="+142"/>
         <source>Welcome to the ALNJ RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4885,28 +5093,23 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsDisplayOptionsWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+51"/>
         <location line="+7"/>
-        <location line="+16"/>
-        <location line="+40"/>
-        <location line="+40"/>
-        <location line="+73"/>
+        <location line="+32"/>
+        <location line="+56"/>
+        <location line="+56"/>
+        <location line="+94"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-33"/>
-        <source>Hide stake charts in the dashboard</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+91"/>
-        <location filename="../alnj/settings/settingsdisplayoptionswidget.cpp" line="+103"/>
+        <location line="+58"/>
+        <location filename="../alnjl/settings/settingsdisplayoptionswidget.cpp" line="+97"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4916,7 +5119,7 @@ Verify that you have installed a predetermined text editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsdisplayoptionswidget.cpp" line="-74"/>
+        <location filename="../alnjl/settings/settingsdisplayoptionswidget.cpp" line="-68"/>
         <source>Display</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4951,12 +5154,12 @@ Verify that you have installed a predetermined text editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location line="+45"/>
         <source>SAVE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+15"/>
         <source>default</source>
         <translation type="unfinished">default</translation>
     </message>
@@ -4967,135 +5170,9 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
 </context>
 <context>
-    <name>SettingsExportCSV</name>
-    <message>
-        <location filename="../alnj/settings/forms/settingsexportcsv.ui" line="+14"/>
-        <source>Form</source>
-        <translation type="unfinished">Form</translation>
-    </message>
-    <message>
-        <location line="+41"/>
-        <source>Export Accounting</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Export your wallet&apos;s accounting data to a csv file.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+35"/>
-        <source>Where</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+58"/>
-        <location line="+115"/>
-        <location filename="../alnj/settings/settingsexportcsv.cpp" line="+70"/>
-        <location line="+7"/>
-        <source>Select folder...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-48"/>
-        <source>Export Address Book</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../alnj/settings/settingsexportcsv.cpp" line="-16"/>
-        <source>Export CSV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Export Address List</source>
-        <translation type="unfinished">Export Address List</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>ALNJ_tx_csv_export(*.csv)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>ALNJ_addresses_csv_export(*.csv)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+23"/>
-        <location line="+72"/>
-        <source>Please select a folder to export the csv file first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-22"/>
-        <source>Confirmed</source>
-        <translation type="unfinished">Confirmed</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Watch-only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Date</source>
-        <translation type="unfinished">Date</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Type</source>
-        <translation type="unfinished">Type</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Label</source>
-        <translation type="unfinished">Label</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Address</source>
-        <translation type="unfinished">Address</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>ID</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Exporting Successful
-The transaction history was successfully saved to %1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Exporting Failed
-There was an error trying to save the transaction history to %1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>No available addresses to export under the selected filter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Exporting Successful
-The address book was successfully saved to %1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Exporting Failed
-There was an error trying to save the address list to %1. Please try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>SettingsFaqWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsfaqwidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsfaqwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5123,28 +5200,28 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+28"/>
-        <source>3) ALNJ privacy? What is Zerocoin (zALNJ)?</source>
+        <source>3) ALNJ privacy? What is Zerocoin (zPIV)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>4) Why are my zALNJ unspendable?</source>
+        <source>4) Why are my zPIV unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
         <source>5) Why did my wallet convert the balance
-    into zALNJ automatically?</source>
+    into zPIV automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>6) How do I receive ALNJ/zALNJ?</source>
+        <source>6) How do I receive ALNJ/zPIV?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>7) How do I stake ALNJ/zALNJ?</source>
+        <source>7) How do I stake ALNJ/zPIV?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5154,12 +5231,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+22"/>
-        <source>9) What is a Masternode?</source>
+        <source>9) What is a Master Node?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>10) What is a Masternode Controller?</source>
+        <source>10) What is a Master Node Controller?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5180,7 +5257,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  ALNJ incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zALNJ) and Zerocoin staking.
+                           to implement ZeroCoin(zPIV) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            ALNJ utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of ALNJ to participate in earning block rewards
@@ -5220,18 +5297,18 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>ALNJ privacy? What is Zerocoin (zALNJ)?</source>
+        <source>ALNJ privacy? What is Zerocoin (zPIV)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zALNJ is an optional privacy-centric method of coin mixing on the
+                           zPIV is an optional privacy-centric method of coin mixing on the
                            ALNJ blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://ALNJ.org/zalnj/&apos;&gt;
-                           &quot;ALNJ Zerocoin (zALNJ) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjlite.com/zalnj/&apos;&gt;
+                           &quot;ALNJ Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5243,14 +5320,14 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>Why are my zALNJ unspendable?</source>
+        <source>Why are my zPIV unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           After minting, zALNJ will require 20 confirmations as well as 1
+                           After minting, zPIV will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -5264,7 +5341,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>Why did my wallet convert the balance into zALNJ automatically?</source>
+        <source>Why did my wallet convert the balance into zPIV automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5272,17 +5349,17 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            By default the ALNJ wallet will convert 10% of your entire ALNJ
-                           balance to zALNJ to assist the network. If you do not wish to
-                           stake zALNJ or take advantage of the privacy benefit it brings,
+                           balance to zPIV to assist the network. If you do not wish to
+                           stake zPIV or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your ALNJ wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zALNJ Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
                            If you are not making use of the ALNJ-QT or GUI you can simply open
-                           your alnj.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your alnjl.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           You can read more about zALNJ in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://ALNJ.org/zalnj/&apos;&gt; &quot;ALNJ Zerocoin (zALNJ) Technical Paper&quot;&lt;/a&gt;.
-                           If you would like to keep and stake your zALNJ, please read the &quot;How do I stake&quot;
+                           You can read more about zPIV in the
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjlite.com/zalnj/&apos;&gt; &quot;ALNJ Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5295,17 +5372,17 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+21"/>
-        <source>How do I receive ALNJ/zALNJ?</source>
+        <source>How do I receive ALNJ/zPIV?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zALNJ can be spent and sent to any ALNJ address. The receiver will
-                           receive standard ALNJ but the origin of the ALNJ is anonymized by the zALNJ Protocol.
+                           zPIV can be spent and sent to any ALNJ address. The receiver will
+                           receive standard ALNJ but the origin of the ALNJ is anonymized by the zPIV Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           If you want more zALNJ you will need to mint your balance in the “Privacy” tab.
+                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5317,7 +5394,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake ALNJ/zALNJ?</source>
+        <source>How do I stake ALNJ/zPIV?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5329,21 +5406,21 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of ALNJ with a minimum of 600 confirmations.
+                           You must have a balance of ALNJ with a minimum of 101 confirmations.
                            &lt;li&gt;
-                           Your wallet must stay online and be unlocked for staking purposes.
+                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (alnj-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (alnjl-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake zALNJ:
+                           To Stake zPIV:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zALNJ balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -5353,39 +5430,24 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+91"/>
-        <source>Where should I go if I need support?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+99"/>
-        <source>What is a Masternode?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+131"/>
-        <source>What is a Masternode Controller?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 ALNJ collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-274"/>
+        <location line="+73"/>
         <source>8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+18"/>
+        <source>Where I should go if I need support?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://discord.ALNJ.org&apos;&gt;
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://discord.alnjlite.com&apos;&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://ALNJ.freshdesk.com&apos;&gt;
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://alnjlite.freshdesk.com&apos;&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5397,11 +5459,16 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+18"/>
+        <source>What is a Master Node?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            A masternode is a computer running a full node ALNJ core wallet with a
-                           requirement of 10,000 ALNJ secured collateral to provide extra services
+                           requirement of 1,00,000 ALNJ secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -5433,7 +5500,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 ALNJ per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;1,00,000 ALNJ per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -5448,7 +5515,17 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsfaqwidget.cpp" line="+19"/>
+        <location line="+18"/>
+        <source>What is a Master Node Controller?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 1,00,000 ALNJ collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../alnjl/settings/settingsfaqwidget.cpp" line="+19"/>
         <source>Frequently Asked Questions</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5458,7 +5535,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+65"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5466,117 +5543,137 @@ There was an error trying to save the address list to %1. Please try again.</sou
 <context>
     <name>SettingsInformationWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsinformationwidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsinformationwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+46"/>
+        <location line="+161"/>
+        <location line="+24"/>
+        <location line="+7"/>
+        <location line="+26"/>
+        <location line="+7"/>
+        <location line="+26"/>
+        <location line="+7"/>
+        <location line="+26"/>
+        <location line="+7"/>
+        <location line="+29"/>
+        <location line="+7"/>
+        <location line="+28"/>
+        <location line="+24"/>
+        <location line="+7"/>
+        <location line="+39"/>
+        <location line="+7"/>
+        <location line="+26"/>
+        <location line="+24"/>
+        <location line="+7"/>
+        <location line="+39"/>
+        <location line="+7"/>
+        <location line="+26"/>
+        <location line="+24"/>
+        <location line="+7"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-536"/>
+        <location filename="../alnjl/settings/settingsinformationwidget.cpp" line="+96"/>
         <source>Network Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-56"/>
+        <location filename="../alnjl/settings/settingsinformationwidget.cpp" line="-67"/>
         <source>Information</source>
         <translation type="unfinished">Information</translation>
     </message>
     <message>
-        <location line="+161"/>
+        <location line="+3"/>
         <source>General</source>
         <translation type="unfinished">General</translation>
     </message>
     <message>
-        <location line="+24"/>
-        <source>Client Version:</source>
+        <location line="+1"/>
+        <source>Client Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+78"/>
-        <source>BerkeleyDB version:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+39"/>
-        <source>Datadir:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+42"/>
-        <source>Startup time:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+104"/>
-        <source>Connections:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+52"/>
-        <source>Number of Masternodes:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+63"/>
-        <source>Current number of blocks:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+39"/>
-        <source>Last block time:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+52"/>
-        <source>Last block hash:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+63"/>
-        <source>Current number of transactions:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-493"/>
+        <location line="+1"/>
         <source>User Agent:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+161"/>
+        <location line="+1"/>
+        <source>Using BerkeleyDB version:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Datadir: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Startup Time:  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Network</source>
         <translation type="unfinished">Network</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+1"/>
         <source>Name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+1"/>
+        <source>Number Connections:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Blockchain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+154"/>
+        <location line="+1"/>
+        <source>Current Number of Blocks:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Last Block Time:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Memory Pool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsinformationwidget.cpp" line="+72"/>
+        <location line="+3"/>
+        <source>Current Number of Transactions:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/forms/settingsinformationwidget.ui" line="-587"/>
+        <location line="+10"/>
         <source>Wallet Conf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-28"/>
+        <location line="+2"/>
         <source>Backups</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsinformationwidget.cpp" line="+22"/>
+        <location line="+11"/>
         <source>No information</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5587,11 +5684,11 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to open alnj.conf with default application</source>
+        <source>Unable to open alnjl.conf with default application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+27"/>
         <source>In:</source>
         <translation type="unfinished">In:</translation>
     </message>
@@ -5604,7 +5701,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
 <context>
     <name>SettingsMainOptionsWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5634,7 +5731,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+40"/>
-        <location filename="../alnj/settings/settingsmainoptionswidget.cpp" line="+81"/>
+        <location filename="../alnjl/settings/settingsmainoptionswidget.cpp" line="+81"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5645,12 +5742,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+38"/>
-        <location filename="../alnj/settings/settingsmainoptionswidget.cpp" line="-1"/>
+        <location filename="../alnjl/settings/settingsmainoptionswidget.cpp" line="-1"/>
         <source>SAVE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsmainoptionswidget.cpp" line="-31"/>
+        <location filename="../alnjl/settings/settingsmainoptionswidget.cpp" line="-31"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5701,7 +5798,7 @@ Are you sure?
 <context>
     <name>SettingsMultisendDialog</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsmultisenddialog.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsmultisenddialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5728,18 +5825,18 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsmultisenddialog.cpp" line="+24"/>
+        <location filename="../alnjl/settings/settingsmultisenddialog.cpp" line="+24"/>
         <source>New recipient for multisend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Address Label (optional)</source>
+        <source>Label (optional)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter label to be saved with this address</source>
+        <source>Enter a label to add this address in your address book</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5751,7 +5848,7 @@ Are you sure?
 <context>
     <name>SettingsMultisendWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingsmultisendwidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingsmultisendwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5763,8 +5860,8 @@ Are you sure?
     </message>
     <message>
         <location line="+228"/>
-        <source>N/A</source>
-        <translation type="unfinished">N/A</translation>
+        <source>No active Master Node yet</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+50"/>
@@ -5773,7 +5870,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingsmultisendwidget.cpp" line="+164"/>
+        <location filename="../alnjl/settings/settingsmultisendwidget.cpp" line="+156"/>
         <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ALNJ addresses after it matures.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5813,12 +5910,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+51"/>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+15"/>
+        <location line="+57"/>
         <source>Clear succeed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5828,12 +5920,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="+27"/>
         <source>The entered address: %1 is invalid.
 Please check the address and try again.</source>
         <translation type="unfinished"></translation>
@@ -5849,12 +5936,12 @@ Please check the address and try again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+17"/>
         <source>Error saving  MultiSend, failed saving properties to the database.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+14"/>
         <source>Unable to activate MultiSend, no available recipients</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5880,7 +5967,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source>MultiSend deactivated but writing settings to DB failed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5893,7 +5980,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsSignMessageWidgets</name>
     <message>
-        <location filename="../alnj/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5913,12 +6000,22 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished">Clear</translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingssignmessagewidgets.cpp" line="+35"/>
+        <location filename="../alnjl/settings/settingssignmessagewidgets.cpp" line="+35"/>
         <source>Sign/Verify Message</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+7"/>
+        <source>Enter a ALNJ address or contact label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Add address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Sign</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5938,39 +6035,29 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished">Message</translation>
     </message>
     <message>
-        <location line="-19"/>
-        <source>ALNJ address or contact label</source>
+        <location line="+4"/>
+        <source>Write a message</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Enter address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+19"/>
-        <source>Write message</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <location line="+2"/>
         <source>Signature</source>
         <translation type="unfinished">Signature</translation>
     </message>
     <message>
         <location line="+9"/>
-        <location line="+45"/>
+        <location line="+41"/>
         <source>SIGN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-40"/>
         <source>CLEAR ALL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+39"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
@@ -5985,7 +6072,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+44"/>
         <location line="+55"/>
         <source>The entered address is invalid.</source>
         <translation type="unfinished">The entered address is invalid.</translation>
@@ -6051,7 +6138,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished">Message verified.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+6"/>
         <source>No addresses available, you can go to the receive screen and add some there!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6059,7 +6146,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWalletOptionsWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6067,7 +6154,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <location line="+51"/>
         <location line="+7"/>
         <location line="+35"/>
-        <location line="+127"/>
+        <location line="+124"/>
         <location line="+7"/>
         <location line="+101"/>
         <location line="+43"/>
@@ -6088,7 +6175,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+139"/>
-        <location filename="../alnj/settings/settingswalletoptionswidget.cpp" line="+69"/>
+        <location filename="../alnjl/settings/settingswalletoptionswidget.cpp" line="+69"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6098,7 +6185,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingswalletoptionswidget.cpp" line="-43"/>
+        <location filename="../alnjl/settings/settingswalletoptionswidget.cpp" line="-43"/>
         <source>Wallet</source>
         <translation type="unfinished">Wallet</translation>
     </message>
@@ -6171,7 +6258,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWalletRepairWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6189,7 +6276,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingswalletrepairwidget.cpp" line="+22"/>
+        <location filename="../alnjl/settings/settingswalletrepairwidget.cpp" line="+22"/>
         <source>Wallet Repair</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6297,38 +6384,38 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWidget</name>
     <message>
-        <location filename="../alnj/settings/forms/settingswidget.ui" line="+14"/>
+        <location filename="../alnjl/settings/forms/settingswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+255"/>
+        <location line="+58"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+155"/>
         <source>Wallet Data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
-        <location line="+321"/>
+        <location line="+48"/>
+        <location line="+267"/>
         <source>Wallet</source>
         <translation type="unfinished">Wallet</translation>
     </message>
     <message>
-        <location line="-293"/>
+        <location line="-239"/>
         <source>Multisend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+28"/>
-        <source>Export Accounting</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+55"/>
+        <location line="+42"/>
         <source>Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+48"/>
         <source>Sign/Verify Message</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6343,7 +6430,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished">Options</translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+48"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6358,7 +6445,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+48"/>
         <source>Information</source>
         <translation type="unfinished">Information</translation>
     </message>
@@ -6378,7 +6465,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+48"/>
         <source>FAQ</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6388,12 +6475,12 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-870"/>
+        <location filename="../alnjl/settings/settingswidget.cpp" line="+47"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/settings/settingswidget.cpp" line="+220"/>
+        <location line="+150"/>
         <source>Confirm options reset</source>
         <translation type="unfinished">Confirm options reset</translation>
     </message>
@@ -6444,7 +6531,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+169"/>
         <source>Discard Unsaved Changes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6460,7 +6547,7 @@ Are you sure?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <location filename="../utilitydialog.cpp" line="+71"/>
+        <location filename="../utilitydialog.cpp" line="+70"/>
         <source>ALNJ Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6473,7 +6560,7 @@ Are you sure?
 <context>
     <name>SnackBar</name>
     <message>
-        <location filename="../alnj/forms/snackbar.ui" line="+26"/>
+        <location filename="../alnjl/forms/snackbar.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6486,7 +6573,7 @@ Are you sure?
 <context>
     <name>Splash</name>
     <message>
-        <location filename="../alnj/forms/splash.ui" line="+26"/>
+        <location filename="../alnjl/forms/splash.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6496,7 +6583,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/splash.cpp" line="+29"/>
+        <location filename="../alnjl/splash.cpp" line="+29"/>
         <source>ALNJ Core</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6537,7 +6624,7 @@ Are you sure?
 <context>
     <name>TooltipMenu</name>
     <message>
-        <location filename="../alnj/forms/tooltipmenu.ui" line="+26"/>
+        <location filename="../alnjl/forms/tooltipmenu.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6565,36 +6652,67 @@ Are you sure?
 <context>
     <name>TopBar</name>
     <message>
-        <location filename="../alnj/forms/topbar.ui" line="+26"/>
+        <location filename="../alnjl/forms/topbar.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+378"/>
-        <location line="+121"/>
-        <location filename="../alnj/topbar.cpp" line="+634"/>
+        <location line="+96"/>
+        <location line="+279"/>
+        <source>480.0685 ALNJ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-210"/>
+        <location line="+321"/>
+        <source>1,000 zPIV</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-118"/>
+        <location line="+111"/>
         <source>Available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-98"/>
-        <location line="+121"/>
+        <location line="-88"/>
+        <location line="+111"/>
         <source>Pending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-87"/>
-        <location line="+121"/>
+        <location line="-104"/>
+        <source>6.943 ALNJ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <location line="+111"/>
         <source>Immature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/topbar.cpp" line="-362"/>
+        <location line="-104"/>
+        <source>10 ALNJ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>60 zPIV</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>10 zPIV</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../alnjl/topbar.cpp" line="+240"/>
         <source>Wallet Unlocked for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+28"/>
         <source>Error generating address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6604,17 +6722,27 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+79"/>
-        <source>Staking active</source>
+        <location line="+73"/>
+        <source>Automint enabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
+        <source>Automint disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Staking active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Staking not active</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="+31"/>
+        <location line="+20"/>
         <source>%n active connection(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -6623,7 +6751,7 @@ Are you sure?
     </message>
     <message>
         <location line="+34"/>
-        <source>Synchronized - Block: %1</source>
+        <source>Synchronized</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -6663,104 +6791,6 @@ Are you sure?
             <numerusform>%n year</numerusform>
             <numerusform>%n years</numerusform>
         </translation>
-    </message>
-    <message>
-        <location line="+20"/>
-        <source>Wallet Upgrade</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Upgrading to HD wallet will improve
-the wallet&apos;s reliability and security.
-
-
-NOTE: after the upgrade, a new
-backup will be created.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Upgrade Wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Wallet unlock cancelled</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+49"/>
-        <source>Tor Active: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Tor Disabled</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+57"/>
-        <source>Available (Locked included)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+60"/>
-        <source>The wallet has been successfully upgraded to HD.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>It is advised to make a backup.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Do you wish to backup now?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Backup Wallet</source>
-        <translation type="unfinished">Backup Wallet</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Wallet Data (*.dat)</source>
-        <translation type="unfinished">Wallet Data (*.dat)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Backup created</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <location line="+2"/>
-        <source>Backup creation failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>no file selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Wallet upgraded successfully, but no backup created.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>WARNING: remember to make a copy of your wallet.dat file!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <location line="+20"/>
-        <source>Upgrade Wallet Error</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7026,7 +7056,7 @@ backup will be created.
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+314"/>
+        <location filename="../transactiontablemodel.cpp" line="+292"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -7104,13 +7134,18 @@ backup will be created.
         <translation>Received from</translation>
     </message>
     <message>
+        <location line="+2"/>
+        <source>Received via Obfuscation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+7"/>
         <source>ALNJ Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>zALNJ Stake</source>
+        <source>zPIV Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7119,77 +7154,97 @@ backup will be created.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+2"/>
+        <source>ALNJ Stake in behalf of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Stake delegation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Converted ALNJ to zALNJ</source>
+        <location line="+4"/>
+        <source>Obfuscation Denominate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zALNJ</source>
+        <source>Obfuscation Collateral Payment</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received ALNJ from zALNJ</source>
+        <source>Obfuscation Make Collateral Inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zALNJ from zALNJ Spend</source>
+        <source>Obfuscation Create Denominations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Converted ALNJ to zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zALNJ to ALNJ</source>
+        <source>Spent zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-29"/>
+        <location line="+2"/>
+        <source>Received ALNJ from zPIV</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Minted Change as zPIV from zPIV Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Converted zPIV to ALNJ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-35"/>
         <source>Sent to</source>
         <translation>Sent to</translation>
     </message>
     <message>
-        <location line="-42"/>
+        <location line="-44"/>
         <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+46"/>
         <source>Payment to yourself</source>
         <translation>Payment to yourself</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>ALNJ Stake on behalf of</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Stake delegation spent by</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="+13"/>
         <source>Mined</source>
         <translation>Mined</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+10"/>
+        <source>Obfuscated</source>
+        <translation>Obfuscated</translation>
+    </message>
+    <message>
+        <location line="+43"/>
         <source>watch-only</source>
         <translation>watch-only</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+23"/>
         <source>Anonymous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+11"/>
         <source>No information</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7232,93 +7287,128 @@ backup will be created.
 <context>
     <name>TxDetailDialog</name>
     <message>
-        <location filename="../alnj/forms/sendconfirmdialog.ui" line="+26"/>
+        <location filename="../alnjl/forms/sendconfirmdialog.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+90"/>
-        <location filename="../alnj/sendconfirmdialog.cpp" line="+73"/>
+        <location filename="../alnjl/sendconfirmdialog.cpp" line="+74"/>
         <source>Transaction Details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+418"/>
+        <location line="+163"/>
+        <source>ID:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>Sending to: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+96"/>
         <source>Total amount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+117"/>
+        <location line="+7"/>
+        <source>2 ALNJ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Coin inputs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>1 Inputs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
         <source>Previous Transaction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="+7"/>
         <source>Output Index</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+167"/>
+        <location line="+41"/>
+        <source>Fee:</source>
+        <translation type="unfinished">Fee:</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>0.0001 ALNJ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Change address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+103"/>
+        <location line="+38"/>
+        <source>Confirmations:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>2 kB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Date:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>May 25, 2017</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-621"/>
-        <source>ID</source>
+        <location line="+38"/>
+        <source>Status:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+101"/>
-        <source>Sending to</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+168"/>
-        <source>Coin inputs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+146"/>
-        <source>Fee</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+34"/>
-        <source>Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+62"/>
-        <source>Change address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+42"/>
+        <location line="+7"/>
         <source>Spendable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>Confirmations</source>
-        <translation type="unfinished">Confirmations</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Status</source>
-        <translation type="unfinished">Status</translation>
-    </message>
-    <message>
         <location line="+26"/>
-        <source>Date</source>
-        <translation type="unfinished">Date</translation>
-    </message>
-    <message>
-        <location line="+55"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7333,7 +7423,7 @@ backup will be created.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/sendconfirmdialog.cpp" line="-21"/>
+        <location filename="../alnjl/sendconfirmdialog.cpp" line="-26"/>
         <source>Confirm Your Transaction</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7343,12 +7433,12 @@ backup will be created.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+63"/>
         <source>ID copied</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+96"/>
+        <location line="+91"/>
         <source>Unknown</source>
         <translation type="unfinished">Unknown</translation>
     </message>
@@ -7356,7 +7446,7 @@ backup will be created.
 <context>
     <name>TxRow</name>
     <message>
-        <location filename="../alnj/forms/txrow.ui" line="+20"/>
+        <location filename="../alnjl/forms/txrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -7379,23 +7469,58 @@ backup will be created.
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+503"/>
-        <location line="+18"/>
+        <location filename="../walletmodel.cpp" line="+434"/>
+        <location line="+9"/>
         <location line="+9"/>
         <source>Send Coins</source>
         <translation>Send Coins</translation>
     </message>
     <message>
-        <location line="-27"/>
-        <location line="+18"/>
+        <location line="-18"/>
+        <location line="+9"/>
         <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 ALNJ.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WalletPasswordDialog</name>
+    <message>
+        <location filename="../alnjl/forms/walletpassworddialog.ui" line="+14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <location line="+115"/>
+        <location line="+113"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-156"/>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+222"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>WelcomeContentWidget</name>
     <message>
-        <location filename="../alnj/forms/welcomecontentwidget.ui" line="+244"/>
+        <location filename="../alnjl/forms/welcomecontentwidget.ui" line="+14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+230"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7471,16 +7596,16 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../alnj/welcomecontentwidget.cpp" line="+178"/>
+        <location filename="../alnjl/welcomecontentwidget.cpp" line="+173"/>
         <source>default</source>
         <translation type="unfinished">default</translation>
     </message>
 </context>
 <context>
-    <name>ZAlngControlDialog</name>
+    <name>ZPivControlDialog</name>
     <message>
         <location filename="../forms/zalnjcontroldialog.ui" line="+20"/>
-        <source>Select zALNJ to Spend</source>
+        <source>Select zPIV to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7495,7 +7620,7 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>zAlng</source>
+        <source>zPiv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7524,15 +7649,15 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../zalnjcontroldialog.cpp" line="+38"/>
-        <source>Select zALNJ Denominations to Spend</source>
+        <location filename="../zalnjcontroldialog.cpp" line="+39"/>
+        <source>Select zPIV Denominations to Spend</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>alnj-core</name>
+    <name>alnjl-core</name>
     <message>
-        <location filename="../alnjstrings.cpp" line="+15"/>
+        <location filename="../alnjlstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -7558,6 +7683,11 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+4"/>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Cannot obtain a lock on data directory %s. ALNJ Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7593,6 +7723,16 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+5"/>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7603,7 +7743,7 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zALNJ inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7627,17 +7767,12 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+11"/>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</source>
         <translation type="unfinished">Error: Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation type="unfinished">Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</translation>
     </message>
@@ -7728,6 +7863,11 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation type="unfinished">Output debugging information (default: %u, supplying &lt;category&gt; is optional)</translation>
     </message>
@@ -7758,6 +7898,11 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
+        <source>Set the number of included blocks to precompute per cycle. (minimum: %d) (maximum: %d) (default: %d)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation type="unfinished">Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</translation>
     </message>
@@ -7772,7 +7917,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished">Show N confirmations for a successfully locked transaction (0-9999, default: %u)</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+12"/>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7798,6 +7943,21 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ALNJ.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ALNJ.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation type="unfinished">Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</translation>
     </message>
@@ -7813,6 +7973,11 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer&apos;s date and time are correct! If your clock is wrong ALNJ Core will not work properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ALNJ Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7853,8 +8018,8 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>(51472 could be used only on mainnet)</source>
-        <translation type="unfinished">(51472 could be used only on mainnet)</translation>
+        <source>(8233 could be used only on mainnet)</source>
+        <translation type="unfinished">(8233 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7868,7 +8033,7 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 51472 for mainnet)</source>
+        <source>(must be 8233 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7890,6 +8055,11 @@ ALNJ Core Wallet</source>
         <location line="+1"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation type="unfinished">Add a node to connect to and attempt to keep the connection open</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Adding Wrapped Serials supply...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7922,12 +8092,37 @@ ALNJ Core Wallet</source>
         <translation type="unfinished">Block creation options:</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Calculating missing accumulators...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+2"/>
         <source>Cannot downgrade wallet</source>
         <translation type="unfinished">Cannot downgrade wallet</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="unfinished">Cannot resolve -bind address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="unfinished">Cannot resolve -externalip address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -whitebind address: &apos;%s&apos;</source>
+        <translation type="unfinished">Cannot resolve -whitebind address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>CoinSpend: failed check</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Connect only to the specified node(s)</source>
         <translation type="unfinished">Connect only to the specified node(s)</translation>
     </message>
@@ -7973,6 +8168,11 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
+        <source>Couldn&apos;t generate the accumulator witness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Debugging/Testing options:</source>
         <translation type="unfinished">Debugging/Testing options:</translation>
     </message>
@@ -8010,6 +8210,16 @@ ALNJ Core Wallet</source>
         <location line="+1"/>
         <source>Done loading</source>
         <translation type="unfinished">Done loading</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable precomputation of zPIV spends and stakes (0-1, default %u)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -8078,11 +8288,6 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation type="unfinished">Error: A fatal internal error occured, see debug.log for details</translation>
     </message>
@@ -8102,7 +8307,12 @@ ALNJ Core Wallet</source>
         <translation type="unfinished">Error: Wallet locked, unable to create transaction!</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation type="unfinished">Failed to listen on any port. Use -listen=0 if you want this.</translation>
     </message>
@@ -8187,9 +8397,34 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</source>
         <translation type="unfinished">Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -8212,17 +8447,32 @@ ALNJ Core Wallet</source>
         <translation type="unfinished">Invalid port detected in masternode.conf</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+32"/>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Recalculating ALNJ supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Reindex the ALNJ and zALNJ money supply statistics</source>
+        <source>Recalculating minted ZPIV...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Recalculating spent ZPIV...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reindex the ALNJ and zPIV money supply statistics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Reindexing zerocoin database...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8237,17 +8487,22 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+27"/>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>SwiftX options:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-217"/>
+        <location line="-247"/>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-175"/>
+        <location line="-189"/>
         <source> mints deleted
 </source>
         <translation type="unfinished"></translation>
@@ -8264,7 +8519,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+38"/>
         <source>Disable all ALNJ specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8274,17 +8529,22 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+22"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+14"/>
         <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8299,32 +8559,47 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+37"/>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+6"/>
         <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+70"/>
         <source>&lt;category&gt; can be:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Attempt to force blockchain corruption recovery</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Cannot create public spend input</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+5"/>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
         <source>Display the stake modifier calculations in the debug.log file.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8334,7 +8609,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>Enable publish hash block in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8359,7 +8634,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+13"/>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8369,7 +8644,12 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
+        <source>Failed to create mint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Failed to find Zerocoins in wallet.dat</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8394,12 +8674,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+15"/>
-        <source>Invalid amount for -%s=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="+25"/>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation type="unfinished">Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
     </message>
@@ -8430,11 +8705,6 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Loading banlist...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Loading block index...</source>
         <translation type="unfinished">Loading block index...</translation>
     </message>
@@ -8460,6 +8730,11 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation type="unfinished">Loading wallet... (%3.2f %%)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Loading wallet...</source>
         <translation type="unfinished">Loading wallet...</translation>
     </message>
@@ -8476,11 +8751,6 @@ ALNJ Core Wallet</source>
     <message>
         <location line="+1"/>
         <source>Lookup(): Invalid -proxy address or hostname: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>MNs synchronization pending...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8535,11 +8805,6 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>On first run, create a legacy wallet instead of a HD wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
         <translation type="unfinished">Only accept block chain matching built-in checkpoints (default: %u)</translation>
     </message>
@@ -8559,12 +8824,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished">Password for JSON-RPC connections</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Peers are being disconnected due time differences.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+69"/>
+        <location line="+80"/>
         <source>Unable to find transaction containing mint %s</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8574,47 +8834,32 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+9"/>
         <source>Use block spam filter (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>isValid(): Invalid -proxy address or hostname: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-101"/>
-        <source>Preparing for resync...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-213"/>
-        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong ALNJ Core will not work properly.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+28"/>
-        <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+77"/>
-        <source>Cannot resolve -%s address: &apos;%s&apos;</source>
+        <location line="+20"/>
+        <source>could not get lock on cs_spendcache</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot upgrade to HD wallet (already running HD support). Version: %d</source>
+        <source>isValid(): Invalid -proxy address or hostname: &apos;%s&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="-109"/>
+        <source>Preparing for resync...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-11"/>
         <source>Need destination or change address because change is not exact</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+12"/>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation type="unfinished">Prepend debug output with timestamp (default: %u)</translation>
     </message>
@@ -8649,7 +8894,17 @@ ALNJ Core Wallet</source>
         <translation type="unfinished">Rebuild block chain index from current blk000??.dat files</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation type="unfinished">Receive and display P2P network alerts (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reindex the accumulator database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Relay and mine data carrier transactions (default: %u)</source>
         <translation type="unfinished">Relay and mine data carrier transactions (default: %u)</translation>
     </message>
@@ -8692,6 +8947,11 @@ ALNJ Core Wallet</source>
         <location line="+2"/>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation type="unfinished">Send transactions as zero-fee transactions if possible (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Session timed out.</source>
+        <translation type="unfinished">Session timed out.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -8747,6 +9007,11 @@ ALNJ Core Wallet</source>
         <location line="+1"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation type="unfinished">Shrink debug.log file on client startup (default: 1 when no -debug)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Signing timed out.</source>
+        <translation type="unfinished">Signing timed out.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -8809,7 +9074,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished">Stop running after importing blocks from disk (default: %u)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Synchronization failed</source>
         <translation type="unfinished">Synchronization failed</translation>
     </message>
@@ -8817,6 +9082,11 @@ ALNJ Core Wallet</source>
         <location line="+1"/>
         <source>Synchronization finished</source>
         <translation type="unfinished">Synchronization finished</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchronization pending...</source>
+        <translation type="unfinished">Synchronization pending...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -8840,7 +9110,17 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zALNJ wallet...</source>
+        <source>Syncing zPIV wallet...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The coin spend has been used</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The transaction did not verify</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8925,11 +9205,6 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Unable to generate keys</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Unable to sign spork message, wrong key?</source>
         <translation type="unfinished">Unable to sign spork message, wrong key?</translation>
     </message>
@@ -8942,11 +9217,6 @@ ALNJ Core Wallet</source>
         <location line="+1"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation type="unfinished">Unknown network specified in -onlynet: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Unsupported logging category %s=%s.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -8985,7 +9255,7 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zALNJ</source>
+        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9060,16 +9330,11 @@ ALNJ Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Zerocoin options:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>on startup</source>
         <translation type="unfinished">on startup</translation>
     </message>
@@ -9082,7 +9347,7 @@ ALNJ Core Wallet</source>
 <context>
     <name>send</name>
     <message>
-        <location filename="../alnj/forms/send.ui" line="+14"/>
+        <location filename="../alnjl/forms/send.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -9096,7 +9361,7 @@ ALNJ Core Wallet</source>
         <location line="+113"/>
         <location line="+50"/>
         <location line="+23"/>
-        <location line="+293"/>
+        <location line="+280"/>
         <location line="+7"/>
         <location line="+65"/>
         <location line="+7"/>
@@ -9104,12 +9369,7 @@ ALNJ Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-261"/>
-        <source>Include delegated</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+23"/>
+        <location line="-238"/>
         <location line="+29"/>
         <location line="+26"/>
         <location line="+340"/>

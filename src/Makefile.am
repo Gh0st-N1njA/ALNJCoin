@@ -19,8 +19,7 @@ else
 LIBUNIVALUE = $(UNIVALUE_LIBS)
 endif
 
-BITCOIN_CONFIG_INCLUDES=-I$(builddir)/config
-BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
+BITCOIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
 BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
@@ -67,18 +66,19 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += alnjd
+  bin_PROGRAMS += alnjld
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += alnj-cli alnj-tx
+  bin_PROGRAMS += alnjl-cli alnjl-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# alnj core #
+# alnjl core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
+  alert.h \
   allocators.h \
   amount.h \
   base58.h \
@@ -99,12 +99,7 @@ BITCOIN_CORE_H = \
   compat/endian.h \
   compat/sanity.h \
   compressor.h \
-  consensus/consensus.h \
   consensus/merkle.h \
-  consensus/validation.h \
-  consensus/tx_verify.h \
-  consensus/zerocoin_verify.h \
-  consensus/params.h \
   primitives/block.h \
   primitives/transaction.h \
   core_io.h \
@@ -112,6 +107,8 @@ BITCOIN_CORE_H = \
   pairresult.h \
   addressbook.h \
   denomination_functions.h \
+  obfuscation.h \
+  obfuscation-relay.h \
   wallet/db.h \
   hash.h \
   httprpc.h \
@@ -120,15 +117,12 @@ BITCOIN_CORE_H = \
   invalid.h \
   invalid_outpoints.json.h \
   invalid_serials.json.h \
-  legacy/stakemodifier.h \
   kernel.h \
   swifttx.h \
   key.h \
-  key_io.h \
   keystore.h \
   leveldbwrapper.h \
   limitedmap.h \
-  logging.h \
   main.h \
   masternode.h \
   masternode-payments.h \
@@ -154,7 +148,6 @@ BITCOIN_CORE_H = \
   rpc/server.h \
   scheduler.h \
   script/interpreter.h \
-  script/keyorigin.h \
   script/script.h \
   script/sigcache.h \
   script/sign.h \
@@ -175,31 +168,32 @@ BITCOIN_CORE_H = \
   txdb.h \
   txmempool.h \
   guiinterface.h \
-  guiinterfaceutil.h \
   uint256.h \
   undo.h \
-  util/memory.h \
   util.h \
-  util/macros.h \
-  util/threadnames.h \
   utilstrencodings.h \
   utilmoneystr.h \
   utiltime.h \
   validationinterface.h \
   version.h \
-  wallet/hdchain.h \
-  wallet/scriptpubkeyman.h \
   wallet/wallet.h \
   wallet/wallet_ismine.h \
   wallet/walletdb.h \
   zalnjchain.h \
+  zalnj/accumulators.h \
+  zalnj/accumulatorcheckpoints.h \
+  zalnj/accumulatorcheckpoints.json.h \
+  zalnj/accumulatormap.h \
   zalnj/deterministicmint.h \
   zalnj/mintpool.h \
+  zalnj/witness.h \
   zalnj/zerocoin.h \
   zalnj/zalnjtracker.h \
   zalnj/zalnjwallet.h \
   zalnj/zalnjmodule.h \
-  zalnj/zpos.h \
+  genwit.h \
+  concurrentqueue.h \
+  lightzalnjthread.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -211,17 +205,16 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between alnjd and alnj-qt
+# server: shared between alnjld and alnjl-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
+  alert.cpp \
   bloom.cpp \
   blocksignature.cpp \
   chain.cpp \
   checkpoints.cpp \
-  consensus/tx_verify.cpp \
-  consensus/zerocoin_verify.cpp \
   httprpc.cpp \
   httpserver.cpp \
   init.cpp \
@@ -260,7 +253,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between alnjd and alnj-qt, but only linked
+# wallet: shared between alnjld and alnjl-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -268,9 +261,11 @@ libbitcoin_wallet_a_SOURCES = \
   activemasternode.cpp \
   bip38.cpp \
   denomination_functions.cpp \
+  obfuscation.cpp \
+  obfuscation-relay.cpp \
+  wallet/db.cpp \
   addressbook.cpp \
   crypter.cpp \
-  key_io.cpp \
   swifttx.cpp \
   masternode.cpp \
   masternode-budget.cpp \
@@ -279,25 +274,23 @@ libbitcoin_wallet_a_SOURCES = \
   masternodeconfig.cpp \
   masternodeman.cpp \
   messagesigner.cpp \
-  legacy/stakemodifier.cpp \
-  kernel.cpp \
-  wallet/db.cpp \
   wallet/rpcdump.cpp \
   wallet/rpcwallet.cpp \
-  wallet/hdchain.cpp \
-  wallet/scriptpubkeyman.cpp \
+  kernel.cpp \
   wallet/wallet.cpp \
   wallet/wallet_ismine.cpp \
-  wallet/wallet_zerocoin.cpp \
   wallet/walletdb.cpp \
   zalnj/deterministicmint.cpp \
   zalnj/zerocoin.cpp \
+  zalnj/accumulators.cpp \
   zalnj/mintpool.cpp \
+  zalnj/witness.cpp \
   zalnj/zalnjwallet.cpp \
   zalnj/zalnjtracker.cpp \
   stakeinput.cpp \
+  genwit.cpp \
   zalnj/zalnjmodule.cpp \
-  zalnj/zpos.cpp \
+  lightzalnjthread.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
@@ -343,6 +336,7 @@ libzerocoin_libbitcoin_zerocoin_a_CPPFLAGS = $(AM_CPPFLAGS) $(BOOST_CPPFLAGS)
 libzerocoin_libbitcoin_zerocoin_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Accumulator.h \
+  libzerocoin/AccumulatorProofOfKnowledge.h \
   libzerocoin/bignum.h \
   libzerocoin/Coin.h \
   libzerocoin/CoinRandomnessSchnorrSignature.h \
@@ -351,16 +345,20 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Denominations.h \
   libzerocoin/ParamGeneration.h \
   libzerocoin/Params.h \
+  libzerocoin/SerialNumberSignatureOfKnowledge.h \
   libzerocoin/SpendType.h \
   libzerocoin/ZerocoinDefines.h \
   libzerocoin/bignum.cpp \
   libzerocoin/Accumulator.cpp \
+  libzerocoin/AccumulatorProofOfKnowledge.cpp \
   libzerocoin/Coin.cpp \
   libzerocoin/CoinRandomnessSchnorrSignature.cpp \
   libzerocoin/CoinSpend.cpp \
+  libzerocoin/Commitment.cpp \
   libzerocoin/Denominations.cpp \
   libzerocoin/ParamGeneration.cpp \
-  libzerocoin/Params.cpp
+  libzerocoin/Params.cpp \
+  libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 if USE_NUM_GMP
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_gmp.cpp
 endif
@@ -368,10 +366,13 @@ if USE_NUM_OPENSSL
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_openssl.cpp
 endif
 
-# common: shared between alnjd, and alnj-qt and non-server tools
+# common: shared between alnjld, and alnjl-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
+  zalnj/accumulators.cpp \
+  zalnj/accumulatorcheckpoints.cpp \
+  zalnj/accumulatormap.cpp \
   allocators.cpp \
   amount.cpp \
   base58.cpp \
@@ -415,7 +416,6 @@ libbitcoin_util_a_SOURCES = \
   compat/glibc_sanity.cpp \
   compat/glibcxx_sanity.cpp \
   compat/strnlen.cpp \
-  logging.cpp \
   random.cpp \
   rpc/protocol.cpp \
   support/cleanse.cpp \
@@ -423,7 +423,6 @@ libbitcoin_util_a_SOURCES = \
   uint256.cpp \
   util.cpp \
   utilmoneystr.cpp \
-  util/threadnames.cpp \
   utilstrencodings.cpp \
   utiltime.cpp \
   $(BITCOIN_CORE_H)
@@ -433,7 +432,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between alnj-cli and alnj-qt
+# cli: shared between alnjl-cli and alnjl-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -443,16 +442,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# alnjd binary #
-alnjd_SOURCES = alnjd.cpp
-alnjd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-alnjd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-alnjd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# alnjld binary #
+alnjld_SOURCES = alnjld.cpp
+alnjld_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+alnjld_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+alnjld_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-alnjd_SOURCES += alnjd-res.rc
+alnjld_SOURCES += alnjld-res.rc
 endif
-alnjd_LDADD = \
+alnjld_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -466,38 +465,38 @@ alnjd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-alnjd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+alnjld_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# alnj-cli binary #
-alnj_cli_SOURCES = alnj-cli.cpp
-alnj_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-alnj_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-alnj_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# alnjl-cli binary #
+alnjl_cli_SOURCES = alnjl-cli.cpp
+alnjl_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+alnjl_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+alnjl_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-alnj_cli_SOURCES += alnj-cli-res.rc
+alnjl_cli_SOURCES += alnjl-cli-res.rc
 endif
 
-alnj_cli_LDADD = \
+alnjl_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-alnj_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+alnjl_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# alnj-tx binary #
-alnj_tx_SOURCES = alnj-tx.cpp
-alnj_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-alnj_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-alnj_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# alnjl-tx binary #
+alnjl_tx_SOURCES = alnjl-tx.cpp
+alnjl_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+alnjl_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+alnjl_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-alnj_tx_SOURCES += alnj-tx-res.rc
+alnjl_tx_SOURCES += alnjl-tx-res.rc
 endif
 
-alnj_tx_LDADD = \
+alnjl_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -505,7 +504,7 @@ alnj_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-alnj_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+alnjl_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
@@ -544,7 +543,6 @@ CLEANFILES = $(EXTRA_LIBRARIES)
 
 CLEANFILES += *.gcda *.gcno
 CLEANFILES += compat/*.gcda compat/*.gcno
-CLEANFILES += consensus/*.gcda consensus/*.gcno
 CLEANFILES += crypto/*.gcda crypto/*.gcno
 CLEANFILES += libzerocoin/*.gcda libzerocoin/*.gcno
 CLEANFILES += primitives/*.gcda primitives/*.gcno
@@ -561,12 +559,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST =
 
 
-config/alnj-config.h: config/stamp-h1
+config/alnjl-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/alnj-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/alnjl-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/alnj-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/alnj-config.h.in
+$(top_srcdir)/$(subdir)/config/alnjl-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/alnjl-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

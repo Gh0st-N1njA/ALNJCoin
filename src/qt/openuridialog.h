@@ -1,4 +1,5 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +7,7 @@
 #define BITCOIN_QT_OPENURIDIALOG_H
 
 #include <QDialog>
-#include "qt/alnj/snackbar.h"
+#include "qt/alnjl/snackbar.h"
 
 namespace Ui
 {
@@ -24,10 +25,10 @@ public:
     QString getURI();
     void showEvent(QShowEvent *event) override;
 
-protected Q_SLOTS:
+protected slots:
     void accept() override;
 
-private Q_SLOTS:
+private slots:
     void on_selectFileButton_clicked();
 
 private:

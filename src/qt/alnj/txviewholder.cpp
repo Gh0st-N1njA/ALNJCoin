@@ -1,9 +1,10 @@
-// Copyright (c) 2019 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/alnj/txviewholder.h"
-#include "qt/alnj/qtutils.h"
+#include "qt/alnjl/txviewholder.h"
+#include "qt/alnjl/qtutils.h"
 #include "transactiontablemodel.h"
 #include <QModelIndex>
 
@@ -28,8 +29,8 @@ void TxViewHolder::init(QWidget* holder,const QModelIndex &index, bool isHovered
     int type = rIndex.data(TransactionTableModel::TypeRole).toInt();
 
     if(type != TransactionRecord::ZerocoinMint &&
-            type !=  TransactionRecord::ZerocoinSpend_Change_zAlng &&
-            type !=  TransactionRecord::StakeZALNJ &&
+            type !=  TransactionRecord::ZerocoinSpend_Change_zPiv &&
+            type !=  TransactionRecord::StakeZPIV &&
             type != TransactionRecord::Other){
         QString address = rIndex.data(Qt::DisplayRole).toString();
         if(address.length() > 20) {

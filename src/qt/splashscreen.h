@@ -1,3 +1,4 @@
+// Copyright (c) 2019-2023 The ALNJ developers
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -27,7 +28,7 @@ protected:
     void paintEvent(QPaintEvent* event);
     void closeEvent(QCloseEvent* event);
 
-public Q_SLOTS:
+public slots:
     /** Slot to call finish() method as it's not defined as slot */
     void slotFinish(QWidget* mainWin);
 

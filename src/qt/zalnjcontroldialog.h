@@ -1,9 +1,10 @@
-// Copyright (c) 2017-2020 The ALNJ developers
+// Copyright (c) 2019-2023 The ALNJ developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZALNJCONTROLDIALOG_H
-#define ZALNJCONTROLDIALOG_H
+#ifndef ZPIVCONTROLDIALOG_H
+#define ZPIVCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -13,26 +14,26 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZAlngControlDialog;
+class ZPivControlDialog;
 }
 
-class CZAlngControlWidgetItem : public QTreeWidgetItem
+class CZPivControlWidgetItem : public QTreeWidgetItem
 {
 public:
-    explicit CZAlngControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
-    explicit CZAlngControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
-    explicit CZAlngControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZPivControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZPivControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CZPivControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
 
     bool operator<(const QTreeWidgetItem &other) const;
 };
 
-class ZAlngControlDialog : public QDialog
+class ZPivControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZAlngControlDialog(QWidget *parent);
-    ~ZAlngControlDialog();
+    explicit ZPivControlDialog(QWidget *parent);
+    ~ZPivControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -41,7 +42,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZAlngControlDialog *ui;
+    Ui::ZPivControlDialog *ui;
     WalletModel* model;
 
     void updateList();
@@ -52,14 +53,15 @@ private:
         COLUMN_DENOMINATION,
         COLUMN_PUBCOIN,
         COLUMN_VERSION,
+        COLUMN_PRECOMPUTE,
         COLUMN_CONFIRMATIONS,
         COLUMN_ISSPENDABLE
     };
-    friend class CZAlngControlWidgetItem;
+    friend class CZPivControlWidgetItem;
 
-private Q_SLOTS:
+private slots:
     void updateSelection(QTreeWidgetItem* item, int column);
     void ButtonAllClicked();
 };
 
-#endif // ZALNJCONTROLDIALOG_H
+#endif // ZPIVCONTROLDIALOG_H
