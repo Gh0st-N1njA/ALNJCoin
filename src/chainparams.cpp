@@ -187,21 +187,21 @@ public:
         consensus.nTime_RejectOldSporkKey = 0;     
 
         // height-based activations
-        consensus.height_last_PoW = 259200;
-        consensus.height_last_ZC_AccumCheckpoint = 259201;
-        consensus.height_last_ZC_WrappedSerials = 259201;
-        consensus.height_start_BIP65 = 259201;             
-        consensus.height_start_InvalidUTXOsCheck = 259201;
-        consensus.height_start_MessSignaturesV2 = 259201;  
-        consensus.height_start_StakeModifierNewSelection = 259201;
-        consensus.height_start_StakeModifierV2 = 259201;   
-        consensus.height_start_TimeProtoV2 = 259201;       
-        consensus.height_start_ZC = 259201;                 
-        consensus.height_start_ZC_InvalidSerials = 259201;
-        consensus.height_start_ZC_PublicSpends = 259201;
-        consensus.height_start_ZC_SerialRangeCheck = 259201;
-        consensus.height_start_ZC_SerialsV2 = 259201;
-        consensus.height_ZC_RecalcAccumulators = 259201;
+        consensus.height_last_PoW = 250;
+        consensus.height_last_ZC_AccumCheckpoint = 310;     // no checkpoints on regtest
+        consensus.height_last_ZC_WrappedSerials = -1;
+        consensus.height_start_BIP65 = 851019;              // Not defined for regtest. Inherit TestNet value.
+        consensus.height_start_InvalidUTXOsCheck = 999999999;
+        consensus.height_start_MessSignaturesV2 = 1;
+        consensus.height_start_StakeModifierNewSelection = 0;
+        consensus.height_start_StakeModifierV2 = 251;       // start with modifier V2 on regtest
+        consensus.height_start_TimeProtoV2 = 999999999;
+        consensus.height_start_ZC = 300;
+        consensus.height_start_ZC_InvalidSerials = 999999999;
+        consensus.height_start_ZC_PublicSpends = 400;
+        consensus.height_start_ZC_SerialRangeCheck = 300;
+        consensus.height_start_ZC_SerialsV2 = 300;
+        consensus.height_ZC_RecalcAccumulators = 999999999;
 
         // validation by-pass
         consensus.nAlnjBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
