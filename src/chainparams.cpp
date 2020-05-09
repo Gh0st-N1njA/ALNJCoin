@@ -93,7 +93,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256S("0x00000cae85318fb5774bf402d76de12a1c91c4833f01725d0ed05eaba360a151")); //genesis
+    (0, uint256S("0x001")); //genesis
     
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -129,8 +129,8 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
         
-        genesis = CreateGenesisBlock(1588820064, 797425, 0x1e0ffff0, 1, 250 * COIN);
- /*       
+        genesis = CreateGenesisBlock(1588820064, 797425, 0x1e0ffff0, 7, 250 * COIN);
+        
  if(genesis.GetHash() != uint256("0x"))
 {
       printf("MSearching for genesis block...\n");
@@ -155,7 +155,7 @@ public:
       printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
       printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 }
-*/
+
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000cae85318fb5774bf402d76de12a1c91c4833f01725d0ed05eaba360a151"));
         assert(genesis.hashMerkleRoot == uint256S("0x0f86a75bb500322ce8a5aff86969464ee050c52e710f3b6ad66c1dfd8ae111db"));
