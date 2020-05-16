@@ -14,7 +14,7 @@
 #include "ui_addressbookpage.h"
 
 #include "addresstablemodel.h"
-#include "qt/pctm/pivxgui.h"
+#include "qt/pctm/pctmgui.h"
 #include "csvmodelwriter.h"
 #include "editaddressdialog.h"
 #include "guiutil.h"

@@ -116,7 +116,7 @@ SET(QT_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodeltransaction.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zpctmcontroldialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/pivxgui.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/pctmgui.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/pctm/loadingdialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/pctm/pwidget.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/pctm/guitransactionsutils.cpp

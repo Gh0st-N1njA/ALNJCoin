@@ -8,7 +8,7 @@
 #ifndef QTUTILS_H
 #define QTUTILS_H
 
-#include "qt/pctm/pivxgui.h"
+#include "qt/pctm/pctmgui.h"
 
 #include <QAbstractAnimation>
 #include <QColor>

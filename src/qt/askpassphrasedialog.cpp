@@ -17,7 +17,7 @@
 #include "qt/pctm/qtutils.h"
 #include "qt/pctm/loadingdialog.h"
 #include "qt/pctm/defaultdialog.h"
-#include "qt/pctm/pivxgui.h"
+#include "qt/pctm/pctmgui.h"
 #include <QDebug>
 
 #include <QKeyEvent>

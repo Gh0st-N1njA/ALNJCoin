@@ -12,7 +12,7 @@
 #include "qt/pctm/tooltipmenu.h"
 
 #include "qt/pctm/addnewcontactdialog.h"
-#include "qt/pctm/pivxgui.h"
+#include "qt/pctm/pctmgui.h"
 #include "guiutil.h"
 #include "qt/pctm/qtutils.h"
 #include "walletmodel.h"

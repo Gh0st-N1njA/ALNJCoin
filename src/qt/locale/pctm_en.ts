@@ -2590,7 +2590,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
 <context>
     <name>PCTMGUI</name>
     <message>
-        <location filename="../pctm/pivxgui.cpp" line="+70"/>
+        <location filename="../pctm/pctmgui.cpp" line="+70"/>
         <location line="+292"/>
         <location line="+68"/>
         <source>PCTM Core</source>

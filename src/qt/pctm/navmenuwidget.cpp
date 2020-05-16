@@ -7,7 +7,7 @@
 
 #include "qt/pctm/navmenuwidget.h"
 #include "qt/pctm/forms/ui_navmenuwidget.h"
-#include "qt/pctm/pivxgui.h"
+#include "qt/pctm/pctmgui.h"
 #include "qt/pctm/qtutils.h"
 #include "clientversion.h"
 #include "optionsmodel.h"

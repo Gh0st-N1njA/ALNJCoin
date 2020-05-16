@@ -7,7 +7,7 @@
 #include "qt/pctm/tooltipmenu.h"
 #include "qt/pctm/forms/ui_tooltipmenu.h"
 
-#include "qt/pctm/pivxgui.h"
+#include "qt/pctm/pctmgui.h"
 #include "qt/pctm/qtutils.h"
 #include <QTimer>
 
