@@ -531,13 +531,13 @@ link_directories(
         ${CMAKE_SOURCE_DIR}/src/secp256k1/.libs
         )
 
-set(pivx-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pivx-cli.cpp)
+set(pactumcoin-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pactumcoin-cli.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND pivx-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pivx-cli-res.rc)
+    list(APPEND pactumcoin-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pactumcoin-cli-res.rc)
 endif()
-add_executable(pivx-cli ${pivx-cli_SOURCES})
-add_dependencies(pivx-cli libunivalue)
-target_link_libraries(pivx-cli
+add_executable(pactumcoin-cli ${pactumcoin-cli_SOURCES})
+add_dependencies(pactumcoin-cli libunivalue)
+target_link_libraries(pactumcoin-cli
         CLI_A
         univalue
         UTIL_A
@@ -545,16 +545,16 @@ target_link_libraries(pivx-cli
         ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
         )
 if($ENV{target} MATCHES "Windows")
-    target_link_libraries(pivx-cli ${WINDOWS_LDADD})
+    target_link_libraries(pactumcoin-cli ${WINDOWS_LDADD})
 endif()
 
-set(pivx-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pivx-tx.cpp)
+set(pactumcoin-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pactumcoin-tx.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND pivx-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pivx-tx-res.rc)
+    list(APPEND pactumcoin-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pactumcoin-tx-res.rc)
 endif()
-add_executable(pivx-tx ${pivx-tx_SOURCES})
-add_dependencies(pivx-tx libunivalue libsecp256k1)
-target_link_libraries(pivx-tx
+add_executable(pactumcoin-tx ${pactumcoin-tx_SOURCES})
+add_dependencies(pactumcoin-tx libunivalue libsecp256k1)
+target_link_libraries(pactumcoin-tx
         univalue
         COMMON_A
         ZEROCOIN_A
@@ -564,26 +564,26 @@ target_link_libraries(pivx-tx
         ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
         )
 if($ENV{target} MATCHES "Windows")
-    target_link_libraries(pivx-tx ${WINDOWS_LDADD})
+    target_link_libraries(pactumcoin-tx ${WINDOWS_LDADD})
 endif()
 if(GMP_FOUND)
-    target_link_libraries(pivx-tx ${GMP_LIBRARY})
+    target_link_libraries(pactumcoin-tx ${GMP_LIBRARY})
 endif()
 
 link_directories(${CMAKE_BINARY_DIR})
 
-set(pivxd_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pivxd.cpp)
+set(pactumcoind_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pactumcoind.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND pivxd_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pivxd-res.rc)
+    list(APPEND pactumcoind_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/pactumcoind-res.rc)
 endif()
-add_executable(pivxd ${pivxd_SOURCES} ${BitcoinHeaders})
-add_dependencies(pivxd libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
-target_include_directories(pivxd PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
+add_executable(pactumcoind ${pactumcoind_SOURCES} ${BitcoinHeaders})
+add_dependencies(pactumcoind libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
+target_include_directories(pactumcoind PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv
         ${LIBEVENT_INCLUDE_DIR})
-target_link_libraries(pivxd
+target_link_libraries(pactumcoind
         pthread
         SERVER_A
         WALLET_A
@@ -600,22 +600,22 @@ target_link_libraries(pivxd
         )
 if($ENV{target} MATCHES "Windows")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wstack-protector -fstack-protector-all -fPIE -pipe -O2 -pthread -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va -pie --static")
-    target_link_libraries(pivxd ${WINDOWS_LDADD})
+    target_link_libraries(pactumcoind ${WINDOWS_LDADD})
 endif()
 if(GMP_FOUND)
-    target_link_libraries(pivxd ${GMP_LIBRARY})
-    target_include_directories(pivxd PUBLIC ${GMP_INCLUDE_DIR})
+    target_link_libraries(pactumcoind ${GMP_LIBRARY})
+    target_include_directories(pactumcoind PUBLIC ${GMP_INCLUDE_DIR})
 endif()
 if(ZMQ_FOUND)
-    target_link_libraries(pivxd ZMQ_A ${ZMQ_LIB})
-    target_include_directories(pivxd PUBLIC ${ZMQ_INCLUDE_DIR})
+    target_link_libraries(pactumcoind ZMQ_A ${ZMQ_LIB})
+    target_include_directories(pactumcoind PUBLIC ${ZMQ_INCLUDE_DIR})
 endif()
 if(MINIUPNP_FOUND)
-    target_compile_definitions(pivxd PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
-    target_link_libraries(pivxd ${MINIUPNP_LIBRARY})
-    target_include_directories(pivxd PUBLIC ${MINIUPNP_INCLUDE_DIR})
+    target_compile_definitions(pactumcoind PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
+    target_link_libraries(pactumcoind ${MINIUPNP_LIBRARY})
+    target_include_directories(pactumcoind PUBLIC ${MINIUPNP_INCLUDE_DIR})
 endif()
 
-target_link_libraries(pivxd -lpthread)
+target_link_libraries(pactumcoind -lpthread)
 
 add_subdirectory(src/qt)

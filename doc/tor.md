@@ -51,7 +51,7 @@ versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 	HiddenServicePort 61472 127.0.0.1:61472
 
 The directory can be different of course, but (both) port numbers should be equal to
-your pivxd's P2P listen port (51472 by default).
+your pactumcoind's P2P listen port (51472 by default).
 
 	-externalip=X   You can tell pivx about its publicly reachable address using
 	                this option, and this can be a v2 .onion address (v3 .onion
@@ -111,12 +111,12 @@ To show verbose debugging information, pass `-debug=tor`.
 
 Connecting to Tor's control socket API requires one of two authentication methods to be
 configured. It also requires the control socket to be enabled, e.g. put `ControlPort 9051`
-in `torrc` config file. For cookie authentication the user running pivxd must have read
+in `torrc` config file. For cookie authentication the user running pactumcoind must have read
 access to the `CookieAuthFile` specified in Tor configuration. In some cases this is
 preconfigured and the creation of a hidden service is automatic. If permission problems
 are seen with `-debug=tor` they can be resolved by adding both the user running Tor and
-the user running pivxd to the same group and setting permissions appropriately. On
-Debian-based systems the user running pivxd can be added to the debian-tor group,
+the user running pactumcoind to the same group and setting permissions appropriately. On
+Debian-based systems the user running pactumcoind can be added to the debian-tor group,
 which has the appropriate permissions.
 
 An alternative authentication method is the use

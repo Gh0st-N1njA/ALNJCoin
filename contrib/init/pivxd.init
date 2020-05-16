@@ -12,18 +12,18 @@
 . /etc/init.d/functions
 
 # you can override defaults in /etc/sysconfig/pivxd, see below
-if [ -f /etc/sysconfig/pivxd ]; then
-        . /etc/sysconfig/pivxd
+if [ -f /etc/sysconfig/pactumcoind ]; then
+        . /etc/sysconfig/pactumcoind
 fi
 
 RETVAL=0
 
-prog=pivxd
+prog=pactumcoind
 # you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/pivxd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/pivxd}
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/pactumcoind}
 
 # pivxd defaults to /usr/bin/pivxd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/pivxd}
+bitcoind=${BITCOIND_BIN-/usr/bin/pactumcoind}
 
 # pivxd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}

@@ -22,7 +22,7 @@ make
 make install # optional
 ```
 
-This will build pivx-qt as well, if the dependencies are met.
+This will build pactumcoin-qt as well, if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -104,7 +104,7 @@ ZMQ dependencies (provides ZMQ API):
 
 GUI dependencies:
 
-If you want to build pivx-qt, make sure that the required packages for Qt development
+If you want to build pactumcoin-qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 To build without GUI pass `--without-gui`.
 
@@ -114,7 +114,7 @@ To build with Qt 5 you need the following:
 
 **Note:** Ubuntu versions prior to Bionic (18.04), and Debian version prior to Buster, do not have the `libqt5charts5-dev` package. If you are compiling on one of these older versions, you will need to omit `libqt5charts5-dev` from the above command.
 
-Once these are installed, they will be found by configure and a pivx-qt executable will be
+Once these are installed, they will be found by configure and a pactumcoin-qt executable will be
 built by default.
 
 
@@ -136,7 +136,7 @@ To build with Qt 5 you need the following:
 
 Notes
 -----
-The release is built with GCC and then "strip pivxd" to strip the debug
+The release is built with GCC and then "strip pactumcoind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -221,7 +221,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./pivxd`
+    `scanelf -e ./pactumcoind`
 
     The output should contain:
 	STK/REL/PTL

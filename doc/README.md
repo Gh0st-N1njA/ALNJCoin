@@ -13,12 +13,12 @@ The following are some helpful notes on how to run PIVX Core on your native plat
 
 Unpack the files into a directory and run:
 
-- `bin/pivx-qt` (GUI) or
-- `bin/pivxd` (headless)
+- `bin/pactumcoin-qt` (GUI) or
+- `bin/pactumcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run pivx-qt.exe.
+Unpack the files into a directory, and then run pactumcoin-qt.exe.
 
 ### macOS
 

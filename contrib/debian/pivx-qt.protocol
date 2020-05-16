@@ -1,5 +1,5 @@
 [Protocol]
-exec=pivx-qt '%u'
+exec=pactumcoin-qt '%u'
 protocol=pivx
 input=none
 output=none

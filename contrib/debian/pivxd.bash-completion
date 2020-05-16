@@ -1,2 +1,2 @@
-contrib/pivxd.bash-completion	pivxd
-contrib/pivx-cli.bash-completion pivx-cli
+contrib/pactumcoind.bash-completion	pactumcoind
+contrib/pactumcoin-cli.bash-completion pactumcoin-cli

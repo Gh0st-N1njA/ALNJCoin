@@ -1,3 +1,3 @@
-usr/local/bin/pivxd usr/bin
-usr/local/bin/pivx-cli usr/bin
+usr/local/bin/pactumcoind usr/bin
+usr/local/bin/pactumcoin-cli usr/bin
 debian/examples/pivx.conf etc/pivx
