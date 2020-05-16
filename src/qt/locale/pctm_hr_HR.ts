@@ -4159,7 +4159,7 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
                            zPCTM is an optional privacy-centric method of coin mixing on the
                            PCTM blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PCTM.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://PCTM.org/zpctm/'&gt;
                            "PCTM Zerocoin (zPCTM) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4167,7 +4167,7 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 zPCTM je opcionalna metoda miješanja novčića usmjerena na privatnost
 na PCTM blockchainu. Sve transakcije ne mogu biti praćene na bilo kojem block exploreru. Više o tehničkim detaljima možete pročitati na
-&lt;a style='color: #b088ff' href='https://PCTM.org/zpiv/'&gt;
+&lt;a style='color: #b088ff' href='https://PCTM.org/zpctm/'&gt;
 "PCTM Zerocoin (zPCTM) Technical Paper"&lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4217,7 +4217,7 @@ da bi se mogli potrošiti.
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPCTM in the
-                           &lt;a style='color: #b088ff' href='https://PCTM.org/zpiv/'&gt; "PCTM Zerocoin (zPCTM) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://PCTM.org/zpctm/'&gt; "PCTM Zerocoin (zPCTM) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zPCTM, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4232,7 +4232,7 @@ vašu pivx.conf datoteku i dodati &lt;i&gt;enablezeromint=0&lt;/i&gt; bez navodn
 i ponovno pokrenuti novčanik da biste onemogućili automatsko stvaranje.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Više o zPCTM-u možete pročitati u
-&lt;a style='color: #b088ff' href='https://PCTM.org/zpiv/'&gt;"PCTM Zerocoin (zPCTM) Technical Paper"&lt;/a&gt;.
+&lt;a style='color: #b088ff' href='https://PCTM.org/zpctm/'&gt;"PCTM Zerocoin (zPCTM) Technical Paper"&lt;/a&gt;.
 Ako želite zadržati i stake-ati vaš zPCTM, molimo pročitajte "Kako mogu stake-ati"
 odjeljak u najčešće postavljenim pitanjima ispod.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>

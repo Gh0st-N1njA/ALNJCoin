@@ -14,7 +14,7 @@
 #include "qt/pivx/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
-#include "zpivcontroldialog.h"
+#include "zpctmcontroldialog.h"
 #include "qt/pivx/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;

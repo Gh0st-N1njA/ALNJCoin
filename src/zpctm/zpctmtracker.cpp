@@ -2,15 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <zpiv/deterministicmint.h>
-#include "zpivtracker.h"
+#include <zpctm/deterministicmint.h>
+#include "zpctmtracker.h"
 #include "util.h"
 #include "sync.h"
 #include "main.h"
 #include "txdb.h"
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
-#include "zpiv/zpivwallet.h"
+#include "zpctm/zpctmwallet.h"
 
 
 CzPCTMTracker::CzPCTMTracker(CWallet* parent)
@@ -451,7 +451,7 @@ std::set<CMintMeta> CzPCTMTracker::ListMints(bool fUnusedOnly, bool fMatureOnly,
                 continue;
             Add(dMint, false, false, wallet->zwalletMain);
         }
-        LogPrint(BCLog::LEGACYZC, "%s: added %d dzpiv from DB\n", __func__, listDeterministicDB.size());
+        LogPrint(BCLog::LEGACYZC, "%s: added %d dzpctm from DB\n", __func__, listDeterministicDB.size());
     }
 
     std::vector<CMintMeta> vOverWrite;

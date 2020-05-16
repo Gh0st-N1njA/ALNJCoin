@@ -16,8 +16,8 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "wallet/wallet.h"
-#include "zpiv/zpivmodule.h"
-#include "zpivchain.h"
+#include "zpctm/zpctmmodule.h"
+#include "zpctmchain.h"
 
 #include <stdint.h>
 #include <fstream>

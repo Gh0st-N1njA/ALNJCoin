@@ -56,9 +56,9 @@ DashboardWidget::DashboardWidget(PCTMGUI* parent) :
     ui->labelMessage->setText(tr("Amount of PCTM and zPCTM staked."));
     setCssSubtitleScreen(ui->labelMessage);
     setCssProperty(ui->labelSquarePiv, "square-chart-piv");
-    setCssProperty(ui->labelSquarezPCTM, "square-chart-zpiv");
+    setCssProperty(ui->labelSquarezPCTM, "square-chart-zpctm");
     setCssProperty(ui->labelPiv, "text-chart-piv");
-    setCssProperty(ui->labelZpiv, "text-chart-zpiv");
+    setCssProperty(ui->labelZpiv, "text-chart-zpctm");
 
     // Staking Amount
     QFont fontBold;
@@ -69,7 +69,7 @@ DashboardWidget::DashboardWidget(PCTMGUI* parent) :
     ui->labelAmountZpiv->setText("0 zPCTM");
     ui->labelAmountPiv->setText("0 PCTM");
     setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
-    setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv-disable");
+    setCssProperty(ui->labelAmountZpiv, "text-stake-zpctm-disable");
 
     setCssProperty({ui->pushButtonAll,  ui->pushButtonMonth, ui->pushButtonYear}, "btn-check-time");
     setCssProperty({ui->comboBoxMonths,  ui->comboBoxYears}, "btn-combo-chart-selected");
@@ -571,11 +571,11 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
     for (int j = range.first; j < range.second; j++) {
         int num = (isOrderedByMonth && j > daysInMonth) ? (j % daysInMonth) : j;
         qreal piv = 0;
-        qreal zpiv = 0;
+        qreal zpctm = 0;
         if (chartData->amountsByCache.contains(num)) {
             std::pair <qint64, qint64> pair = chartData->amountsByCache[num];
             piv = (pair.first != 0) ? pair.first / 100000000 : 0;
-            zpiv = (pair.second != 0) ? pair.second / 100000000 : 0;
+            zpctm = (pair.second != 0) ? pair.second / 100000000 : 0;
             chartData->totalPiv += pair.first;
             chartData->totalZpiv += pair.second;
         }
@@ -583,9 +583,9 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
         chartData->xLabels << ((withMonthNames) ? monthsNames[num - 1] : QString::number(num));
 
         chartData->valuesPiv.append(piv);
-        chartData->valueszPCTM.append(zpiv);
+        chartData->valueszPCTM.append(zpctm);
 
-        int max = std::max(piv, zpiv);
+        int max = std::max(piv, zpctm);
         if (max > chartData->maxValue) {
             chartData->maxValue = max;
         }
@@ -661,10 +661,10 @@ void DashboardWidget::onChartRefreshed()
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
     if (chartData->totalPiv > 0 || chartData->totalZpiv > 0) {
         setCssProperty(ui->labelAmountPiv, "text-stake-piv");
-        setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv");
+        setCssProperty(ui->labelAmountZpiv, "text-stake-zpctm");
     } else {
         setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
-        setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv-disable");
+        setCssProperty(ui->labelAmountZpiv, "text-stake-zpctm-disable");
     }
     forceUpdateStyle({ui->labelAmountPiv, ui->labelAmountZpiv});
     ui->labelAmountPiv->setText(GUIUtil::formatBalance(chartData->totalPiv, nDisplayUnit));

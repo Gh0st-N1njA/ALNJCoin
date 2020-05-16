@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zpivwallet.h"
+#include "zpctmwallet.h"
 #include "main.h"
 #include "txdb.h"
 #include "wallet/walletdb.h"
 #include "init.h"
 #include "wallet/wallet.h"
 #include "deterministicmint.h"
-#include "zpivchain.h"
+#include "zpctmchain.h"
 
 
 CzPCTMWallet::CzPCTMWallet(CWallet* parent)
@@ -33,7 +33,7 @@ CzPCTMWallet::CzPCTMWallet(CWallet* parent)
                     LogPrintf("%s: Updated zPCTM seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
-                    LogPrintf("%s: failed to remove old zpiv seed\n", __func__);
+                    LogPrintf("%s: failed to remove old zpctm seed\n", __func__);
                 }
             }
         }
@@ -55,7 +55,7 @@ CzPCTMWallet::CzPCTMWallet(CWallet* parent)
         key.MakeNewKey(true);
         seed = key.GetPrivKey_256();
         seedMaster = seed;
-        LogPrintf("%s: first run of zpiv wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
+        LogPrintf("%s: first run of zpctm wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
     } else if (!parent->GetDeterministicSeed(hashSeed, seed)) {
         LogPrintf("%s: failed to get deterministic seed for hashseed %s\n", __func__, hashSeed.GetHex());
         return;
@@ -203,7 +203,7 @@ void CzPCTMWallet::SyncWithChain(bool fGenerateMintPool)
             if (ShutdownRequested())
                 return;
 
-            if (wallet->zpivTracker->HasPubcoinHash(pMint.first)) {
+            if (wallet->zpctmTracker->HasPubcoinHash(pMint.first)) {
                 mintPool.Remove(pMint.first);
                 continue;
             }
@@ -328,7 +328,7 @@ bool CzPCTMWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const
     }
 
     // Add to zpivTracker which also adds to database
-    wallet->zpivTracker->Add(dMint, true);
+    wallet->zpctmTracker->Add(dMint, true);
 
     //Update the count if it is less than the mint's count
     if (nCountLastUsed < pMint.second) {

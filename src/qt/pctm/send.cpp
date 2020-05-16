@@ -16,9 +16,9 @@
 #include "addresstablemodel.h"
 #include "coincontrol.h"
 #include "script/standard.h"
-#include "zpiv/deterministicmint.h"
+#include "zpctm/deterministicmint.h"
 #include "openuridialog.h"
-#include "zpivcontroldialog.h"
+#include "zpctmcontroldialog.h"
 
 SendWidget::SendWidget(PCTMGUI* parent) :
     PWidget(parent),
@@ -697,7 +697,7 @@ void SendWidget::onCheckBoxChanged()
 void SendWidget::onPCTMSelected(bool _isPCTM)
 {
     isPCTM = _isPCTM;
-    setCssProperty(coinIcon, _isPCTM ? "coin-icon-piv" : "coin-icon-zpiv");
+    setCssProperty(coinIcon, _isPCTM ? "coin-icon-piv" : "coin-icon-zpctm");
     refreshView();
     updateStyle(coinIcon);
 }

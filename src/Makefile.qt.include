@@ -19,7 +19,7 @@ QT_FORMS_UI = \
   qt/forms/optionsdialog.ui \
   qt/forms/rpcconsole.ui \
   qt/pivx/forms/loadingdialog.ui \
-  qt/forms/zpivcontroldialog.ui \
+  qt/forms/zpctmcontroldialog.ui \
   qt/pivx/forms/snackbar.ui \
   qt/pivx/forms/navmenuwidget.ui \
   qt/pivx/forms/lockunlock.ui \
@@ -105,7 +105,7 @@ QT_MOC_CPP = \
   qt/moc_utilitydialog.cpp \
   qt/moc_walletmodel.cpp \
   qt/pivx/moc_loadingdialog.cpp \
-  qt/moc_zpivcontroldialog.cpp \
+  qt/moc_zpctmcontroldialog.cpp \
   qt/pivx/moc_pwidget.cpp \
   qt/pivx/moc_snackbar.cpp \
   qt/pivx/moc_navmenuwidget.cpp \
@@ -226,7 +226,7 @@ BITCOIN_QT_H = \
   qt/pivx/pfborderimage.h \
   qt/pivx/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zpivcontroldialog.h \
+  qt/zpctmcontroldialog.h \
   qt/pivx/pwidget.h \
   qt/pivx/guitransactionsutils.h \
   qt/pivx/snackbar.h \
@@ -459,11 +459,11 @@ RES_ICONS = \
   qt/pivx/res/img/ic-receive-off.svg \
   qt/pivx/res/img/img-empty-staking-on.svg \
   qt/pivx/res/img/ic-arrow-drop-up-white.svg \
-  qt/pivx/res/img/ic-coin-zpiv.png \
+  qt/pivx/res/img/ic-coin-zpctm.png \
   qt/pivx/res/img/ic-receive-on.svg \
   qt/pivx/res/img/img-empty-transactions.svg \
   qt/pivx/res/img/ic-arrow-drop-up.svg \
-  qt/pivx/res/img/ic-coin-zpiv.svg \
+  qt/pivx/res/img/ic-coin-zpctm.svg \
   qt/pivx/res/img/ic-received.svg \
   qt/pivx/res/img/img-logo-pivx.png \
   qt/pivx/res/img/ic-arrow-drop-white-down.svg \
@@ -609,7 +609,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/pivx/loadingdialog.cpp \
-  qt/zpivcontroldialog.cpp \
+  qt/zpctmcontroldialog.cpp \
   qt/pivx/pwidget.cpp \
   qt/pivx/guitransactionsutils.cpp \
   qt/pivx/snackbar.cpp \
