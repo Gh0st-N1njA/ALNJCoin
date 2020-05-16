@@ -7853,7 +7853,7 @@ PCTM Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>(51472 could be used only on mainnet)</source>
+        <source>(12122 could be used only on mainnet)</source>
         <translation type="unfinished">(51472 could be used only on mainnet)</translation>
     </message>
     <message>
