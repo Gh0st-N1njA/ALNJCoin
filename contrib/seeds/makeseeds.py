@@ -28,7 +28,7 @@ PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")
 PATTERN_ONION = re.compile(r"^([abcdefghijklmnopqrstuvwxyz234567]{16}\.onion):(\d+)$")
 PATTERN_AGENT = re.compile(
     r"^/PCTMCore:("
-    r"1.0.(1.1)"
+    r"1.1.(0.1)"
     r")")
 
 def parseline(line):
