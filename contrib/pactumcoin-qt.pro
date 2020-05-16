@@ -375,7 +375,7 @@ SOURCES += src/activemasternode.cpp \
            src/obfuscation.cpp \
            src/pactumcoin-cli.cpp \
            src/pactumcoin-tx.cpp \
-           src/pivx.cpp \
+           src/pctm.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -470,7 +470,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/pivx.cpp \
+           src/qt/pctm.cpp \
            src/qt/pivxstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \

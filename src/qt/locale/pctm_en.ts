@@ -2680,7 +2680,7 @@ Address: %4
 </translation>
     </message>
     <message>
-        <location filename="../pivx.cpp" line="+518"/>
+        <location filename="../pctm.cpp" line="+518"/>
         <source>A fatal error occurred. PCTM can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3064,7 +3064,7 @@ transaction history, making transactions untraceable </source>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <location filename="../pivx.cpp" line="+73"/>
+        <location filename="../pctm.cpp" line="+73"/>
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
