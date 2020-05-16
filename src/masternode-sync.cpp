@@ -75,7 +75,8 @@ bool CMasternodeSync::IsBlockchainSynced()
         blockTime = pindex->nTime;
     }
 
-    if (blockTime + 60 * 60 < lastProcess)
+    //Allow masternodes to come back as much as a week later for now
+    if (blockTime + 168 * 60 * 60 < lastProcess)
         return false;
 
     fBlockchainSynced = true;
