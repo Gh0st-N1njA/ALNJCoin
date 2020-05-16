@@ -1,13 +1,13 @@
 PCTM Core version 2.2.1 is now available from:
 
-  <https://github.com/pivx-project/pivx/releases>
+  <https://github.com/Gh0st-N1njA/PactumCoin/releases>
 
 This is a new minor version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/pivx-project/pivx/issues>
+  <https://github.com/Gh0st-N1njA/PactumCoin/issues>
 
 Compatibility
 ==============

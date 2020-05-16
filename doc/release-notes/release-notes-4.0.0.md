@@ -1,8 +1,8 @@
-PCTM Core version *v4.0.0* is now available from:  <https://github.com/pivx-project/pivx/releases>
+PCTM Core version *v4.0.0* is now available from:  <https://github.com/Gh0st-N1njA/PactumCoin/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/pivx-project/pivx/issues>
+Please report bugs using the issue tracker at github: <https://github.com/Gh0st-N1njA/PactumCoin/issues>
 
 
 Mandatory Update

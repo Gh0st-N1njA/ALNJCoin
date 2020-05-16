@@ -1,8 +1,8 @@
-PCTM Core version *4.1.0* is now available from:  <https://github.com/pivx-project/pivx/releases>
+PCTM Core version *4.1.0* is now available from:  <https://github.com/Gh0st-N1njA/PactumCoin/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/pivx-project/pivx/issues>
+Please report bugs using the issue tracker at github: <https://github.com/Gh0st-N1njA/PactumCoin/issues>
 
 
 Recommended Update
@@ -167,7 +167,7 @@ The default value for the stake-split threshold has been lowered from 2000 PCTM,
 Dependencies
 ------------
 
-The minimum required version of QT has been increased from 5.0 to 5.5.1 (the [depends system](https://github.com/pivx-project/pivx/blob/master/depends/README.md) provides 5.9.7)
+The minimum required version of QT has been increased from 5.0 to 5.5.1 (the [depends system](https://github.com/Gh0st-N1njA/PactumCoin/blob/master/depends/README.md) provides 5.9.7)
 
 
 RPC Changes
