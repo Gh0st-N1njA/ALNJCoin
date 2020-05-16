@@ -8,8 +8,10 @@ and remove old versions as necessary.
 
 The seeds compiled into the release are created from fuzzbawls' DNS seed data, like this:
 
-    curl -s http://seeder.fuzzbawls.pw/pctm-mainnet.txt > seeds_main.txt
+    curl -s https://algoninja.site/alnj-mainnet.txt > seeds_main.txt
+    curl -s https://algoninja.site/alnj-testnet.txt > seeds_test.txt
     python3 makeseeds.py < seeds_main.txt > nodes_main.txt
+    python3 makeseeds.py < seeds_test.txt > nodes_test.txt
     python3 generate-seeds.py . > ../../src/chainparamsseeds.h
 
 ## Dependencies

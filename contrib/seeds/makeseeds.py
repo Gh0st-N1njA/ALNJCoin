@@ -28,8 +28,7 @@ PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")
 PATTERN_ONION = re.compile(r"^([abcdefghijklmnopqrstuvwxyz234567]{16}\.onion):(\d+)$")
 PATTERN_AGENT = re.compile(
     r"^/PCTMCore:("
-    r"4.0.(0|1|2|99|99.1|99.2)|"
-    r"4.1.(0|99)"
+    r"1.0.(1.1)"
     r")")
 
 def parseline(line):
@@ -209,7 +208,7 @@ def main():
     ips.sort(key=lambda x: (x['uptime'], x['lastsuccess'], x['ip']), reverse=True)
     # Filter out hosts with multiple pctm ports, these are likely abusive
     ips = filtermultiport(ips)
-    print('%s Filter out hosts with multiple pivx ports' % (ip_stats(ips)), file=sys.stderr)
+    print('%s Filter out hosts with multiple pctm ports' % (ip_stats(ips)), file=sys.stderr)
     # Look up ASNs and limit results, both per ASN and globally.
     ips = filterbyasn(ips, MAX_SEEDS_PER_ASN, NSEEDS)
     print('%s Look up ASNs and limit results per ASN and per net' % (ip_stats(ips)), file=sys.stderr)
