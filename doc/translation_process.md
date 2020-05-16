@@ -12,11 +12,11 @@ See the [Transifex PCTM project](https://www.transifex.com/pivx-project/pivx-pro
 
 ### Writing code with translations
 We use automated scripts to help extract translations in both Qt, and non-Qt source files. It is rarely necessary to manually edit the files in `src/qt/locale/`. The translation source files must adhere to the following format:
-`pivx_xx_YY.ts or pivx_xx.ts`
+`pctm_xx_YY.ts or pctm_xx.ts`
 
-`src/qt/locale/pivx_en.ts` is treated in a special way. It is used as the source for all other translations. Whenever a string in the source code is changed, this file must be updated to reflect those changes. A custom script is used to extract strings from the non-Qt parts. This script makes use of `gettext`, so make sure that utility is installed (ie, `apt-get install gettext` on Ubuntu/Debian). Once this has been updated, `lupdate` (included in the Qt SDK) is used to update `pivx_en.ts`.
+`src/qt/locale/pctm_en.ts` is treated in a special way. It is used as the source for all other translations. Whenever a string in the source code is changed, this file must be updated to reflect those changes. A custom script is used to extract strings from the non-Qt parts. This script makes use of `gettext`, so make sure that utility is installed (ie, `apt-get install gettext` on Ubuntu/Debian). Once this has been updated, `lupdate` (included in the Qt SDK) is used to update `pctm_en.ts`.
 
-To automatically regenerate the `pivx_en.ts` file, run the following commands:
+To automatically regenerate the `pctm_en.ts` file, run the following commands:
 ```sh
 cd src/
 make translate
@@ -69,7 +69,7 @@ To assist in updating translations, we have created a script to help.
 
 1. `python contrib/devtools/update-translations.py`
 2. `git add` new translations from `src/qt/locale/`
-3. Update `src/qt/pivx_locale.qrc` manually or via
+3. Update `src/qt/pctm_locale.qrc` manually or via
 ```bash
 git ls-files src/qt/locale/*ts|xargs -n1 basename|sed 's/\(pivx_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'
 ```
@@ -83,7 +83,7 @@ git ls-files src/qt/locale/*ts|xargs -n1 basename|sed 's/\(pivx_\(.*\)\).ts/  qt
 ### Handling Plurals (in source files)
 When new plurals are added to the source file, it's important to do the following steps:
 
-1. Open `pivx_en.ts` in Qt Linguist (included in the Qt SDK)
+1. Open `pctm_en.ts` in Qt Linguist (included in the Qt SDK)
 2. Search for `%n`, which will take you to the parts in the translation that use plurals
 3. Look for empty `English Translation (Singular)` and `English Translation (Plural)` fields
 4. Add the appropriate strings for the singular and plural form of the base string
@@ -92,7 +92,7 @@ When new plurals are added to the source file, it's important to do the followin
 7. Save the source file
 
 ### Translating a new language
-To create a new language template, you will need to edit the languages manifest file `src/qt/pivx_locale.qrc` and add a new entry. Below is an example of the English language entry.
+To create a new language template, you will need to edit the languages manifest file `src/qt/pctm_locale.qrc` and add a new entry. Below is an example of the English language entry.
 
 ```xml
 <qresource prefix="/translations">

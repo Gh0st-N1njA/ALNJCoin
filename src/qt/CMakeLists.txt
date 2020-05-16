@@ -218,7 +218,7 @@ QT5_ADD_TRANSLATION(QM ${QT_TRANSLATIONS_FILES})
 add_custom_target(translations_target ALL DEPENDS ${QM})
 
 QT5_ADD_RESOURCES(QRC_RESOURCE pivx.qrc)
-QT5_ADD_RESOURCES(QRC_LOCALE_RESOURCE pivx_locale.qrc)
+QT5_ADD_RESOURCES(QRC_LOCALE_RESOURCE pctm_locale.qrc)
 
 add_executable(pactumcoin-qt pivx.cpp ${QM} ${QRC_RESOURCE} ${QRC_LOCALE_RESOURCE})
 add_dependencies(pactumcoin-qt translations_target libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)

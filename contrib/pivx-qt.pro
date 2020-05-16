@@ -640,24 +640,24 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/pivx.qrc src/qt/pivx_locale.qrc
+RESOURCES += src/qt/pivx.qrc src/qt/pctm_locale.qrc
 
-TRANSLATIONS += src/qt/locale/pivx_bg.ts \
-                src/qt/locale/pivx_de.ts \
-                src/qt/locale/pivx_en.ts \
-                src/qt/locale/pivx_es.ts \
-                src/qt/locale/pivx_fi.ts \
-                src/qt/locale/pivx_fr.ts \
-                src/qt/locale/pivx_it.ts \
-                src/qt/locale/pivx_ja.ts \
-                src/qt/locale/pivx_pl.ts \
-                src/qt/locale/pivx_pt.ts \
-                src/qt/locale/pivx_ru.ts \
-                src/qt/locale/pivx_sk.ts \
-                src/qt/locale/pivx_sv.ts \
-                src/qt/locale/pivx_vi.ts \
-                src/qt/locale/pivx_zh_CN.ts \
-                src/qt/locale/pivx_zh_TW.ts
+TRANSLATIONS += src/qt/locale/pctm_bg.ts \
+                src/qt/locale/pctm_de.ts \
+                src/qt/locale/pctm_en.ts \
+                src/qt/locale/pctm_es.ts \
+                src/qt/locale/pctm_fi.ts \
+                src/qt/locale/pctm_fr.ts \
+                src/qt/locale/pctm_it.ts \
+                src/qt/locale/pctm_ja.ts \
+                src/qt/locale/pctm_pl.ts \
+                src/qt/locale/pctm_pt.ts \
+                src/qt/locale/pctm_ru.ts \
+                src/qt/locale/pctm_sk.ts \
+                src/qt/locale/pctm_sv.ts \
+                src/qt/locale/pctm_vi.ts \
+                src/qt/locale/pctm_zh_CN.ts \
+                src/qt/locale/pctm_zh_TW.ts
 
 DISTFILES += \
     README.md

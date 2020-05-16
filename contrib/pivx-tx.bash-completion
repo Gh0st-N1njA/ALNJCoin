@@ -3,13 +3,13 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_pivx_tx() {
+_pactumcoin_tx() {
     local cur prev words=() cword
-    local pivx_tx
+    local pactumcoin_tx
 
     # save and use original argument to invoke pactumcoin-tx for -help
     # it might not be in $PATH
-    pivx_tx="$1"
+    pactumcoin_tx="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n =: cur prev words cword
@@ -29,13 +29,13 @@ _pivx_tx() {
         # only options (or an uncompletable hex-string) allowed
         # parse pactumcoin-tx -help for options
         local helpopts
-        helpopts=$($pivx_tx -help | sed -e '/^  -/ p' -e d )
+        helpopts=$($pactumcoin_tx -help | sed -e '/^  -/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
     else
         # only commands are allowed
         # parse -help for commands
         local helpcmds
-        helpcmds=$($pivx_tx -help | sed -e '1,/Commands:/d' -e 's/=.*/=/' -e '/^  [a-z]/ p' -e d )
+        helpcmds=$($pactumcoin_tx -help | sed -e '1,/Commands:/d' -e 's/=.*/=/' -e '/^  [a-z]/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpcmds" -- "$cur" ) )
     fi
 
@@ -46,7 +46,7 @@ _pivx_tx() {
 
     return 0
 } &&
-complete -F _pivx_tx pactumcoin-tx
+complete -F _pactumcoin_tx pactumcoin-tx
 
 # Local variables:
 # mode: shell-script

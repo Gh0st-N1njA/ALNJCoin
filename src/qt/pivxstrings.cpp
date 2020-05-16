@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *pivx_strings[] = {
+static const char UNUSED *pctm_strings[] = {
 QT_TRANSLATE_NOOP("pivx-core", " mints deleted\n"),
 QT_TRANSLATE_NOOP("pivx-core", " mints updated, "),
 QT_TRANSLATE_NOOP("pivx-core", " unconfirmed transactions removed\n"),
