@@ -5,14 +5,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/receivewidget.h"
-#include "qt/pivx/forms/ui_receivewidget.h"
-#include "qt/pivx/requestdialog.h"
-#include "qt/pivx/addnewcontactdialog.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/myaddressrow.h"
-#include "qt/pivx/furlistrow.h"
-#include "qt/pivx/addressholder.h"
+#include "qt/pctm/receivewidget.h"
+#include "qt/pctm/forms/ui_receivewidget.h"
+#include "qt/pctm/requestdialog.h"
+#include "qt/pctm/addnewcontactdialog.h"
+#include "qt/pctm/qtutils.h"
+#include "qt/pctm/myaddressrow.h"
+#include "qt/pctm/furlistrow.h"
+#include "qt/pctm/addressholder.h"
 #include "walletmodel.h"
 #include "guiutil.h"
 #include "pairresult.h"

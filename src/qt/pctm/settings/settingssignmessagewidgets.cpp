@@ -5,9 +5,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/settings/settingssignmessagewidgets.h"
-#include "qt/pivx/settings/forms/ui_settingssignmessagewidgets.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/settings/settingssignmessagewidgets.h"
+#include "qt/pctm/settings/forms/ui_settingssignmessagewidgets.h"
+#include "qt/pctm/qtutils.h"
 #include "guiutil.h"
 #include "walletmodel.h"
 

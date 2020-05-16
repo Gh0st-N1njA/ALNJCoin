@@ -9,8 +9,8 @@
 #define TOPBAR_H
 
 #include <QWidget>
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/lockunlock.h"
+#include "qt/pctm/pwidget.h"
+#include "qt/pctm/lockunlock.h"
 #include "amount.h"
 #include <QTimer>
 #include <QProgressBar>

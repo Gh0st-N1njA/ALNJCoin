@@ -6,14 +6,14 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "qt/pctm/settings/settingsinformationwidget.h"
-#include "qt/pivx/settings/forms/ui_settingsinformationwidget.h"
+#include "qt/pctm/settings/forms/ui_settingsinformationwidget.h"
 
 #include "clientmodel.h"
 #include "chainparams.h"
 #include "db.h"
 #include "util.h"
 #include "guiutil.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/qtutils.h"
 
 #include <QDir>
 

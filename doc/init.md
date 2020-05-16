@@ -54,7 +54,7 @@ Paths
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              /usr/bin/pactumcoind
-Configuration file:  /etc/pivx/pctm.conf
+Configuration file:  /etc/pctm/pctm.conf
 Data directory:      /var/lib/pactumcoind
 PID file:            `/var/run/pactumcoind/pactumcoind.pid` (OpenRC and Upstart) or `/run/pactumcoind/pactumcoind.pid` (systemd)
 Lock file:           `/var/lock/subsys/pactumcoind` (CentOS)
@@ -73,10 +73,10 @@ pivx group to do so (e.g. when `-sysperms` is specified). This does not allow
 for the listing of files under the directory.
 
 NOTE: It is not currently possible to override `datadir` in
-`/etc/pivx/pctm.conf` with the current systemd, OpenRC, and Upstart init
+`/etc/pctm/pctm.conf` with the current systemd, OpenRC, and Upstart init
 files out-of-the-box. This is because the command line options specified in the
 init files take precedence over the configurations in
-`/etc/pivx/pctm.conf`. However, some init systems have their own
+`/etc/pctm/pctm.conf`. However, some init systems have their own
 configuration mechanisms that would allow for overriding the command line
 options specified in the init files (e.g. setting `BITCOIND_DATADIR` for
 OpenRC).

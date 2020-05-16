@@ -12,7 +12,7 @@
 #include <QAction>
 #include "walletmodel.h"
 #include "amount.h"
-#include "qt/pivx/pwidget.h"
+#include "qt/pctm/pwidget.h"
 
 class WalletModel;
 class SendCoinsRecipient;

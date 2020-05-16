@@ -12,7 +12,7 @@
 #include "guiutil.h"
 
 #include "util.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/qtutils.h"
 
 #include <boost/filesystem.hpp>
 

@@ -5,11 +5,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/privacywidget.h"
-#include "qt/pivx/forms/ui_privacywidget.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/privacywidget.h"
+#include "qt/pctm/forms/ui_privacywidget.h"
+#include "qt/pctm/qtutils.h"
 #include "guiutil.h"
-#include "qt/pivx/txviewholder.h"
+#include "qt/pctm/txviewholder.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "coincontroldialog.h"

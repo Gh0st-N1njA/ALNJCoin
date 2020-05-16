@@ -5,9 +5,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/mnrow.h"
-#include "qt/pivx/forms/ui_mnrow.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/mnrow.h"
+#include "qt/pctm/forms/ui_mnrow.h"
+#include "qt/pctm/qtutils.h"
 
 MNRow::MNRow(QWidget *parent) :
     QWidget(parent),

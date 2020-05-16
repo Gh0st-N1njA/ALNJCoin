@@ -122,44 +122,44 @@ QT_MOC_CPP = \
   qt/pctm/moc_mninfodialog.cpp \
   qt/pctm/moc_optionbutton.cpp \
   qt/pctm/moc_coldstakingmodel.cpp \
-  qt/pivx/moc_mnmodel.cpp \
-  qt/pivx/moc_masternodewizarddialog.cpp \
-  qt/pivx/moc_mnrow.cpp \
-  qt/pivx/moc_masternodeswidget.cpp \
-  qt/pivx/moc_myaddressrow.cpp \
-  qt/pivx/moc_csrow.cpp \
-  qt/pivx/moc_contactsdropdown.cpp \
-  qt/pivx/moc_sendchangeaddressdialog.cpp \
-  qt/pivx/moc_sendconfirmdialog.cpp \
-  qt/pivx/moc_sendcustomfeedialog.cpp \
-  qt/pivx/moc_sendchangeaddressdialog.cpp \
-  qt/pivx/moc_sendmultirow.cpp \
-  qt/pivx/moc_send.cpp \
-  qt/pivx/moc_addnewaddressdialog.cpp \
-  qt/pivx/moc_addnewcontactdialog.cpp \
-  qt/pivx/moc_requestdialog.cpp \
-  qt/pivx/moc_receivewidget.cpp \
-  qt/pivx/moc_tooltipmenu.cpp \
-  qt/pivx/moc_addresseswidget.cpp \
-  qt/pivx/moc_defaultdialog.cpp \
-  qt/pivx/moc_privacywidget.cpp \
-  qt/pivx/moc_coldstakingwidget.cpp \
-  qt/pivx/settings/moc_settingsbackupwallet.cpp \
-  qt/pivx/settings/moc_settingsexportcsv.cpp \
-  qt/pivx/settings/moc_settingsbittoolwidget.cpp \
-  qt/pivx/settings/moc_settingsconsolewidget.cpp \
-  qt/pivx/settings/moc_settingsdisplayoptionswidget.cpp \
-  qt/pivx/settings/moc_settingsfaqwidget.cpp \
-  qt/pivx/settings/moc_settingsinformationwidget.cpp \
-  qt/pivx/settings/moc_settingsmainoptionswidget.cpp \
-  qt/pivx/settings/moc_settingsmultisenddialog.cpp \
-  qt/pivx/settings/moc_settingsmultisendwidget.cpp \
-  qt/pivx/settings/moc_settingssignmessagewidgets.cpp \
-  qt/pivx/settings/moc_settingswalletoptionswidget.cpp \
-  qt/pivx/settings/moc_settingswalletrepairwidget.cpp \
-  qt/pivx/settings/moc_settingswidget.cpp \
-  qt/pivx/moc_welcomecontentwidget.cpp \
-  qt/pivx/moc_splash.cpp
+  qt/pctm/moc_mnmodel.cpp \
+  qt/pctm/moc_masternodewizarddialog.cpp \
+  qt/pctm/moc_mnrow.cpp \
+  qt/pctm/moc_masternodeswidget.cpp \
+  qt/pctm/moc_myaddressrow.cpp \
+  qt/pctm/moc_csrow.cpp \
+  qt/pctm/moc_contactsdropdown.cpp \
+  qt/pctm/moc_sendchangeaddressdialog.cpp \
+  qt/pctm/moc_sendconfirmdialog.cpp \
+  qt/pctm/moc_sendcustomfeedialog.cpp \
+  qt/pctm/moc_sendchangeaddressdialog.cpp \
+  qt/pctm/moc_sendmultirow.cpp \
+  qt/pctm/moc_send.cpp \
+  qt/pctm/moc_addnewaddressdialog.cpp \
+  qt/pctm/moc_addnewcontactdialog.cpp \
+  qt/pctm/moc_requestdialog.cpp \
+  qt/pctm/moc_receivewidget.cpp \
+  qt/pctm/moc_tooltipmenu.cpp \
+  qt/pctm/moc_addresseswidget.cpp \
+  qt/pctm/moc_defaultdialog.cpp \
+  qt/pctm/moc_privacywidget.cpp \
+  qt/pctm/moc_coldstakingwidget.cpp \
+  qt/pctm/settings/moc_settingsbackupwallet.cpp \
+  qt/pctm/settings/moc_settingsexportcsv.cpp \
+  qt/pctm/settings/moc_settingsbittoolwidget.cpp \
+  qt/pctm/settings/moc_settingsconsolewidget.cpp \
+  qt/pctm/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/pctm/settings/moc_settingsfaqwidget.cpp \
+  qt/pctm/settings/moc_settingsinformationwidget.cpp \
+  qt/pctm/settings/moc_settingsmainoptionswidget.cpp \
+  qt/pctm/settings/moc_settingsmultisenddialog.cpp \
+  qt/pctm/settings/moc_settingsmultisendwidget.cpp \
+  qt/pctm/settings/moc_settingssignmessagewidgets.cpp \
+  qt/pctm/settings/moc_settingswalletoptionswidget.cpp \
+  qt/pctm/settings/moc_settingswalletrepairwidget.cpp \
+  qt/pctm/settings/moc_settingswidget.cpp \
+  qt/pctm/moc_welcomecontentwidget.cpp \
+  qt/pctm/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
@@ -170,7 +170,7 @@ QT_MOC = \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/rpcconsole.moc \
-  qt/pivx/settings/moc_settingsconsolewidget.cpp
+  qt/pctm/settings/moc_settingsconsolewidget.cpp
 
 QT_QRC_CPP = qt/qrc_pctm.cpp
 QT_QRC = qt/pivx.qrc
@@ -188,7 +188,7 @@ BITCOIN_QT_H = \
   qt/bantablemodel.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
-  qt/pivx/pivxgui.h \
+  qt/pctm/pivxgui.h \
   qt/bitcoinunits.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
@@ -222,70 +222,70 @@ BITCOIN_QT_H = \
   qt/utilitydialog.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/pivx/prunnable.h \
-  qt/pivx/pfborderimage.h \
-  qt/pivx/loadingdialog.h \
+  qt/pctm/prunnable.h \
+  qt/pctm/pfborderimage.h \
+  qt/pctm/loadingdialog.h \
   qt/winshutdownmonitor.h \
   qt/zpctmcontroldialog.h \
-  qt/pivx/pwidget.h \
-  qt/pivx/guitransactionsutils.h \
-  qt/pivx/snackbar.h \
-  qt/pivx/navmenuwidget.h \
-  qt/pivx/lockunlock.h \
-  qt/pivx/receivedialog.h \
-  qt/pivx/furlistrow.h \
-  qt/pivx/furabstractlistitemdelegate.h \
-  qt/pivx/txviewholder.h \
-  qt/pivx/qtutils.h \
-  qt/pivx/expandablebutton.h \
-  qt/pivx/topbar.h \
-  qt/pivx/txrow.h \
-  qt/pivx/addressholder.h \
-  qt/pivx/addressfilterproxymodel.h \
-  qt/pivx/dashboardwidget.h \
-  qt/pivx/addresslabelrow.h \
-  qt/pivx/contactdropdownrow.h \
-  qt/pivx/mninfodialog.h \
-  qt/pivx/optionbutton.h \
-  qt/pivx/coldstakingmodel.h \
-  qt/pivx/mnmodel.h \
-  qt/pivx/masternodewizarddialog.h \
-  qt/pivx/mnrow.h \
-  qt/pivx/masternodeswidget.h \
-  qt/pivx/myaddressrow.h \
-  qt/pivx/csrow.h \
-  qt/pivx/contactsdropdown.h \
-  qt/pivx/sendchangeaddressdialog.h \
-  qt/pivx/sendconfirmdialog.h \
-  qt/pivx/sendcustomfeedialog.h \
-  qt/pivx/sendchangeaddressdialog.h \
-  qt/pivx/sendmultirow.h \
-  qt/pivx/send.h \
-  qt/pivx/addnewaddressdialog.h \
-  qt/pivx/addnewcontactdialog.h \
-  qt/pivx/requestdialog.h \
-  qt/pivx/receivewidget.h \
-  qt/pivx/tooltipmenu.h \
-  qt/pivx/addresseswidget.h \
-  qt/pivx/defaultdialog.h \
-  qt/pivx/privacywidget.h \
-  qt/pivx/coldstakingwidget.h \
-  qt/pivx/settings/settingsbackupwallet.h \
-  qt/pivx/settings/settingsexportcsv.h \
-  qt/pivx/settings/settingsbittoolwidget.h \
-  qt/pivx/settings/settingsconsolewidget.h \
-  qt/pivx/settings/settingsdisplayoptionswidget.h \
-  qt/pivx/settings/settingsfaqwidget.h \
-  qt/pivx/settings/settingsinformationwidget.h \
-  qt/pivx/settings/settingsmainoptionswidget.h \
-  qt/pivx/settings/settingsmultisenddialog.h \
-  qt/pivx/settings/settingsmultisendwidget.h \
-  qt/pivx/settings/settingssignmessagewidgets.h \
-  qt/pivx/settings/settingswalletoptionswidget.h \
-  qt/pivx/settings/settingswalletrepairwidget.h \
-  qt/pivx/settings/settingswidget.h \
-  qt/pivx/welcomecontentwidget.h \
-  qt/pivx/splash.h
+  qt/pctm/pwidget.h \
+  qt/pctm/guitransactionsutils.h \
+  qt/pctm/snackbar.h \
+  qt/pctm/navmenuwidget.h \
+  qt/pctm/lockunlock.h \
+  qt/pctm/receivedialog.h \
+  qt/pctm/furlistrow.h \
+  qt/pctm/furabstractlistitemdelegate.h \
+  qt/pctm/txviewholder.h \
+  qt/pctm/qtutils.h \
+  qt/pctm/expandablebutton.h \
+  qt/pctm/topbar.h \
+  qt/pctm/txrow.h \
+  qt/pctm/addressholder.h \
+  qt/pctm/addressfilterproxymodel.h \
+  qt/pctm/dashboardwidget.h \
+  qt/pctm/addresslabelrow.h \
+  qt/pctm/contactdropdownrow.h \
+  qt/pctm/mninfodialog.h \
+  qt/pctm/optionbutton.h \
+  qt/pctm/coldstakingmodel.h \
+  qt/pctm/mnmodel.h \
+  qt/pctm/masternodewizarddialog.h \
+  qt/pctm/mnrow.h \
+  qt/pctm/masternodeswidget.h \
+  qt/pctm/myaddressrow.h \
+  qt/pctm/csrow.h \
+  qt/pctm/contactsdropdown.h \
+  qt/pctm/sendchangeaddressdialog.h \
+  qt/pctm/sendconfirmdialog.h \
+  qt/pctm/sendcustomfeedialog.h \
+  qt/pctm/sendchangeaddressdialog.h \
+  qt/pctm/sendmultirow.h \
+  qt/pctm/send.h \
+  qt/pctm/addnewaddressdialog.h \
+  qt/pctm/addnewcontactdialog.h \
+  qt/pctm/requestdialog.h \
+  qt/pctm/receivewidget.h \
+  qt/pctm/tooltipmenu.h \
+  qt/pctm/addresseswidget.h \
+  qt/pctm/defaultdialog.h \
+  qt/pctm/privacywidget.h \
+  qt/pctm/coldstakingwidget.h \
+  qt/pctm/settings/settingsbackupwallet.h \
+  qt/pctm/settings/settingsexportcsv.h \
+  qt/pctm/settings/settingsbittoolwidget.h \
+  qt/pctm/settings/settingsconsolewidget.h \
+  qt/pctm/settings/settingsdisplayoptionswidget.h \
+  qt/pctm/settings/settingsfaqwidget.h \
+  qt/pctm/settings/settingsinformationwidget.h \
+  qt/pctm/settings/settingsmainoptionswidget.h \
+  qt/pctm/settings/settingsmultisenddialog.h \
+  qt/pctm/settings/settingsmultisendwidget.h \
+  qt/pctm/settings/settingssignmessagewidgets.h \
+  qt/pctm/settings/settingswalletoptionswidget.h \
+  qt/pctm/settings/settingswalletrepairwidget.h \
+  qt/pctm/settings/settingswidget.h \
+  qt/pctm/welcomecontentwidget.h \
+  qt/pctm/splash.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -358,26 +358,26 @@ RES_ICONS = \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
   qt/res/icons/abstainvote.png \
-  qt/pivx/res/img/bg-dashboard-banner.png \
-  qt/pivx/res/img/bg-multi-number-dark.svg \
-  qt/pivx/res/img/ic-check-locked.svg \
-  qt/pivx/res/img/ic-nav-address.svg \
-  qt/pivx/res/img/ic-update.svg \
-  qt/pivx/res/img/bg-multi-number.svg \
-  qt/pivx/res/img/ic-check-mint-off.svg \
-  qt/pivx/res/img/ic-nav-cold-staking.svg \
-  qt/pivx/res/img/ic-nav-cold-staking-active.svg \
-  qt/pivx/res/img/ic-nav-dashboard-active.svg \
-  qt/pivx/res/img/ic-wallet-status-locked.svg \
-  qt/pivx/res/img/bg-splash.svg \
-  qt/pivx/res/img/bg-splash.png \
-  qt/pivx/res/img/ic-check-mint.svg \
-  qt/pivx/res/img/ic-nav-dashboard-hover.svg \
-  qt/pivx/res/img/ic-wallet-status-staking.svg \
-  qt/pivx/res/img/ic-check-peers-off.svg \
-  qt/pivx/res/img/ic-nav-dashboard.svg \
-  qt/pivx/res/img/ic-wallet-status-unlocked.svg \
-  qt/pivx/res/img/ic-check-peers.svg \
+  qt/pctm/res/img/bg-dashboard-banner.png \
+  qt/pctm/res/img/bg-multi-number-dark.svg \
+  qt/pctm/res/img/ic-check-locked.svg \
+  qt/pctm/res/img/ic-nav-address.svg \
+  qt/pctm/res/img/ic-update.svg \
+  qt/pctm/res/img/bg-multi-number.svg \
+  qt/pctm/res/img/ic-check-mint-off.svg \
+  qt/pctm/res/img/ic-nav-cold-staking.svg \
+  qt/pctm/res/img/ic-nav-cold-staking-active.svg \
+  qt/pctm/res/img/ic-nav-dashboard-active.svg \
+  qt/pctm/res/img/ic-wallet-status-locked.svg \
+  qt/pctm/res/img/bg-splash.svg \
+  qt/pctm/res/img/bg-splash.png \
+  qt/pctm/res/img/ic-check-mint.svg \
+  qt/pctm/res/img/ic-nav-dashboard-hover.svg \
+  qt/pctm/res/img/ic-wallet-status-staking.svg \
+  qt/pctm/res/img/ic-check-peers-off.svg \
+  qt/pctm/res/img/ic-nav-dashboard.svg \
+  qt/pctm/res/img/ic-wallet-status-unlocked.svg \
+  qt/pctm/res/img/ic-check-peers.svg \
   qt/pivx/res/img/ic-nav-master-active.svg \
   qt/pivx/res/img/ic-watch-password-white.svg \
   qt/pivx/res/img/bg-welcome-container.jpg \

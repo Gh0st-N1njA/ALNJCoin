@@ -9,7 +9,7 @@
 #define SETTINGSCONSOLEWIDGET_H
 
 #include <QWidget>
-#include "qt/pivx/pwidget.h"
+#include "qt/pctm/pwidget.h"
 #include "guiutil.h"
 #include "net.h"
 #include <QCompleter>

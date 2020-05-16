@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 set(QT_MINIMUM_VERSION 5.5.1)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/forms ${CMAKE_CURRENT_SOURCE_DIR}/pivx/forms ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/forms)
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/forms ${CMAKE_CURRENT_SOURCE_DIR}/pctm/forms ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/forms)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
@@ -116,80 +116,80 @@ SET(QT_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodeltransaction.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/zpctmcontroldialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/pivxgui.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/loadingdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/pwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/guitransactionsutils.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/snackbar.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/navmenuwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/lockunlock.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/receivedialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/furabstractlistitemdelegate.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/txviewholder.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/qtutils.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/expandablebutton.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/topbar.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/txrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/addressfilterproxymodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/dashboardwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/addresslabelrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/contactdropdownrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/contactsdropdown.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/optionbutton.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/mninfodialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/coldstakingmodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/mnmodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/masternodewizarddialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/mnrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/masternodeswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/sendchangeaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/sendconfirmdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/sendcustomfeedialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/sendchangeaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/sendmultirow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/send.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/addnewaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/addnewcontactdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/requestdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/receivewidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/myaddressrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/csrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/addressholder.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/tooltipmenu.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/addresseswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/defaultdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/privacywidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/coldstakingwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsbackupwallet.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsbittoolwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsconsolewidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsdisplayoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsfaqwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsinformationwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsmainoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsmultisenddialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsmultisendwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingssignmessagewidgets.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingswalletoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingswalletrepairwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsexportcsv.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/welcomecontentwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/splash.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/pivxgui.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/loadingdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/pwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/guitransactionsutils.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/snackbar.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/navmenuwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/lockunlock.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/receivedialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/furabstractlistitemdelegate.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/txviewholder.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/qtutils.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/expandablebutton.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/topbar.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/txrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/addressfilterproxymodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/dashboardwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/addresslabelrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/contactdropdownrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/contactsdropdown.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/optionbutton.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/mninfodialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/coldstakingmodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/mnmodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/masternodewizarddialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/mnrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/masternodeswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/sendchangeaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/sendconfirmdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/sendcustomfeedialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/sendchangeaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/sendmultirow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/send.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/addnewaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/addnewcontactdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/requestdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/receivewidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/myaddressrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/csrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/addressholder.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/tooltipmenu.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/addresseswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/defaultdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/privacywidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/coldstakingwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsbackupwallet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsbittoolwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsconsolewidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsdisplayoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsfaqwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsinformationwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsmainoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsmultisenddialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsmultisendwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingssignmessagewidgets.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingswalletoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingswalletrepairwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsexportcsv.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/welcomecontentwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/splash.cpp
         )
 
 # Workaround until the old rpcconsole UI window is fully removed
-set_property(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings/settingsconsolewidget.cpp PROPERTY SKIP_AUTOMOC ON)
+set_property(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings/settingsconsolewidget.cpp PROPERTY SKIP_AUTOMOC ON)
 execute_process(
         COMMAND ${MOC_BIN} -o moc_settingsconsolewidget.cpp settingsconsolewidget.h
-        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings
 )
 
 execute_process(
         COMMAND ${MOC_BIN} -o moc_pfborderimage.cpp pfborderimage.h
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/pivx
 )
-list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/pivx/moc_pfborderimage.cpp)
+list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/pctm/moc_pfborderimage.cpp)
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/macdockiconhandler.mm)
@@ -203,7 +203,7 @@ target_include_directories(qt_stuff PUBLIC ${CMAKE_SOURCE_DIR}/src
         ${CMAKE_SOURCE_DIR}/src/secp256k1/include
         ${CMAKE_CURRENT_SOURCE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}/pivx
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx/settings
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings
         ${OPENSSL_INCLUDE_DIR}
         ${BerkeleyDB_INCLUDE_DIRS}
         )

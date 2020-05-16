@@ -9,7 +9,7 @@
 #define NAVMENUWIDGET_H
 
 #include <QWidget>
-#include "qt/pivx/pwidget.h"
+#include "qt/pctm/pwidget.h"
 
 class PCTMGUI;
 

@@ -4,11 +4,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/tooltipmenu.h"
-#include "qt/pivx/forms/ui_tooltipmenu.h"
+#include "qt/pctm/tooltipmenu.h"
+#include "qt/pctm/forms/ui_tooltipmenu.h"
 
-#include "qt/pivx/pivxgui.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/pivxgui.h"
+#include "qt/pctm/qtutils.h"
 #include <QTimer>
 
 TooltipMenu::TooltipMenu(PCTMGUI *_window, QWidget *parent) :

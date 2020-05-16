@@ -9,8 +9,8 @@
 
 #include <QWidget>
 #include <QAbstractTableModel>
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/furabstractlistitemdelegate.h"
+#include "qt/pctm/pwidget.h"
+#include "qt/pctm/furabstractlistitemdelegate.h"
 
 class PCTMGUI;
 

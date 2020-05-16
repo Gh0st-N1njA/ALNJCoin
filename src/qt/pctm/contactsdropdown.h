@@ -8,10 +8,10 @@
 #define CONTACTSDROPDOWN_H
 
 #include "addresstablemodel.h"
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/contactdropdownrow.h"
-#include "qt/pivx/furabstractlistitemdelegate.h"
-#include "qt/pivx/addressfilterproxymodel.h"
+#include "qt/pctm/pwidget.h"
+#include "qt/pctm/contactdropdownrow.h"
+#include "qt/pctm/furabstractlistitemdelegate.h"
+#include "qt/pctm/addressfilterproxymodel.h"
 #include <QListView>
 #include <QObject>
 #include <QWidget>

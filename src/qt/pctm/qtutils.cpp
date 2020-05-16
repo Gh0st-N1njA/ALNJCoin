@@ -5,11 +5,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/qtutils.h"
 
 #include "guiconstants.h"
 #include "qrencode.h"
-#include "qt/pivx/snackbar.h"
+#include "qt/pctm/snackbar.h"
 
 #include <QFile>
 #include <QGraphicsDropShadowEffect>

@@ -16,7 +16,7 @@
 #include "intro.h"
 #include "guiutil.h"
 
-#include "qt/pivx/qtutils.cpp"
+#include "qt/pctm/qtutils.cpp"
 
 #include "clientversion.h"
 #include "init.h"
