@@ -38,7 +38,7 @@ def determine_db_dir():
         return os.path.expanduser("~/Library/Application Support/PCTM/")
     elif platform.system() == "Windows":
         return os.path.join(os.environ['APPDATA'], "PCTM")
-    return os.path.expanduser("~/.pivx")
+    return os.path.expanduser("~/.pctm")
 
 def read_bitcoin_config(dbdir):
     """Read the pctm.conf file from dbdir, returns dictionary of settings"""

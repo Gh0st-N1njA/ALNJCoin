@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.pivx.pactumcoind</string>
+	<string>org.pctm.pactumcoind</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/local/bin/pactumcoind</string>

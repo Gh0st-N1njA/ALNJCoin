@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
 This issue tracker is only for technical issues related to PCTM Core.
-General PCTM questions and/or support requests and are best directed to the [PCTM Discord](https://discord.pivx.org).
+General PCTM questions and/or support requests and are best directed to the [PCTM Discord](https://discord.pactumcoin.site).
 
 ### Describe the issue
 

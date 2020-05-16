@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.pivx.Pactumcoin-Qt";
+        return @"io.pctm.Pactumcoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

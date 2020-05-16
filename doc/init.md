@@ -129,13 +129,13 @@ setting the PCTMD and FLAGS environment variables in the file
 
 ### macOS
 
-Copy org.pivx.pactumcoind.plist into ~/Library/LaunchAgents. Load the launch agent by
-running `launchctl load ~/Library/LaunchAgents/org.pivx.pactumcoind.plist`.
+Copy org.pctm.pactumcoind.plist into ~/Library/LaunchAgents. Load the launch agent by
+running `launchctl load ~/Library/LaunchAgents/org.pctm.pactumcoind.plist`.
 
 This Launch Agent will cause pactumcoind to start whenever the user logs in.
 
 NOTE: This approach is intended for those wanting to run pactumcoind as the current user.
-You will need to modify org.pivx.pactumcoind.plist if you intend to use it as a
+You will need to modify org.pctm.pactumcoind.plist if you intend to use it as a
 Launch Daemon with a dedicated pivx user.
 
 Auto-respawn

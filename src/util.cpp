@@ -311,7 +311,7 @@ fs::path GetDefaultDataDir()
     return pathRet / "PCTM";
 #else
     // Unix
-    return pathRet / ".pivx";
+    return pathRet / ".pctm";
 #endif
 #endif
 }

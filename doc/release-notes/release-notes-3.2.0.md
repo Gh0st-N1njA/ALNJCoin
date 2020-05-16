@@ -52,7 +52,7 @@ A full report provided by PCTM developers is available on the [PCTM Website](htt
 
 On March 6th 2019, an attack was detected on the PCTM network zerocoin protocol, or zPCTM. The vulnerability allows an attacker to fake serials accepted by the network and thus to spend zerocoins that have never been minted. As severe as it is, it does not harm users’ privacy and does not affect their holdings directly.
 
-As a result of this, all zPCTM functionality was disabled via one of our sporks shortly after verification of this exploit. A full report, detailing how this attack was performed, as well as investigation results and mitigation methods is available [On Medium](https://medium.com/@dev.pivx/report-wrapped-serials-attack-5f4bf7b51701).
+As a result of this, all zPCTM functionality was disabled via one of our sporks shortly after verification of this exploit. A full report, detailing how this attack was performed, as well as investigation results and mitigation methods is available [On Medium](https://medium.com/@dev.pctm/report-wrapped-serials-attack-5f4bf7b51701).
 
 zPCTM functions will be restored after v3.2.0 is pushed out and the majority of the network has upgraded.
 

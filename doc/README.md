@@ -28,8 +28,8 @@ Drag PACTUMCOIN-Qt to your applications folder, and then run PACTUMCOIN-Qt.
 
 * See the documentation at the [PCTM Wiki](https://github.com/PCTM-Project/PCTM/wiki)
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [PCTM Forum](http://forum.pivx.org/).
-* Join our Discord server [Discord Server](https://discord.pivx.org)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [PCTM Forum](http://forum.pactumcoin.site/).
+* Join our Discord server [Discord Server](https://discord.pactumcoin.site)
 
 Building
 ---------------------
@@ -56,8 +56,8 @@ The PCTM repo's [root README](/README.md) contains relevant information on the d
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [PCTM](http://forum.pivx.org/) forum.
-* Join the [PCTM Discord](https://discord.pivx.org).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [PCTM](http://forum.pactumcoin.site/) forum.
+* Join the [PCTM Discord](https://discord.pactumcoin.site).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
