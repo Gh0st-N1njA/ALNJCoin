@@ -173,7 +173,7 @@ QT_MOC = \
   qt/pctm/settings/moc_settingsconsolewidget.cpp
 
 QT_QRC_CPP = qt/qrc_pctm.cpp
-QT_QRC = qt/pivx.qrc
+QT_QRC = qt/pctm.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_pctm_locale.cpp
 QT_QRC_LOCALE = qt/pctm_locale.qrc
 
@@ -350,11 +350,11 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
   qt/res/icons/unit_pctm.png \
-  qt/res/icons/unit_mpivx.png \
-  qt/res/icons/unit_upivx.png \
-  qt/res/icons/unit_tpivx.png \
-  qt/res/icons/unit_tmpivx.png \
-  qt/res/icons/unit_tupivx.png \
+  qt/res/icons/unit_mpctm.png \
+  qt/res/icons/unit_upctm.png \
+  qt/res/icons/unit_tpctm.png \
+  qt/res/icons/unit_tmpctm.png \
+  qt/res/icons/unit_tupctm.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
   qt/res/icons/abstainvote.png \
@@ -465,7 +465,7 @@ RES_ICONS = \
   qt/pctm/res/img/ic-arrow-drop-up.svg \
   qt/pctm/res/img/ic-coin-zpctm.svg \
   qt/pctm/res/img/ic-received.svg \
-  qt/pctm/res/img/img-logo-pivx.png \
+  qt/pctm/res/img/img-logo-pctm.png \
   qt/pctm/res/img/ic-arrow-drop-white-down.svg \
   qt/pctm/res/img/ic-combo-box.svg \
   qt/pctm/res/img/ic-send.svg \
@@ -474,13 +474,13 @@ RES_ICONS = \
   qt/pctm/res/img/ic-connect.svg \
   qt/pctm/res/img/ic-submenu-lock.svg \
   qt/pctm/res/img/img-logo-pivx@3x.png \
-  qt/pctm/res/img/img-logo-pivx.svg \
+  qt/pctm/res/img/img-logo-pctm.svg \
   qt/pctm/res/img/ic-arrow-right-white.svg \
   qt/pctm/res/img/ic-arrow-left-white.svg \
   qt/pctm/res/img/ic-arrow-left.svg \
   qt/pctm/res/img/ic-copy-liliac.svg \
   qt/pctm/res/img/ic-submenu-staking.svg \
-  qt/pctm/res/img/img-nav-logo-pivx.png \
+  qt/pctm/res/img/img-nav-logo-pctm.png \
   qt/pctm/res/img/ic-arrow-right.svg \
   qt/pctm/res/img/ic-copy.svg \
   qt/pctm/res/img/ic-copy-big.svg \

@@ -217,7 +217,7 @@ set_source_files_properties(${QT_TRANSLATIONS_FILES} PROPERTIES OUTPUT_LOCATION 
 QT5_ADD_TRANSLATION(QM ${QT_TRANSLATIONS_FILES})
 add_custom_target(translations_target ALL DEPENDS ${QM})
 
-QT5_ADD_RESOURCES(QRC_RESOURCE pivx.qrc)
+QT5_ADD_RESOURCES(QRC_RESOURCE pctm.qrc)
 QT5_ADD_RESOURCES(QRC_LOCALE_RESOURCE pctm_locale.qrc)
 
 add_executable(pactumcoin-qt pctm.cpp ${QM} ${QRC_RESOURCE} ${QRC_LOCALE_RESOURCE})

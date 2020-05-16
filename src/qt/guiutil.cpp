@@ -719,7 +719,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "pivx.desktop";
+    return GetAutostartDir() / "pctm.desktop";
 }
 
 bool GetStartOnSystemStartup()
