@@ -75,7 +75,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE check-symbols check-security
-# pivx core #
+# pctm core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -561,12 +561,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST =
 
 
-config/pivx-config.h: config/stamp-h1
+config/pctm-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/pivx-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/pctm-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/pivx-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/pivx-config.h.in
+$(top_srcdir)/$(subdir)/config/pctm-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/pctm-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

@@ -108,7 +108,7 @@ Create the macOS SDK tarball, see the [macOS build instructions](build-osx.md#de
 
 NOTE: Gitian is sometimes unable to download files. If you have errors, try the step below.
 
-By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in pivx, then:
+By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in pctm, then:
 
     pushd ./gitian-builder
     make -C ../pctm/depends download SOURCES_PATH=`pwd`/cache/common
@@ -144,10 +144,10 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
 Build output expected:
 
-  1. source tarball (`pivx-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`pivx-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`pivx-${VERSION}-win[32|64]-setup-unsigned.exe`, `pivx-${VERSION}-win[32|64].zip`)
-  4. macOS unsigned installer and dist tarball (`pivx-${VERSION}-osx-unsigned.dmg`, `pivx-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`pctm-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`pctm-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`pctm-${VERSION}-win[32|64]-setup-unsigned.exe`, `pctm-${VERSION}-win[32|64].zip`)
+  4. macOS unsigned installer and dist tarball (`pctm-${VERSION}-osx-unsigned.dmg`, `pctm-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
@@ -211,7 +211,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/macOS detached signatures:
 
 - Once the Windows/macOS builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [pivx-detached-sigs](https://github.com/pivx-Project/pivx-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [pctm-detached-sigs](https://github.com/pctm-Project/pctm-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed macOS binary:
 
@@ -281,7 +281,7 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/pivx, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/pctm, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 

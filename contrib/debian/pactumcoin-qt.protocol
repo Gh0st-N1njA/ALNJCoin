@@ -1,6 +1,6 @@
 [Protocol]
 exec=pactumcoin-qt '%u'
-protocol=pivx
+protocol=pctm
 input=none
 output=none
 helper=true

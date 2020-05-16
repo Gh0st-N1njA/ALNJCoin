@@ -76,7 +76,7 @@ Now, you can either build from self-compiled [depends](/depends/README.md) or in
 
 BerkeleyDB is required for the wallet.
 
- **For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~pivx/+archive/pivx).
+ **For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~pctm/+archive/pctm).
  You can add the repository using the following command:
 
     sudo apt-get install software-properties-common

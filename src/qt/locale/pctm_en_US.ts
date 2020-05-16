@@ -1796,8 +1796,8 @@ Are you sure?</translation>
         <translation>Parsed data too large</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>Invalid URI, not starting with "pivx" prefix</translation>
+        <source>Invalid URI, not starting with "pctm" prefix</source>
+        <translation>Invalid URI, not starting with "pctm" prefix</translation>
     </message>
 </context>
 <context>
@@ -1903,9 +1903,9 @@ Are you sure?</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/pctm-project/pctm-project-translations</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/pctm-project/pctm-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2194,8 +2194,8 @@ Address: %4
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Cannot start pivx: click-to-pay handler</translation>
+        <source>Cannot start pctm: click-to-pay handler</source>
+        <translation>Cannot start pctm: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid PCTM address or malformed URI parameters.</source>
@@ -6103,7 +6103,7 @@ PCTM Core Wallet</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>pctm-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>

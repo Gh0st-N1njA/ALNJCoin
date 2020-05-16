@@ -1786,8 +1786,8 @@ Confirmez-vous?</translation>
         <translation>Données traitées trop grandes</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>URI invalide, ne commence pas par "pivx"</translation>
+        <source>Invalid URI, not starting with "pctm" prefix</source>
+        <translation>URI invalide, ne commence pas par "pctm"</translation>
     </message>
 </context>
 <context>
@@ -1893,9 +1893,9 @@ Confirmez-vous?</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/pctm-project/pctm-project-translations</source>
         <translation>Langue manquante ou traduction incomplète? Aidez-nous à traduire ce projet ici:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/pctm-project/pctm-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2184,8 +2184,8 @@ Adresse : %4
         <translation>Adresse de paiement invalide %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Impossible de démarrer pivx: gestionnaire click-to-pay</translation>
+        <source>Cannot start pctm: click-to-pay handler</source>
+        <translation>Impossible de démarrer pctm: gestionnaire click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid PCTM address or malformed URI parameters.</source>
@@ -6074,7 +6074,7 @@ Portefeuille PCTM Core</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>pctm-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = conserve les métadonnées de transaction, par exemple le propriétaire du compte et les informations de demande de paiement, 2 = supprime les métadonnées)</translation>

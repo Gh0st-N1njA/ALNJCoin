@@ -50,8 +50,8 @@ static bool AppInitRawTx(int argc, char* argv[])
         // First part of help message is specific to this utility
         std::string strUsage = _("Pctm Core pactumcoin-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  pactumcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded pivx transaction") + "\n" +
-                               "  pactumcoin-tx [options] -create [commands]   " + _("Create hex-encoded pivx transaction") + "\n" +
+                               "  pactumcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded pctm transaction") + "\n" +
+                               "  pactumcoin-tx [options] -create [commands]   " + _("Create hex-encoded pctm transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

@@ -89,7 +89,7 @@ Ubuntu Bionic 18.04 <sup>[1](#footnote1)</sup>:
 Once the toolchain is installed the build steps are common:
 
 Note that for WSL the Pctm Core source path MUST be somewhere in the default mount file system, for
-example /usr/src/pivx, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail.
+example /usr/src/pctm, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail.
 This means you cannot use a directory that is located directly on the host Windows file system to perform the build.
 
 Build using:
@@ -112,7 +112,7 @@ Installation
 After building using the Windows subsystem it can be useful to copy the compiled
 executables to a directory on the Windows drive in the same directory structure
 as they appear in the release `.zip` archive. This can be done in the following
-way. This will install to `c:\workspace\pivx`, for example:
+way. This will install to `c:\workspace\pctm`, for example:
 
     make install DESTDIR=/mnt/c/workspace/pctm
 

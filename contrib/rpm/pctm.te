@@ -1,4 +1,4 @@
-policy_module(pivx, 1.100.1)
+policy_module(pctm, 1.100.1)
 
 ########################################
 #
@@ -28,7 +28,7 @@ corenet_port(pctm_port_t)
 
 ########################################
 #
-# pivx local policy
+# pctm local policy
 #
 allow pctm_t self:process { fork };
 

@@ -66,7 +66,7 @@ Initial Gitian Setup
 Now that the script has been downloaded to your home directory, its time to run it in setup mode. This will perform the following actions:
 
 - Install the necessary system packages for gitian (namely the Docker cli tools).
-- Clone the gitian-builder, gitian.sigs, pivx-detached-sigs, and pivx GitHub repos.
+- Clone the gitian-builder, gitian.sigs, pctm-detached-sigs, and pctm GitHub repos.
 - Configure proper user/group permissions for running gitian with Docker
 - Create a base Docker image.
 

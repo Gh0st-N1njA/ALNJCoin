@@ -125,4 +125,4 @@ Thanks to everyone who directly contributed to this release:
 - rejectedpromise
 - Warrows
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pivx-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pctm-project-translations/).

@@ -8,7 +8,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/pctm-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -194,7 +194,7 @@ void OptionsModel::setDisplayDefaultOptions(QSettings& settings, bool reset)
         addOverriddenOption("-lang");
 
     if (settings.contains("nAnonymizePctmAmount") || reset)
-        SoftSetArg("-anonymizepivxamount", settings.value("nAnonymizePctmAmount").toString().toStdString());
+        SoftSetArg("-anonymizepctmamount", settings.value("nAnonymizePctmAmount").toString().toStdString());
 
     if (!settings.contains("strThirdPartyTxUrls") || reset)
         settings.setValue("strThirdPartyTxUrls", "");

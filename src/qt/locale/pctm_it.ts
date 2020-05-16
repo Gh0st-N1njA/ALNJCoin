@@ -1578,8 +1578,8 @@ Sei sicuro?</translation>
         <translation>Dati analizzati troppo grandi</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>URI non valido, che non inizia con il prefisso "pivx"</translation>
+        <source>Invalid URI, not starting with "pctm" prefix</source>
+        <translation>URI non valido, che non inizia con il prefisso "pctm"</translation>
     </message>
 </context>
 <context>
@@ -1685,9 +1685,9 @@ Sei sicuro?</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/pctm-project/pctm-project-translations</source>
         <translation>Lingua mancante o traduzione incompleta? Aiutaci a contribuire alle traduzioni qui:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/pctm-project/pctm-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1976,8 +1976,8 @@ Indirizzo: %4
         <translation>Indirizzo di pagamento %1 invalido</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Impossibile avviare pivx: gestore click-to-pay</translation>
+        <source>Cannot start pctm: click-to-pay handler</source>
+        <translation>Impossibile avviare pctm: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid PCTM address or malformed URI parameters.</source>
@@ -5339,7 +5339,7 @@ Portafoglio PCTM Core.</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>pctm-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = conserva i metadati tx, ad esempio il proprietario dell'account e le informazioni sulla richiesta di pagamento, 2 = elimina i metadati tx)</translation>

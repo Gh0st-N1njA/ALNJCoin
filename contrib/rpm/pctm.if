@@ -1,5 +1,5 @@
 
-## <summary>policy for pivx</summary>
+## <summary>policy for pctm</summary>
 
 
 ########################################
@@ -24,7 +24,7 @@ interface(`pctm_domtrans',`
 
 ########################################
 ## <summary>
-##	Execute pivx server in the pivx domain.
+##	Execute pctm server in the pctm domain.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -43,7 +43,7 @@ interface(`pctm_initrc_domtrans',`
 
 ########################################
 ## <summary>
-##	Search pivx lib directories.
+##	Search pctm lib directories.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -62,7 +62,7 @@ interface(`pctm_search_lib',`
 
 ########################################
 ## <summary>
-##	Read pivx lib files.
+##	Read pctm lib files.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -81,7 +81,7 @@ interface(`pctm_read_lib_files',`
 
 ########################################
 ## <summary>
-##	Manage pivx lib files.
+##	Manage pctm lib files.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -100,7 +100,7 @@ interface(`pctm_manage_lib_files',`
 
 ########################################
 ## <summary>
-##	Manage pivx lib directories.
+##	Manage pctm lib directories.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -121,7 +121,7 @@ interface(`pctm_manage_lib_dirs',`
 ########################################
 ## <summary>
 ##	All of the rules required to administrate
-##	a pivx environment
+##	a pctm environment
 ## </summary>
 ## <param name="domain">
 ##	<summary>

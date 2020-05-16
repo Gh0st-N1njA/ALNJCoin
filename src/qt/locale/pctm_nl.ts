@@ -1795,8 +1795,8 @@ Weet je het zeker?</translation>
         <translation>Ingelezen data te groot</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>Ongeldige URI, begint niet met de "pivx" prefix</translation>
+        <source>Invalid URI, not starting with "pctm" prefix</source>
+        <translation>Ongeldige URI, begint niet met de "pctm" prefix</translation>
     </message>
 </context>
 <context>
@@ -1902,9 +1902,9 @@ Weet je het zeker?</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/pctm-project/pctm-project-translations</source>
         <translation>Taal ontbreekt of vertaling onvolledig? Help om bij te dragen aan vertalingen:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/pctm-project/pctm-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2193,8 +2193,8 @@ Adres: %4
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Kan pivx niet starten: click-to-pay handler</translation>
+        <source>Cannot start pctm: click-to-pay handler</source>
+        <translation>Kan pctm niet starten: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid PCTM address or malformed URI parameters.</source>
@@ -6094,7 +6094,7 @@ PCTM Core Portemonnee</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>pctm-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>

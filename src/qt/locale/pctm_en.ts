@@ -2216,7 +2216,7 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Invalid URI, not starting with &quot;pivx&quot; prefix</source>
+        <source>Invalid URI, not starting with &quot;pctm&quot; prefix</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2349,7 +2349,7 @@ Are you sure?</source>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/pctm-project/pctm-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2721,7 +2721,7 @@ Address: %4
     </message>
     <message>
         <location line="-102"/>
-        <source>Cannot start pivx: click-to-pay handler</source>
+        <source>Cannot start pctm: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7530,9 +7530,9 @@ PCTM Core Wallet</source>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>pctm-core</name>
     <message>
-        <location filename="../pivxstrings.cpp" line="+15"/>
+        <location filename="../pctmstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>

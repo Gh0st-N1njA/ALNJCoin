@@ -3,7 +3,7 @@ PCTM Core
 
 Setup
 ---------------------
-[PCTM Core](http://pivx.org/wallet) is the original PCTM client and it builds the backbone of the network. However, it downloads and stores the entire history of PCTM transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[PCTM Core](http://pctm.org/wallet) is the original PCTM client and it builds the backbone of the network. However, it downloads and stores the entire history of PCTM transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -49,7 +49,7 @@ The PCTM repo's [root README](/README.md) contains relevant information on the d
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://www.fuzzbawls.pw/pivx/doxygen/)
+- [Source Code Documentation (External Link)](https://www.fuzzbawls.pw/pctm/doxygen/)
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)

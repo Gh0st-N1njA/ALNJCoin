@@ -49,7 +49,7 @@
       <string>io.pctm.PctmPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>pivx</string>
+        <string>pctm</string>
       </array>
     </dict>
   </array>
@@ -71,7 +71,7 @@
         <string>application/x-pctm-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>pivxpaymentrequest</string>
+          <string>pctmpaymentrequest</string>
         </array>
       </dict>
     </dict>

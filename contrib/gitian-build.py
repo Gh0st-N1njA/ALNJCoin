@@ -106,13 +106,13 @@ def setup_darwin():
 
 def setup_repos():
     if not os.path.isdir('gitian.sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/pivx-Project/gitian.sigs.git'])
-    if not os.path.isdir('pivx-detached-sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/pivx-Project/pivx-detached-sigs.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/pctm-Project/gitian.sigs.git'])
+    if not os.path.isdir('pctm-detached-sigs'):
+        subprocess.check_call(['git', 'clone', 'https://github.com/pctm-Project/pctm-detached-sigs.git'])
     if not os.path.isdir('gitian-builder'):
         subprocess.check_call(['git', 'clone', 'https://github.com/devrandom/gitian-builder.git'])
-    if not os.path.isdir('pivx'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/pivx-Project/pivx.git'])
+    if not os.path.isdir('pctm'):
+        subprocess.check_call(['git', 'clone', 'https://github.com/pctm-Project/pctm.git'])
     os.chdir('gitian-builder')
     make_image_prog = ['bin/make-base-vm', '--suite', 'bionic', '--arch', 'amd64']
     if args.docker:
@@ -139,7 +139,7 @@ def setup_repos():
 def build():
     global args, workdir
 
-    os.makedirs('pivx-binaries/' + args.version, exist_ok=True)
+    os.makedirs('pctm-binaries/' + args.version, exist_ok=True)
     print('\nBuilding Dependencies\n')
     os.chdir('gitian-builder')
     os.makedirs('inputs', exist_ok=True)
@@ -152,23 +152,23 @@ def build():
 
     if args.linux:
         print('\nCompiling ' + args.version + ' Linux')
-        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'pivx='+args.commit, '--url', 'pivx='+args.url, '../pctm/contrib/gitian-descriptors/gitian-linux.yml'])
+        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'pctm='+args.commit, '--url', 'pctm='+args.url, '../pctm/contrib/gitian-descriptors/gitian-linux.yml'])
         subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-linux', '--destination', '../gitian.sigs/', '../pctm/contrib/gitian-descriptors/gitian-linux.yml'])
-        subprocess.check_call('mv build/out/pivx-*.tar.gz build/out/src/pivx-*.tar.gz ../pivx-binaries/'+args.version, shell=True)
+        subprocess.check_call('mv build/out/pctm-*.tar.gz build/out/src/pctm-*.tar.gz ../pctm-binaries/'+args.version, shell=True)
 
     if args.windows:
         print('\nCompiling ' + args.version + ' Windows')
-        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'pivx='+args.commit, '--url', 'pivx='+args.url, '../pctm/contrib/gitian-descriptors/gitian-win.yml'])
+        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'pctm='+args.commit, '--url', 'pctm='+args.url, '../pctm/contrib/gitian-descriptors/gitian-win.yml'])
         subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-win-unsigned', '--destination', '../gitian.sigs/', '../pctm/contrib/gitian-descriptors/gitian-win.yml'])
-        subprocess.check_call('mv build/out/pivx-*-win-unsigned.tar.gz inputs/', shell=True)
-        subprocess.check_call('mv build/out/pivx-*.zip build/out/pivx-*.exe build/out/src/pivx-*.tar.gz ../pivx-binaries/'+args.version, shell=True)
+        subprocess.check_call('mv build/out/pctm-*-win-unsigned.tar.gz inputs/', shell=True)
+        subprocess.check_call('mv build/out/pctm-*.zip build/out/pctm-*.exe build/out/src/pctm-*.tar.gz ../pctm-binaries/'+args.version, shell=True)
 
     if args.macos:
         print('\nCompiling ' + args.version + ' MacOS')
-        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'pivx='+args.commit, '--url', 'pivx='+args.url, '../pctm/contrib/gitian-descriptors/gitian-osx.yml'])
+        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'pctm='+args.commit, '--url', 'pctm='+args.url, '../pctm/contrib/gitian-descriptors/gitian-osx.yml'])
         subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-osx-unsigned', '--destination', '../gitian.sigs/', '../pctm/contrib/gitian-descriptors/gitian-osx.yml'])
-        subprocess.check_call('mv build/out/pivx-*-osx-unsigned.tar.gz inputs/', shell=True)
-        subprocess.check_call('mv build/out/pivx-*.tar.gz build/out/pivx-*.dmg build/out/src/pivx-*.tar.gz ../pivx-binaries/'+args.version, shell=True)
+        subprocess.check_call('mv build/out/pctm-*-osx-unsigned.tar.gz inputs/', shell=True)
+        subprocess.check_call('mv build/out/pctm-*.tar.gz build/out/pctm-*.dmg build/out/src/pctm-*.tar.gz ../pctm-binaries/'+args.version, shell=True)
 
     os.chdir(workdir)
 
@@ -195,20 +195,20 @@ def sign():
     #subprocess.check_call('mv build/out/pctm-*win32-setup.exe ../pctm-binaries/'+args.version, shell=True)
 
     print('\nSigning ' + args.version + ' MacOS')
-    subprocess.check_call('cp inputs/pivx-' + args.version + '-osx-unsigned.tar.gz inputs/pivx-osx-unsigned.tar.gz', shell=True)
+    subprocess.check_call('cp inputs/pctm-' + args.version + '-osx-unsigned.tar.gz inputs/pctm-osx-unsigned.tar.gz', shell=True)
     subprocess.check_call(['bin/gbuild', '--skip-image', '--upgrade', '--commit', 'signature='+args.commit, '../pctm/contrib/gitian-descriptors/gitian-osx-signer.yml'])
     subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-osx-signed', '--destination', '../gitian.sigs/', '../pctm/contrib/gitian-descriptors/gitian-osx-signer.yml'])
-    subprocess.check_call('mv build/out/pivx-osx-signed.dmg ../pivx-binaries/'+args.version+'/pivx-'+args.version+'-osx.dmg', shell=True)
+    subprocess.check_call('mv build/out/pctm-osx-signed.dmg ../pctm-binaries/'+args.version+'/pctm-'+args.version+'-osx.dmg', shell=True)
 
     os.chdir(workdir)
 
     if args.commit_files:
         os.chdir('gitian.sigs')
         commit = False
-        if os.path.isfile(args.version+'-win-signed/'+args.signer+'/pivx-win-signer-build.assert.sig'):
+        if os.path.isfile(args.version+'-win-signed/'+args.signer+'/pctm-win-signer-build.assert.sig'):
             subprocess.check_call(['git', 'add', args.version+'-win-signed/'+args.signer])
             commit = True
-        if os.path.isfile(args.version+'-osx-signed/'+args.signer+'/pivx-dmg-signer-build.assert.sig'):
+        if os.path.isfile(args.version+'-osx-signed/'+args.signer+'/pctm-dmg-signer-build.assert.sig'):
             subprocess.check_call(['git', 'add', args.version+'-osx-signed/'+args.signer])
             commit = True
         if commit:
@@ -260,7 +260,7 @@ def main():
     parser = argparse.ArgumentParser(description='Script for running full Gitian builds.')
     parser.add_argument('-c', '--commit', action='store_true', dest='commit', help='Indicate that the version argument is for a commit or branch')
     parser.add_argument('-p', '--pull', action='store_true', dest='pull', help='Indicate that the version argument is the number of a github repository pull request')
-    parser.add_argument('-u', '--url', dest='url', default='https://github.com/pivx-Project/pivx', help='Specify the URL of the repository. Default is %(default)s')
+    parser.add_argument('-u', '--url', dest='url', default='https://github.com/pctm-Project/pctm', help='Specify the URL of the repository. Default is %(default)s')
     parser.add_argument('-v', '--verify', action='store_true', dest='verify', help='Verify the Gitian build')
     parser.add_argument('-b', '--build', action='store_true', dest='build', help='Do a Gitian build')
     parser.add_argument('-s', '--sign', action='store_true', dest='sign', help='Make signed binaries for Windows and MacOS')
@@ -361,12 +361,12 @@ def main():
         raise Exception('Cannot have both commit and pull')
     args.commit = ('' if args.commit else 'v') + args.version
 
-    os.chdir('pivx')
+    os.chdir('pctm')
     if args.pull:
         subprocess.check_call(['git', 'fetch', args.url, 'refs/pull/'+args.version+'/merge'])
-        if not os.path.isdir('../gitian-builder/inputs/pivx'):
-            os.makedirs('../gitian-builder/inputs/pivx')
-        os.chdir('../gitian-builder/inputs/pivx')
+        if not os.path.isdir('../gitian-builder/inputs/pctm'):
+            os.makedirs('../gitian-builder/inputs/pctm')
+        os.chdir('../gitian-builder/inputs/pctm')
         if not os.path.isdir('.git'):
             subprocess.check_call(['git', 'init'])
         subprocess.check_call(['git', 'fetch', args.url, 'refs/pull/'+args.version+'/merge'])

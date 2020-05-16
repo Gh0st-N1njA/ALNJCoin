@@ -46,11 +46,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case PCTM:
-        return QString("pivx");
+        return QString("pctm");
     case mPCTM:
-        return QString("mpivx");
+        return QString("mpctm");
     case uPCTM:
-        return QString::fromUtf8("upivx");
+        return QString::fromUtf8("upctm");
     default:
         return QString("???");
     }

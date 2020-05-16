@@ -1577,8 +1577,8 @@ Emin misiniz?</translation>
         <translation>Ayrıştırılmış bilgi çok büyük</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>Geçersiz URI, "pivx" ön adıyla başlamıyor</translation>
+        <source>Invalid URI, not starting with "pctm" prefix</source>
+        <translation>Geçersiz URI, "pctm" ön adıyla başlamıyor</translation>
     </message>
 </context>
 <context>
@@ -1684,9 +1684,9 @@ Emin misiniz?</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/pctm-project/pctm-project-translations</source>
         <translation>Dil eksik veya çeviri tamamlanmamış mı? Katkıda bulunan çevirilere yardımcı olun:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/pctm-project/pctm-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1975,7 +1975,7 @@ Adres: %4
         <translation>Geçersiz ödeme adresi %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
+        <source>Cannot start pctm: click-to-pay handler</source>
         <translation>Pctm başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
@@ -5348,7 +5348,7 @@ Hoşgeldiniz</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>pctm-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx meta verileri, örneğin hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verileri bırak)</translation>

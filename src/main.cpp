@@ -2232,7 +2232,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    util::ThreadRename("pivx-scriptch");
+    util::ThreadRename("pctm-scriptch");
     scriptcheckqueue.Thread();
 }
 

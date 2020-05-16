@@ -79,7 +79,7 @@ extern double NSAppKitVersionNumber;
 #endif
 #endif
 
-#define URI_SCHEME "pivx"
+#define URI_SCHEME "pctm"
 
 #if defined(Q_OS_MAC)
 #pragma GCC diagnostic push

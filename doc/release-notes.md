@@ -493,4 +493,4 @@ Thanks to everyone who directly contributed to this release:
 - practicalswift
 - random-zebra
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pivx-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pctm-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.

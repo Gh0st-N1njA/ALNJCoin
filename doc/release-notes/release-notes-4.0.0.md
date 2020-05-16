@@ -352,7 +352,7 @@ Result:
 Snapcraft Packages
 ------------------
 
-For our linux users, in addition to the [Ubuntu PPA](https://launchpad.net/~pivx) repository, we are now offering a [Snap package](https://snapcraft.io/pivx-core) as quick way to install and update a PCTM wallet.
+For our linux users, in addition to the [Ubuntu PPA](https://launchpad.net/~pctm) repository, we are now offering a [Snap package](https://snapcraft.io/pctm-core) as quick way to install and update a PCTM wallet.
 
 Release versions are available via the `Stable` branch, and (for testing-only purposes) nightly builds are available in the `Beta` branch.
 
@@ -572,4 +572,4 @@ Thanks to everyone who directly contributed to this release:
 - presstab
 - random-zebra
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pivx-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pctm-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.

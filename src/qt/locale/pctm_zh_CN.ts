@@ -1796,8 +1796,8 @@ Are you sure?</source>
         <translation>解析的数据太大</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>无效的URI，不是以“ pivx”前缀开头</translation>
+        <source>Invalid URI, not starting with "pctm" prefix</source>
+        <translation>无效的URI，不是以“ pctm”前缀开头</translation>
     </message>
 </context>
 <context>
@@ -1903,9 +1903,9 @@ Are you sure?</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/pctm-project/pctm-project-translations</source>
         <translation>语言缺失或翻译不完整?帮助贡献翻译在这里:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/pctm-project/pctm-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2194,8 +2194,8 @@ Address: %4
         <translation>无效支付地址%1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>无法启动pivx:点击支付处理程序</translation>
+        <source>Cannot start pctm: click-to-pay handler</source>
+        <translation>无法启动pctm:点击支付处理程序</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid PCTM address or malformed URI parameters.</source>
@@ -6055,7 +6055,7 @@ PCTM核心钱包</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>pctm-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 =保留tx元数据，例如帐户所有者和付款请求信息，2 =删除tx元数据)</translation>

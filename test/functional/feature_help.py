@@ -18,7 +18,7 @@ class HelpTest(PctmTestFramework):
         # Don't start the node
 
     def run_test(self):
-        self.log.info("Start pivx with -h for help text")
+        self.log.info("Start pctm with -h for help text")
         self.nodes[0].start(extra_args=['-?'], stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         # Node should exit immediately and output help to stdout.
         ret_code = self.nodes[0].process.wait(timeout=1)
@@ -28,7 +28,7 @@ class HelpTest(PctmTestFramework):
         self.log.info("Help text received: {} (...)".format(output[0:60]))
         self.nodes[0].running = False
 
-        self.log.info("Start pivx with -version for version information")
+        self.log.info("Start pctm with -version for version information")
         self.nodes[0].start(extra_args=['-version'], stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         # Node should exit immediately and output version to stdout.
         ret_code = self.nodes[0].process.wait(timeout=1)

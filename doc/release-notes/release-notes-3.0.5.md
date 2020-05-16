@@ -13,7 +13,7 @@ Please report bugs using the issue tracker at github:
 Mandatory Update
 ==============
 
-PCTM Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zPCTM protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zPCTM transactions will be enabled. **When zPCTM is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your PCTM balance to zPCTM, then you will need to add `enablezeromint=0` to your `pctm.conf` file. For information about where to find your pctm.conf you can visit this link from [PCTM Support](https://pivx.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
+PCTM Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zPCTM protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zPCTM transactions will be enabled. **When zPCTM is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your PCTM balance to zPCTM, then you will need to add `enablezeromint=0` to your `pctm.conf` file. For information about where to find your pctm.conf you can visit this link from [PCTM Support](https://pctm.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 
@@ -108,4 +108,4 @@ Thanks to everyone who directly contributed to this release:
 - presstab
 - rejectedpromise
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pivx-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pctm-project-translations/).

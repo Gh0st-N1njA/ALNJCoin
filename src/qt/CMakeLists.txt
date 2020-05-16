@@ -187,7 +187,7 @@ execute_process(
 
 execute_process(
         COMMAND ${MOC_BIN} -o moc_pfborderimage.cpp pfborderimage.h
-        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/pivx
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/pctm
 )
 list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/pctm/moc_pfborderimage.cpp)
 
@@ -202,7 +202,7 @@ target_include_directories(qt_stuff PUBLIC ${CMAKE_SOURCE_DIR}/src
         ${CMAKE_SOURCE_DIR}/src/univalue/include
         ${CMAKE_SOURCE_DIR}/src/secp256k1/include
         ${CMAKE_CURRENT_SOURCE_DIR}
-        ${CMAKE_CURRENT_SOURCE_DIR}/pivx
+        ${CMAKE_CURRENT_SOURCE_DIR}/pctm
         ${CMAKE_CURRENT_SOURCE_DIR}/pctm/settings
         ${OPENSSL_INCLUDE_DIR}
         ${BerkeleyDB_INCLUDE_DIRS}

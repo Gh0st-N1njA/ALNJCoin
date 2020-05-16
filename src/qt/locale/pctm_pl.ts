@@ -1760,8 +1760,8 @@ Jesteś pewny?</translation>
         <translation>Przetwarzane dane są za duże</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>Nieprawidłowy identyfikator URI, nie zaczynający się od prefiksu „pivx”</translation>
+        <source>Invalid URI, not starting with "pctm" prefix</source>
+        <translation>Nieprawidłowy identyfikator URI, nie zaczynający się od prefiksu „pctm”</translation>
     </message>
 </context>
 <context>
@@ -1867,9 +1867,9 @@ Jesteś pewny?</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/pctm-project/pctm-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/pivx-project/pivx-project-translations </translation>
+https://www.transifex.com/pctm-project/pctm-project-translations </translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2158,8 +2158,8 @@ Adres: %4
         <translation>Nieprawidłowy adres płatności %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Nie można uruchomić pivx: click-to-pay handler</translation>
+        <source>Cannot start pctm: click-to-pay handler</source>
+        <translation>Nie można uruchomić pctm: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid PCTM address or malformed URI parameters.</source>
@@ -5553,7 +5553,7 @@ Portfel PCTM Core</translation>
     </message>
 </context>
 <context>
-    <name>pivx-core</name>
+    <name>pctm-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zachowaj tx meta dane np. Właściciel konta i informacje o żądaniu płatności, 2 = porzuć tx meta dane)</translation>
