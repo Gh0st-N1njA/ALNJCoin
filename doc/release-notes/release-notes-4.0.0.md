@@ -158,13 +158,13 @@ Details about each new command can be found below.
 ```
 getnewstakingaddress ( "account" )
 
-Returns a new PIVX cold staking address for receiving delegated cold stakes.
+Returns a new PCTM cold staking address for receiving delegated cold stakes.
 
 Arguments:
 1. "account"        (string, optional) The account name for the address to be linked to. if not provided, the default account "" is used. It can also be set to the empty string "" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.
 
 Result:
-"pivxaddress"    (string) The new pivx address
+"pctmaddress"    (string) The new pctm address
 ```
 
 `delegatestake` sends a cold staking delegation transaction:
@@ -176,9 +176,9 @@ Delegate an amount to a given address for cold staking. The amount is a real and
 Requires wallet passphrase to be set with walletpassphrase call.
 
 Arguments:
-1. "stakingaddress"      (string, required) The pivx staking address to delegate.
-2. "amount"              (numeric, required) The amount in PIV to delegate for staking. eg 100
-3. "owneraddress"        (string, optional) The pivx address corresponding to the key that will be able to spend the stake.
+1. "stakingaddress"      (string, required) The pctm staking address to delegate.
+2. "amount"              (numeric, required) The amount in PCTM to delegate for staking. eg 100
+3. "owneraddress"        (string, optional) The pctm address corresponding to the key that will be able to spend the stake.
                                If not provided, or empty string, a new wallet address is generated.
 4. "fExternalOwner"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.
                                WARNING: The owner of the keys to 'owneraddress' will be the only one allowed to spend these coins.
@@ -202,9 +202,9 @@ Delegate transaction is returned as json object.
 Requires wallet passphrase to be set with walletpassphrase call.
 
 Arguments:
-1. "stakingaddress"      (string, required) The pivx staking address to delegate.
-2. "amount"              (numeric, required) The amount in PIV to delegate for staking. eg 100
-3. "owneraddress"        (string, optional) The pivx address corresponding to the key that will be able to spend the stake.
+1. "stakingaddress"      (string, required) The pctm staking address to delegate.
+2. "amount"              (numeric, required) The amount in PCTM to delegate for staking. eg 100
+3. "owneraddress"        (string, optional) The pctm address corresponding to the key that will be able to spend the stake.
                                If not provided, or empty string, a new wallet address is generated.
 4. "fExternalOwner"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.
                                WARNING: The owner of the keys to 'owneraddress' will be the only one allowed to spend these coins.
@@ -238,7 +238,7 @@ Result:
          "reqSigs" : n,            (numeric) The required sigs
          "type" : "pubkeyhash",  (string) The type, eg 'pubkeyhash'
          "addresses" : [           (json array of string)
-           "pivxaddress"        (string) pivx address
+           "pctmaddress"        (string) pctm address
            ,...
          ]
        }
@@ -262,7 +262,7 @@ Arguments:
 1. "account"      (string, optional) The selected account, or "*" for entire wallet. It may be the default account using "".
 
 Result:
-amount              (numeric) The total amount in PIV received for this account in P2CS contracts.
+amount              (numeric) The total amount in PCTM received for this account in P2CS contracts.
 ```
 
 `delegatoradd` whitelists a delegated owner address for cold staking:
@@ -327,7 +327,7 @@ Result:
 [
    {
    "label": "yyy",  (string) account label
-   "address": "xxx",  (string) PIVX address string
+   "address": "xxx",  (string) PCTM address string
    }
   ...
 ]
@@ -343,7 +343,7 @@ Result:
 [
    {
    "label": "yyy",  (string) account label
-   "address": "xxx",  (string) PIVX address string
+   "address": "xxx",  (string) PCTM address string
    }
   ...
 ]

@@ -24,11 +24,11 @@ the `src/qt/test/test_main.cpp` file.
 test_pctm has some built-in command-line arguments; for
 example, to run just the getarg_tests verbosely:
 
-    test_pivx --log_level=all --run_test=getarg_tests
+    test_pctm --log_level=all --run_test=getarg_tests
 
 ... or to run just the doubledash test:
 
-    test_pivx --run_test=getarg_tests/doubledash
+    test_pctm --run_test=getarg_tests/doubledash
 
 Run `test_pctm --help` for the full list.
 

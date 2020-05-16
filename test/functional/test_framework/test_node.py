@@ -2,7 +2,7 @@
 # Copyright (c) 2017 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Class for pivxd node under test"""
+"""Class for pactumcoind node under test"""
 
 import decimal
 import errno
@@ -30,7 +30,7 @@ JSONDecodeError = getattr(json, "JSONDecodeError", ValueError)
 BITCOIND_PROC_WAIT_TIMEOUT = 600
 
 class TestNode():
-    """A class for representing a pivxd node under test.
+    """A class for representing a pactumcoind node under test.
 
     This class contains:
 
@@ -117,7 +117,7 @@ class TestNode():
         self.log.debug("pactumcoind started, waiting for RPC to come up")
 
     def wait_for_rpc_connection(self):
-        """Sets up an RPC connection to the pivxd process. Returns False if unable to connect."""
+        """Sets up an RPC connection to the pactumcoind process. Returns False if unable to connect."""
         # Poll at a rate of four times per second
         poll_per_s = 4
         time.sleep(5)
@@ -191,7 +191,7 @@ class TestNode():
     def node_encrypt_wallet(self, passphrase):
         """"Encrypts the wallet.
 
-        This causes pivxd to shutdown, so this method takes
+        This causes pactumcoind to shutdown, so this method takes
         care of cleaning up resources."""
         self.encryptwallet(passphrase)
         self.wait_until_stopped()
@@ -238,7 +238,7 @@ class TestNodeCLIAttr:
         return lambda: self(*args, **kwargs)
 
 class TestNodeCLI():
-    """Interface to pivx-cli for an individual node"""
+    """Interface to pactumcoin-cli for an individual node"""
 
     def __init__(self, binary, datadir):
         self.options = []
@@ -248,7 +248,7 @@ class TestNodeCLI():
         self.log = logging.getLogger('TestFramework.bitcoincli')
 
     def __call__(self, *options, input=None):
-        # TestNodeCLI is callable with pivx-cli command-line options
+        # TestNodeCLI is callable with pactumcoin-cli command-line options
         cli = TestNodeCLI(self.binary, self.datadir)
         cli.options = [str(o) for o in options]
         cli.input = input
@@ -267,7 +267,7 @@ class TestNodeCLI():
         return results
 
     def send_cli(self, command=None, *args, **kwargs):
-        """Run pivx-cli command. Deserializes returned string as python object."""
+        """Run pactumcoin-cli command. Deserializes returned string as python object."""
 
         pos_args = [str(arg) for arg in args]
         named_args = [str(key) + "=" + str(value) for (key, value) in kwargs.items()]

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # Copyright (c) 2018-2019 The Bitcoin Core developers
 # Copyright (c) 2019-2020 The PIVX developers
+//Copyright (c) 2020-2021 The PCTM developers
+
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -186,11 +188,11 @@ def sign():
 
     # TODO: Skip making signed windows sigs until we actually start producing signed windows binaries
     #print('\nSigning ' + args.version + ' Windows')
-    #subprocess.check_call('cp inputs/pivx-' + args.version + '-win-unsigned.tar.gz inputs/pivx-win-unsigned.tar.gz', shell=True)
-    #subprocess.check_call(['bin/gbuild', '--skip-image', '--upgrade', '--commit', 'signature='+args.commit, '../pivx/contrib/gitian-descriptors/gitian-win-signer.yml'])
-    #subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-win-signed', '--destination', '../gitian.sigs/', '../pivx/contrib/gitian-descriptors/gitian-win-signer.yml'])
-    #subprocess.check_call('mv build/out/pivx-*win64-setup.exe ../pivx-binaries/'+args.version, shell=True)
-    #subprocess.check_call('mv build/out/pivx-*win32-setup.exe ../pivx-binaries/'+args.version, shell=True)
+    #subprocess.check_call('cp inputs/pctm-' + args.version + '-win-unsigned.tar.gz inputs/pctm-win-unsigned.tar.gz', shell=True)
+    #subprocess.check_call(['bin/gbuild', '--skip-image', '--upgrade', '--commit', 'signature='+args.commit, '../pctm/contrib/gitian-descriptors/gitian-win-signer.yml'])
+    #subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-win-signed', '--destination', '../gitian.sigs/', '../pctm/contrib/gitian-descriptors/gitian-win-signer.yml'])
+    #subprocess.check_call('mv build/out/pctm-*win64-setup.exe ../pctm-binaries/'+args.version, shell=True)
+    #subprocess.check_call('mv build/out/pctm-*win32-setup.exe ../pctm-binaries/'+args.version, shell=True)
 
     print('\nSigning ' + args.version + ' MacOS')
     subprocess.check_call('cp inputs/pivx-' + args.version + '-osx-unsigned.tar.gz inputs/pivx-osx-unsigned.tar.gz', shell=True)
@@ -239,7 +241,7 @@ def verify():
 
     # TODO: Skip checking signed windows sigs until we actually start producing signed windows binaries
     #print('\nVerifying v'+args.version+' Signed Windows\n')
-    #if subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-signed', '../pivx/contrib/gitian-descriptors/gitian-win-signer.yml']):
+    #if subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-signed', '../pctm/contrib/gitian-descriptors/gitian-win-signer.yml']):
     #    print('Verifying v'+args.version+' Signed Windows FAILED\n')
     #    rc = 1
 

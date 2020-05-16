@@ -111,9 +111,9 @@ Result:
         denom_5: xxxx,         (numeric) number of PUBLIC spends of denom_5 occurred over the block range
          ...                   ... number of PUBLIC spends of other denominations: ..., 10, 50, 100, 500, 1000, 5000
   },
-  txbytes: xxxxx,              (numeric) Sum of the size of all txes (zPIV excluded) over block range
-  ttlfee: xxxxx,               (numeric) Sum of the fee amount of all txes (zPIV mints excluded) over block range
-  ttlfee_all: xxxxx,           (numeric) Sum of the fee amount of all txes (zPIV mints included) over block range
+  txbytes: xxxxx,              (numeric) Sum of the size of all txes (zPCTM excluded) over block range
+  ttlfee: xxxxx,               (numeric) Sum of the fee amount of all txes (zPCTM mints excluded) over block range
+  ttlfee_all: xxxxx,           (numeric) Sum of the fee amount of all txes (zPCTM mints included) over block range
   feeperkb: xxxxx,             (numeric) Average fee per kb (excluding zc txes)
 }
 ```

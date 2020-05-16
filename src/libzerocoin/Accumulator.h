@@ -10,6 +10,9 @@
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2017-2020 The PIVX developers
+// Copyright (c) 2020-2021 The PCTM developers
+
+
 
 #ifndef ACCUMULATOR_H_
 #define ACCUMULATOR_H_

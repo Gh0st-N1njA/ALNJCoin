@@ -239,10 +239,10 @@ which includes known Valgrind warnings in our dependencies that cannot be fixed
 in-tree. Example use:
 
 ```shell
-$ valgrind --suppressions=contrib/valgrind.supp src/test/test_pivx
+$ valgrind --suppressions=contrib/valgrind.supp src/test/test_pctm
 $ valgrind --suppressions=contrib/valgrind.supp --leak-check=full \
-      --show-leak-kinds=all src/test/test_pivx --log_level=test_suite
-$ valgrind -v --leak-check=full src/pivxd -printtoconsole
+      --show-leak-kinds=all src/test/test_pctm --log_level=test_suite
+$ valgrind -v --leak-check=full src/pactumcoind -printtoconsole
 ```
 
 ### Compiling for test coverage
@@ -258,7 +258,7 @@ To enable LCOV report generation during test runs:
 make
 make cov
 
-# A coverage report will now be accessible at `./test_pivx.coverage/index.html`.
+# A coverage report will now be accessible at `./test_pctm.coverage/index.html`.
 ```
 
 Locking/mutex usage notes
@@ -700,7 +700,7 @@ In addition to reviewing the upstream changes in `env_posix.cc`, you can use `ls
 check this. For example, on Linux this command will show open `.ldb` file counts:
 
 ```bash
-$ lsof -p $(pidof pivxd) |\
+$ lsof -p $(pidof pactumcoind) |\
     awk 'BEGIN { fd=0; mem=0; } /ldb$/ { if ($4 == "mem") mem++; else fd++ } END { printf "mem = %s, fd = %s\n", mem, fd}'
 mem = 119, fd = 0
 ```
@@ -797,7 +797,7 @@ Git and GitHub tips
 
         [remote "upstream-pull"]
                 fetch = +refs/pull/*:refs/remotes/upstream-pull/*
-                url = git@github.com:PIVX-Project/PIVX.git
+                url = git@github.com:PCTM-Project/PCTM.git
 
   This will add an `upstream-pull` remote to your git repository, which can be fetched using `git fetch --all`
   or `git fetch upstream-pull`. Afterwards, you can use `upstream-pull/NUMBER/head` in arguments to `git show`,

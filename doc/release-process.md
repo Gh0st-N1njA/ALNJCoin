@@ -49,10 +49,10 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/pivx-project/gitian.sigs.git
-    git clone https://github.com/pivx-project/pivx-detached-sigs.git
+    git clone https://github.com/pctm-project/gitian.sigs.git
+    git clone https://github.com/pctm-project/pctm-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/pivx-project/pivx.git
+    git clone https://github.com/pctm-project/pctm.git
 
 ### PCTM maintainers/release engineers, suggestion for writing release notes
 
@@ -75,7 +75,7 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./pivx
+    pushd ./pctm
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -111,7 +111,7 @@ NOTE: Gitian is sometimes unable to download files. If you have errors, try the 
 By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in pivx, then:
 
     pushd ./gitian-builder
-    make -C ../pivx/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../pctm/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -119,7 +119,7 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url pivx=/path/to/pivx,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url pctm=/path/to/pctm,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
@@ -127,19 +127,19 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 ### Build and sign PCTM Core for Linux, Windows, and macOS:
 
     pushd ./gitian-builder
-    ./bin/gbuild --num-make 2 --memory 3000 --commit pivx=v${VERSION} ../pivx/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/pivx-*.tar.gz build/out/src/pivx-*.tar.gz ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit pctm=v${VERSION} ../pctm/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs/ ../pctm/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/pctm-*.tar.gz build/out/src/pctm-*.tar.gz ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit pivx=v${VERSION} ../pivx/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/pivx-*-win-unsigned.tar.gz inputs/pivx-win-unsigned.tar.gz
-    mv build/out/pivx-*.zip build/out/pivx-*.exe ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit pctm=v${VERSION} ../pctm/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../pctm/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/pctm-*-win-unsigned.tar.gz inputs/pctm-win-unsigned.tar.gz
+    mv build/out/pctm-*.zip build/out/pctm-*.exe ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit pivx=v${VERSION} ../pivx/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/pivx-*-osx-unsigned.tar.gz inputs/pivx-osx-unsigned.tar.gz
-    mv build/out/pivx-*.tar.gz build/out/pivx-*.dmg ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit pctm=v${VERSION} ../pctm/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../pctm/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/pctm-*-osx-unsigned.tar.gz inputs/pctm-osx-unsigned.tar.gz
+    mv build/out/pctm-*.tar.gz build/out/pctm-*.dmg ../
     popd
 
 Build output expected:
@@ -154,15 +154,15 @@ Build output expected:
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import pivx/contrib/gitian-keys/*.pgp
+    gpg --import pctm/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../pivx/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../pivx/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../pivx/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../pctm/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../pctm/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../pctm/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -183,22 +183,22 @@ Codesigner only: Create Windows/macOS detached signatures:
 
 Codesigner only: Sign the macOS binary:
 
-    transfer pivx-osx-unsigned.tar.gz to macOS for signing
-    tar xf pivx-osx-unsigned.tar.gz
+    transfer pctm-osx-unsigned.tar.gz to macOS for signing
+    tar xf pctm-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf pivx-win-unsigned.tar.gz
+    tar xf pctm-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/pivx-detached-sigs
+    cd ~/pctm-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -216,19 +216,19 @@ Non-codesigners: wait for Windows/macOS detached signatures:
 Create (and optionally verify) the signed macOS binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/pivx-osx-signed.dmg ../pivx-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../pctm/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../pctm/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../pctm/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/pctm-osx-signed.dmg ../pctm-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../pivx/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../pivx/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/pivx-*win64-setup.exe ../pivx-${VERSION}-win64-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../pctm/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../pctm/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../pctm/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/pctm-*win64-setup.exe ../pctm-${VERSION}-win64-setup.exe
     popd
 
 Commit your signature for the signed macOS/Windows binaries:
@@ -250,16 +250,16 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-pivx-${VERSION}-aarch64-linux-gnu.tar.gz
-pivx-${VERSION}-arm-linux-gnueabihf.tar.gz
-pivx-${VERSION}-i686-pc-linux-gnu.tar.gz
-pivx-${VERSION}-riscv64-linux-gnu.tar.gz
-pivx-${VERSION}-x86_64-linux-gnu.tar.gz
-pivx-${VERSION}-osx64.tar.gz
-pivx-${VERSION}-osx.dmg
-pivx-${VERSION}.tar.gz
-pivx-${VERSION}-win64-setup.exe
-pivx-${VERSION}-win64.zip
+pctm-${VERSION}-aarch64-linux-gnu.tar.gz
+pctm-${VERSION}-arm-linux-gnueabihf.tar.gz
+pctm-${VERSION}-i686-pc-linux-gnu.tar.gz
+pctm-${VERSION}-riscv64-linux-gnu.tar.gz
+pctm-${VERSION}-x86_64-linux-gnu.tar.gz
+pctm-${VERSION}-osx64.tar.gz
+pctm-${VERSION}-osx.dmg
+pctm-${VERSION}.tar.gz
+pctm-${VERSION}-win64-setup.exe
+pctm-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested

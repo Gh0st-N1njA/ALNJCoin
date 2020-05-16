@@ -10,7 +10,7 @@ for Debian-based Linux systems. If you compile pactumcoind/pactumcoin-qt yoursel
 pactumcoin-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install pivx-qt.desktop
+	sudo desktop-file-install pactumcoin-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in

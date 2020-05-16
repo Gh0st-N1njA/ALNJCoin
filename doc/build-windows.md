@@ -73,8 +73,8 @@ If you want to build the windows installer with `make deploy` you need [NSIS](ht
 
 Acquire the source in the usual way:
 
-    git clone https://github.com/pivx-project/pivx.git
-    cd pivx
+    git clone https://github.com/pctm-project/pctm.git
+    cd pctm
 
 ## Building for 64-bit Windows
 
@@ -114,7 +114,7 @@ executables to a directory on the Windows drive in the same directory structure
 as they appear in the release `.zip` archive. This can be done in the following
 way. This will install to `c:\workspace\pivx`, for example:
 
-    make install DESTDIR=/mnt/c/workspace/pivx
+    make install DESTDIR=/mnt/c/workspace/pctm
 
 You can also create an installer using:
 

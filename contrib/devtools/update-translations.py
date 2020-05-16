@@ -45,7 +45,7 @@ def remove_current_translations():
     '''
     Remove current translations, as well as temporary files that might be left behind
     We only want the active translations that are currently on transifex.
-    This leaves pivx_en.ts untouched.
+    This leaves pctm_en.ts untouched.
     '''
     for (_,name) in all_ts_files():
         os.remove(name)

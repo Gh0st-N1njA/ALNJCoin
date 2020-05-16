@@ -4,11 +4,11 @@ Sample init scripts and service configuration for pactumcoind
 Sample scripts and configuration files for systemd, Upstart and OpenRC
 can be found in the contrib/init folder.
 
-    contrib/init/pivxd.service:    systemd service unit configuration
-    contrib/init/pivxd.openrc:     OpenRC compatible SysV style init script
-    contrib/init/pivxd.openrcconf: OpenRC conf.d file
-    contrib/init/pivxd.conf:       Upstart service configuration file
-    contrib/init/pivxd.init:       CentOS compatible SysV style init script
+    contrib/init/pactumcoind.service:    systemd service unit configuration
+    contrib/init/pactumcoind.openrc:     OpenRC compatible SysV style init script
+    contrib/init/pactumcoind.openrcconf: OpenRC conf.d file
+    contrib/init/pactumcoind.conf:       Upstart service configuration file
+    contrib/init/pactumcoind.init:       CentOS compatible SysV style init script
 
 Service User
 ---------------------------------

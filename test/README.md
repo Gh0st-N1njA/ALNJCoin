@@ -86,13 +86,13 @@ pactumcoind processes running on the system, so should not be used if any non-te
 pactumcoind processes are being run.**
 
 ```bash
-killall pivxd
+killall pactumcoind
 ```
 
 or
 
 ```bash
-pkill -9 pivxd
+pkill -9 pactumcoind
 ```
 
 
@@ -107,7 +107,7 @@ sure pactumcoind processes are stopped as above):
 
 ```bash
 rm -rf cache
-killall pivxd
+killall pactumcoind
 ```
 
 ##### Test logging
@@ -169,8 +169,8 @@ For instance, to attach to `self.node[1]` during a run:
 use the directory path to get the pid from the pid file:
 
 ```bash
-cat /tmp/user/1000/testo9vsdjo3/node1/regtest/pivxd.pid
-gdb /home/example/pivxd <pid>
+cat /tmp/user/1000/testo9vsdjo3/node1/regtest/pactumcoind.pid
+gdb /home/example/pactumcoind <pid>
 ```
 
 Note: gdb attach step may require `sudo`

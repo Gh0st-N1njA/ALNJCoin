@@ -96,7 +96,7 @@ else()
     )
 endif()
 
-# run configure if pivx_config.h doesn't exist
+# run configure if pctm_config.h doesn't exist
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/config/pivx-config.h")
 else()
     execute_process(

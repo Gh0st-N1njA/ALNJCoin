@@ -1,4 +1,7 @@
 // Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2020-2021 The PCTM developers
+
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,7 +38,7 @@ class WalletModel;
 
 
 /**
-  PIVX GUI main class. This class represents the main window of the PIVX UI. It communicates with both the client and
+  PCTM GUI main class. This class represents the main window of the PCTM UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
 class PCTMGUI : public QMainWindow

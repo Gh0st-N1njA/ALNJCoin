@@ -36,7 +36,7 @@ When an updated source file is merged into the GitHub repo, Transifex will autom
 
 To create the pull-request, use the following commands:
 ```
-git add src/qt/pivxstrings.cpp src/qt/locale/pivx_en.ts
+git add src/qt/pctmstrings.cpp src/qt/locale/pctm_en.ts
 git commit
 ```
 
@@ -71,11 +71,11 @@ To assist in updating translations, we have created a script to help.
 2. `git add` new translations from `src/qt/locale/`
 3. Update `src/qt/pctm_locale.qrc` manually or via
 ```bash
-git ls-files src/qt/locale/*ts|xargs -n1 basename|sed 's/\(pivx_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'
+git ls-files src/qt/locale/*ts|xargs -n1 basename|sed 's/\(pctm_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'
 ```
 4. Update `src/Makefile.qt_locale.include` manually or via
 ```bash
-git ls-files src/qt/locale/*ts|xargs -n1 basename|sed 's/\(pivx_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'
+git ls-files src/qt/locale/*ts|xargs -n1 basename|sed 's/\(pctm_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'
 ```
 
 **Do not directly download translations** one by one from the Transifex website, as we do a few post-processing steps before committing the translations.
@@ -96,7 +96,7 @@ To create a new language template, you will need to edit the languages manifest 
 
 ```xml
 <qresource prefix="/translations">
-    <file alias="en">locale/pivx_en.qm</file>
+    <file alias="en">locale/pctm_en.qm</file>
     ...
 </qresource>
 ```

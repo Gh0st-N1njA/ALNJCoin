@@ -1,4 +1,7 @@
 // Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2020-2021 The PCTM developers
+
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -111,7 +114,7 @@ PrivacyWidget::PrivacyWidget(PCTMGUI* parent) :
     // Buttons
     setCssBtnPrimary(ui->pushButtonSave);
 
-    // Only Convert to PIV enabled.
+    // Only Convert to PCTM enabled.
     ui->containerViewPrivacyChecks->setVisible(false);
     onMintSelected(false);
 

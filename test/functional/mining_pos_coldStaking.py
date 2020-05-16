@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # Copyright (c) 2019-2020 The PIVX developers
+//Copyright (c) 2020-2021 The PCTM developers
+
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 # -*- coding: utf-8 -*-
@@ -304,7 +306,7 @@ class PCTM_ColdStakingTest(PctmTestFramework):
         assert_greater_than(len(stakeInputs), 0)
         # Create the block
         new_block = self.stake_next_block(1, stakeInputs, self.mocktime, staker_privkey)
-        # Add output (dummy key address) to coinstake (taking 100 PIV from the pot)
+        # Add output (dummy key address) to coinstake (taking 100 PCTM from the pot)
         self.add_output_to_coinstake(new_block, 100)
         self.log.info("New block created (rawtx) by cold-staking. Trying to submit...")
         # Try to submit the block

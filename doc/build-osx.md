@@ -43,8 +43,8 @@ Build PCTM Core
 
 1. Clone the PCTM Core source code:
 
-        git clone https://github.com/pivx-project/pivx
-        cd pivx
+        git clone https://github.com/pctm-project/pctm
+        cd pctm
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
 
@@ -83,24 +83,24 @@ PCTM Core is now available at `./src/pactumcoind`
 
 Before running, you may create an empty configuration file:
 
-    mkdir -p "/Users/${USER}/Library/Application Support/PIVX"
+    mkdir -p "/Users/${USER}/Library/Application Support/PCTM"
 
-    touch "/Users/${USER}/Library/Application Support/PIVX/pivx.conf"
+    touch "/Users/${USER}/Library/Application Support/PCTM/pctm.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/PIVX/pivx.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/PCTM/pctm.conf"
 
 The first time you run pactumcoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/PIVX/debug.log
+    tail -f $HOME/Library/Application\ Support/PCTM/debug.log
 
 Other commands:
 -------
 
-    ./src/pivxd -daemon # Starts the pivx daemon.
-    ./src/pivx-cli --help # Outputs a list of command-line options.
-    ./src/pivx-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/pactumcoind -daemon # Starts the pctm daemon.
+    ./src/pactumcoin-cli --help # Outputs a list of command-line options.
+    ./src/pactumcoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----

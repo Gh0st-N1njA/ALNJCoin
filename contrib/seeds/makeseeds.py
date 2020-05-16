@@ -207,7 +207,7 @@ def main():
     print('%s Require a known and recent user agent' % (ip_stats(ips)), file=sys.stderr)
     # Sort by availability (and use last success as tie breaker)
     ips.sort(key=lambda x: (x['uptime'], x['lastsuccess'], x['ip']), reverse=True)
-    # Filter out hosts with multiple pivx ports, these are likely abusive
+    # Filter out hosts with multiple pctm ports, these are likely abusive
     ips = filtermultiport(ips)
     print('%s Filter out hosts with multiple pivx ports' % (ip_stats(ips)), file=sys.stderr)
     # Look up ASNs and limit results, both per ASN and globally.

@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 #
-# Use the raw transactions API to spend PIVs received on particular addresses,
+# Use the raw transactions API to spend PCTMs received on particular addresses,
 # and send any change back to that same address.
 #
 # Example usage:
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a pivxd or pivx-Qt running
+# Assumes it will talk to a pactumcoind or pctm-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -33,7 +33,7 @@ def check_json_precision():
         raise RuntimeError("JSON encode/decode loses precision")
 
 def determine_db_dir():
-    """Return the default location of the pivx data directory"""
+    """Return the default location of the pctm data directory"""
     if platform.system() == "Darwin":
         return os.path.expanduser("~/Library/Application Support/PCTM/")
     elif platform.system() == "Windows":
@@ -41,7 +41,7 @@ def determine_db_dir():
     return os.path.expanduser("~/.pivx")
 
 def read_bitcoin_config(dbdir):
-    """Read the pivx.conf file from dbdir, returns dictionary of settings"""
+    """Read the pctm.conf file from dbdir, returns dictionary of settings"""
     from ConfigParser import SafeConfigParser
 
     class FakeSecHead(object):
@@ -63,7 +63,7 @@ def read_bitcoin_config(dbdir):
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
-    """Connect to a pivx JSON-RPC server"""
+    """Connect to a pctm JSON-RPC server"""
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
@@ -72,7 +72,7 @@ def connect_JSON(config):
     try:
         result = ServiceProxy(connect)
         # ServiceProxy is lazy-connect, so send an RPC command mostly to catch connection errors,
-        # but also make sure the pivxd we're talking to is/isn't testnet:
+        # but also make sure the pactumcoind we're talking to is/isn't testnet:
         if result.getmininginfo()['testnet'] != testnet:
             sys.stderr.write("RPC server at "+connect+" testnet setting mismatch\n")
             sys.exit(1)
@@ -110,7 +110,7 @@ def list_available(pactumcoind):
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-pivx-address
+        # This code only deals with ordinary pay-to-pctm-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue
@@ -159,7 +159,7 @@ def create_tx(pactumcoind, fromaddresses, toaddress, amount, fee):
     # Note:
     # Python's json/jsonrpc modules have inconsistent support for Decimal numbers.
     # Instead of wrestling with getting json.dumps() (used by jsonrpc) to encode
-    # Decimals, I'm casting amounts to float before sending them to pivxd.
+    # Decimals, I'm casting amounts to float before sending them to pactumcoind.
     #
     outputs = { toaddress : float(amount) }
     (inputs, change_amount) = select_coins(needed, potential_inputs)

@@ -132,7 +132,7 @@ Transaction and address data can now be quickly exported to a CSV file from the 
 
 Transaction output format is comma separated with header row as follows:
 ```
-"Confirmed","Date","Type","Label","Address","Amount (PIV)","ID"
+"Confirmed","Date","Type","Label","Address","Amount (PCTM)","ID"
 ```
 
 Address output format is comma separated with header row as follows:
@@ -200,13 +200,13 @@ RPC Changes
   ```
   {
      "staking_status": true|false,       (boolean) whether the wallet is staking or not
-     "staking_enabled": true|false,      (boolean) whether staking is enabled/disabled in pivx.conf
-     "coldstaking_enabled": true|false,  (boolean) whether cold-staking is enabled/disabled in pivx.conf
+     "staking_enabled": true|false,      (boolean) whether staking is enabled/disabled in pctm.conf
+     "coldstaking_enabled": true|false,  (boolean) whether cold-staking is enabled/disabled in pctm.conf
      "haveconnections": true|false,      (boolean) whether network connections are present
      "mnsync": true|false,               (boolean) whether masternode data is synced
      "walletunlocked": true|false,       (boolean) whether the wallet is unlocked
      "stakeablecoins": n,                (numeric) number of stakeable UTXOs
-     "stakingbalance": d,                (numeric) PIV value of the stakeable coins (minus reserve balance, if any)
+     "stakingbalance": d,                (numeric) PCTM value of the stakeable coins (minus reserve balance, if any)
      "stakesplitthreshold": d,           (numeric) value of the current threshold for stake split
      "lastattempt_age": n,               (numeric) seconds since last stake attempt
      "lastattempt_depth": n,             (numeric) depth of the block on top of which the last stake attempt was made

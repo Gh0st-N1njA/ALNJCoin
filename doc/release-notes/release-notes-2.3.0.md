@@ -56,7 +56,7 @@ For the `winners` parameter, the results are now in a standard JSON format as fo
   {
     nHeight: n,           (int) block height
     winner: {
-        address: addr,    (string) PIVX MN Address,
+        address: addr,    (string) PCTM MN Address,
         nVotes: n,        (int) Number of votes for winner,
     }
   },
@@ -72,7 +72,7 @@ In the case of multiple winners being associated with a single block, the result
     nHeight: n,           (int) block height,
     winner: [
       {
-        address: addr,    (string) PIVX MN Address,
+        address: addr,    (string) PCTM MN Address,
         nVotes: n,        (int) Number of votes for winner,
       },
       ...
@@ -91,7 +91,7 @@ For the `list` (aka `masternodelist`) parameter, the various "modes" have been r
     "txhash": hash,    (string) Collateral transaction hash
     "outidx": n,       (numeric) Collateral transaction output index
     "status": s,       (string) Status (ENABLED/EXPIRED/REMOVE/etc)
-    "addr": addr,      (string) Masternode PIVX address
+    "addr": addr,      (string) Masternode PCTM address
     "version": v,      (numeric) Masternode Protocol version
     "lastseen": ttt,   (numeric) The time in seconds since epoch (Jan 1 1970 GMT) the masternode was last seen
     "activetime": ttt, (numeric) The time in seconds since epoch (Jan 1 1970 GMT) masternode has been active

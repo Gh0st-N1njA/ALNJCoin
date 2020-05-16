@@ -104,9 +104,9 @@ Signing Externally
 If your gitian host does not have your GPG private key installed, you will need to copy these uncommited changes to your host machine, where you can sign them:
 
 ```bash
-gpg --output ${VERSION}-linux/${NAME}/pivx-linux-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-linux/$NAME/pivx-linux-${VERSION%\.*}-build.assert
-gpg --output ${VERSION}-osx-unsigned/$NAME/pivx-osx-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-osx-unsigned/$NAME/pivx-osx-${VERSION%\.*}-build.assert
-gpg --output ${VERSION}-win-unsigned/$NAME/pivx-win-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-win-unsigned/$NAME/pivx-win-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-linux/${NAME}/pctm-linux-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-linux/$NAME/pctm-linux-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-osx-unsigned/$NAME/pctm-osx-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-osx-unsigned/$NAME/pctm-osx-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-win-unsigned/$NAME/pctm-win-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-win-unsigned/$NAME/pctm-win-${VERSION%\.*}-build.assert
 ```
 
 Uploading Signatures
@@ -123,9 +123,9 @@ git push --set-upstream $NAME $VERSION-not-codesigned
 You can also mail the files to Fuzzbawls (fuzzbawls@pivx.org) and he will commit them.
 
 ```bash
-gpg --detach-sign ${VERSION}-linux/${NAME}/pivx-linux-*-build.assert
-gpg --detach-sign ${VERSION}-win-unsigned/${NAME}/pivx-win-*-build.assert
-gpg --detach-sign ${VERSION}-osx-unsigned/${NAME}/pivx-osx-*-build.assert
+gpg --detach-sign ${VERSION}-linux/${NAME}/pctm-linux-*-build.assert
+gpg --detach-sign ${VERSION}-win-unsigned/${NAME}/pctm-win-*-build.assert
+gpg --detach-sign ${VERSION}-osx-unsigned/${NAME}/pctm-osx-*-build.assert
 ```
 
 You may have other .assert files as well (e.g. `signed` ones), in which case you should sign them too. You can see all of them by doing `ls ${VERSION}-*/${NAME}`.

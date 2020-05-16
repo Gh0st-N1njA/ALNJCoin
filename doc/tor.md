@@ -35,7 +35,7 @@ outgoing connections, but more is possible.
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-	./pivxd -proxy=127.0.0.1:9050
+	./pactumcoind -proxy=127.0.0.1:9050
 
 
 ## 2. Run a PCTM Core hidden server
@@ -45,7 +45,7 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. For newer
 versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 
-	HiddenServiceDir /var/lib/tor/pivx-service/
+	HiddenServiceDir /var/lib/tor/pctm-service/
 	HiddenServiceVersion 2
 	HiddenServicePort 51472 127.0.0.1:51472
 	HiddenServicePort 61472 127.0.0.1:61472
@@ -53,11 +53,11 @@ versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 The directory can be different of course, but (both) port numbers should be equal to
 your pactumcoind's P2P listen port (51472 by default).
 
-	-externalip=X   You can tell pivx about its publicly reachable address using
+	-externalip=X   You can tell pctm about its publicly reachable address using
 	                this option, and this can be a v2 .onion address (v3 .onion
-	                addresses are not supported by the PIVX network). Given the above
+	                addresses are not supported by the PCTM network). Given the above
 	                configuration, you can find your .onion address in
-	                /var/lib/tor/pivx-service/hostname. For connections
+	                /var/lib/tor/pctm-service/hostname. For connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs), .onion addresses are given
 	                preference for your node to advertise itself with.
@@ -74,25 +74,25 @@ your pactumcoind's P2P listen port (51472 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-	./pivxd -proxy=127.0.0.1:9050 -externalip=pivxzj6l4cvo2fxy.onion -listen
+	./pactumcoind -proxy=127.0.0.1:9050 -externalip=pctmzj6l4cvo2fxy.onion -listen
 
 (obviously, replace the .onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
-	./pivxd ... -bind=127.0.0.1
+	./pactumcoind ... -bind=127.0.0.1
 
 If you don't care too much about hiding your node, and want to be reachable on IPv4
 as well, use `discover` instead:
 
-	./pivxd ... -discover
+	./pactumcoind ... -discover
 
 and open port 51472 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach .onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-	./pivxd -onion=127.0.0.1:9050 -externalip=pivxzj6l4cvo2fxy.onion -discover
+	./pactumcoind -onion=127.0.0.1:9050 -externalip=pctmzj6l4cvo2fxy.onion -discover
 
 ## 3. Automatically listen on Tor
 

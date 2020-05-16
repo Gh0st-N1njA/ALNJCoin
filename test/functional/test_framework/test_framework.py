@@ -74,9 +74,9 @@ TMPDIR_PREFIX = "pctm_func_test_"
 
 
 class PctmTestFramework():
-    """Base class for a pivx test script.
+    """Base class for a pctm test script.
 
-    Individual pivx test scripts should subclass this class and override the set_test_params() and run_test() methods.
+    Individual pctm test scripts should subclass this class and override the set_test_params() and run_test() methods.
 
     Individual tests can also override the following methods to customize the test setup:
 
@@ -273,7 +273,7 @@ class PctmTestFramework():
             self.nodes.append(TestNode(i, self.options.tmpdir, extra_args[i], rpchost, timewait=timewait, binary=binary[i], stderr=None, mocktime=self.mocktime, coverage_dir=self.options.coveragedir, use_cli=self.options.usecli))
 
     def start_node(self, i, *args, **kwargs):
-        """Start a pivxd"""
+        """Start a pactumcoind"""
 
         node = self.nodes[i]
 
@@ -286,7 +286,7 @@ class PctmTestFramework():
             coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def start_nodes(self, extra_args=None, *args, **kwargs):
-        """Start multiple pivxds"""
+        """Start multiple pactumcoinds"""
 
         if extra_args is None:
             extra_args = [None] * self.num_nodes
@@ -308,12 +308,12 @@ class PctmTestFramework():
                 coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def stop_node(self, i):
-        """Stop a pivxd test node"""
+        """Stop a pactumcoind test node"""
         self.nodes[i].stop_node()
         self.nodes[i].wait_until_stopped()
 
     def stop_nodes(self):
-        """Stop multiple pivxd test nodes"""
+        """Stop multiple pactumcoind test nodes"""
         for node in self.nodes:
             # Issue RPC to stop nodes
             node.stop_node()
@@ -403,7 +403,7 @@ class PctmTestFramework():
         # User can provide log level as a number or string (eg DEBUG). loglevel was caught as a string, so try to convert it to an int
         ll = int(self.options.loglevel) if self.options.loglevel.isdigit() else self.options.loglevel.upper()
         ch.setLevel(ll)
-        # Format logs the same as pivxd's debug.log with microprecision (so log files can be concatenated and sorted)
+        # Format logs the same as pactumcoind's debug.log with microprecision (so log files can be concatenated and sorted)
         formatter = logging.Formatter(fmt='%(asctime)s.%(msecs)03d000 %(name)s (%(levelname)s): %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
         formatter.converter = time.gmtime
         fh.setFormatter(formatter)
@@ -432,7 +432,7 @@ class PctmTestFramework():
                 from_dir = get_datadir_path(origin, i)
                 to_dir = get_datadir_path(destination, i)
                 shutil.copytree(from_dir, to_dir)
-                initialize_datadir(destination, i)  # Overwrite port/rpcport in pivx.conf
+                initialize_datadir(destination, i)  # Overwrite port/rpcport in pctm.conf
 
         def clone_cache_from_node_1(cachedir, from_num=4):
             """ Clones cache subdir from node 1 to nodes from 'from_num' to MAX_NODES"""
@@ -447,7 +447,7 @@ class PctmTestFramework():
                 for subdir in ["blocks", "chainstate", "sporks", "zerocoin"]:
                     copy_and_overwrite(os.path.join(node_0_datadir, subdir),
                                     os.path.join(node_i_datadir, subdir))
-                initialize_datadir(cachedir, i)  # Overwrite port/rpcport in pivx.conf
+                initialize_datadir(cachedir, i)  # Overwrite port/rpcport in pctm.conf
 
         def cachedir_valid(cachedir):
             for i in range(MAX_NODES):
@@ -528,7 +528,7 @@ class PctmTestFramework():
             # blocks are created with timestamps 1 minutes apart
             # starting from 331 minutes in the past
 
-            # Create cache directories, run pivxds:
+            # Create cache directories, run pactumcoinds:
             create_cachedir(powcachedir)
             self.log.info("Creating 'PoW-chain': 200 blocks")
             start_nodes_from_dir(powcachedir, 4)
@@ -591,14 +591,14 @@ class PctmTestFramework():
             #   35 rewards spendable (55 mature blocks - 20 spent rewards)
             # - Node 3 gets 50 mature blocks (pow) + 34 immmature (14 pow + 20 pos)
             #   30 rewards spendable (50 mature blocks - 20 spent rewards)
-            # - Nodes 2 and 3 mint one zerocoin for each denom (tot 6666 PIV) on block 301/302
+            # - Nodes 2 and 3 mint one zerocoin for each denom (tot 6666 PCTM) on block 301/302
             #   8 mature zc + 8/3 rewards spendable (35/30 - 27 spent) + change 83.92
             #
             # Block 331-336 will mature last 6 pow blocks mined by node 2.
             # Then 337-350 will mature last 14 pow blocks mined by node 3.
             # Then staked blocks start maturing at height 351.
 
-            # Create cache directories, run pivxds:
+            # Create cache directories, run pactumcoinds:
             create_cachedir(poscachedir)
             self.log.info("Creating 'PoS-chain': 330 blocks")
             self.log.info("Copying 200 initial blocks from pow cache")
@@ -632,8 +632,8 @@ class PctmTestFramework():
                     nBlocks += 1
                     # Mint zerocoins with node-2 at block 301 and with node-3 at block 302
                     if nBlocks == 301 or nBlocks == 302:
-                        # mints 7 zerocoins, one for each denom (tot 6666 PIV), fee = 0.01 * 8
-                        # consumes 27 utxos (tot 6750 PIV), change = 6750 - 6666 - fee
+                        # mints 7 zerocoins, one for each denom (tot 6666 PCTM), fee = 0.01 * 8
+                        # consumes 27 utxos (tot 6750 PCTM), change = 6750 - 6666 - fee
                         res.append(self.nodes[nBlocks-299].mintzerocoin(6666))
                         self.sync_all()
                         # lock the change output (so it's not used as stake input in generate_pos)
@@ -679,7 +679,7 @@ class PctmTestFramework():
             initialize_datadir(self.options.tmpdir, i)
 
 
-    ### PIVX Specific TestFramework ###
+    ### PCTM Specific TestFramework ###
     ###################################
     def init_dummy_key(self):
         self.DUMMY_KEY = CECKey()
@@ -694,7 +694,7 @@ class PctmTestFramework():
         # 62 pow + 20 pos (26 immature)
         # - Nodes 3 gets 84 blocks:
         # 64 pow + 20 pos (34 immature)
-        # - Nodes 2 and 3 have 6666 PIV worth of zerocoins
+        # - Nodes 2 and 3 have 6666 PCTM worth of zerocoins
         zc_tot = sum(vZC_DENOMS)
         zc_fee = len(vZC_DENOMS) * 0.01
         used_utxos = (zc_tot // 250) + 1
@@ -801,11 +801,11 @@ class PctmTestFramework():
         block_txes = []
         for uniqueness in spendingPrevOuts:
             if is_zerocoin(uniqueness):
-                # spend zPIV
+                # spend zPCTM
                 _, serialHash, _ = spendingPrevOuts[uniqueness]
                 raw_spend = rpc_conn.createrawzerocoinspend(serialHash, "", False)
             else:
-                # spend PIV
+                # spend PCTM
                 value_out = int(spendingPrevOuts[uniqueness][0] - DEFAULT_FEE * COIN)
                 scriptPubKey = CScript([to_pubKey, OP_CHECKSIG])
                 prevout = COutPoint()
@@ -908,7 +908,7 @@ class PctmTestFramework():
         # Don't add tx doublespending the coinstake input, unless fDoubleSpend=True
         for tx in vtx:
             if not fDoubleSpend:
-                # assume txes don't double spend zPIV inputs when fDoubleSpend is false. It needs to
+                # assume txes don't double spend zPCTM inputs when fDoubleSpend is false. It needs to
                 # be checked outside until a convenient tx.spends(zerocoin) is added to the framework.
                 if not isZPoS and tx.spends(prevout):
                     continue
@@ -1100,7 +1100,7 @@ class PctmTestFramework():
 class ComparisonTestFramework(PctmTestFramework):
     """Test framework for doing p2p comparison testing
 
-    Sets up some pivxd binaries:
+    Sets up some pactumcoind binaries:
     - 1 binary: test binary
     - 2 binaries: 1 test binary, 1 ref binary
     - n>2 binaries: 1 test binary, n-1 ref binaries"""
