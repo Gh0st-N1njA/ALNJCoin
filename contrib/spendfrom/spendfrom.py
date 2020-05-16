@@ -221,9 +221,9 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get PIVs from")
+                      help="addresses to get PCTMs from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send PIVs to")
+                      help="address to get send PCTMs to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",

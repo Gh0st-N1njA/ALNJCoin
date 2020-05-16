@@ -21,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(PIV);
-    unitlist.append(mPIV);
-    unitlist.append(uPIV);
+    unitlist.append(PCTM);
+    unitlist.append(mPCTM);
+    unitlist.append(uPCTM);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case PIV:
-    case mPIV:
-    case uPIV:
+    case PCTM:
+    case mPCTM:
+    case uPCTM:
         return true;
     default:
         return false;
@@ -42,11 +42,11 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case PIV:
+    case PCTM:
         return QString("pivx");
-    case mPIV:
+    case mPCTM:
         return QString("mpivx");
-    case uPIV:
+    case uPCTM:
         return QString::fromUtf8("upivx");
     default:
         return QString("???");
@@ -59,23 +59,23 @@ QString BitcoinUnits::name(int unit, bool isZpiv)
     if(isZpiv) z = "z";
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case PIV:
-            return z + QString("PIV");
-        case mPIV:
-            return z + QString("mPIV");
-        case uPIV:
-            return z + QString::fromUtf8("μPIV");
+        case PCTM:
+            return z + QString("PCTM");
+        case mPCTM:
+            return z + QString("mPCTM");
+        case uPCTM:
+            return z + QString::fromUtf8("μPCTM");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case PIV:
-            return z + QString("tPIV");
-        case mPIV:
-            return z + QString("mtPIV");
-        case uPIV:
-            return z + QString::fromUtf8("μtPIV");
+        case PCTM:
+            return z + QString("tPCTM");
+        case mPCTM:
+            return z + QString("mtPCTM");
+        case uPCTM:
+            return z + QString::fromUtf8("μtPCTM");
         default:
             return QString("???");
         }
@@ -86,23 +86,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case PIV:
-            return QString("PIV");
-        case mPIV:
-            return QString("Milli-PIV (1 / 1" THIN_SP_UTF8 "000)");
-        case uPIV:
-            return QString("Micro-PIV (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case PCTM:
+            return QString("PCTM");
+        case mPCTM:
+            return QString("Milli-PCTM (1 / 1" THIN_SP_UTF8 "000)");
+        case uPCTM:
+            return QString("Micro-PCTM (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case PIV:
-            return QString("TestPIVs");
-        case mPIV:
-            return QString("Milli-TestPIV (1 / 1" THIN_SP_UTF8 "000)");
-        case uPIV:
-            return QString("Micro-TestPIV (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case PCTM:
+            return QString("TestPCTMs");
+        case mPCTM:
+            return QString("Milli-TestPCTM (1 / 1" THIN_SP_UTF8 "000)");
+        case uPCTM:
+            return QString("Micro-TestPCTM (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -112,11 +112,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case PIV:
+    case PCTM:
         return 100000000;
-    case mPIV:
+    case mPCTM:
         return 100000;
-    case uPIV:
+    case uPCTM:
         return 100;
     default:
         return 100000000;
@@ -126,11 +126,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case PIV:
+    case PCTM:
         return 8;
-    case mPIV:
+    case mPCTM:
         return 5;
-    case uPIV:
+    case uPCTM:
         return 2;
     default:
         return 0;

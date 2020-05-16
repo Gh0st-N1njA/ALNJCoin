@@ -155,7 +155,7 @@ Automatic zPCTM backup has been disabled. Thus, the following configuration opti
 
 The stake split threshold is no longer required to be integer. It can be a fractional amount. A threshold value of 0 disables the stake-split functionality.
 
-The default value for the stake-split threshold has been lowered from 2000 PIV, down  to 500 PIV.
+The default value for the stake-split threshold has been lowered from 2000 PCTM, down  to 500 PCTM.
 
 ### Changed command-line options
 

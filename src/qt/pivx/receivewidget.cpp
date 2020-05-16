@@ -42,7 +42,7 @@ ReceiveWidget::ReceiveWidget(PCTMGUI* parent) :
 
     // Title
     ui->labelTitle->setText(tr("Receive"));
-    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive PIV."));
+    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive PCTM."));
     setCssTitleScreen(ui->labelTitle);
     setCssSubtitleScreen(ui->labelSubtitle1);
 

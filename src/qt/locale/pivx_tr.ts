@@ -376,8 +376,8 @@ Stake için kaldırın</translation>
         <translation>İPTAL</translation>
     </message>
     <message>
-        <source>PCTM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PCTM şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, PIV'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>PCTM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PCTMs from being stolen by malware infecting your computer.</source>
+        <translation>PCTM şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, PCTM'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -446,8 +446,8 @@ Stake için kaldırın</translation>
         <translation>Birikimler</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 PCTM</source>
+        <translation>0,00 PCTM</translation>
     </message>
     <message>
         <source>address</source>
@@ -512,8 +512,8 @@ Stake için kaldırın</translation>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 PCTM</source>
+        <translation>0.00 PCTM</translation>
     </message>
     <message>
         <source>0</source>
@@ -787,8 +787,8 @@ Devam etmek istiyor musunuz?</translation>
         <translation>Koinler delege edildi</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any PCTM to select.</source>
+        <translation>Seçebileceğiniz PCTM'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -915,8 +915,8 @@ kopyala</translation>
         <translation>Stake İstatistikleri</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>PCTM</source>
+        <translation>PCTM</translation>
     </message>
     <message>
         <source>zPCTM</source>
@@ -951,8 +951,8 @@ kopyala</translation>
         <translation>Hesap geçmişinizde görebilirsiniz</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPCTM staked.</source>
-        <translation>Stake edilmiş PIV ve zPCTM miktarı</translation>
+        <source>Amount of PCTM and zPCTM staked.</source>
+        <translation>Stake edilmiş PCTM ve zPCTM miktarı</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -963,8 +963,8 @@ kopyala</translation>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>How to get PIV or zPCTM</source>
-        <translation>PIV veya zPCTM nasıl alınır</translation>
+        <source>How to get PCTM or zPCTM</source>
+        <translation>PCTM veya zPCTM nasıl alınır</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1299,8 +1299,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Bu miktarda koininizin olduğundan emin olunuz.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 PIV'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PCTM will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 PCTM'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1453,8 +1453,8 @@ Emin misiniz?</translation>
         <translation> masternode.conf dosyası bulunamadı</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Masternode yaratmak için yetersiz bakiye, 10,000 PIV gerekmektedir.</translation>
+        <source>Not enough balance to create a masternode, 10,000 PCTM required.</source>
+        <translation>Masternode yaratmak için yetersiz bakiye, 10,000 PCTM gerekmektedir.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1693,8 +1693,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPCTM</source>
-        <translation>PIV birimlerinin zPCTM'e otomatik basımını ektinleştir</translation>
+        <source>Enable automatic minting of PCTM units to zPCTM</source>
+        <translation>PCTM birimlerinin zPCTM'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
         <source>Enable zPCTM Automint</source>
@@ -1709,16 +1709,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Automint adreslerini etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPCTM via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zPCTM'ye dönüştürülen gelen PIV yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming PCTM which get automatically converted to zPCTM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zPCTM'ye dönüştürülen gelen PCTM yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPCTM</source>
         <translation>Otomatikleştirilmiş zPCTM yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Bu bölen için yeterli PIV bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough PCTM for this denomination is available</source>
+        <translation>Bu bölen için yeterli PCTM bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
     </message>
     <message>
         <source>Preferred Automint zPCTM Denomination</source>
@@ -2093,13 +2093,13 @@ Adres: %4
         <translation>Mint</translation>
     </message>
     <message>
-        <source>Minting zPCTM anonymizes your PIV by removing any
+        <source>Minting zPCTM anonymizes your PCTM by removing any
 transaction history, making transactions untraceable </source>
-        <translation>zPCTM mintleme işlemi PIV'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
+        <translation>zPCTM mintleme işlemi PCTM'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
     </message>
     <message>
-        <source>Mint new zPCTM or convert back to PIV</source>
-        <translation>Yeni zPCTM mintle veya PIV'e geri dönüştür</translation>
+        <source>Mint new zPCTM or convert back to PCTM</source>
+        <translation>Yeni zPCTM mintle veya PCTM'e geri dönüştür</translation>
     </message>
     <message>
         <source>No transactions yet</source>
@@ -2110,16 +2110,16 @@ transaction history, making transactions untraceable </source>
         <translation>Mint ZPCTM</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPCTM</source>
-        <translation>zPCTM'e mintlenmek için dönüştürülecek PIV miktarını gir</translation>
+        <source>Enter amount of PCTM to mint into zPCTM</source>
+        <translation>zPCTM'e mintlenmek için dönüştürülecek PCTM miktarını gir</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>PIV'e geri dönüştür</translation>
+        <source>Convert back to PCTM</source>
+        <translation>PCTM'e geri dönüştür</translation>
     </message>
     <message>
-        <source>Enter amount of zPCTM to convert back into PIV</source>
-        <translation>PIV'e geri dönüştürülecek zPCTM miktarını gir</translation>
+        <source>Enter amount of zPCTM to convert back into PCTM</source>
+        <translation>PCTM'e geri dönüştürülecek zPCTM miktarını gir</translation>
     </message>
     <message>
         <source>Zerocoin</source>
@@ -2150,12 +2150,12 @@ transaction history, making transactions untraceable </source>
         <translation>zPCTM minting başarılı</translation>
     </message>
     <message>
-        <source>zPCTM converted back to PIV</source>
-        <translation>zPCTM PIV'e dönüştürüldü</translation>
+        <source>zPCTM converted back to PCTM</source>
+        <translation>zPCTM PCTM'e dönüştürüldü</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any PCTM to select.</source>
+        <translation>Seçebileceğiniz PCTM'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2762,7 +2762,7 @@ transaction history, making transactions untraceable </source>
         <translation>Al</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
+        <source>Scan the QR code or copy the address to receive PCTM.</source>
         <translation>PCTM almak için QR kodunu okutun veya adresi kopyalayın</translation>
     </message>
     <message>
@@ -2864,8 +2864,8 @@ transaction history, making transactions untraceable </source>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>PCTM</source>
+        <translation>PCTM</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2944,7 +2944,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PCTM address</source>
-        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" PIV adresine gider</translation>
+        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" PCTM adresine gider</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -3032,8 +3032,8 @@ transaction history, making transactions untraceable </source>
         <translation>Gönder</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPCTM)</source>
-        <translation>Açık koin PIV veya gizli koin zPCTM transfer edebilirsiniz</translation>
+        <source>You can transfer public coins (PCTM) or private coins (zPCTM)</source>
+        <translation>Açık koin PCTM veya gizli koin zPCTM transfer edebilirsiniz</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3064,8 +3064,8 @@ transaction history, making transactions untraceable </source>
         <translation>Gönderilecek toplam</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>PIV Gönder</translation>
+        <source>Send PCTM</source>
+        <translation>PCTM Gönder</translation>
     </message>
     <message>
         <source>Send zPCTM</source>
@@ -3184,8 +3184,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Belirlenmiş masraf %1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any PCTM to select.</source>
+        <translation>Seçebileceğiniz PCTM'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>You don't have any zPCTM in your balance to select.</source>
@@ -3606,8 +3606,8 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>1)PCTM nedir?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) PIV'lerim neden harcanabilir değil?</translation>
+        <source>2) Why are my PCTM unspendable?</source>
+        <translation>2) PCTM'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>3) PCTM privacy? What is Zerocoin (zPCTM)?</source>
@@ -3624,12 +3624,12 @@ Verify that you have installed a predetermined text editor.</source>
 zPCTM'e dönüştürdü?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPCTM?</source>
-        <translation>6) Nasıl PIV/zPCTM alabilirim?</translation>
+        <source>6) How do I receive PCTM/zPCTM?</source>
+        <translation>6) Nasıl PCTM/zPCTM alabilirim?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPCTM?</source>
-        <translation>7) Nasıl PIV/zPCTM staking yapabilirim?</translation>
+        <source>7) How do I stake PCTM/zPCTM?</source>
+        <translation>7) Nasıl PCTM/zPCTM staking yapabilirim?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -3678,8 +3678,8 @@ bu sayede PCTM sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>PIV'lerim neden harcanabilir değil?</translation>
+        <source>Why are my PCTM unspendable?</source>
+        <translation>PCTM'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
@@ -3765,7 +3765,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the PCTM wallet will convert 10% of your entire PIV
+                           By default the PCTM wallet will convert 10% of your entire PCTM
                            balance to zPCTM to assist the network. If you do not wish to
                            stake zPCTM or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your PCTM wallet by
@@ -3782,7 +3782,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PCTM cüzdanınız ağa destek olmak için varsayılan olarak tüm PIV bakiyenizin 10% 'unu zPCTM'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zPCTM stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zPCTM Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. PCTMQT veya GUI kullanmıyorsanız, pivx.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
+                           PCTM cüzdanınız ağa destek olmak için varsayılan olarak tüm PCTM bakiyenizin 10% 'unu zPCTM'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zPCTM stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zPCTM Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. PCTMQT veya GUI kullanmıyorsanız, pivx.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
                            &lt;a style='color: #b088ff' href='https://PCTM.org/zpiv/'&gt; "PCTM Zerocoin (zPCTM) Teknik Makalesi"&lt;/a&gt;.
@@ -3796,8 +3796,8 @@ kısmını okuyunuz.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPCTM?</source>
-        <translation>Nasıl PIV/zPCTM alabilirim?</translation>
+        <source>How do I receive PCTM/zPCTM?</source>
+        <translation>Nasıl PCTM/zPCTM alabilirim?</translation>
     </message>
     <message>
         <source>
@@ -3823,8 +3823,8 @@ zPCTM Protokolü ile anonimleştirilmiş olacaktır.
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPCTM?</source>
-        <translation>Nasıl PIV/zPCTM staking yapabilirim?</translation>
+        <source>How do I stake PCTM/zPCTM?</source>
+        <translation>Nasıl PCTM/zPCTM staking yapabilirim?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -3842,7 +3842,7 @@ zPCTM Protokolü ile anonimleştirilmiş olacaktır.
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node PCTM core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 PCTM secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3874,7 +3874,7 @@ zPCTM Protokolü ile anonimleştirilmiş olacaktır.
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 PCTM per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -3883,7 +3883,7 @@ zPCTM Protokolü ile anonimleştirilmiş olacaktır.
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Tam düğüm PCTM core cüzdanını çalıştıran, gereken 10,000 PIV
+                           Tam düğüm PCTM core cüzdanını çalıştıran, gereken 10,000 PCTM
                            teminat bakiyesini barındırarak ağa ekstra hizmetler sunan ve
                            karşılığında da her blok ödülünden düzenli olarak pay alan bir
                            bilgisayardır.Bu hizmetler aşağıdaki gibidir:
@@ -3916,7 +3916,7 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
                            Gereksinimler:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Her Masternod için ayrı 10,000 PIV
+                           &lt;li&gt;Her Masternod için ayrı 10,000 PCTM
                            &lt;li&gt;Core cüzdan içinde saklanmalıdır.&lt;/li&gt;
                            &lt;li&gt;Atanmış IP adresi gerekmektedir. &lt;/li&gt;
                            &lt;li&gt;Masternode cüzdanının online olması&lt;/li&gt;
@@ -5034,40 +5034,40 @@ Emin misiniz?
         <translation>Tarafından alındı</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>PCTM Stake</source>
+        <translation>PCTM Stake</translation>
     </message>
     <message>
         <source>zPCTM Stake</source>
         <translation>zPCTM Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>PIV Soğuk Stake</translation>
+        <source>PCTM Cold Stake</source>
+        <translation>PCTM Soğuk Stake</translation>
     </message>
     <message>
         <source>Stake delegation</source>
         <translation>Stake delegasyonu</translation>
     </message>
     <message>
-        <source>Converted PIV to zPCTM</source>
-        <translation>PIV'den zPCTM'e dönüştürülen</translation>
+        <source>Converted PCTM to zPCTM</source>
+        <translation>PCTM'den zPCTM'e dönüştürülen</translation>
     </message>
     <message>
         <source>Spent zPCTM</source>
         <translation>zPCTM Harca</translation>
     </message>
     <message>
-        <source>Received PIV from zPCTM</source>
-        <translation>zPCTM'den PIV olarak alınan</translation>
+        <source>Received PCTM from zPCTM</source>
+        <translation>zPCTM'den PCTM olarak alınan</translation>
     </message>
     <message>
         <source>Minted Change as zPCTM from zPCTM Spend</source>
         <translation>zPCTM harcamasından kaynaklanan zPCTM mint farkı</translation>
     </message>
     <message>
-        <source>Converted zPCTM to PIV</source>
-        <translation>zPCTM'den PIV' dönüştürülen</translation>
+        <source>Converted zPCTM to PCTM</source>
+        <translation>zPCTM'den PCTM' dönüştürülen</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5220,8 +5220,8 @@ Emin misiniz?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 PCTM</source>
+        <translation>+0.000585 PCTM</translation>
     </message>
 </context>
 <context>
@@ -5231,8 +5231,8 @@ Emin misiniz?
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 PIV ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PCTM.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 PCTM ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -5402,8 +5402,8 @@ Hoşgeldiniz</translation>
         <translation>Soğuk stakeleme fonksiyonunu etkinleştirin (0-1, varsayılan: %u). Staking=0 ise etkin değildir</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>PIV girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
+        <source>Enable or disable staking functionality for PCTM inputs (0-1, default: %u)</source>
+        <translation>PCTM girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zPCTM inputs (0-1, default: %u)</source>
@@ -5442,12 +5442,12 @@ Hoşgeldiniz</translation>
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (PIV / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in PCTM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (PCTM / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (PIV / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in PCTM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (PCTM / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5810,8 +5810,8 @@ Hoşgeldiniz</translation>
         <translation>Blok okuma hatası</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gönderdiğiniz transfere (PIV/kb cinsinden) bir masraf ekleyin (varsayılan: %s) </translation>
+        <source>Fee (in PCTM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gönderdiğiniz transfere (PCTM/kb cinsinden) bir masraf ekleyin (varsayılan: %s) </translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5886,12 +5886,12 @@ Hoşgeldiniz</translation>
         <translation>masternode.conf dosyasında geçersiz port tespit edildi</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>PIV tedariği tekrar hesaplanıyor...</translation>
+        <source>Recalculating PCTM supply...</source>
+        <translation>PCTM tedariği tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPCTM money supply statistics</source>
-        <translation>PIV ve zPCTM para tedarik istatistiklerini tekrar endeksle</translation>
+        <source>Reindex the PCTM and zPCTM money supply statistics</source>
+        <translation>PCTM ve zPCTM para tedarik istatistiklerini tekrar endeksle</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

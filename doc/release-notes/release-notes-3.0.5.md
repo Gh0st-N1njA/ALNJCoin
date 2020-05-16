@@ -13,7 +13,7 @@ Please report bugs using the issue tracker at github:
 Mandatory Update
 ==============
 
-PCTM Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zPCTM protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zPCTM transactions will be enabled. **When zPCTM is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your PIV balance to zPCTM, then you will need to add `enablezeromint=0` to your `pivx.conf` file. For information about where to find your pivx.conf you can visit this link from [PCTM Support](https://pivx.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
+PCTM Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zPCTM protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zPCTM transactions will be enabled. **When zPCTM is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your PCTM balance to zPCTM, then you will need to add `enablezeromint=0` to your `pivx.conf` file. For information about where to find your pivx.conf you can visit this link from [PCTM Support](https://pivx.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 
@@ -60,7 +60,7 @@ Handling the above noted libzerocoin exploit required the PCTM team to immediate
 
 Money Supply Indexing
 ---------------------
-The exploit in libzerocoin threw off some of the wallet's internal money supply calculations for both the zPCTM supply and the PIV supply. User's wallet's will automatically recalculate the supply on block `908001`. User's also have the ability to recalculate supply using the startup flag `reindexmoneysupply`.
+The exploit in libzerocoin threw off some of the wallet's internal money supply calculations for both the zPCTM supply and the PCTM supply. User's wallet's will automatically recalculate the supply on block `908001`. User's also have the ability to recalculate supply using the startup flag `reindexmoneysupply`.
 
 More Extensive Tracking of zPCTM Supply Through RPC
 ---------------------

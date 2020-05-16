@@ -67,7 +67,7 @@ Multi-Split Stake Splitting
 
 Stake splitting has received a makeover and now supports splitting to more than two (2) outputs. [PR #968](https://github.com/PCTM-Project/PCTM/pull/968) introduced the change, which is controlled by the wallet's `stakesplitthreshold` setting.
 
-The default split threshold remains at 2000 PIV, and can be adjusted in the GUI's Settings page, or via the RPC `setstakesplitthreshold` command.
+The default split threshold remains at 2000 PCTM, and can be adjusted in the GUI's Settings page, or via the RPC `setstakesplitthreshold` command.
 
 For a real example, with a stake split threshold of 1500, and a UTXO of 4708.1557; the current stake split algorithm would break that into two outputs of approximately 2355.07785. With this new logic; it will be broken into 3 outputs instead of two; each sized 1570.0519 (4708.1557 input + 2 stake = 4710.1557 / 3 outputs = 1570.0519.
 
@@ -136,8 +136,8 @@ Additionally, a new (optional) argument, `includeCold`, has been added to the `l
 The `validateaddress` command now includes an additional response field, `isstaking`, to indicate wither or not the specified address is a cold staking address.
 
 The `getwalletinfo` command now includes two additional response fields:
-- `delegated_balance` - PIV balance held in P2CS contracts (delegated amount total).
-- `cold_staking_balance` - PIV balance held in cold staking addresses.
+- `delegated_balance` - PCTM balance held in P2CS contracts (delegated amount total).
+- `cold_staking_balance` - PCTM balance held in cold staking addresses.
 
 ### Newly introduced commands
 

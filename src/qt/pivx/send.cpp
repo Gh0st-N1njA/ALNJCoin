@@ -46,14 +46,14 @@ SendWidget::SendWidget(PCTMGUI* parent) :
     ui->labelTitle->setFont(fontLight);
 
     /* Button Group */
-    ui->pushLeft->setText("PIV");
+    ui->pushLeft->setText("PCTM");
     setCssProperty(ui->pushLeft, "btn-check-left");
     ui->pushLeft->setChecked(true);
     ui->pushRight->setText("zPCTM");
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (PIV) or private coins (zPCTM)"));
+    ui->labelSubtitle1->setText(tr("You can transfer public coins (PCTM) or private coins (zPCTM)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     ui->labelSubtitle2->setText(tr("Select coin type to spend"));
@@ -109,7 +109,7 @@ SendWidget::SendWidget(PCTMGUI* parent) :
     ui->labelTitleTotalSend->setText(tr("Total to send"));
     setCssProperty(ui->labelTitleTotalSend, "text-title");
 
-    ui->labelAmountSend->setText("0.00 PIV");
+    ui->labelAmountSend->setText("0.00 PCTM");
     setCssProperty(ui->labelAmountSend, "text-body1");
 
     // Total Remaining
@@ -139,8 +139,8 @@ SendWidget::SendWidget(PCTMGUI* parent) :
     setCustomFeeSelected(false);
 
     // Connect
-    connect(ui->pushLeft, &QPushButton::clicked, [this](){onPIVSelected(true);});
-    connect(ui->pushRight,  &QPushButton::clicked, [this](){onPIVSelected(false);});
+    connect(ui->pushLeft, &QPushButton::clicked, [this](){onPCTMSelected(true);});
+    connect(ui->pushRight,  &QPushButton::clicked, [this](){onPCTMSelected(false);});
     connect(ui->pushButtonSave, &QPushButton::clicked, this, &SendWidget::onSendClicked);
     connect(ui->pushButtonAddRecipient, &QPushButton::clicked, this, &SendWidget::onAddEntryClicked);
     connect(ui->pushButtonClear, &QPushButton::clicked, [this](){clearAll(true);});
@@ -149,7 +149,7 @@ SendWidget::SendWidget(PCTMGUI* parent) :
 void SendWidget::refreshView()
 {
     const bool isChecked = ui->pushLeft->isChecked();
-    ui->pushButtonSave->setText(isChecked ? tr("Send PIV") : tr("Send zPCTM"));
+    ui->pushButtonSave->setText(isChecked ? tr("Send PCTM") : tr("Send zPCTM"));
     ui->pushButtonAddRecipient->setVisible(isChecked);
     refreshAmounts();
 }
@@ -653,7 +653,7 @@ void SendWidget::onChangeCustomFeeClicked()
 
 void SendWidget::onCoinControlClicked()
 {
-    if (isPIV) {
+    if (isPCTM) {
         if (walletModel->getBalance() > 0) {
             if (!coinControlDialog) {
                 coinControlDialog = new CoinControlDialog();
@@ -665,7 +665,7 @@ void SendWidget::onCoinControlClicked()
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
             refreshAmounts();
         } else {
-            inform(tr("You don't have any PIV to select."));
+            inform(tr("You don't have any PCTM to select."));
         }
     } else {
         if (walletModel->getZerocoinBalance() > 0) {
@@ -694,10 +694,10 @@ void SendWidget::onCheckBoxChanged()
     }
 }
 
-void SendWidget::onPIVSelected(bool _isPIV)
+void SendWidget::onPCTMSelected(bool _isPCTM)
 {
-    isPIV = _isPIV;
-    setCssProperty(coinIcon, _isPIV ? "coin-icon-piv" : "coin-icon-zpiv");
+    isPCTM = _isPCTM;
+    setCssProperty(coinIcon, _isPCTM ? "coin-icon-piv" : "coin-icon-zpiv");
     refreshView();
     updateStyle(coinIcon);
 }

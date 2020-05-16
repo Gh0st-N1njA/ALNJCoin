@@ -60,7 +60,7 @@ protected:
     void showEvent(QShowEvent *event) override;
 
 private Q_SLOTS:
-    void onPIVSelected(bool _isPIV);
+    void onPCTMSelected(bool _isPCTM);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -93,7 +93,7 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isPIV = true;
+    bool isPCTM = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();

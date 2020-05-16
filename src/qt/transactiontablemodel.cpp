@@ -453,13 +453,13 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("PIV Stake");
+        return tr("PCTM Stake");
     case TransactionRecord::StakeZPCTM:
         return tr("zPCTM Stake");
     case TransactionRecord::StakeDelegated:
-        return tr("PIV Cold Stake");
+        return tr("PCTM Cold Stake");
     case TransactionRecord::StakeHot:
-        return tr("PIV Stake on behalf of");
+        return tr("PCTM Stake on behalf of");
     case TransactionRecord::P2CSDelegationSent:
     case TransactionRecord::P2CSDelegationSentOwner:
     case TransactionRecord::P2CSDelegation:
@@ -470,15 +470,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted PIV to zPCTM");
+        return tr("Converted PCTM to zPCTM");
     case TransactionRecord::ZerocoinSpend:
         return tr("Spent zPCTM");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received PIV from zPCTM");
+        return tr("Received PCTM from zPCTM");
     case TransactionRecord::ZerocoinSpend_Change_zPCTM:
         return tr("Minted Change as zPCTM from zPCTM Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zPCTM to PIV");
+        return tr("Converted zPCTM to PCTM");
     default:
         return QString();
     }

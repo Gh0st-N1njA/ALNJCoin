@@ -111,11 +111,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie PIV überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie PCTM überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie PIV empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie PCTM empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -131,7 +131,7 @@
     </message>
     <message>
         <source>These are your PCTM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre PCTM-Adressen zum Senden von Zahlungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie PIV überweisen.</translation>
+        <translation>Dies sind ihre PCTM-Adressen zum Senden von Zahlungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie PCTM überweisen.</translation>
     </message>
     <message>
         <source>These are your PCTM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -379,7 +379,7 @@ for staking</source>
         <translation>Wenn Sie ihr Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie</translation>
     </message>
     <message>
-        <source>LOSE ALL OF YOUR PIV</source>
+        <source>LOSE ALL OF YOUR PCTM</source>
         <translation>ALLE IHRE PCTM VERLIEREN</translation>
     </message>
     <message>
@@ -395,8 +395,8 @@ for staking</source>
         <translation>WARNUNG: CAPS LOCK IST EINGESCHALTET</translation>
     </message>
     <message>
-        <source>PCTM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer PIVs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>PCTM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PCTMs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer PCTMs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -465,7 +465,7 @@ for staking</source>
         <translation>Erspartes</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
+        <source>0,00 PCTM</source>
         <translation>0,00 PCTM</translation>
     </message>
     <message>
@@ -507,8 +507,8 @@ for staking</source>
         <translation>Münzenauswahl </translation>
     </message>
     <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>PIV Outputs zum Ausgeben wählen</translation>
+        <source>Select PCTM Outputs to Spend</source>
+        <translation>PCTM Outputs zum Ausgeben wählen</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -535,8 +535,8 @@ for staking</source>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 PCTM</source>
+        <translation>0.00 PCTM</translation>
     </message>
     <message>
         <source>0</source>
@@ -802,17 +802,17 @@ for staking</source>
         <translation>Fehler beim Laden der Zuweisungen: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
+        <source>You can delegate your PCTMs, letting a hot node (24/7 online node)
 stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>Sie können Ihre PIVs zuweisen und einen Node (24/7) für Sie staken lassen, während Sie Ihre Schlüssel sicher offline verwahren. </translation>
+        <translation>Sie können Ihre PCTMs zuweisen und einen Node (24/7) für Sie staken lassen, während Sie Ihre Schlüssel sicher offline verwahren. </translation>
     </message>
     <message>
         <source>Enter owner address</source>
         <translation>Adresse des Besitzers eingeben</translation>
     </message>
     <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>PIV Zusweisung annehmen / PIV zuweisen</translation>
+        <source>Accept PCTM delegation / Delegate PCTM</source>
+        <translation>PCTM Zusweisung annehmen / PCTM zuweisen</translation>
     </message>
     <message>
         <source>Cold Staking address</source>
@@ -874,8 +874,8 @@ Möchten Sie fortfahren?</translation>
         <translation>Coins zugewiesen</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Sie haben keine PIV zu wählen</translation>
+        <source>You don't have any PCTM to select.</source>
+        <translation>Sie haben keine PCTM zu wählen</translation>
     </message>
     <message>
         <source>Cannot perform operation, wallet locked</source>
@@ -1005,8 +1005,8 @@ address</source>
         <translation>Staking Statistiken</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>PCTM</source>
+        <translation>PCTM</translation>
     </message>
     <message>
         <source>zPCTM</source>
@@ -1041,8 +1041,8 @@ address</source>
         <translation>Der Link zum Verlauf des Accounts</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPCTM staked.</source>
-        <translation>Wieviele PIV und z PIV am staken sind.</translation>
+        <source>Amount of PCTM and zPCTM staked.</source>
+        <translation>Wieviele PCTM und z PCTM am staken sind.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1053,8 +1053,8 @@ address</source>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>How to get PIV or zPCTM</source>
-        <translation>Wie bekommt man PIV oder zPCTM</translation>
+        <source>How to get PCTM or zPCTM</source>
+        <translation>Wie bekommt man PCTM oder zPCTM</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1393,8 +1393,8 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>Erzeuge neuen Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PCTM Masternode you must dedicate 10,000 PIV (the unit of PCTM) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>Um einen PCTM Masternode zu erzeugen, müssen Sie 10.000 PIV (die Einheit von PCTM) dem Netzwerk zuweisen (diese Coins sind weiterhin Ihre und Sie werden Ihren Besitz nicht verlassen)
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PCTM Masternode you must dedicate 10,000 PCTM (the unit of PCTM) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Um einen PCTM Masternode zu erzeugen, müssen Sie 10.000 PCTM (die Einheit von PCTM) dem Netzwerk zuweisen (diese Coins sind weiterhin Ihre und Sie werden Ihren Besitz nicht verlassen)
 Sie können den Node jederzeit deaktivieren und die Coins entriegeln.</translation>
     </message>
     <message>
@@ -1414,8 +1414,8 @@ Sie können den Node jederzeit deaktivieren und die Coins entriegeln.</translati
         <translation>Stellen Sie sicher, dass Sie die Anzahl Coins besitzen.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 PIV wird gemacht&lt;/p&gt;&lt;p&gt;auf eine leere Adresse in Ihrer Wallet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PCTM will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 PCTM wird gemacht&lt;/p&gt;&lt;p&gt;auf eine leere Adresse in Ihrer Wallet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1652,8 +1652,8 @@ Sind sie sicher?</translation>
         <translation>Konnte keinen Masternode Controller erzeugen, das Wallet ist verriegelt</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 PIV werden benötigt.</translation>
+        <source>Not enough balance to create a masternode, 10,000 PCTM required.</source>
+        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 PCTM werden benötigt.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPCTM</source>
-        <translation>Aktivieren Sie die automatische Prägung von PIV-Einheiten zu zPCTM</translation>
+        <source>Enable automatic minting of PCTM units to zPCTM</source>
+        <translation>Aktivieren Sie die automatische Prägung von PCTM-Einheiten zu zPCTM</translation>
     </message>
     <message>
         <source>Enable zPCTM Automint</source>
@@ -1916,16 +1916,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Automint Adressen aktivieren</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPCTM via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden PIV, welcher automatisch zu zPCTM via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming PCTM which get automatically converted to zPCTM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden PCTM, welcher automatisch zu zPCTM via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPCTM</source>
         <translation>Prozentsatz der automatisierten zPCTM</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend PIV für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough PCTM for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend PCTM für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
         <source>Preferred Automint zPCTM Denomination</source>
@@ -2299,13 +2299,13 @@ Adresse: %4</translation>
         <translation>Prägen</translation>
     </message>
     <message>
-        <source>Minting zPCTM anonymizes your PIV by removing any
+        <source>Minting zPCTM anonymizes your PCTM by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Das Prägen von zPCTM anonymisiert Ihre PIV, indem es die Transaktionshistorie entfernt und Transaktionen so nicht rückverfolgbar macht.</translation>
+        <translation>Das Prägen von zPCTM anonymisiert Ihre PCTM, indem es die Transaktionshistorie entfernt und Transaktionen so nicht rückverfolgbar macht.</translation>
     </message>
     <message>
-        <source>Mint new zPCTM or convert back to PIV</source>
-        <translation>Präge neue zPCTM oder einlösen für PIV</translation>
+        <source>Mint new zPCTM or convert back to PCTM</source>
+        <translation>Präge neue zPCTM oder einlösen für PCTM</translation>
     </message>
     <message>
         <source>Last zPCTM Movements</source>
@@ -2320,16 +2320,16 @@ transaction history, making transactions untraceable </source>
         <translation>zPCTM prägen</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPCTM</source>
-        <translation>Gebe eine Anzahl PIV ein, um sie in zPCTM zu wechseln</translation>
+        <source>Enter amount of PCTM to mint into zPCTM</source>
+        <translation>Gebe eine Anzahl PCTM ein, um sie in zPCTM zu wechseln</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>Konvertiere zPCTM zurück zu PIV</translation>
+        <source>Convert back to PCTM</source>
+        <translation>Konvertiere zPCTM zurück zu PCTM</translation>
     </message>
     <message>
-        <source>Enter amount of zPCTM to convert back into PIV</source>
-        <translation>Geben Sie die Menge zPCTM ein, die in PIV umgewandelt werden sollen</translation>
+        <source>Enter amount of zPCTM to convert back into PCTM</source>
+        <translation>Geben Sie die Menge zPCTM ein, die in PCTM umgewandelt werden sollen</translation>
     </message>
     <message>
         <source>Zerocoin</source>
@@ -2360,12 +2360,12 @@ transaction history, making transactions untraceable </source>
         <translation>zPCTM erfolgreich geprägt</translation>
     </message>
     <message>
-        <source>zPCTM converted back to PIV</source>
-        <translation>zPCTM zurück in PIV konvertiert</translation>
+        <source>zPCTM converted back to PCTM</source>
+        <translation>zPCTM zurück in PCTM konvertiert</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Sie haben keine PIV zu wählen</translation>
+        <source>You don't have any PCTM to select.</source>
+        <translation>Sie haben keine PCTM zu wählen</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -3020,8 +3020,8 @@ transaction history, making transactions untraceable </source>
         <translation>Empfangen</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
-        <translation>QR-Code scannen oder Adresse kopieren um PIV zu erhalten.</translation>
+        <source>Scan the QR code or copy the address to receive PCTM.</source>
+        <translation>QR-Code scannen oder Adresse kopieren um PCTM zu erhalten.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3130,8 +3130,8 @@ transaction history, making transactions untraceable </source>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>PCTM</source>
+        <translation>PCTM</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3260,8 +3260,8 @@ transaction history, making transactions untraceable </source>
         <translation>Empfohlen</translation>
     </message>
     <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/kB</translation>
+        <source>PCTM/kilobyte</source>
+        <translation>PCTM/kB</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3330,8 +3330,8 @@ transaction history, making transactions untraceable </source>
         <translation>Schicken</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPCTM)</source>
-        <translation>Sie können öffentliche Coins (PIV) oder private Coins (zPCTM) transferieren</translation>
+        <source>You can transfer public coins (PCTM) or private coins (zPCTM)</source>
+        <translation>Sie können öffentliche Coins (PCTM) oder private Coins (zPCTM) transferieren</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3362,8 +3362,8 @@ transaction history, making transactions untraceable </source>
         <translation>Totalbetrag zum Senden</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>Sende PIV</translation>
+        <source>Send PCTM</source>
+        <translation>Sende PCTM</translation>
     </message>
     <message>
         <source>Send zPCTM</source>
@@ -3487,8 +3487,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Benutzerdefinierte Gebühr %1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Sie haben keine PIV zu wählen</translation>
+        <source>You don't have any PCTM to select.</source>
+        <translation>Sie haben keine PCTM zu wählen</translation>
     </message>
     <message>
         <source>You don't have any zPCTM in your balance to select.</source>
@@ -3985,8 +3985,8 @@ Es gab ein Problem bei dem Versuch die Adressen unter %1 zu speichern. Bitte ver
         <translation>1) Was ist PCTM?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Wieso kann ich meine PIV nicht ausgeben?</translation>
+        <source>2) Why are my PCTM unspendable?</source>
+        <translation>2) Wieso kann ich meine PCTM nicht ausgeben?</translation>
     </message>
     <message>
         <source>3) PCTM privacy? What is Zerocoin (zPCTM)?</source>
@@ -4002,12 +4002,12 @@ Es gab ein Problem bei dem Versuch die Adressen unter %1 zu speichern. Bitte ver
         <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zPCTM gewechselt?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPCTM?</source>
-        <translation>6) Wie empfange ich PIV/zPCTM?</translation>
+        <source>6) How do I receive PCTM/zPCTM?</source>
+        <translation>6) Wie empfange ich PCTM/zPCTM?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPCTM?</source>
-        <translation>7) Wie stake ich PIV/zPCTM?</translation>
+        <source>7) How do I stake PCTM/zPCTM?</source>
+        <translation>7) Wie stake ich PCTM/zPCTM?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4053,8 +4053,8 @@ PCTM nutzt einen PoS Konsensalgorithmus, der es den Besitzern von PCTM erlaubt, 
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Wieso kann ich meine PIV nicht ausgeben?</translation>
+        <source>Why are my PCTM unspendable?</source>
+        <translation>Wieso kann ich meine PCTM nicht ausgeben?</translation>
     </message>
     <message>
         <source>
@@ -4124,16 +4124,16 @@ zPCTM ist eine optionale Methode zur Mischung von Münzen auf der PCTM Blockchai
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPCTM?</source>
-        <translation>Wie empfange ich PIV/zPCTM?</translation>
+        <source>How do I receive PCTM/zPCTM?</source>
+        <translation>Wie empfange ich PCTM/zPCTM?</translation>
     </message>
     <message>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPCTM?</source>
-        <translation>Wie stake ich PIV/zPCTM?</translation>
+        <source>How do I stake PCTM/zPCTM?</source>
+        <translation>Wie stake ich PCTM/zPCTM?</translation>
     </message>
     <message>
         <source>Where should I go if I need support?</source>
@@ -5421,40 +5421,40 @@ BEDENKEN SIE: Nach dem Upgrade wird ein neues Backup erstellt.
         <translation>Empfangen von</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>PCTM Stake</source>
+        <translation>PCTM Stake</translation>
     </message>
     <message>
         <source>zPCTM Stake</source>
         <translation>zPCTM Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>PIV Cold Stake</translation>
+        <source>PCTM Cold Stake</source>
+        <translation>PCTM Cold Stake</translation>
     </message>
     <message>
         <source>Stake delegation</source>
         <translation>Stake Zuweisung</translation>
     </message>
     <message>
-        <source>Converted PIV to zPCTM</source>
-        <translation>Umgewandeltes PIV zu zPCTM</translation>
+        <source>Converted PCTM to zPCTM</source>
+        <translation>Umgewandeltes PCTM zu zPCTM</translation>
     </message>
     <message>
         <source>Spent zPCTM</source>
         <translation>Ausgegebene zPCTM</translation>
     </message>
     <message>
-        <source>Received PIV from zPCTM</source>
-        <translation>Empfangene PIV von zPCTM</translation>
+        <source>Received PCTM from zPCTM</source>
+        <translation>Empfangene PCTM von zPCTM</translation>
     </message>
     <message>
         <source>Minted Change as zPCTM from zPCTM Spend</source>
         <translation>Geprägtes zPCTM Wechselgeld aus zPCTM Überweisung</translation>
     </message>
     <message>
-        <source>Converted zPCTM to PIV</source>
-        <translation>Umgewandeltes zPCTM zu PIV</translation>
+        <source>Converted zPCTM to PCTM</source>
+        <translation>Umgewandeltes zPCTM zu PCTM</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5469,8 +5469,8 @@ BEDENKEN SIE: Nach dem Upgrade wird ein neues Backup erstellt.
         <translation>Eigenüberweisung</translation>
     </message>
     <message>
-        <source>PIV Stake on behalf of</source>
-        <translation>PIV Stake im Auftrag von</translation>
+        <source>PCTM Stake on behalf of</source>
+        <translation>PCTM Stake im Auftrag von</translation>
     </message>
     <message>
         <source>Stake delegation spent by</source>
@@ -5635,19 +5635,19 @@ BEDENKEN SIE: Nach dem Upgrade wird ein neues Backup erstellt.
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 PCTM</source>
+        <translation>+0.000585 PCTM</translation>
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>PIVs überweisen</translation>
+        <translation>PCTMs überweisen</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 PIV begrenzt.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PCTM.</source>
+        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 PCTM begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -5816,8 +5816,8 @@ PCTM Core Wallet</source>
         <translation>Ermögliche Cold Staking Funktionalität (0-1, standardmäßig: %u). Ausgeschaltet, wenn staking=0</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für PIV Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for PCTM inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für PCTM Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zPCTM inputs (0-1, default: %u)</source>
@@ -5856,12 +5856,12 @@ PCTM Core Wallet</source>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in PIV/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in PCTM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in PCTM/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in PIV/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in PCTM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in PCTM/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6216,8 +6216,8 @@ PCTM Core Wallet</source>
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in PIV/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in PCTM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in PCTM/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6292,12 +6292,12 @@ PCTM Core Wallet</source>
         <translation>Ungültiger Port in masternode.conf entdeckt</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Bestimme PIV Bestand erneut...</translation>
+        <source>Recalculating PCTM supply...</source>
+        <translation>Bestimme PCTM Bestand erneut...</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPCTM money supply statistics</source>
-        <translation>Die Geldmengenstatistik PIV und zPCTM neu indizieren</translation>
+        <source>Reindex the PCTM and zPCTM money supply statistics</source>
+        <translation>Die Geldmengenstatistik PCTM und zPCTM neu indizieren</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

@@ -44,15 +44,15 @@ PrivacyWidget::PrivacyWidget(PCTMGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("Minting zPCTM anonymizes your PIV by removing any\ntransaction history, making transactions untraceable "));
+    ui->labelSubtitle1->setText(tr("Minting zPCTM anonymizes your PCTM by removing any\ntransaction history, making transactions untraceable "));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
-    ui->labelSubtitle2->setText(tr("Mint new zPCTM or convert back to PIV"));
+    ui->labelSubtitle2->setText(tr("Mint new zPCTM or convert back to PCTM"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
     setCssProperty(ui->labelSubtitleAmount, "text-title");
 
-    ui->lineEditAmount->setPlaceholderText("0.00 PIV ");
+    ui->lineEditAmount->setPlaceholderText("0.00 PCTM ");
     ui->lineEditAmount->setValidator(new QRegExpValidator(QRegExp("[0-9]+")));
     initCssEditLine(ui->lineEditAmount);
 
@@ -120,7 +120,7 @@ PrivacyWidget::PrivacyWidget(PCTMGUI* parent) :
     ui->btnTotalzPCTM->setRightIconClass("ic-arrow");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select PIV outputs to mint into zPCTM.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select PCTM outputs to mint into zPCTM.");
 
     ui->btnRescanMints->setTitleClassAndText("btn-title-grey", "Rescan Mints");
     ui->btnRescanMints->setSubTitleClassAndText("text-subtitle", "Find mints in the blockchain.");
@@ -194,11 +194,11 @@ void PrivacyWidget::onMintSelected(bool isMint)
     if (isMint) {
         btnText = tr("Mint zPCTM");
         ui->btnCoinControl->setVisible(true);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of PIV to mint into zPCTM"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of PCTM to mint into zPCTM"));
     } else {
-        btnText = tr("Convert back to PIV");
+        btnText = tr("Convert back to PCTM");
         ui->btnCoinControl->setVisible(false);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of zPCTM to convert back into PIV"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of zPCTM to convert back into PCTM"));
     }
     ui->pushButtonSave->setText(btnText);
 }
@@ -297,7 +297,7 @@ void PrivacyWidget::spend(CAmount value)
         inform(receipt.GetStatusMessage().data());
     } else {
         // Spend succeed
-        inform(tr("zPCTM converted back to PIV"));
+        inform(tr("zPCTM converted back to PCTM"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -317,7 +317,7 @@ void PrivacyWidget::onCoinControlClicked()
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any PIV to select."));
+            inform(tr("You don't have any PCTM to select."));
         }
     }
 }

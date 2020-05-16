@@ -53,7 +53,7 @@ DashboardWidget::DashboardWidget(PCTMGUI* parent) :
     setCssSubtitleScreen(ui->labelSubtitle);
 
     // Staking Information
-    ui->labelMessage->setText(tr("Amount of PIV and zPCTM staked."));
+    ui->labelMessage->setText(tr("Amount of PCTM and zPCTM staked."));
     setCssSubtitleScreen(ui->labelMessage);
     setCssProperty(ui->labelSquarePiv, "square-chart-piv");
     setCssProperty(ui->labelSquarezPCTM, "square-chart-zpiv");
@@ -67,7 +67,7 @@ DashboardWidget::DashboardWidget(PCTMGUI* parent) :
     setCssProperty(ui->labelChart, "legend-chart");
 
     ui->labelAmountZpiv->setText("0 zPCTM");
-    ui->labelAmountPiv->setText("0 PIV");
+    ui->labelAmountPiv->setText("0 PCTM");
     setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
     setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv-disable");
 
@@ -133,7 +133,7 @@ DashboardWidget::DashboardWidget(PCTMGUI* parent) :
     setCssProperty(ui->chartContainer, "container-chart");
     setCssProperty(ui->pushImgEmptyChart, "img-empty-staking-on");
 
-    ui->btnHowTo->setText(tr("How to get PIV or zPCTM"));
+    ui->btnHowTo->setText(tr("How to get PCTM or zPCTM"));
     setCssBtnSecondary(ui->btnHowTo);
 
 
@@ -642,7 +642,7 @@ void DashboardWidget::onChartRefreshed()
         axisX->clear();
     }
     // init sets
-    set0 = new QBarSet("PIV");
+    set0 = new QBarSet("PCTM");
     set1 = new QBarSet("zPCTM");
     set0->setColor(QColor(92,75,125));
     set1->setColor(QColor(176,136,255));
