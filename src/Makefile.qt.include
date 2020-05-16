@@ -469,11 +469,11 @@ RES_ICONS = \
   qt/pctm/res/img/ic-arrow-drop-white-down.svg \
   qt/pctm/res/img/ic-combo-box.svg \
   qt/pctm/res/img/ic-send.svg \
-  qt/pctm/res/img/img-logo-pivx@2x.png \
+  qt/pctm/res/img/img-logo-pctm@2x.png \
   qt/pctm/res/img/ic-arrow-purple-down.svg \
   qt/pctm/res/img/ic-connect.svg \
   qt/pctm/res/img/ic-submenu-lock.svg \
-  qt/pctm/res/img/img-logo-pivx@3x.png \
+  qt/pctm/res/img/img-logo-pctm@3x.png \
   qt/pctm/res/img/img-logo-pctm.svg \
   qt/pctm/res/img/ic-arrow-right-white.svg \
   qt/pctm/res/img/ic-arrow-left-white.svg \
