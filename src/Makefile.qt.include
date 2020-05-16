@@ -76,7 +76,7 @@ QT_MOC_CPP = \
   qt/moc_bantablemodel.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
-  qt/pivx/moc_pivxgui.cpp \
+  qt/pivx/moc_pctmgui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
@@ -172,7 +172,7 @@ QT_MOC = \
   qt/rpcconsole.moc \
   qt/pivx/settings/moc_settingsconsolewidget.cpp
 
-QT_QRC_CPP = qt/qrc_pivx.cpp
+QT_QRC_CPP = qt/qrc_pctm.cpp
 QT_QRC = qt/pivx.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_pctm_locale.cpp
 QT_QRC_LOCALE = qt/pctm_locale.qrc
@@ -349,7 +349,7 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-mint.svg \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
-  qt/res/icons/unit_pivx.png \
+  qt/res/icons/unit_pctm.png \
   qt/res/icons/unit_mpivx.png \
   qt/res/icons/unit_upivx.png \
   qt/res/icons/unit_tpivx.png \

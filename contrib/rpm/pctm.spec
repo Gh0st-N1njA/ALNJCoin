@@ -33,7 +33,7 @@ Source22:	https://raw.githubusercontent.com/pivx-project/pivx/v%{version}/doc/ma
 
 #selinux
 Source30:	https://raw.githubusercontent.com/pivx-project/pivx/v%{version}/contrib/rpm/pivx.te
-# Source31 - what about pactumcoin-tx and bench_pivx ???
+# Source31 - what about pactumcoin-tx and bench_pctm ???
 Source31:	https://raw.githubusercontent.com/pivx-project/pivx/v%{version}/contrib/rpm/pivx.fc
 Source32:	https://raw.githubusercontent.com/pivx-project/pivx/v%{version}/contrib/rpm/pivx.if
 
@@ -143,7 +143,7 @@ pivx-core daemon.
 
 The pactumcoin-cli utility allows you to communicate and control a pivx daemon
 over RPC, the pactumcoin-tx utility allows you to create a custom transaction, and
-the bench_pivx utility can be used to perform some benchmarks.
+the bench_pctm utility can be used to perform some benchmarks.
 
 This package contains utilities needed by the pivx-server package.
 
@@ -422,7 +422,7 @@ rm -rf %{buildroot}
 %doc COPYING pivx.conf.example doc/README.md
 %attr(0755,root,root) %{_bindir}/pactumcoin-cli
 %attr(0755,root,root) %{_bindir}/pactumcoin-tx
-%attr(0755,root,root) %{_bindir}/bench_pivx
+%attr(0755,root,root) %{_bindir}/bench_pctm
 %attr(0644,root,root) %{_mandir}/man1/pactumcoin-cli.1*
 
 

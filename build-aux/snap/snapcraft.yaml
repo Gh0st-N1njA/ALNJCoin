@@ -61,7 +61,7 @@ apps:
     command: pactumcoin-tx
     plugs: [home]
   test:
-    command: test_pivx
+    command: test_pctm
     plugs: [home]
   testqt:
     command: test_pactumcoin-qt

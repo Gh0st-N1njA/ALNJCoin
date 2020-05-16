@@ -47,7 +47,7 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_pivx">res/icons/unit_pivx.png</file>
+        <file alias="unit_pctm">res/icons/unit_pctm.png</file>
         <file alias="unit_mpivx">res/icons/unit_mpivx.png</file>
         <file alias="unit_upivx">res/icons/unit_upivx.png</file>
         <file alias="unit_tpivx">res/icons/unit_tpivx.png</file>

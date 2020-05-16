@@ -549,7 +549,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_pivx.cpp \
+           src/test/test_pctm.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \

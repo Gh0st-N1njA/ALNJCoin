@@ -5,7 +5,7 @@
 
 #define BOOST_TEST_MODULE Pctm Test Suite
 
-#include "test_pivx.h"
+#include "test_pctm.h"
 
 #include "main.h"
 #include "random.h"

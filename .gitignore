@@ -11,7 +11,7 @@ src/pivx
 src/pactumcoind
 src/pactumcoin-cli
 src/pactumcoin-tx
-src/test/test_pivx
+src/test/test_pctm
 src/qt/test/test_pactumcoin-qt
 
 # autoreconf
@@ -106,7 +106,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_pivx.coverage/
+test_pctm.coverage/
 total.coverage/
 coverage_percent.txt
 
