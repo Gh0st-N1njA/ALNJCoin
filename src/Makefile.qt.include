@@ -18,56 +18,56 @@ QT_FORMS_UI = \
   qt/forms/openuridialog.ui \
   qt/forms/optionsdialog.ui \
   qt/forms/rpcconsole.ui \
-  qt/pivx/forms/loadingdialog.ui \
+  qt/pctm/forms/loadingdialog.ui \
   qt/forms/zpctmcontroldialog.ui \
-  qt/pivx/forms/snackbar.ui \
-  qt/pivx/forms/navmenuwidget.ui \
-  qt/pivx/forms/lockunlock.ui \
-  qt/pivx/forms/expandablebutton.ui \
-  qt/pivx/forms/receivedialog.ui \
-  qt/pivx/forms/topbar.ui \
-  qt/pivx/forms/txrow.ui \
-  qt/pivx/forms/dashboardwidget.ui \
-  qt/pivx/forms/addresslabelrow.ui \
-  qt/pivx/forms/contactdropdownrow.ui \
-  qt/pivx/forms/mninfodialog.ui \
-  qt/pivx/forms/optionbutton.ui \
-  qt/pivx/forms/masternodewizarddialog.ui \
-  qt/pivx/forms/mnrow.ui \
-  qt/pivx/forms/masternodeswidget.ui \
-  qt/pivx/forms/myaddressrow.ui \
-  qt/pivx/forms/csrow.ui \
-  qt/pivx/forms/sendchangeaddressdialog.ui \
-  qt/pivx/forms/sendconfirmdialog.ui \
-  qt/pivx/forms/sendcustomfeedialog.ui \
-  qt/pivx/forms/sendchangeaddressdialog.ui \
-  qt/pivx/forms/sendmultirow.ui \
-  qt/pivx/forms/send.ui \
-  qt/pivx/forms/addnewaddressdialog.ui \
-  qt/pivx/forms/addnewcontactdialog.ui \
-  qt/pivx/forms/requestdialog.ui \
-  qt/pivx/forms/receivewidget.ui \
-  qt/pivx/forms/tooltipmenu.ui \
-  qt/pivx/forms/addresseswidget.ui \
-  qt/pivx/forms/defaultdialog.ui \
-  qt/pivx/forms/privacywidget.ui \
-  qt/pivx/forms/coldstakingwidget.ui \
-  qt/pivx/settings/forms/settingsbackupwallet.ui \
-  qt/pivx/settings/forms/settingsexportcsv.ui \
-  qt/pivx/settings/forms/settingsbittoolwidget.ui \
-  qt/pivx/settings/forms/settingsconsolewidget.ui \
-  qt/pivx/settings/forms/settingsdisplayoptionswidget.ui \
-  qt/pivx/settings/forms/settingsfaqwidget.ui \
-  qt/pivx/settings/forms/settingsinformationwidget.ui \
-  qt/pivx/settings/forms/settingsmainoptionswidget.ui \
-  qt/pivx/settings/forms/settingsmultisenddialog.ui \
-  qt/pivx/settings/forms/settingsmultisendwidget.ui \
-  qt/pivx/settings/forms/settingssignmessagewidgets.ui \
-  qt/pivx/settings/forms/settingswalletoptionswidget.ui \
-  qt/pivx/settings/forms/settingswalletrepairwidget.ui \
-  qt/pivx/settings/forms/settingswidget.ui \
-  qt/pivx/forms/welcomecontentwidget.ui \
-  qt/pivx/forms/splash.ui
+  qt/pctm/forms/snackbar.ui \
+  qt/pctm/forms/navmenuwidget.ui \
+  qt/pctm/forms/lockunlock.ui \
+  qt/pctm/forms/expandablebutton.ui \
+  qt/pctm/forms/receivedialog.ui \
+  qt/pctm/forms/topbar.ui \
+  qt/pctm/forms/txrow.ui \
+  qt/pctm/forms/dashboardwidget.ui \
+  qt/pctm/forms/addresslabelrow.ui \
+  qt/pctm/forms/contactdropdownrow.ui \
+  qt/pctm/forms/mninfodialog.ui \
+  qt/pctm/forms/optionbutton.ui \
+  qt/pctm/forms/masternodewizarddialog.ui \
+  qt/pctm/forms/mnrow.ui \
+  qt/pctm/forms/masternodeswidget.ui \
+  qt/pctm/forms/myaddressrow.ui \
+  qt/pctm/forms/csrow.ui \
+  qt/pctm/forms/sendchangeaddressdialog.ui \
+  qt/pctm/forms/sendconfirmdialog.ui \
+  qt/pctm/forms/sendcustomfeedialog.ui \
+  qt/pctm/forms/sendchangeaddressdialog.ui \
+  qt/pctm/forms/sendmultirow.ui \
+  qt/pctm/forms/send.ui \
+  qt/pctm/forms/addnewaddressdialog.ui \
+  qt/pctm/forms/addnewcontactdialog.ui \
+  qt/pctm/forms/requestdialog.ui \
+  qt/pctm/forms/receivewidget.ui \
+  qt/pctm/forms/tooltipmenu.ui \
+  qt/pctm/forms/addresseswidget.ui \
+  qt/pctm/forms/defaultdialog.ui \
+  qt/pctm/forms/privacywidget.ui \
+  qt/pctm/forms/coldstakingwidget.ui \
+  qt/pctm/settings/forms/settingsbackupwallet.ui \
+  qt/pctm/settings/forms/settingsexportcsv.ui \
+  qt/pctm/settings/forms/settingsbittoolwidget.ui \
+  qt/pctm/settings/forms/settingsconsolewidget.ui \
+  qt/pctm/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/pctm/settings/forms/settingsfaqwidget.ui \
+  qt/pctm/settings/forms/settingsinformationwidget.ui \
+  qt/pctm/settings/forms/settingsmainoptionswidget.ui \
+  qt/pctm/settings/forms/settingsmultisenddialog.ui \
+  qt/pctm/settings/forms/settingsmultisendwidget.ui \
+  qt/pctm/settings/forms/settingssignmessagewidgets.ui \
+  qt/pctm/settings/forms/settingswalletoptionswidget.ui \
+  qt/pctm/settings/forms/settingswalletrepairwidget.ui \
+  qt/pctm/settings/forms/settingswidget.ui \
+  qt/pctm/forms/welcomecontentwidget.ui \
+  qt/pctm/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -76,7 +76,7 @@ QT_MOC_CPP = \
   qt/moc_bantablemodel.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
-  qt/pivx/moc_pctmgui.cpp \
+  qt/pctm/moc_pctmgui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
@@ -104,24 +104,24 @@ QT_MOC_CPP = \
   qt/moc_transactiontablemodel.cpp \
   qt/moc_utilitydialog.cpp \
   qt/moc_walletmodel.cpp \
-  qt/pivx/moc_loadingdialog.cpp \
+  qt/pctm/moc_loadingdialog.cpp \
   qt/moc_zpctmcontroldialog.cpp \
-  qt/pivx/moc_pwidget.cpp \
-  qt/pivx/moc_snackbar.cpp \
-  qt/pivx/moc_navmenuwidget.cpp \
-  qt/pivx/moc_lockunlock.cpp \
-  qt/pivx/moc_expandablebutton.cpp \
-  qt/pivx/moc_furabstractlistitemdelegate.cpp \
-  qt/pivx/moc_receivedialog.cpp \
-  qt/pivx/moc_pfborderimage.cpp \
-  qt/pivx/moc_topbar.cpp \
-  qt/pivx/moc_txrow.cpp \
-  qt/pivx/moc_dashboardwidget.cpp \
-  qt/pivx/moc_addresslabelrow.cpp \
-  qt/pivx/moc_contactdropdownrow.cpp \
-  qt/pivx/moc_mninfodialog.cpp \
-  qt/pivx/moc_optionbutton.cpp \
-  qt/pivx/moc_coldstakingmodel.cpp \
+  qt/pctm/moc_pwidget.cpp \
+  qt/pctm/moc_snackbar.cpp \
+  qt/pctm/moc_navmenuwidget.cpp \
+  qt/pctm/moc_lockunlock.cpp \
+  qt/pctm/moc_expandablebutton.cpp \
+  qt/pctm/moc_furabstractlistitemdelegate.cpp \
+  qt/pctm/moc_receivedialog.cpp \
+  qt/pctm/moc_pfborderimage.cpp \
+  qt/pctm/moc_topbar.cpp \
+  qt/pctm/moc_txrow.cpp \
+  qt/pctm/moc_dashboardwidget.cpp \
+  qt/pctm/moc_addresslabelrow.cpp \
+  qt/pctm/moc_contactdropdownrow.cpp \
+  qt/pctm/moc_mninfodialog.cpp \
+  qt/pctm/moc_optionbutton.cpp \
+  qt/pctm/moc_coldstakingmodel.cpp \
   qt/pivx/moc_mnmodel.cpp \
   qt/pivx/moc_masternodewizarddialog.cpp \
   qt/pivx/moc_mnrow.cpp \

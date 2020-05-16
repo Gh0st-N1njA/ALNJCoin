@@ -4,9 +4,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/addnewcontactdialog.h"
-#include "qt/pivx/forms/ui_addnewcontactdialog.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/addnewcontactdialog.h"
+#include "qt/pctm/forms/ui_addnewcontactdialog.h"
+#include "qt/pctm/qtutils.h"
 
 AddNewContactDialog::AddNewContactDialog(QWidget *parent) :
     QDialog(parent),
