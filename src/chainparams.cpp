@@ -108,7 +108,7 @@ static const Checkpoints::CCheckpointData data = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
         boost::assign::map_list_of
-                (10, uint256S("00000ea660c13460424e8ad3db143e0a579f48235e67b12d55c84b642e70248d"));
+                (0, uint256S("0x000005350f609d8dee013062226f9459d859d95db8023623b8c22b07a322e565"));
 
 static const Checkpoints::CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
@@ -139,6 +139,7 @@ public:
         assert(consensus.hashGenesisBlock == uint256("0x000008d0d565c1bc0fa245fc4d8b31f1de1438979c2b3b73234364f60b2673ef"));
         assert(genesis.hashMerkleRoot == uint256("0x3a2353b4f74192b56cc2cfbbfe49796948f47cece1b9ea3278fd11aed287b4d1"));
 
+        consensus.nPremineAmount = 10799888 * COIN;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit = ~UINT256_ZERO >> 20;   // PCTM starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
@@ -162,21 +163,21 @@ public:
 
         // spork keys
         consensus.strSporkPubKey = "04a36346b0f188d3c6d4d78ff194698f0f55736364536b5c9752b9b440c135fce6e36cf484a3a7054cad2bfdb114ffb8cd8f1a1631b6689c6cc81404827b157eb7";
-        consensus.strSporkPubKeyOld = "0499A7AF4806FC6DE640D23BC5936C29B77ADF2174B4F45492727F897AE63CF8D27B2F05040606E0D14B547916379FA10716E344E745F880EDC037307186AA25B7";
+        consensus.strSporkPubKeyOld = "";
         consensus.nTime_EnforceNewSporkKey = 1566860400;    //!> August 26, 2019 11:00:00 PM GMT
         consensus.nTime_RejectOldSporkKey = 1569538800;     //!> September 26, 2019 11:00:00 PM GMT
 
         // height-based activations
-        consensus.height_last_PoW = 600;
+        consensus.height_last_PoW = 259200;
         consensus.height_last_ZC_AccumCheckpoint = 1190;
         consensus.height_last_ZC_WrappedSerials = 1200;
         consensus.height_start_BIP65 = 1;
         consensus.height_start_InvalidUTXOsCheck = 1200;
-        consensus.height_start_MessSignaturesV2 = 601;  // height_start_TimeProtoV2
+        consensus.height_start_MessSignaturesV2 = 1;  // height_start_TimeProtoV2
         consensus.height_start_StakeModifierNewSelection = 1199;
         consensus.height_start_StakeModifierV2 = 1200;
         consensus.height_start_TimeProtoV2 = 1;
-        consensus.height_start_ZC = 1200;                 // Block v4: 5b2482eca24caf2a46bb22e0545db7b7037282733faa3a42ec20542509999a64
+        consensus.height_start_ZC = 1200;
         consensus.height_start_ZC_InvalidSerials = 0;
         consensus.height_start_ZC_PublicSpends = 1200;
         consensus.height_start_ZC_SerialRangeCheck = 1200;
@@ -252,8 +253,9 @@ public:
         genesis = CreateGenesisBlock(1577169143, 454267, 0x1e0ffff0, 1, 1 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x000005350f609d8dee013062226f9459d859d95db8023623b8c22b07a322e565"));
-        //assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
 
+        consensus.nPremineAmount = 1000000 * COIN;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.powLimit = ~UINT256_ZERO >> 20;   // PCTM starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
@@ -277,25 +279,25 @@ public:
 
         // spork keys
         consensus.strSporkPubKey = "04bc6f5acaf8e1fa263264655c6bca1e34bf33f103ced69ddef31df881bf7155db2c226b3358b236a6d5a6a2de42f30e7de46cec9fb26317fec9845eab36b23e6e";
-        consensus.strSporkPubKeyOld = "04A8B319388C0F8588D238B9941DC26B26D3F9465266B368A051C5C100F79306A557780101FE2192FE170D7E6DEFDCBEE4C8D533396389C0DAFFDBC842B002243C";
+        consensus.strSporkPubKeyOld = "";
         consensus.nTime_EnforceNewSporkKey = 1566860400;    //!> August 26, 2019 11:00:00 PM GMT
         consensus.nTime_RejectOldSporkKey = 1569538800;     //!> September 26, 2019 11:00:00 PM GMT
 
         // height based activations
         consensus.height_last_PoW = 200;
-        consensus.height_last_ZC_AccumCheckpoint = 201;
+        consensus.height_last_ZC_AccumCheckpoint = 101;
         consensus.height_last_ZC_WrappedSerials = -1;
-        consensus.height_start_BIP65 = 1;                  // Block v5: d1ec8838ba8f644e78dd4f8e861d31e75457dfe607b31deade30e806b5f46c1c
+        consensus.height_start_BIP65 = 1;
         consensus.height_start_InvalidUTXOsCheck = 999999999;
-        consensus.height_start_MessSignaturesV2 = 1347000;      // height_start_TimeProtoV2
-        consensus.height_start_StakeModifierNewSelection = 201;
-        consensus.height_start_StakeModifierV2 = 201;       // Block v6: 1822577176173752aea33d1f60607cefe9e0b1c54ebaa77eb40201a385506199
-        consensus.height_start_TimeProtoV2 = 201;           // Block v7: 30c173ffc09a13f288bf6e828216107037ce5b79536b1cebd750a014f4939882
-        consensus.height_start_ZC = 201;                     // Block v4: 258c489f42f03cb97db2255e47938da4083eee4e242853c2d48bae2b1d0110a6
+        consensus.height_start_MessSignaturesV2 = 101;      // height_start_TimeProtoV2
+        consensus.height_start_StakeModifierNewSelection = 101;
+        consensus.height_start_StakeModifierV2 = 101;
+        consensus.height_start_TimeProtoV2 = 101;
+        consensus.height_start_ZC = 101;
         consensus.height_start_ZC_InvalidSerials = 999999999;
-        consensus.height_start_ZC_PublicSpends = 201;
+        consensus.height_start_ZC_PublicSpends = 101;
         consensus.height_start_ZC_SerialRangeCheck = 1;
-        consensus.height_start_ZC_SerialsV2 = 201;
+        consensus.height_start_ZC_SerialsV2 = 101;
         consensus.height_ZC_RecalcAccumulators = 999999999;
 
         // validation by-pass
@@ -368,8 +370,9 @@ public:
         genesis = CreateGenesisBlock(1577169143, 454267, 0x1e0ffff0, 1, 1 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x000005350f609d8dee013062226f9459d859d95db8023623b8c22b07a322e565"));
-        //assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
 
+        consensus.nPremineAmount = 100000 * COIN;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.powLimit = ~UINT256_ZERO >> 20;   // PCTM starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;

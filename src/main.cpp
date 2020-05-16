@@ -1593,7 +1593,7 @@ int64_t GetBlockValue(int nHeight)
     const int last_pow_block = Params().GetConsensus().height_last_PoW;
     int64_t nSubsidy = 0;
     if (nHeight == 0) {
-        nSubsidy = 60001 * COIN;
+        nSubsidy = Params().GetConsensus().nPremineAmount;
     } else if (nHeight < 86400 && nHeight > 0) {
         nSubsidy = 250 * COIN;
     } else if (nHeight < (Params().NetworkID() == CBaseChainParams::TESTNET ? 145000 : 151200) && nHeight >= 86400) {
