@@ -85,7 +85,7 @@ src/qt/test/moc*.cpp
 *.qm
 Makefile
 pactumcoin-qt
-PIVX-Qt.app
+PACTUMCOIN-Qt.app
 background.tiff*
 
 # Unit-tests

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_CONSENSUS_ZEROCOIN_VERIFY_H
-#define PIVX_CONSENSUS_ZEROCOIN_VERIFY_H
+#ifndef PCTM_CONSENSUS_ZEROCOIN_VERIFY_H
+#define PCTM_CONSENSUS_ZEROCOIN_VERIFY_H
 
 #include "consensus/consensus.h"
 #include "main.h"
@@ -23,4 +23,4 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
 bool RecalculatePIVSupply(int nHeightStart, bool fSkipZpiv = true);
 CAmount GetInvalidUTXOValue();
 
-#endif //PIVX_CONSENSUS_ZEROCOIN_VERIFY_H
+#endif //PCTM_CONSENSUS_ZEROCOIN_VERIFY_H

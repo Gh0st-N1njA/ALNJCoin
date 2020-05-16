@@ -24,7 +24,7 @@ from test_framework.mininode import (
     network_thread_join,
     network_thread_start,
 )
-from test_framework.test_framework import PivxTestFramework
+from test_framework.test_framework import PctmTestFramework
 from test_framework.util import (
     assert_equal,
     connect_nodes,
@@ -69,7 +69,7 @@ def custom_function():
     # self.log.info("running custom_function")  # Oops! Can't run self.log outside the PivxTestFramework
     pass
 
-class ExampleTest(PivxTestFramework):
+class ExampleTest(PctmTestFramework):
     # Each functional test is a subclass of the PivxTestFramework class.
 
     # Override the set_test_params(), add_options(), setup_chain(), setup_network()

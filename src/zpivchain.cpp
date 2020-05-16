@@ -282,7 +282,7 @@ std::string ReindexZerocoinDB()
             return _("Reindexing zerocoin failed");
         }
         // update supply
-        UpdateZPIVSupplyConnect(block, pindex, true);
+        UpdateZPCTMSupplyConnect(block, pindex, true);
 
         for (const CTransaction& tx : block.vtx) {
             for (unsigned int i = 0; i < tx.vin.size(); i++) {
@@ -301,7 +301,7 @@ std::string ReindexZerocoinDB()
                                 libzerocoin::ZerocoinParams* params = consensus.Zerocoin_Params(false);
                                 PublicCoinSpend publicSpend(params);
                                 CValidationState state;
-                                if (!ZPIVModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                                if (!ZPCTMModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                                     return _("Failed to parse public spend");
                                 }
                                 vSpendInfo.push_back(std::make_pair(publicSpend, txid));
@@ -356,7 +356,7 @@ bool RemoveSerialFromDB(const CBigNum& bnSerial)
 
 libzerocoin::CoinSpend TxInToZerocoinSpend(const CTxIn& txin)
 {
-    CDataStream serializedCoinSpend = ZPIVModule::ScriptSigToSerializedSpend(txin.scriptSig);
+    CDataStream serializedCoinSpend = ZPCTMModule::ScriptSigToSerializedSpend(txin.scriptSig);
     return libzerocoin::CoinSpend(serializedCoinSpend);
 }
 
@@ -419,7 +419,7 @@ int64_t GetZerocoinSupply()
     return nTotal;
 }
 
-bool UpdateZPIVSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
+bool UpdateZPCTMSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
 {
     AssertLockHeld(cs_main);
 
@@ -478,7 +478,7 @@ bool UpdateZPIVSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     return true;
 }
 
-bool UpdateZPIVSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZPCTMSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
 {
     AssertLockHeld(cs_main);
 

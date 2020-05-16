@@ -111,11 +111,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>选择发送PIVX coin的地址</translation>
+        <translation>选择发送PCTM coin的地址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>选择接收PIVX coin的地址</translation>
+        <translation>选择接收PCTM coin的地址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -130,12 +130,12 @@
         <translation>接收地址</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这是用于发送PIVX的地址。在发送PIVX之前，请认真核查发送金额和接收地址。</translation>
+        <source>These are your PCTM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>这是用于发送PCTM的地址。在发送PCTM之前，请认真核查发送金额和接收地址。</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这是用于接收PIVX的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
+        <source>These are your PCTM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>这是用于接收PCTM的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -251,8 +251,8 @@
         <translation>例如John Doe</translation>
     </message>
     <message>
-        <source>Enter PIVX address</source>
-        <translation>输入PIVX地址</translation>
+        <source>Enter PCTM address</source>
+        <translation>输入PCTM地址</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -396,8 +396,8 @@ for staking</source>
         <translation>注意：键盘目前为大写锁定状态。</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取PIVs。</translation>
+        <source>PCTM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>PCTM将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取PIVs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -1017,8 +1017,8 @@ address</source>
         <translation>PIV</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zPCTM</source>
+        <translation>zPCTM</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1049,8 +1049,8 @@ address</source>
         <translation>您可以查看您的帐户的历史</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>已加注的PIV 和 zPIV 金额</translation>
+        <source>Amount of PIV and zPCTM staked.</source>
+        <translation>已加注的PIV 和 zPCTM 金额</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1061,8 +1061,8 @@ address</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>如何获取PIV 或 zPIV</translation>
+        <source>How to get PIV or zPCTM</source>
+        <translation>如何获取PIV 或 zPCTM</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1157,8 +1157,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>编辑发送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>所输入的地址“%1”不是有效的PIVX地址。</translation>
+        <source>The entered address "%1" is not a valid PCTM address.</source>
+        <translation>所输入的地址“%1”不是有效的PCTM地址。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1210,16 +1210,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>版本</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>PCTM Core</source>
+        <translation>PCTM Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-位)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>关于PIVX Core</translation>
+        <source>About PCTM Core</source>
+        <translation>关于PCTM Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1273,16 +1273,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>欢迎</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>欢迎使用 PIVX Core</translation>
+        <source>Welcome to PCTM Core.</source>
+        <translation>欢迎使用 PCTM Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>由于这是该程序第一次启动，您可以选择存储PIVX Core 数据的位置。</translation>
+        <source>As this is the first time the program is launched, you can choose where PCTM Core will store its data.</source>
+        <translation>由于这是该程序第一次启动，您可以选择存储PCTM Core 数据的位置。</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core将下载并存储PIVX区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>PCTM Core will download and store a copy of the PCTM block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>PCTM Core将下载并存储PCTM区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1301,8 +1301,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>好的</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>PCTM Core</source>
+        <translation>PCTM Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1401,8 +1401,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>创建新的主节点控制器</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;要去创建一个PIVX主节点，你必须奉献10,000 PIV（PIVX的单位）到网络（但是这些币还是属于你的，一直为你所有）。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PCTM Masternode you must dedicate 10,000 PIV (the unit of PCTM) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;要去创建一个PCTM主节点，你必须奉献10,000 PIV（PCTM的单位）到网络（但是这些币还是属于你的，一直为你所有）。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1846,8 +1846,8 @@ Are you sure?</source>
         <translation>如果您要禁用未经确认发送，在至少有一个确认之前&lt;br/&gt;不能更改。&lt;br/&gt;这也将影响您的余额计算。</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动打开路由器上的PIVX钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
+        <source>Automatically open the PCTM client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自动打开路由器上的PCTM钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1866,12 +1866,12 @@ Are you sure?</source>
         <translation>专家</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>登录系统后自动启动PIVX。</translation>
+        <source>Automatically start PCTM after logging in to the system.</source>
+        <translation>登录系统后自动启动PCTM。</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;开机启动PIVX</translation>
+        <source>&amp;Start PCTM on system login</source>
+        <translation>&amp;开机启动PCTM</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1898,8 +1898,8 @@ Are you sure?</source>
         <translation>&amp;网络</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>可以在这里设置用户界面语言。此设置将在重新启动PIVX后生效。</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting PCTM.</source>
+        <translation>可以在这里设置用户界面语言。此设置将在重新启动PCTM后生效。</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1912,44 +1912,44 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>端口使用&amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>启动自动铸造PIV到zPIV</translation>
+        <source>Enable automatic minting of PIV units to zPCTM</source>
+        <translation>启动自动铸造PIV到zPCTM</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>启动自动铸造zPIV</translation>
+        <source>Enable zPCTM Automint</source>
+        <translation>启动自动铸造zPCTM</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>启用从特定地址自动生成zPIV</translation>
+        <source>Enable automatic zPCTM minting from specific addresses</source>
+        <translation>启用从特定地址自动生成zPCTM</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>启动自动铸造地址</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>通过零币协议自动转换为zPIV的传入PIV的百分比(最小:10%)</translation>
+        <source>Percentage of incoming PIV which get automatically converted to zPCTM via Zerocoin Protocol (min: 10%)</source>
+        <translation>通过零币协议自动转换为zPCTM的传入PIV的百分比(最小:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>自动铸造的zPIV百分比</translation>
+        <source>Percentage of autominted zPCTM</source>
+        <translation>自动铸造的zPCTM百分比</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
         <translation>等待自动转换为零币，直到足够的PIV为这种面额可用</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>首选自动铸造zPIV面额</translation>
+        <source>Preferred Automint zPCTM Denomination</source>
+        <translation>首选自动铸造zPCTM面额</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>股权分割阈值:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>通过SOCKS5代理连接到PIVX网络。</translation>
+        <source>Connect to the PCTM network through a SOCKS5 proxy.</source>
+        <translation>通过SOCKS5代理连接到PCTM网络。</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2005,7 +2005,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择显示发送PIVX的默认单位。</translation>
+        <translation>选择显示发送PCTM的默认单位。</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -2093,10 +2093,10 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>PIVXGUI</name>
+    <name>PCTMGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>PCTM Core</source>
+        <translation>PCTM Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -2123,8 +2123,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>关闭应用</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core 客户端</translation>
+        <source>PCTM Core client</source>
+        <translation>PCTM Core 客户端</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2167,8 +2167,8 @@ Address: %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
-        <translation>发生了一个致命的错误。PIVX不能继续安全，将退出。</translation>
+        <source>A fatal error occurred. PCTM can no longer continue safely and will quit.</source>
+        <translation>发生了一个致命的错误。PCTM不能继续安全，将退出。</translation>
     </message>
 </context>
 <context>
@@ -2198,8 +2198,8 @@ Address: %4
         <translation>无法启动pivx:点击支付处理程序</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>URI不能被解析!这可能是由无效的PIVX地址或格式错误的URI参数造成的。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid PCTM address or malformed URI parameters.</source>
+        <translation>URI不能被解析!这可能是由无效的PCTM地址或格式错误的URI参数造成的。</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2312,50 +2312,50 @@ Address: %4
         <translation>铸造</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zPCTM anonymizes your PIV by removing any
 transaction history, making transactions untraceable </source>
-        <translation>铸造zPIV会通过删除任何
+        <translation>铸造zPCTM会通过删除任何
 交易历史匿名化您的PIV，使交易无法被跟踪</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>铸造新的zPIV或转换回PIV</translation>
+        <source>Mint new zPCTM or convert back to PIV</source>
+        <translation>铸造新的zPCTM或转换回PIV</translation>
     </message>
     <message>
-        <source>Last zPIV Movements</source>
-        <translation>最后zPIV轨迹</translation>
+        <source>Last zPCTM Movements</source>
+        <translation>最后zPCTM轨迹</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>铸造zPIV</translation>
+        <source>Mint zPCTM</source>
+        <translation>铸造zPCTM</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>输入一定量的PIV铸造成zPIV</translation>
+        <source>Enter amount of PIV to mint into zPCTM</source>
+        <translation>输入一定量的PIV铸造成zPCTM</translation>
     </message>
     <message>
         <source>Convert back to PIV</source>
         <translation>转换回PIV</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>输入一定量的zPIV转换回PIV</translation>
+        <source>Enter amount of zPCTM to convert back into PIV</source>
+        <translation>输入一定量的zPCTM转换回PIV</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>零币</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV目前正在维护中</translation>
+        <source>zPCTM is currently undergoing maintenance</source>
+        <translation>zPCTM目前正在维护中</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>你需要解锁钱包才能%1 zPIV</translation>
+        <source>You need to unlock the wallet to be able to %1 zPCTM</source>
+        <translation>你需要解锁钱包才能%1 zPCTM</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2370,12 +2370,12 @@ transaction history, making transactions untraceable </source>
         <translation>无效值</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV铸造成功</translation>
+        <source>zPCTM minted successfully</source>
+        <translation>zPCTM铸造成功</translation>
     </message>
     <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV 转换回PIV</translation>
+        <source>zPCTM converted back to PIV</source>
+        <translation>zPCTM 转换回PIV</translation>
     </message>
     <message>
         <source>You don't have any PIV to select.</source>
@@ -2390,8 +2390,8 @@ transaction history, making transactions untraceable </source>
         <translation>你的零币铸造将从零区块链被扫描</translation>
     </message>
     <message>
-        <source>Reset Spent zPIV</source>
-        <translation>重置花费zPIV</translation>
+        <source>Reset Spent zPCTM</source>
+        <translation>重置花费zPCTM</translation>
     </message>
     <message>
         <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
@@ -2409,8 +2409,8 @@ transaction history, making transactions untraceable </source>
         <translation>金额</translation>
     </message>
     <message>
-        <source>Enter PIVX address (e.g. %1)</source>
-        <translation>输入PIVX a地址(e.g. %1)</translation>
+        <source>Enter PCTM address (e.g. %1)</source>
+        <translation>输入PCTM a地址(e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2453,8 +2453,8 @@ transaction history, making transactions untraceable </source>
         <translation>%1 毫秒</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>PCTM Core</source>
+        <translation>PCTM Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2473,8 +2473,8 @@ transaction history, making transactions untraceable </source>
         <translation>读取主节点配置文件出错:%1</translation>
     </message>
     <message>
-        <source>PIVX Core didn't yet exit safely...</source>
-        <translation>PIVX核心尚未安全退出……</translation>
+        <source>PCTM Core didn't yet exit safely...</source>
+        <translation>PCTM核心尚未安全退出……</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2660,8 +2660,8 @@ transaction history, making transactions untraceable </source>
         <translation>区块链</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>从当前数据目录打开PIVX调试日志文件。对于大型日志文件，这可能需要几秒钟。</translation>
+        <source>Open the PCTM debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>从当前数据目录打开PCTM调试日志文件。对于大型日志文件，这可能需要几秒钟。</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2804,8 +2804,8 @@ transaction history, making transactions untraceable </source>
         <translation>自定义备份路径:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>自定义zPIV备份路径:</translation>
+        <source>Custom zPCTM Backup Path:</source>
+        <translation>自定义zPCTM备份路径:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2884,8 +2884,8 @@ transaction history, making transactions untraceable </source>
         <translation>出：</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>欢迎访问PIVX RPC控制台</translation>
+        <source>Welcome to the PCTM RPC console.</source>
+        <translation>欢迎访问PCTM RPC控制台</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3200,8 +3200,8 @@ transaction history, making transactions untraceable </source>
         <translation>新的支付请求</translation>
     </message>
     <message>
-        <source>Instead of sharing only a PIVX address, you can create a payment request, bundling up more information.</source>
-        <translation>与只共享PIVX地址不同，您可以创建一个支付请求，绑定更多信息。</translation>
+        <source>Instead of sharing only a PCTM address, you can create a payment request, bundling up more information.</source>
+        <translation>与只共享PCTM地址不同，您可以创建一个支付请求，绑定更多信息。</translation>
     </message>
     <message>
         <source>Enter a label for the address</source>
@@ -3260,8 +3260,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>自定义更改地址</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PIVX address</source>
-        <translation>输入值减去输出值所得的值的其余部分归为“更改”PIVX地址</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PCTM address</source>
+        <translation>输入值减去输出值所得的值的其余部分归为“更改”PCTM地址</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -3365,8 +3365,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>发送</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>您可以转换公共币(PIV)或私人币(zPIV)</translation>
+        <source>You can transfer public coins (PIV) or private coins (zPCTM)</source>
+        <translation>您可以转换公共币(PIV)或私人币(zPCTM)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3401,8 +3401,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>花费PIV</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>花费zPIV</translation>
+        <source>Send zPCTM</source>
+        <translation>花费zPCTM</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3433,8 +3433,8 @@ Do you want to continue?</source>
         <translation>达到最大输出金额</translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>PIVX 地址或者联系人标签</translation>
+        <source>PCTM address or contact label</source>
+        <translation>PCTM 地址或者联系人标签</translation>
     </message>
     <message>
         <source>Invalid entry, previous entries must be valid before add a new one</source>
@@ -3477,8 +3477,8 @@ These coins will no longer be cold-staked.</source>
         <translation>花费零币</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV目前正在维护中</translation>
+        <source>zPCTM is currently undergoing maintenance.</source>
+        <translation>zPCTM目前正在维护中</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3497,12 +3497,12 @@ These coins will no longer be cold-staked.</source>
 %2</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
-        <translation>zPIV交易已发送！</translation>
+        <source>zPCTM transaction sent!</source>
+        <translation>zPCTM交易已发送！</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>版本1 zPIV要求安全级别为100才能成功使用。</translation>
+        <source>Version 1 zPCTM require a security level of 100 to successfully spend.</source>
+        <translation>版本1 zPCTM要求安全级别为100才能成功使用。</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3541,8 +3541,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>您没有任何PIV可选择。</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>你的余额中没有zPIV可供选择。</translation>
+        <source>You don't have any zPCTM in your balance to select.</source>
+        <translation>你的余额中没有zPCTM可供选择。</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3711,8 +3711,8 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation>解密钥匙</translation>
     </message>
     <message>
-        <source>PIVX address</source>
-        <translation>PIVX地址</translation>
+        <source>PCTM address</source>
+        <translation>PCTM地址</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3844,8 +3844,8 @@ Verify that you have installed a predetermined text editor.</source>
 确认您已经安装了预定的文本编辑器</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>欢迎访问PIVX RPC控制台</translation>
+        <source>Welcome to the PCTM RPC console.</source>
+        <translation>欢迎访问PCTM RPC控制台</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3958,12 +3958,12 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>导出地址列表</translation>
     </message>
     <message>
-        <source>PIVX_tx_csv_export(*.csv)</source>
-        <translation>PIVX_tx_csv_export(*.csv)</translation>
+        <source>PCTM_tx_csv_export(*.csv)</source>
+        <translation>PCTM_tx_csv_export(*.csv)</translation>
     </message>
     <message>
-        <source>PIVX_addresses_csv_export(*.csv)</source>
-        <translation>PIVX_addresses_csv_export(*.csv)</translation>
+        <source>PCTM_addresses_csv_export(*.csv)</source>
+        <translation>PCTM_addresses_csv_export(*.csv)</translation>
     </message>
     <message>
         <source>Please select a folder to export the csv file first.</source>
@@ -4041,34 +4041,34 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>按钮</translation>
     </message>
     <message>
-        <source>1) What is PIVX?</source>
-        <translation>1）什么是PIVX?</translation>
+        <source>1) What is PCTM?</source>
+        <translation>1）什么是PCTM?</translation>
     </message>
     <message>
         <source>2) Why are my PIV unspendable?</source>
         <translation>2) 我的PIV为什么不能用？</translation>
     </message>
     <message>
-        <source>3) PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3）PIVX 隐私？什么是零币(zPIV)？</translation>
+        <source>3) PCTM privacy? What is Zerocoin (zPCTM)?</source>
+        <translation>3）PCTM 隐私？什么是零币(zPCTM)？</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4) 我的zPIV为什么不能用？</translation>
+        <source>4) Why are my zPCTM unspendable?</source>
+        <translation>4) 我的zPCTM为什么不能用？</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zPCTM automatically?</source>
         <translation>5）为什么我的钱包把余额自动转换成
-zPIV了?</translation>
+zPCTM了?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6）如何接收PIV/zPIV?</translation>
+        <source>6) How do I receive PIV/zPCTM?</source>
+        <translation>6）如何接收PIV/zPCTM?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7）如何加注PIV/zPIV?</translation>
+        <source>7) How do I stake PIV/zPCTM?</source>
+        <translation>7）如何加注PIV/zPCTM?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4087,34 +4087,34 @@ zPIV了?</translation>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PIVX?</source>
-        <translation>PIVX是什么?</translation>
+        <source>What is PCTM?</source>
+        <translation>PCTM是什么?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX is a form of digital online money using blockchain technology
+                           PCTM is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
+                           zero fees.  PCTM incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zPCTM) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
+                           PCTM utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of PCTM to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-PIVX是一种使用区块链技术的数字在线货币
+PCTM是一种使用区块链技术的数字在线货币
 全球范围内快捷交易，即时，基本为
-零的交易费用。PIVX是市场上领先的安全和
+零的交易费用。PCTM是市场上领先的安全和
 隐私加密货币，也是第一个PoS(股权证明)加密货币
-实现零币(zPIV)和零币加注。
+实现零币(zPCTM)和零币加注。
 &lt;/p&gt;&lt;p align="justify"&gt;
-PIVX使用了一个股权证明(PoS)一致系统算法，
-允许所有PIVX的所有者参与赚取区块奖励
+PCTM使用了一个股权证明(PoS)一致系统算法，
+允许所有PCTM的所有者参与赚取区块奖励
 同时保护网络与完整的节点钱包，以及
 运行主节点创建和投票来进行提案。</translation>
     </message>
@@ -4129,19 +4129,19 @@ PIVX使用了一个股权证明(PoS)一致系统算法，
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PIVX requires 6 confirmations on the network
+                           Newly received PCTM requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PIVX wallet also needs to be completely synchronized
+                           Your PCTM wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-接收到的PIVX需要网络上的6个确认
+接收到的PCTM需要网络上的6个确认
 才能成为有资格的花费，可以花~6分钟。
 &lt;/p&gt;&lt;p align="justify"&gt;
-您的PIVX钱包也需要完全同步
+您的PCTM钱包也需要完全同步
 查看网络收支余额。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4151,28 +4151,28 @@ PIVX使用了一个股权证明(PoS)一致系统算法，
         <translation>3</translation>
     </message>
     <message>
-        <source>PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>PIVX 隐私？什么是零币(zPIV)？</translation>
+        <source>PCTM privacy? What is Zerocoin (zPCTM)?</source>
+        <translation>PCTM 隐私？什么是零币(zPCTM)？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
+                           zPCTM is an optional privacy-centric method of coin mixing on the
+                           PCTM blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://PCTM.org/zpiv/'&gt;
+                           "PCTM Zerocoin (zPCTM) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zPIV是一种可选的以隐私为中心的隐私币
-它是PIVX区块链的一员，基本上在任何块资源管理器
-所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
+zPCTM是一种可选的以隐私为中心的隐私币
+它是PCTM区块链的一员，基本上在任何块资源管理器
+所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://PCTM.org/zpiv/'&gt;
 
 你可以阅读更多关于技术方面的文章&lt;/a&gt;
 
-PIVX零币(zPIV)技术文件
+PCTM零币(zPCTM)技术文件
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4181,20 +4181,20 @@ PIVX零币(zPIV)技术文件
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
+        <source>Why are my zPCTM unspendable?</source>
         <translation>我的PIV为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zPCTM will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-铸币后，zPIV将需要20个确认和1个确认
+铸币后，zPCTM将需要20个确认和1个确认
 在网络上增加相同面额的铸币
 才够资格消费。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -4204,32 +4204,32 @@ PIVX零币(zPIV)技术文件
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>为什么我的钱包会自动将余额转换成zPIV ?</translation>
+        <source>Why did my wallet convert the balance into zPCTM automatically?</source>
+        <translation>为什么我的钱包会自动将余额转换成zPCTM ?</translation>
     </message>
     <message>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>我怎么接收PIV/zPIV?</translation>
+        <source>How do I receive PIV/zPCTM?</source>
+        <translation>我怎么接收PIV/zPCTM?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
+                           zPCTM can be spent and sent to any PCTM address. The receiver will
+                           receive standard PCTM but the origin of the PCTM is anonymized by the zPCTM Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zPCTM you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-可以使用zPIV并将其发送到任何PIVX地址。接收机将
-接收标准的PIVX，但是根据zPIV协议，PIVX的来源是匿名的。
+可以使用zPCTM并将其发送到任何PCTM地址。接收机将
+接收标准的PCTM，但是根据zPCTM协议，PCTM的来源是匿名的。
 &lt;/p&gt;&lt;p align="justify"&gt;
-如果你想要更多的zPIV，你将需要在“隐私”标签上铸造你的余额。
+如果你想要更多的zPCTM，你将需要在“隐私”标签上铸造你的余额。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
@@ -4237,18 +4237,18 @@ PIVX零币(zPIV)技术文件
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>我怎么加注PIV/zPIV?</translation>
+        <source>How do I stake PIV/zPCTM?</source>
+        <translation>我怎么加注PIV/zPCTM?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           To Stake PIVX:
+                           To Stake PCTM:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of PIVX with a minimum of 600 confirmations.
+                           You must have a balance of PCTM with a minimum of 600 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for staking purposes.
                            &lt;li&gt;
@@ -4257,12 +4257,12 @@ PIVX零币(zPIV)技术文件
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pactumcoin-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zPIV:
+                           To Stake zPCTM:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zPCTM balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4271,12 +4271,12 @@ PIVX零币(zPIV)技术文件
                          </source>
         <translation>
  &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-加注PIVX:
+加注PCTM:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
 确保你的钱包保持完全同步且当前使用的是最新版本。
 &lt;li&gt;
-您必须有至少600的确认PIVX余额。
+您必须有至少600的确认PCTM余额。
 &lt;li&gt;
 你必须保证钱包在线且用于加注目的未锁状态。
 &lt;li&gt;
@@ -4285,12 +4285,12 @@ PIVX零币(zPIV)技术文件
 您可以将鼠标移到钱包界面左上角的行中的包图标上来查看在钱包加注的状态。加注状态的时候，包会被点亮且状态显示“加注启用”。使用命令行接口(pactumcoin-cli);命令&lt;i&gt;getstakingstatus&lt;/i&gt;将确认加注是激活状态。
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-加注zPIV:
+加注zPCTM:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
 确保你的钱包保持完全同步且当前使用的是最新版本。
 &lt;li&gt;
-你最新铸造或现有的zPIV余额必须至少有200个确认。
+你最新铸造或现有的zPCTM余额必须至少有200个确认。
 &lt;li&gt;
 你必须保证钱包在线且用于加注和匿名目的处于未锁状态。
 现在加注应该已经可以启用了
@@ -4322,20 +4322,20 @@ PIVX零币(zPIV)技术文件
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.PCTM.org'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
+                           &lt;a style='color: #b088ff' href='https://PCTM.freshdesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 我们在大多数官方聊天群都有支持频道，例如
-&lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
+&lt;a style='color: #b088ff' href='https://discord.PCTM.org'&gt;
 ＃Discord  里面的支持&lt;/a&gt;。
 如果你想要提交门票，请到这里
-&lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
+&lt;a style='color: #b088ff' href='https://PCTM.freshdesk.com'&gt;
 我们的前台支持网站&lt;/a&gt;。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4347,7 +4347,7 @@ PIVX零币(zPIV)技术文件
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
+                           A masternode is a computer running a full node PCTM core wallet with a
                            requirement of 10,000 PIV secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -4370,10 +4370,10 @@ PIVX零币(zPIV)技术文件
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in PCTM Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the PCTM network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -4389,7 +4389,7 @@ PIVX零币(zPIV)技术文件
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-主节点是运行完整节点PIVX核心钱包的计算机
+主节点是运行完整节点PCTM核心钱包的计算机
 需要10,000个PIV作抵押以提供额外服务
 到网络，会收到一部分的区块奖励作为定期
 回报
@@ -4412,10 +4412,10 @@ PIVX零币(zPIV)技术文件
 主节点福利：
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;参与PIVX治理&lt;/li&gt;
+&lt;li&gt;参与PCTM治理&lt;/li&gt;
 &lt;li&gt;赢取主节点奖励&lt;/li&gt;
 &lt;li&gt;商品期货期权&lt;/li&gt;
-&lt;li&gt;帮助保护PIVX网络&lt;/li&gt;
+&lt;li&gt;帮助保护PCTM网络&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -4606,8 +4606,8 @@ PIVX零币(zPIV)技术文件
         <translation>脚本&amp;验证线程数</translation>
     </message>
     <message>
-        <source>Start PIVX on system login</source>
-        <translation>开机启动PIVX</translation>
+        <source>Start PCTM on system login</source>
+        <translation>开机启动PCTM</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -4694,8 +4694,8 @@ Are you sure?
         <translation>查看列表</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
-        <translation>成熟以后，多重花费允许您自动发送高达 100% 的股权或主节点奖励到其他PIVX地址列表</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PCTM addresses after it matures.</source>
+        <translation>成熟以后，多重花费允许您自动发送高达 100% 的股权或主节点奖励到其他PCTM地址列表</translation>
     </message>
     <message>
         <source>Active</source>
@@ -4821,8 +4821,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>消息 </translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>PIVX 地址或者联系人标签</translation>
+        <source>PCTM address or contact label</source>
+        <translation>PCTM 地址或者联系人标签</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -5158,8 +5158,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>常见问题</translation>
     </message>
     <message>
-        <source>About PIVX</source>
-        <translation>关于PIVX </translation>
+        <source>About PCTM</source>
+        <translation>关于PCTM </translation>
     </message>
     <message>
         <source>Settings</source>
@@ -5225,8 +5225,8 @@ Are you sure?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX 核心正在关闭...</translation>
+        <source>PCTM Core is shutting down...</source>
+        <translation>PCTM 核心正在关闭...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -5255,15 +5255,15 @@ Are you sure?
         <translation>正在下载…</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>PCTM Core</source>
+        <translation>PCTM Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>PCTM Core</source>
+        <translation>PCTM Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -5278,8 +5278,8 @@ Are you sure?
         <translation>达世币核心开发者</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX 核心开发者</translation>
+        <source>The PCTM Core developers</source>
+        <translation>PCTM 核心开发者</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -5717,8 +5717,8 @@ backup will be created.
         <translation>PIV加注</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV 加注</translation>
+        <source>zPCTM Stake</source>
+        <translation>zPCTM 加注</translation>
     </message>
     <message>
         <source>PIV Cold Stake</source>
@@ -5729,24 +5729,24 @@ backup will be created.
         <translation>股权委托</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>转换PIV为zPIV</translation>
+        <source>Converted PIV to zPCTM</source>
+        <translation>转换PIV为zPCTM</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>已经花费zPIV</translation>
+        <source>Spent zPCTM</source>
+        <translation>已经花费zPCTM</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>从zPIV接收PIV</translation>
+        <source>Received PIV from zPCTM</source>
+        <translation>从zPCTM接收PIV</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>铸币的变化，从zPIV花费zPIV</translation>
+        <source>Minted Change as zPCTM from zPCTM Spend</source>
+        <translation>铸币的变化，从zPCTM花费zPCTM</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>转换PIV为zPIV</translation>
+        <source>Converted zPCTM to PIV</source>
+        <translation>转换PIV为zPCTM</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5982,25 +5982,25 @@ backup will be created.
     </message>
     <message>
         <source>Welcome to
-PIVX Core Wallet</source>
+PCTM Core Wallet</source>
         <translation>欢迎
-PIVX核心钱包</translation>
+PCTM核心钱包</translation>
     </message>
     <message>
-        <source>PIVX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PIVX是世界上最先进的隐私保护技术，由经验丰富的开发人员和密码专家开发。</translation>
+        <source>PCTM is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>PCTM是世界上最先进的隐私保护技术，由经验丰富的开发人员和密码专家开发。</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PIVX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;正如我们的宣言所说:隐私是一项不容协商的基本人权;它赋予用户随时随地与任何人共享数据的自由——PIVX相信自我主权&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PCTM believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;正如我们的宣言所说:隐私是一项不容协商的基本人权;它赋予用户随时随地与任何人共享数据的自由——PCTM相信自我主权&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is PIVX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>主节点网络是PIVX在区块链之上的第二层网络，它使我们的DAO能够提供去中心的治理。</translation>
+        <source>The masternode network is PCTM's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>主节点网络是PCTM在区块链之上的第二层网络，它使我们的DAO能够提供去中心的治理。</translation>
     </message>
     <message>
-        <source>How PIVX respects your privacy?</source>
-        <translation>PIVX 到底是怎么尊重你的隐私的？</translation>
+        <source>How PCTM respects your privacy?</source>
+        <translation>PCTM 到底是怎么尊重你的隐私的？</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -6014,8 +6014,8 @@ PIVX核心钱包</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>选择zPIV 花费</translation>
+        <source>Select zPCTM to Spend</source>
+        <translation>选择zPCTM 花费</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6026,8 +6026,8 @@ PIVX核心钱包</translation>
         <translation>按钮</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zPCTM</source>
+        <translation>zPCTM</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -6050,8 +6050,8 @@ PIVX核心钱包</translation>
         <translation>选择／删除所有</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>选择zPIV 面额花费</translation>
+        <source>Select zPCTM Denominations to Spend</source>
+        <translation>选择zPCTM 面额花费</translation>
     </message>
 </context>
 <context>
@@ -6077,8 +6077,8 @@ PIVX核心钱包</translation>
         <translation>绑定到给定地址监听JSON-RPC连接。使用[主机]: IPv6的端口符号。可以多次指定此选项(默认:绑定到所有接口)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>无法获取数据目录%s锁。PIVX核心可能已经在运行了。</translation>
+        <source>Cannot obtain a lock on data directory %s. PCTM Core is probably already running.</source>
+        <translation>无法获取数据目录%s锁。PCTM核心可能已经在运行了。</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -6113,8 +6113,8 @@ PIVX核心钱包</translation>
         <translation>启用或禁用PIV输入标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>启用或禁用zPIV输入的标记功能(0-1，默认值:%u)</translation>
+        <source>Enable or disable staking functionality for zPCTM inputs (0-1, default: %u)</source>
+        <translation>启用或禁用zPCTM输入的标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6265,8 +6265,8 @@ PIVX核心钱包</translation>
         <translation>网络版本字符串的总长度(%i)超过最大长度(%i)。减少任务的数量或大小。</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>无法绑定到此计算机上的%s。PIVX核心可能已经在运行了。</translation>
+        <source>Unable to bind to %s on this computer. PCTM Core is probably already running.</source>
+        <translation>无法绑定到此计算机上的%s。PCTM核心可能已经在运行了。</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6281,8 +6281,8 @@ PIVX核心钱包</translation>
         <translation>警告:-支付tx费用设置的非常高!这是您发送交易时要支付的交易费。</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，PIVX Core将无法正常工作。</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PCTM Core will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，PCTM Core将无法正常工作。</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -6397,8 +6397,8 @@ PIVX核心钱包</translation>
         <translation>版权所有(C) 2014-%i的达世核心开发者</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>版权所有(C) 2015-%i PIVX核心开发者</translation>
+        <source>Copyright (C) 2015-%i The PCTM Core Developers</source>
+        <translation>版权所有(C) 2015-%i PCTM核心开发者</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -6473,8 +6473,8 @@ PIVX核心钱包</translation>
         <translation>加载钱包出错。dat:钱包损坏</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>加载的钱包出错。dat: 钱包需要更新版本的PIVX核心</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of PCTM Core</source>
+        <translation>加载的钱包出错。dat: 钱包需要更新版本的PCTM核心</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -6565,8 +6565,8 @@ PIVX核心钱包</translation>
         <translation>信息</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>初始化完整性检查失败。PIVX核心快要关闭了。</translation>
+        <source>Initialization sanity check failed. PCTM Core is shutting down.</source>
+        <translation>初始化完整性检查失败。PCTM核心快要关闭了。</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -6605,8 +6605,8 @@ PIVX核心钱包</translation>
         <translation>重新计算PIV供应量……</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>重新索引PIV和zPIV货币供应统计数据</translation>
+        <source>Reindex the PIV and zPCTM money supply statistics</source>
+        <translation>重新索引PIV和zPCTM货币供应统计数据</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6645,8 +6645,8 @@ PIVX核心钱包</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>禁用所有PIVX特定功能(主节点, 零币, SwiftX, budget)(0-1，默认值:%u)</translation>
+        <source>Disable all PCTM specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>禁用所有PCTM特定功能(主节点, 零币, SwiftX, budget)(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6905,8 +6905,8 @@ PIVX核心钱包</translation>
         <translation>准备重新同步……</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>请检查您的电脑的日期和时间是否正确!如果你的时间错误，PIVX Core将无法正常工作。</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong PCTM Core will not work properly.</source>
+        <translation>请检查您的电脑的日期和时间是否正确!如果你的时间错误，PCTM Core将无法正常工作。</translation>
     </message>
     <message>
         <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
@@ -7105,8 +7105,8 @@ PIVX核心钱包</translation>
         <translation>正在同步分叉...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>正在同步zPIV钱包……</translation>
+        <source>Syncing zPCTM wallet...</source>
+        <translation>正在同步zPCTM钱包……</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -7221,8 +7221,8 @@ PIVX核心钱包</translation>
         <translation>JSON-RPC连接的用户名</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>值小于zPIV的最小可用面额(= 1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zPCTM</source>
+        <translation>值小于zPCTM的最小可用面额(= 1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -7237,8 +7237,8 @@ PIVX核心钱包</translation>
         <translation>钱包%s驻留在数据目录%s之外</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>钱包需要重写:重新启动PIVX核心完成</translation>
+        <source>Wallet needed to be rewritten: restart PCTM Core to complete</source>
+        <translation>钱包需要重写:重新启动PCTM核心完成</translation>
     </message>
     <message>
         <source>Wallet options:</source>

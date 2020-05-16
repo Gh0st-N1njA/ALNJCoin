@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "PIVX"
-            VALUE "FileDescription",    "pactumcoind (OSS daemon/client for PIVX)"
+            VALUE "CompanyName",        "PCTM"
+            VALUE "FileDescription",    "pactumcoind (OSS daemon/client for PCTM)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "pactumcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR

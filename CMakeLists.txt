@@ -10,7 +10,7 @@ if(CCACHE_PROGRAM)
     set(CXX_LAUNCHER "${CCACHE_PROGRAM}")
 endif()
 
-project(PIVX)
+project(PCTM)
 
 set(BDB_VER "4.8.30")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/contrib/cmake")

@@ -37,7 +37,7 @@ using namespace QtCharts;
 
 #endif
 
-class PIVXGUI;
+class PCTMGUI;
 class WalletModel;
 
 namespace Ui {
@@ -83,7 +83,7 @@ public:
     qint64 totalPiv = 0;
     qint64 totalZpiv = 0;
     QList<qreal> valuesPiv;
-    QList<qreal> valueszPiv;
+    QList<qreal> valueszPCTM;
     QStringList xLabels;
 };
 
@@ -96,7 +96,7 @@ class DashboardWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit DashboardWidget(PIVXGUI* _window);
+    explicit DashboardWidget(PCTMGUI* _window);
     ~DashboardWidget();
 
     void loadWalletModel() override;

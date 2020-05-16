@@ -3,15 +3,15 @@
 name: pivx-core
 base: core18
 version: 4.1.0
-summary:   PIVX (Private – Instant – Verified – Transaction)
+summary:   PCTM (Private – Instant – Verified – Transaction)
 description: |
-  PIVX is an MIT licensed,
+  PCTM is an MIT licensed,
   open source, blockchain-based cryptocurrency with
   ultra fast transactions, low fees, high network decentralization, and
   Zero Knowledge cryptography proofs for industry-leading
   transaction anonymity.
 
-  - [Download](https://pivx.org/wp-content/uploads/2018/10/PIVX-White.pdf) PIVX White Paper PDF
+  - [Download](https://pivx.org/wp-content/uploads/2018/10/PCTM-White.pdf) PCTM White Paper PDF
 grade: devel
 confinement: strict
 apps:
@@ -68,7 +68,7 @@ apps:
     plugs: [home]
 parts:
   pivx-core:
-    source: https://github.com/PIVX-Project/PIVX
+    source: https://github.com/PCTM-Project/PCTM
     source-type: git
     source-tag: master
     plugin: nil

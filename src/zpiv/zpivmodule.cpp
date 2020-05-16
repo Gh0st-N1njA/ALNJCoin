@@ -124,7 +124,7 @@ const uint256 PublicCoinSpend::signatureHash() const
     return h.GetHash();
 }
 
-namespace ZPIVModule {
+namespace ZPCTMModule {
 
     // Return stream of CoinSpend from tx input scriptsig
     CDataStream ScriptSigToSerializedSpend(const CScript& scriptSig)
@@ -158,12 +158,12 @@ namespace ZPIVModule {
         if (!fUseV1Params) {
             CKey key;
             if (!mint.GetKeyPair(key))
-                return error("%s: failed to set zPIV privkey mint.", __func__);
+                return error("%s: failed to set zPCTM privkey mint.", __func__);
             spend.setPubKey(key.GetPubKey(), true);
 
             std::vector<unsigned char> vchSig;
             if (!key.Sign(spend.signatureHash(), vchSig))
-                return error("%s: ZPIVModule failed to sign signatureHash.", __func__);
+                return error("%s: ZPCTMModule failed to sign signatureHash.", __func__);
             spend.setVchSig(vchSig);
 
         }
@@ -228,7 +228,7 @@ namespace ZPIVModule {
             return state.DoS(100, error("%s: public zerocoin spend prev output not found, prevTx %s, index %d",
                                         __func__, txIn.prevout.hash.GetHex(), txIn.prevout.n));
         }
-        if (!ZPIVModule::parseCoinSpend(txIn, tx, prevOut, publicSpend)) {
+        if (!ZPCTMModule::parseCoinSpend(txIn, tx, prevOut, publicSpend)) {
             return state.Invalid(error("%s: invalid public coin spend parse %s\n", __func__,
                                        tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zpiv");
         }

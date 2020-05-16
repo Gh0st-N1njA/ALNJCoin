@@ -20,7 +20,7 @@
 #include "openuridialog.h"
 #include "zpivcontroldialog.h"
 
-SendWidget::SendWidget(PIVXGUI* parent) :
+SendWidget::SendWidget(PCTMGUI* parent) :
     PWidget(parent),
     ui(new Ui::send),
     coinIcon(new QPushButton()),
@@ -49,18 +49,18 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     ui->pushLeft->setText("PIV");
     setCssProperty(ui->pushLeft, "btn-check-left");
     ui->pushLeft->setChecked(true);
-    ui->pushRight->setText("zPIV");
+    ui->pushRight->setText("zPCTM");
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (PIV) or private coins (zPIV)"));
+    ui->labelSubtitle1->setText(tr("You can transfer public coins (PIV) or private coins (zPCTM)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     ui->labelSubtitle2->setText(tr("Select coin type to spend"));
     setCssProperty(ui->labelSubtitle2, "text-subtitle");
 
     /* Address */
-    ui->labelSubtitleAddress->setText(tr("PIVX address or contact label"));
+    ui->labelSubtitleAddress->setText(tr("PCTM address or contact label"));
     setCssProperty(ui->labelSubtitleAddress, "text-title");
 
 
@@ -149,7 +149,7 @@ SendWidget::SendWidget(PIVXGUI* parent) :
 void SendWidget::refreshView()
 {
     const bool isChecked = ui->pushLeft->isChecked();
-    ui->pushButtonSave->setText(isChecked ? tr("Send PIV") : tr("Send zPIV"));
+    ui->pushButtonSave->setText(isChecked ? tr("Send PIV") : tr("Send zPCTM"));
     ui->pushButtonAddRecipient->setVisible(isChecked);
     refreshAmounts();
 }
@@ -461,7 +461,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients)
         return false;
 
     if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        Q_EMIT message(tr("Spend Zerocoin"), tr("zPIV is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
+        Q_EMIT message(tr("Spend Zerocoin"), tr("zPCTM is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
         return false;
     }
 
@@ -522,14 +522,14 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients)
             changeAddress
     )
             ) {
-        inform(tr("zPIV transaction sent!"));
+        inform(tr("zPCTM transaction sent!"));
         ZPivControlDialog::setSelectedMints.clear();
         clearAll(false);
         return true;
     } else {
         QString body;
-        if (receipt.GetStatus() == ZPIV_SPEND_V1_SEC_LEVEL) {
-            body = tr("Version 1 zPIV require a security level of 100 to successfully spend.");
+        if (receipt.GetStatus() == ZPCTM_SPEND_V1_SEC_LEVEL) {
+            body = tr("Version 1 zPCTM require a security level of 100 to successfully spend.");
         } else {
             int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
             const int nMaxSpends = Params().GetConsensus().ZC_MaxSpendsPerTx; // Maximum possible spends for one zPIV transaction
@@ -542,7 +542,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients)
                 body = QString::fromStdString(receipt.GetStatusMessage());
             }
         }
-        Q_EMIT message("zPIV transaction failed", body, CClientUIInterface::MSG_ERROR);
+        Q_EMIT message("zPCTM transaction failed", body, CClientUIInterface::MSG_ERROR);
         return false;
     }
 }
@@ -669,13 +669,13 @@ void SendWidget::onCoinControlClicked()
         }
     } else {
         if (walletModel->getZerocoinBalance() > 0) {
-            ZPivControlDialog *zPivControl = new ZPivControlDialog(this);
-            zPivControl->setModel(walletModel);
-            zPivControl->exec();
+            ZPivControlDialog *zPCTMControl = new ZPivControlDialog(this);
+            zPCTMControl->setModel(walletModel);
+            zPCTMControl->exec();
             ui->btnCoinControl->setActive(!ZPivControlDialog::setSelectedMints.empty());
-            zPivControl->deleteLater();
+            zPCTMControl->deleteLater();
         } else {
-            inform(tr("You don't have any zPIV in your balance to select."));
+            inform(tr("You don't have any zPCTM in your balance to select."));
         }
     }
 }

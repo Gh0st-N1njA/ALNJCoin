@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.authproxy import JSONRPCException
-from test_framework.test_framework import PivxTestFramework
+from test_framework.test_framework import PctmTestFramework
 from test_framework.util import (
     sync_blocks,
     assert_equal,
@@ -16,7 +16,7 @@ from test_framework.util import (
     DecimalAmt,
 )
 
-class ReorgStakeTest(PivxTestFramework):
+class ReorgStakeTest(PctmTestFramework):
 
     def set_test_params(self):
         self.num_nodes = 3
@@ -56,8 +56,8 @@ class ReorgStakeTest(PivxTestFramework):
         # verify that nodes have the expected PIV and zPIV supply
         for node in g_info:
             assert_equal(node['moneysupply'], DecimalAmt(expected_piv))
-            for denom in node['zPIVsupply']:
-                assert_equal(node['zPIVsupply'][denom], DecimalAmt(expected_zpiv[denom]))
+            for denom in node['zPCTMsupply']:
+                assert_equal(node['zPCTMsupply'][denom], DecimalAmt(expected_zpiv[denom]))
 
 
     def run_test(self):
@@ -231,7 +231,7 @@ class ReorgStakeTest(PivxTestFramework):
         assert (not res or not utxo["spendable"])
 
         # Verify that PIV and zPIV supplies were properly updated after the spends and reorgs
-        self.log.info("Check PIV and zPIV supply...")
+        self.log.info("Check PIV and zPCTM supply...")
         expected_money_supply += 250.0 * (self.nodes[1].getblockcount() - 330)
         spent_coin_0 = mints[0]["denomination"]
         spent_coin_1 = mints[1]["denomination"]

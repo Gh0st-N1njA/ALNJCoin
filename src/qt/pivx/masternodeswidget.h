@@ -16,7 +16,7 @@
 #include <QTimer>
 #include <QWidget>
 
-class PIVXGUI;
+class PCTMGUI;
 
 namespace Ui {
 class MasterNodesWidget;
@@ -32,7 +32,7 @@ class MasterNodesWidget : public PWidget
 
 public:
 
-    explicit MasterNodesWidget(PIVXGUI *parent = nullptr);
+    explicit MasterNodesWidget(PCTMGUI *parent = nullptr);
     ~MasterNodesWidget();
 
     void loadWalletModel() override;

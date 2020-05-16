@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "PIVX"
-            VALUE "FileDescription",    "pactumcoin-tx (CLI PIVX transaction editor utility)"
+            VALUE "CompanyName",        "PCTM"
+            VALUE "FileDescription",    "pactumcoin-tx (CLI PCTM transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "pactumcoin-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

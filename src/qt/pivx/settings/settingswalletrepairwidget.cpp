@@ -6,7 +6,7 @@
 #include "qt/pivx/settings/forms/ui_settingswalletrepairwidget.h"
 #include "qt/pivx/qtutils.h"
 
-SettingsWalletRepairWidget::SettingsWalletRepairWidget(PIVXGUI* _window, QWidget *parent) :
+SettingsWalletRepairWidget::SettingsWalletRepairWidget(PCTMGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsWalletRepairWidget)
 {

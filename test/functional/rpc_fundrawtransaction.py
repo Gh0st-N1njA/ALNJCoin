@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-from test_framework.test_framework import PivxTestFramework
+from test_framework.test_framework import PctmTestFramework
 from test_framework.util import (
     assert_equal,
     assert_fee_amount,
@@ -22,7 +22,7 @@ def get_unspent(listunspent, amount):
     raise AssertionError('Could not find unspent with amount={}'.format(amount))
 
 
-class RawTransactionsTest(PivxTestFramework):
+class RawTransactionsTest(PctmTestFramework):
 
     def __init__(self):
         super().__init__()

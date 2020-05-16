@@ -84,9 +84,9 @@ OpenRC).
 ### macOS
 
 Binary:              `/usr/local/bin/pactumcoind`
-Configuration file:  `~/Library/Application Support/PIVX/pivx.conf`
-Data directory:      `~/Library/Application Support/PIVX`
-Lock file:           `~/Library/Application Support/PIVX/.lock`
+Configuration file:  `~/Library/Application Support/PCTM/pivx.conf`
+Data directory:      `~/Library/Application Support/PCTM`
+Lock file:           `~/Library/Application Support/PCTM/.lock`
 
 Installing Service Configuration
 -----------------------------------
@@ -124,7 +124,7 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 Copy pactumcoind.init to /etc/init.d/pactumcoind. Test by running `service pactumcoind start`.
 
 Using this script, you can adjust the path and flags to the pactumcoind program by
-setting the PIVXD and FLAGS environment variables in the file
+setting the PCTMD and FLAGS environment variables in the file
 /etc/sysconfig/pactumcoind. You can also use the DAEMONOPTS environment variable here.
 
 ### macOS
