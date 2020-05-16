@@ -9,7 +9,9 @@
 #include <config/pctm-config.h>
 #endif
 
+#if defined(HAVE_BYTESWAP_H)
 #include <compat/byteswap.h>
+#endif
 
 #include <stdint.h>
 
