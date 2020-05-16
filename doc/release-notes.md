@@ -146,7 +146,7 @@ Functional Changes
 
 ### zPCTM Backup Removed
 
-Automatic zPCTM backup has been disabled. Thus, the following configuration options have been removed  (either as entries in the pivx.conf file or as startup flags):
+Automatic zPCTM backup has been disabled. Thus, the following configuration options have been removed  (either as entries in the pctm.conf file or as startup flags):
 - `autozpctmbackup`
 - `backupzpctm`
 - `zpctmbackuppath`

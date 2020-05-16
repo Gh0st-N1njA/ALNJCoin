@@ -9,7 +9,7 @@
 #define PCTM_CORE_NEW_GUI_PCTMGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/pctm-config.h"
 #endif
 
 #include <QMainWindow>
@@ -17,17 +17,17 @@
 #include <QSystemTrayIcon>
 #include <QLabel>
 
-#include "qt/pivx/navmenuwidget.h"
-#include "qt/pivx/topbar.h"
-#include "qt/pivx/dashboardwidget.h"
-#include "qt/pivx/send.h"
-#include "qt/pivx/receivewidget.h"
-#include "qt/pivx/addresseswidget.h"
-#include "qt/pivx/privacywidget.h"
-#include "qt/pivx/coldstakingwidget.h"
-#include "qt/pivx/masternodeswidget.h"
-#include "qt/pivx/snackbar.h"
-#include "qt/pivx/settings/settingswidget.h"
+#include "qt/pctm/navmenuwidget.h"
+#include "qt/pctm/topbar.h"
+#include "qt/pctm/dashboardwidget.h"
+#include "qt/pctm/send.h"
+#include "qt/pctm/receivewidget.h"
+#include "qt/pctm/addresseswidget.h"
+#include "qt/pctm/privacywidget.h"
+#include "qt/pctm/coldstakingwidget.h"
+#include "qt/pctm/masternodeswidget.h"
+#include "qt/pctm/snackbar.h"
+#include "qt/pctm/settings/settingswidget.h"
 #include "qt/rpcconsole.h"
 
 

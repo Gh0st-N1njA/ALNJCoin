@@ -832,7 +832,7 @@ stake on your behalf, while you keep the keys securely offline.</source>
         <translation>Envoi de délégation impossible, portefeuille vérouillé</translation>
     </message>
     <message>
-        <source>Cold staking is networkely disabled</source>
+        <source>Cold staking is disabled on the network</source>
         <translation>Le staking à froid est désactivé sur le réseau</translation>
     </message>
     <message>
@@ -1612,7 +1612,7 @@ and vote on the treasury system receiving a periodic reward.</source>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the pctm.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1620,7 +1620,7 @@ this controller wallet (select the Masternode in the list and press "start").
 sur un serveur distant vers votre presse-papiers.
 
 
-Il vous suffira de coller les données dans le fichier pivx.conf
+Il vous suffira de coller les données dans le fichier pctm.conf
 de votre serveur distant, le démarrer, puis de lancer le masternode en utilisant
 ce portefeuille (sélectionnez le masternode dans la liste et appuyez sur "Démarrer").</translation>
     </message>
@@ -4203,7 +4203,7 @@ mon solde en zPCTM?</translation>
                            you can disable the automatic minting in your PCTM wallet by
                            going to Settings-&gt;Options and deselecting “Enable zPCTM Automint”.
                            If you are not making use of the PACTUMCOIN-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your pctm.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPCTM in the
@@ -4219,7 +4219,7 @@ conserver des zPCTM ou profiter de ses propriétés en matière de confidentiali
 vous pouvez désactiver cette fonctionnalité dans votre portefeuille PCTM en
 allant dans Paramètres-&gt;Options et décocher “Activer l'atuto-monnayage zPCTM”.
 Si vous n'utilisez pas PACTUMCOIN-QT ou le GUI vous pouvez simplement ouvrir
-votre fichier pivx.conf et ajouter &lt;i&gt; enablezeromint=0&lt;/i&gt; sans guillements
+votre fichier pctm.conf et ajouter &lt;i&gt; enablezeromint=0&lt;/i&gt; sans guillements
 et redémarrer votre portefeuille.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Vous pouvez en savoir plus sur zPCTM dans
@@ -4562,8 +4562,8 @@ Exigences:
         <translation>Impossible d'ouvrir le répertoire de backups</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Impossible d'ouvrir pivx.conf avec l'application par défaut</translation>
+        <source>Unable to open pctm.conf with default application</source>
+        <translation>Impossible d'ouvrir pctm.conf avec l'application par défaut</translation>
     </message>
     <message>
         <source>In:</source>

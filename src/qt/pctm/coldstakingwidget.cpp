@@ -5,22 +5,22 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/coldstakingwidget.h"
-#include "qt/pivx/forms/ui_coldstakingwidget.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/pctm/coldstakingwidget.h"
+#include "qt/pctm/forms/ui_coldstakingwidget.h"
+#include "qt/pctm/qtutils.h"
 #include "amount.h"
 #include "guiutil.h"
-#include "qt/pivx/requestdialog.h"
-#include "qt/pivx/tooltipmenu.h"
-#include "qt/pivx/furlistrow.h"
-#include "qt/pivx/sendconfirmdialog.h"
-#include "qt/pivx/addnewcontactdialog.h"
-#include "qt/pivx/guitransactionsutils.h"
+#include "qt/pctm/requestdialog.h"
+#include "qt/pctm/tooltipmenu.h"
+#include "qt/pctm/furlistrow.h"
+#include "qt/pctm/sendconfirmdialog.h"
+#include "qt/pctm/addnewcontactdialog.h"
+#include "qt/pctm/guitransactionsutils.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "coincontroldialog.h"
 #include "coincontrol.h"
-#include "qt/pivx/csrow.h"
+#include "qt/pctm/csrow.h"
 
 #define DECORATION_SIZE 70
 #define NUM_ITEMS 3
@@ -435,7 +435,7 @@ void ColdStakingWidget::onSendClicked()
     }
 
     if (!walletModel->isColdStakingNetworkelyEnabled()) {
-        inform(tr("Cold staking is networkely disabled"));
+        inform(tr("Cold staking is disabled on the network"));
         return;
     }
 

@@ -10,7 +10,7 @@
 
 #include <QDialog>
 #include "walletmodeltransaction.h"
-#include "qt/pivx/snackbar.h"
+#include "qt/pctm/snackbar.h"
 
 class WalletModelTransaction;
 class WalletModel;

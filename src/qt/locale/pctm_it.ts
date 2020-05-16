@@ -743,7 +743,7 @@ per lo staking</translation>
         <translation>Nessun contatto disponibile, puoi andare alla schermata dei contatti e aggiungerne alcuni!</translation>
     </message>
     <message>
-        <source>Cold staking is networkely disabled</source>
+        <source>Cold staking is disabled on the network</source>
         <translation>Il cold staking è disabilitato sulla rete</translation>
     </message>
     <message>
@@ -1414,7 +1414,7 @@ e votano il sistema di tesoreria ricevendo una ricompensa periodica.</translatio
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the pctm.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1422,7 +1422,7 @@ this controller wallet (select the Masternode in the list and press "start").
 un Masternode su un server remoto .
 
 
-Dovrai solo incollare i dati nel file pivx.conf del server remoto
+Dovrai solo incollare i dati nel file pctm.conf del server remoto
 e avviarlo, quindi avviare il Masternode utilizzando questo portafoglio
 come controller (selezionare il Masternode nell'elenco e premere "start").
 </translation>
@@ -3760,7 +3760,7 @@ per diventare idoneo alla spesa.
                            you can disable the automatic minting in your PCTM wallet by
                            going to Settings-&gt;Options and deselecting “Enable zPCTM Automint”.
                            If you are not making use of the PACTUMCOIN-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your pctm.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPCTM in the
@@ -3777,7 +3777,7 @@ staking di zPCTM o sfruttare il vantaggio sulla privacy che ne comporta,
 puoi disabilitare la forgiatura automatica nel tuo portafoglio PCTM
 andando su Impostazioni-&gt;Opzioni e deselezionando “Abilita zPCTM Automint”.
 Se non si utilizzi PACTUMCOIN-QT o la GUI, è possibile aprire semplicemente
-il tuo file pivx.conf e aggiungere&lt;i&gt;enablezeromint=0&lt;/i&gt; senza gli apostrofi
+il tuo file pctm.conf e aggiungere&lt;i&gt;enablezeromint=0&lt;/i&gt; senza gli apostrofi
 e far ripartire il portafoglio per disabilitare la forgiatura automatica.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Puoi leggere di più su zPCTM nel
@@ -3995,8 +3995,8 @@ regolarmente. Questi servizi includono:
         <translation>Impossibile aprire la cartella dei backup</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Impossibile aprire pivx.conf con l'applicazione predefinita</translation>
+        <source>Unable to open pctm.conf with default application</source>
+        <translation>Impossibile aprire pctm.conf con l'applicazione predefinita</translation>
     </message>
     <message>
         <source>In:</source>

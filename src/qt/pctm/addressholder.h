@@ -9,8 +9,8 @@
 
 #include <QWidget>
 #include <QColor>
-#include "qt/pivx/myaddressrow.h"
-#include "qt/pivx/furlistrow.h"
+#include "qt/pctm/myaddressrow.h"
+#include "qt/pctm/furlistrow.h"
 #include "guiutil.h"
 
 

@@ -15,7 +15,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/pctm-config.h"
 #endif
 
 #include "amount.h"

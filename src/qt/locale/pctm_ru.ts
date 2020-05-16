@@ -831,7 +831,7 @@ stake on your behalf, while you keep the keys securely offline.</source>
         <translation>Не удается отправить делегацию, кошелек заблокирован</translation>
     </message>
     <message>
-        <source>Cold staking is networkely disabled</source>
+        <source>Cold staking is disabled on the network</source>
         <translation>Холодный стекинг отключен в сети</translation>
     </message>
     <message>
@@ -1612,7 +1612,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the pctm.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1620,7 +1620,7 @@ this controller wallet (select the Masternode in the list and press "start").
 на удаленном сервере в буфер обмена.
 
 
-Вам необходимо только вставить данные в файл pivx.conf
+Вам необходимо только вставить данные в файл pctm.conf
 вашего удаленного сервера и запустить его, а затем запустить мастерноду,
 используя этот кошелек контроллера (выберите мастерноду из списка и нажмите «Старт»).
 </translation>
@@ -4185,7 +4185,7 @@ zPCTM - это необязательная конфиденциальность
                            you can disable the automatic minting in your PCTM wallet by
                            going to Settings-&gt;Options and deselecting “Enable zPCTM Automint”.
                            If you are not making use of the PACTUMCOIN-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your pctm.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPCTM in the
@@ -4202,7 +4202,7 @@ zPCTM - это необязательная конфиденциальность
 вы можете отключить автоматическую чеканку в своем PCTM-кошельке,
 перейдя в «Настройки-&gt; Параметры» и отменив выбор «Включить авточекунку zPCTM».
 Если вы не используете PACTUMCOIN-QT или GUI, вы можете просто открыть
-свой файл pivx.conf и добавить &lt;i&gt;enablezeromint=0&lt;/i&gt; без кавычек и
+свой файл pctm.conf и добавить &lt;i&gt;enablezeromint=0&lt;/i&gt; без кавычек и
 перезапустите свой кошелек для отключения  автоматической чеканки. &lt;/p&gt; &lt;/p&gt;&lt;p align="justify"&gt; Вы можете прочитать больше о zPCTM в
 &lt;a style='color: #b088ff' href='https://PCTM.org/zpctm/'&gt;
  "Технический документ PCTM Zerocoin (zPCTM)"&lt;/a&gt;.
@@ -4309,7 +4309,7 @@ zPCTM можно потратить и отправить на любой адр
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
-Мастернода - это компьютер, на котором запущен базовый кошелек PCTM с полным узлом и для которого требуется обеспечение в 10000 PCTM для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
+Мастернода - это компьютер, на котором запущен базовый кошелек PCTM с полным узлом и для которого требуется обеспечение в 100,000 PCTM для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
 
 Мгновенные транзакции (SwiftX)
 Децентрализованное управление (Голосование по предложениям)
@@ -4449,8 +4449,8 @@ zPCTM можно потратить и отправить на любой адр
         <translation>Невозможно открыть папку резервных копий</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Невозможно открыть pivx.conf с приложением по умолчанию</translation>
+        <source>Unable to open pctm.conf with default application</source>
+        <translation>Невозможно открыть pctm.conf с приложением по умолчанию</translation>
     </message>
     <message>
         <source>In:</source>

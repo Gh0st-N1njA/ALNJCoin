@@ -832,7 +832,7 @@ stake on your behalf, while you keep the keys securely offline.</source>
         <translation>Ne mogu poslati delegaciju, novčanik je zaključan</translation>
     </message>
     <message>
-        <source>Cold staking is networkely disabled</source>
+        <source>Cold staking is disabled on the network</source>
         <translation>Cold staking je mrežno onemogućen</translation>
     </message>
     <message>
@@ -1618,7 +1618,7 @@ Molimo pričekajte nekoliko minuta (zalog za Masternode zahtjeva %1 potvrda).</t
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the pctm.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1626,7 +1626,7 @@ this controller wallet (select the Masternode in the list and press "start").
 na udaljenom poslužitelju u medjuspremnik.
 
 
-Podatke ćete morati zalijepiti u datoteku pivx.conf
+Podatke ćete morati zalijepiti u datoteku pctm.conf
 na udaljenom poslužitelju i pokrenuti ga, a zatim pokrenite Masternode
 koristeći ovaj controller novčanik (na popisu odaberite Masternode i pritisnite "start").
 </translation>
@@ -1663,7 +1663,7 @@ Jeste li sigurni?</translation>
     </message>
     <message>
         <source>Not enough balance to create a masternode, 100,000 PCTM required.</source>
-        <translation>Nema dovoljno novčića za stvaranje Masternodea, potrebno je 10000 PCTM.</translation>
+        <translation>Nema dovoljno novčića za stvaranje Masternodea, potrebno je 100,000 PCTM.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -4213,7 +4213,7 @@ da bi se mogli potrošiti.
                            you can disable the automatic minting in your PCTM wallet by
                            going to Settings-&gt;Options and deselecting “Enable zPCTM Automint”.
                            If you are not making use of the PACTUMCOIN-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your pctm.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPCTM in the
@@ -4228,7 +4228,7 @@ Prema početno zadanom PCTM novčanik će pretvoriti 10% vaših PCTM sredstava u
 možete onemogućiti autoamtsko stvaranje u vašem PCTM novčaniku tako da
 odete u Postavke -&gt; Mogućnosti i odznačite "Omogući automatsko stvaranje zPCTM-a".
 Ako ne koristite PACTUMCOIN-QT ili grafičko sučelje, jednostavno možete otvoriti
-vašu pivx.conf datoteku i dodati &lt;i&gt;enablezeromint=0&lt;/i&gt; bez navodnika
+vašu pctm.conf datoteku i dodati &lt;i&gt;enablezeromint=0&lt;/i&gt; bez navodnika
 i ponovno pokrenuti novčanik da biste onemogućili automatsko stvaranje.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Više o zPCTM-u možete pročitati u
@@ -4576,8 +4576,8 @@ Zahtjevi:
         <translation>Ne može se otvoriti mapa sigurnosne kopije</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Nije moguće otvoriti pivx.conf sa zadanom aplikacijom</translation>
+        <source>Unable to open pctm.conf with default application</source>
+        <translation>Nije moguće otvoriti pctm.conf sa zadanom aplikacijom</translation>
     </message>
     <message>
         <source>In:</source>

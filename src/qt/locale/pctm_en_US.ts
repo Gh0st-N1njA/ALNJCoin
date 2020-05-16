@@ -833,8 +833,8 @@ stake on your behalf, while you keep the keys securely offline.</translation>
         <translation>Cannot send delegation, wallet locked</translation>
     </message>
     <message>
-        <source>Cold staking is networkely disabled</source>
-        <translation>Cold staking is networkely disabled</translation>
+        <source>Cold staking is disabled on the network</source>
+        <translation>Cold staking is disabled on the network</translation>
     </message>
     <message>
         <source>Invalid entry</source>
@@ -1620,7 +1620,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the pctm.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1628,7 +1628,7 @@ this controller wallet (select the Masternode in the list and press "start").
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the pctm.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </translation>
@@ -4224,7 +4224,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
                            you can disable the automatic minting in your PCTM wallet by
                            going to Settings-&gt;Options and deselecting “Enable zPCTM Automint”.
                            If you are not making use of the PACTUMCOIN-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your pctm.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPCTM in the
@@ -4241,7 +4241,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
                            you can disable the automatic minting in your PCTM wallet by
                            going to Settings-&gt;Options and deselecting “Enable zPCTM Automint”.
                            If you are not making use of the PACTUMCOIN-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           your pctm.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPCTM in the
@@ -4591,8 +4591,8 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>Unable to open backups folder</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Unable to open pivx.conf with default application</translation>
+        <source>Unable to open pctm.conf with default application</source>
+        <translation>Unable to open pctm.conf with default application</translation>
     </message>
     <message>
         <source>In:</source>

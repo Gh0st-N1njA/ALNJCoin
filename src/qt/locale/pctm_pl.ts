@@ -826,7 +826,7 @@ stake w Twoim imieniu, podczas gdy klucze są bezpiecznie offline.</translation>
         <translation>Brak dostępnych kontaktów, możesz przejść do ekranu kontaktów i tam dodać!</translation>
     </message>
     <message>
-        <source>Cold staking is networkely disabled</source>
+        <source>Cold staking is disabled on the network</source>
         <translation>Cold staking jest wyłączony przez sieć</translation>
     </message>
     <message>
@@ -1588,7 +1588,7 @@ i głosuj na system skarbu otrzymujący okresową nagrodę.</translation>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the pctm.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1596,7 +1596,7 @@ this controller wallet (select the Masternode in the list and press "start").
 na zdalnym serwerze do twojego schowka.
 
 
-Wystarczy wkleić dane do pliku pivx.conf
+Wystarczy wkleić dane do pliku pctm.conf
 zdalnego serwera i uruchom go, a następnie uruchom Masternode przy użyciu
 portfela kontrolujacego (wybierz Masternode z listy i naciśnij „start”).
 </translation>
@@ -1629,7 +1629,7 @@ Jesteś pewny?</translation>
     </message>
     <message>
         <source>Not enough balance to create a masternode, 100,000 PCTM required.</source>
-        <translation>Nie wystarczające saldo do utworzenia masternode, wymagane 10000 PCTM.</translation>
+        <translation>Nie wystarczające saldo do utworzenia masternode, wymagane 100,000 PCTM.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -4117,8 +4117,8 @@ do zPCTM automatycznie?</translation>
         <translation>Nie można otworzyć folderu kopii zapasowych</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Nie można otworzyć pliku pivx.conf w domyślnej aplikacji</translation>
+        <source>Unable to open pctm.conf with default application</source>
+        <translation>Nie można otworzyć pliku pctm.conf w domyślnej aplikacji</translation>
     </message>
     <message>
         <source>In:</source>

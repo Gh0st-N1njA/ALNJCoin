@@ -18,7 +18,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 10000 PCTM input and register on the network
+// Bootup the Masternode, look for a 100,000 PCTM input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

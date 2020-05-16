@@ -59,7 +59,7 @@ def read_bitcoin_config(dbdir):
                 return s
 
     config_parser = SafeConfigParser()
-    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "pivx.conf"))))
+    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "pctm.conf"))))
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
@@ -229,7 +229,7 @@ def main():
     parser.add_option("--fee", dest="fee", default="0.0",
                       help="fee to include")
     parser.add_option("--datadir", dest="datadir", default=determine_db_dir(),
-                      help="location of pivx.conf file with RPC username/password (default: %default)")
+                      help="location of pctm.conf file with RPC username/password (default: %default)")
     parser.add_option("--testnet", dest="testnet", default=False, action="store_true",
                       help="Use the test network")
     parser.add_option("--dry_run", dest="dry_run", default=False, action="store_true",

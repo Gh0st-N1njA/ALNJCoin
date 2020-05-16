@@ -5,7 +5,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/settings/settingsinformationwidget.h"
+#include "qt/pctm/settings/settingsinformationwidget.h"
 #include "qt/pivx/settings/forms/ui_settingsinformationwidget.h"
 
 #include "clientmodel.h"
@@ -103,7 +103,7 @@ SettingsInformationWidget::SettingsInformationWidget(PCTMGUI* _window,QWidget *p
     });
     connect(ui->pushButtonFile, &QPushButton::clicked, [this](){
         if (!GUIUtil::openConfigfile())
-            inform(tr("Unable to open pivx.conf with default application"));
+            inform(tr("Unable to open pctm.conf with default application"));
     });
     connect(ui->pushButtonNetworkMonitor, &QPushButton::clicked, this, &SettingsInformationWidget::openNetworkMonitor);
 }

@@ -8,10 +8,10 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/pctm-config.h"
 #endif
 
-#include "qt/pivx/pivxgui.h"
+#include "qt/pctm/pctmgui.h"
 
 #include "clientmodel.h"
 #include "guiconstants.h"
@@ -20,8 +20,8 @@
 #include "net.h"
 #include "networkstyle.h"
 #include "optionsmodel.h"
-#include "qt/pivx/splash.h"
-#include "qt/pivx/welcomecontentwidget.h"
+#include "qt/pctm/splash.h"
+#include "qt/pctm/welcomecontentwidget.h"
 #include "utilitydialog.h"
 #include "winshutdownmonitor.h"
 
@@ -85,7 +85,7 @@ static void InitMessage(const std::string& message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("pivx-core", psz).toStdString();
+    return QCoreApplication::translate("pctm-core", psz).toStdString();
 }
 
 static QString GetLangTerritory(bool forceLangFromSetting = false)
@@ -244,7 +244,7 @@ private:
     void startThread();
 };
 
-#include "pivx.moc"
+#include "pctm.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -543,7 +543,7 @@ int main(int argc, char* argv[])
 
 /// 2. Basic Qt initialization (not dependent on parameters or configuration)
     Q_INIT_RESOURCE(pctm_locale);
-    Q_INIT_RESOURCE(pivx);
+    Q_INIT_RESOURCE(pctm);
 
     // Generate high-dpi pixmaps
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);

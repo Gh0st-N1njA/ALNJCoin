@@ -833,7 +833,7 @@ stake on your behalf, while you keep the keys securely offline.</source>
         <translation>无法发送委托，钱包被锁了</translation>
     </message>
     <message>
-        <source>Cold staking is networkely disabled</source>
+        <source>Cold staking is disabled on the network</source>
         <translation>禁用网络冷积累</translation>
     </message>
     <message>
@@ -1620,7 +1620,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the pctm.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1628,7 +1628,7 @@ this controller wallet (select the Masternode in the list and press "start").
 到剪贴板的远程服务器上。
 
 
-您只需将数据粘贴到pivx.conf文件中
+您只需将数据粘贴到pctm.conf文件中
 ，然后使用主节点启动它
 这个控制器钱包(在列表中选择主节点并按“开始”)。
 </translation>
@@ -4547,8 +4547,8 @@ PCTM零币(zPCTM)技术文件
         <translation>无法打开备份文件夹</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>无法使用默认应用程序打开pivx.conf</translation>
+        <source>Unable to open pctm.conf with default application</source>
+        <translation>无法使用默认应用程序打开pctm.conf</translation>
     </message>
     <message>
         <source>In:</source>
