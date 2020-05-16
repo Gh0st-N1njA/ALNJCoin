@@ -166,7 +166,7 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/pivx.moc \
+  qt/pctm.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/rpcconsole.moc \
