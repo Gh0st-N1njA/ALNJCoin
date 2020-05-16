@@ -455,7 +455,7 @@ RES_ICONS = \
   qt/pctm/res/img/ic-radio-liliac-on.svg \
   qt/pctm/res/img/img-empty-staking-off.svg \
   qt/pctm/res/img/ic-arrow-drop-down.svg \
-  qt/pctm/res/img/ic-coin-piv.svg \
+  qt/pctm/res/img/ic-coin-pctm.svg \
   qt/pctm/res/img/ic-receive-off.svg \
   qt/pctm/res/img/img-empty-staking-on.svg \
   qt/pctm/res/img/ic-arrow-drop-up-white.svg \
