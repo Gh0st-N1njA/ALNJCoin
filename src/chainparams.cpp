@@ -172,17 +172,17 @@ public:
         consensus.height_last_ZC_AccumCheckpoint = 1190;
         consensus.height_last_ZC_WrappedSerials = 1200;
         consensus.height_start_BIP65 = 1;
-        consensus.height_start_InvalidUTXOsCheck = 1200;
+        consensus.height_start_InvalidUTXOsCheck = 999999999;
         consensus.height_start_MessSignaturesV2 = 1;  // height_start_TimeProtoV2
         consensus.height_start_StakeModifierNewSelection = 1199;
         consensus.height_start_StakeModifierV2 = 1200;
         consensus.height_start_TimeProtoV2 = 1;
         consensus.height_start_ZC = 1200;
-        consensus.height_start_ZC_InvalidSerials = 0;
+        consensus.height_start_ZC_InvalidSerials = 999999999;
         consensus.height_start_ZC_PublicSpends = 1200;
         consensus.height_start_ZC_SerialRangeCheck = 1200;
         consensus.height_start_ZC_SerialsV2 = 1200;
-        consensus.height_ZC_RecalcAccumulators = 1200;
+        consensus.height_ZC_RecalcAccumulators = 999999999;
 
         // validation by-pass
         consensus.nPctmBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
