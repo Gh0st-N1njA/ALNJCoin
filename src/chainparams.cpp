@@ -169,19 +169,19 @@ public:
 
         // height-based activations
         consensus.height_last_PoW = 259200;
-        consensus.height_last_ZC_AccumCheckpoint = 1190;
-        consensus.height_last_ZC_WrappedSerials = 1205;
+        consensus.height_last_ZC_AccumCheckpoint = 50;
+        consensus.height_last_ZC_WrappedSerials = 65;
         consensus.height_start_BIP65 = 1;
         consensus.height_start_InvalidUTXOsCheck = 999999999;
         consensus.height_start_MessSignaturesV2 = 1;  // height_start_TimeProtoV2
         consensus.height_start_StakeModifierNewSelection = 1200;
-        consensus.height_start_StakeModifierV2 = 1200;
+        consensus.height_start_StakeModifierV2 = 60;
         consensus.height_start_TimeProtoV2 = 1;
-        consensus.height_start_ZC = 1210;
+        consensus.height_start_ZC = 70;
         consensus.height_start_ZC_InvalidSerials = 999999999;
-        consensus.height_start_ZC_PublicSpends = 1215;
-        consensus.height_start_ZC_SerialRangeCheck = 1220;
-        consensus.height_start_ZC_SerialsV2 = 1225;
+        consensus.height_start_ZC_PublicSpends = 75;
+        consensus.height_start_ZC_SerialRangeCheck = 80;
+        consensus.height_start_ZC_SerialsV2 = 85;
         consensus.height_ZC_RecalcAccumulators = 999999999;
 
         // validation by-pass
