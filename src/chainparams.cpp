@@ -174,7 +174,7 @@ public:
         consensus.height_start_BIP65 = 1;
         consensus.height_start_InvalidUTXOsCheck = 999999999;
         consensus.height_start_MessSignaturesV2 = 1;  // height_start_TimeProtoV2
-        consensus.height_start_StakeModifierNewSelection = 1200;
+        consensus.height_start_StakeModifierNewSelection = 90;
         consensus.height_start_StakeModifierV2 = 60;
         consensus.height_start_TimeProtoV2 = 1;
         consensus.height_start_ZC = 70;
