@@ -284,7 +284,7 @@ public:
         consensus.nTime_RejectOldSporkKey = 1569538800;     //!> September 26, 2019 11:00:00 PM GMT
 
         // height based activations
-        consensus.height_last_PoW = 200;
+        consensus.height_last_PoW = 201;
         consensus.height_last_ZC_AccumCheckpoint = 201;
         consensus.height_last_ZC_WrappedSerials = -1;
         consensus.height_start_BIP65 = 1;
