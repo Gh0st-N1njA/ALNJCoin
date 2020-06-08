@@ -289,10 +289,10 @@ public:
         consensus.height_last_ZC_WrappedSerials = -1;
         consensus.height_start_BIP65 = 1;
         consensus.height_start_InvalidUTXOsCheck = 999999999;
-        consensus.height_start_MessSignaturesV2 = 101;      // height_start_TimeProtoV2
-        consensus.height_start_StakeModifierNewSelection = 101;
-        consensus.height_start_StakeModifierV2 = 101;
-        consensus.height_start_TimeProtoV2 = 101;
+        consensus.height_start_MessSignaturesV2 = 111;      // height_start_TimeProtoV2
+        consensus.height_start_StakeModifierNewSelection = 121;
+        consensus.height_start_StakeModifierV2 = 121;
+        consensus.height_start_TimeProtoV2 = 111;
         consensus.height_start_ZC = 101;
         consensus.height_start_ZC_InvalidSerials = 999999999;
         consensus.height_start_ZC_PublicSpends = 101;
